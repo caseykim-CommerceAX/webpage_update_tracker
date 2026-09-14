@@ -37,4 +37,27 @@ describe("canonicalizeHtml", () => {
       BODY: { added: 1, removed: 1 },
     });
   });
+
+  it("추천 문구의 현재 존재 여부가 아니라 전일 대비 추가를 변경으로 감지한다", () => {
+    const yesterday = canonicalizeHtml(
+      "<html><body><p>기존 안내</p></body></html>",
+      "https://example.com/card",
+    );
+    const today = canonicalizeHtml(
+      "<html><body><p>기존 안내</p><h2>ALL 카드, 이런 분께 추천드려요</h2></body></html>",
+      "https://example.com/card",
+    );
+    const diff = createStructuredDiff(yesterday.tokens, today.tokens);
+
+    expect(diff.added).toContainEqual({
+      kind: "heading",
+      key: "h2",
+      value: "ALL 카드, 이런 분께 추천드려요",
+    });
+    expect(diff.removed).toEqual([]);
+    expect(summarizeStructuredDiff(diff)).toEqual({
+      HEAD: { added: 0, removed: 0 },
+      BODY: { added: 1, removed: 0 },
+    });
+  });
 });

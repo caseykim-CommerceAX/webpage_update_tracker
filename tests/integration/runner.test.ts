@@ -39,8 +39,8 @@ afterAll(() => {
 
 describe("검사 실행 이력", () => {
   it("기준선, 무변경, 변경을 순서대로 기록한다", async () => {
-    const html = (text: string) => `<html><head><title>카드</title></head><body><h2>${text}</h2></body></html>`;
-    vi.stubGlobal("fetch", vi.fn().mockImplementation(() => Promise.resolve(new Response(html("첫 혜택"), { status: 200, headers: { "content-type": "text/html" } }))));
+    const html = (recommendation?: string) => `<html><head><title>카드</title></head><body><p>기존 안내</p>${recommendation ? `<h2>${recommendation}</h2>` : ""}</body></html>`;
+    vi.stubGlobal("fetch", vi.fn().mockImplementation(() => Promise.resolve(new Response(html(), { status: 200, headers: { "content-type": "text/html" } }))));
     const first = runner.createQueuedRun("MANUAL", [targetId]);
     await runner.executeRun(first.id);
     expect((database.db.prepare("SELECT changeStatus FROM EndpointCheck WHERE runId = ?").get(first.id) as { changeStatus: string }).changeStatus).toBe("BASELINE");
@@ -53,7 +53,7 @@ describe("검사 실행 이력", () => {
     expect(unchanged.changeStatus).toBe("UNCHANGED");
     expect(unchanged.comparedCheckId).toBeTruthy();
 
-    vi.stubGlobal("fetch", vi.fn().mockImplementation(() => Promise.resolve(new Response(html("새 혜택"), { status: 200, headers: { "content-type": "text/html" } }))));
+    vi.stubGlobal("fetch", vi.fn().mockImplementation(() => Promise.resolve(new Response(html("ALL 카드, 이런 분께 추천드려요"), { status: 200, headers: { "content-type": "text/html" } }))));
     const third = runner.createQueuedRun("MANUAL", [targetId]);
     const completed = await runner.executeRun(third.id);
     expect(completed.changedCount).toBe(1);
@@ -74,8 +74,8 @@ describe("검사 실행 이력", () => {
     expect(changed.comparedCheckId).toBe(unchanged.id);
     expect(changed.headAddedCount + changed.headRemovedCount).toBe(0);
     expect(changed.bodyAddedCount).toBe(1);
-    expect(changed.bodyRemovedCount).toBe(1);
-    expect((database.db.prepare("SELECT diffJson FROM Snapshot WHERE id = ?").get(changed.snapshotId) as { diffJson: string }).diffJson).toContain("새 혜택");
+    expect(changed.bodyRemovedCount).toBe(0);
+    expect((database.db.prepare("SELECT diffJson FROM Snapshot WHERE id = ?").get(changed.snapshotId) as { diffJson: string }).diffJson).toContain("이런 분께 추천드려요");
   });
 
   it("URL 변경 시 이전 Endpoint와 스냅샷을 보존하고 새 기준선을 준비한다", () => {

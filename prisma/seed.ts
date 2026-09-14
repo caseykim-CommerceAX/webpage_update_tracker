@@ -11,7 +11,6 @@ type SeedTarget = {
   referenceMobile?: string;
   lifecycle?: Lifecycle;
   monitorMode?: MonitorMode;
-  rules?: "CARD" | "META" | "STATUS";
 };
 
 const productTargets: Array<[string, string, string]> = [
@@ -61,7 +60,6 @@ targets.push(
     desktop: "https://card.kbcard.com/benefits/vip-lounge/kb-prime-plus",
     referenceDesktop: "https://card.kbcard.com/benefits/vip-lounge/prime-plus",
     lifecycle: "PRELAUNCH",
-    rules: "META",
   },
   {
     name: "이벤트",
@@ -70,12 +68,10 @@ targets.push(
     mobile: "https://m.kbcard.com/benefits/events/kb-new-card-annual-fee-cashback-2026-09",
     lifecycle: "PRELAUNCH",
     monitorMode: "STATUS_ONLY",
-    rules: "STATUS",
   },
 );
 
-function rulesFor(preset: SeedTarget["rules"] = "CARD") {
-  const rules: Array<{
+function rulesFor(): Array<{
     type: RuleType;
     label: string;
     selector?: string;
@@ -83,27 +79,8 @@ function rulesFor(preset: SeedTarget["rules"] = "CARD") {
     expectedValue?: string;
     expectedStatuses?: string;
     displayOrder: number;
-  }> = [{ type: "HTTP_STATUS", label: "HTTP 200", expectedStatuses: "[200]", displayOrder: 0 }];
-  if (preset !== "STATUS") {
-    rules.push({
-      type: "META_ATTRIBUTE",
-      label: "KB국민카드 OG 태그",
-      selector: 'meta[property="og:site_name"]',
-      attribute: "content",
-      expectedValue: "KB국민카드",
-      displayOrder: 1,
-    });
-  }
-  if (preset === "CARD") {
-    rules.push({
-      type: "TEXT_CONTAINS",
-      label: "추천 문구",
-      selector: "h2",
-      expectedValue: "이런 분께 추천드려요",
-      displayOrder: 2,
-    });
-  }
-  return rules;
+  }> {
+  return [{ type: "HTTP_STATUS", label: "HTTP 200", expectedStatuses: "[200]", displayOrder: 0 }];
 }
 
 function main() {
@@ -130,7 +107,7 @@ function main() {
       const insertRule = db.prepare(
         "INSERT INTO Rule (id, targetId, type, label, selector, attribute, expectedValue, expectedStatuses, enabled, displayOrder, createdAt, updatedAt) VALUES (?, ?, ?, ?, ?, ?, ?, ?, 1, ?, ?, ?)",
       );
-      for (const rule of rulesFor(item.rules)) {
+      for (const rule of rulesFor()) {
         insertRule.run(
           createId(), targetId, rule.type, rule.label, rule.selector ?? null, rule.attribute ?? null,
           rule.expectedValue ?? null, rule.expectedStatuses ?? null, rule.displayOrder, timestamp, timestamp,

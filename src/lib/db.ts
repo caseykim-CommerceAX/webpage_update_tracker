@@ -9,13 +9,17 @@ const absolutePath = resolve(/* turbopackIgnore: true */ process.cwd(), database
 mkdirSync(dirname(absolutePath), { recursive: true });
 
 const globalForDatabase = globalThis as unknown as { trackerDb?: Database.Database };
+const MIGRATIONS = [
+  "202609140001_init",
+  "202609140002_check_comparisons",
+  "202609140003_remove_seed_content_rules",
+] as const;
 
 function initialize(database: Database.Database) {
   database.pragma("journal_mode = WAL");
   database.pragma("foreign_keys = ON");
   database.exec("CREATE TABLE IF NOT EXISTS _Migration (name TEXT PRIMARY KEY, appliedAt TEXT NOT NULL)");
-  const migrations = ["202609140001_init", "202609140002_check_comparisons"];
-  for (const name of migrations) {
+  for (const name of MIGRATIONS) {
     const applied = database.prepare("SELECT name FROM _Migration WHERE name = ?").get(name);
     if (applied) continue;
     const migrationPath = resolve(process.cwd(), `prisma/migrations/${name}/migration.sql`);

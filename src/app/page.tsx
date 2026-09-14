@@ -37,7 +37,7 @@ export default function DashboardPage() {
             HEAD/BODY 태그 변경 진단
           </h1>
           <p className="mt-4 max-w-2xl text-sm font-medium leading-6 text-neutral-600 sm:text-base">
-            오늘의 페이지 태그를 DB에 저장된 직전 진단과 비교해 어느 섹션이 달라졌는지 확인합니다.
+            현재 문구의 존재 여부를 합격·실패로 판정하지 않습니다. DB의 직전 진단과 비교해 오늘 추가·삭제·수정된 태그만 알려드립니다.
           </p>
           <p className="tabular-nums mt-5 text-xs font-bold text-neutral-500">
             {latestRun ? `최근 완료 · ${formatDateTime(latestRun.completedAt ?? latestRun.createdAt)}` : "아직 완료된 진단이 없습니다."}
@@ -71,7 +71,7 @@ export default function DashboardPage() {
           <div>
             <p className="eyebrow">최근 완료 진단</p>
             <h2 id="tag-change-title" className="mt-2 text-2xl font-black tracking-tight text-neutral-950">태그 변경 상세</h2>
-            <p className="mt-1 text-sm text-neutral-600">변경된 URL만 표시하며, 펼치면 HEAD와 BODY의 추가·삭제 태그를 확인할 수 있습니다.</p>
+            <p className="mt-1 text-sm text-neutral-600">어제 없던 문구가 오늘 생긴 경우처럼, 변경된 URL만 표시합니다.</p>
           </div>
           {latestRun ? <Link href={`/runs/${latestRun.id}`} className="text-link shrink-0 text-xs">전체 실행 상세 보기</Link> : null}
         </div>

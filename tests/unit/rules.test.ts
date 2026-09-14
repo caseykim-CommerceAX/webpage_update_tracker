@@ -33,7 +33,7 @@ describe("evaluateRule", () => {
     expect(result.status).toBe("PASS");
   });
 
-  it("추천 문구의 공백 차이를 무시한다", () => {
+  it("선택형 텍스트 정적 규칙은 문구의 공백 차이를 무시한다", () => {
     const textRule = rule({ type: "TEXT_CONTAINS", selector: "h2", expectedValue: "이런 분께 추천드려요" });
     expect(evaluateRule(textRule, 200, "<h2>ALL 카드, 이런 분께 추천 드려요</h2>").status).toBe("PASS");
     expect(evaluateRule(textRule, 200, "<h2>다른 문구</h2>").status).toBe("FAIL");

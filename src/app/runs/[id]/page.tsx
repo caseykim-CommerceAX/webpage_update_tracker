@@ -154,7 +154,7 @@ export default async function RunDetailPage({ params }: { params: Promise<{ id: 
 
               {sortedRules.length ? (
                 <div className="border-t border-neutral-300">
-                  <div className="px-5 py-4 sm:px-6"><h3 className="text-sm font-black text-neutral-950">규칙 결과</h3></div>
+                  <div className="px-5 py-4 sm:px-6"><h3 className="text-sm font-black text-neutral-950">접속 및 보조 정적 규칙</h3></div>
                   <div className="grid border-t border-neutral-300 lg:grid-cols-3">
                     {sortedRules.map((rule, index) => {
                       const failed = rule.status === "FAIL" || rule.status === "ERROR";

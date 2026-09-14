@@ -35,14 +35,14 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - `src/lib/tracker/runner.ts`: 실행 잠금, 엔드포인트 검사, 상태/스냅샷 저장의 핵심 흐름
 - `src/lib/tracker/fetcher.ts`: User-Agent, 제한 시간, 재시도, 인코딩, HTTP 수집
 - `src/lib/tracker/canonicalize.ts`: 의미 있는 DOM 토큰과 구조화 diff
-- `src/lib/tracker/rules.ts`: HTTP, meta 속성, 텍스트 포함 규칙 평가
+- `src/lib/tracker/rules.ts`: 태그 diff와 분리된 HTTP 및 선택형 정적 규칙 평가
 - `src/lib/db.ts`: SQLite 연결과 마이그레이션 적용
 - `src/lib/target-service.ts`: 대상 생성/수정, URL 교체 시 이력 보존
 - `src/lib/queries.ts`: 대시보드와 실행 상세용 배치 조회
 - `src/app/api/`: 대상 편집, 검사 시작, 실행 진행 상태 API
 - `src/app/page.tsx`, `src/app/targets/`, `src/app/runs/`: 대시보드와 관리/이력 UI
 - `src/components/check-diagnostics.tsx`: 접속·규칙 실패 원인과 실제 확인값 표시
-- `prisma/migrations/202609140001_init/migration.sql`, `202609140002_check_comparisons/migration.sql`: 현재 DB 스키마와 진단 비교 필드
+- `prisma/migrations/202609140001_init/migration.sql`, `202609140002_check_comparisons/migration.sql`, `202609140003_remove_seed_content_rules/migration.sql`: 현재 DB 스키마, 진단 비교 필드, 오해로 생성된 정적 규칙 정리
 - `prisma/seed.ts`: 기획서의 초기 23개 항목
 - `scripts/scan.ts`: 수동/예약 검사 CLI
 - `scripts/install-schedule.ps1`, `scripts/remove-schedule.ps1`: 매일 09:00 Windows 예약 등록/제거
@@ -59,6 +59,8 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - 동일하면 새 스냅샷을 중복 저장하지 않지만 `UNCHANGED` 진단 행과 비교 관계는 반드시 저장한다.
 - 원본 HTML은 저장하지 않는다. 제목, meta, 본문 텍스트, 링크, 이미지로 만든 정규화 토큰만 저장한다.
 - HEAD는 title/meta, BODY는 heading/text/link/image 토큰으로 분류한다. 값 수정은 삭제 1건과 추가 1건으로 집계한다.
+- 현재 태그/문구의 존재 여부 자체는 변경 판정이 아니다. 예를 들어 추천 h2가 양일 모두 존재하면 `UNCHANGED`, 전일에 없고 오늘 추가됐을 때만 BODY 추가로 판정한다.
+- Meta/텍스트 정적 규칙은 전일 대비 diff와 별도인 선택 기능이다. 초기 시드에는 추가하지 않는다.
 - `script`, `style`, `noscript`, `template`, SVG, class/id, UTM 등 추적 파라미터는 diff에서 제외한다.
 - URL 수정은 기존 Endpoint를 덮어쓰지 않는다. 기존 행을 retire하고 새 Endpoint를 만들어 과거 이력과 기준선을 분리한다.
 - 대상 삭제는 hard delete가 아니라 비활성화로 처리한다.
@@ -66,10 +68,9 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 ## 5. Seed-specific Rules
 
-- 카드 항목: HTTP 200 + `meta[property="og:site_name"]`의 `content="KB국민카드"` + `h2` 추천 문구
-- 추천 문구 `이런 분께 추천드려요`는 공백 차이를 무시한다.
-- BeV Ⅲ: PC·모바일 모두 PRELAUNCH이며 오픈 후 카드 규칙과 DOM을 검사한다.
-- 서비스: PC PRELAUNCH이며 오픈 후 HTTP/meta 규칙과 DOM을 검사한다.
+- 모든 초기 항목의 규칙은 접속 확인용 HTTP 200만 등록한다. OG meta와 추천 h2는 현재값 필수 규칙이 아니라 전일 대비 HEAD/BODY diff의 예시다.
+- BeV Ⅲ: PC·모바일 모두 PRELAUNCH이며 오픈 후 HTTP와 DOM 변경을 검사한다.
+- 서비스: PC PRELAUNCH이며 오픈 후 HTTP와 DOM 변경을 검사한다.
 - 이벤트: PC·모바일 PRELAUNCH, `STATUS_ONLY`, HTTP 상태만 검사한다.
 - 기획서의 “업데이트 전 URL”은 `referenceUrl`로만 표시하고 정기 검사하지 않는다.
 
@@ -102,15 +103,16 @@ Playwright 브라우저가 준비된 환경에서는 `npm.cmd run test:e2e`도 �
 2026-09-14 기준:
 
 - `lint`, `typecheck`, 프로덕션 `build` 통과
-- Vitest 5개 파일, 12개 테스트 통과
+- Vitest 6개 파일, 14개 테스트 통과
 - Playwright E2E 2개 통과: 주요 화면 이동·활성 메뉴와 390px 모바일 수평 오버플로 확인
 - Playwright 캡처로 1440px·390px 대시보드의 요약 → 태그 변경 상세 → 페이지별 진단 계층과 레이아웃 확인
 - 주요 앱/API 경로의 로컬 HTTP 200 확인
-- ALL 카드 PC·모바일 라이브 검사: HTTP 200, 규칙 각각 3개 통과, 첫 실행 `BASELINE`, 연속 실행 `UNCHANGED`
+- ALL 카드 PC·모바일 라이브 검사: HTTP 200, 첫 실행 `BASELINE`, 연속 실행 `UNCHANGED`
 - BeV Ⅲ PC·모바일 라이브 검사: 실패 0, `PENDING` 2
 - API가 백그라운드 검사 프로세스를 시작하고 완료 상태를 폴링하는 흐름 확인
 - 작업 스케줄러 PowerShell 스크립트 문법 확인; 실제 OS 예약 등록은 자동으로 수행하지 않았다.
 - `EndpointCheck`는 직전 성공 진단 ID와 HEAD/BODY 추가·삭제 건수를 저장하며 기존 DB 이력도 마이그레이션에서 역산한다.
+- 오해로 생성했던 OG/추천 문구 정적 규칙과 오판정 결과는 마이그레이션으로 제거하며 HTTP 결과와 구조화 diff 이력은 보존한다.
 - 대시보드 상단은 최근 전체 진단의 URL·변경 URL·HEAD/BODY 건수만 요약하고, 태그 diff와 실패 원인은 하단 상세 및 실행 상세에서 펼친다.
 
 ## 8. Fresh-thread Resume Procedure

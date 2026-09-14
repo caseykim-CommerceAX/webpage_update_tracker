@@ -161,7 +161,7 @@ export function TargetManager({ targets }: { targets: TargetView[] }) {
                 <span className="tabular-nums grid size-9 shrink-0 place-items-center border border-neutral-400 text-xs font-black text-neutral-700">{target.displayOrder}</span>
                 <div className="min-w-0">
                   <div className="flex flex-wrap items-center gap-2"><h3 className="font-black text-neutral-950">{target.name}</h3>{target.enabled ? <StatusPill label="활성" tone="green" /> : <StatusPill label="비활성" />}</div>
-                  <p className="mt-1 text-xs font-semibold text-neutral-500">{target.category} · URL {target.endpoints.filter((item) => item.enabled).length}개 · 규칙 {target.rules.length}개</p>
+                  <p className="mt-1 text-xs font-semibold text-neutral-500">{target.category} · URL {target.endpoints.filter((item) => item.enabled).length}개 · 보조 규칙 {target.rules.length}개</p>
                   <p className="mt-2 max-w-2xl truncate text-xs text-neutral-500">{target.endpoints.find((item) => item.platform === "DESKTOP" && item.enabled)?.url}</p>
                 </div>
               </div>
@@ -188,7 +188,7 @@ export function TargetManager({ targets }: { targets: TargetView[] }) {
             <div className="grid gap-3 sm:grid-cols-2">
               <label><span className="form-label">이름</span><input required name="target-name" autoComplete="off" className="form-input w-full" value={draft.name} onChange={(e) => setDraft({ ...draft, name: e.target.value })} /></label>
               <label><span className="form-label">카테고리</span><input required name="target-category" autoComplete="off" className="form-input w-full" value={draft.category} onChange={(e) => setDraft({ ...draft, category: e.target.value })} /></label>
-              <label><span className="form-label">추적 방식</span><select name="monitor-mode" className="form-input w-full" value={draft.monitorMode} onChange={(e) => setDraft({ ...draft, monitorMode: e.target.value as MonitorMode })}><option value="CONTENT">콘텐츠 + 규칙</option><option value="STATUS_ONLY">HTTP 상태만</option></select></label>
+              <label><span className="form-label">추적 방식</span><select name="monitor-mode" className="form-input w-full" value={draft.monitorMode} onChange={(e) => setDraft({ ...draft, monitorMode: e.target.value as MonitorMode })}><option value="CONTENT">전일 대비 태그 변경 + HTTP</option><option value="STATUS_ONLY">HTTP 상태만</option></select></label>
               <label><span className="form-label">사용 여부</span><select name="target-enabled" className="form-input w-full" value={String(draft.enabled)} onChange={(e) => setDraft({ ...draft, enabled: e.target.value === "true" })}><option value="true">활성</option><option value="false">비활성</option></select></label>
             </div>
 
@@ -210,7 +210,8 @@ export function TargetManager({ targets }: { targets: TargetView[] }) {
             })}
 
             <fieldset className="space-y-3">
-              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"><legend className="text-sm font-black">검사 규칙</legend><div className="flex flex-wrap gap-2"><button type="button" className="button-secondary px-2 py-1 text-[11px]" onClick={() => setDraft({ ...draft, rules: [...draft.rules, blankRule("META_ATTRIBUTE")] })}>Meta 규칙 추가</button><button type="button" className="button-secondary px-2 py-1 text-[11px]" onClick={() => setDraft({ ...draft, rules: [...draft.rules, blankRule("TEXT_CONTAINS")] })}>텍스트 규칙 추가</button></div></div>
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"><legend className="text-sm font-black">접속 및 보조 정적 규칙</legend><div className="flex flex-wrap gap-2"><button type="button" className="button-secondary px-2 py-1 text-[11px]" onClick={() => setDraft({ ...draft, rules: [...draft.rules, blankRule("META_ATTRIBUTE")] })}>Meta 정적 규칙 추가</button><button type="button" className="button-secondary px-2 py-1 text-[11px]" onClick={() => setDraft({ ...draft, rules: [...draft.rules, blankRule("TEXT_CONTAINS")] })}>텍스트 정적 규칙 추가</button></div></div>
+              <p className="text-xs leading-5 text-neutral-600">전일 대비 태그 변경은 별도 설정 없이 자동으로 비교합니다. Meta·텍스트 규칙은 오늘 값 자체가 반드시 충족되어야 하는 경우에만 추가하세요.</p>
               {draft.rules.map((rule, index) => (
                 <div key={`${index}-${rule.type}`} className="border border-neutral-300 bg-neutral-100 p-3">
                   <div className="grid gap-2 sm:grid-cols-[140px_minmax(0,1fr)_auto]"><label><span className="sr-only">규칙 유형</span><select name={`rule-${index}-type`} className="form-input w-full" value={rule.type} onChange={(e) => updateRule(index, blankRule(e.target.value as RuleType))}><option value="HTTP_STATUS">HTTP 상태</option><option value="META_ATTRIBUTE">Meta 속성</option><option value="TEXT_CONTAINS">텍스트 포함</option></select></label><label><span className="sr-only">규칙 이름</span><input name={`rule-${index}-label`} autoComplete="off" className="form-input w-full" value={rule.label} onChange={(e) => updateRule(index, { label: e.target.value })} placeholder="규칙 이름…" /></label><button type="button" className="button-secondary px-3 py-2 text-xs" onClick={() => setDraft({ ...draft, rules: draft.rules.filter((_, itemIndex) => itemIndex !== index) })}>규칙 삭제</button></div>

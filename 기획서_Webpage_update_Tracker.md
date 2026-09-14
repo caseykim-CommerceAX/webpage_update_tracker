@@ -35,21 +35,26 @@
 
 ## 1) 기존 페이지가 존재하는 경우
 
-1. <head> 태그 수정이 있는지 체크
+전일 진단 결과를 기준선으로 저장하고, 오늘 진단 결과와 비교해 추가·삭제·값 변경이 있는지 체크합니다.
+아래의 “존재 여부 체크”는 오늘 값만 보고 합격/실패를 판정한다는 뜻이 아니라, 전일과 오늘 사이에 해당 값의 존재 여부가 달라졌는지를 판정한다는 뜻입니다.
+
+1. `<head>` 태그 수정이 있는지 체크
     
-    → og 태그 존재하는지 체크
+    → 전일에는 없던 OG 태그가 오늘 추가되거나, 기존 값이 변경·삭제되었는지 체크
     
     ```html
     <meta property="og:site_name" content="KB국민카드">
     ```
     
-2. <body> 태그 수정이 있는지 체크
+2. `<body>` 태그 수정이 있는지 체크
     
-    → `이런 분께 추천 드려요</h2>` 값이 있는지 체크
+    → 전일에는 없던 `이런 분께 추천 드려요</h2>` 값이 오늘 추가되거나, 기존 값이 변경·삭제되었는지 체크
     
     ```html
     <h2 class="tit tit--h2">ALL 카드, 이런 분께 추천드려요</h2>
     ```
+
+현재 진단에 해당 태그나 문구가 존재한다는 사실만으로는 변경으로 판정하지 않습니다. 전일과 오늘의 값이 같으면 `변경 없음`, 달라졌을 때만 `변경 감지`로 판정합니다.
     
 
 ## 2) 기존 페이지가 존재하지 않는 경우 (`23. 이벤트`)
@@ -58,23 +63,25 @@
 
 # 3. 테스트 케이스
 
-## [TC1] <head> 태그 수정이 있는 경우
+## [TC1] `<head>` 태그 수정이 있는 경우
 
-1. `TRUE` 판정
-    - [https://card.kbcard.com/cards/products/credit-cards/kb-all-card](https://card.kbcard.com/cards/products/credit-cards/kb-all-card)
-    - 위 URL 검사 시 `TRUE` 판정
-2. `FASLE` 판정
-    - [https://card.kbcard.com/cards/products/credit-cards/american-express-blue-kb-kookmin-card](https://card.kbcard.com/cards/products/credit-cards/american-express-blue-kb-kookmin-card)
-    - 위 URL 검사 시 `FALSE` 판정
+1. `변경 감지` 판정
+    - 전일 스냅샷에는 `og:site_name` meta 태그가 없음
+    - 오늘 스냅샷에 해당 태그가 추가됨
+    - HEAD 태그 `추가 1건`으로 판정
+2. `변경 없음` 판정
+    - 전일과 오늘 스냅샷에 동일한 `og:site_name` meta 태그가 존재함
+    - 현재 태그가 존재하더라도 값이 같으면 변경 없음으로 판정
 
-## [TC2] <body> 태그 수정이 있는 경우
+## [TC2] `<body>` 태그 수정이 있는 경우
 
-1. `TRUE` 판정
-    - [https://card.kbcard.com/cards/products/credit-cards/kb-all-card](https://card.kbcard.com/cards/products/credit-cards/kb-all-card)
-    - 위 URL 검사 시 `TRUE` 판정
-2. `FASLE` 판정
-    - [https://card.kbcard.com/cards/products/credit-cards/american-express-blue-kb-kookmin-card](https://card.kbcard.com/cards/products/credit-cards/american-express-blue-kb-kookmin-card)
-    - 위 URL 검사 시 `FALSE` 판정
+1. `변경 감지` 판정
+    - 전일 스냅샷에는 `이런 분께 추천드려요` 문구가 포함된 h2 태그가 없음
+    - 오늘 스냅샷에 해당 h2 태그가 추가됨
+    - BODY 태그 `추가 1건`으로 판정
+2. `변경 없음` 판정
+    - 전일과 오늘 스냅샷에 동일한 h2 태그와 문구가 존재함
+    - 현재 문구가 존재하더라도 값이 같으면 변경 없음으로 판정
 
 ## [TC3] 신규 페이지가 라이브된 경우
 
@@ -88,3 +95,4 @@
 # 4. 스케줄링
 
 - 하루에 1회 로직이 실행됩니다.
+- 오늘 결과는 DB에 저장된 직전 성공 진단(일일 실행 기준 전일 결과)과 비교합니다.
