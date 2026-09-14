@@ -1,0 +1,11 @@
+node_modules/
+.next/
+test-results/
+playwright-report/
+coverage/
+.env
+.data/*
+!.data/.gitkeep
+src/generated/prisma/
+*.log
+*.tsbuildinfo

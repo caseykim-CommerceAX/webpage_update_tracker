@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f3f5f1;
+  --foreground: #122019;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--background); }
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 5% 0%, rgba(16, 185, 129, 0.08), transparent 30rem),
+    var(--background);
+  color: var(--foreground);
+  font-family: Pretendard, "Noto Sans KR", "Apple SD Gothic Neo", Inter, system-ui, sans-serif;
+}
+button, input, select, textarea { font: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; opacity: 0.65; }
+
+@layer components {
+  .panel { @apply rounded-2xl border border-slate-200/90 bg-white shadow-[0_10px_35px_rgba(15,23,42,0.045)]; }
+  .eyebrow { @apply text-[10px] font-black uppercase tracking-[0.2em] text-emerald-700; }
+  .button-primary { @apply inline-flex items-center justify-center rounded-xl bg-[#16382d] px-5 py-3 text-sm font-extrabold text-white shadow-sm transition hover:bg-[#205242] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700; }
+  .button-secondary { @apply inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white font-bold text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50; }
+  .form-input { @apply rounded-lg border border-slate-200 bg-white px-3 py-2.5 text-sm font-medium text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-emerald-600 focus:ring-2 focus:ring-emerald-600/10; }
+  .form-label { @apply mb-1.5 block text-xs font-extrabold text-slate-700; }
+}

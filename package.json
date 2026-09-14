@@ -1,0 +1,58 @@
+{
+  "name": "webpage-update-tracker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:setup": "tsx prisma/seed.ts",
+    "scan": "node --use-system-ca --import tsx scripts/scan.ts",
+    "schedule:install": "powershell -ExecutionPolicy Bypass -File scripts/install-schedule.ps1",
+    "schedule:remove": "powershell -ExecutionPolicy Bypass -File scripts/remove-schedule.ps1"
+  },
+  "dependencies": {
+    "better-sqlite3": "latest",
+    "cheerio": "latest",
+    "diff": "latest",
+    "dotenv": "latest",
+    "iconv-lite": "latest",
+    "next": "latest",
+    "p-limit": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@playwright/test": "latest",
+    "@tailwindcss/postcss": "latest",
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "@types/better-sqlite3": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "jsdom": "latest",
+    "tailwindcss": "latest",
+    "tsx": "latest",
+    "typescript": "latest",
+    "vitest": "latest"
+  },
+  "allowScripts": {
+    "better-sqlite3@12.11.1": true,
+    "better-sqlite3@13.0.3": true,
+    "esbuild@0.28.2": true,
+    "unrs-resolver@1.12.2": true,
+    "prisma@7.10.0": true,
+    "@prisma/engines@7.10.0": true
+  }
+}
