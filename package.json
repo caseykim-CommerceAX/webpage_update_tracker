@@ -4,9 +4,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev --hostname 127.0.0.1",
+    "dev": "next dev --hostname 0.0.0.0",
+    "dev:local": "next dev --hostname 127.0.0.1",
     "build": "next build",
-    "start": "next start --hostname 127.0.0.1",
+    "start": "next start --hostname 0.0.0.0",
+    "start:local": "next start --hostname 127.0.0.1",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
@@ -16,7 +18,9 @@
     "db:setup": "tsx prisma/seed.ts",
     "scan": "node --use-system-ca --import tsx scripts/scan.ts",
     "schedule:install": "powershell -ExecutionPolicy Bypass -File scripts/install-schedule.ps1",
-    "schedule:remove": "powershell -ExecutionPolicy Bypass -File scripts/remove-schedule.ps1"
+    "schedule:remove": "powershell -ExecutionPolicy Bypass -File scripts/remove-schedule.ps1",
+    "network:allow": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/allow-team-access.ps1",
+    "network:remove": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/remove-team-access.ps1"
   },
   "dependencies": {
     "better-sqlite3": "latest",

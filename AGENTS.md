@@ -28,7 +28,8 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
   - `prisma/` 디렉터리 이름은 초기 SQL 마이그레이션과 seed 파일 위치로만 남아 있다.
 - DB는 `.data/tracker.db`이며 Git에 포함하지 않는다. 스키마는 앱이 최초 DB 연결 시 자동 적용되고 `npm.cmd run db:setup`은 누락된 초기 대상만 seed한다.
 - 검사 프로세스는 TLS 검증을 끄지 않는다. `node --use-system-ca --import tsx`로 Windows 신뢰 저장소를 사용한다.
-- 웹앱은 현재 `127.0.0.1`에만 바인딩하며 인증이 없다. 외부 또는 사내망 공개 전에는 인증과 권한 검사가 필수다.
+- 기본 `dev`/`start`는 팀 공유를 위해 `0.0.0.0`에 바인딩한다. Windows 방화벽 규칙은 TCP 3000을 Domain/Private 프로필의 LocalSubnet과 현재 Node.js 실행 파일로 제한한다.
+- 앱 인증은 아직 없다. LocalSubnet 제한은 팀원 신원을 인증하지 않으므로 다른 부서와 서브넷을 공유하거나 VPN·외부망 공개 전에는 인증과 권한 검사가 필수다.
 
 ## 3. Source-of-Truth Map
 
@@ -46,6 +47,8 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - `prisma/seed.ts`: 기획서의 초기 23개 항목
 - `scripts/scan.ts`: 수동/예약 검사 CLI
 - `scripts/install-schedule.ps1`, `scripts/remove-schedule.ps1`: 매일 09:00 Windows 예약 등록/제거
+- `scripts/allow-team-access.ps1`, `scripts/remove-team-access.ps1`: 팀 접속용 로컬 서브넷 방화벽 규칙 등록/제거
+- `start-team-server.bat`, `scripts/show-team-urls.mjs`: DB 준비, 접속 주소 출력, 팀 공유 개발 서버 실행
 - `README.md`: 사용자가 따라야 하는 설치와 운영 방법
 
 ## 4. Behavioral Invariants
@@ -81,10 +84,14 @@ PowerShell에서는 실행 정책 문제를 피하기 위해 `npm` 대신 `npm.c
 ```powershell
 npm.cmd install
 npm.cmd run db:setup
+.\start-team-server.bat
 npm.cmd run dev
+npm.cmd run dev:local
+npm.cmd run network:allow
 npm.cmd run scan
 npm.cmd run schedule:install
 npm.cmd run schedule:remove
+npm.cmd run network:remove
 ```
 
 필수 검증:
@@ -114,6 +121,9 @@ Playwright 브라우저가 준비된 환경에서는 `npm.cmd run test:e2e`도 �
 - `EndpointCheck`는 직전 성공 진단 ID와 HEAD/BODY 추가·삭제 건수를 저장하며 기존 DB 이력도 마이그레이션에서 역산한다.
 - 오해로 생성했던 OG/추천 문구 정적 규칙과 오판정 결과는 마이그레이션으로 제거하며 HTTP 결과와 구조화 diff 이력은 보존한다.
 - 대시보드 상단은 최근 전체 진단의 URL·변경 URL·HEAD/BODY 건수만 요약하고, 태그 diff와 실패 원인은 하단 상세 및 실행 상세에서 펼친다.
+- 팀 공유 서버의 `0.0.0.0:3000` 리스닝과 `127.0.0.1`, `192.168.203.99` 양쪽 HTTP 200을 확인했다.
+- Windows 방화벽의 `Webpage Update Tracker Team Access` 규칙을 TCP 3000, Node.js, Domain/Private, LocalSubnet 범위로 등록하고 `netsh`로 확인했다.
+- `start-team-server.bat`는 DB 준비와 팀 접속 URL 출력을 거쳐 공유 개발 서버를 실행한다.
 
 ## 8. Fresh-thread Resume Procedure
 

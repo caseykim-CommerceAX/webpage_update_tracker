@@ -10,10 +10,20 @@ KB국민카드 PC·모바일 페이지의 HEAD/BODY 태그 변경을 직전 저�
 npm.cmd install
 Copy-Item .env.example .env
 npm.cmd run db:setup
-npm.cmd run dev
+.\start-team-server.bat
 ```
 
-브라우저에서 `http://127.0.0.1:3000`을 엽니다. 초기 데이터는 기획서의 23개 항목과 45개 현재 URL이며, 시드는 기존 사용자가 편집한 항목을 덮어쓰지 않습니다.
+이후에는 `start-team-server.bat`를 더블클릭하면 됩니다. BAT 파일이 DB를 준비하고 팀 접속 주소를 표시한 뒤 서버를 실행합니다. 같은 사내망의 팀원에게 표시된 `http://IPv4:3000` 주소를 공유하고, 사용하는 동안 BAT 창을 열어 두세요.
+
+본인 PC에서만 열려면 `npm.cmd run dev:local`을 사용합니다. 초기 데이터는 기획서의 23개 항목과 45개 현재 URL이며, 시드는 기존 사용자가 편집한 항목을 덮어쓰지 않습니다.
+
+## 팀 접속 범위
+
+- 기본 `dev`와 `start`는 `0.0.0.0`에 바인딩합니다.
+- 방화벽 규칙은 TCP 3000, Node.js 실행 파일, `Domain`·`Private` 네트워크, `LocalSubnet` 원격 주소로 제한합니다.
+- 팀원이 접속하지 못할 때만 관리자 권한 PowerShell에서 `npm.cmd run network:allow`를 한 번 실행합니다.
+- 팀 공유를 중단하려면 관리자 권한 PowerShell에서 `npm.cmd run network:remove`를 실행합니다.
+- 이 제한은 같은 서브넷의 장비를 허용하는 방식이며 팀원 신원을 인증하지는 않습니다. 다른 부서와 서브넷을 공유하거나 VPN·외부망 공개가 필요하면 앱 인증을 먼저 추가해야 합니다.
 
 ## 검사 실행
 
