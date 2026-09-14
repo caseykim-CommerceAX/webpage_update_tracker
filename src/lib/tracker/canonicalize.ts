@@ -1,7 +1,13 @@
 import { createHash } from "node:crypto";
 import { diffArrays } from "diff";
 import { load } from "cheerio";
-import type { CanonicalToken, StructuredDiff, TokenKind } from "@/lib/tracker/types";
+import type {
+  CanonicalToken,
+  DocumentSection,
+  StructuredDiff,
+  StructuredDiffSummary,
+  TokenKind,
+} from "@/lib/tracker/types";
 
 const BLOCK_SELECTOR = "h1,h2,h3,h4,h5,h6,p,li,dt,dd,th,td,button,label,caption,summary,blockquote";
 const TRACKING_PARAMS = new Set(["gclid", "fbclid", "msclkid"]);
@@ -91,4 +97,19 @@ export function createStructuredDiff(before: CanonicalToken[], after: CanonicalT
     if (change.removed) result.removed.push(...change.value.map(decode));
   }
   return result;
+}
+
+export function getTokenSection(token: CanonicalToken): DocumentSection {
+  return token.kind === "title" || token.kind === "meta" ? "HEAD" : "BODY";
+}
+
+export function summarizeStructuredDiff(diff: StructuredDiff): StructuredDiffSummary {
+  const summary: StructuredDiffSummary = {
+    HEAD: { added: 0, removed: 0 },
+    BODY: { added: 0, removed: 0 },
+  };
+
+  for (const item of diff.added) summary[getTokenSection(item)].added += 1;
+  for (const item of diff.removed) summary[getTokenSection(item)].removed += 1;
+  return summary;
 }

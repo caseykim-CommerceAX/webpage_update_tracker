@@ -1,7 +1,7 @@
 import pLimit from "p-limit";
 import { createId, db, nowIso } from "@/lib/db";
 import type { Lifecycle, MonitorMode, Platform, RuleRecord, RunRecord, RunSource } from "@/lib/db-types";
-import { canonicalizeHtml, createStructuredDiff } from "@/lib/tracker/canonicalize";
+import { canonicalizeHtml, createStructuredDiff, summarizeStructuredDiff } from "@/lib/tracker/canonicalize";
 import { fetchPage, isSameDestination } from "@/lib/tracker/fetcher";
 import { evaluateRule, skippedRule, type EvaluatedRule } from "@/lib/tracker/rules";
 import type { CanonicalToken, EndpointScanOutcome } from "@/lib/tracker/types";
@@ -19,7 +19,12 @@ type EndpointForScan = {
   rules: RuleRecord[];
 };
 
-type SnapshotRow = { id: string; hash: string; tokensJson: string };
+type PreviousCheckRow = {
+  checkId: string;
+  snapshotId: string;
+  hash: string;
+  tokensJson: string;
+};
 
 export class RunAlreadyActiveError extends Error {
   constructor() {
@@ -58,6 +63,11 @@ function insertCheck(
     responseMs: number | null;
     errorMessage?: string | null;
     snapshotId?: string | null;
+    comparedCheckId?: string | null;
+    headAddedCount?: number;
+    headRemovedCount?: number;
+    bodyAddedCount?: number;
+    bodyRemovedCount?: number;
     ruleResults?: EvaluatedRule[];
   },
 ) {
@@ -65,12 +75,15 @@ function insertCheck(
   const insert = db.transaction(() => {
     db.prepare(
       `INSERT INTO EndpointCheck
-       (id, runId, endpointId, requestedUrl, finalUrl, httpStatus, availabilityStatus, changeStatus, responseMs, errorMessage, snapshotId, createdAt)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+       (id, runId, endpointId, requestedUrl, finalUrl, httpStatus, availabilityStatus, changeStatus, responseMs,
+        errorMessage, snapshotId, comparedCheckId, headAddedCount, headRemovedCount, bodyAddedCount, bodyRemovedCount, createdAt)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     ).run(
       checkId, runId, endpoint.id, endpoint.url, values.finalUrl, values.httpStatus,
       values.availabilityStatus, values.changeStatus, values.responseMs, values.errorMessage ?? null,
-      values.snapshotId ?? null, nowIso(),
+      values.snapshotId ?? null, values.comparedCheckId ?? null,
+      values.headAddedCount ?? 0, values.headRemovedCount ?? 0,
+      values.bodyAddedCount ?? 0, values.bodyRemovedCount ?? 0, nowIso(),
     );
     const statement = db.prepare(
       `INSERT INTO RuleResult
@@ -145,12 +158,24 @@ async function persistCheck(endpoint: EndpointForScan, runId: string): Promise<E
   const evaluated = rules.map((rule) => evaluateRule(rule, result.status!, result.html));
   let changeStatus: "BASELINE" | "UNCHANGED" | "CHANGED" | "NOT_APPLICABLE" = "NOT_APPLICABLE";
   let snapshotId: string | null = null;
+  let comparedCheckId: string | null = null;
+  let headAddedCount = 0;
+  let headRemovedCount = 0;
+  let bodyAddedCount = 0;
+  let bodyRemovedCount = 0;
 
   if (endpoint.monitorMode === "CONTENT" && result.html) {
     const current = canonicalizeHtml(result.html, result.finalUrl ?? endpoint.url);
     const previous = db
-      .prepare("SELECT id, hash, tokensJson FROM Snapshot WHERE endpointId = ? ORDER BY createdAt DESC LIMIT 1")
-      .get(endpoint.id) as SnapshotRow | undefined;
+      .prepare(
+        `SELECT checkRow.id AS checkId, snapshot.id AS snapshotId, snapshot.hash, snapshot.tokensJson
+         FROM EndpointCheck AS checkRow
+         JOIN Snapshot AS snapshot ON snapshot.id = checkRow.snapshotId
+         WHERE checkRow.endpointId = ? AND checkRow.availabilityStatus = 'LIVE'
+         ORDER BY checkRow.createdAt DESC, checkRow.rowid DESC
+         LIMIT 1`,
+      )
+      .get(endpoint.id) as PreviousCheckRow | undefined;
 
     if (!previous) {
       snapshotId = createId();
@@ -159,17 +184,25 @@ async function persistCheck(endpoint: EndpointForScan, runId: string): Promise<E
       );
       changeStatus = "BASELINE";
     } else if (previous.hash === current.hash) {
-      snapshotId = previous.id;
+      snapshotId = previous.snapshotId;
+      comparedCheckId = previous.checkId;
       changeStatus = "UNCHANGED";
     } else {
       const before = JSON.parse(previous.tokensJson) as CanonicalToken[];
+      const diff = createStructuredDiff(before, current.tokens);
+      const summary = summarizeStructuredDiff(diff);
       snapshotId = createId();
       db.prepare(
         "INSERT INTO Snapshot (id, endpointId, hash, tokensJson, diffJson, previousSnapshotId, createdAt) VALUES (?, ?, ?, ?, ?, ?, ?)",
       ).run(
         snapshotId, endpoint.id, current.hash, current.serialized,
-        JSON.stringify(createStructuredDiff(before, current.tokens)), previous.id, nowIso(),
+        JSON.stringify(diff), previous.snapshotId, nowIso(),
       );
+      comparedCheckId = previous.checkId;
+      headAddedCount = summary.HEAD.added;
+      headRemovedCount = summary.HEAD.removed;
+      bodyAddedCount = summary.BODY.added;
+      bodyRemovedCount = summary.BODY.removed;
       changeStatus = "CHANGED";
     }
   }
@@ -182,6 +215,11 @@ async function persistCheck(endpoint: EndpointForScan, runId: string): Promise<E
     changeStatus,
     responseMs: result.responseMs,
     snapshotId,
+    comparedCheckId,
+    headAddedCount,
+    headRemovedCount,
+    bodyAddedCount,
+    bodyRemovedCount,
     ruleResults: evaluated,
   });
   return { changed: changeStatus === "CHANGED", failed, pending: false };

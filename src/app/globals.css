@@ -1,29 +1,138 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f3f5f1;
-  --foreground: #122019;
+  --background: #f7f7f8;
+  --foreground: #111111;
+  --accent: #e4002b;
+  --line: #d9d9de;
+  --muted: #66666f;
 }
 
-* { box-sizing: border-box; }
-html { background: var(--background); }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+  color-scheme: light;
+}
+
 body {
   margin: 0;
-  background:
-    radial-gradient(circle at 5% 0%, rgba(16, 185, 129, 0.08), transparent 30rem),
-    var(--background);
+  background: var(--background);
   color: var(--foreground);
-  font-family: Pretendard, "Noto Sans KR", "Apple SD Gothic Neo", Inter, system-ui, sans-serif;
+  font-family: "Helvetica Neue", Arial, "Noto Sans KR", "Apple SD Gothic Neo", system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
 }
-button, input, select, textarea { font: inherit; }
-button { cursor: pointer; }
-button:disabled { cursor: not-allowed; opacity: 0.65; }
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+a,
+button,
+input,
+select,
+summary {
+  -webkit-tap-highlight-color: rgba(228, 0, 43, 0.12);
+}
+
+:where(a, button, input, select, textarea, summary):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.skip-link {
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  z-index: 100;
+  translate: 0 -200%;
+  border: 1px solid #111111;
+  background: #ffffff;
+  padding: 0.75rem 1rem;
+  color: #111111;
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+
+.skip-link:focus {
+  translate: 0;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.swiss-grid {
+  background-image:
+    linear-gradient(to right, rgba(17, 17, 17, 0.055) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(17, 17, 17, 0.055) 1px, transparent 1px);
+  background-size: 5rem 5rem;
+}
+
+.content-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 88px;
+}
 
 @layer components {
-  .panel { @apply rounded-2xl border border-slate-200/90 bg-white shadow-[0_10px_35px_rgba(15,23,42,0.045)]; }
-  .eyebrow { @apply text-[10px] font-black uppercase tracking-[0.2em] text-emerald-700; }
-  .button-primary { @apply inline-flex items-center justify-center rounded-xl bg-[#16382d] px-5 py-3 text-sm font-extrabold text-white shadow-sm transition hover:bg-[#205242] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700; }
-  .button-secondary { @apply inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white font-bold text-slate-700 shadow-sm transition hover:border-slate-300 hover:bg-slate-50; }
-  .form-input { @apply rounded-lg border border-slate-200 bg-white px-3 py-2.5 text-sm font-medium text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-emerald-600 focus:ring-2 focus:ring-emerald-600/10; }
-  .form-label { @apply mb-1.5 block text-xs font-extrabold text-slate-700; }
+  .panel {
+    @apply border border-neutral-300 bg-white;
+  }
+
+  .eyebrow {
+    @apply text-[10px] font-black uppercase tracking-[0.2em] text-[#e4002b];
+  }
+
+  .button-primary {
+    @apply inline-flex min-h-11 items-center justify-center border border-[#e4002b] bg-[#e4002b] px-5 py-3 text-sm font-extrabold text-white transition-colors duration-150 hover:border-[#111111] hover:bg-[#111111];
+  }
+
+  .button-secondary {
+    @apply inline-flex min-h-10 items-center justify-center border border-neutral-400 bg-white font-bold text-neutral-800 transition-colors duration-150 hover:border-neutral-950 hover:bg-neutral-950 hover:text-white;
+  }
+
+  .text-link {
+    @apply font-bold text-neutral-950 underline decoration-neutral-400 underline-offset-4 transition-colors duration-150 hover:text-[#e4002b] hover:decoration-[#e4002b];
+  }
+
+  .form-input {
+    @apply min-h-11 border border-neutral-400 bg-white px-3 py-2.5 text-sm font-medium text-neutral-900 transition-colors duration-150 placeholder:text-neutral-400 focus:border-[#e4002b];
+  }
+
+  .form-label {
+    @apply mb-1.5 block text-xs font-extrabold text-neutral-700;
+  }
+
+  .diagnostic-strip {
+    @apply border-l-4 border-[#e4002b] bg-white px-4 py-3;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

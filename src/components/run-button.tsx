@@ -17,18 +17,15 @@ type RunProgress = {
 const TERMINAL = new Set(["COMPLETED", "COMPLETED_WITH_ERRORS", "FAILED"]);
 
 export function RunButton({
-  targetIds,
-  compact = false,
   initialRunId,
 }: {
-  targetIds?: string[];
-  compact?: boolean;
   initialRunId?: string | null;
 }) {
   const router = useRouter();
   const [runId, setRunId] = useState(initialRunId ?? null);
   const [progress, setProgress] = useState<RunProgress | null>(null);
   const [message, setMessage] = useState<string | null>(null);
+  const [starting, setStarting] = useState(false);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
@@ -60,32 +57,41 @@ export function RunButton({
 
   async function start() {
     setMessage(null);
-    const response = await fetch("/api/runs", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify(targetIds?.length ? { targetIds } : {}),
-    });
-    const body = (await response.json()) as { runId?: string; error?: string };
-    if (!response.ok || !body.runId) {
-      setMessage(body.error ?? "검사를 시작하지 못했습니다.");
-      return;
+    setStarting(true);
+    try {
+      const response = await fetch("/api/runs", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({}),
+      });
+      const body = (await response.json()) as { runId?: string; error?: string };
+      if (!response.ok || !body.runId) {
+        setMessage(body.error ?? "검사를 시작하지 못했습니다. 잠시 후 다시 시도해 주세요.");
+        return;
+      }
+      setProgress(null);
+      setRunId(body.runId);
+    } catch {
+      setMessage("검사 요청을 보내지 못했습니다. 서버 연결을 확인해 주세요.");
+    } finally {
+      setStarting(false);
     }
-    setProgress(null);
-    setRunId(body.runId);
   }
 
-  const running = Boolean(runId);
+  const running = Boolean(runId) || starting;
   return (
-    <div className={compact ? "inline-flex flex-col items-end gap-1" : "flex flex-col items-end gap-2"}>
+    <div className="flex w-full flex-col items-start gap-2 sm:w-auto">
       <button
         type="button"
         onClick={start}
         disabled={running}
-        className={compact ? "button-secondary px-3 py-2 text-xs" : "button-primary"}
+        className="button-primary w-full sm:w-auto"
       >
-        {running ? `검사 중 ${progress ? `${progress.processedCount}/${progress.totalCount}` : "…"}` : compact ? "이 항목 검사" : "지금 전체 검사"}
+        {starting ? "진단 준비 중…" : runId ? `진단 중 ${progress ? `${progress.processedCount}/${progress.totalCount}` : "…"}` : "지금 전체 진단"}
       </button>
-      {message ? <p className="max-w-64 text-right text-xs font-medium text-rose-700">{message}</p> : null}
+      <p aria-live="polite" className={`max-w-72 text-xs font-bold text-[#e4002b] ${message ? "block" : "sr-only"}`}>
+        {message ?? ""}
+      </p>
     </div>
   );
 }

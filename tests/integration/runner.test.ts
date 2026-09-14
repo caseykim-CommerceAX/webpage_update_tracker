@@ -47,14 +47,34 @@ describe("검사 실행 이력", () => {
 
     const second = runner.createQueuedRun("MANUAL", [targetId]);
     await runner.executeRun(second.id);
-    expect((database.db.prepare("SELECT changeStatus FROM EndpointCheck WHERE runId = ?").get(second.id) as { changeStatus: string }).changeStatus).toBe("UNCHANGED");
+    const unchanged = database.db.prepare(
+      "SELECT id, changeStatus, comparedCheckId FROM EndpointCheck WHERE runId = ?",
+    ).get(second.id) as { id: string; changeStatus: string; comparedCheckId: string };
+    expect(unchanged.changeStatus).toBe("UNCHANGED");
+    expect(unchanged.comparedCheckId).toBeTruthy();
 
     vi.stubGlobal("fetch", vi.fn().mockImplementation(() => Promise.resolve(new Response(html("새 혜택"), { status: 200, headers: { "content-type": "text/html" } }))));
     const third = runner.createQueuedRun("MANUAL", [targetId]);
     const completed = await runner.executeRun(third.id);
     expect(completed.changedCount).toBe(1);
-    const changed = database.db.prepare("SELECT changeStatus, snapshotId FROM EndpointCheck WHERE runId = ?").get(third.id) as { changeStatus: string; snapshotId: string };
+    const changed = database.db.prepare(
+      `SELECT changeStatus, snapshotId, comparedCheckId,
+              headAddedCount, headRemovedCount, bodyAddedCount, bodyRemovedCount
+       FROM EndpointCheck WHERE runId = ?`,
+    ).get(third.id) as {
+      changeStatus: string;
+      snapshotId: string;
+      comparedCheckId: string;
+      headAddedCount: number;
+      headRemovedCount: number;
+      bodyAddedCount: number;
+      bodyRemovedCount: number;
+    };
     expect(changed.changeStatus).toBe("CHANGED");
+    expect(changed.comparedCheckId).toBe(unchanged.id);
+    expect(changed.headAddedCount + changed.headRemovedCount).toBe(0);
+    expect(changed.bodyAddedCount).toBe(1);
+    expect(changed.bodyRemovedCount).toBe(1);
     expect((database.db.prepare("SELECT diffJson FROM Snapshot WHERE id = ?").get(changed.snapshotId) as { diffJson: string }).diffJson).toContain("새 혜택");
   });
 

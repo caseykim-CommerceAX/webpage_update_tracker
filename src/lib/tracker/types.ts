@@ -1,5 +1,7 @@
 export type TokenKind = "title" | "meta" | "heading" | "text" | "link" | "image";
 
+export type DocumentSection = "HEAD" | "BODY";
+
 export type CanonicalToken = {
   kind: TokenKind;
   key: string;
@@ -10,6 +12,13 @@ export type StructuredDiff = {
   added: CanonicalToken[];
   removed: CanonicalToken[];
 };
+
+export type SectionChangeCount = {
+  added: number;
+  removed: number;
+};
+
+export type StructuredDiffSummary = Record<DocumentSection, SectionChangeCount>;
 
 export type FetchResult = {
   requestedUrl: string;

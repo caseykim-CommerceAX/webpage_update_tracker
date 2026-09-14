@@ -14,10 +14,11 @@ function initialize(database: Database.Database) {
   database.pragma("journal_mode = WAL");
   database.pragma("foreign_keys = ON");
   database.exec("CREATE TABLE IF NOT EXISTS _Migration (name TEXT PRIMARY KEY, appliedAt TEXT NOT NULL)");
-  const name = "202609140001_init";
-  const applied = database.prepare("SELECT name FROM _Migration WHERE name = ?").get(name);
-  if (!applied) {
-    const migrationPath = resolve(process.cwd(), "prisma/migrations/202609140001_init/migration.sql");
+  const migrations = ["202609140001_init", "202609140002_check_comparisons"];
+  for (const name of migrations) {
+    const applied = database.prepare("SELECT name FROM _Migration WHERE name = ?").get(name);
+    if (applied) continue;
+    const migrationPath = resolve(process.cwd(), `prisma/migrations/${name}/migration.sql`);
     if (!existsSync(migrationPath)) throw new Error(`DB 마이그레이션 파일이 없습니다: ${migrationPath}`);
     const apply = database.transaction(() => {
       database.exec(readFileSync(migrationPath, "utf8"));

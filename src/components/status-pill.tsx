@@ -1,17 +1,17 @@
 type Tone = "green" | "red" | "amber" | "blue" | "gray" | "violet";
 
 const toneClasses: Record<Tone, string> = {
-  green: "bg-emerald-50 text-emerald-700 ring-emerald-600/20",
-  red: "bg-rose-50 text-rose-700 ring-rose-600/20",
-  amber: "bg-amber-50 text-amber-800 ring-amber-600/20",
-  blue: "bg-sky-50 text-sky-700 ring-sky-600/20",
-  gray: "bg-slate-100 text-slate-600 ring-slate-500/20",
-  violet: "bg-violet-50 text-violet-700 ring-violet-600/20",
+  green: "bg-white text-neutral-950 ring-neutral-400",
+  red: "bg-white text-[#e4002b] ring-[#e4002b]",
+  amber: "bg-neutral-100 text-neutral-800 ring-neutral-400",
+  blue: "bg-neutral-950 text-white ring-neutral-950",
+  gray: "bg-neutral-100 text-neutral-600 ring-neutral-300",
+  violet: "bg-white text-neutral-950 ring-neutral-950",
 };
 
 export function StatusPill({ label, tone = "gray" }: { label: string; tone?: Tone }) {
   return (
-    <span className={`inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-bold tracking-tight ring-1 ring-inset ${toneClasses[tone]}`}>
+    <span className={`inline-flex items-center px-2.5 py-1 text-[11px] font-bold tracking-tight ring-1 ring-inset ${toneClasses[tone]}`}>
       {label}
     </span>
   );

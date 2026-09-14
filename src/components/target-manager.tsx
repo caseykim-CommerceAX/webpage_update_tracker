@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import type { TargetView } from "@/lib/queries";
 import type { Lifecycle, MonitorMode, Platform, RuleType } from "@/lib/db-types";
 import { StatusPill } from "@/components/status-pill";
@@ -111,69 +111,85 @@ export function TargetManager({ targets }: { targets: TargetView[] }) {
   const [draft, setDraft] = useState<Draft | null>(null);
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
+  const editorRef = useRef<HTMLElement | null>(null);
 
   async function save(nextDraft = draft) {
     if (!nextDraft) return;
     setSaving(true);
     setMessage(null);
-    const response = await fetch(nextDraft.id ? `/api/targets/${nextDraft.id}` : "/api/targets", {
-      method: nextDraft.id ? "PATCH" : "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify(toPayload(nextDraft)),
-    });
-    const result = (await response.json()) as { error?: string };
-    setSaving(false);
-    if (!response.ok) {
-      setMessage(result.error ?? "저장하지 못했습니다.");
-      return;
+    try {
+      const response = await fetch(nextDraft.id ? `/api/targets/${nextDraft.id}` : "/api/targets", {
+        method: nextDraft.id ? "PATCH" : "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(toPayload(nextDraft)),
+      });
+      const result = (await response.json()) as { error?: string };
+      if (!response.ok) {
+        setMessage(result.error ?? "저장하지 못했습니다. 입력값을 확인해 주세요.");
+        return;
+      }
+      setDraft(null);
+      router.refresh();
+    } catch {
+      setMessage("저장 요청을 보내지 못했습니다. 서버 연결을 확인해 주세요.");
+    } finally {
+      setSaving(false);
     }
-    setDraft(null);
-    router.refresh();
   }
 
   function updateRule(index: number, patch: Partial<DraftRule>) {
     setDraft((current) => current ? { ...current, rules: current.rules.map((rule, ruleIndex) => ruleIndex === index ? { ...rule, ...patch } : rule) } : current);
   }
 
+  function showEditor(nextDraft: Draft) {
+    setMessage(null);
+    setDraft(nextDraft);
+    window.requestAnimationFrame(() => editorRef.current?.scrollIntoView({ block: "start" }));
+  }
+
   return (
-    <div className="grid gap-6 xl:grid-cols-[minmax(0,1fr)_500px]">
-      <section className="panel overflow-hidden">
-        <div className="flex items-center justify-between border-b border-slate-200 px-5 py-5">
-          <div><p className="eyebrow">TARGET LIBRARY</p><h2 className="mt-1 text-xl font-black">{targets.length}개 모니터링 항목</h2></div>
-          <button type="button" className="button-primary" onClick={() => { setMessage(null); setDraft({ ...EMPTY_DRAFT, rules: [...EMPTY_DRAFT.rules] }); }}>새 대상 추가</button>
+    <div className="grid gap-6 xl:grid-cols-[minmax(0,1fr)_minmax(420px,520px)]">
+      <section className="panel order-2 overflow-hidden xl:order-1">
+        <div className="flex flex-col gap-4 border-b border-neutral-300 px-5 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+          <div><p className="eyebrow">등록 대상</p><h2 className="mt-1 text-xl font-black text-neutral-950">{targets.length}개 모니터링 항목</h2></div>
+          <button type="button" className="button-primary" onClick={() => showEditor({ ...EMPTY_DRAFT, rules: [...EMPTY_DRAFT.rules] })}>새 대상 추가</button>
         </div>
-        <div className="divide-y divide-slate-100">
+        <div className="divide-y divide-neutral-300">
           {targets.map((target) => (
-            <article key={target.id} className="flex flex-col gap-4 px-5 py-5 transition hover:bg-slate-50/70 sm:flex-row sm:items-center sm:justify-between">
+            <article key={target.id} className="flex flex-col gap-4 bg-white px-5 py-5 transition-colors duration-150 hover:bg-neutral-100 sm:flex-row sm:items-center sm:justify-between sm:px-6">
               <div className="flex min-w-0 items-start gap-3">
-                <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-slate-100 text-xs font-black text-slate-600">{target.displayOrder}</span>
+                <span className="tabular-nums grid size-9 shrink-0 place-items-center border border-neutral-400 text-xs font-black text-neutral-700">{target.displayOrder}</span>
                 <div className="min-w-0">
-                  <div className="flex flex-wrap items-center gap-2"><h3 className="font-black text-slate-950">{target.name}</h3>{target.enabled ? <StatusPill label="활성" tone="green" /> : <StatusPill label="비활성" />}</div>
-                  <p className="mt-1 text-xs font-semibold text-slate-500">{target.category} · URL {target.endpoints.filter((item) => item.enabled).length}개 · 규칙 {target.rules.length}개</p>
-                  <p className="mt-2 max-w-2xl truncate text-xs text-slate-400">{target.endpoints.find((item) => item.platform === "DESKTOP" && item.enabled)?.url}</p>
+                  <div className="flex flex-wrap items-center gap-2"><h3 className="font-black text-neutral-950">{target.name}</h3>{target.enabled ? <StatusPill label="활성" tone="green" /> : <StatusPill label="비활성" />}</div>
+                  <p className="mt-1 text-xs font-semibold text-neutral-500">{target.category} · URL {target.endpoints.filter((item) => item.enabled).length}개 · 규칙 {target.rules.length}개</p>
+                  <p className="mt-2 max-w-2xl truncate text-xs text-neutral-500">{target.endpoints.find((item) => item.platform === "DESKTOP" && item.enabled)?.url}</p>
                 </div>
               </div>
               <div className="flex shrink-0 gap-2">
-                <button type="button" className="button-secondary px-3 py-2 text-xs" onClick={() => { const next = { ...draftFromTarget(target), enabled: !target.enabled }; void save(next); }}>{target.enabled ? "비활성화" : "활성화"}</button>
-                <button type="button" className="button-secondary px-3 py-2 text-xs" onClick={() => { setMessage(null); setDraft(draftFromTarget(target)); }}>편집</button>
+                <button type="button" disabled={saving} className="button-secondary px-3 py-2 text-xs" onClick={() => {
+                  if (target.enabled && !window.confirm(`${target.name} 항목을 비활성화할까요? 예약 검사에서 제외됩니다.`)) return;
+                  const next = { ...draftFromTarget(target), enabled: !target.enabled };
+                  void save(next);
+                }}>{target.enabled ? "비활성화" : "활성화"}</button>
+                <button type="button" className="button-secondary px-3 py-2 text-xs" onClick={() => showEditor(draftFromTarget(target))}>편집</button>
               </div>
             </article>
           ))}
         </div>
       </section>
 
-      <aside className="panel h-fit p-5 xl:sticky xl:top-5">
+      <aside ref={editorRef} className="panel order-1 h-fit scroll-mt-6 p-5 sm:p-6 xl:order-2 xl:sticky xl:top-5">
         {draft ? (
           <form onSubmit={(event) => { event.preventDefault(); void save(); }} className="space-y-5">
             <div className="flex items-start justify-between gap-3">
-              <div><p className="eyebrow">TARGET EDITOR</p><h2 className="mt-1 text-xl font-black">{draft.id ? "대상 편집" : "새 대상"}</h2></div>
-              <button type="button" className="text-sm font-bold text-slate-400 hover:text-slate-700" onClick={() => setDraft(null)}>닫기</button>
+              <div><p className="eyebrow">대상 편집기</p><h2 className="mt-1 text-xl font-black text-neutral-950">{draft.id ? "대상 편집" : "새 대상"}</h2></div>
+              <button type="button" className="text-link text-sm" onClick={() => setDraft(null)}>편집 닫기</button>
             </div>
             <div className="grid gap-3 sm:grid-cols-2">
-              <label><span className="form-label">이름</span><input required className="form-input w-full" value={draft.name} onChange={(e) => setDraft({ ...draft, name: e.target.value })} /></label>
-              <label><span className="form-label">카테고리</span><input required className="form-input w-full" value={draft.category} onChange={(e) => setDraft({ ...draft, category: e.target.value })} /></label>
-              <label><span className="form-label">추적 방식</span><select className="form-input w-full" value={draft.monitorMode} onChange={(e) => setDraft({ ...draft, monitorMode: e.target.value as MonitorMode })}><option value="CONTENT">콘텐츠 + 규칙</option><option value="STATUS_ONLY">HTTP 상태만</option></select></label>
-              <label><span className="form-label">사용 여부</span><select className="form-input w-full" value={String(draft.enabled)} onChange={(e) => setDraft({ ...draft, enabled: e.target.value === "true" })}><option value="true">활성</option><option value="false">비활성</option></select></label>
+              <label><span className="form-label">이름</span><input required name="target-name" autoComplete="off" className="form-input w-full" value={draft.name} onChange={(e) => setDraft({ ...draft, name: e.target.value })} /></label>
+              <label><span className="form-label">카테고리</span><input required name="target-category" autoComplete="off" className="form-input w-full" value={draft.category} onChange={(e) => setDraft({ ...draft, category: e.target.value })} /></label>
+              <label><span className="form-label">추적 방식</span><select name="monitor-mode" className="form-input w-full" value={draft.monitorMode} onChange={(e) => setDraft({ ...draft, monitorMode: e.target.value as MonitorMode })}><option value="CONTENT">콘텐츠 + 규칙</option><option value="STATUS_ONLY">HTTP 상태만</option></select></label>
+              <label><span className="form-label">사용 여부</span><select name="target-enabled" className="form-input w-full" value={String(draft.enabled)} onChange={(e) => setDraft({ ...draft, enabled: e.target.value === "true" })}><option value="true">활성</option><option value="false">비활성</option></select></label>
             </div>
 
             {(["desktop", "mobile"] as const).map((key) => {
@@ -182,31 +198,31 @@ export function TargetManager({ targets }: { targets: TargetView[] }) {
               const referenceKey = `${key}Reference` as const;
               const lifecycleKey = `${key}Lifecycle` as const;
               return (
-                <fieldset key={key} className="rounded-xl border border-slate-200 p-4">
-                  <legend className="px-1 text-xs font-black text-slate-700">{title}</legend>
+                <fieldset key={key} className="border border-neutral-300 p-4">
+                  <legend className="px-1 text-xs font-black text-neutral-700">{title}</legend>
                   <div className="space-y-3">
-                    <label><span className="form-label">현재 URL</span><input type="url" required={key === "desktop"} className="form-input w-full" placeholder="https://" value={draft[urlKey]} onChange={(e) => setDraft({ ...draft, [urlKey]: e.target.value })} /></label>
-                    <label><span className="form-label">이전 URL</span><input type="url" className="form-input w-full" placeholder="선택 사항" value={draft[referenceKey]} onChange={(e) => setDraft({ ...draft, [referenceKey]: e.target.value })} /></label>
-                    <label><span className="form-label">수명주기</span><select className="form-input w-full" value={draft[lifecycleKey]} onChange={(e) => setDraft({ ...draft, [lifecycleKey]: e.target.value as Lifecycle })}><option value="EXISTING">기존 페이지</option><option value="PRELAUNCH">오픈 대기</option></select></label>
+                    <label><span className="form-label">현재 URL</span><input type="url" name={`${key}-url`} autoComplete="off" required={key === "desktop"} className="form-input w-full" placeholder="https://example.com/…" value={draft[urlKey]} onChange={(e) => setDraft({ ...draft, [urlKey]: e.target.value })} /></label>
+                    <label><span className="form-label">이전 URL</span><input type="url" name={`${key}-reference-url`} autoComplete="off" className="form-input w-full" placeholder="선택 사항…" value={draft[referenceKey]} onChange={(e) => setDraft({ ...draft, [referenceKey]: e.target.value })} /></label>
+                    <label><span className="form-label">수명주기</span><select name={`${key}-lifecycle`} className="form-input w-full" value={draft[lifecycleKey]} onChange={(e) => setDraft({ ...draft, [lifecycleKey]: e.target.value as Lifecycle })}><option value="EXISTING">기존 페이지</option><option value="PRELAUNCH">오픈 대기</option></select></label>
                   </div>
                 </fieldset>
               );
             })}
 
             <fieldset className="space-y-3">
-              <div className="flex items-center justify-between"><legend className="text-sm font-black">검사 규칙</legend><div className="flex gap-1"><button type="button" className="button-secondary px-2 py-1 text-[11px]" onClick={() => setDraft({ ...draft, rules: [...draft.rules, blankRule("META_ATTRIBUTE")] })}>+ meta</button><button type="button" className="button-secondary px-2 py-1 text-[11px]" onClick={() => setDraft({ ...draft, rules: [...draft.rules, blankRule("TEXT_CONTAINS")] })}>+ 텍스트</button></div></div>
+              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"><legend className="text-sm font-black">검사 규칙</legend><div className="flex flex-wrap gap-2"><button type="button" className="button-secondary px-2 py-1 text-[11px]" onClick={() => setDraft({ ...draft, rules: [...draft.rules, blankRule("META_ATTRIBUTE")] })}>Meta 규칙 추가</button><button type="button" className="button-secondary px-2 py-1 text-[11px]" onClick={() => setDraft({ ...draft, rules: [...draft.rules, blankRule("TEXT_CONTAINS")] })}>텍스트 규칙 추가</button></div></div>
               {draft.rules.map((rule, index) => (
-                <div key={`${index}-${rule.type}`} className="rounded-xl bg-slate-50 p-3">
-                  <div className="flex gap-2"><select className="form-input min-w-36" value={rule.type} onChange={(e) => updateRule(index, blankRule(e.target.value as RuleType))}><option value="HTTP_STATUS">HTTP 상태</option><option value="META_ATTRIBUTE">meta 속성</option><option value="TEXT_CONTAINS">텍스트 포함</option></select><input className="form-input min-w-0 flex-1" value={rule.label} onChange={(e) => updateRule(index, { label: e.target.value })} placeholder="규칙 이름" /><button type="button" aria-label="규칙 삭제" className="px-2 font-black text-slate-400 hover:text-rose-600" onClick={() => setDraft({ ...draft, rules: draft.rules.filter((_, itemIndex) => itemIndex !== index) })}>×</button></div>
-                  {rule.type === "HTTP_STATUS" ? <label className="mt-2 block"><span className="form-label">허용 상태 코드</span><input className="form-input w-full" value={rule.expectedStatuses} onChange={(e) => updateRule(index, { expectedStatuses: e.target.value })} placeholder="200,204" /></label> : <div className="mt-2 grid gap-2 sm:grid-cols-2"><label><span className="form-label">CSS 선택자</span><input className="form-input w-full" value={rule.selector} onChange={(e) => updateRule(index, { selector: e.target.value })} /></label>{rule.type === "META_ATTRIBUTE" ? <label><span className="form-label">속성</span><input className="form-input w-full" value={rule.attribute} onChange={(e) => updateRule(index, { attribute: e.target.value })} /></label> : null}<label className={rule.type === "TEXT_CONTAINS" ? "sm:col-span-1" : "sm:col-span-2"}><span className="form-label">기대값</span><input className="form-input w-full" value={rule.expectedValue} onChange={(e) => updateRule(index, { expectedValue: e.target.value })} /></label></div>}
+                <div key={`${index}-${rule.type}`} className="border border-neutral-300 bg-neutral-100 p-3">
+                  <div className="grid gap-2 sm:grid-cols-[140px_minmax(0,1fr)_auto]"><label><span className="sr-only">규칙 유형</span><select name={`rule-${index}-type`} className="form-input w-full" value={rule.type} onChange={(e) => updateRule(index, blankRule(e.target.value as RuleType))}><option value="HTTP_STATUS">HTTP 상태</option><option value="META_ATTRIBUTE">Meta 속성</option><option value="TEXT_CONTAINS">텍스트 포함</option></select></label><label><span className="sr-only">규칙 이름</span><input name={`rule-${index}-label`} autoComplete="off" className="form-input w-full" value={rule.label} onChange={(e) => updateRule(index, { label: e.target.value })} placeholder="규칙 이름…" /></label><button type="button" className="button-secondary px-3 py-2 text-xs" onClick={() => setDraft({ ...draft, rules: draft.rules.filter((_, itemIndex) => itemIndex !== index) })}>규칙 삭제</button></div>
+                  {rule.type === "HTTP_STATUS" ? <label className="mt-2 block"><span className="form-label">허용 상태 코드</span><input name={`rule-${index}-statuses`} inputMode="numeric" autoComplete="off" className="form-input w-full" value={rule.expectedStatuses} onChange={(e) => updateRule(index, { expectedStatuses: e.target.value })} placeholder="예: 200, 204…" /></label> : <div className="mt-2 grid gap-2 sm:grid-cols-2"><label><span className="form-label">CSS 선택자</span><input name={`rule-${index}-selector`} autoComplete="off" spellCheck={false} className="form-input w-full" value={rule.selector} onChange={(e) => updateRule(index, { selector: e.target.value })} /></label>{rule.type === "META_ATTRIBUTE" ? <label><span className="form-label">속성</span><input name={`rule-${index}-attribute`} autoComplete="off" spellCheck={false} className="form-input w-full" value={rule.attribute} onChange={(e) => updateRule(index, { attribute: e.target.value })} /></label> : null}<label className={rule.type === "TEXT_CONTAINS" ? "sm:col-span-1" : "sm:col-span-2"}><span className="form-label">기대값</span><input name={`rule-${index}-expected`} autoComplete="off" className="form-input w-full" value={rule.expectedValue} onChange={(e) => updateRule(index, { expectedValue: e.target.value })} /></label></div>}
                 </div>
               ))}
             </fieldset>
-            {message ? <p className="rounded-lg bg-rose-50 px-3 py-2 text-xs font-bold text-rose-700">{message}</p> : null}
+            <p aria-live="polite" className={`border border-[#e4002b] bg-white px-3 py-2 text-xs font-bold text-[#e4002b] ${message ? "block" : "sr-only"}`}>{message ?? ""}</p>
             <button type="submit" disabled={saving} className="button-primary w-full">{saving ? "저장 중…" : "변경사항 저장"}</button>
           </form>
         ) : (
-          <div className="py-16 text-center"><p className="text-4xl">↖</p><h2 className="mt-4 font-black text-slate-800">편집할 대상을 선택하세요</h2><p className="mt-2 text-sm leading-6 text-slate-500">URL을 바꾸면 기존 Endpoint는 이력과 함께 보존되고 새 기준선이 만들어집니다.</p></div>
+          <div className="py-12"><p className="eyebrow">편집 안내</p><h2 className="mt-3 text-xl font-black text-neutral-950">대상을 선택해 설정을 변경하세요.</h2><p className="mt-3 text-sm leading-6 text-neutral-600">URL을 바꾸면 기존 Endpoint는 이력과 함께 보존되고 새 기준선이 만들어집니다.</p></div>
         )}
       </aside>
     </div>
