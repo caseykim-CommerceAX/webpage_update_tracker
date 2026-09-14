@@ -4,7 +4,7 @@ import { runPill } from "@/components/status-pill";
 import { TagDiff } from "@/components/tag-diff";
 import { TargetTable } from "@/components/target-table";
 import { formatDateTime } from "@/lib/format";
-import { getRecentRuns, getRunTagChanges, getRunTagSummary, getTargets } from "@/lib/queries";
+import { getCheckHistoryTotal, getRecentRuns, getRunLiveSummary, getRunTagChanges, getTargets } from "@/lib/queries";
 
 export const dynamic = "force-dynamic";
 
@@ -17,27 +17,26 @@ export default function DashboardPage() {
   ) ?? null;
   const monitoredTargets = targets.filter((target) => target.enabled);
   const endpoints = monitoredTargets.flatMap((target) => target.endpoints.filter((endpoint) => endpoint.enabled));
-  const tagSummary = latestRun ? getRunTagSummary(latestRun.id) : null;
+  const liveSummary = latestRun ? getRunLiveSummary(latestRun.id) : null;
   const tagChanges = latestRun ? getRunTagChanges(latestRun.id) : [];
-  const headChanges = (tagSummary?.headAddedCount ?? 0) + (tagSummary?.headRemovedCount ?? 0);
-  const bodyChanges = (tagSummary?.bodyAddedCount ?? 0) + (tagSummary?.bodyRemovedCount ?? 0);
+  const checkHistoryTotal = getCheckHistoryTotal();
   const overview = [
-    { label: "진단 URL", value: latestRun?.processedCount ?? 0, description: `전체 ${latestRun?.totalCount ?? endpoints.length}개 중 완료` },
-    { label: "변경 URL", value: tagSummary?.changedEndpoints ?? 0, description: "직전 저장 진단 대비" },
-    { label: "HEAD 태그", value: headChanges, description: `추가 ${tagSummary?.headAddedCount ?? 0} · 삭제 ${tagSummary?.headRemovedCount ?? 0}` },
-    { label: "BODY 태그", value: bodyChanges, description: `추가 ${tagSummary?.bodyAddedCount ?? 0} · 삭제 ${tagSummary?.bodyRemovedCount ?? 0}` },
+    { label: "라이브 완료", value: liveSummary?.liveCompleteCount ?? 0, description: "필수 신호 모두 확인", className: "border-t-4 border-t-emerald-500 bg-emerald-50" },
+    { label: "체크 필요", value: liveSummary?.checkRequiredCount ?? 0, description: "필수 신호 1개만 확인", className: "border-t-4 border-t-amber-500 bg-amber-50" },
+    { label: "라이브 전", value: liveSummary?.beforeLiveCount ?? 0, description: "필수 신호 미확인", className: "border-t-4 border-t-sky-500 bg-sky-50" },
+    { label: "판정 불가", value: liveSummary?.unverifiedCount ?? 0, description: "접속 오류 또는 미검사", className: "border-t-4 border-t-slate-400 bg-slate-50" },
   ];
 
   return (
     <div className="space-y-8">
       <section className="grid border border-neutral-950 bg-white lg:grid-cols-[minmax(0,1fr)_320px]">
         <div className="p-6 sm:p-8 lg:p-10">
-          <p className="eyebrow">HTML 변경 모니터링</p>
+          <p className="eyebrow">페이지 라이브 모니터링</p>
           <h1 className="mt-3 max-w-3xl text-pretty text-3xl font-black tracking-[-0.045em] text-neutral-950 sm:text-5xl">
-            HEAD/BODY 태그 변경 진단
+            페이지 라이브 현황
           </h1>
           <p className="mt-4 max-w-2xl text-sm font-medium leading-6 text-neutral-600 sm:text-base">
-            현재 문구의 존재 여부를 합격·실패로 판정하지 않습니다. DB의 직전 진단과 비교해 오늘 추가·삭제·수정된 태그만 알려드립니다.
+            HEAD의 OG 태그와 BODY의 “이런 분께 추천 드려요” 문구를 확인합니다. 두 신호가 모두 있으면 라이브 완료, 하나만 있으면 체크 필요입니다.
           </p>
           <p className="tabular-nums mt-5 text-xs font-bold text-neutral-500">
             {latestRun ? `최근 완료 · ${formatDateTime(latestRun.completedAt ?? latestRun.createdAt)}` : "아직 완료된 진단이 없습니다."}
@@ -56,9 +55,9 @@ export default function DashboardPage() {
         </div>
       </section>
 
-      <section aria-label="최근 태그 진단 요약" className="grid grid-cols-2 border-l border-t border-neutral-300 xl:grid-cols-4">
+      <section aria-label="최근 라이브 진단 요약" className="grid grid-cols-2 border-l border-t border-neutral-300 xl:grid-cols-4">
         {overview.map((item) => (
-          <article key={item.label} className="min-w-0 border-b border-r border-neutral-300 bg-white p-4 sm:p-6">
+          <article key={item.label} className={`min-w-0 border-b border-r border-neutral-300 p-4 sm:p-6 ${item.className}`}>
             <p className="text-xs font-extrabold text-neutral-600">{item.label}</p>
             <p className="tabular-nums mt-3 text-3xl font-black tracking-[-0.05em] text-neutral-950 sm:text-4xl">{item.value}</p>
             <p className="mt-2 text-xs font-medium text-neutral-500">{item.description}</p>
@@ -66,12 +65,27 @@ export default function DashboardPage() {
         ))}
       </section>
 
+      <TargetTable targets={monitoredTargets} />
+
+      <section className="grid border border-neutral-950 bg-neutral-950 text-white lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center" aria-labelledby="check-history-title">
+        <div className="p-5 sm:p-6">
+          <p className="text-xs font-black text-neutral-400">DB 저장 이력</p>
+          <h2 id="check-history-title" className="mt-2 text-2xl font-black">전체 진단 로그</h2>
+          <p className="mt-2 max-w-3xl text-sm leading-6 text-neutral-300">
+            현재까지 저장된 {checkHistoryTotal.toLocaleString("ko-KR")}건의 URL별 판정과 상태 변화를 조회합니다. 라이브 완료·체크 필요로 바뀐 시점과 당시 실제 태그를 확인할 수 있습니다.
+          </p>
+        </div>
+        <div className="border-t border-neutral-700 p-5 sm:p-6 lg:border-l lg:border-t-0">
+          <Link href="/checks" className="button-primary inline-flex w-full justify-center px-5 py-3 text-sm">전체 로그 보기</Link>
+        </div>
+      </section>
+
       <section className="panel" aria-labelledby="tag-change-title">
         <div className="flex flex-col gap-3 border-b border-neutral-300 p-5 sm:flex-row sm:items-end sm:justify-between sm:p-6">
           <div>
-            <p className="eyebrow">최근 완료 진단</p>
+            <p className="eyebrow">보조 변경 이력</p>
             <h2 id="tag-change-title" className="mt-2 text-2xl font-black tracking-tight text-neutral-950">태그 변경 상세</h2>
-            <p className="mt-1 text-sm text-neutral-600">어제 없던 문구가 오늘 생긴 경우처럼, 변경된 URL만 표시합니다.</p>
+            <p className="mt-1 text-sm text-neutral-600">라이브 판정과 별도로, 직전 저장 진단 이후 변경된 HTML을 표시합니다.</p>
           </div>
           {latestRun ? <Link href={`/runs/${latestRun.id}`} className="text-link shrink-0 text-xs">전체 실행 상세 보기</Link> : null}
         </div>
@@ -124,8 +138,6 @@ export default function DashboardPage() {
           </div>
         )}
       </section>
-
-      <TargetTable targets={monitoredTargets} />
 
       <section className="grid border border-neutral-300 bg-white lg:grid-cols-[minmax(0,1fr)_320px]">
         <div className="p-5 sm:p-6">

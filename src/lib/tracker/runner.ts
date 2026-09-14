@@ -1,8 +1,9 @@
 import pLimit from "p-limit";
 import { createId, db, nowIso } from "@/lib/db";
-import type { Lifecycle, MonitorMode, Platform, RuleRecord, RunRecord, RunSource } from "@/lib/db-types";
+import type { Lifecycle, LiveStatus, MonitorMode, Platform, RuleRecord, RunRecord, RunSource } from "@/lib/db-types";
 import { canonicalizeHtml, createStructuredDiff, summarizeStructuredDiff } from "@/lib/tracker/canonicalize";
 import { fetchPage, isSameDestination } from "@/lib/tracker/fetcher";
+import { detectLiveMarkers } from "@/lib/tracker/live-status";
 import { evaluateRule, skippedRule, type EvaluatedRule } from "@/lib/tracker/rules";
 import type { CanonicalToken, EndpointScanOutcome } from "@/lib/tracker/types";
 
@@ -59,6 +60,11 @@ function insertCheck(
     finalUrl: string | null;
     httpStatus: number | null;
     availabilityStatus: "PENDING" | "LIVE" | "UNAVAILABLE" | "ERROR";
+    liveStatus: LiveStatus;
+    headLiveMarkerFound?: boolean | null;
+    bodyLiveMarkerFound?: boolean | null;
+    headLiveMarkerHtml?: string | null;
+    bodyLiveMarkerHtml?: string | null;
     changeStatus: "BASELINE" | "UNCHANGED" | "CHANGED" | "NOT_APPLICABLE";
     responseMs: number | null;
     errorMessage?: string | null;
@@ -72,18 +78,24 @@ function insertCheck(
   },
 ) {
   const checkId = createId();
+  const timestamp = nowIso();
   const insert = db.transaction(() => {
     db.prepare(
       `INSERT INTO EndpointCheck
-       (id, runId, endpointId, requestedUrl, finalUrl, httpStatus, availabilityStatus, changeStatus, responseMs,
-        errorMessage, snapshotId, comparedCheckId, headAddedCount, headRemovedCount, bodyAddedCount, bodyRemovedCount, createdAt)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+       (id, runId, endpointId, requestedUrl, finalUrl, httpStatus, availabilityStatus, liveStatus,
+        headLiveMarkerFound, bodyLiveMarkerFound, headLiveMarkerHtml, bodyLiveMarkerHtml,
+        changeStatus, responseMs, errorMessage, snapshotId,
+        comparedCheckId, headAddedCount, headRemovedCount, bodyAddedCount, bodyRemovedCount, createdAt)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     ).run(
       checkId, runId, endpoint.id, endpoint.url, values.finalUrl, values.httpStatus,
-      values.availabilityStatus, values.changeStatus, values.responseMs, values.errorMessage ?? null,
-      values.snapshotId ?? null, values.comparedCheckId ?? null,
+      values.availabilityStatus, values.liveStatus,
+      values.headLiveMarkerFound === undefined || values.headLiveMarkerFound === null ? null : Number(values.headLiveMarkerFound),
+      values.bodyLiveMarkerFound === undefined || values.bodyLiveMarkerFound === null ? null : Number(values.bodyLiveMarkerFound),
+      values.headLiveMarkerHtml ?? null, values.bodyLiveMarkerHtml ?? null,
+      values.changeStatus, values.responseMs, values.errorMessage ?? null, values.snapshotId ?? null, values.comparedCheckId ?? null,
       values.headAddedCount ?? 0, values.headRemovedCount ?? 0,
-      values.bodyAddedCount ?? 0, values.bodyRemovedCount ?? 0, nowIso(),
+      values.bodyAddedCount ?? 0, values.bodyRemovedCount ?? 0, timestamp,
     );
     const statement = db.prepare(
       `INSERT INTO RuleResult
@@ -93,7 +105,12 @@ function insertCheck(
     for (const result of values.ruleResults ?? []) {
       statement.run(
         createId(), checkId, result.ruleId, result.ruleType, result.ruleLabel, result.configJson,
-        result.status, result.actualValue, result.message, nowIso(),
+        result.status, result.actualValue, result.message, timestamp,
+      );
+    }
+    if (values.liveStatus === "LIVE_COMPLETE") {
+      db.prepare("UPDATE Endpoint SET liveCompletedAt = COALESCE(liveCompletedAt, ?), updatedAt = ? WHERE id = ?").run(
+        timestamp, timestamp, endpoint.id,
       );
     }
   });
@@ -109,6 +126,7 @@ async function persistCheck(endpoint: EndpointForScan, runId: string): Promise<E
       finalUrl: result.finalUrl,
       httpStatus: result.status,
       availabilityStatus: "ERROR",
+      liveStatus: "UNVERIFIED",
       changeStatus: "NOT_APPLICABLE",
       responseMs: result.responseMs,
       errorMessage: result.error,
@@ -126,6 +144,7 @@ async function persistCheck(endpoint: EndpointForScan, runId: string): Promise<E
       finalUrl: result.finalUrl,
       httpStatus: result.status,
       availabilityStatus: "PENDING",
+      liveStatus: "BEFORE_LIVE",
       changeStatus: "NOT_APPLICABLE",
       responseMs: result.responseMs,
       errorMessage: sameDestination ? null : "요청한 신규 경로와 다른 주소로 이동했습니다.",
@@ -142,6 +161,7 @@ async function persistCheck(endpoint: EndpointForScan, runId: string): Promise<E
       finalUrl: result.finalUrl,
       httpStatus: result.status,
       availabilityStatus: "UNAVAILABLE",
+      liveStatus: "UNVERIFIED",
       changeStatus: "NOT_APPLICABLE",
       responseMs: result.responseMs,
       errorMessage: sameDestination ? null : "최종 주소가 요청한 경로와 다릅니다.",
@@ -156,6 +176,13 @@ async function persistCheck(endpoint: EndpointForScan, runId: string): Promise<E
   }
 
   const evaluated = rules.map((rule) => evaluateRule(rule, result.status!, result.html));
+  const liveMarkers = endpoint.monitorMode === "CONTENT" && result.html
+    ? detectLiveMarkers(result.html)
+    : null;
+  const liveStatus: LiveStatus = endpoint.monitorMode === "STATUS_ONLY"
+    ? "LIVE_COMPLETE"
+    : liveMarkers?.liveStatus ?? "UNVERIFIED";
+
   let changeStatus: "BASELINE" | "UNCHANGED" | "CHANGED" | "NOT_APPLICABLE" = "NOT_APPLICABLE";
   let snapshotId: string | null = null;
   let comparedCheckId: string | null = null;
@@ -212,6 +239,11 @@ async function persistCheck(endpoint: EndpointForScan, runId: string): Promise<E
     finalUrl: result.finalUrl,
     httpStatus: result.status,
     availabilityStatus: "LIVE",
+    liveStatus,
+    headLiveMarkerFound: liveMarkers?.headLiveMarkerFound,
+    bodyLiveMarkerFound: liveMarkers?.bodyLiveMarkerFound,
+    headLiveMarkerHtml: liveMarkers?.headLiveMarkerHtml,
+    bodyLiveMarkerHtml: liveMarkers?.bodyLiveMarkerHtml,
     changeStatus,
     responseMs: result.responseMs,
     snapshotId,
@@ -261,6 +293,7 @@ export async function executeRun(runId: string) {
             finalUrl: null,
             httpStatus: null,
             availabilityStatus: "ERROR",
+            liveStatus: "UNVERIFIED",
             changeStatus: "NOT_APPLICABLE",
             responseMs: null,
             errorMessage: error instanceof Error ? error.message : "검사 처리 오류",

@@ -188,7 +188,7 @@ export function TargetManager({ targets }: { targets: TargetView[] }) {
             <div className="grid gap-3 sm:grid-cols-2">
               <label><span className="form-label">이름</span><input required name="target-name" autoComplete="off" className="form-input w-full" value={draft.name} onChange={(e) => setDraft({ ...draft, name: e.target.value })} /></label>
               <label><span className="form-label">카테고리</span><input required name="target-category" autoComplete="off" className="form-input w-full" value={draft.category} onChange={(e) => setDraft({ ...draft, category: e.target.value })} /></label>
-              <label><span className="form-label">추적 방식</span><select name="monitor-mode" className="form-input w-full" value={draft.monitorMode} onChange={(e) => setDraft({ ...draft, monitorMode: e.target.value as MonitorMode })}><option value="CONTENT">전일 대비 태그 변경 + HTTP</option><option value="STATUS_ONLY">HTTP 상태만</option></select></label>
+              <label><span className="form-label">라이브 판정 방식</span><select name="monitor-mode" className="form-input w-full" value={draft.monitorMode} onChange={(e) => setDraft({ ...draft, monitorMode: e.target.value as MonitorMode })}><option value="CONTENT">HEAD/BODY 라이브 판정 + 변경 이력</option><option value="STATUS_ONLY">HTTP 라이브 판정</option></select></label>
               <label><span className="form-label">사용 여부</span><select name="target-enabled" className="form-input w-full" value={String(draft.enabled)} onChange={(e) => setDraft({ ...draft, enabled: e.target.value === "true" })}><option value="true">활성</option><option value="false">비활성</option></select></label>
             </div>
 

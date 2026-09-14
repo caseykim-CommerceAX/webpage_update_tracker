@@ -3,6 +3,7 @@ import type {
   AvailabilityStatus,
   ChangeStatus,
   Lifecycle,
+  LiveStatus,
   MonitorMode,
   Platform,
   RuleResultStatus,
@@ -30,12 +31,16 @@ export type EndpointView = {
   referenceUrl: string | null;
   lifecycle: Lifecycle;
   launchedAt: string | null;
+  liveCompletedAt: string | null;
   enabled: boolean;
   latest: {
     checkId: string;
     runId: string;
     httpStatus: number | null;
     availabilityStatus: AvailabilityStatus;
+    liveStatus: LiveStatus;
+    headLiveMarkerFound: boolean | null;
+    bodyLiveMarkerFound: boolean | null;
     changeStatus: ChangeStatus;
     responseMs: number | null;
     errorMessage: string | null;
@@ -79,6 +84,9 @@ type LatestCheckRow = {
   runId: string;
   httpStatus: number | null;
   availabilityStatus: AvailabilityStatus;
+  liveStatus: LiveStatus;
+  headLiveMarkerFound: number | null;
+  bodyLiveMarkerFound: number | null;
   changeStatus: ChangeStatus;
   responseMs: number | null;
   errorMessage: string | null;
@@ -96,13 +104,14 @@ type LatestFailureRow = RuleResultView & { checkId: string };
 export function getTargets(): TargetView[] {
   const targetRows = db.prepare("SELECT id, displayOrder, name, category, monitorMode, enabled FROM Target ORDER BY displayOrder").all() as TargetRow[];
   const endpointRows = db.prepare(
-    "SELECT id, targetId, platform, url, referenceUrl, lifecycle, launchedAt, enabled FROM Endpoint WHERE retiredAt IS NULL ORDER BY platform",
+    "SELECT id, targetId, platform, url, referenceUrl, lifecycle, launchedAt, liveCompletedAt, enabled FROM Endpoint WHERE retiredAt IS NULL ORDER BY platform",
   ).all() as EndpointRow[];
   const ruleRows = db.prepare(
     "SELECT id, targetId, type, label, selector, attribute, expectedValue, expectedStatuses, enabled, displayOrder FROM Rule ORDER BY targetId, displayOrder",
   ).all() as Array<Omit<RuleView, "enabled"> & { targetId: string; enabled: number }>;
   const latestRows = db.prepare(
-    `SELECT c.endpointId, c.id AS checkId, c.runId, c.httpStatus, c.availabilityStatus, c.changeStatus,
+    `SELECT c.endpointId, c.id AS checkId, c.runId, c.httpStatus, c.availabilityStatus, c.liveStatus,
+            c.headLiveMarkerFound, c.bodyLiveMarkerFound, c.changeStatus,
             c.responseMs, c.errorMessage, c.createdAt, previous.createdAt AS comparedAt,
             c.headAddedCount, c.headRemovedCount, c.bodyAddedCount, c.bodyRemovedCount,
             SUM(CASE WHEN rr.status IN ('FAIL','ERROR') THEN 1 ELSE 0 END) AS failedRules
@@ -145,6 +154,7 @@ export function getTargets(): TargetView[] {
       referenceUrl: row.referenceUrl,
       lifecycle: row.lifecycle,
       launchedAt: row.launchedAt,
+      liveCompletedAt: row.liveCompletedAt,
       enabled: Boolean(row.enabled),
       latest: latest
         ? {
@@ -152,6 +162,9 @@ export function getTargets(): TargetView[] {
             runId: latest.runId,
             httpStatus: latest.httpStatus,
             availabilityStatus: latest.availabilityStatus,
+            liveStatus: latest.liveStatus,
+            headLiveMarkerFound: latest.headLiveMarkerFound === null ? null : Boolean(latest.headLiveMarkerFound),
+            bodyLiveMarkerFound: latest.bodyLiveMarkerFound === null ? null : Boolean(latest.bodyLiveMarkerFound),
             changeStatus: latest.changeStatus,
             responseMs: latest.responseMs,
             errorMessage: latest.errorMessage,
@@ -214,6 +227,11 @@ export function getRun(runId: string) {
     finalUrl: string | null;
     httpStatus: number | null;
     availabilityStatus: AvailabilityStatus;
+    liveStatus: LiveStatus;
+    headLiveMarkerFound: number | null;
+    bodyLiveMarkerFound: number | null;
+    headLiveMarkerHtml: string | null;
+    bodyLiveMarkerHtml: string | null;
     changeStatus: ChangeStatus;
     responseMs: number | null;
     errorMessage: string | null;
@@ -247,7 +265,160 @@ export function getRun(runId: string) {
     bucket.push(result);
     byCheck.set(result.checkId, bucket);
   }
-  return { run, checks: checks.map((check) => ({ ...check, ruleResults: byCheck.get(check.id) ?? [] })) };
+  return {
+    run,
+    checks: checks.map((check) => ({
+      ...check,
+      headLiveMarkerFound: check.headLiveMarkerFound === null ? null : Boolean(check.headLiveMarkerFound),
+      bodyLiveMarkerFound: check.bodyLiveMarkerFound === null ? null : Boolean(check.bodyLiveMarkerFound),
+      ruleResults: byCheck.get(check.id) ?? [],
+    })),
+  };
+}
+
+export type CheckHistoryRow = {
+  checkId: string;
+  runId: string;
+  runSource: RunRecord["source"];
+  targetId: string;
+  targetName: string;
+  displayOrder: number;
+  platform: Platform;
+  requestedUrl: string;
+  finalUrl: string | null;
+  httpStatus: number | null;
+  availabilityStatus: AvailabilityStatus;
+  liveStatus: LiveStatus;
+  previousLiveStatus: LiveStatus | null;
+  headLiveMarkerFound: boolean | null;
+  bodyLiveMarkerFound: boolean | null;
+  headLiveMarkerHtml: string | null;
+  bodyLiveMarkerHtml: string | null;
+  changeStatus: ChangeStatus;
+  headAddedCount: number;
+  headRemovedCount: number;
+  bodyAddedCount: number;
+  bodyRemovedCount: number;
+  failedRules: number;
+  responseMs: number | null;
+  errorMessage: string | null;
+  createdAt: string;
+};
+
+export type CheckHistoryFilters = {
+  query?: string;
+  targetId?: string;
+  platform?: Platform;
+  liveStatus?: LiveStatus;
+  transitionsOnly?: boolean;
+  page?: number;
+  pageSize?: number;
+};
+
+const CHECK_HISTORY_CTE = `WITH history AS (
+  SELECT c.id AS checkId, c.runId, r.source AS runSource,
+         e.targetId, t.name AS targetName, t.displayOrder, e.platform,
+         c.requestedUrl, c.finalUrl, c.httpStatus, c.availabilityStatus, c.liveStatus,
+         LAG(c.liveStatus) OVER (
+           PARTITION BY c.endpointId ORDER BY c.createdAt ASC, c.rowid ASC
+         ) AS previousLiveStatus,
+         c.headLiveMarkerFound, c.bodyLiveMarkerFound,
+         c.headLiveMarkerHtml, c.bodyLiveMarkerHtml,
+         c.changeStatus, c.headAddedCount, c.headRemovedCount,
+         c.bodyAddedCount, c.bodyRemovedCount, c.responseMs, c.errorMessage, c.createdAt,
+         (SELECT COUNT(*) FROM RuleResult result
+          WHERE result.checkId = c.id AND result.status IN ('FAIL', 'ERROR')) AS failedRules
+  FROM EndpointCheck c
+  JOIN Endpoint e ON e.id = c.endpointId
+  JOIN Target t ON t.id = e.targetId
+  JOIN Run r ON r.id = c.runId
+)`;
+
+export function getCheckHistory(filters: CheckHistoryFilters = {}) {
+  const pageSize = Math.min(200, Math.max(1, filters.pageSize ?? 50));
+  const page = Math.max(1, filters.page ?? 1);
+  const conditions: string[] = [];
+  const values: Array<string | number> = [];
+  const query = filters.query?.trim();
+
+  if (query) {
+    conditions.push("(targetName LIKE ? OR requestedUrl LIKE ?)");
+    const pattern = `%${query}%`;
+    values.push(pattern, pattern);
+  }
+  if (filters.targetId) {
+    conditions.push("targetId = ?");
+    values.push(filters.targetId);
+  }
+  if (filters.platform) {
+    conditions.push("platform = ?");
+    values.push(filters.platform);
+  }
+  if (filters.liveStatus) {
+    conditions.push("liveStatus = ?");
+    values.push(filters.liveStatus);
+  }
+  if (filters.transitionsOnly) {
+    conditions.push("(previousLiveStatus IS NULL OR previousLiveStatus <> liveStatus)");
+  }
+
+  const where = conditions.length ? `WHERE ${conditions.join(" AND ")}` : "";
+  const total = (db.prepare(`${CHECK_HISTORY_CTE} SELECT COUNT(*) AS count FROM history ${where}`).get(...values) as { count: number }).count;
+  const pageCount = Math.max(1, Math.ceil(total / pageSize));
+  const currentPage = Math.min(page, pageCount);
+  const rawRows = db.prepare(
+    `${CHECK_HISTORY_CTE}
+     SELECT * FROM history ${where}
+     ORDER BY createdAt DESC, checkId DESC
+     LIMIT ? OFFSET ?`,
+  ).all(...values, pageSize, (currentPage - 1) * pageSize) as Array<Omit<CheckHistoryRow, "headLiveMarkerFound" | "bodyLiveMarkerFound"> & {
+    headLiveMarkerFound: number | null;
+    bodyLiveMarkerFound: number | null;
+  }>;
+
+  return {
+    rows: rawRows.map((row) => ({
+      ...row,
+      headLiveMarkerFound: row.headLiveMarkerFound === null ? null : Boolean(row.headLiveMarkerFound),
+      bodyLiveMarkerFound: row.bodyLiveMarkerFound === null ? null : Boolean(row.bodyLiveMarkerFound),
+    })),
+    total,
+    page: currentPage,
+    pageSize,
+    pageCount,
+  };
+}
+
+export function getCheckHistoryTargets() {
+  return db.prepare(
+    `SELECT DISTINCT target.id, target.displayOrder, target.name
+     FROM Target target
+     JOIN Endpoint endpoint ON endpoint.targetId = target.id
+     JOIN EndpointCheck checkRow ON checkRow.endpointId = endpoint.id
+     ORDER BY target.displayOrder`,
+  ).all() as Array<{ id: string; displayOrder: number; name: string }>;
+}
+
+export function getCheckHistoryTotal() {
+  return (db.prepare("SELECT COUNT(*) AS count FROM EndpointCheck").get() as { count: number }).count;
+}
+
+export type RunLiveSummary = {
+  liveCompleteCount: number;
+  checkRequiredCount: number;
+  beforeLiveCount: number;
+  unverifiedCount: number;
+};
+
+export function getRunLiveSummary(runId: string): RunLiveSummary {
+  return db.prepare(
+    `SELECT
+       COALESCE(SUM(CASE WHEN liveStatus = 'LIVE_COMPLETE' THEN 1 ELSE 0 END), 0) AS liveCompleteCount,
+       COALESCE(SUM(CASE WHEN liveStatus = 'CHECK_REQUIRED' THEN 1 ELSE 0 END), 0) AS checkRequiredCount,
+       COALESCE(SUM(CASE WHEN liveStatus = 'BEFORE_LIVE' THEN 1 ELSE 0 END), 0) AS beforeLiveCount,
+       COALESCE(SUM(CASE WHEN liveStatus = 'UNVERIFIED' THEN 1 ELSE 0 END), 0) AS unverifiedCount
+     FROM EndpointCheck WHERE runId = ?`,
+  ).get(runId) as RunLiveSummary;
 }
 
 export type RunTagSummary = {

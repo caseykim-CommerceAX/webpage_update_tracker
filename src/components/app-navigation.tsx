@@ -7,13 +7,14 @@ const navigation = [
   ["대시보드", "/"],
   ["대상 관리", "/targets"],
   ["실행 이력", "/runs"],
+  ["진단 로그", "/checks"],
 ] as const;
 
 export function AppNavigation() {
   const pathname = usePathname();
 
   return (
-    <nav aria-label="주요 메뉴" className="grid grid-cols-3 border border-neutral-300 md:flex">
+    <nav aria-label="주요 메뉴" className="grid grid-cols-2 border border-neutral-300 sm:grid-cols-4 md:flex">
       {navigation.map(([label, href]) => {
         const active = href === "/" ? pathname === "/" : pathname.startsWith(href);
         return (

@@ -5,6 +5,7 @@ export type RuleType = "HTTP_STATUS" | "META_ATTRIBUTE" | "TEXT_CONTAINS";
 export type RunSource = "MANUAL" | "SCHEDULE";
 export type RunStatus = "QUEUED" | "RUNNING" | "COMPLETED" | "COMPLETED_WITH_ERRORS" | "FAILED";
 export type AvailabilityStatus = "PENDING" | "LIVE" | "UNAVAILABLE" | "ERROR";
+export type LiveStatus = "BEFORE_LIVE" | "CHECK_REQUIRED" | "LIVE_COMPLETE" | "UNVERIFIED";
 export type ChangeStatus = "BASELINE" | "UNCHANGED" | "CHANGED" | "NOT_APPLICABLE";
 export type RuleResultStatus = "PASS" | "FAIL" | "SKIPPED" | "ERROR";
 

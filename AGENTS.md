@@ -14,10 +14,10 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 ## 1. Project Goal and Current Scope
 
-- KB국민카드 웹페이지의 PC·모바일 URL을 매일 검사하는 로컬 우선 PoC다.
-- 직전 저장 진단 대비 HEAD/BODY 태그 변경을 핵심으로 보고, HTTP 상태와 등록 규칙을 별도 판정으로 SQLite에 기록해 한국어 웹 대시보드에서 보여준다.
+- KB국민카드 웹페이지의 PC·모바일 URL을 매일 검사해 라이브 여부를 판정하는 로컬 우선 PoC다.
+- 현재 HTML의 HEAD OG 태그와 BODY 추천 문구를 라이브 필수 신호로 보고, 직전 저장 진단 대비 HEAD/BODY 변경과 HTTP 상태·등록 규칙은 별도 진단으로 SQLite에 기록해 한국어 웹 대시보드에서 보여준다.
 - 초기 데이터는 `기획서_Webpage_update_Tracker.md`의 23개 항목과 45개 현재 URL이다.
-- 현재 범위에는 URL/규칙 편집, 전체 수동 진단, 실패 원인과 실제 확인값 진단, 실행 이력, HEAD/BODY 구조화 diff, 반응형 UI, Windows 작업 스케줄러 스크립트가 포함된다.
+- 현재 범위에는 URL/규칙 편집, 전체 수동 진단, 실패 원인과 실제 확인값 진단, URL별 전체 진단 로그와 상태 변경 필터, 실행 이력, HEAD/BODY 구조화 diff, 반응형 UI, Windows 작업 스케줄러 스크립트가 포함된다.
 - 외부 알림, 인증, 브라우저 렌더링 기반 수집, 클라우드 배포는 아직 범위 밖이다.
 
 ## 2. Technology and Important Decisions
@@ -36,14 +36,17 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - `src/lib/tracker/runner.ts`: 실행 잠금, 엔드포인트 검사, 상태/스냅샷 저장의 핵심 흐름
 - `src/lib/tracker/fetcher.ts`: User-Agent, 제한 시간, 재시도, 인코딩, HTTP 수집
 - `src/lib/tracker/canonicalize.ts`: 의미 있는 DOM 토큰과 구조화 diff
+- `src/lib/tracker/live-status.ts`: OG 태그와 추천 h2 기반 라이브 판정
 - `src/lib/tracker/rules.ts`: 태그 diff와 분리된 HTTP 및 선택형 정적 규칙 평가
 - `src/lib/db.ts`: SQLite 연결과 마이그레이션 적용
 - `src/lib/target-service.ts`: 대상 생성/수정, URL 교체 시 이력 보존
 - `src/lib/queries.ts`: 대시보드와 실행 상세용 배치 조회
 - `src/app/api/`: 대상 편집, 검사 시작, 실행 진행 상태 API
 - `src/app/page.tsx`, `src/app/targets/`, `src/app/runs/`: 대시보드와 관리/이력 UI
+- `src/app/checks/page.tsx`: 전체 URL 진단 로그, 서버 필터와 페이지네이션
 - `src/components/check-diagnostics.tsx`: 접속·규칙 실패 원인과 실제 확인값 표시
-- `prisma/migrations/202609140001_init/migration.sql`, `202609140002_check_comparisons/migration.sql`, `202609140003_remove_seed_content_rules/migration.sql`: 현재 DB 스키마, 진단 비교 필드, 오해로 생성된 정적 규칙 정리
+- `src/components/live-marker-evidence.tsx`: 판정에 사용한 OG meta와 추천 h2 원문 표시
+- `prisma/migrations/202609140001_init/migration.sql`, `202609140002_check_comparisons/migration.sql`, `202609140003_remove_seed_content_rules/migration.sql`, `202609140004_live_status/migration.sql`, `202609140005_live_marker_evidence/migration.sql`: 현재 DB 스키마, 진단 비교 필드, 과거 정적 규칙 정리, 라이브 상태·일자·판정 태그 원문
 - `prisma/seed.ts`: 기획서의 초기 23개 항목
 - `scripts/scan.ts`: 수동/예약 검사 CLI
 - `scripts/install-schedule.ps1`, `scripts/remove-schedule.ps1`: 매일 09:00 Windows 예약 등록/제거
@@ -54,15 +57,20 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 ## 4. Behavioral Invariants
 
 - 가용성, 규칙, 콘텐츠 변경은 하나의 상태로 합치지 않고 별도로 저장한다.
+- 콘텐츠 대상의 라이브 상태는 현재 HTML의 `meta[property="og:site_name"]` 존재와 BODY `h2`의 `이런 분께 추천 드려요` 포함 여부로 판정한다. 문구의 띄어쓰기 차이는 무시한다.
+- 두 라이브 신호가 모두 있으면 `LIVE_COMPLETE`, 하나만 있으면 `CHECK_REQUIRED`, 둘 다 없으면 `BEFORE_LIVE`, HTML을 확인할 수 없으면 `UNVERIFIED`다.
+- 상태 전용 대상은 요청 경로에서 HTTP 200이면 `LIVE_COMPLETE`로 판정한다.
+- URL별 최초 `LIVE_COMPLETE` 감지 시각을 `liveCompletedAt`에 기록하며 이후 상태가 달라져도 이 날짜는 보존한다.
 - `PRELAUNCH` URL이 아직 200이 아니면 실패가 아니라 `PENDING`이다.
 - 신규 URL이 이전 경로 등 다른 pathname으로 리다이렉트되면 200이어도 오픈으로 보지 않는다.
 - PRELAUNCH URL이 동일한 경로에서 처음 200을 반환하면 `launchedAt`을 기록하고 이후에는 일반 기존 페이지처럼 취급한다.
 - 콘텐츠 추적의 첫 성공 응답은 `BASELINE`이며 변경으로 알리지 않는다.
 - 이후 성공 진단은 가장 최근 성공 `EndpointCheck`와 그 스냅샷을 비교한다. 모든 진단 행은 `comparedCheckId`로 비교 대상을 가리키며 HEAD/BODY 추가·삭제 건수를 저장한다.
 - 동일하면 새 스냅샷을 중복 저장하지 않지만 `UNCHANGED` 진단 행과 비교 관계는 반드시 저장한다.
-- 원본 HTML은 저장하지 않는다. 제목, meta, 본문 텍스트, 링크, 이미지로 만든 정규화 토큰만 저장한다.
+- 전체 원본 HTML은 저장하지 않는다. 제목, meta, 본문 텍스트, 링크, 이미지로 만든 정규화 토큰과 라이브 판정에 실제 사용한 OG meta·추천 h2 원문 조각만 저장한다.
+- 원문 조각 저장 기능 도입 전 과거 진단에는 정규화 판정값만 남아 있으므로 원문을 임의 복원하지 않고 UI에서 미저장으로 표시한다.
 - HEAD는 title/meta, BODY는 heading/text/link/image 토큰으로 분류한다. 값 수정은 삭제 1건과 추가 1건으로 집계한다.
-- 현재 태그/문구의 존재 여부 자체는 변경 판정이 아니다. 예를 들어 추천 h2가 양일 모두 존재하면 `UNCHANGED`, 전일에 없고 오늘 추가됐을 때만 BODY 추가로 판정한다.
+- 현재 필수 태그/문구의 존재 여부는 라이브 판정에 사용한다. 별도의 변경 판정에서는 추천 h2가 양일 모두 존재하면 `UNCHANGED`, 전일에 없고 오늘 추가됐을 때만 BODY 추가로 판정한다.
 - Meta/텍스트 정적 규칙은 전일 대비 diff와 별도인 선택 기능이다. 초기 시드에는 추가하지 않는다.
 - `script`, `style`, `noscript`, `template`, SVG, class/id, UTM 등 추적 파라미터는 diff에서 제외한다.
 - URL 수정은 기존 Endpoint를 덮어쓰지 않는다. 기존 행을 retire하고 새 Endpoint를 만들어 과거 이력과 기준선을 분리한다.
@@ -71,7 +79,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 ## 5. Seed-specific Rules
 
-- 모든 초기 항목의 규칙은 접속 확인용 HTTP 200만 등록한다. OG meta와 추천 h2는 현재값 필수 규칙이 아니라 전일 대비 HEAD/BODY diff의 예시다.
+- 모든 초기 항목의 사용자 편집 규칙은 접속 확인용 HTTP 200만 등록한다. OG meta와 추천 h2는 `Rule` 행을 만들지 않는 시스템 내장 라이브 필수 신호이며, 별도의 전일 대비 HEAD/BODY diff에도 포함된다.
 - BeV Ⅲ: PC·모바일 모두 PRELAUNCH이며 오픈 후 HTTP와 DOM 변경을 검사한다.
 - 서비스: PC PRELAUNCH이며 오픈 후 HTTP와 DOM 변경을 검사한다.
 - 이벤트: PC·모바일 PRELAUNCH, `STATUS_ONLY`, HTTP 상태만 검사한다.
@@ -110,17 +118,20 @@ Playwright 브라우저가 준비된 환경에서는 `npm.cmd run test:e2e`도 �
 2026-09-14 기준:
 
 - `lint`, `typecheck`, 프로덕션 `build` 통과
-- Vitest 6개 파일, 14개 테스트 통과
-- Playwright E2E 2개 통과: 주요 화면 이동·활성 메뉴와 390px 모바일 수평 오버플로 확인
-- Playwright 캡처로 1440px·390px 대시보드의 요약 → 태그 변경 상세 → 페이지별 진단 계층과 레이아웃 확인
+- Vitest 8개 파일, 17개 테스트 통과
+- Playwright E2E 2개 통과: 진단 로그를 포함한 주요 화면 이동·활성 메뉴와 390px 모바일 수평 오버플로 확인
+- Playwright 캡처로 1440px·390px 대시보드의 색상별 라이브 요약과 페이지별 상태, 전체 진단 로그의 필터·로그 카드 레이아웃 확인
 - 주요 앱/API 경로의 로컬 HTTP 200 확인
 - ALL 카드 PC·모바일 라이브 검사: HTTP 200, 첫 실행 `BASELINE`, 연속 실행 `UNCHANGED`
+- ALL 카드 PC·모바일 표본 재진단: `LIVE_COMPLETE`, 실제 `og:site_name` meta와 추천 h2 원문 조각 저장 및 실행 상세 표시 확인
 - BeV Ⅲ PC·모바일 라이브 검사: 실패 0, `PENDING` 2
 - API가 백그라운드 검사 프로세스를 시작하고 완료 상태를 폴링하는 흐름 확인
 - 작업 스케줄러 PowerShell 스크립트 문법 확인; 실제 OS 예약 등록은 자동으로 수행하지 않았다.
 - `EndpointCheck`는 직전 성공 진단 ID와 HEAD/BODY 추가·삭제 건수를 저장하며 기존 DB 이력도 마이그레이션에서 역산한다.
-- 오해로 생성했던 OG/추천 문구 정적 규칙과 오판정 결과는 마이그레이션으로 제거하며 HTTP 결과와 구조화 diff 이력은 보존한다.
-- 대시보드 상단은 최근 전체 진단의 URL·변경 URL·HEAD/BODY 건수만 요약하고, 태그 diff와 실패 원인은 하단 상세 및 실행 상세에서 펼친다.
+- `EndpointCheck`는 라이브 상태와 HEAD/BODY 필수 신호 확인값을 저장하고, `Endpoint.liveCompletedAt`은 최초 라이브 완료 감지 시각을 보존한다. 기존 스냅샷의 판정과 최초 일자도 마이그레이션에서 복구한다.
+- 과거 사용자 편집 정적 규칙으로 생성했던 OG/추천 문구 규칙과 오판정 결과는 마이그레이션으로 제거했고, 시스템 내장 라이브 판정으로 대체했다. HTTP 결과와 구조화 diff 이력은 보존한다.
+- 대시보드 상단은 최근 전체 진단의 라이브 완료·체크 필요·라이브 전·판정 불가 URL 수를 요약하고, 페이지별 필수 신호와 최초 라이브 일자를 우선 표시한다. 태그 diff와 실패 원인은 보조 상세 및 실행 상세에서 펼친다.
+- 라이브 상태 배지는 완료(초록)·체크 필요(주황)·라이브 전(파랑)·판정 불가(회색)로 구분한다. 대시보드의 전체 진단 로그는 DB의 모든 `EndpointCheck`를 50건씩 조회하며 대상·채널·상태·상태 변경 여부를 서버에서 필터링한다.
 - 팀 공유 서버의 `0.0.0.0:3000` 리스닝과 `127.0.0.1`, `192.168.203.99` 양쪽 HTTP 200을 확인했다.
 - Windows 방화벽의 `Webpage Update Tracker Team Access` 규칙을 TCP 3000, Node.js, Domain/Private, LocalSubnet 범위로 등록하고 `netsh`로 확인했다.
 - `start-team-server.bat`는 DB 준비와 팀 접속 URL 출력을 거쳐 공유 개발 서버를 실행한다.

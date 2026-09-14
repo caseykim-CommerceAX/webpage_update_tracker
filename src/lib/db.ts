@@ -13,6 +13,8 @@ const MIGRATIONS = [
   "202609140001_init",
   "202609140002_check_comparisons",
   "202609140003_remove_seed_content_rules",
+  "202609140004_live_status",
+  "202609140005_live_marker_evidence",
 ] as const;
 
 function initialize(database: Database.Database) {

@@ -9,6 +9,7 @@ process.env.SCAN_RETRIES = "0";
 let database: typeof import("@/lib/db");
 let runner: typeof import("@/lib/tracker/runner");
 let targetService: typeof import("@/lib/target-service");
+let queries: typeof import("@/lib/queries");
 let targetId: string;
 
 function removeTestDatabase() {
@@ -23,6 +24,7 @@ beforeAll(async () => {
   database = await import("@/lib/db");
   runner = await import("@/lib/tracker/runner");
   targetService = await import("@/lib/target-service");
+  queries = await import("@/lib/queries");
   targetId = database.createId();
   const endpointId = database.createId();
   const timestamp = database.nowIso();
@@ -76,6 +78,30 @@ describe("검사 실행 이력", () => {
     expect(changed.bodyAddedCount).toBe(1);
     expect(changed.bodyRemovedCount).toBe(0);
     expect((database.db.prepare("SELECT diffJson FROM Snapshot WHERE id = ?").get(changed.snapshotId) as { diffJson: string }).diffJson).toContain("이런 분께 추천드려요");
+    expect((database.db.prepare("SELECT liveStatus, headLiveMarkerFound, bodyLiveMarkerFound FROM EndpointCheck WHERE runId = ?").get(third.id) as {
+      liveStatus: string;
+      headLiveMarkerFound: number;
+      bodyLiveMarkerFound: number;
+    })).toEqual({ liveStatus: "CHECK_REQUIRED", headLiveMarkerFound: 0, bodyLiveMarkerFound: 1 });
+
+    vi.stubGlobal("fetch", vi.fn().mockImplementation(() => Promise.resolve(new Response(
+      `<html><head><title>카드</title><meta property="og:site_name" content="KB국민카드"></head><body><p>기존 안내</p><h2>ALL 카드, 이런 분께 추천 드려요</h2></body></html>`,
+      { status: 200, headers: { "content-type": "text/html" } },
+    ))));
+    const fourth = runner.createQueuedRun("MANUAL", [targetId]);
+    await runner.executeRun(fourth.id);
+    expect((database.db.prepare(
+      "SELECT liveStatus, headLiveMarkerHtml, bodyLiveMarkerHtml FROM EndpointCheck WHERE runId = ?",
+    ).get(fourth.id) as { liveStatus: string; headLiveMarkerHtml: string; bodyLiveMarkerHtml: string })).toEqual({
+      liveStatus: "LIVE_COMPLETE",
+      headLiveMarkerHtml: '<meta property="og:site_name" content="KB국민카드">',
+      bodyLiveMarkerHtml: "<h2>ALL 카드, 이런 분께 추천 드려요</h2>",
+    });
+    expect((database.db.prepare("SELECT liveCompletedAt FROM Endpoint WHERE targetId = ? AND retiredAt IS NULL").get(targetId) as { liveCompletedAt: string | null }).liveCompletedAt).toBeTruthy();
+
+    const transitions = queries.getCheckHistory({ targetId, transitionsOnly: true, pageSize: 50 });
+    expect(transitions.total).toBe(3);
+    expect(transitions.rows.map((row) => row.liveStatus)).toEqual(["LIVE_COMPLETE", "CHECK_REQUIRED", "BEFORE_LIVE"]);
   });
 
   it("URL 변경 시 이전 Endpoint와 스냅샷을 보존하고 새 기준선을 준비한다", () => {
@@ -94,7 +120,7 @@ describe("검사 실행 이력", () => {
     expect(retired.enabled).toBe(0);
     expect(current.url).toBe("https://example.com/card-v2");
     expect(current.id).not.toBe(previous.id);
-    expect((database.db.prepare("SELECT COUNT(*) AS count FROM Snapshot WHERE endpointId = ?").get(previous.id) as { count: number }).count).toBe(2);
+    expect((database.db.prepare("SELECT COUNT(*) AS count FROM Snapshot WHERE endpointId = ?").get(previous.id) as { count: number }).count).toBe(3);
     expect((database.db.prepare("SELECT COUNT(*) AS count FROM Snapshot WHERE endpointId = ?").get(current.id) as { count: number }).count).toBe(0);
   });
 });
