@@ -13,7 +13,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:e2e": "playwright test",
+    "test:e2e": "node scripts/run-e2e.mjs",
     "db:seed": "tsx prisma/seed.ts",
     "db:setup": "tsx prisma/seed.ts",
     "scan": "node --use-system-ca --import tsx scripts/scan.ts",

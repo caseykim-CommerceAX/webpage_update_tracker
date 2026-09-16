@@ -21,11 +21,15 @@ echo Preparing the local database...
 call npm.cmd run db:setup
 if errorlevel 1 goto :failed
 
+echo Building the production server...
+call npm.cmd run build
+if errorlevel 1 goto :failed
+
 node scripts\show-team-urls.mjs 3000
 echo Keep this window open while your team uses the dashboard.
 echo Press Ctrl+C to stop the server.
 echo.
-call npm.cmd run dev
+call npm.cmd run start
 if errorlevel 1 goto :failed
 exit /b 0
 

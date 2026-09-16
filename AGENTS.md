@@ -28,7 +28,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
   - `prisma/` 디렉터리 이름은 초기 SQL 마이그레이션과 seed 파일 위치로만 남아 있다.
 - DB는 `.data/tracker.db`이며 Git에 포함하지 않는다. 스키마는 앱이 최초 DB 연결 시 자동 적용되고 `npm.cmd run db:setup`은 누락된 초기 대상만 seed한다.
 - 검사 프로세스는 TLS 검증을 끄지 않는다. `node --use-system-ca --import tsx`로 Windows 신뢰 저장소를 사용한다.
-- 기본 `dev`/`start`는 팀 공유를 위해 `0.0.0.0`에 바인딩한다. Windows 방화벽 규칙은 TCP 3000을 Domain/Private 프로필의 LocalSubnet과 현재 Node.js 실행 파일로 제한한다.
+- 기본 `dev`/`start`는 `0.0.0.0`에 바인딩한다. 팀 공유용 `start-team-server.bat`는 Next.js 개발 모드의 HMR WebSocket 실패가 React 하이드레이션을 막는 환경을 피하기 위해 매번 프로덕션 빌드 후 `start`를 실행한다. Windows 방화벽 규칙은 TCP 3000을 Domain/Private 프로필의 LocalSubnet과 현재 Node.js 실행 파일로 제한한다.
 - 앱 인증은 아직 없다. LocalSubnet 제한은 팀원 신원을 인증하지 않으므로 다른 부서와 서브넷을 공유하거나 VPN·외부망 공개 전에는 인증과 권한 검사가 필수다.
 
 ## 3. Source-of-Truth Map
@@ -49,9 +49,10 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - `prisma/migrations/202609140001_init/migration.sql`, `202609140002_check_comparisons/migration.sql`, `202609140003_remove_seed_content_rules/migration.sql`, `202609140004_live_status/migration.sql`, `202609140005_live_marker_evidence/migration.sql`: 현재 DB 스키마, 진단 비교 필드, 과거 정적 규칙 정리, 라이브 상태·일자·판정 태그 원문
 - `prisma/seed.ts`: 기획서의 초기 23개 항목
 - `scripts/scan.ts`: 수동/예약 검사 CLI
+- `scripts/run-e2e.mjs`: 프로덕션 빌드와 임시 서버 수명주기를 관리하는 Playwright E2E 실행기
 - `scripts/install-schedule.ps1`, `scripts/remove-schedule.ps1`: 매일 09:00 Windows 예약 등록/제거
 - `scripts/allow-team-access.ps1`, `scripts/remove-team-access.ps1`: 팀 접속용 로컬 서브넷 방화벽 규칙 등록/제거
-- `start-team-server.bat`, `scripts/show-team-urls.mjs`: DB 준비, 접속 주소 출력, 팀 공유 개발 서버 실행
+- `start-team-server.bat`, `scripts/show-team-urls.mjs`: DB 준비, 프로덕션 빌드, 접속 주소 출력, 팀 공유 프로덕션 서버 실행
 - `README.md`: 사용자가 따라야 하는 설치와 운영 방법
 
 ## 4. Behavioral Invariants
@@ -115,11 +116,12 @@ Playwright 브라우저가 준비된 환경에서는 `npm.cmd run test:e2e`도 �
 
 ## 7. Last Verified State
 
-2026-09-14 기준:
+2026-09-16 기준:
 
 - `lint`, `typecheck`, 프로덕션 `build` 통과
 - Vitest 8개 파일, 17개 테스트 통과
-- Playwright E2E 2개 통과: 진단 로그를 포함한 주요 화면 이동·활성 메뉴와 390px 모바일 수평 오버플로 확인
+- Playwright E2E 3개 통과: 진단 로그를 포함한 주요 화면 이동·활성 메뉴, 390px 모바일 수평 오버플로, 검색 필터와 전체 진단 버튼의 클라이언트 상호작용 확인
+- 프로덕션 서버의 실제 브라우저에서 전체 진단 버튼 클릭 후 `진단 중 0/0` → `40/45` 진행 표시와 완료 후 버튼 복귀를 확인
 - Playwright 캡처로 1440px·390px 대시보드의 색상별 라이브 요약과 페이지별 상태, 전체 진단 로그의 필터·로그 카드 레이아웃 확인
 - 주요 앱/API 경로의 로컬 HTTP 200 확인
 - ALL 카드 PC·모바일 라이브 검사: HTTP 200, 첫 실행 `BASELINE`, 연속 실행 `UNCHANGED`
@@ -134,7 +136,7 @@ Playwright 브라우저가 준비된 환경에서는 `npm.cmd run test:e2e`도 �
 - 라이브 상태 배지는 완료(초록)·체크 필요(주황)·라이브 전(파랑)·판정 불가(회색)로 구분한다. 대시보드의 전체 진단 로그는 DB의 모든 `EndpointCheck`를 50건씩 조회하며 대상·채널·상태·상태 변경 여부를 서버에서 필터링한다.
 - 팀 공유 서버의 `0.0.0.0:3000` 리스닝과 `127.0.0.1`, `192.168.203.99` 양쪽 HTTP 200을 확인했다.
 - Windows 방화벽의 `Webpage Update Tracker Team Access` 규칙을 TCP 3000, Node.js, Domain/Private, LocalSubnet 범위로 등록하고 `netsh`로 확인했다.
-- `start-team-server.bat`는 DB 준비와 팀 접속 URL 출력을 거쳐 공유 개발 서버를 실행한다.
+- `start-team-server.bat`는 DB 준비와 프로덕션 빌드, 팀 접속 URL 출력을 거쳐 공유 프로덕션 서버를 실행한다. Next.js 16.3.5 Turbopack 개발 서버에서 HMR WebSocket이 실패하면 Client Component 하이드레이션이 멈추는 환경 문제를 이 경로에서 회피한다.
 
 ## 8. Fresh-thread Resume Procedure
 

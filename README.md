@@ -13,7 +13,9 @@ npm.cmd run db:setup
 .\start-team-server.bat
 ```
 
-이후에는 `start-team-server.bat`를 더블클릭하면 됩니다. BAT 파일이 DB를 준비하고 팀 접속 주소를 표시한 뒤 서버를 실행합니다. 같은 사내망의 팀원에게 표시된 `http://IPv4:3000` 주소를 공유하고, 사용하는 동안 BAT 창을 열어 두세요.
+이후에는 `start-team-server.bat`를 더블클릭하면 됩니다. BAT 파일이 DB를 준비하고 프로덕션 빌드를 만든 뒤, 팀 접속 주소를 표시하고 서버를 실행합니다. 같은 사내망의 팀원에게 표시된 `http://IPv4:3000` 주소를 공유하고, 사용하는 동안 BAT 창을 열어 두세요.
+
+팀 공유 서버는 Next.js 개발 모드의 HMR 연결 상태에 영향을 받지 않도록 프로덕션 모드로 실행합니다. 소스를 수정한 뒤 BAT 파일을 다시 실행하면 최신 코드로 다시 빌드됩니다.
 
 본인 PC에서만 열려면 `npm.cmd run dev:local`을 사용합니다. 초기 데이터는 기획서의 23개 항목과 45개 현재 URL이며, 시드는 기존 사용자가 편집한 항목을 덮어쓰지 않습니다.
 
@@ -68,9 +70,9 @@ npm.cmd run db:setup
 npm.cmd run lint
 npm.cmd run typecheck
 npm.cmd test
-npm.cmd run test:e2e
 npm.cmd run build
+npm.cmd run test:e2e
 ```
 
 Playwright 브라우저가 없다면 최초 1회 `npx.cmd playwright install chromium`을 실행해야 합니다.
-이미 실행 중인 개발 서버로 E2E를 검증하려면 `PLAYWRIGHT_BASE_URL`에 서버 주소를 지정할 수 있습니다.
+E2E는 프로덕션 빌드를 만든 뒤 로컬 프로덕션 서버로 검증합니다. 이미 실행 중인 서버로 검증하려면 `PLAYWRIGHT_BASE_URL`에 서버 주소를 지정할 수 있습니다.
