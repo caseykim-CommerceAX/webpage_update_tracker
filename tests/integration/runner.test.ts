@@ -102,6 +102,23 @@ describe("검사 실행 이력", () => {
     const transitions = queries.getCheckHistory({ targetId, transitionsOnly: true, pageSize: 50 });
     expect(transitions.total).toBe(3);
     expect(transitions.rows.map((row) => row.liveStatus)).toEqual(["LIVE_COMPLETE", "CHECK_REQUIRED", "BEFORE_LIVE"]);
+
+    const grouped = queries.getCheckHistoryByEndpoint({ targetId, pageSize: 50 });
+    expect(grouped.endpointTotal).toBe(1);
+    expect(grouped.total).toBe(4);
+    expect(grouped.groups).toHaveLength(1);
+    expect(grouped.groups[0].url).toBe("https://example.com/card");
+    expect(grouped.groups[0].checks.map((row) => row.liveStatus)).toEqual([
+      "LIVE_COMPLETE",
+      "CHECK_REQUIRED",
+      "BEFORE_LIVE",
+      "BEFORE_LIVE",
+    ]);
+
+    const missing = queries.getCheckHistoryByEndpoint({ query: "존재하지 않는 URL" });
+    expect(missing.endpointTotal).toBe(0);
+    expect(missing.total).toBe(0);
+    expect(missing.groups).toEqual([]);
   });
 
   it("URL 변경 시 이전 Endpoint와 스냅샷을 보존하고 새 기준선을 준비한다", () => {

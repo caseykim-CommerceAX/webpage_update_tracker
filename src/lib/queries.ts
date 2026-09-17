@@ -280,6 +280,9 @@ export type CheckHistoryRow = {
   checkId: string;
   runId: string;
   runSource: RunRecord["source"];
+  endpointId: string;
+  endpointUrl: string;
+  retiredAt: string | null;
   targetId: string;
   targetName: string;
   displayOrder: number;
@@ -317,6 +320,7 @@ export type CheckHistoryFilters = {
 
 const CHECK_HISTORY_CTE = `WITH history AS (
   SELECT c.id AS checkId, c.runId, r.source AS runSource,
+         c.endpointId, e.url AS endpointUrl, e.retiredAt,
          e.targetId, t.name AS targetName, t.displayOrder, e.platform,
          c.requestedUrl, c.finalUrl, c.httpStatus, c.availabilityStatus, c.liveStatus,
          LAG(c.liveStatus) OVER (
@@ -334,9 +338,12 @@ const CHECK_HISTORY_CTE = `WITH history AS (
   JOIN Run r ON r.id = c.runId
 )`;
 
-export function getCheckHistory(filters: CheckHistoryFilters = {}) {
-  const pageSize = Math.min(200, Math.max(1, filters.pageSize ?? 50));
-  const page = Math.max(1, filters.page ?? 1);
+type RawCheckHistoryRow = Omit<CheckHistoryRow, "headLiveMarkerFound" | "bodyLiveMarkerFound"> & {
+  headLiveMarkerFound: number | null;
+  bodyLiveMarkerFound: number | null;
+};
+
+function checkHistoryFilter(filters: CheckHistoryFilters) {
   const conditions: string[] = [];
   const values: Array<string | number> = [];
   const query = filters.query?.trim();
@@ -362,6 +369,21 @@ export function getCheckHistory(filters: CheckHistoryFilters = {}) {
     conditions.push("(previousLiveStatus IS NULL OR previousLiveStatus <> liveStatus)");
   }
 
+  return { conditions, values };
+}
+
+function normalizeCheckHistoryRow(row: RawCheckHistoryRow): CheckHistoryRow {
+  return {
+    ...row,
+    headLiveMarkerFound: row.headLiveMarkerFound === null ? null : Boolean(row.headLiveMarkerFound),
+    bodyLiveMarkerFound: row.bodyLiveMarkerFound === null ? null : Boolean(row.bodyLiveMarkerFound),
+  };
+}
+
+export function getCheckHistory(filters: CheckHistoryFilters = {}) {
+  const pageSize = Math.min(200, Math.max(1, filters.pageSize ?? 50));
+  const page = Math.max(1, filters.page ?? 1);
+  const { conditions, values } = checkHistoryFilter(filters);
   const where = conditions.length ? `WHERE ${conditions.join(" AND ")}` : "";
   const total = (db.prepare(`${CHECK_HISTORY_CTE} SELECT COUNT(*) AS count FROM history ${where}`).get(...values) as { count: number }).count;
   const pageCount = Math.max(1, Math.ceil(total / pageSize));
@@ -371,18 +393,70 @@ export function getCheckHistory(filters: CheckHistoryFilters = {}) {
      SELECT * FROM history ${where}
      ORDER BY createdAt DESC, checkId DESC
      LIMIT ? OFFSET ?`,
-  ).all(...values, pageSize, (currentPage - 1) * pageSize) as Array<Omit<CheckHistoryRow, "headLiveMarkerFound" | "bodyLiveMarkerFound"> & {
-    headLiveMarkerFound: number | null;
-    bodyLiveMarkerFound: number | null;
-  }>;
+  ).all(...values, pageSize, (currentPage - 1) * pageSize) as RawCheckHistoryRow[];
 
   return {
-    rows: rawRows.map((row) => ({
-      ...row,
-      headLiveMarkerFound: row.headLiveMarkerFound === null ? null : Boolean(row.headLiveMarkerFound),
-      bodyLiveMarkerFound: row.bodyLiveMarkerFound === null ? null : Boolean(row.bodyLiveMarkerFound),
-    })),
+    rows: rawRows.map(normalizeCheckHistoryRow),
     total,
+    page: currentPage,
+    pageSize,
+    pageCount,
+  };
+}
+
+export type CheckHistoryGroup = {
+  endpointId: string;
+  targetId: string;
+  targetName: string;
+  displayOrder: number;
+  platform: Platform;
+  url: string;
+  retiredAt: string | null;
+  resultCount: number;
+  checks: CheckHistoryRow[];
+};
+
+export function getCheckHistoryByEndpoint(filters: CheckHistoryFilters = {}) {
+  const pageSize = Math.min(50, Math.max(1, filters.pageSize ?? 50));
+  const page = Math.max(1, filters.page ?? 1);
+  const { conditions, values } = checkHistoryFilter(filters);
+  const where = conditions.length ? `WHERE ${conditions.join(" AND ")}` : "";
+  const totals = db.prepare(
+    `${CHECK_HISTORY_CTE}
+     SELECT COUNT(*) AS resultCount, COUNT(DISTINCT endpointId) AS endpointCount
+     FROM history ${where}`,
+  ).get(...values) as { resultCount: number; endpointCount: number };
+  const pageCount = Math.max(1, Math.ceil(totals.endpointCount / pageSize));
+  const currentPage = Math.min(page, pageCount);
+  const endpointRows = db.prepare(
+    `${CHECK_HISTORY_CTE}
+     SELECT endpointId, targetId, targetName, displayOrder, platform,
+            endpointUrl AS url, retiredAt, COUNT(*) AS resultCount
+     FROM history ${where}
+     GROUP BY endpointId, targetId, targetName, displayOrder, platform, endpointUrl, retiredAt
+     ORDER BY displayOrder, platform, endpointUrl
+     LIMIT ? OFFSET ?`,
+  ).all(...values, pageSize, (currentPage - 1) * pageSize) as Array<Omit<CheckHistoryGroup, "checks">>;
+
+  const endpointIds = endpointRows.map((row) => row.endpointId);
+  const rawRows = endpointIds.length
+    ? db.prepare(
+        `${CHECK_HISTORY_CTE}
+         SELECT * FROM history
+         ${where ? `${where} AND` : "WHERE"} endpointId IN (${endpointIds.map(() => "?").join(",")})
+         ORDER BY displayOrder, platform, endpointUrl, createdAt DESC, checkId DESC`,
+      ).all(...values, ...endpointIds) as RawCheckHistoryRow[]
+    : [];
+  const groups = new Map(endpointRows.map((row) => [row.endpointId, { ...row, checks: [] as CheckHistoryRow[] }]));
+
+  for (const rawRow of rawRows) {
+    groups.get(rawRow.endpointId)?.checks.push(normalizeCheckHistoryRow(rawRow));
+  }
+
+  return {
+    groups: [...groups.values()],
+    total: totals.resultCount,
+    endpointTotal: totals.endpointCount,
     page: currentPage,
     pageSize,
     pageCount,

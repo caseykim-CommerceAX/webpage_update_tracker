@@ -2,14 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { LiveMarkerEvidence } from "@/components/live-marker-evidence";
 import { availabilityPill, changePill, liveStatusPill, StatusPill } from "@/components/status-pill";
+import { getCheckHistoryAccent } from "@/lib/check-history-accent";
 import type { LiveStatus, Platform } from "@/lib/db-types";
 import { formatDateTime, formatDuration } from "@/lib/format";
-import { getCheckHistory, getCheckHistoryTargets } from "@/lib/queries";
+import { getCheckHistoryByEndpoint, getCheckHistoryTargets, type CheckHistoryRow } from "@/lib/queries";
 
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "전체 진단 로그",
+  title: "URL별 진단 로그",
 };
 
 type SearchParams = Promise<Record<string, string | string[] | undefined>>;
@@ -54,6 +55,87 @@ function pageHref({
   return queryString ? `/checks?${queryString}` : "/checks";
 }
 
+function markerPill(found: boolean | null) {
+  return (
+    <StatusPill
+      label={found === true ? "확인" : found === false ? "없음" : "미확인"}
+      tone={found === true ? "green" : found === false ? "red" : "gray"}
+    />
+  );
+}
+
+function CheckResult({ check }: { check: CheckHistoryRow }) {
+  const statusChanged = check.previousLiveStatus !== null && check.previousLiveStatus !== check.liveStatus;
+  const firstStatus = check.previousLiveStatus === null;
+  const hasMarkerData = check.headLiveMarkerFound !== null || check.bodyLiveMarkerFound !== null
+    || check.headLiveMarkerHtml !== null || check.bodyLiveMarkerHtml !== null;
+  const accent = getCheckHistoryAccent(check);
+  const accentClass = accent === "error"
+    ? "border-l-4 border-l-rose-500"
+    : accent === "live-complete"
+      ? "border-l-4 border-l-emerald-500"
+      : accent === "status-change"
+        ? "border-l-4 border-l-amber-500"
+        : "";
+  const transitionLabel = statusChanged && check.previousLiveStatus
+    ? `상태 변경 · ${liveStatusLabel(check.previousLiveStatus)} → ${liveStatusLabel(check.liveStatus)}`
+    : firstStatus
+      ? `첫 판정 · ${liveStatusLabel(check.liveStatus)}`
+      : `상태 유지 · ${liveStatusLabel(check.liveStatus)}`;
+
+  return (
+    <li
+      id={`check-${check.checkId}`}
+      className={`scroll-mt-6 ${accentClass}`}
+    >
+      <div className="grid gap-4 px-4 py-4 sm:px-5 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-start">
+        <div className="min-w-0">
+          <p className="tabular-nums text-sm font-black text-neutral-950">{formatDateTime(check.createdAt)}</p>
+          <p className="mt-1 text-[11px] font-bold text-neutral-500">
+            {check.runSource === "SCHEDULE" ? "예약 검사" : "수동 검사"} · {transitionLabel}
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-2 lg:max-w-xl lg:justify-end">
+          {liveStatusPill(check.liveStatus)}
+          {availabilityPill(check.availabilityStatus)}
+          {changePill(check.changeStatus)}
+        </div>
+      </div>
+
+      <dl className="grid grid-cols-2 border-t border-neutral-200 bg-neutral-50 sm:grid-cols-3 xl:grid-cols-6">
+        <div className="border-b border-r border-neutral-200 p-3"><dt className="text-[10px] font-bold text-neutral-500">HTTP</dt><dd className="tabular-nums mt-1 font-black">{check.httpStatus ?? "—"}</dd></div>
+        <div className="border-b border-r border-neutral-200 p-3"><dt className="text-[10px] font-bold text-neutral-500">HEAD OG</dt><dd className="mt-1">{markerPill(check.headLiveMarkerFound)}</dd></div>
+        <div className="border-b border-r border-neutral-200 p-3"><dt className="text-[10px] font-bold text-neutral-500">BODY 문구</dt><dd className="mt-1">{markerPill(check.bodyLiveMarkerFound)}</dd></div>
+        <div className="border-b border-r border-neutral-200 p-3"><dt className="text-[10px] font-bold text-neutral-500">HEAD 변경</dt><dd className="tabular-nums mt-1 font-black">{check.headAddedCount + check.headRemovedCount}</dd></div>
+        <div className="border-b border-r border-neutral-200 p-3"><dt className="text-[10px] font-bold text-neutral-500">BODY 변경</dt><dd className="tabular-nums mt-1 font-black">{check.bodyAddedCount + check.bodyRemovedCount}</dd></div>
+        <div className="border-b border-r border-neutral-200 p-3"><dt className="text-[10px] font-bold text-neutral-500">응답 시간</dt><dd className="tabular-nums mt-1 font-black">{formatDuration(check.responseMs)}</dd></div>
+      </dl>
+
+      <details className="border-t border-neutral-200 px-4 py-3 sm:px-5">
+        <summary className="cursor-pointer text-xs font-black text-neutral-800 underline decoration-neutral-400 underline-offset-4 hover:text-[#e4002b]">
+          판정 근거와 상세 데이터
+        </summary>
+        <div className="mt-4 space-y-4">
+          {hasMarkerData ? (
+            <LiveMarkerEvidence
+              headFound={check.headLiveMarkerFound}
+              bodyFound={check.bodyLiveMarkerFound}
+              headHtml={check.headLiveMarkerHtml}
+              bodyHtml={check.bodyLiveMarkerHtml}
+            />
+          ) : (
+            <p className="border border-neutral-300 bg-neutral-100 px-3 py-2 text-xs text-neutral-600">이 진단은 HTML 라이브 신호를 검사하지 않았습니다.</p>
+          )}
+          {check.finalUrl && check.finalUrl !== check.requestedUrl ? <p className="break-all text-xs text-neutral-600"><span className="font-black">최종 주소:</span> {check.finalUrl}</p> : null}
+          {check.errorMessage ? <p className="break-words border border-rose-300 bg-rose-50 px-3 py-2 text-xs font-bold text-rose-950">{check.errorMessage}</p> : null}
+          {check.failedRules ? <p className="text-xs font-bold text-rose-900">보조 규칙 실패 {check.failedRules}건</p> : null}
+          <Link href={`/runs/${check.runId}#check-${check.checkId}`} className="button-secondary inline-flex px-4 py-2.5 text-sm">해당 실행 상세 보기</Link>
+        </div>
+      </details>
+    </li>
+  );
+}
+
 export default async function ChecksPage({ searchParams }: { searchParams: SearchParams }) {
   const params = await searchParams;
   const query = firstValue(params.q)?.trim() ?? "";
@@ -65,7 +147,7 @@ export default async function ChecksPage({ searchParams }: { searchParams: Searc
   const transitionsOnly = firstValue(params.transitions) === "1";
   const page = Math.max(1, Number.parseInt(firstValue(params.page) ?? "1", 10) || 1);
   const targets = getCheckHistoryTargets();
-  const history = getCheckHistory({ query, targetId, platform, liveStatus, transitionsOnly, page, pageSize: 50 });
+  const history = getCheckHistoryByEndpoint({ query, targetId, platform, liveStatus, transitionsOnly, page, pageSize: 50 });
   const hrefForPage = (nextPage: number) => pageHref({
     page: nextPage,
     query,
@@ -81,17 +163,19 @@ export default async function ChecksPage({ searchParams }: { searchParams: Searc
         <p className="eyebrow">DB 저장 이력</p>
         <div className="mt-2 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <h1 className="text-4xl font-black tracking-[-0.045em] text-neutral-950 sm:text-5xl">전체 진단 로그</h1>
+            <h1 className="text-4xl font-black tracking-[-0.045em] text-neutral-950 sm:text-5xl">URL별 진단 로그</h1>
             <p className="mt-2 max-w-3xl text-sm font-medium leading-6 text-neutral-600">
-              모든 URL 진단을 시간 역순으로 확인합니다. 상태 변경만 모아보면 라이브 전 → 체크 필요 → 라이브 완료 시점을 추적할 수 있습니다.
+              진단 결과를 URL별로 묶고, 각 URL 안에서 최근 실행부터 시간순으로 표시합니다. 상태가 바뀐 시점과 당시 판정 근거를 한 흐름으로 확인할 수 있습니다.
             </p>
           </div>
-          <p className="tabular-nums shrink-0 text-sm font-black text-neutral-700">총 {history.total.toLocaleString("ko-KR")}건</p>
+          <p className="tabular-nums shrink-0 text-sm font-black text-neutral-700">
+            URL {history.endpointTotal.toLocaleString("ko-KR")}개 · 실행 결과 {history.total.toLocaleString("ko-KR")}건
+          </p>
         </div>
       </header>
 
       <section className="panel p-5 sm:p-6" aria-labelledby="history-filter-title">
-        <h2 id="history-filter-title" className="text-sm font-black text-neutral-950">로그 검색 및 필터</h2>
+        <h2 id="history-filter-title" className="text-sm font-black text-neutral-950">URL 및 실행 결과 필터</h2>
         <form action="/checks" method="get" className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-[minmax(220px,1fr)_220px_150px_170px_auto_auto] xl:items-end">
           <label>
             <span className="form-label">대상 또는 URL</span>
@@ -113,7 +197,7 @@ export default async function ChecksPage({ searchParams }: { searchParams: Searc
             </select>
           </label>
           <label>
-            <span className="form-label">라이브 상태</span>
+            <span className="form-label">실행 결과 상태</span>
             <select className="form-input w-full" name="status" defaultValue={liveStatus ?? ""}>
               <option value="">모든 상태</option>
               <option value="LIVE_COMPLETE">라이브 완료</option>
@@ -124,7 +208,7 @@ export default async function ChecksPage({ searchParams }: { searchParams: Searc
           </label>
           <label className="flex min-h-10 items-center gap-2 border border-neutral-300 bg-white px-3 py-2 text-xs font-bold text-neutral-700">
             <input type="checkbox" name="transitions" value="1" defaultChecked={transitionsOnly} />
-            상태 변경만
+            첫 판정·상태 변경만
           </label>
           <div className="flex gap-2">
             <button type="submit" className="button-primary flex-1 px-4 py-2.5 text-sm">적용</button>
@@ -133,85 +217,51 @@ export default async function ChecksPage({ searchParams }: { searchParams: Searc
         </form>
       </section>
 
-      <section aria-label="저장된 URL 진단 로그" className="space-y-4">
-        {history.rows.map((check) => {
-          const statusChanged = check.previousLiveStatus !== null && check.previousLiveStatus !== check.liveStatus;
-          const firstStatus = check.previousLiveStatus === null;
-          const hasMarkerData = check.headLiveMarkerFound !== null || check.bodyLiveMarkerFound !== null
-            || check.headLiveMarkerHtml !== null || check.bodyLiveMarkerHtml !== null;
-          return (
-            <article key={check.checkId} className={`panel content-auto overflow-hidden ${statusChanged ? "border-l-4 border-l-amber-500" : ""}`}>
-              <div className="grid gap-5 p-5 sm:p-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-start">
-                <div className="min-w-0">
-                  <p className="text-[10px] font-black uppercase tracking-[0.14em] text-neutral-500">
-                    {check.displayOrder}. {check.platform === "DESKTOP" ? "PC" : "Mobile"} · {check.runSource === "SCHEDULE" ? "예약 검사" : "수동 검사"}
-                  </p>
-                  <h2 className="mt-1 text-lg font-black text-neutral-950">{check.targetName}</h2>
-                  <a href={check.requestedUrl} target="_blank" rel="noreferrer" className="text-link mt-2 block max-w-full break-all text-xs">{check.requestedUrl}</a>
-                  <p className="tabular-nums mt-3 text-xs font-bold text-neutral-600">{formatDateTime(check.createdAt)}</p>
-                </div>
-                <div className="flex flex-wrap gap-2 lg:max-w-lg lg:justify-end">
-                  {liveStatusPill(check.liveStatus)}
-                  {availabilityPill(check.availabilityStatus)}
-                  {changePill(check.changeStatus)}
-                </div>
+      <aside aria-label="진단 로그 하이라이트 기준" className="flex flex-wrap items-center gap-x-5 gap-y-2 border border-neutral-300 bg-white px-4 py-3 text-xs font-bold text-neutral-700 sm:px-5">
+        <span className="font-black text-neutral-950">왼쪽 선 기준</span>
+        <span className="inline-flex items-center gap-2"><span className="h-3 w-1 bg-emerald-500" aria-hidden="true" />첫 라이브 완료·완료로 전환</span>
+        <span className="inline-flex items-center gap-2"><span className="h-3 w-1 bg-amber-500" aria-hidden="true" />그 밖의 상태 변경</span>
+        <span className="inline-flex items-center gap-2"><span className="h-3 w-1 bg-rose-500" aria-hidden="true" />판정 불가·검사 오류</span>
+        <span className="text-neutral-500">라이브 완료가 아닌 첫 판정은 문구로만 표시</span>
+      </aside>
+
+      <section aria-label="URL별 진단 실행 결과" className="space-y-5">
+        {history.groups.map((group) => (
+          <article key={group.endpointId} className="panel content-auto overflow-hidden">
+            <header className="grid gap-4 border-b border-neutral-300 bg-white p-5 sm:p-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-start">
+              <div className="min-w-0">
+                <p className="text-[10px] font-black uppercase tracking-[0.14em] text-neutral-500">
+                  {group.displayOrder}. {group.platform === "DESKTOP" ? "PC" : "Mobile"}
+                </p>
+                <h2 className="mt-1 text-xl font-black text-neutral-950">{group.targetName}</h2>
+                <a href={group.url} target="_blank" rel="noreferrer" className="text-link mt-2 block max-w-full break-all text-xs">{group.url}</a>
               </div>
-
-              <div className={`border-t px-5 py-3 text-xs font-black sm:px-6 ${statusChanged ? "border-amber-300 bg-amber-50 text-amber-950" : firstStatus ? "border-sky-200 bg-sky-50 text-sky-950" : "border-neutral-300 bg-neutral-50 text-neutral-600"}`}>
-                {statusChanged && check.previousLiveStatus
-                  ? `상태 변경 · ${liveStatusLabel(check.previousLiveStatus)} → ${liveStatusLabel(check.liveStatus)}`
-                  : firstStatus
-                    ? `첫 판정 · ${liveStatusLabel(check.liveStatus)}`
-                    : `상태 유지 · ${liveStatusLabel(check.liveStatus)}`}
+              <div className="flex flex-wrap items-center gap-2 lg:justify-end">
+                {group.retiredAt ? <StatusPill label="이전 URL" tone="gray" /> : <StatusPill label="현재 URL" tone="blue" />}
+                <StatusPill label={`실행 결과 ${group.resultCount.toLocaleString("ko-KR")}건`} />
               </div>
+            </header>
+            <ol className="divide-y divide-neutral-300">
+              {group.checks.map((check) => <CheckResult key={check.checkId} check={check} />)}
+            </ol>
+          </article>
+        ))}
 
-              <dl className="grid grid-cols-2 border-t border-neutral-300 sm:grid-cols-3 xl:grid-cols-6">
-                <div className="border-b border-r border-neutral-300 p-4"><dt className="text-[10px] font-bold text-neutral-500">HTTP</dt><dd className="tabular-nums mt-1 font-black">{check.httpStatus ?? "—"}</dd></div>
-                <div className="border-b border-r border-neutral-300 p-4"><dt className="text-[10px] font-bold text-neutral-500">HEAD OG</dt><dd className="mt-1"><StatusPill label={check.headLiveMarkerFound === true ? "확인" : check.headLiveMarkerFound === false ? "없음" : "미확인"} tone={check.headLiveMarkerFound === true ? "green" : check.headLiveMarkerFound === false ? "red" : "gray"} /></dd></div>
-                <div className="border-b border-r border-neutral-300 p-4"><dt className="text-[10px] font-bold text-neutral-500">BODY 문구</dt><dd className="mt-1"><StatusPill label={check.bodyLiveMarkerFound === true ? "확인" : check.bodyLiveMarkerFound === false ? "없음" : "미확인"} tone={check.bodyLiveMarkerFound === true ? "green" : check.bodyLiveMarkerFound === false ? "red" : "gray"} /></dd></div>
-                <div className="border-b border-r border-neutral-300 p-4"><dt className="text-[10px] font-bold text-neutral-500">HEAD 변경</dt><dd className="tabular-nums mt-1 font-black">{check.headAddedCount + check.headRemovedCount}</dd></div>
-                <div className="border-b border-r border-neutral-300 p-4"><dt className="text-[10px] font-bold text-neutral-500">BODY 변경</dt><dd className="tabular-nums mt-1 font-black">{check.bodyAddedCount + check.bodyRemovedCount}</dd></div>
-                <div className="border-b border-r border-neutral-300 p-4"><dt className="text-[10px] font-bold text-neutral-500">응답 시간</dt><dd className="tabular-nums mt-1 font-black">{formatDuration(check.responseMs)}</dd></div>
-              </dl>
-
-              <details className="border-t border-neutral-300 p-5 sm:p-6">
-                <summary className="cursor-pointer text-sm font-black text-neutral-950 underline decoration-neutral-400 underline-offset-4 hover:text-[#e4002b]">
-                  저장된 진단 데이터 펼쳐보기
-                </summary>
-                <div className="mt-5 space-y-5">
-                  {hasMarkerData ? (
-                    <LiveMarkerEvidence
-                      headFound={check.headLiveMarkerFound}
-                      bodyFound={check.bodyLiveMarkerFound}
-                      headHtml={check.headLiveMarkerHtml}
-                      bodyHtml={check.bodyLiveMarkerHtml}
-                    />
-                  ) : (
-                    <p className="border border-neutral-300 bg-neutral-100 px-3 py-2 text-xs text-neutral-600">이 진단은 HTML 라이브 신호를 검사하지 않았습니다.</p>
-                  )}
-                  {check.finalUrl && check.finalUrl !== check.requestedUrl ? <p className="break-all text-xs text-neutral-600"><span className="font-black">최종 주소:</span> {check.finalUrl}</p> : null}
-                  {check.errorMessage ? <p className="break-words border border-rose-300 bg-rose-50 px-3 py-2 text-xs font-bold text-rose-950">{check.errorMessage}</p> : null}
-                  {check.failedRules ? <p className="text-xs font-bold text-rose-900">보조 규칙 실패 {check.failedRules}건</p> : null}
-                  <Link href={`/runs/${check.runId}#check-${check.checkId}`} className="button-secondary inline-flex px-4 py-2.5 text-sm">검사 상세 보기</Link>
-                </div>
-              </details>
-            </article>
-          );
-        })}
-
-        {history.rows.length === 0 ? (
+        {history.groups.length === 0 ? (
           <div className="panel px-5 py-16 text-center">
-            <p className="font-black text-neutral-950">조건에 맞는 진단 로그가 없습니다.</p>
-            <p className="mt-2 text-sm text-neutral-500">검색 또는 필터 조건을 바꿔 주세요.</p>
+            <p className="font-black text-neutral-950">조건에 맞는 URL 진단 로그가 없습니다.</p>
+            <p className="mt-2 text-sm text-neutral-500">검색 또는 실행 결과 필터 조건을 바꿔 주세요.</p>
           </div>
         ) : null}
       </section>
 
-      <nav aria-label="진단 로그 페이지" className="flex items-center justify-between gap-4 border-t border-neutral-950 pt-5">
-        {history.page > 1 ? <Link href={hrefForPage(history.page - 1)} className="button-secondary px-4 py-2.5 text-sm">이전 50건</Link> : <span />}
-        <p className="tabular-nums text-sm font-black text-neutral-700">{history.page} / {history.pageCount} 페이지</p>
-        {history.page < history.pageCount ? <Link href={hrefForPage(history.page + 1)} className="button-secondary px-4 py-2.5 text-sm">다음 50건</Link> : <span />}
-      </nav>
+      {history.pageCount > 1 ? (
+        <nav aria-label="URL별 진단 로그 페이지" className="flex items-center justify-between gap-4 border-t border-neutral-950 pt-5">
+          {history.page > 1 ? <Link href={hrefForPage(history.page - 1)} className="button-secondary px-4 py-2.5 text-sm">이전 50개 URL</Link> : <span />}
+          <p className="tabular-nums text-sm font-black text-neutral-700">{history.page} / {history.pageCount} 페이지</p>
+          {history.page < history.pageCount ? <Link href={hrefForPage(history.page + 1)} className="button-secondary px-4 py-2.5 text-sm">다음 50개 URL</Link> : <span />}
+        </nav>
+      ) : null}
     </div>
   );
 }

@@ -14,7 +14,8 @@ test("대시보드와 주요 관리 화면을 연다", async ({ page }) => {
   await page.getByRole("link", { name: "실행 이력" }).click();
   await expect(page.getByRole("heading", { name: "실행 이력" })).toBeVisible();
   await page.getByRole("link", { name: "진단 로그" }).click();
-  await expect(page.getByRole("heading", { name: "전체 진단 로그" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "URL별 진단 로그" })).toBeVisible();
+  await expect(page.getByRole("region", { name: "URL별 진단 실행 결과" })).toBeVisible();
 });
 
 test("모바일 화면에서 문서 전체 수평 스크롤이 생기지 않는다", async ({ page }) => {

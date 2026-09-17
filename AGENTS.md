@@ -40,10 +40,10 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - `src/lib/tracker/rules.ts`: 태그 diff와 분리된 HTTP 및 선택형 정적 규칙 평가
 - `src/lib/db.ts`: SQLite 연결과 마이그레이션 적용
 - `src/lib/target-service.ts`: 대상 생성/수정, URL 교체 시 이력 보존
-- `src/lib/queries.ts`: 대시보드와 실행 상세용 배치 조회
+- `src/lib/queries.ts`: 대시보드·실행 상세·URL별 진단 이력용 배치 조회
 - `src/app/api/`: 대상 편집, 검사 시작, 실행 진행 상태 API
 - `src/app/page.tsx`, `src/app/targets/`, `src/app/runs/`: 대시보드와 관리/이력 UI
-- `src/app/checks/page.tsx`: 전체 URL 진단 로그, 서버 필터와 페이지네이션
+- `src/app/checks/page.tsx`: URL별로 묶은 전체 진단 이력, 서버 필터와 URL 단위 페이지네이션
 - `src/components/check-diagnostics.tsx`: 접속·규칙 실패 원인과 실제 확인값 표시
 - `src/components/live-marker-evidence.tsx`: 판정에 사용한 OG meta와 추천 h2 원문 표시
 - `prisma/migrations/202609140001_init/migration.sql`, `202609140002_check_comparisons/migration.sql`, `202609140003_remove_seed_content_rules/migration.sql`, `202609140004_live_status/migration.sql`, `202609140005_live_marker_evidence/migration.sql`: 현재 DB 스키마, 진단 비교 필드, 과거 정적 규칙 정리, 라이브 상태·일자·판정 태그 원문
@@ -77,6 +77,8 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - URL 수정은 기존 Endpoint를 덮어쓰지 않는다. 기존 행을 retire하고 새 Endpoint를 만들어 과거 이력과 기준선을 분리한다.
 - 대상 삭제는 hard delete가 아니라 비활성화로 처리한다.
 - 동시에 하나의 Run만 실행할 수 있으며 30분 넘게 멈춘 Run은 다음 실행 시 실패로 정리한다.
+- 전체 진단 로그는 Endpoint 단위로 묶어 한 URL의 실행 결과를 최신순으로 모두 표시한다. 대상·채널·라이브 상태·상태 변경 필터는 실행 결과에 적용하며, 페이지네이션은 이력이 중간에 잘리지 않도록 URL 단위로 처리한다.
+- URL별 진단 로그의 왼쪽 선은 첫 판정부터 라이브 완료이거나 라이브 완료로 전환된 경우는 초록, 그 밖의 상태 변경은 주황, 판정 불가·검사 오류는 빨강으로 표시한다. 라이브 완료가 아닌 첫 판정과 상태 유지는 왼쪽 선을 사용하지 않고 문구와 상태 배지로 구분한다.
 
 ## 5. Seed-specific Rules
 
@@ -116,13 +118,13 @@ Playwright 브라우저가 준비된 환경에서는 `npm.cmd run test:e2e`도 �
 
 ## 7. Last Verified State
 
-2026-09-16 기준:
+2026-09-17 기준:
 
 - `lint`, `typecheck`, 프로덕션 `build` 통과
-- Vitest 8개 파일, 17개 테스트 통과
+- Vitest 9개 파일, 23개 테스트 통과
 - Playwright E2E 3개 통과: 진단 로그를 포함한 주요 화면 이동·활성 메뉴, 390px 모바일 수평 오버플로, 검색 필터와 전체 진단 버튼의 클라이언트 상호작용 확인
 - 프로덕션 서버의 실제 브라우저에서 전체 진단 버튼 클릭 후 `진단 중 0/0` → `40/45` 진행 표시와 완료 후 버튼 복귀를 확인
-- Playwright 캡처로 1440px·390px 대시보드의 색상별 라이브 요약과 페이지별 상태, 전체 진단 로그의 필터·로그 카드 레이아웃 확인
+- Playwright 캡처로 1440px·390px URL별 진단 로그의 필터, URL 그룹, 실행 결과 목록과 모바일 2열 진단 지표 레이아웃 확인
 - 주요 앱/API 경로의 로컬 HTTP 200 확인
 - ALL 카드 PC·모바일 라이브 검사: HTTP 200, 첫 실행 `BASELINE`, 연속 실행 `UNCHANGED`
 - ALL 카드 PC·모바일 표본 재진단: `LIVE_COMPLETE`, 실제 `og:site_name` meta와 추천 h2 원문 조각 저장 및 실행 상세 표시 확인
@@ -133,7 +135,7 @@ Playwright 브라우저가 준비된 환경에서는 `npm.cmd run test:e2e`도 �
 - `EndpointCheck`는 라이브 상태와 HEAD/BODY 필수 신호 확인값을 저장하고, `Endpoint.liveCompletedAt`은 최초 라이브 완료 감지 시각을 보존한다. 기존 스냅샷의 판정과 최초 일자도 마이그레이션에서 복구한다.
 - 과거 사용자 편집 정적 규칙으로 생성했던 OG/추천 문구 규칙과 오판정 결과는 마이그레이션으로 제거했고, 시스템 내장 라이브 판정으로 대체했다. HTTP 결과와 구조화 diff 이력은 보존한다.
 - 대시보드 상단은 최근 전체 진단의 라이브 완료·체크 필요·라이브 전·판정 불가 URL 수를 요약하고, 페이지별 필수 신호와 최초 라이브 일자를 우선 표시한다. 태그 diff와 실패 원인은 보조 상세 및 실행 상세에서 펼친다.
-- 라이브 상태 배지는 완료(초록)·체크 필요(주황)·라이브 전(파랑)·판정 불가(회색)로 구분한다. 대시보드의 전체 진단 로그는 DB의 모든 `EndpointCheck`를 50건씩 조회하며 대상·채널·상태·상태 변경 여부를 서버에서 필터링한다.
+- 라이브 상태 배지는 완료(초록)·체크 필요(주황)·라이브 전(파랑)·판정 불가(회색)로 구분한다. URL별 진단 로그는 DB의 `EndpointCheck`를 Endpoint별로 묶고 대상·채널·상태·상태 변경 여부를 서버에서 필터링하며, 최대 50개 URL씩 표시한다.
 - 팀 공유 서버의 `0.0.0.0:3000` 리스닝과 `127.0.0.1`, `192.168.203.99` 양쪽 HTTP 200을 확인했다.
 - Windows 방화벽의 `Webpage Update Tracker Team Access` 규칙을 TCP 3000, Node.js, Domain/Private, LocalSubnet 범위로 등록하고 `netsh`로 확인했다.
 - `start-team-server.bat`는 DB 준비와 프로덕션 빌드, 팀 접속 URL 출력을 거쳐 공유 프로덕션 서버를 실행한다. Next.js 16.3.5 Turbopack 개발 서버에서 HMR WebSocket이 실패하면 Client Component 하이드레이션이 멈추는 환경 문제를 이 경로에서 회피한다.
