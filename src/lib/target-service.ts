@@ -11,6 +11,14 @@ const endpointSchema = z.object({
   url: httpsUrl,
   referenceUrl: optionalUrl,
   lifecycle: z.enum(["EXISTING", "PRELAUNCH"]),
+}).superRefine((endpoint, context) => {
+  if (endpoint.referenceUrl && endpoint.referenceUrl === endpoint.url) {
+    context.addIssue({
+      code: "custom",
+      path: ["referenceUrl"],
+      message: "현재 URL과 이전 URL은 서로 달라야 합니다.",
+    });
+  }
 });
 
 const ruleSchema = z.object({
@@ -64,6 +72,34 @@ function insertRules(targetId: string, rules: TargetInput["rules"], timestamp: s
   ));
 }
 
+function ensurePreviousEndpoint(
+  targetId: string,
+  endpoint: TargetInput["endpoints"][number],
+  timestamp: string,
+) {
+  const previousUrl = endpoint.referenceUrl || null;
+  if (!previousUrl) return;
+
+  const existing = db.prepare(
+    "SELECT id, retiredAt FROM Endpoint WHERE targetId = ? AND platform = ? AND url = ?",
+  ).get(targetId, endpoint.platform, previousUrl) as { id: string; retiredAt: string | null } | undefined;
+
+  if (existing) {
+    if (existing.retiredAt) {
+      db.prepare(
+        "UPDATE Endpoint SET enabled = 1, lifecycle = 'EXISTING', updatedAt = ? WHERE id = ?",
+      ).run(timestamp, existing.id);
+    }
+    return;
+  }
+
+  db.prepare(
+    `INSERT INTO Endpoint
+     (id, targetId, platform, url, referenceUrl, lifecycle, enabled, retiredAt, createdAt, updatedAt)
+     VALUES (?, ?, ?, ?, NULL, 'EXISTING', 1, ?, ?, ?)`,
+  ).run(createId(), targetId, endpoint.platform, previousUrl, timestamp, timestamp, timestamp);
+}
+
 export function createTarget(input: TargetInput) {
   validateSelectors(input);
   const create = db.transaction(() => {
@@ -78,6 +114,7 @@ export function createTarget(input: TargetInput) {
     );
     for (const endpoint of input.endpoints) {
       insertEndpoint.run(createId(), id, endpoint.platform, endpoint.url, endpoint.referenceUrl || null, endpoint.lifecycle, timestamp, timestamp);
+      ensurePreviousEndpoint(id, endpoint, timestamp);
     }
     insertRules(id, input.rules, timestamp);
     return id;
@@ -102,11 +139,14 @@ export function updateTarget(targetId: string, input: TargetInput) {
     for (const endpoint of existing) {
       const next = incoming.get(endpoint.platform);
       if (!next || next.url !== endpoint.url) {
-        db.prepare("UPDATE Endpoint SET enabled = 0, retiredAt = ?, updatedAt = ? WHERE id = ?").run(timestamp, timestamp, endpoint.id);
+        db.prepare("UPDATE Endpoint SET enabled = 1, lifecycle = 'EXISTING', retiredAt = ?, updatedAt = ? WHERE id = ?").run(
+          timestamp, timestamp, endpoint.id,
+        );
       } else {
         db.prepare("UPDATE Endpoint SET referenceUrl = ?, lifecycle = ?, updatedAt = ? WHERE id = ?").run(
           next.referenceUrl || null, next.lifecycle, timestamp, endpoint.id,
         );
+        ensurePreviousEndpoint(targetId, next, timestamp);
         incoming.delete(endpoint.platform);
       }
     }
@@ -115,6 +155,7 @@ export function updateTarget(targetId: string, input: TargetInput) {
     );
     for (const endpoint of incoming.values()) {
       insertEndpoint.run(createId(), targetId, endpoint.platform, endpoint.url, endpoint.referenceUrl || null, endpoint.lifecycle, timestamp, timestamp);
+      ensurePreviousEndpoint(targetId, endpoint, timestamp);
     }
 
     db.prepare("DELETE FROM Rule WHERE targetId = ?").run(targetId);

@@ -121,7 +121,7 @@ describe("검사 실행 이력", () => {
     expect(missing.groups).toEqual([]);
   });
 
-  it("URL 변경 시 이전 Endpoint와 스냅샷을 보존하고 새 기준선을 준비한다", () => {
+  it("URL 변경 시 이전 Endpoint를 계속 추적하고 새 기준선을 준비한다", async () => {
     const previous = database.db.prepare("SELECT id FROM Endpoint WHERE targetId = ? AND retiredAt IS NULL").get(targetId) as { id: string };
     targetService.updateTarget(targetId, {
       name: "테스트 카드",
@@ -134,10 +134,33 @@ describe("검사 실행 이력", () => {
     const retired = database.db.prepare("SELECT retiredAt, enabled FROM Endpoint WHERE id = ?").get(previous.id) as { retiredAt: string | null; enabled: number };
     const current = database.db.prepare("SELECT id, url FROM Endpoint WHERE targetId = ? AND retiredAt IS NULL").get(targetId) as { id: string; url: string };
     expect(retired.retiredAt).toBeTruthy();
-    expect(retired.enabled).toBe(0);
+    expect(retired.enabled).toBe(1);
     expect(current.url).toBe("https://example.com/card-v2");
     expect(current.id).not.toBe(previous.id);
     expect((database.db.prepare("SELECT COUNT(*) AS count FROM Snapshot WHERE endpointId = ?").get(previous.id) as { count: number }).count).toBe(3);
     expect((database.db.prepare("SELECT COUNT(*) AS count FROM Snapshot WHERE endpointId = ?").get(current.id) as { count: number }).count).toBe(0);
+
+    const target = queries.getTargets().find((item) => item.id === targetId);
+    expect(target?.endpoints).toHaveLength(2);
+    expect(target?.endpoints.map((endpoint) => ({ url: endpoint.url, previous: Boolean(endpoint.retiredAt) }))).toEqual([
+      { url: "https://example.com/card-v2", previous: false },
+      { url: "https://example.com/card", previous: true },
+    ]);
+
+    const requestedUrls: string[] = [];
+    vi.stubGlobal("fetch", vi.fn().mockImplementation((input: string | URL | Request) => {
+      requestedUrls.push(String(input));
+      return Promise.resolve(new Response("<html><body>tracked</body></html>", {
+        status: 200,
+        headers: { "content-type": "text/html" },
+      }));
+    }));
+    const run = runner.createQueuedRun("MANUAL", [targetId]);
+    await runner.executeRun(run.id);
+    expect(requestedUrls).toEqual([
+      "https://example.com/card-v2",
+      "https://example.com/card",
+    ]);
+    expect((database.db.prepare("SELECT COUNT(*) AS count FROM EndpointCheck WHERE runId = ?").get(run.id) as { count: number }).count).toBe(2);
   });
 });

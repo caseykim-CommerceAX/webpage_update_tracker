@@ -62,10 +62,18 @@ targets.push(
     lifecycle: "PRELAUNCH",
   },
   {
-    name: "이벤트",
+    name: "이벤트 9월",
     category: "이벤트",
     desktop: "https://card.kbcard.com/benefits/events/ongoing/kb-new-card-annual-fee-cashback-2026-09",
     mobile: "https://m.kbcard.com/benefits/events/kb-new-card-annual-fee-cashback-2026-09",
+    lifecycle: "PRELAUNCH",
+    monitorMode: "STATUS_ONLY",
+  },
+  {
+    name: "이벤트 10월",
+    category: "이벤트",
+    desktop: "https://card.kbcard.com/benefits/events/ongoing/kb-new-card-annual-fee-cashback-2026-10",
+    mobile: "https://m.kbcard.com/benefits/events/kb-new-card-annual-fee-cashback-2026-10",
     lifecycle: "PRELAUNCH",
     monitorMode: "STATUS_ONLY",
   },
@@ -102,6 +110,13 @@ function main() {
       if (item.mobile) endpoints.push(["MOBILE", item.mobile, item.referenceMobile]);
       for (const [platform, url, referenceUrl] of endpoints) {
         insertEndpoint.run(createId(), targetId, platform, url, referenceUrl ?? null, item.lifecycle ?? "EXISTING", timestamp, timestamp);
+        if (referenceUrl && referenceUrl !== url) {
+          db.prepare(
+            `INSERT INTO Endpoint
+             (id, targetId, platform, url, referenceUrl, lifecycle, enabled, retiredAt, createdAt, updatedAt)
+             VALUES (?, ?, ?, ?, NULL, 'EXISTING', 1, ?, ?, ?)`,
+          ).run(createId(), targetId, platform, referenceUrl, timestamp, timestamp, timestamp);
+        }
       }
 
       const insertRule = db.prepare(

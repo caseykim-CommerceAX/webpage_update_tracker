@@ -16,7 +16,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 - KB국민카드 웹페이지의 PC·모바일 URL을 매일 검사해 라이브 여부를 판정하는 로컬 우선 PoC다.
 - 현재 HTML의 HEAD OG 태그와 BODY 추천 문구를 라이브 필수 신호로 보고, 직전 저장 진단 대비 HEAD/BODY 변경과 HTTP 상태·등록 규칙은 별도 진단으로 SQLite에 기록해 한국어 웹 대시보드에서 보여준다.
-- 초기 데이터는 `기획서_Webpage_update_Tracker.md`의 23개 항목과 45개 현재 URL이다.
+- 초기 데이터는 기획서 항목에 10월 이벤트를 더한 24개 항목, 47개 현재 URL과 3개 이전 URL이다.
 - 현재 범위에는 URL/규칙 편집, 전체 수동 진단, 실패 원인과 실제 확인값 진단, URL별 전체 진단 로그와 상태 변경 필터, 실행 이력, HEAD/BODY 구조화 diff, 반응형 UI, Windows 작업 스케줄러 스크립트가 포함된다.
 - 외부 알림, 인증, 브라우저 렌더링 기반 수집, 클라우드 배포는 아직 범위 밖이다.
 
@@ -46,7 +46,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - `src/app/checks/page.tsx`: URL별로 묶은 전체 진단 이력, 서버 필터와 URL 단위 페이지네이션
 - `src/components/check-diagnostics.tsx`: 접속·규칙 실패 원인과 실제 확인값 표시
 - `src/components/live-marker-evidence.tsx`: 판정에 사용한 OG meta와 추천 h2 원문 표시
-- `prisma/migrations/202609140001_init/migration.sql`, `202609140002_check_comparisons/migration.sql`, `202609140003_remove_seed_content_rules/migration.sql`, `202609140004_live_status/migration.sql`, `202609140005_live_marker_evidence/migration.sql`: 현재 DB 스키마, 진단 비교 필드, 과거 정적 규칙 정리, 라이브 상태·일자·판정 태그 원문
+- `prisma/migrations/202609140001_init/migration.sql`, `202609140002_check_comparisons/migration.sql`, `202609140003_remove_seed_content_rules/migration.sql`, `202609140004_live_status/migration.sql`, `202609140005_live_marker_evidence/migration.sql`, `202609170001_track_previous_endpoints/migration.sql`, `202609170002_split_monthly_events/migration.sql`: 현재 DB 스키마, 진단 비교 필드, 과거 정적 규칙 정리, 라이브 상태·일자·판정 태그 원문, 이전 URL 추적, 월별 이벤트 분리
 - `prisma/seed.ts`: 기획서의 초기 23개 항목
 - `scripts/scan.ts`: 수동/예약 검사 CLI
 - `scripts/run-e2e.mjs`: 프로덕션 빌드와 임시 서버 수명주기를 관리하는 Playwright E2E 실행기
@@ -74,7 +74,8 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - 현재 필수 태그/문구의 존재 여부는 라이브 판정에 사용한다. 별도의 변경 판정에서는 추천 h2가 양일 모두 존재하면 `UNCHANGED`, 전일에 없고 오늘 추가됐을 때만 BODY 추가로 판정한다.
 - Meta/텍스트 정적 규칙은 전일 대비 diff와 별도인 선택 기능이다. 초기 시드에는 추가하지 않는다.
 - `script`, `style`, `noscript`, `template`, SVG, class/id, UTM 등 추적 파라미터는 diff에서 제외한다.
-- URL 수정은 기존 Endpoint를 덮어쓰지 않는다. 기존 행을 retire하고 새 Endpoint를 만들어 과거 이력과 기준선을 분리한다.
+- URL 수정은 기존 Endpoint를 덮어쓰지 않는다. 기존 행을 추적 가능한 이전 URL로 retire하고 새 Endpoint를 만들어 이력과 기준선을 분리한다.
+- 이전 URL은 `enabled = 1`, `retiredAt != NULL`인 독립 Endpoint로 현재 URL과 함께 정기 검사한다. 대상 자체를 비활성화하면 현재·이전 URL을 모두 검사하지 않는다.
 - 대상 삭제는 hard delete가 아니라 비활성화로 처리한다.
 - 동시에 하나의 Run만 실행할 수 있으며 30분 넘게 멈춘 Run은 다음 실행 시 실패로 정리한다.
 - 전체 진단 로그는 Endpoint 단위로 묶어 한 URL의 실행 결과를 최신순으로 모두 표시한다. 대상·채널·라이브 상태·상태 변경 필터는 실행 결과에 적용하며, 페이지네이션은 이력이 중간에 잘리지 않도록 URL 단위로 처리한다.
@@ -85,8 +86,8 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - 모든 초기 항목의 사용자 편집 규칙은 접속 확인용 HTTP 200만 등록한다. OG meta와 추천 h2는 `Rule` 행을 만들지 않는 시스템 내장 라이브 필수 신호이며, 별도의 전일 대비 HEAD/BODY diff에도 포함된다.
 - BeV Ⅲ: PC·모바일 모두 PRELAUNCH이며 오픈 후 HTTP와 DOM 변경을 검사한다.
 - 서비스: PC PRELAUNCH이며 오픈 후 HTTP와 DOM 변경을 검사한다.
-- 이벤트: PC·모바일 PRELAUNCH, `STATUS_ONLY`, HTTP 상태만 검사한다.
-- 기획서의 “업데이트 전 URL”은 `referenceUrl`로만 표시하고 정기 검사하지 않는다.
+- 이벤트: `이벤트 9월`과 `이벤트 10월`은 각각 PC·모바일 PRELAUNCH Endpoint를 가진 독립 `STATUS_ONLY` 대상이며 HTTP 상태만 검사한다.
+- 기획서의 “업데이트 전 URL”은 별도의 이전 Endpoint로 물리화해 정기 검사한다. 현재 Endpoint의 `referenceUrl`은 편집 화면에서 이 관계를 유지하기 위한 값이다.
 
 ## 6. Commands
 
@@ -121,9 +122,9 @@ Playwright 브라우저가 준비된 환경에서는 `npm.cmd run test:e2e`도 �
 2026-09-17 기준:
 
 - `lint`, `typecheck`, 프로덕션 `build` 통과
-- Vitest 9개 파일, 23개 테스트 통과
+- Vitest 10개 파일, 25개 테스트 통과
 - Playwright E2E 3개 통과: 진단 로그를 포함한 주요 화면 이동·활성 메뉴, 390px 모바일 수평 오버플로, 검색 필터와 전체 진단 버튼의 클라이언트 상호작용 확인
-- 프로덕션 서버의 실제 브라우저에서 전체 진단 버튼 클릭 후 `진단 중 0/0` → `40/45` 진행 표시와 완료 후 버튼 복귀를 확인
+- 전체 진단 범위는 현재 URL 47개와 이전 URL 3개를 합친 50개 URL이며, 대시보드 버튼의 진행 표시와 완료 후 복귀를 확인했다.
 - Playwright 캡처로 1440px·390px URL별 진단 로그의 필터, URL 그룹, 실행 결과 목록과 모바일 2열 진단 지표 레이아웃 확인
 - 주요 앱/API 경로의 로컬 HTTP 200 확인
 - ALL 카드 PC·모바일 라이브 검사: HTTP 200, 첫 실행 `BASELINE`, 연속 실행 `UNCHANGED`
@@ -133,6 +134,7 @@ Playwright 브라우저가 준비된 환경에서는 `npm.cmd run test:e2e`도 �
 - 작업 스케줄러 PowerShell 스크립트 문법 확인; 실제 OS 예약 등록은 자동으로 수행하지 않았다.
 - `EndpointCheck`는 직전 성공 진단 ID와 HEAD/BODY 추가·삭제 건수를 저장하며 기존 DB 이력도 마이그레이션에서 역산한다.
 - `EndpointCheck`는 라이브 상태와 HEAD/BODY 필수 신호 확인값을 저장하고, `Endpoint.liveCompletedAt`은 최초 라이브 완료 감지 시각을 보존한다. 기존 스냅샷의 판정과 최초 일자도 마이그레이션에서 복구한다.
+- 기존 DB의 기획서 이전 URL 3개를 독립 Endpoint로 변환했다. `이벤트 9월`과 `이벤트 10월`은 각각 PC·모바일 현재 PRELAUNCH Endpoint를 가진 별도 대상으로 구성되며 활성 진단 범위는 총 50개 URL이다.
 - 과거 사용자 편집 정적 규칙으로 생성했던 OG/추천 문구 규칙과 오판정 결과는 마이그레이션으로 제거했고, 시스템 내장 라이브 판정으로 대체했다. HTTP 결과와 구조화 diff 이력은 보존한다.
 - 대시보드 상단은 최근 전체 진단의 라이브 완료·체크 필요·라이브 전·판정 불가 URL 수를 요약하고, 페이지별 필수 신호와 최초 라이브 일자를 우선 표시한다. 태그 diff와 실패 원인은 보조 상세 및 실행 상세에서 펼친다.
 - 라이브 상태 배지는 완료(초록)·체크 필요(주황)·라이브 전(파랑)·판정 불가(회색)로 구분한다. URL별 진단 로그는 DB의 `EndpointCheck`를 Endpoint별로 묶고 대상·채널·상태·상태 변경 여부를 서버에서 필터링하며, 최대 50개 URL씩 표시한다.

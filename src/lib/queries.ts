@@ -33,6 +33,7 @@ export type EndpointView = {
   launchedAt: string | null;
   liveCompletedAt: string | null;
   enabled: boolean;
+  retiredAt: string | null;
   latest: {
     checkId: string;
     runId: string;
@@ -104,7 +105,10 @@ type LatestFailureRow = RuleResultView & { checkId: string };
 export function getTargets(): TargetView[] {
   const targetRows = db.prepare("SELECT id, displayOrder, name, category, monitorMode, enabled FROM Target ORDER BY displayOrder").all() as TargetRow[];
   const endpointRows = db.prepare(
-    "SELECT id, targetId, platform, url, referenceUrl, lifecycle, launchedAt, liveCompletedAt, enabled FROM Endpoint WHERE retiredAt IS NULL ORDER BY platform",
+    `SELECT id, targetId, platform, url, referenceUrl, lifecycle, launchedAt, liveCompletedAt, enabled, retiredAt
+     FROM Endpoint
+     WHERE enabled = 1
+     ORDER BY targetId, platform, CASE WHEN retiredAt IS NULL THEN 0 ELSE 1 END, createdAt DESC`,
   ).all() as EndpointRow[];
   const ruleRows = db.prepare(
     "SELECT id, targetId, type, label, selector, attribute, expectedValue, expectedStatuses, enabled, displayOrder FROM Rule ORDER BY targetId, displayOrder",
@@ -156,6 +160,7 @@ export function getTargets(): TargetView[] {
       launchedAt: row.launchedAt,
       liveCompletedAt: row.liveCompletedAt,
       enabled: Boolean(row.enabled),
+      retiredAt: row.retiredAt,
       latest: latest
         ? {
             checkId: latest.checkId,
@@ -208,7 +213,7 @@ export function getRun(runId: string) {
   const run = db.prepare("SELECT * FROM Run WHERE id = ?").get(runId) as RunRecord | undefined;
   if (!run) return null;
   const checks = db.prepare(
-    `SELECT c.*, e.platform, e.url, t.name AS targetName, t.displayOrder, s.diffJson,
+    `SELECT c.*, e.platform, e.url, e.retiredAt, t.name AS targetName, t.displayOrder, s.diffJson,
             previous.createdAt AS comparedAt
      FROM EndpointCheck c
      JOIN Endpoint e ON e.id = c.endpointId
@@ -221,6 +226,7 @@ export function getRun(runId: string) {
     endpointId: string;
     platform: Platform;
     url: string;
+    retiredAt: string | null;
     targetName: string;
     displayOrder: number;
     requestedUrl: string;

@@ -15,6 +15,8 @@ const MIGRATIONS = [
   "202609140003_remove_seed_content_rules",
   "202609140004_live_status",
   "202609140005_live_marker_evidence",
+  "202609170001_track_previous_endpoints",
+  "202609170002_split_monthly_events",
 ] as const;
 
 function initialize(database: Database.Database) {

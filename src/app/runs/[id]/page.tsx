@@ -133,7 +133,10 @@ export default async function RunDetailPage({ params }: { params: Promise<{ id: 
             <article id={`check-${check.id}`} key={check.id} className={`panel scroll-mt-6 ${issue ? "border-l-4 border-l-[#e4002b]" : ""}`}>
               <div className="grid gap-5 p-5 sm:p-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-start">
                 <div className="min-w-0">
-                  <p className="text-[10px] font-black uppercase tracking-[0.14em] text-neutral-500">{check.displayOrder}. {check.platform === "DESKTOP" ? "PC" : "Mobile"}</p>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <p className="text-[10px] font-black uppercase tracking-[0.14em] text-neutral-500">{check.displayOrder}. {check.platform === "DESKTOP" ? "PC" : "Mobile"}</p>
+                    <StatusPill label={check.retiredAt ? "이전 URL" : "현재 URL"} tone={check.retiredAt ? "gray" : "blue"} />
+                  </div>
                   <h2 className="mt-1 text-xl font-black text-neutral-950">{check.targetName}</h2>
                   <a href={check.url} target="_blank" rel="noreferrer" className="text-link mt-2 block w-fit max-w-full break-all text-xs">{check.url}</a>
                   {check.finalUrl && check.finalUrl !== check.requestedUrl ? (

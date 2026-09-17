@@ -60,15 +60,13 @@ function EndpointMeta({ endpoint }: { endpoint: EndpointView }) {
         <span className="w-14 shrink-0 text-[10px] font-black uppercase tracking-[0.14em] text-neutral-500">
           {endpoint.platform === "DESKTOP" ? "PC" : "Mobile"}
         </span>
+        <StatusPill label={endpoint.retiredAt ? "이전 URL" : "현재 URL"} tone={endpoint.retiredAt ? "gray" : "blue"} />
+      </div>
+      <div className="ml-16 mt-2 min-w-0">
         <a href={endpoint.url} target="_blank" rel="noreferrer" className="min-w-0 truncate text-xs font-bold text-neutral-950 underline decoration-neutral-300 underline-offset-4 hover:text-[#e4002b]" title={endpoint.url}>
           {endpoint.url}
         </a>
       </div>
-      {endpoint.referenceUrl ? (
-        <a href={endpoint.referenceUrl} target="_blank" rel="noreferrer" className="ml-16 mt-1 block w-fit text-[11px] font-medium text-neutral-500 underline underline-offset-4 hover:text-[#e4002b]">
-          이전 URL 보기
-        </a>
-      ) : null}
     </div>
   );
 }

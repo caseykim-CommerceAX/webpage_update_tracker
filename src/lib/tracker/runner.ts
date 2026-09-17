@@ -269,7 +269,9 @@ export async function executeRun(runId: string) {
               t.name AS targetName, t.monitorMode
        FROM Endpoint e JOIN Target t ON t.id = e.targetId
        WHERE e.enabled = 1 AND t.enabled = 1
-       ORDER BY t.displayOrder ASC, e.platform ASC`,
+       ORDER BY t.displayOrder ASC, e.platform ASC,
+                CASE WHEN e.retiredAt IS NULL THEN 0 ELSE 1 END ASC,
+                e.createdAt DESC`,
     ).all() as Omit<EndpointForScan, "rules">[];
     const filtered = targetIds ? endpointRows.filter((item) => targetIds.has(item.targetId)) : endpointRows;
     const ruleRows = db.prepare("SELECT * FROM Rule WHERE enabled = 1 ORDER BY targetId, displayOrder").all() as RuleRecord[];

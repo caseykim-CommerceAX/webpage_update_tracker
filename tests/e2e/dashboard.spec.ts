@@ -5,6 +5,9 @@ test("대시보드와 주요 관리 화면을 연다", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "페이지 라이브 현황", exact: true })).toBeVisible();
   await expect(page.getByRole("heading", { name: "태그 변경 상세" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "페이지별 라이브 현황" })).toBeVisible();
+  await expect(page.getByText("이벤트 9월", { exact: true }).first()).toBeVisible();
+  await expect(page.getByText("이벤트 10월", { exact: true }).first()).toBeVisible();
+  await expect(page.getByText("이전 URL", { exact: true }).first()).toBeVisible();
   await expect(page.getByRole("heading", { name: "전체 진단 로그" })).toBeVisible();
   await expect(page.getByText(/대상 \d+개 · URL \d+개 표시/)).toBeVisible();
   await expect(page.getByRole("button", { name: "이 항목 검사" })).toHaveCount(0);
@@ -53,7 +56,7 @@ test("대시보드의 클라이언트 기능이 동작한다", async ({ page }) 
     body: JSON.stringify({
       id: "e2e-run",
       status: "RUNNING",
-      totalCount: 45,
+      totalCount: 50,
       processedCount: 3,
       changedCount: 0,
       failureCount: 0,
@@ -68,5 +71,5 @@ test("대시보드의 클라이언트 기능이 동작한다", async ({ page }) 
 
   await page.getByRole("button", { name: "지금 전체 진단" }).click();
   await expect.poll(() => runRequested).toBe(true);
-  await expect(page.getByRole("button", { name: "진단 중 3/45" })).toBeDisabled();
+  await expect(page.getByRole("button", { name: "진단 중 3/50" })).toBeDisabled();
 });

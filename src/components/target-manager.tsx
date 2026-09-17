@@ -46,7 +46,9 @@ const EMPTY_DRAFT: Draft = {
 };
 
 function draftFromTarget(target: TargetView): Draft {
-  const endpoint = (platform: Platform) => target.endpoints.find((item) => item.platform === platform && item.enabled);
+  const endpoint = (platform: Platform) => target.endpoints.find(
+    (item) => item.platform === platform && item.enabled && item.retiredAt === null,
+  );
   const desktop = endpoint("DESKTOP");
   const mobile = endpoint("MOBILE");
   return {
@@ -162,7 +164,7 @@ export function TargetManager({ targets }: { targets: TargetView[] }) {
                 <div className="min-w-0">
                   <div className="flex flex-wrap items-center gap-2"><h3 className="font-black text-neutral-950">{target.name}</h3>{target.enabled ? <StatusPill label="활성" tone="green" /> : <StatusPill label="비활성" />}</div>
                   <p className="mt-1 text-xs font-semibold text-neutral-500">{target.category} · URL {target.endpoints.filter((item) => item.enabled).length}개 · 보조 규칙 {target.rules.length}개</p>
-                  <p className="mt-2 max-w-2xl truncate text-xs text-neutral-500">{target.endpoints.find((item) => item.platform === "DESKTOP" && item.enabled)?.url}</p>
+                  <p className="mt-2 max-w-2xl truncate text-xs text-neutral-500">{target.endpoints.find((item) => item.platform === "DESKTOP" && item.enabled && item.retiredAt === null)?.url}</p>
                 </div>
               </div>
               <div className="flex shrink-0 gap-2">
@@ -202,7 +204,7 @@ export function TargetManager({ targets }: { targets: TargetView[] }) {
                   <legend className="px-1 text-xs font-black text-neutral-700">{title}</legend>
                   <div className="space-y-3">
                     <label><span className="form-label">현재 URL</span><input type="url" name={`${key}-url`} autoComplete="off" required={key === "desktop"} className="form-input w-full" placeholder="https://example.com/…" value={draft[urlKey]} onChange={(e) => setDraft({ ...draft, [urlKey]: e.target.value })} /></label>
-                    <label><span className="form-label">이전 URL</span><input type="url" name={`${key}-reference-url`} autoComplete="off" className="form-input w-full" placeholder="선택 사항…" value={draft[referenceKey]} onChange={(e) => setDraft({ ...draft, [referenceKey]: e.target.value })} /></label>
+                    <label><span className="form-label">이전 URL (별도 추적)</span><input type="url" name={`${key}-reference-url`} autoComplete="off" className="form-input w-full" placeholder="입력하면 현재 URL과 함께 진단" value={draft[referenceKey]} onChange={(e) => setDraft({ ...draft, [referenceKey]: e.target.value })} /></label>
                     <label><span className="form-label">수명주기</span><select name={`${key}-lifecycle`} className="form-input w-full" value={draft[lifecycleKey]} onChange={(e) => setDraft({ ...draft, [lifecycleKey]: e.target.value as Lifecycle })}><option value="EXISTING">기존 페이지</option><option value="PRELAUNCH">오픈 대기</option></select></label>
                   </div>
                 </fieldset>
@@ -223,7 +225,7 @@ export function TargetManager({ targets }: { targets: TargetView[] }) {
             <button type="submit" disabled={saving} className="button-primary w-full">{saving ? "저장 중…" : "변경사항 저장"}</button>
           </form>
         ) : (
-          <div className="py-12"><p className="eyebrow">편집 안내</p><h2 className="mt-3 text-xl font-black text-neutral-950">대상을 선택해 설정을 변경하세요.</h2><p className="mt-3 text-sm leading-6 text-neutral-600">URL을 바꾸면 기존 Endpoint는 이력과 함께 보존되고 새 기준선이 만들어집니다.</p></div>
+          <div className="py-12"><p className="eyebrow">편집 안내</p><h2 className="mt-3 text-xl font-black text-neutral-950">대상을 선택해 설정을 변경하세요.</h2><p className="mt-3 text-sm leading-6 text-neutral-600">URL을 바꾸면 기존 URL도 이전 URL로 계속 진단하고, 새 URL에는 독립된 기준선을 만듭니다.</p></div>
         )}
       </aside>
     </div>
