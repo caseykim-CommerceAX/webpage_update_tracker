@@ -1,12 +1,11 @@
 import type { NextConfig } from "next";
 
+const basePath = process.env.PAGES_BASE_PATH ?? "";
+
 const nextConfig: NextConfig = {
-  serverExternalPackages: [
-    "@prisma/client",
-    "@prisma/adapter-better-sqlite3",
-    "better-sqlite3",
-    "prisma",
-  ],
+  output: "export",
+  trailingSlash: true,
+  basePath,
 };
 
 export default nextConfig;

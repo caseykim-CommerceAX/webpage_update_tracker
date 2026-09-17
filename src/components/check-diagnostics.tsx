@@ -1,4 +1,4 @@
-import type { AvailabilityStatus } from "@/lib/db-types";
+import type { AvailabilityStatus } from "@/lib/domain-types";
 import type { RuleResultView } from "@/lib/queries";
 
 export type DiagnosticCheck = {

@@ -15,13 +15,7 @@ if not exist node_modules\ (
     if errorlevel 1 goto :failed
 )
 
-if not exist .env if exist .env.example copy /Y .env.example .env >nul
-
-echo Preparing the local database...
-call npm.cmd run db:setup
-if errorlevel 1 goto :failed
-
-echo Building the production server...
+echo Building the static dashboard...
 call npm.cmd run build
 if errorlevel 1 goto :failed
 

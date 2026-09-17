@@ -1,0 +1,1007 @@
+{
+  "schemaVersion": 1,
+  "targets": [
+    {
+      "id": "cd5e3359-d077-44de-b423-490719f8a4c1",
+      "displayOrder": 1,
+      "name": "ALL 카드",
+      "category": "신용카드",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "1a97e3c9-610d-4931-b785-e625c6caf524",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/credit-cards/kb-all-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "cf2d0df6-8b68-49e1-8346-7762096c49ee",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/credit-cards/kb-all-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "b0fe3415-32b4-49a0-a1bc-6962db23f910",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "6c97d1ef-282c-421a-a4e8-2094a212838e",
+      "displayOrder": 2,
+      "name": "ALL point 카드",
+      "category": "신용카드",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "64453981-5ab0-4e5f-ad30-9e8f9102413d",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/credit-cards/kb-all-point-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "1c5ac6ba-dd55-4713-af80-eda4dac245f7",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/credit-cards/kb-all-point-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "695ba508-2f2e-4ea7-bc36-f8b65b759a08",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "a710c22f-7ed7-4f06-9334-abdfff7788ee",
+      "displayOrder": 3,
+      "name": "YOU Prime 카드",
+      "category": "신용카드",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "1a874d68-15d0-4e4c-bd29-6ebecf90e52a",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/credit-cards/kb-you-prime-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "ff46ae32-0a90-4beb-b8e0-4debf4b3b397",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/credit-cards/kb-you-prime-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "fb4c277c-5396-4e29-a813-a830fea96097",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "f76ab7ec-2473-4bff-8a31-d6d4e7dbe21d",
+      "displayOrder": 4,
+      "name": "YOU With 카드",
+      "category": "신용카드",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "14bafd44-2782-4968-911b-291d2acd502e",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/credit-cards/kb-you-with-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "446222ae-cda3-454a-9e38-96d18f5cf725",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/credit-cards/kb-you-with-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "65d007ca-29f6-4a5e-8b9c-24bdcafd0fc9",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "efb1d0e6-0aeb-4093-84a7-6aed0179f41e",
+      "displayOrder": 5,
+      "name": "YOU Wish 카드",
+      "category": "신용카드",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "6a0d6408-1c23-4f3b-9f75-2d84729915fa",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/credit-cards/kb-you-wish-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "c159409a-cc42-4ae1-b6a3-9a5fc6e4b6c0",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/credit-cards/kb-you-wish-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "ec5fa619-50d5-4c84-ac02-ea6e709756d0",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "aee77a45-fdde-4c1f-a82f-419336a1ab18",
+      "displayOrder": 6,
+      "name": "YOU Wish up 카드",
+      "category": "신용카드",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "27f46e5f-feab-4c61-9b17-4e82b91c3b1b",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/credit-cards/kb-you-wish-up-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "65ae2ae0-6609-42a3-aa4a-6a9d9e620da4",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/credit-cards/kb-you-wish-up-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "1a995d05-08b4-4b7c-84af-0f559a4f4c36",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "2fb8b880-93e1-4958-b06b-0e4c1919ec75",
+      "displayOrder": 7,
+      "name": "NEED Edu카드",
+      "category": "신용카드",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "51572952-d474-4b43-9b5b-4e00ccf2a9ba",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/credit-cards/kb-need-edu-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "83cb96fd-4bfc-4f6a-9dfb-9833b941448e",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/credit-cards/kb-need-edu-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "95d7f767-390f-433a-b0d5-f6142201b069",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "bec4c3be-5c44-4585-a6a3-5fc7ffc3a7b0",
+      "displayOrder": 8,
+      "name": "NEED Global 카드",
+      "category": "신용카드",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "a1c82600-76ec-46e4-93ef-f8bc6778b034",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/credit-cards/kb-need-global-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "556d6d77-9c95-4b36-9826-ae45ff7b9f6b",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/credit-cards/kb-need-global-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "ed0fe988-ebb0-472f-9159-4f45c40d6ab8",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "d8815c97-3344-4821-8372-32ff769c023b",
+      "displayOrder": 9,
+      "name": "NEED Pay 카드",
+      "category": "신용카드",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "613d02c9-fc0b-4d8d-9a08-517e588ed948",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/credit-cards/kb-need-pay-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "d137fd1e-c1dd-4841-8f54-32513292cd5a",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/credit-cards/kb-need-pay-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "57edb284-d57b-4b7c-b3d9-e5e8f590f7e2",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "ab9fa5b9-3ed4-417d-b62a-b5ec7862e32f",
+      "displayOrder": 10,
+      "name": "WE:SH Travel",
+      "category": "신용카드",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "eb730105-e4a1-4995-b8bc-5f685b2ba79b",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/credit-cards/kb-wesh-travel-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "119352b3-dbfe-4676-88a9-0e3e64d39abc",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/credit-cards/kb-wesh-travel-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "4bdfc213-1026-4572-9b36-1cea670f097e",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "6bf242ce-9823-4510-bb63-e9bd0c5ee0ba",
+      "displayOrder": 11,
+      "name": "My WE:SH 카드",
+      "category": "신용카드",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "70e8f0ed-244e-480d-b5de-ce9e698c2652",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/credit-cards/kb-my-wesh-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "8ebd43ae-830a-4ea9-89a8-db087f92b159",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/credit-cards/kb-my-wesh-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "7969192b-d0e0-4d0a-8492-c0ff33a60ff8",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "ba3c273b-bf19-44d9-a4ef-c79f1dac16b9",
+      "displayOrder": 12,
+      "name": "굿데이올림카드",
+      "category": "신용카드",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "55e07fac-79e6-4ccb-a6c6-38a1519deae8",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/credit-cards/kb-good-day-ollim-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "99506875-e7b5-49a6-aa7d-d9ed9e4cf5ba",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/credit-cards/kb-good-day-ollim-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "064546bc-7a5a-4b58-aa6f-2625d892d71c",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "ffce3167-72d1-488c-ab2e-f65d740df310",
+      "displayOrder": 13,
+      "name": "스카이패스 티타늄카드",
+      "category": "신용카드",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "01b3f6d5-d2f3-46f9-b9dd-9fb1e43d30a4",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/credit-cards/kb-skypass-titanium-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "57a99be1-efa7-46ec-85b1-ffa0cbcbfc2a",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/credit-cards/kb-skypass-titanium-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "5d99da21-0728-42df-912b-542d8d63107e",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "ccfd1770-4563-4762-823c-5f6aa40a0d3e",
+      "displayOrder": 14,
+      "name": "American Express Blue Card",
+      "category": "신용카드",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "533221ef-199b-4710-b94e-bc3aab4a1c02",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/credit-cards/american-express-blue-kb-kookmin-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "8ea95969-0296-474c-b812-028030be9348",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/credit-cards/american-express-blue-kb-kookmin-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "0e40cf02-4a27-4ccc-83f1-d604c7630abe",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "11160efa-eca7-4b83-a8db-13cea9e8e74e",
+      "displayOrder": 15,
+      "name": "HERITAGE Classic(할인형)",
+      "category": "프리미엄카드",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "8fbc38b1-9e91-48b5-b48c-6a8b52dea42c",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/premium-cards/kb-heritage-classic-discount-type",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "3a605dd0-af28-4d8f-a524-841baf470b44",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/premium-cards/kb-heritage-classic-discount-type",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "b49e7a04-5e12-407e-802e-fe0253da50e2",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "a21ecf12-1a64-40d4-855d-b6f1b81a8ba8",
+      "displayOrder": 16,
+      "name": "HERITAGE Classic(스카이패스형)",
+      "category": "프리미엄카드",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "1bdbffb4-b7ee-441d-acbb-c11aa778a231",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/premium-cards/kb-heritage-classic-skypass-type",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "78383cd1-8504-4fd8-b0b4-4fbc3635b01e",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/premium-cards/kb-heritage-classic-skypass-type",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "4c5f7204-992f-455e-9e40-a9b52e1b0096",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
+      "displayOrder": 17,
+      "name": "BeV Ⅲ 카드",
+      "category": "프리미엄카드",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "eb3ccb9d-1f8c-4db8-9ee9-55712c3dc236",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/premium-cards/kb-bev3-card",
+          "referenceUrl": "https://card.kbcard.com/cards/products/premium-cards/bev3-card",
+          "lifecycle": "PRELAUNCH",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "19d614e270d3eff5121073206cce5ab8",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/premium-cards/bev3-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": "2026-09-17 04:20:40",
+          "enabled": true
+        },
+        {
+          "id": "52619742-f91b-43b9-8ef3-8cb08631642e",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/premium-cards/kb-bev3-card",
+          "referenceUrl": "https://m.kbcard.com/cards/premium-cards/bev3-card",
+          "lifecycle": "PRELAUNCH",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "374ae896ab07fb4b7c98af6100c41f92",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/premium-cards/bev3-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": "2026-09-17 04:20:40",
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "5f077d7f-bcd9-4e0e-926f-d4cb1949fa68",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "c701fd1a-9015-4daf-9039-b987c990c619",
+      "displayOrder": 18,
+      "name": "Youth Club 체크카드",
+      "category": "체크카드",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "e2bcd9ac-eaa5-4919-abe7-19c890c2d785",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/check-cards/kb-youth-club-check-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "20e3a981-c6a0-4673-9a6f-5e0241999772",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/check-cards/kb-youth-club-check-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "3c5fb02d-0195-483c-afb7-7cd77532d714",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "c4fe7b59-3b68-47f8-bbde-6c8701458fac",
+      "displayOrder": 19,
+      "name": "노리2 체크카드(KB Pay)",
+      "category": "체크카드",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "c79d4215-7632-4f50-b00d-872fc192fe4a",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/check-cards/kb-nori2-check-card-kbpay-type",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "3506bde9-c822-4be3-9f30-31809737af94",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/check-cards/kb-nori2-check-card-kbpay-type",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "ff62bf2d-7778-45c0-bf6a-6ad24e01524a",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "03bb23e7-bb86-4574-8e13-1b46baece17c",
+      "displayOrder": 20,
+      "name": "트래블러스 체크카드",
+      "category": "체크카드",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "01ed00fd-e36a-480d-ab73-d80aaab6cb65",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/check-cards/kb-travelers-check-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "db9539a0-6221-4363-9eb5-708ca00e4f35",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/check-cards/kb-travelers-check-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "92754cbc-ec32-44df-bdbf-58b00ffbebdd",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "014f6ae8-f8af-4234-9976-8e1b4ecbb511",
+      "displayOrder": 21,
+      "name": "국민행복카드",
+      "category": "신용카드",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "c926ec76-812d-4877-b8cd-10f16272aeba",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/cards/products/credit-cards/kb-kookmin-haengbok-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "7b6cf907-d2fc-4161-a9c1-7327da1b8c12",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/cards/credit-cards/kb-kookmin-haengbok-card",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "3c60ae06-fe1c-46dd-a4ba-8daf12ca5045",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "763c388b-d1bd-4949-9a3f-4fbabe4d3c37",
+      "displayOrder": 22,
+      "name": "서비스",
+      "category": "서비스",
+      "monitorMode": "CONTENT",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "de405dc7-0a5c-4d1e-9d93-1028db2686c8",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/benefits/vip-lounge/kb-prime-plus",
+          "referenceUrl": "https://card.kbcard.com/benefits/vip-lounge/prime-plus",
+          "lifecycle": "PRELAUNCH",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "ccd04d1d7fbc346be2a4dd4dd93069c1",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/benefits/vip-lounge/prime-plus",
+          "referenceUrl": null,
+          "lifecycle": "EXISTING",
+          "retiredAt": "2026-09-17 04:20:40",
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "3557f916-27e2-4e52-bcc4-aeaa5e5d3fea",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "c5d297d9-5523-49eb-9b65-340e00f4c55c",
+      "displayOrder": 23,
+      "name": "이벤트 9월",
+      "category": "이벤트",
+      "monitorMode": "STATUS_ONLY",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "d7ed54fd-b471-4d4e-8c66-f9b1778028d7",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/benefits/events/ongoing/kb-new-card-annual-fee-cashback-2026-09",
+          "referenceUrl": null,
+          "lifecycle": "PRELAUNCH",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "ae8ab9e4-6784-4ab8-a84e-0fa75525d559",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/benefits/events/kb-new-card-annual-fee-cashback-2026-09",
+          "referenceUrl": null,
+          "lifecycle": "PRELAUNCH",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "20f4d749-2d06-4c86-8dc2-adafa1627d44",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "855f0b69537a077bfaa438388fac9a6e",
+      "displayOrder": 24,
+      "name": "이벤트 10월",
+      "category": "이벤트",
+      "monitorMode": "STATUS_ONLY",
+      "enabled": true,
+      "endpoints": [
+        {
+          "id": "45b57bad17f4bbfdb5cc5db4399d6aff",
+          "platform": "DESKTOP",
+          "url": "https://card.kbcard.com/benefits/events/ongoing/kb-new-card-annual-fee-cashback-2026-10",
+          "referenceUrl": null,
+          "lifecycle": "PRELAUNCH",
+          "retiredAt": null,
+          "enabled": true
+        },
+        {
+          "id": "b7f29a5a39ab16895d268b8da1abe58b",
+          "platform": "MOBILE",
+          "url": "https://m.kbcard.com/benefits/events/kb-new-card-annual-fee-cashback-2026-10",
+          "referenceUrl": null,
+          "lifecycle": "PRELAUNCH",
+          "retiredAt": null,
+          "enabled": true
+        }
+      ],
+      "rules": [
+        {
+          "id": "5ad36df7190a4f57a3c3a48a86d3ed1f",
+          "type": "HTTP_STATUS",
+          "label": "HTTP 200",
+          "selector": null,
+          "attribute": null,
+          "expectedValue": null,
+          "expectedStatuses": "[200]",
+          "displayOrder": 0,
+          "enabled": true
+        }
+      ]
+    }
+  ]
+}

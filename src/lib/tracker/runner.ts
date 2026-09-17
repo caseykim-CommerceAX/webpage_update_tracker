@@ -1,323 +1,310 @@
 import pLimit from "p-limit";
-import { createId, db, nowIso } from "@/lib/db";
-import type { Lifecycle, LiveStatus, MonitorMode, Platform, RuleRecord, RunRecord, RunSource } from "@/lib/db-types";
+import type { LiveStatus, RuleRecord, RunRecord, RunSource } from "@/lib/domain-types";
+import {
+  acquireRunLock,
+  createId,
+  emptyEndpointState,
+  getRunIndex,
+  getStateDocument,
+  getTargetsDocument,
+  nowIso,
+  saveRunDocument,
+  saveRunIndex,
+  saveStateDocument,
+} from "@/lib/json-store";
+import type { EndpointState, JsonCheck, JsonEndpoint, JsonRuleResult, JsonTarget } from "@/lib/json-types";
 import { canonicalizeHtml, createStructuredDiff, summarizeStructuredDiff } from "@/lib/tracker/canonicalize";
 import { fetchPage, isSameDestination } from "@/lib/tracker/fetcher";
 import { detectLiveMarkers } from "@/lib/tracker/live-status";
 import { evaluateRule, skippedRule, type EvaluatedRule } from "@/lib/tracker/rules";
-import type { CanonicalToken, EndpointScanOutcome } from "@/lib/tracker/types";
+import type { EndpointScanOutcome } from "@/lib/tracker/types";
 
 type EndpointForScan = {
-  id: string;
-  targetId: string;
-  platform: Platform;
-  url: string;
-  referenceUrl: string | null;
-  lifecycle: Lifecycle;
-  launchedAt: string | null;
-  targetName: string;
-  monitorMode: MonitorMode;
+  target: JsonTarget;
+  endpoint: JsonEndpoint;
   rules: RuleRecord[];
 };
 
-type PreviousCheckRow = {
-  checkId: string;
-  snapshotId: string;
-  hash: string;
-  tokensJson: string;
-};
+type CheckValues = Pick<
+  JsonCheck,
+  | "finalUrl"
+  | "httpStatus"
+  | "availabilityStatus"
+  | "liveStatus"
+  | "headLiveMarkerFound"
+  | "bodyLiveMarkerFound"
+  | "headLiveMarkerHtml"
+  | "bodyLiveMarkerHtml"
+  | "changeStatus"
+  | "responseMs"
+  | "errorMessage"
+  | "comparedCheckId"
+  | "comparedAt"
+  | "headAddedCount"
+  | "headRemovedCount"
+  | "bodyAddedCount"
+  | "bodyRemovedCount"
+  | "diffJson"
+> & { ruleResults: EvaluatedRule[] };
 
-export class RunAlreadyActiveError extends Error {
-  constructor() {
-    super("이미 실행 중인 검사가 있습니다.");
-  }
+function ruleResults(results: EvaluatedRule[]): JsonRuleResult[] {
+  return results.map((result) => ({
+    ruleType: result.ruleType,
+    ruleLabel: result.ruleLabel,
+    configJson: result.configJson,
+    status: result.status,
+    actualValue: result.actualValue,
+    message: result.message,
+  }));
 }
 
-export function createQueuedRun(source: RunSource, targetIds?: string[]) {
-  const create = db.transaction(() => {
-    const staleBefore = new Date(Date.now() - 30 * 60 * 1000).toISOString();
-    db.prepare(
-      "UPDATE Run SET status = 'FAILED', completedAt = ?, errorMessage = ? WHERE status IN ('QUEUED','RUNNING') AND createdAt < ?",
-    ).run(nowIso(), "30분 이상 응답이 없어 중단된 실행입니다.", staleBefore);
-    const active = db.prepare("SELECT COUNT(*) AS count FROM Run WHERE status IN ('QUEUED','RUNNING')").get() as { count: number };
-    if (active.count > 0) throw new RunAlreadyActiveError();
-    const id = createId();
-    db.prepare("INSERT INTO Run (id, source, status, targetIdsJson, createdAt) VALUES (?, ?, 'QUEUED', ?, ?)").run(
-      id,
-      source,
-      targetIds?.length ? JSON.stringify([...new Set(targetIds)]) : null,
-      nowIso(),
-    );
-    return db.prepare("SELECT * FROM Run WHERE id = ?").get(id) as RunRecord;
-  });
-  return create();
+function createCheck(item: EndpointForScan, runId: string, values: CheckValues): JsonCheck {
+  return {
+    id: createId(),
+    runId,
+    endpointId: item.endpoint.id,
+    targetId: item.target.id,
+    targetName: item.target.name,
+    category: item.target.category,
+    displayOrder: item.target.displayOrder,
+    platform: item.endpoint.platform,
+    url: item.endpoint.url,
+    retiredAt: item.endpoint.retiredAt,
+    requestedUrl: item.endpoint.url,
+    ...values,
+    createdAt: nowIso(),
+    ruleResults: ruleResults(values.ruleResults),
+  };
 }
 
-function insertCheck(
-  endpoint: EndpointForScan,
+function emptyValues(overrides: Partial<CheckValues>): CheckValues {
+  return {
+    finalUrl: null,
+    httpStatus: null,
+    availabilityStatus: "ERROR",
+    liveStatus: "UNVERIFIED",
+    headLiveMarkerFound: null,
+    bodyLiveMarkerFound: null,
+    headLiveMarkerHtml: null,
+    bodyLiveMarkerHtml: null,
+    changeStatus: "NOT_APPLICABLE",
+    responseMs: null,
+    errorMessage: null,
+    comparedCheckId: null,
+    comparedAt: null,
+    headAddedCount: 0,
+    headRemovedCount: 0,
+    bodyAddedCount: 0,
+    bodyRemovedCount: 0,
+    diffJson: null,
+    ruleResults: [],
+    ...overrides,
+  };
+}
+
+function saveLatestState(state: EndpointState, check: JsonCheck) {
+  state.latest = check;
+  if (check.liveStatus === "LIVE_COMPLETE" && !state.liveCompletedAt) state.liveCompletedAt = check.createdAt;
+  if (check.changeStatus === "CHANGED") state.lastChangedAt = check.createdAt;
+}
+
+async function scanEndpoint(
+  item: EndpointForScan,
   runId: string,
-  values: {
-    finalUrl: string | null;
-    httpStatus: number | null;
-    availabilityStatus: "PENDING" | "LIVE" | "UNAVAILABLE" | "ERROR";
-    liveStatus: LiveStatus;
-    headLiveMarkerFound?: boolean | null;
-    bodyLiveMarkerFound?: boolean | null;
-    headLiveMarkerHtml?: string | null;
-    bodyLiveMarkerHtml?: string | null;
-    changeStatus: "BASELINE" | "UNCHANGED" | "CHANGED" | "NOT_APPLICABLE";
-    responseMs: number | null;
-    errorMessage?: string | null;
-    snapshotId?: string | null;
-    comparedCheckId?: string | null;
-    headAddedCount?: number;
-    headRemovedCount?: number;
-    bodyAddedCount?: number;
-    bodyRemovedCount?: number;
-    ruleResults?: EvaluatedRule[];
-  },
-) {
-  const checkId = createId();
-  const timestamp = nowIso();
-  const insert = db.transaction(() => {
-    db.prepare(
-      `INSERT INTO EndpointCheck
-       (id, runId, endpointId, requestedUrl, finalUrl, httpStatus, availabilityStatus, liveStatus,
-        headLiveMarkerFound, bodyLiveMarkerFound, headLiveMarkerHtml, bodyLiveMarkerHtml,
-        changeStatus, responseMs, errorMessage, snapshotId,
-        comparedCheckId, headAddedCount, headRemovedCount, bodyAddedCount, bodyRemovedCount, createdAt)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-    ).run(
-      checkId, runId, endpoint.id, endpoint.url, values.finalUrl, values.httpStatus,
-      values.availabilityStatus, values.liveStatus,
-      values.headLiveMarkerFound === undefined || values.headLiveMarkerFound === null ? null : Number(values.headLiveMarkerFound),
-      values.bodyLiveMarkerFound === undefined || values.bodyLiveMarkerFound === null ? null : Number(values.bodyLiveMarkerFound),
-      values.headLiveMarkerHtml ?? null, values.bodyLiveMarkerHtml ?? null,
-      values.changeStatus, values.responseMs, values.errorMessage ?? null, values.snapshotId ?? null, values.comparedCheckId ?? null,
-      values.headAddedCount ?? 0, values.headRemovedCount ?? 0,
-      values.bodyAddedCount ?? 0, values.bodyRemovedCount ?? 0, timestamp,
-    );
-    const statement = db.prepare(
-      `INSERT INTO RuleResult
-       (id, checkId, ruleId, ruleType, ruleLabel, configJson, status, actualValue, message, createdAt)
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
-    );
-    for (const result of values.ruleResults ?? []) {
-      statement.run(
-        createId(), checkId, result.ruleId, result.ruleType, result.ruleLabel, result.configJson,
-        result.status, result.actualValue, result.message, timestamp,
-      );
-    }
-    if (values.liveStatus === "LIVE_COMPLETE") {
-      db.prepare("UPDATE Endpoint SET liveCompletedAt = COALESCE(liveCompletedAt, ?), updatedAt = ? WHERE id = ?").run(
-        timestamp, timestamp, endpoint.id,
-      );
-    }
-  });
-  insert();
-}
-
-async function persistCheck(endpoint: EndpointForScan, runId: string): Promise<EndpointScanOutcome> {
-  const result = await fetchPage(endpoint.url, endpoint.platform);
-  const rules = endpoint.rules;
+  state: EndpointState,
+): Promise<{ check: JsonCheck; outcome: EndpointScanOutcome }> {
+  const result = await fetchPage(item.endpoint.url, item.endpoint.platform);
 
   if (result.error || result.status === null) {
-    insertCheck(endpoint, runId, {
+    const check = createCheck(item, runId, emptyValues({
       finalUrl: result.finalUrl,
       httpStatus: result.status,
-      availabilityStatus: "ERROR",
-      liveStatus: "UNVERIFIED",
-      changeStatus: "NOT_APPLICABLE",
       responseMs: result.responseMs,
       errorMessage: result.error,
-      ruleResults: rules.map((rule) => skippedRule(rule, "네트워크 오류로 검사하지 못했습니다.")),
-    });
-    return { changed: false, failed: true, pending: false };
+      ruleResults: item.rules.map((rule) => skippedRule(rule, "네트워크 오류로 검사하지 못했습니다.")),
+    }));
+    saveLatestState(state, check);
+    return { check, outcome: { changed: false, failed: true, pending: false } };
   }
 
-  const sameDestination = isSameDestination(endpoint.url, result.finalUrl);
+  const sameDestination = isSameDestination(item.endpoint.url, result.finalUrl);
   const successful = result.status === 200 && sameDestination;
-  const waitingForLaunch = endpoint.lifecycle === "PRELAUNCH" && !endpoint.launchedAt;
+  const waitingForLaunch = item.endpoint.lifecycle === "PRELAUNCH" && !state.launchedAt;
 
   if (waitingForLaunch && !successful) {
-    insertCheck(endpoint, runId, {
+    const check = createCheck(item, runId, emptyValues({
       finalUrl: result.finalUrl,
       httpStatus: result.status,
       availabilityStatus: "PENDING",
       liveStatus: "BEFORE_LIVE",
-      changeStatus: "NOT_APPLICABLE",
       responseMs: result.responseMs,
       errorMessage: sameDestination ? null : "요청한 신규 경로와 다른 주소로 이동했습니다.",
-      ruleResults: rules.map((rule) => skippedRule(rule, "페이지 오픈 대기 중입니다.")),
-    });
-    return { changed: false, failed: false, pending: true };
+      ruleResults: item.rules.map((rule) => skippedRule(rule, "페이지 오픈 대기 중입니다.")),
+    }));
+    saveLatestState(state, check);
+    return { check, outcome: { changed: false, failed: false, pending: true } };
   }
 
   if (!successful) {
-    const evaluated = rules.map((rule) =>
-      rule.type === "HTTP_STATUS" ? evaluateRule(rule, result.status!, result.html) : skippedRule(rule, "정상 HTML 응답이 아닙니다."),
+    const evaluated = item.rules.map((rule) =>
+      rule.type === "HTTP_STATUS"
+        ? evaluateRule(rule, result.status!, result.html)
+        : skippedRule(rule, "정상 HTML 응답이 아닙니다."),
     );
-    insertCheck(endpoint, runId, {
+    const check = createCheck(item, runId, emptyValues({
       finalUrl: result.finalUrl,
       httpStatus: result.status,
       availabilityStatus: "UNAVAILABLE",
-      liveStatus: "UNVERIFIED",
-      changeStatus: "NOT_APPLICABLE",
       responseMs: result.responseMs,
       errorMessage: sameDestination ? null : "최종 주소가 요청한 경로와 다릅니다.",
       ruleResults: evaluated,
-    });
-    return { changed: false, failed: true, pending: false };
+    }));
+    saveLatestState(state, check);
+    return { check, outcome: { changed: false, failed: true, pending: false } };
   }
 
-  if (!endpoint.launchedAt && endpoint.lifecycle === "PRELAUNCH") {
-    const timestamp = nowIso();
-    db.prepare("UPDATE Endpoint SET launchedAt = ?, updatedAt = ? WHERE id = ?").run(timestamp, timestamp, endpoint.id);
-  }
+  if (!state.launchedAt && item.endpoint.lifecycle === "PRELAUNCH") state.launchedAt = nowIso();
 
-  const evaluated = rules.map((rule) => evaluateRule(rule, result.status!, result.html));
-  const liveMarkers = endpoint.monitorMode === "CONTENT" && result.html
-    ? detectLiveMarkers(result.html)
-    : null;
-  const liveStatus: LiveStatus = endpoint.monitorMode === "STATUS_ONLY"
+  const evaluated = item.rules.map((rule) => evaluateRule(rule, result.status!, result.html));
+  const liveMarkers = item.target.monitorMode === "CONTENT" && result.html ? detectLiveMarkers(result.html) : null;
+  const liveStatus: LiveStatus = item.target.monitorMode === "STATUS_ONLY"
     ? "LIVE_COMPLETE"
     : liveMarkers?.liveStatus ?? "UNVERIFIED";
-
-  let changeStatus: "BASELINE" | "UNCHANGED" | "CHANGED" | "NOT_APPLICABLE" = "NOT_APPLICABLE";
-  let snapshotId: string | null = null;
+  let changeStatus: JsonCheck["changeStatus"] = "NOT_APPLICABLE";
   let comparedCheckId: string | null = null;
+  let comparedAt: string | null = null;
   let headAddedCount = 0;
   let headRemovedCount = 0;
   let bodyAddedCount = 0;
   let bodyRemovedCount = 0;
+  let diffJson: string | null = null;
+  let currentSnapshot: ReturnType<typeof canonicalizeHtml> | null = null;
 
-  if (endpoint.monitorMode === "CONTENT" && result.html) {
-    const current = canonicalizeHtml(result.html, result.finalUrl ?? endpoint.url);
-    const previous = db
-      .prepare(
-        `SELECT checkRow.id AS checkId, snapshot.id AS snapshotId, snapshot.hash, snapshot.tokensJson
-         FROM EndpointCheck AS checkRow
-         JOIN Snapshot AS snapshot ON snapshot.id = checkRow.snapshotId
-         WHERE checkRow.endpointId = ? AND checkRow.availabilityStatus = 'LIVE'
-         ORDER BY checkRow.createdAt DESC, checkRow.rowid DESC
-         LIMIT 1`,
-      )
-      .get(endpoint.id) as PreviousCheckRow | undefined;
-
+  if (item.target.monitorMode === "CONTENT" && result.html) {
+    currentSnapshot = canonicalizeHtml(result.html, result.finalUrl ?? item.endpoint.url);
+    const previous = state.lastSuccessful;
     if (!previous) {
-      snapshotId = createId();
-      db.prepare("INSERT INTO Snapshot (id, endpointId, hash, tokensJson, createdAt) VALUES (?, ?, ?, ?, ?)").run(
-        snapshotId, endpoint.id, current.hash, current.serialized, nowIso(),
-      );
       changeStatus = "BASELINE";
-    } else if (previous.hash === current.hash) {
-      snapshotId = previous.snapshotId;
-      comparedCheckId = previous.checkId;
-      changeStatus = "UNCHANGED";
     } else {
-      const before = JSON.parse(previous.tokensJson) as CanonicalToken[];
-      const diff = createStructuredDiff(before, current.tokens);
-      const summary = summarizeStructuredDiff(diff);
-      snapshotId = createId();
-      db.prepare(
-        "INSERT INTO Snapshot (id, endpointId, hash, tokensJson, diffJson, previousSnapshotId, createdAt) VALUES (?, ?, ?, ?, ?, ?, ?)",
-      ).run(
-        snapshotId, endpoint.id, current.hash, current.serialized,
-        JSON.stringify(diff), previous.snapshotId, nowIso(),
-      );
       comparedCheckId = previous.checkId;
-      headAddedCount = summary.HEAD.added;
-      headRemovedCount = summary.HEAD.removed;
-      bodyAddedCount = summary.BODY.added;
-      bodyRemovedCount = summary.BODY.removed;
-      changeStatus = "CHANGED";
+      comparedAt = previous.createdAt;
+      if (previous.hash === currentSnapshot.hash) {
+        changeStatus = "UNCHANGED";
+      } else {
+        const diff = createStructuredDiff(previous.tokens, currentSnapshot.tokens);
+        const summary = summarizeStructuredDiff(diff);
+        changeStatus = "CHANGED";
+        headAddedCount = summary.HEAD.added;
+        headRemovedCount = summary.HEAD.removed;
+        bodyAddedCount = summary.BODY.added;
+        bodyRemovedCount = summary.BODY.removed;
+        diffJson = JSON.stringify(diff);
+      }
     }
   }
 
-  const failed = evaluated.some((item) => item.status === "FAIL" || item.status === "ERROR");
-  insertCheck(endpoint, runId, {
+  const check = createCheck(item, runId, emptyValues({
     finalUrl: result.finalUrl,
     httpStatus: result.status,
     availabilityStatus: "LIVE",
     liveStatus,
-    headLiveMarkerFound: liveMarkers?.headLiveMarkerFound,
-    bodyLiveMarkerFound: liveMarkers?.bodyLiveMarkerFound,
-    headLiveMarkerHtml: liveMarkers?.headLiveMarkerHtml,
-    bodyLiveMarkerHtml: liveMarkers?.bodyLiveMarkerHtml,
+    headLiveMarkerFound: liveMarkers?.headLiveMarkerFound ?? null,
+    bodyLiveMarkerFound: liveMarkers?.bodyLiveMarkerFound ?? null,
+    headLiveMarkerHtml: liveMarkers?.headLiveMarkerHtml ?? null,
+    bodyLiveMarkerHtml: liveMarkers?.bodyLiveMarkerHtml ?? null,
     changeStatus,
     responseMs: result.responseMs,
-    snapshotId,
     comparedCheckId,
+    comparedAt,
     headAddedCount,
     headRemovedCount,
     bodyAddedCount,
     bodyRemovedCount,
+    diffJson,
     ruleResults: evaluated,
-  });
-  return { changed: changeStatus === "CHANGED", failed, pending: false };
+  }));
+  if (currentSnapshot) {
+    state.lastSuccessful = {
+      checkId: check.id,
+      createdAt: check.createdAt,
+      hash: currentSnapshot.hash,
+      tokens: currentSnapshot.tokens,
+    };
+  }
+  saveLatestState(state, check);
+  const failed = evaluated.some((resultItem) => resultItem.status === "FAIL" || resultItem.status === "ERROR");
+  return { check, outcome: { changed: changeStatus === "CHANGED", failed, pending: false } };
 }
 
-export async function executeRun(runId: string) {
-  const run = db.prepare("SELECT * FROM Run WHERE id = ?").get(runId) as RunRecord | undefined;
-  if (!run) throw new Error(`실행을 찾을 수 없습니다: ${runId}`);
-  if (run.status !== "QUEUED") throw new Error(`실행 상태가 QUEUED가 아닙니다: ${run.status}`);
-  const targetIds = run.targetIdsJson ? new Set(JSON.parse(run.targetIdsJson) as string[]) : null;
-
+export async function executeRun(source: RunSource = "MANUAL", targetIds?: string[]) {
+  const releaseLock = acquireRunLock();
   try {
-    const endpointRows = db.prepare(
-      `SELECT e.id, e.targetId, e.platform, e.url, e.referenceUrl, e.lifecycle, e.launchedAt,
-              t.name AS targetName, t.monitorMode
-       FROM Endpoint e JOIN Target t ON t.id = e.targetId
-       WHERE e.enabled = 1 AND t.enabled = 1
-       ORDER BY t.displayOrder ASC, e.platform ASC,
-                CASE WHEN e.retiredAt IS NULL THEN 0 ELSE 1 END ASC,
-                e.createdAt DESC`,
-    ).all() as Omit<EndpointForScan, "rules">[];
-    const filtered = targetIds ? endpointRows.filter((item) => targetIds.has(item.targetId)) : endpointRows;
-    const ruleRows = db.prepare("SELECT * FROM Rule WHERE enabled = 1 ORDER BY targetId, displayOrder").all() as RuleRecord[];
-    const rulesByTarget = new Map<string, RuleRecord[]>();
-    for (const rule of ruleRows) {
-      const bucket = rulesByTarget.get(rule.targetId) ?? [];
-      bucket.push(rule);
-      rulesByTarget.set(rule.targetId, bucket);
-    }
-    const endpoints = filtered.map((item) => ({ ...item, rules: rulesByTarget.get(item.targetId) ?? [] }));
-    db.prepare("UPDATE Run SET status = 'RUNNING', startedAt = ?, totalCount = ? WHERE id = ?").run(nowIso(), endpoints.length, runId);
-
+    const id = createId();
+  const createdAt = nowIso();
+  const selectedTargetIds = targetIds?.length ? new Set(targetIds) : null;
+  const targets = getTargetsDocument().targets
+    .filter((target) => target.enabled && (!selectedTargetIds || selectedTargetIds.has(target.id)))
+    .toSorted((a, b) => a.displayOrder - b.displayOrder);
+  const endpoints: EndpointForScan[] = targets.flatMap((target) => {
+    const rules: RuleRecord[] = target.rules
+      .filter((rule) => rule.enabled)
+      .map((rule) => ({ ...rule, targetId: target.id }));
+    return target.endpoints
+      .filter((endpoint) => endpoint.enabled)
+      .toSorted((a, b) => a.platform.localeCompare(b.platform) || Number(Boolean(a.retiredAt)) - Number(Boolean(b.retiredAt)))
+      .map((endpoint) => ({ target, endpoint, rules }));
+  });
+  let run: RunRecord = {
+    id,
+    source,
+    status: "RUNNING",
+    targetIdsJson: selectedTargetIds ? JSON.stringify([...selectedTargetIds]) : null,
+    totalCount: endpoints.length,
+    processedCount: 0,
+    changedCount: 0,
+    failureCount: 0,
+    pendingCount: 0,
+    errorMessage: null,
+    createdAt,
+    startedAt: nowIso(),
+    completedAt: null,
+  };
+    const state = structuredClone(getStateDocument());
     const limit = pLimit(Math.max(1, Number(process.env.SCAN_CONCURRENCY ?? 4)));
-    const outcomes = await Promise.all(
-      endpoints.map((endpoint) => limit(async () => {
-        let outcome: EndpointScanOutcome;
-        try {
-          outcome = await persistCheck(endpoint, runId);
-        } catch (error) {
-          insertCheck(endpoint, runId, {
-            finalUrl: null,
-            httpStatus: null,
-            availabilityStatus: "ERROR",
-            liveStatus: "UNVERIFIED",
-            changeStatus: "NOT_APPLICABLE",
-            responseMs: null,
-            errorMessage: error instanceof Error ? error.message : "검사 처리 오류",
-          });
-          outcome = { changed: false, failed: true, pending: false };
-        }
-        db.prepare("UPDATE Run SET processedCount = processedCount + 1 WHERE id = ?").run(runId);
-        return outcome;
-      })),
-    );
-
-    const changedCount = outcomes.filter((item) => item.changed).length;
-    const failureCount = outcomes.filter((item) => item.failed).length;
-    const pendingCount = outcomes.filter((item) => item.pending).length;
-    db.prepare(
-      "UPDATE Run SET status = ?, completedAt = ?, changedCount = ?, failureCount = ?, pendingCount = ? WHERE id = ?",
-    ).run(failureCount > 0 ? "COMPLETED_WITH_ERRORS" : "COMPLETED", nowIso(), changedCount, failureCount, pendingCount, runId);
-    return db.prepare("SELECT * FROM Run WHERE id = ?").get(runId) as RunRecord;
-  } catch (error) {
-    db.prepare("UPDATE Run SET status = 'FAILED', completedAt = ?, errorMessage = ? WHERE id = ?").run(
-      nowIso(), error instanceof Error ? error.message : "실행 오류", runId,
-    );
-    throw error;
+    const results = await Promise.all(endpoints.map((item) => limit(async () => {
+      const endpointState = state.endpoints[item.endpoint.id] ?? emptyEndpointState();
+      state.endpoints[item.endpoint.id] = endpointState;
+      try {
+        return await scanEndpoint(item, id, endpointState);
+      } catch (error) {
+        const check = createCheck(item, id, emptyValues({
+          errorMessage: error instanceof Error ? error.message : "검사 처리 오류",
+        }));
+        saveLatestState(endpointState, check);
+        return { check, outcome: { changed: false, failed: true, pending: false } };
+      }
+    })));
+    const completedAt = nowIso();
+    run = {
+      ...run,
+      status: results.some((result) => result.outcome.failed) ? "COMPLETED_WITH_ERRORS" : "COMPLETED",
+      processedCount: results.length,
+      changedCount: results.filter((result) => result.outcome.changed).length,
+      failureCount: results.filter((result) => result.outcome.failed).length,
+      pendingCount: results.filter((result) => result.outcome.pending).length,
+      completedAt,
+    };
+    state.updatedAt = completedAt;
+    saveRunDocument({ schemaVersion: 1, run, checks: results.map((result) => result.check) });
+    saveStateDocument(state);
+    const index = getRunIndex();
+    saveRunIndex({
+      schemaVersion: 1,
+      updatedAt: completedAt,
+      runs: [run, ...index.runs.filter((existing) => existing.id !== run.id)],
+    });
+    return run;
+  } finally {
+    releaseLock();
   }
 }

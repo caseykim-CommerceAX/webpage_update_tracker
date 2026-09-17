@@ -1,5 +1,5 @@
 import { load } from "cheerio";
-import type { RuleRecord } from "@/lib/db-types";
+import type { RuleRecord } from "@/lib/domain-types";
 import { normalizeText } from "@/lib/tracker/canonicalize";
 
 export type EvaluatedRule = {

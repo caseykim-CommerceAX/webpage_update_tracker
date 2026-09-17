@@ -1,6 +1,5 @@
 import "dotenv/config";
-import { closeDb } from "../src/lib/db";
-import { createQueuedRun, executeRun } from "../src/lib/tracker/runner";
+import { executeRun } from "../src/lib/tracker/runner";
 
 function argument(name: string) {
   const index = process.argv.indexOf(`--${name}`);
@@ -8,11 +7,9 @@ function argument(name: string) {
 }
 
 async function main() {
-  const existingRunId = argument("run-id");
   const source = argument("source") === "schedule" ? "SCHEDULE" : "MANUAL";
   const targetIds = argument("target-ids")?.split(",").filter(Boolean);
-  const run = existingRunId ? { id: existingRunId } : await createQueuedRun(source, targetIds);
-  const completed = await executeRun(run.id);
+  const completed = await executeRun(source, targetIds);
   console.log(
     JSON.stringify({
       runId: completed.id,
@@ -29,7 +26,4 @@ main()
   .catch((error) => {
     console.error(error instanceof Error ? error.message : error);
     process.exitCode = 1;
-  })
-  .finally(() => {
-    closeDb();
   });

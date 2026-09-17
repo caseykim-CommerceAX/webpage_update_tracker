@@ -6,6 +6,7 @@ import { setTimeout as delay } from "node:timers/promises";
 
 const root = process.cwd();
 const nextCli = join(root, "node_modules", "next", "dist", "bin", "next");
+const staticServer = join(root, "scripts", "serve-static.mjs");
 const playwrightCli = join(root, "node_modules", "@playwright", "test", "cli.js");
 const localBaseUrl = "http://127.0.0.1:3100";
 
@@ -58,8 +59,11 @@ async function main() {
     return;
   }
 
-  await run(process.execPath, [nextCli, "build"]);
-  const server = spawn(process.execPath, [nextCli, "start", "--hostname", "127.0.0.1", "--port", "3100"], {
+  await run(process.execPath, [nextCli, "build"], {
+    ...process.env,
+    NEXT_PUBLIC_GITHUB_REPOSITORY_URL: "https://github.com/example/webpage-update-tracker",
+  });
+  const server = spawn(process.execPath, [staticServer, "--hostname", "127.0.0.1", "--port", "3100"], {
     cwd: root,
     env: process.env,
     stdio: "inherit",

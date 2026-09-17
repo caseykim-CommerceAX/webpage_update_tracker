@@ -1,5 +1,5 @@
 import iconv from "iconv-lite";
-import type { Platform } from "@/lib/db-types";
+import type { Platform } from "@/lib/domain-types";
 import type { FetchResult } from "@/lib/tracker/types";
 
 const DESKTOP_UA =

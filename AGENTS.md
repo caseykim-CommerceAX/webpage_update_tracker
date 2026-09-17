@@ -14,96 +14,84 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 ## 1. Project Goal and Current Scope
 
-- KB국민카드 웹페이지의 PC·모바일 URL을 매일 검사해 라이브 여부를 판정하는 로컬 우선 PoC다.
-- 현재 HTML의 HEAD OG 태그와 BODY 추천 문구를 라이브 필수 신호로 보고, 직전 저장 진단 대비 HEAD/BODY 변경과 HTTP 상태·등록 규칙은 별도 진단으로 SQLite에 기록해 한국어 웹 대시보드에서 보여준다.
-- 초기 데이터는 기획서 항목에 10월 이벤트를 더한 24개 항목, 47개 현재 URL과 3개 이전 URL이다.
-- 현재 범위에는 URL/규칙 편집, 전체 수동 진단, 실패 원인과 실제 확인값 진단, URL별 전체 진단 로그와 상태 변경 필터, 실행 이력, HEAD/BODY 구조화 diff, 반응형 UI, Windows 작업 스케줄러 스크립트가 포함된다.
-- 외부 알림, 인증, 브라우저 렌더링 기반 수집, 클라우드 배포는 아직 범위 밖이다.
+- KB국민카드 웹페이지의 PC·모바일 URL을 매일 검사해 라이브 여부와 HEAD/BODY 변경을 기록하는 정적 대시보드다.
+- 진단 데이터는 DB가 아니라 Git에 커밋되는 JSON이며, GitHub Actions가 매일 `Asia/Seoul` 오전 9시에 진단하고 GitHub Pages에 배포한다.
+- 현재 구성은 24개 대상, 47개 현재 URL, 3개 이전 URL이다. 9월·10월 이벤트는 독립 대상이며 이전 URL도 별도 Endpoint로 계속 진단한다.
+- 대시보드, 실행 이력·상세, URL별 전체 진단 로그, 클라이언트 필터, 실패 근거, 구조화 diff, 반응형 UI가 포함된다.
+- 정적 사이트에는 쓰기 API가 없다. 대상 수정은 `data/targets.json`, 수동 전체 진단은 GitHub Actions의 `Run workflow`를 사용한다.
 
-## 2. Technology and Important Decisions
+## 2. Technology and Deployment Decisions
 
 - Node.js 24+, Next.js 16 App Router, React 19, TypeScript, Tailwind CSS 4를 사용한다.
-- 저장소는 `better-sqlite3` 기반의 동기식 typed repository다. Prisma ORM은 사용하지 않는다.
-  - 처음에는 Prisma를 계획했지만 사내 self-signed CA 때문에 Prisma 엔진 다운로드가 실패해 직접 SQLite 계층으로 전환했다.
-  - `prisma/` 디렉터리 이름은 초기 SQL 마이그레이션과 seed 파일 위치로만 남아 있다.
-- DB는 `.data/tracker.db`이며 Git에 포함하지 않는다. 스키마는 앱이 최초 DB 연결 시 자동 적용되고 `npm.cmd run db:setup`은 누락된 초기 대상만 seed한다.
-- 검사 프로세스는 TLS 검증을 끄지 않는다. `node --use-system-ca --import tsx`로 Windows 신뢰 저장소를 사용한다.
-- 기본 `dev`/`start`는 `0.0.0.0`에 바인딩한다. 팀 공유용 `start-team-server.bat`는 Next.js 개발 모드의 HMR WebSocket 실패가 React 하이드레이션을 막는 환경을 피하기 위해 매번 프로덕션 빌드 후 `start`를 실행한다. Windows 방화벽 규칙은 TCP 3000을 Domain/Private 프로필의 LocalSubnet과 현재 Node.js 실행 파일로 제한한다.
-- 앱 인증은 아직 없다. LocalSubnet 제한은 팀원 신원을 인증하지 않으므로 다른 부서와 서브넷을 공유하거나 VPN·외부망 공개 전에는 인증과 권한 검사가 필수다.
+- `next.config.ts`의 `output: "export"`와 `trailingSlash: true`로 `out/` 정적 파일을 생성한다.
+- GitHub Pages 프로젝트 경로는 빌드 시 `PAGES_BASE_PATH=/<repository>`로 설정한다. `next/link`는 basePath를 자동 적용한다.
+- `.github/workflows/pages.yml`은 push 시 빌드·배포하고, schedule/workflow_dispatch 시 진단 JSON을 먼저 생성·커밋한 후 배포한다.
+- GitHub Pages에는 Node 서버, Route Handler, Server Action이 없다. 브라우저에 GitHub 토큰을 노출하는 진단/편집 기능을 만들지 않는다.
+- 일반 GitHub Pages 사이트와 결과 JSON은 공개 정보로 간주한다. 비밀값을 데이터나 클라이언트 번들에 넣지 않는다.
+- 검사 프로세스는 TLS 검증을 끄지 않으며 `node --use-system-ca --import tsx`로 실행한다.
+- 로컬 `start`는 `scripts/serve-static.mjs`로 `out/`을 제공한다. `start-team-server.bat`도 정적 빌드 후 이 서버를 실행한다.
 
-## 3. Source-of-Truth Map
+## 3. JSON Source of Truth
 
-- `src/lib/tracker/runner.ts`: 실행 잠금, 엔드포인트 검사, 상태/스냅샷 저장의 핵심 흐름
+- `data/targets.json`: 대상·Endpoint·보조 규칙 설정. ID는 이력 연결 키이므로 기존 ID를 임의 변경하지 않는다.
+- `data/state.json`: Endpoint별 `launchedAt`, `liveCompletedAt`, 최신 진단, 마지막 변경 시각, 직전 성공 정규화 토큰.
+- `data/run-index.json`: 최근순 Run 요약 목록.
+- `data/runs/<run-id>.json`: Run과 해당 실행의 전체 URL 결과, 규칙 결과, 판정 근거, 구조화 diff.
+- 새 Run 저장 순서는 실행 문서 → 상태 문서 → 인덱스다. 진단 중 `data/scan.lock`을 사용하고 30분 지난 잠금은 정리한다.
+- 과거 SQLite의 실행 3건과 URL 진단 135건은 JSON으로 이전되어 Git에 포함된다. 기준 전환 전 복구 커밋은 `6901738`이다.
+
+## 4. Source-of-Truth Map
+
+- `src/lib/tracker/runner.ts`: 실행 잠금, 병렬 검사, JSON 상태·Run 저장
+- `src/lib/json-store.ts`, `src/lib/json-types.ts`: JSON 경로, 원자적 쓰기, 문서 타입
 - `src/lib/tracker/fetcher.ts`: User-Agent, 제한 시간, 재시도, 인코딩, HTTP 수집
 - `src/lib/tracker/canonicalize.ts`: 의미 있는 DOM 토큰과 구조화 diff
 - `src/lib/tracker/live-status.ts`: OG 태그와 추천 h2 기반 라이브 판정
-- `src/lib/tracker/rules.ts`: 태그 diff와 분리된 HTTP 및 선택형 정적 규칙 평가
-- `src/lib/db.ts`: SQLite 연결과 마이그레이션 적용
-- `src/lib/target-service.ts`: 대상 생성/수정, URL 교체 시 이력 보존
-- `src/lib/queries.ts`: 대시보드·실행 상세·URL별 진단 이력용 배치 조회
-- `src/app/api/`: 대상 편집, 검사 시작, 실행 진행 상태 API
-- `src/app/page.tsx`, `src/app/targets/`, `src/app/runs/`: 대시보드와 관리/이력 UI
-- `src/app/checks/page.tsx`: URL별로 묶은 전체 진단 이력, 서버 필터와 URL 단위 페이지네이션
-- `src/components/check-diagnostics.tsx`: 접속·규칙 실패 원인과 실제 확인값 표시
-- `src/components/live-marker-evidence.tsx`: 판정에 사용한 OG meta와 추천 h2 원문 표시
-- `prisma/migrations/202609140001_init/migration.sql`, `202609140002_check_comparisons/migration.sql`, `202609140003_remove_seed_content_rules/migration.sql`, `202609140004_live_status/migration.sql`, `202609140005_live_marker_evidence/migration.sql`, `202609170001_track_previous_endpoints/migration.sql`, `202609170002_split_monthly_events/migration.sql`: 현재 DB 스키마, 진단 비교 필드, 과거 정적 규칙 정리, 라이브 상태·일자·판정 태그 원문, 이전 URL 추적, 월별 이벤트 분리
-- `prisma/seed.ts`: 기획서의 초기 23개 항목
-- `scripts/scan.ts`: 수동/예약 검사 CLI
-- `scripts/run-e2e.mjs`: 프로덕션 빌드와 임시 서버 수명주기를 관리하는 Playwright E2E 실행기
-- `scripts/install-schedule.ps1`, `scripts/remove-schedule.ps1`: 매일 09:00 Windows 예약 등록/제거
-- `scripts/allow-team-access.ps1`, `scripts/remove-team-access.ps1`: 팀 접속용 로컬 서브넷 방화벽 규칙 등록/제거
-- `start-team-server.bat`, `scripts/show-team-urls.mjs`: DB 준비, 프로덕션 빌드, 접속 주소 출력, 팀 공유 프로덕션 서버 실행
-- `README.md`: 사용자가 따라야 하는 설치와 운영 방법
+- `src/lib/tracker/rules.ts`: HTTP 및 선택형 정적 규칙 평가
+- `src/lib/queries.ts`: JSON을 대시보드 ViewModel로 변환
+- `src/app/page.tsx`, `src/app/targets/`, `src/app/runs/`: 정적 대시보드와 설정/이력 UI
+- `src/app/checks/page.tsx`, `src/components/check-history.tsx`: URL별 진단 이력과 클라이언트 필터
+- `scripts/scan.ts`: 로컬/GitHub Actions 진단 CLI
+- `scripts/serve-static.mjs`, `scripts/run-e2e.mjs`: 정적 결과 제공과 E2E 서버 수명주기
+- `.github/workflows/pages.yml`: 09:00 KST 진단, JSON 커밋, Pages 배포
+- `README.md`: 설치, GitHub 설정, 운영 절차
 
-## 4. Behavioral Invariants
+## 5. Behavioral Invariants
 
 - 가용성, 규칙, 콘텐츠 변경은 하나의 상태로 합치지 않고 별도로 저장한다.
-- 콘텐츠 대상의 라이브 상태는 현재 HTML의 `meta[property="og:site_name"]` 존재와 BODY `h2`의 `이런 분께 추천 드려요` 포함 여부로 판정한다. 문구의 띄어쓰기 차이는 무시한다.
-- 두 라이브 신호가 모두 있으면 `LIVE_COMPLETE`, 하나만 있으면 `CHECK_REQUIRED`, 둘 다 없으면 `BEFORE_LIVE`, HTML을 확인할 수 없으면 `UNVERIFIED`다.
-- 상태 전용 대상은 요청 경로에서 HTTP 200이면 `LIVE_COMPLETE`로 판정한다.
-- URL별 최초 `LIVE_COMPLETE` 감지 시각을 `liveCompletedAt`에 기록하며 이후 상태가 달라져도 이 날짜는 보존한다.
-- `PRELAUNCH` URL이 아직 200이 아니면 실패가 아니라 `PENDING`이다.
-- 신규 URL이 이전 경로 등 다른 pathname으로 리다이렉트되면 200이어도 오픈으로 보지 않는다.
-- PRELAUNCH URL이 동일한 경로에서 처음 200을 반환하면 `launchedAt`을 기록하고 이후에는 일반 기존 페이지처럼 취급한다.
-- 콘텐츠 추적의 첫 성공 응답은 `BASELINE`이며 변경으로 알리지 않는다.
-- 이후 성공 진단은 가장 최근 성공 `EndpointCheck`와 그 스냅샷을 비교한다. 모든 진단 행은 `comparedCheckId`로 비교 대상을 가리키며 HEAD/BODY 추가·삭제 건수를 저장한다.
-- 동일하면 새 스냅샷을 중복 저장하지 않지만 `UNCHANGED` 진단 행과 비교 관계는 반드시 저장한다.
-- 전체 원본 HTML은 저장하지 않는다. 제목, meta, 본문 텍스트, 링크, 이미지로 만든 정규화 토큰과 라이브 판정에 실제 사용한 OG meta·추천 h2 원문 조각만 저장한다.
-- 원문 조각 저장 기능 도입 전 과거 진단에는 정규화 판정값만 남아 있으므로 원문을 임의 복원하지 않고 UI에서 미저장으로 표시한다.
-- HEAD는 title/meta, BODY는 heading/text/link/image 토큰으로 분류한다. 값 수정은 삭제 1건과 추가 1건으로 집계한다.
-- 현재 필수 태그/문구의 존재 여부는 라이브 판정에 사용한다. 별도의 변경 판정에서는 추천 h2가 양일 모두 존재하면 `UNCHANGED`, 전일에 없고 오늘 추가됐을 때만 BODY 추가로 판정한다.
-- Meta/텍스트 정적 규칙은 전일 대비 diff와 별도인 선택 기능이다. 초기 시드에는 추가하지 않는다.
+- 콘텐츠 대상은 `meta[property="og:site_name"]`과 BODY h2의 `이런 분께 추천 드려요`를 판정한다. 띄어쓰기 차이는 무시한다.
+- 두 신호가 모두 있으면 `LIVE_COMPLETE`, 하나면 `CHECK_REQUIRED`, 둘 다 없으면 `BEFORE_LIVE`, HTML을 확인할 수 없으면 `UNVERIFIED`다.
+- `STATUS_ONLY` 대상은 요청 pathname에서 HTTP 200이면 `LIVE_COMPLETE`다.
+- 최초 `LIVE_COMPLETE` 시각은 `liveCompletedAt`에 한 번만 기록한다.
+- PRELAUNCH가 아직 200이 아니면 `PENDING`이다. 다른 pathname으로 이동한 200은 오픈으로 보지 않는다.
+- PRELAUNCH가 정상 경로에서 처음 200이면 `launchedAt`을 기록하고 이후 일반 URL처럼 처리한다.
+- 콘텐츠 추적의 첫 성공은 `BASELINE`, 같은 hash는 `UNCHANGED`, 다른 hash는 `CHANGED`다.
+- 모든 성공 진단은 바로 직전 성공 진단 ID·시각을 비교 대상으로 기록한다. 동일한 경우 정규화 토큰은 상태 JSON에서 최신 진단 ID만 갱신해 재사용한다.
+- 전체 원본 HTML은 저장하지 않는다. 정규화 토큰과 라이브 판정에 실제 사용한 OG meta·추천 h2 원문만 저장한다.
+- HEAD는 title/meta, BODY는 heading/text/link/image로 분류하며 값 수정은 삭제 1건과 추가 1건이다.
 - `script`, `style`, `noscript`, `template`, SVG, class/id, UTM 등 추적 파라미터는 diff에서 제외한다.
-- URL 수정은 기존 Endpoint를 덮어쓰지 않는다. 기존 행을 추적 가능한 이전 URL로 retire하고 새 Endpoint를 만들어 이력과 기준선을 분리한다.
-- 이전 URL은 `enabled = 1`, `retiredAt != NULL`인 독립 Endpoint로 현재 URL과 함께 정기 검사한다. 대상 자체를 비활성화하면 현재·이전 URL을 모두 검사하지 않는다.
-- 대상 삭제는 hard delete가 아니라 비활성화로 처리한다.
-- 동시에 하나의 Run만 실행할 수 있으며 30분 넘게 멈춘 Run은 다음 실행 시 실패로 정리한다.
-- 전체 진단 로그는 Endpoint 단위로 묶어 한 URL의 실행 결과를 최신순으로 모두 표시한다. 대상·채널·라이브 상태·상태 변경 필터는 실행 결과에 적용하며, 페이지네이션은 이력이 중간에 잘리지 않도록 URL 단위로 처리한다.
-- URL별 진단 로그의 왼쪽 선은 첫 판정부터 라이브 완료이거나 라이브 완료로 전환된 경우는 초록, 그 밖의 상태 변경은 주황, 판정 불가·검사 오류는 빨강으로 표시한다. 라이브 완료가 아닌 첫 판정과 상태 유지는 왼쪽 선을 사용하지 않고 문구와 상태 배지로 구분한다.
+- URL 교체 시 기존 Endpoint ID를 삭제하거나 덮어쓰지 않는다. 기존 항목에 `retiredAt`을 채우고 새 ID의 현재 Endpoint를 추가한다.
+- 이전 Endpoint도 `enabled: true`이면 현재 URL과 함께 검사한다. 대상 비활성화는 현재·이전 URL 모두 제외한다.
+- 동시에 하나의 진단만 실행한다. GitHub Actions concurrency와 `data/scan.lock`이 중복 실행을 방지한다.
+- URL별 로그 왼쪽 선은 라이브 완료(초록), 그 밖의 상태 변경(주황), 판정 불가·오류(빨강)다.
 
-## 5. Seed-specific Rules
+## 6. Seed-specific Rules
 
-- 모든 초기 항목의 사용자 편집 규칙은 접속 확인용 HTTP 200만 등록한다. OG meta와 추천 h2는 `Rule` 행을 만들지 않는 시스템 내장 라이브 필수 신호이며, 별도의 전일 대비 HEAD/BODY diff에도 포함된다.
-- BeV Ⅲ: PC·모바일 모두 PRELAUNCH이며 오픈 후 HTTP와 DOM 변경을 검사한다.
-- 서비스: PC PRELAUNCH이며 오픈 후 HTTP와 DOM 변경을 검사한다.
-- 이벤트: `이벤트 9월`과 `이벤트 10월`은 각각 PC·모바일 PRELAUNCH Endpoint를 가진 독립 `STATUS_ONLY` 대상이며 HTTP 상태만 검사한다.
-- 기획서의 “업데이트 전 URL”은 별도의 이전 Endpoint로 물리화해 정기 검사한다. 현재 Endpoint의 `referenceUrl`은 편집 화면에서 이 관계를 유지하기 위한 값이다.
+- 초기 대상의 보조 규칙은 HTTP 200 하나다. OG meta와 추천 h2는 Rule이 아니라 시스템 내장 라이브 신호다.
+- BeV Ⅲ PC·모바일과 서비스 PC는 PRELAUNCH 콘텐츠 대상이다.
+- 이벤트 9월·10월은 각각 PC·모바일 PRELAUNCH Endpoint를 가진 독립 `STATUS_ONLY` 대상이다.
+- 기획서 업데이트 전 URL 3개는 `retiredAt`이 있는 독립 Endpoint로 정기 검사한다.
 
-## 6. Commands
+## 7. Commands
 
 PowerShell에서는 실행 정책 문제를 피하기 위해 `npm` 대신 `npm.cmd`를 사용한다.
 
 ```powershell
 npm.cmd install
-npm.cmd run db:setup
-.\start-team-server.bat
-npm.cmd run dev
 npm.cmd run dev:local
-npm.cmd run network:allow
 npm.cmd run scan
-npm.cmd run schedule:install
-npm.cmd run schedule:remove
-npm.cmd run network:remove
+npm.cmd run build
+npm.cmd run start:local
 ```
 
 필수 검증:
@@ -117,45 +105,31 @@ npm.cmd run build
 
 Playwright 브라우저가 준비된 환경에서는 `npm.cmd run test:e2e`도 실행한다.
 
-## 7. Last Verified State
+## 8. Last Verified State
 
-2026-09-17 기준:
+2026-09-17 JSON 정적 전환 기준:
 
-- `lint`, `typecheck`, 프로덕션 `build` 통과
-- Vitest 10개 파일, 25개 테스트 통과
-- Playwright E2E 3개 통과: 진단 로그를 포함한 주요 화면 이동·활성 메뉴, 390px 모바일 수평 오버플로, 검색 필터와 전체 진단 버튼의 클라이언트 상호작용 확인
-- 전체 진단 범위는 현재 URL 47개와 이전 URL 3개를 합친 50개 URL이며, 대시보드 버튼의 진행 표시와 완료 후 복귀를 확인했다.
-- Playwright 캡처로 1440px·390px URL별 진단 로그의 필터, URL 그룹, 실행 결과 목록과 모바일 2열 진단 지표 레이아웃 확인
-- 주요 앱/API 경로의 로컬 HTTP 200 확인
-- ALL 카드 PC·모바일 라이브 검사: HTTP 200, 첫 실행 `BASELINE`, 연속 실행 `UNCHANGED`
-- ALL 카드 PC·모바일 표본 재진단: `LIVE_COMPLETE`, 실제 `og:site_name` meta와 추천 h2 원문 조각 저장 및 실행 상세 표시 확인
-- BeV Ⅲ PC·모바일 라이브 검사: 실패 0, `PENDING` 2
-- API가 백그라운드 검사 프로세스를 시작하고 완료 상태를 폴링하는 흐름 확인
-- 작업 스케줄러 PowerShell 스크립트 문법 확인; 실제 OS 예약 등록은 자동으로 수행하지 않았다.
-- `EndpointCheck`는 직전 성공 진단 ID와 HEAD/BODY 추가·삭제 건수를 저장하며 기존 DB 이력도 마이그레이션에서 역산한다.
-- `EndpointCheck`는 라이브 상태와 HEAD/BODY 필수 신호 확인값을 저장하고, `Endpoint.liveCompletedAt`은 최초 라이브 완료 감지 시각을 보존한다. 기존 스냅샷의 판정과 최초 일자도 마이그레이션에서 복구한다.
-- 기존 DB의 기획서 이전 URL 3개를 독립 Endpoint로 변환했다. `이벤트 9월`과 `이벤트 10월`은 각각 PC·모바일 현재 PRELAUNCH Endpoint를 가진 별도 대상으로 구성되며 활성 진단 범위는 총 50개 URL이다.
-- 과거 사용자 편집 정적 규칙으로 생성했던 OG/추천 문구 규칙과 오판정 결과는 마이그레이션으로 제거했고, 시스템 내장 라이브 판정으로 대체했다. HTTP 결과와 구조화 diff 이력은 보존한다.
-- 대시보드 상단은 최근 전체 진단의 라이브 완료·체크 필요·라이브 전·판정 불가 URL 수를 요약하고, 페이지별 필수 신호와 최초 라이브 일자를 우선 표시한다. 태그 diff와 실패 원인은 보조 상세 및 실행 상세에서 펼친다.
-- 라이브 상태 배지는 완료(초록)·체크 필요(주황)·라이브 전(파랑)·판정 불가(회색)로 구분한다. URL별 진단 로그는 DB의 `EndpointCheck`를 Endpoint별로 묶고 대상·채널·상태·상태 변경 여부를 서버에서 필터링하며, 최대 50개 URL씩 표시한다.
-- 팀 공유 서버의 `0.0.0.0:3000` 리스닝과 `127.0.0.1`, `192.168.203.99` 양쪽 HTTP 200을 확인했다.
-- Windows 방화벽의 `Webpage Update Tracker Team Access` 규칙을 TCP 3000, Node.js, Domain/Private, LocalSubnet 범위로 등록하고 `netsh`로 확인했다.
-- `start-team-server.bat`는 DB 준비와 프로덕션 빌드, 팀 접속 URL 출력을 거쳐 공유 프로덕션 서버를 실행한다. Next.js 16.3.5 Turbopack 개발 서버에서 HMR WebSocket이 실패하면 Client Component 하이드레이션이 멈추는 환경 문제를 이 경로에서 회피한다.
+- 기존 SQLite 실행 3건·진단 135건을 실행별 JSON, 상태 JSON, Run 인덱스로 이전했다.
+- `better-sqlite3`, 마이그레이션, API Route, 서버 기반 대상 편집과 백그라운드 실행을 제거했다.
+- Next.js 정적 export가 `/`, `/targets`, `/runs`, `/checks`, 기존 Run 상세 3개를 생성한다.
+- `lint`, `typecheck`, Vitest 7개 파일 21개 테스트를 통과했다.
+- basePath 없는 정적 build와 `PAGES_BASE_PATH=/webpage-update-tracker` GitHub Pages 형태의 build를 모두 통과했다. basePath build 산출물의 CSS·JS·내부 링크에 저장소 경로가 포함됨을 확인했다.
+- Playwright E2E 3개를 통과했다: 주요 화면 이동, 390px 수평 오버플로, 대상 검색, Actions 수동 진단 링크, URL 로그 클라이언트 필터.
+- JSON 무결성 확인 결과 대상 24개, 현재 URL 47개, 이전 URL 3개, 상태 Endpoint 50개, 기존 Run 3개, 기존 진단 135개이며 누락된 Endpoint 상태가 없다.
 
-## 8. Fresh-thread Resume Procedure
+## 9. Fresh-thread Resume Procedure
 
-새 대화 스레드에서는 다음 순서로 현재 상태를 복구한다.
+1. 이 문서 전체와 Next.js 작업에 필요한 `node_modules/next/dist/docs/` 문서를 읽는다.
+2. `README.md`, `package.json`, `.github/workflows/pages.yml`, 요청 영역의 source-of-truth 파일을 확인한다.
+3. `git status --short`와 최근 diff를 확인하고 사용자 변경을 덮어쓰지 않는다.
+4. `data/targets.json`, `data/state.json`, `data/run-index.json`과 인덱스가 가리키는 Run 파일의 존재를 확인한다.
+5. 수정 후 lint, typecheck, test, build를 실행하고 가능하면 E2E도 실행한다.
+6. 라이브 URL 검사는 결과 JSON을 변경하므로 사용자가 요청하거나 검증에 반드시 필요할 때만 실행한다.
+7. 구조, 명령, 판정 규칙, 검증 상태가 달라지면 코드와 함께 이 문서를 갱신한다.
 
-1. 이 `AGENTS.md` 전체를 읽고 Next.js 작업이면 위 자동 생성 블록이 지시한 로컬 Next 문서도 읽는다.
-2. `README.md`, `package.json`, 사용자가 요청한 영역의 source-of-truth 파일을 확인한다.
-3. Git 저장소가 있으면 `git status --short`와 최근 diff를 확인한다. 사용자 변경을 되돌리거나 덮어쓰지 않는다.
-4. `.data/tracker.db`의 존재를 가정하지 않는다. 새 clone이면 `npm.cmd run db:setup`으로 생성한다.
-5. 수정 전 관련 테스트를 확인하고, 수정 후 최소한 lint, typecheck, test, build를 실행한다.
-6. 라이브 URL 검사는 외부 상태를 바꾸지 않지만 실제 사이트 상태에 의존하므로 필요한 표본만 실행한다.
-7. 구조, 명령, 판정 규칙 또는 검증 상태가 달라지면 코드와 함께 이 문서를 갱신한다.
+## 10. Repository Hygiene
 
-## 9. Repository Hygiene
-
-- 커밋해야 함: 소스, 테스트, `package-lock.json`, `.env.example`, migration, seed, README, 이 문서
-- 커밋하지 않음: `.env`, `.data/tracker.db`, `node_modules`, `.next`, 로그, 테스트 결과, `*.tsbuildinfo`
-- Next.js가 이 파일의 `BEGIN/END:nextjs-agent-rules` 블록을 관리한다. 해당 블록은 삭제하거나 내부를 임의 수정하지 말고 프로젝트 컨텍스트는 블록 밖에 유지한다.
+- 커밋: 소스, 테스트, `package-lock.json`, `.env.example`, `.github/workflows/`, `data/*.json`, README, 이 문서
+- 커밋 제외: `.env`, `.data/`, `node_modules`, `.next`, `out`, 로그, 테스트 결과, `*.tsbuildinfo`, 일시적인 `data/scan.lock`
+- GitHub Actions가 만든 진단 JSON 커밋은 정상 운영 데이터다. 삭제·수정 시 Run 인덱스, 상태, 실행 문서의 관계를 함께 검증한다.
+- Next.js가 이 파일의 `BEGIN/END:nextjs-agent-rules` 블록을 관리한다. 블록 내부를 임의 수정하지 않는다.

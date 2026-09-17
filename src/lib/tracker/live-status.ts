@@ -1,5 +1,5 @@
 import { load } from "cheerio";
-import type { LiveStatus } from "@/lib/db-types";
+import type { LiveStatus } from "@/lib/domain-types";
 import { normalizeText } from "@/lib/tracker/canonicalize";
 
 export const LIVE_HEAD_SELECTOR = 'head meta[property="og:site_name"]';

@@ -4,8 +4,6 @@ import { runPill } from "@/components/status-pill";
 import { formatDateTime } from "@/lib/format";
 import { getRecentRuns } from "@/lib/queries";
 
-export const dynamic = "force-dynamic";
-
 export const metadata: Metadata = {
   title: "실행 이력",
 };

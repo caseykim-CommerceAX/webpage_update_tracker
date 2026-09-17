@@ -7,9 +7,14 @@ import { availabilityPill, changePill, liveStatusPill, runPill, StatusPill } fro
 import { TagDiff } from "@/components/tag-diff";
 import { formatDateTime, formatDuration } from "@/lib/format";
 import { getRun } from "@/lib/queries";
+import { getRunIndex } from "@/lib/json-store";
 import type { StructuredDiff } from "@/lib/tracker/types";
 
-export const dynamic = "force-dynamic";
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getRunIndex().runs.map((run) => ({ id: run.id }));
+}
 
 export const metadata: Metadata = {
   title: "실행 상세",

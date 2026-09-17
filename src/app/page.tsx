@@ -6,12 +6,9 @@ import { TargetTable } from "@/components/target-table";
 import { formatDateTime } from "@/lib/format";
 import { getCheckHistoryTotal, getRecentRuns, getRunLiveSummary, getRunTagChanges, getTargets } from "@/lib/queries";
 
-export const dynamic = "force-dynamic";
-
 export default function DashboardPage() {
   const targets = getTargets();
   const runs = getRecentRuns(50);
-  const activeRun = runs.find((run) => run.status === "QUEUED" || run.status === "RUNNING") ?? null;
   const latestRun = runs.find((run) =>
     !run.targetIdsJson && (run.status === "COMPLETED" || run.status === "COMPLETED_WITH_ERRORS"),
   ) ?? null;
@@ -49,7 +46,7 @@ export default function DashboardPage() {
             <p className="mt-1 text-sm font-medium text-neutral-300">PC·모바일 URL</p>
           </div>
           <div className="min-w-0 lg:mt-8">
-            <RunButton initialRunId={activeRun?.id} />
+            <RunButton />
             <p className="mt-3 text-xs font-medium text-neutral-400">예약 진단 · 매일 09:00</p>
           </div>
         </div>
@@ -69,7 +66,7 @@ export default function DashboardPage() {
 
       <section className="grid border border-neutral-950 bg-neutral-950 text-white lg:grid-cols-[minmax(0,1fr)_auto] lg:items-center" aria-labelledby="check-history-title">
         <div className="p-5 sm:p-6">
-          <p className="text-xs font-black text-neutral-400">DB 저장 이력</p>
+          <p className="text-xs font-black text-neutral-400">JSON 저장 이력</p>
           <h2 id="check-history-title" className="mt-2 text-2xl font-black">전체 진단 로그</h2>
           <p className="mt-2 max-w-3xl text-sm leading-6 text-neutral-300">
             현재까지 저장된 {checkHistoryTotal.toLocaleString("ko-KR")}건의 URL별 판정과 상태 변화를 조회합니다. 라이브 완료·체크 필요로 바뀐 시점과 당시 실제 태그를 확인할 수 있습니다.
@@ -133,7 +130,7 @@ export default function DashboardPage() {
           <div className="p-6 sm:p-8">
             <p className="text-lg font-black text-neutral-950">{latestRun ? "직전 진단 대비 변경된 태그가 없습니다." : "첫 진단을 실행해 기준선을 만들어 주세요."}</p>
             <p className="mt-2 text-sm leading-6 text-neutral-600">
-              {latestRun ? "변경 없음 결과도 비교 대상 진단과 함께 DB에 저장되었습니다." : "첫 성공 응답은 변경으로 알리지 않고 다음 비교를 위한 기준선으로 저장합니다."}
+              {latestRun ? "변경 없음 결과도 비교 대상 진단과 함께 JSON에 저장되었습니다." : "첫 성공 응답은 변경으로 알리지 않고 다음 비교를 위한 기준선으로 저장합니다."}
             </p>
           </div>
         )}
@@ -165,7 +162,7 @@ export default function DashboardPage() {
         <div className="border-t border-neutral-300 bg-neutral-100 p-5 sm:p-6 lg:border-l lg:border-t-0">
           <p className="text-xs font-black text-neutral-700">예약 진단</p>
           <p className="tabular-nums mt-2 text-2xl font-black text-neutral-950">매일 09:00</p>
-          <p className="mt-2 text-xs font-medium leading-5 text-neutral-600">스케줄 실행도 동일한 DB의 직전 성공 진단을 비교 기준으로 사용합니다.</p>
+          <p className="mt-2 text-xs font-medium leading-5 text-neutral-600">GitHub Actions가 직전 성공 진단 JSON을 비교 기준으로 사용합니다.</p>
         </div>
       </section>
     </div>

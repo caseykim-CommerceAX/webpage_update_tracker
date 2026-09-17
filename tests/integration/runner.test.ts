@@ -1,152 +1,140 @@
-import { existsSync, rmSync } from "node:fs";
+import { existsSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { afterAll, beforeAll, describe, expect, it, vi } from "vitest";
 
-const databaseBase = resolve(process.cwd(), ".data/runner.test.db");
-process.env.DATABASE_URL = "file:./.data/runner.test.db";
+const testDataDirectory = resolve(process.cwd(), ".data", "runner-json-test");
+process.env.TRACKER_DATA_DIR = testDataDirectory;
 process.env.SCAN_RETRIES = "0";
 
-let database: typeof import("@/lib/db");
 let runner: typeof import("@/lib/tracker/runner");
-let targetService: typeof import("@/lib/target-service");
+let store: typeof import("@/lib/json-store");
 let queries: typeof import("@/lib/queries");
-let targetId: string;
 
-function removeTestDatabase() {
-  for (const suffix of ["", "-wal", "-shm"]) {
-    const path = `${databaseBase}${suffix}`;
-    if (existsSync(path)) rmSync(path);
-  }
+const targetId = "target-1";
+const endpointId = "endpoint-1";
+const ruleId = "rule-1";
+
+function targets(currentUrl = "https://example.com/card", includePrevious = false) {
+  return {
+    schemaVersion: 1,
+    targets: [{
+      id: targetId,
+      displayOrder: 1,
+      name: "테스트 카드",
+      category: "테스트",
+      monitorMode: "CONTENT",
+      enabled: true,
+      endpoints: [
+        {
+          id: includePrevious ? "endpoint-2" : endpointId,
+          platform: "DESKTOP",
+          url: currentUrl,
+          referenceUrl: null,
+          lifecycle: includePrevious ? "PRELAUNCH" : "EXISTING",
+          enabled: true,
+          retiredAt: null,
+        },
+        ...(includePrevious ? [{
+          id: endpointId,
+          platform: "DESKTOP",
+          url: "https://example.com/card",
+          referenceUrl: null,
+          lifecycle: "EXISTING",
+          enabled: true,
+          retiredAt: "2026-09-17T00:00:00.000Z",
+        }] : []),
+      ],
+      rules: [{
+        id: ruleId,
+        type: "HTTP_STATUS",
+        label: "HTTP 200",
+        selector: null,
+        attribute: null,
+        expectedValue: null,
+        expectedStatuses: "[200]",
+        enabled: true,
+        displayOrder: 0,
+      }],
+    }],
+  };
+}
+
+function writeTargets(value = targets()) {
+  writeFileSync(resolve(testDataDirectory, "targets.json"), `${JSON.stringify(value, null, 2)}\n`, "utf8");
 }
 
 beforeAll(async () => {
-  removeTestDatabase();
-  database = await import("@/lib/db");
+  if (existsSync(testDataDirectory)) rmSync(testDataDirectory, { recursive: true });
+  mkdirSync(testDataDirectory, { recursive: true });
+  writeTargets();
   runner = await import("@/lib/tracker/runner");
-  targetService = await import("@/lib/target-service");
+  store = await import("@/lib/json-store");
   queries = await import("@/lib/queries");
-  targetId = database.createId();
-  const endpointId = database.createId();
-  const timestamp = database.nowIso();
-  database.db.prepare("INSERT INTO Target (id, displayOrder, name, category, monitorMode, enabled, createdAt, updatedAt) VALUES (?, 1, '테스트 카드', '테스트', 'CONTENT', 1, ?, ?)").run(targetId, timestamp, timestamp);
-  database.db.prepare("INSERT INTO Endpoint (id, targetId, platform, url, lifecycle, enabled, createdAt, updatedAt) VALUES (?, ?, 'DESKTOP', 'https://example.com/card', 'EXISTING', 1, ?, ?)").run(endpointId, targetId, timestamp, timestamp);
-  database.db.prepare("INSERT INTO Rule (id, targetId, type, label, expectedStatuses, enabled, displayOrder, createdAt, updatedAt) VALUES (?, ?, 'HTTP_STATUS', 'HTTP 200', '[200]', 1, 0, ?, ?)").run(database.createId(), targetId, timestamp, timestamp);
 });
 
 afterAll(() => {
   vi.unstubAllGlobals();
-  database.closeDb();
-  removeTestDatabase();
+  if (existsSync(testDataDirectory)) rmSync(testDataDirectory, { recursive: true });
 });
 
-describe("검사 실행 이력", () => {
+describe("JSON 검사 실행 이력", () => {
   it("기준선, 무변경, 변경을 순서대로 기록한다", async () => {
     const html = (recommendation?: string) => `<html><head><title>카드</title></head><body><p>기존 안내</p>${recommendation ? `<h2>${recommendation}</h2>` : ""}</body></html>`;
     vi.stubGlobal("fetch", vi.fn().mockImplementation(() => Promise.resolve(new Response(html(), { status: 200, headers: { "content-type": "text/html" } }))));
-    const first = runner.createQueuedRun("MANUAL", [targetId]);
-    await runner.executeRun(first.id);
-    expect((database.db.prepare("SELECT changeStatus FROM EndpointCheck WHERE runId = ?").get(first.id) as { changeStatus: string }).changeStatus).toBe("BASELINE");
 
-    const second = runner.createQueuedRun("MANUAL", [targetId]);
-    await runner.executeRun(second.id);
-    const unchanged = database.db.prepare(
-      "SELECT id, changeStatus, comparedCheckId FROM EndpointCheck WHERE runId = ?",
-    ).get(second.id) as { id: string; changeStatus: string; comparedCheckId: string };
+    const first = await runner.executeRun("MANUAL", [targetId]);
+    const firstCheck = store.getRunDocument(first.id)!.checks[0];
+    expect(firstCheck.changeStatus).toBe("BASELINE");
+
+    const second = await runner.executeRun("MANUAL", [targetId]);
+    const unchanged = store.getRunDocument(second.id)!.checks[0];
     expect(unchanged.changeStatus).toBe("UNCHANGED");
-    expect(unchanged.comparedCheckId).toBeTruthy();
+    expect(unchanged.comparedCheckId).toBe(firstCheck.id);
 
     vi.stubGlobal("fetch", vi.fn().mockImplementation(() => Promise.resolve(new Response(html("ALL 카드, 이런 분께 추천드려요"), { status: 200, headers: { "content-type": "text/html" } }))));
-    const third = runner.createQueuedRun("MANUAL", [targetId]);
-    const completed = await runner.executeRun(third.id);
-    expect(completed.changedCount).toBe(1);
-    const changed = database.db.prepare(
-      `SELECT changeStatus, snapshotId, comparedCheckId,
-              headAddedCount, headRemovedCount, bodyAddedCount, bodyRemovedCount
-       FROM EndpointCheck WHERE runId = ?`,
-    ).get(third.id) as {
-      changeStatus: string;
-      snapshotId: string;
-      comparedCheckId: string;
-      headAddedCount: number;
-      headRemovedCount: number;
-      bodyAddedCount: number;
-      bodyRemovedCount: number;
-    };
+    const third = await runner.executeRun("MANUAL", [targetId]);
+    const changed = store.getRunDocument(third.id)!.checks[0];
+    expect(third.changedCount).toBe(1);
     expect(changed.changeStatus).toBe("CHANGED");
     expect(changed.comparedCheckId).toBe(unchanged.id);
     expect(changed.headAddedCount + changed.headRemovedCount).toBe(0);
     expect(changed.bodyAddedCount).toBe(1);
     expect(changed.bodyRemovedCount).toBe(0);
-    expect((database.db.prepare("SELECT diffJson FROM Snapshot WHERE id = ?").get(changed.snapshotId) as { diffJson: string }).diffJson).toContain("이런 분께 추천드려요");
-    expect((database.db.prepare("SELECT liveStatus, headLiveMarkerFound, bodyLiveMarkerFound FROM EndpointCheck WHERE runId = ?").get(third.id) as {
-      liveStatus: string;
-      headLiveMarkerFound: number;
-      bodyLiveMarkerFound: number;
-    })).toEqual({ liveStatus: "CHECK_REQUIRED", headLiveMarkerFound: 0, bodyLiveMarkerFound: 1 });
+    expect(changed.diffJson).toContain("이런 분께 추천드려요");
+    expect({
+      liveStatus: changed.liveStatus,
+      headLiveMarkerFound: changed.headLiveMarkerFound,
+      bodyLiveMarkerFound: changed.bodyLiveMarkerFound,
+    }).toEqual({ liveStatus: "CHECK_REQUIRED", headLiveMarkerFound: false, bodyLiveMarkerFound: true });
 
     vi.stubGlobal("fetch", vi.fn().mockImplementation(() => Promise.resolve(new Response(
       `<html><head><title>카드</title><meta property="og:site_name" content="KB국민카드"></head><body><p>기존 안내</p><h2>ALL 카드, 이런 분께 추천 드려요</h2></body></html>`,
       { status: 200, headers: { "content-type": "text/html" } },
     ))));
-    const fourth = runner.createQueuedRun("MANUAL", [targetId]);
-    await runner.executeRun(fourth.id);
-    expect((database.db.prepare(
-      "SELECT liveStatus, headLiveMarkerHtml, bodyLiveMarkerHtml FROM EndpointCheck WHERE runId = ?",
-    ).get(fourth.id) as { liveStatus: string; headLiveMarkerHtml: string; bodyLiveMarkerHtml: string })).toEqual({
+    const fourth = await runner.executeRun("MANUAL", [targetId]);
+    const completed = store.getRunDocument(fourth.id)!.checks[0];
+    expect({
+      liveStatus: completed.liveStatus,
+      headLiveMarkerHtml: completed.headLiveMarkerHtml,
+      bodyLiveMarkerHtml: completed.bodyLiveMarkerHtml,
+    }).toEqual({
       liveStatus: "LIVE_COMPLETE",
       headLiveMarkerHtml: '<meta property="og:site_name" content="KB국민카드">',
       bodyLiveMarkerHtml: "<h2>ALL 카드, 이런 분께 추천 드려요</h2>",
     });
-    expect((database.db.prepare("SELECT liveCompletedAt FROM Endpoint WHERE targetId = ? AND retiredAt IS NULL").get(targetId) as { liveCompletedAt: string | null }).liveCompletedAt).toBeTruthy();
+    expect(store.getStateDocument().endpoints[endpointId].liveCompletedAt).toBeTruthy();
 
-    const transitions = queries.getCheckHistory({ targetId, transitionsOnly: true, pageSize: 50 });
+    const transitions = queries.getCheckHistoryByEndpoint({ targetId, transitionsOnly: true, pageSize: 50 });
     expect(transitions.total).toBe(3);
-    expect(transitions.rows.map((row) => row.liveStatus)).toEqual(["LIVE_COMPLETE", "CHECK_REQUIRED", "BEFORE_LIVE"]);
-
-    const grouped = queries.getCheckHistoryByEndpoint({ targetId, pageSize: 50 });
-    expect(grouped.endpointTotal).toBe(1);
-    expect(grouped.total).toBe(4);
-    expect(grouped.groups).toHaveLength(1);
-    expect(grouped.groups[0].url).toBe("https://example.com/card");
-    expect(grouped.groups[0].checks.map((row) => row.liveStatus)).toEqual([
+    expect(transitions.groups[0].checks.map((row) => row.liveStatus)).toEqual([
       "LIVE_COMPLETE",
       "CHECK_REQUIRED",
       "BEFORE_LIVE",
-      "BEFORE_LIVE",
     ]);
-
-    const missing = queries.getCheckHistoryByEndpoint({ query: "존재하지 않는 URL" });
-    expect(missing.endpointTotal).toBe(0);
-    expect(missing.total).toBe(0);
-    expect(missing.groups).toEqual([]);
   });
 
-  it("URL 변경 시 이전 Endpoint를 계속 추적하고 새 기준선을 준비한다", async () => {
-    const previous = database.db.prepare("SELECT id FROM Endpoint WHERE targetId = ? AND retiredAt IS NULL").get(targetId) as { id: string };
-    targetService.updateTarget(targetId, {
-      name: "테스트 카드",
-      category: "테스트",
-      monitorMode: "CONTENT",
-      enabled: true,
-      endpoints: [{ platform: "DESKTOP", url: "https://example.com/card-v2", referenceUrl: "https://example.com/card", lifecycle: "PRELAUNCH" }],
-      rules: [{ type: "HTTP_STATUS", label: "HTTP 200", expectedStatuses: [200], enabled: true }],
-    });
-    const retired = database.db.prepare("SELECT retiredAt, enabled FROM Endpoint WHERE id = ?").get(previous.id) as { retiredAt: string | null; enabled: number };
-    const current = database.db.prepare("SELECT id, url FROM Endpoint WHERE targetId = ? AND retiredAt IS NULL").get(targetId) as { id: string; url: string };
-    expect(retired.retiredAt).toBeTruthy();
-    expect(retired.enabled).toBe(1);
-    expect(current.url).toBe("https://example.com/card-v2");
-    expect(current.id).not.toBe(previous.id);
-    expect((database.db.prepare("SELECT COUNT(*) AS count FROM Snapshot WHERE endpointId = ?").get(previous.id) as { count: number }).count).toBe(3);
-    expect((database.db.prepare("SELECT COUNT(*) AS count FROM Snapshot WHERE endpointId = ?").get(current.id) as { count: number }).count).toBe(0);
-
-    const target = queries.getTargets().find((item) => item.id === targetId);
-    expect(target?.endpoints).toHaveLength(2);
-    expect(target?.endpoints.map((endpoint) => ({ url: endpoint.url, previous: Boolean(endpoint.retiredAt) }))).toEqual([
-      { url: "https://example.com/card-v2", previous: false },
-      { url: "https://example.com/card", previous: true },
-    ]);
-
+  it("현재 URL과 이전 URL을 각각 진단하고 새 URL은 별도 기준선을 만든다", async () => {
+    writeTargets(targets("https://example.com/card-v2", true));
     const requestedUrls: string[] = [];
     vi.stubGlobal("fetch", vi.fn().mockImplementation((input: string | URL | Request) => {
       requestedUrls.push(String(input));
@@ -155,12 +143,12 @@ describe("검사 실행 이력", () => {
         headers: { "content-type": "text/html" },
       }));
     }));
-    const run = runner.createQueuedRun("MANUAL", [targetId]);
-    await runner.executeRun(run.id);
-    expect(requestedUrls).toEqual([
-      "https://example.com/card-v2",
-      "https://example.com/card",
-    ]);
-    expect((database.db.prepare("SELECT COUNT(*) AS count FROM EndpointCheck WHERE runId = ?").get(run.id) as { count: number }).count).toBe(2);
+
+    const run = await runner.executeRun("MANUAL", [targetId]);
+    expect(requestedUrls).toEqual(["https://example.com/card-v2", "https://example.com/card"]);
+    const checks = store.getRunDocument(run.id)!.checks;
+    expect(checks).toHaveLength(2);
+    expect(checks.find((check) => check.endpointId === "endpoint-2")?.changeStatus).toBe("BASELINE");
+    expect(checks.find((check) => check.endpointId === endpointId)?.retiredAt).toBeTruthy();
   });
 });

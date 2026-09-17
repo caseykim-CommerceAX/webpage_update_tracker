@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import type { RuleRecord } from "@/lib/db-types";
+import type { RuleRecord } from "@/lib/domain-types";
 import { evaluateRule } from "@/lib/tracker/rules";
 
 function rule(patch: Partial<RuleRecord>): RuleRecord {
@@ -12,7 +12,7 @@ function rule(patch: Partial<RuleRecord>): RuleRecord {
     attribute: null,
     expectedValue: null,
     expectedStatuses: "[200]",
-    enabled: 1,
+    enabled: true,
     displayOrder: 0,
     ...patch,
   };

@@ -18,7 +18,7 @@ export type RuleRecord = {
   attribute: string | null;
   expectedValue: string | null;
   expectedStatuses: string | null;
-  enabled: number;
+  enabled: boolean;
   displayOrder: number;
 };
 

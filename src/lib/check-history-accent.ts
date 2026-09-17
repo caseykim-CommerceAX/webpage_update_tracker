@@ -1,4 +1,4 @@
-import type { AvailabilityStatus, LiveStatus } from "@/lib/db-types";
+import type { AvailabilityStatus, LiveStatus } from "@/lib/domain-types";
 
 export type CheckHistoryAccent = "error" | "live-complete" | "status-change" | null;
 

@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-17T07:35:32.542Z",
+  "runs": [
+    {
+      "id": "6fff05d5-9554-4cdc-bee1-d57b48710bf7",
+      "source": "MANUAL",
+      "status": "COMPLETED",
+      "targetIdsJson": null,
+      "totalCount": 45,
+      "processedCount": 45,
+      "changedCount": 2,
+      "failureCount": 0,
+      "pendingCount": 5,
+      "errorMessage": null,
+      "createdAt": "2026-09-17T02:00:09.010Z",
+      "startedAt": "2026-09-17T02:00:09.923Z",
+      "completedAt": "2026-09-17T02:00:16.718Z"
+    },
+    {
+      "id": "dce7a9f2-8559-4f01-9602-eae9284818d3",
+      "source": "MANUAL",
+      "status": "COMPLETED",
+      "targetIdsJson": null,
+      "totalCount": 45,
+      "processedCount": 45,
+      "changedCount": 20,
+      "failureCount": 0,
+      "pendingCount": 5,
+      "errorMessage": null,
+      "createdAt": "2026-09-16T01:38:33.728Z",
+      "startedAt": "2026-09-16T01:38:33.735Z",
+      "completedAt": "2026-09-16T01:38:41.771Z"
+    },
+    {
+      "id": "33be9772-cd83-48f9-8597-767405aa8fc2",
+      "source": "MANUAL",
+      "status": "COMPLETED",
+      "targetIdsJson": null,
+      "totalCount": 45,
+      "processedCount": 45,
+      "changedCount": 0,
+      "failureCount": 0,
+      "pendingCount": 5,
+      "errorMessage": null,
+      "createdAt": "2026-09-14T07:48:25.980Z",
+      "startedAt": "2026-09-14T07:48:27.008Z",
+      "completedAt": "2026-09-14T07:48:33.602Z"
+    }
+  ]
+}

@@ -7,23 +7,16 @@
     "dev": "next dev --hostname 0.0.0.0",
     "dev:local": "next dev --hostname 127.0.0.1",
     "build": "next build",
-    "start": "next start --hostname 0.0.0.0",
-    "start:local": "next start --hostname 127.0.0.1",
+    "start": "node scripts/serve-static.mjs --hostname 0.0.0.0",
+    "start:local": "node scripts/serve-static.mjs --hostname 127.0.0.1",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "node scripts/run-e2e.mjs",
-    "db:seed": "tsx prisma/seed.ts",
-    "db:setup": "tsx prisma/seed.ts",
-    "scan": "node --use-system-ca --import tsx scripts/scan.ts",
-    "schedule:install": "powershell -ExecutionPolicy Bypass -File scripts/install-schedule.ps1",
-    "schedule:remove": "powershell -ExecutionPolicy Bypass -File scripts/remove-schedule.ps1",
-    "network:allow": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/allow-team-access.ps1",
-    "network:remove": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/remove-team-access.ps1"
+    "scan": "node --use-system-ca --import tsx scripts/scan.ts"
   },
   "dependencies": {
-    "better-sqlite3": "latest",
     "cheerio": "latest",
     "diff": "latest",
     "dotenv": "latest",
@@ -39,7 +32,6 @@
     "@tailwindcss/postcss": "latest",
     "@testing-library/jest-dom": "latest",
     "@testing-library/react": "latest",
-    "@types/better-sqlite3": "latest",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
@@ -52,11 +44,7 @@
     "vitest": "latest"
   },
   "allowScripts": {
-    "better-sqlite3@12.11.1": true,
-    "better-sqlite3@13.0.3": true,
     "esbuild@0.28.2": true,
-    "unrs-resolver@1.12.2": true,
-    "prisma@7.10.0": true,
-    "@prisma/engines@7.10.0": true
+    "unrs-resolver@1.12.2": true
   }
 }
