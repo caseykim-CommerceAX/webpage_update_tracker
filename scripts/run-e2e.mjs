@@ -9,6 +9,8 @@ const nextCli = join(root, "node_modules", "next", "dist", "bin", "next");
 const staticServer = join(root, "scripts", "serve-static.mjs");
 const playwrightCli = join(root, "node_modules", "@playwright", "test", "cli.js");
 const localBaseUrl = "http://127.0.0.1:3100";
+const e2ePassword = "dashboard-e2e-password";
+const e2ePasswordDigest = "05a2492327a2b3121c5f1764fb1742a5fa7c4f787976f7fb604014b6847cb151";
 
 function run(command, args, env = process.env) {
   return new Promise((resolve, reject) => {
@@ -61,6 +63,7 @@ async function main() {
 
   await run(process.execPath, [nextCli, "build"], {
     ...process.env,
+    NEXT_PUBLIC_DASHBOARD_PASSWORD_DIGEST: e2ePasswordDigest,
     NEXT_PUBLIC_GITHUB_REPOSITORY_URL: "https://github.com/example/webpage-update-tracker",
   });
   const server = spawn(process.execPath, [staticServer, "--hostname", "127.0.0.1", "--port", "3100"], {
@@ -74,6 +77,7 @@ async function main() {
     await waitForServer(server);
     await run(process.execPath, [playwrightCli, "test"], {
       ...process.env,
+      DASHBOARD_E2E_PASSWORD: e2ePassword,
       PLAYWRIGHT_BASE_URL: localBaseUrl,
     });
   } finally {

@@ -1,8 +1,22 @@
-import { expect, test } from "@playwright/test";
+import { expect, type Page, test } from "@playwright/test";
+
+const dashboardPassword = process.env.DASHBOARD_E2E_PASSWORD;
+
+async function unlockDashboard(page: Page) {
+  await page.goto("/");
+  await expect(page.getByRole("heading", { name: "대시보드 접근" })).toBeVisible();
+  if (!dashboardPassword) throw new Error("DASHBOARD_E2E_PASSWORD is required for the access-gate E2E test.");
+  await page.getByLabel("암호").fill(dashboardPassword);
+  await page.getByRole("button", { name: "대시보드 열기" }).click();
+  await expect(page.getByRole("heading", { name: "페이지 라이브 현황", exact: true })).toBeVisible();
+}
 
 test("대시보드와 주요 관리 화면을 연다", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: "페이지 라이브 현황", exact: true })).toBeVisible();
+  await page.getByLabel("암호").fill("wrong-password");
+  await page.getByRole("button", { name: "대시보드 열기" }).click();
+  await expect(page.getByText("암호가 올바르지 않습니다.")).toBeVisible();
+  await unlockDashboard(page);
   await expect(page.getByRole("heading", { name: "태그 변경 상세" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "페이지별 라이브 현황" })).toBeVisible();
   await expect(page.getByText("이벤트 9월", { exact: true }).first()).toBeVisible();
@@ -23,6 +37,7 @@ test("대시보드와 주요 관리 화면을 연다", async ({ page }) => {
 
 test("모바일 화면에서 문서 전체 수평 스크롤이 생기지 않는다", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
+  await unlockDashboard(page);
 
   for (const path of ["/", "/targets", "/runs", "/checks"]) {
     await page.goto(path);
@@ -35,7 +50,7 @@ test("모바일 화면에서 문서 전체 수평 스크롤이 생기지 않는�
 });
 
 test("대시보드의 클라이언트 기능이 동작한다", async ({ page }) => {
-  await page.goto("/");
+  await unlockDashboard(page);
   await page.getByRole("searchbox", { name: "대상 검색" }).fill("ALL point");
   await expect(page.getByText("대상 1개 · URL 2개 표시")).toBeVisible();
   await expect(page.getByRole("link", { name: "GitHub에서 전체 진단" })).toHaveAttribute(

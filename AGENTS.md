@@ -18,6 +18,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - 진단 데이터는 DB가 아니라 Git에 커밋되는 JSON이며, GitHub Actions가 매일 `Asia/Seoul` 오전 9시에 진단하고 GitHub Pages에 배포한다.
 - 현재 구성은 24개 대상, 47개 현재 URL, 3개 이전 URL이다. 9월·10월 이벤트는 독립 대상이며 이전 URL도 별도 Endpoint로 계속 진단한다.
 - 대시보드, 실행 이력·상세, URL별 전체 진단 로그, 클라이언트 필터, 실패 근거, 구조화 diff, 반응형 UI가 포함된다.
+- 모든 화면 앞에는 탭 단위의 1차 접근 암호 화면이 표시된다. 이는 공개 정적 파일을 숨기지 않는 편의상 접근 장벽이며 실제 보안 경계가 아니다.
 - 정적 사이트에는 쓰기 API가 없다. 대상 수정은 `data/targets.json`, 수동 전체 진단은 GitHub Actions의 `Run workflow`를 사용한다.
 
 ## 2. Technology and Deployment Decisions
@@ -28,6 +29,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - `.github/workflows/pages.yml`은 push 시 빌드·배포하고, schedule/workflow_dispatch 시 진단 JSON을 먼저 생성·커밋한 후 배포한다.
 - GitHub Pages에는 Node 서버, Route Handler, Server Action이 없다. 브라우저에 GitHub 토큰을 노출하는 진단/편집 기능을 만들지 않는다.
 - 일반 GitHub Pages 사이트와 결과 JSON은 공개 정보로 간주한다. 비밀값을 데이터나 클라이언트 번들에 넣지 않는다.
+- 루트 레이아웃의 `DashboardAccessGate`는 SHA-256 digest를 비교하고 `sessionStorage`에 현재 탭의 통과 여부를 저장하는 1차 접근 화면이다. 서버 인증이 아니며 공개 JSON이나 정적 파일을 보호하지 않는다.
 - 검사 프로세스는 TLS 검증을 끄지 않으며 `node --use-system-ca --import tsx`로 실행한다.
 - 로컬 `start`는 `scripts/serve-static.mjs`로 `out/`을 제공한다. `start-team-server.bat`도 정적 빌드 후 이 서버를 실행한다.
 
@@ -50,6 +52,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - `src/lib/tracker/rules.ts`: HTTP 및 선택형 정적 규칙 평가
 - `src/lib/queries.ts`: JSON을 대시보드 ViewModel로 변환
 - `src/app/page.tsx`, `src/app/targets/`, `src/app/runs/`: 정적 대시보드와 설정/이력 UI
+- `src/components/dashboard-access-gate.tsx`: 모든 화면 앞의 클라이언트 접근 암호 확인과 탭 세션 유지
 - `src/app/checks/page.tsx`, `src/components/check-history.tsx`: URL별 진단 이력과 클라이언트 필터
 - `scripts/scan.ts`: 로컬/GitHub Actions 진단 CLI
 - `scripts/serve-static.mjs`, `scripts/run-e2e.mjs`: 정적 결과 제공과 E2E 서버 수명주기
@@ -107,14 +110,14 @@ Playwright 브라우저가 준비된 환경에서는 `npm.cmd run test:e2e`도 �
 
 ## 8. Last Verified State
 
-2026-09-17 JSON 정적 전환 기준:
+2026-09-17 JSON 정적 전환 및 1차 접근 화면 기준:
 
 - 기존 SQLite 실행 3건·진단 135건을 실행별 JSON, 상태 JSON, Run 인덱스로 이전했다.
 - `better-sqlite3`, 마이그레이션, API Route, 서버 기반 대상 편집과 백그라운드 실행을 제거했다.
 - Next.js 정적 export가 `/`, `/targets`, `/runs`, `/checks`, 기존 Run 상세 3개를 생성한다.
 - `lint`, `typecheck`, Vitest 7개 파일 21개 테스트를 통과했다.
-- basePath 없는 정적 build와 `PAGES_BASE_PATH=/webpage-update-tracker` GitHub Pages 형태의 build를 모두 통과했다. basePath build 산출물의 CSS·JS·내부 링크에 저장소 경로가 포함됨을 확인했다.
-- Playwright E2E 3개를 통과했다: 주요 화면 이동, 390px 수평 오버플로, 대상 검색, Actions 수동 진단 링크, URL 로그 클라이언트 필터.
+- basePath 없는 정적 build와 실제 배포 경로인 `PAGES_BASE_PATH=/webpage_update_tracker` build를 모두 통과했다. 배포용 번들에는 암호 원문 없이 SHA-256 digest만 포함된다.
+- Playwright E2E 3개를 통과했다: 잘못된 암호 거부와 정상 암호 통과, 탭 세션 유지, 주요 화면 이동, 390px 수평 오버플로, 대상 검색, Actions 수동 진단 링크, URL 로그 클라이언트 필터.
 - JSON 무결성 확인 결과 대상 24개, 현재 URL 47개, 이전 URL 3개, 상태 Endpoint 50개, 기존 Run 3개, 기존 진단 135개이며 누락된 Endpoint 상태가 없다.
 
 ## 9. Fresh-thread Resume Procedure
