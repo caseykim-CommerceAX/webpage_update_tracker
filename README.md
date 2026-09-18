@@ -1,6 +1,6 @@
 # Webpage Update Tracker
 
-KB국민카드 PC·모바일 페이지의 라이브 여부와 HTML 변경을 매일 진단하는 정적 대시보드입니다. 진단 결과는 SQLite나 별도 서버 없이 실행별 JSON으로 저장하고, GitHub Actions가 매일 오전 9시 진단과 GitHub Pages 배포를 담당합니다.
+KB국민카드 PC·모바일 페이지의 라이브 여부와 HTML 변경을 매일 진단하는 정적 대시보드입니다. 진단 결과는 SQLite나 별도 서버 없이 실행별 JSON으로 저장하고, GitHub Actions가 매일 오전 9시 7분 진단과 GitHub Pages 배포를 담당합니다.
 
 ## 로컬에서 확인하기
 
@@ -46,11 +46,11 @@ npm.cmd run scan
 `.github/workflows/pages.yml`은 다음 작업을 수행합니다.
 
 - 코드가 `main`에 push되면 정적 대시보드만 다시 빌드·배포
-- 매일 `Asia/Seoul` 오전 9시에 전체 URL 진단
+- 매일 `Asia/Seoul` 오전 9시 7분에 전체 URL 진단
 - Actions의 `Run workflow`로 수동 전체 진단
 - 새 실행 JSON을 `main`에 자동 커밋한 뒤 최신 대시보드 배포
 
-GitHub 예약 실행은 부하에 따라 정각보다 늦게 시작될 수 있습니다. Actions 실행 환경에서 KB카드 URL 접근이 가능한지도 첫 수동 실행 로그로 확인해야 합니다.
+GitHub 예약 실행은 지정 시각보다 늦게 시작될 수 있고, 매시 정각에는 부하로 인해 드롭될 수도 있습니다. 이 프로젝트는 정각 부하를 피하기 위해 오전 9시 7분에 실행합니다. Actions 실행 환경에서 KB카드 URL 접근이 가능한지도 첫 수동 실행 로그로 확인해야 합니다.
 
 ## 대상 수정
 

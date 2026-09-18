@@ -4,7 +4,8 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: "0 9 * * *"
+    # Avoid the top-of-hour load window, where GitHub may delay or drop scheduled runs.
+    - cron: "7 9 * * *"
       timezone: "Asia/Seoul"
   workflow_dispatch:
 

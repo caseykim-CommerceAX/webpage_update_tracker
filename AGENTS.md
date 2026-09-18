@@ -15,7 +15,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 ## 1. Project Goal and Current Scope
 
 - KB국민카드 웹페이지의 PC·모바일 URL을 매일 검사해 라이브 여부와 HEAD/BODY 변경을 기록하는 정적 대시보드다.
-- 진단 데이터는 DB가 아니라 Git에 커밋되는 JSON이며, GitHub Actions가 매일 `Asia/Seoul` 오전 9시에 진단하고 GitHub Pages에 배포한다.
+- 진단 데이터는 DB가 아니라 Git에 커밋되는 JSON이며, GitHub Actions가 매일 `Asia/Seoul` 오전 9시 7분에 진단하고 GitHub Pages에 배포한다.
 - 현재 구성은 24개 대상, 47개 현재 URL, 3개 이전 URL이다. 9월·10월 이벤트는 독립 대상이며 이전 URL도 별도 Endpoint로 계속 진단한다.
 - 대시보드, 실행 이력·상세, URL별 전체 진단 로그, 클라이언트 필터, 실패 근거, 구조화 diff, 반응형 UI가 포함된다.
 - 모든 화면 앞에는 탭 단위의 1차 접근 암호 화면이 표시된다. 이는 공개 정적 파일을 숨기지 않는 편의상 접근 장벽이며 실제 보안 경계가 아니다.
@@ -56,7 +56,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - `src/app/checks/page.tsx`, `src/components/check-history.tsx`: URL별 진단 이력과 클라이언트 필터
 - `scripts/scan.ts`: 로컬/GitHub Actions 진단 CLI
 - `scripts/serve-static.mjs`, `scripts/run-e2e.mjs`: 정적 결과 제공과 E2E 서버 수명주기
-- `.github/workflows/pages.yml`: 09:00 KST 진단, JSON 커밋, Pages 배포
+- `.github/workflows/pages.yml`: 정각 부하를 피한 09:07 KST 진단, JSON 커밋, Pages 배포
 - `README.md`: 설치, GitHub 설정, 운영 절차
 
 ## 5. Behavioral Invariants
@@ -119,6 +119,7 @@ Playwright 브라우저가 준비된 환경에서는 `npm.cmd run test:e2e`도 �
 - basePath 없는 정적 build와 실제 배포 경로인 `PAGES_BASE_PATH=/webpage_update_tracker` build를 모두 통과했다. 배포용 번들에는 암호 원문 없이 SHA-256 digest만 포함된다.
 - Playwright E2E 3개를 통과했다: 잘못된 암호 거부와 정상 암호 통과, 탭 세션 유지, 주요 화면 이동, 390px 수평 오버플로, 대상 검색, Actions 수동 진단 링크, URL 로그 클라이언트 필터.
 - JSON 무결성 확인 결과 대상 24개, 현재 URL 47개, 이전 URL 3개, 상태 Endpoint 50개, 기존 Run 3개, 기존 진단 135개이며 누락된 Endpoint 상태가 없다.
+- GitHub 예약 실행은 매시 정각의 지연·드롭 가능성을 낮추기 위해 `09:07 Asia/Seoul`로 설정한다.
 
 ## 9. Fresh-thread Resume Procedure
 
