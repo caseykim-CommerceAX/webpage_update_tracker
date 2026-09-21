@@ -1,7 +1,22 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-20T04:45:43.278Z",
+  "updatedAt": "2026-09-21T04:45:55.098Z",
   "runs": [
+    {
+      "id": "6695fec2-ab05-4314-b711-8e42701021cb",
+      "source": "SCHEDULE",
+      "status": "COMPLETED",
+      "targetIdsJson": null,
+      "totalCount": 50,
+      "processedCount": 50,
+      "changedCount": 0,
+      "failureCount": 0,
+      "pendingCount": 7,
+      "errorMessage": null,
+      "createdAt": "2026-09-21T04:45:40.920Z",
+      "startedAt": "2026-09-21T04:45:40.928Z",
+      "completedAt": "2026-09-21T04:45:55.098Z"
+    },
     {
       "id": "6b022c86-3050-40ad-9ffc-d2e5c24f1bd4",
       "source": "SCHEDULE",
