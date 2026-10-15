@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-14T04:43:34.758Z",
+  "updatedAt": "2026-10-15T04:26:05.700Z",
   "endpoints": {
     "c926ec76-812d-4877-b8cd-10f16272aeba": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-12T05:46:23.315Z",
+      "lastChangedAt": "2026-10-15T04:26:05.346Z",
       "latest": {
-        "id": "da5a9a5b-30c2-45ed-8df7-58639f739bf8",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "54dab438-af51-46cd-a754-d73d96a47745",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "c926ec76-812d-4877-b8cd-10f16272aeba",
         "targetId": "014f6ae8-f8af-4234-9976-8e1b4ecbb511",
         "targetName": "국민행복카드",
@@ -26,16 +26,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 1266,
+        "changeStatus": "CHANGED",
+        "responseMs": 844,
         "errorMessage": null,
-        "comparedCheckId": "3aa55878-0ea2-4723-87cc-badc3f27621e",
-        "comparedAt": "2026-10-13T06:40:46.898Z",
+        "comparedCheckId": "da5a9a5b-30c2-45ed-8df7-58639f739bf8",
+        "comparedAt": "2026-10-14T04:43:34.174Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -46,12 +46,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:34.174Z"
+        "createdAt": "2026-10-15T04:26:05.346Z"
       },
       "lastSuccessful": {
-        "checkId": "da5a9a5b-30c2-45ed-8df7-58639f739bf8",
-        "createdAt": "2026-10-14T04:43:34.174Z",
-        "hash": "e2bd10087eaf8b89590c7e208f3b7810451b57afc9839fd879b44a3774d29bfe",
+        "checkId": "54dab438-af51-46cd-a754-d73d96a47745",
+        "createdAt": "2026-10-15T04:26:05.346Z",
+        "hash": "84389d16079902dbde29e8963dd05e62c76e0a7594ca0d5aa6e289c11b6eb8c3",
         "tokens": [
           {
             "kind": "title",
@@ -3866,7 +3866,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -12240,7 +12240,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -14386,8 +14386,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:16.120Z",
       "latest": {
-        "id": "11f40a0e-f956-443b-a181-c5be73035fcf",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "e481ee14-622b-4fa3-9070-f89d9abe38ec",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "7b6cf907-d2fc-4161-a9c1-7327da1b8c12",
         "targetId": "014f6ae8-f8af-4234-9976-8e1b4ecbb511",
         "targetName": "국민행복카드",
@@ -14406,10 +14406,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 394,
+        "responseMs": 419,
         "errorMessage": null,
-        "comparedCheckId": "8f33acea-5a5c-482f-9091-a12d8cf2bac6",
-        "comparedAt": "2026-10-13T06:40:48.476Z",
+        "comparedCheckId": "11f40a0e-f956-443b-a181-c5be73035fcf",
+        "comparedAt": "2026-10-14T04:43:33.481Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -14425,11 +14425,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:33.481Z"
+        "createdAt": "2026-10-15T04:26:04.923Z"
       },
       "lastSuccessful": {
-        "checkId": "11f40a0e-f956-443b-a181-c5be73035fcf",
-        "createdAt": "2026-10-14T04:43:33.481Z",
+        "checkId": "e481ee14-622b-4fa3-9070-f89d9abe38ec",
+        "createdAt": "2026-10-15T04:26:04.923Z",
         "hash": "e4a05a511ac23184bbdc49d34bd6467f5946d71a55c77f008d78ff291d22f8ee",
         "tokens": [
           {
@@ -16123,10 +16123,10 @@
     "01ed00fd-e36a-480d-ab73-d80aaab6cb65": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-12T05:46:21.198Z",
+      "lastChangedAt": "2026-10-15T04:26:04.647Z",
       "latest": {
-        "id": "53be2c66-e6d1-4a33-9131-ebd878440ff5",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "c81e30f8-b3f4-4b85-aab0-f6dbb6b7fe0c",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "01ed00fd-e36a-480d-ab73-d80aaab6cb65",
         "targetId": "03bb23e7-bb86-4574-8e13-1b46baece17c",
         "targetName": "트래블러스 체크카드",
@@ -16144,16 +16144,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 806,
+        "changeStatus": "CHANGED",
+        "responseMs": 892,
         "errorMessage": null,
-        "comparedCheckId": "0ee07d06-17b7-4f29-a8ad-fcaf5f1c550c",
-        "comparedAt": "2026-10-13T06:40:46.711Z",
+        "comparedCheckId": "53be2c66-e6d1-4a33-9131-ebd878440ff5",
+        "comparedAt": "2026-10-14T04:43:33.386Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -16164,12 +16164,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:33.386Z"
+        "createdAt": "2026-10-15T04:26:04.647Z"
       },
       "lastSuccessful": {
-        "checkId": "53be2c66-e6d1-4a33-9131-ebd878440ff5",
-        "createdAt": "2026-10-14T04:43:33.386Z",
-        "hash": "fb1d22f3ac78c131dc20d0f5373f5bb72d37d87f1971866a60152b48e6e739f1",
+        "checkId": "c81e30f8-b3f4-4b85-aab0-f6dbb6b7fe0c",
+        "createdAt": "2026-10-15T04:26:04.647Z",
+        "hash": "8d30bf7cff7bf0e5af534eec53bc8a7549c164482417e09ad05e241c926ef017",
         "tokens": [
           {
             "kind": "title",
@@ -19984,7 +19984,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -29253,7 +29253,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -31524,8 +31524,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:15.268Z",
       "latest": {
-        "id": "e9aa3b68-eed8-489a-a4fd-6dfd59042173",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "45192d97-f013-4c81-be4a-c63404d0d11b",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "db9539a0-6221-4363-9eb5-708ca00e4f35",
         "targetId": "03bb23e7-bb86-4574-8e13-1b46baece17c",
         "targetName": "트래블러스 체크카드",
@@ -31544,10 +31544,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1192,
+        "responseMs": 388,
         "errorMessage": null,
-        "comparedCheckId": "478a364f-1e59-49e2-89ad-b21b2ff75b15",
-        "comparedAt": "2026-10-13T06:40:46.978Z",
+        "comparedCheckId": "e9aa3b68-eed8-489a-a4fd-6dfd59042173",
+        "comparedAt": "2026-10-14T04:43:33.998Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -31563,11 +31563,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:33.998Z"
+        "createdAt": "2026-10-15T04:26:04.522Z"
       },
       "lastSuccessful": {
-        "checkId": "e9aa3b68-eed8-489a-a4fd-6dfd59042173",
-        "createdAt": "2026-10-14T04:43:33.998Z",
+        "checkId": "45192d97-f013-4c81-be4a-c63404d0d11b",
+        "createdAt": "2026-10-15T04:26:04.522Z",
         "hash": "1dadf2277cc9f7ebd38fe8eb54964e221287ace9ee607372aab22bd037b12eee",
         "tokens": [
           {
@@ -33416,10 +33416,10 @@
     "8fbc38b1-9e91-48b5-b48c-6a8b52dea42c": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-12T05:46:19.406Z",
+      "lastChangedAt": "2026-10-15T04:26:02.015Z",
       "latest": {
-        "id": "855673b4-b099-42bb-9c2a-7cd1d00b50c0",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "0f875815-1aad-4c6a-8fa7-01e6e33daeda",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "8fbc38b1-9e91-48b5-b48c-6a8b52dea42c",
         "targetId": "11160efa-eca7-4b83-a8db-13cea9e8e74e",
         "targetName": "HERITAGE Classic(할인형)",
@@ -33437,16 +33437,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 888,
+        "changeStatus": "CHANGED",
+        "responseMs": 937,
         "errorMessage": null,
-        "comparedCheckId": "c6e95afe-2f9e-49cc-bcb2-1c69e4d2628a",
-        "comparedAt": "2026-10-13T06:40:44.169Z",
+        "comparedCheckId": "855673b4-b099-42bb-9c2a-7cd1d00b50c0",
+        "comparedAt": "2026-10-14T04:43:31.373Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -33457,12 +33457,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:31.373Z"
+        "createdAt": "2026-10-15T04:26:02.015Z"
       },
       "lastSuccessful": {
-        "checkId": "855673b4-b099-42bb-9c2a-7cd1d00b50c0",
-        "createdAt": "2026-10-14T04:43:31.373Z",
-        "hash": "a444b250f8e41eceaf7b11a4fe3fac7eedc98dd0135bd8facfb15ae8c9b99ebe",
+        "checkId": "0f875815-1aad-4c6a-8fa7-01e6e33daeda",
+        "createdAt": "2026-10-15T04:26:02.015Z",
+        "hash": "3345a08aeba030f8efbcecf9afae9ccfec15c1e1d0f9ebdddd9dc859011211be",
         "tokens": [
           {
             "kind": "title",
@@ -37277,7 +37277,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -46001,7 +46001,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -48257,8 +48257,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:13.438Z",
       "latest": {
-        "id": "75feda80-f452-4da5-95b1-5d1bc66342e1",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "0cd58922-01f7-43ec-b603-0f12412c3a9a",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "3a605dd0-af28-4d8f-a524-841baf470b44",
         "targetId": "11160efa-eca7-4b83-a8db-13cea9e8e74e",
         "targetName": "HERITAGE Classic(할인형)",
@@ -48277,10 +48277,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 501,
+        "responseMs": 1525,
         "errorMessage": null,
-        "comparedCheckId": "961a5382-4e9a-4545-bd97-6c5149262b8a",
-        "comparedAt": "2026-10-13T06:40:45.102Z",
+        "comparedCheckId": "75feda80-f452-4da5-95b1-5d1bc66342e1",
+        "comparedAt": "2026-10-14T04:43:31.045Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -48296,11 +48296,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:31.045Z"
+        "createdAt": "2026-10-15T04:26:02.740Z"
       },
       "lastSuccessful": {
-        "checkId": "75feda80-f452-4da5-95b1-5d1bc66342e1",
-        "createdAt": "2026-10-14T04:43:31.045Z",
+        "checkId": "0cd58922-01f7-43ec-b603-0f12412c3a9a",
+        "createdAt": "2026-10-15T04:26:02.740Z",
         "hash": "67f45631c91131d89017d25e8d72c122e5618c0fb8b26ab46cdb102237d15858",
         "tokens": [
           {
@@ -50146,8 +50146,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "148a7e1a-2f6d-4152-a23e-2b29a05eaf5a",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "107e55c5-4dce-4565-ae28-c157cf84b49f",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "eb3ccb9d-1f8c-4db8-9ee9-55712c3dc236",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -50166,7 +50166,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 277,
+        "responseMs": 153,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -50185,17 +50185,17 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-14T04:43:31.437Z"
+        "createdAt": "2026-10-15T04:26:02.356Z"
       },
       "lastSuccessful": null
     },
     "19d614e270d3eff5121073206cce5ab8": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-12T05:46:20.579Z",
+      "lastChangedAt": "2026-10-15T04:26:03.369Z",
       "latest": {
-        "id": "d111c88d-0e10-43a9-82a7-ed7b73abd570",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "e03449ef-2568-4311-abe8-a15b0385b743",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "19d614e270d3eff5121073206cce5ab8",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -50213,16 +50213,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 1781,
+        "changeStatus": "CHANGED",
+        "responseMs": 909,
         "errorMessage": null,
-        "comparedCheckId": "e4df079f-9bde-4eb5-a095-2c7793534016",
-        "comparedAt": "2026-10-13T06:40:45.207Z",
+        "comparedCheckId": "d111c88d-0e10-43a9-82a7-ed7b73abd570",
+        "comparedAt": "2026-10-14T04:43:33.057Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -50233,12 +50233,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:33.057Z"
+        "createdAt": "2026-10-15T04:26:03.369Z"
       },
       "lastSuccessful": {
-        "checkId": "d111c88d-0e10-43a9-82a7-ed7b73abd570",
-        "createdAt": "2026-10-14T04:43:33.057Z",
-        "hash": "f12c5074755485b9a76c85c3bb8b761b39d959037f42de39460df69a0da956ff",
+        "checkId": "e03449ef-2568-4311-abe8-a15b0385b743",
+        "createdAt": "2026-10-15T04:26:03.369Z",
+        "hash": "207993be91625f19dd191d45b29cae50ebb84d08bf2ec3e5877f0dd2c1778fce",
         "tokens": [
           {
             "kind": "title",
@@ -54053,7 +54053,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -62722,7 +62722,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -65008,8 +65008,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "57057665-bbdc-4d81-8a01-832055790a75",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "7a09e59e-27a7-4426-8ede-258b9128c099",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "52619742-f91b-43b9-8ef3-8cb08631642e",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -65028,7 +65028,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 147,
+        "responseMs": 159,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -65047,7 +65047,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-14T04:43:31.520Z"
+        "createdAt": "2026-10-15T04:26:02.684Z"
       },
       "lastSuccessful": null
     },
@@ -65056,8 +65056,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:14.605Z",
       "latest": {
-        "id": "7fddd9a8-0804-4dbc-87fa-61570abe5452",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "91ec9ed9-5261-4a68-a51b-a99efa864cdf",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "374ae896ab07fb4b7c98af6100c41f92",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -65076,10 +65076,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 382,
+        "responseMs": 928,
         "errorMessage": null,
-        "comparedCheckId": "cd344f35-2ee0-4fc1-b422-5096b9e6d85d",
-        "comparedAt": "2026-10-13T06:40:45.823Z",
+        "comparedCheckId": "7fddd9a8-0804-4dbc-87fa-61570abe5452",
+        "comparedAt": "2026-10-14T04:43:31.830Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -65095,11 +65095,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:31.830Z"
+        "createdAt": "2026-10-15T04:26:03.633Z"
       },
       "lastSuccessful": {
-        "checkId": "7fddd9a8-0804-4dbc-87fa-61570abe5452",
-        "createdAt": "2026-10-14T04:43:31.830Z",
+        "checkId": "91ec9ed9-5261-4a68-a51b-a99efa864cdf",
+        "createdAt": "2026-10-15T04:26:03.633Z",
         "hash": "3e60d52126465f8844ce7bbeafca043d034f8272d8d0b4e6be446c8ed0d5e6c4",
         "tokens": [
           {
@@ -66793,10 +66793,10 @@
     "51572952-d474-4b43-9b5b-4e00ccf2a9ba": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-12T05:46:14.770Z",
+      "lastChangedAt": "2026-10-15T04:25:57.631Z",
       "latest": {
-        "id": "cb035caf-d739-48cd-8049-4cdd68aa18a1",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "a633b85b-48b4-4fbf-a0b9-3b9b92cbb47d",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "51572952-d474-4b43-9b5b-4e00ccf2a9ba",
         "targetId": "2fb8b880-93e1-4958-b06b-0e4c1919ec75",
         "targetName": "NEED Edu카드",
@@ -66814,16 +66814,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 394,
+        "changeStatus": "CHANGED",
+        "responseMs": 886,
         "errorMessage": null,
-        "comparedCheckId": "8059d0a5-d1c5-401c-ad0c-60b2d7683585",
-        "comparedAt": "2026-10-13T06:40:38.860Z",
+        "comparedCheckId": "cb035caf-d739-48cd-8049-4cdd68aa18a1",
+        "comparedAt": "2026-10-14T04:43:26.319Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -66834,12 +66834,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:26.319Z"
+        "createdAt": "2026-10-15T04:25:57.631Z"
       },
       "lastSuccessful": {
-        "checkId": "cb035caf-d739-48cd-8049-4cdd68aa18a1",
-        "createdAt": "2026-10-14T04:43:26.319Z",
-        "hash": "339fb239da3e907fb50498a235c6573afd7b52ea44ebdada6f135fff90470b08",
+        "checkId": "a633b85b-48b4-4fbf-a0b9-3b9b92cbb47d",
+        "createdAt": "2026-10-15T04:25:57.631Z",
+        "hash": "175f80a3dd2f2f501d86139efbbe01212233f6309bb5cdb27df257e2f9b0e35d",
         "tokens": [
           {
             "kind": "title",
@@ -70654,7 +70654,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -78353,7 +78353,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -80449,8 +80449,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:08.896Z",
       "latest": {
-        "id": "32de77bc-7202-414a-a6f5-011408f05517",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "d7f23968-e578-4793-a545-3909c7fdf2fa",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "83cb96fd-4bfc-4f6a-9dfb-9833b941448e",
         "targetId": "2fb8b880-93e1-4958-b06b-0e4c1919ec75",
         "targetName": "NEED Edu카드",
@@ -80469,10 +80469,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 911,
+        "responseMs": 402,
         "errorMessage": null,
-        "comparedCheckId": "d9ae741a-ced0-4d7e-b7d7-97674bb55b50",
-        "comparedAt": "2026-10-13T06:40:39.348Z",
+        "comparedCheckId": "32de77bc-7202-414a-a6f5-011408f05517",
+        "comparedAt": "2026-10-14T04:43:27.043Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -80488,11 +80488,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:27.043Z"
+        "createdAt": "2026-10-15T04:25:57.769Z"
       },
       "lastSuccessful": {
-        "checkId": "32de77bc-7202-414a-a6f5-011408f05517",
-        "createdAt": "2026-10-14T04:43:27.043Z",
+        "checkId": "d7f23968-e578-4793-a545-3909c7fdf2fa",
+        "createdAt": "2026-10-15T04:25:57.769Z",
         "hash": "a626b3370f6e9ba10cf0296a9fa76fbb7b60726abb5a679b9c05a3fe1b75447e",
         "tokens": [
           {
@@ -82351,10 +82351,10 @@
     "70e8f0ed-244e-480d-b5de-ce9e698c2652": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-12T05:46:16.986Z",
+      "lastChangedAt": "2026-10-15T04:26:00.256Z",
       "latest": {
-        "id": "5286fa93-d7bd-4607-a4c2-e6a6c9461361",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "0f56f0ef-4ea8-4ed8-badf-69afd85ea0d9",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "70e8f0ed-244e-480d-b5de-ce9e698c2652",
         "targetId": "6bf242ce-9823-4510-bb63-e9bd0c5ee0ba",
         "targetName": "My WE:SH 카드",
@@ -82372,16 +82372,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 1171,
+        "changeStatus": "CHANGED",
+        "responseMs": 1589,
         "errorMessage": null,
-        "comparedCheckId": "b7ac1699-2e57-4557-856f-dce2aee6cb3c",
-        "comparedAt": "2026-10-13T06:40:41.330Z",
+        "comparedCheckId": "5286fa93-d7bd-4607-a4c2-e6a6c9461361",
+        "comparedAt": "2026-10-14T04:43:29.314Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -82392,12 +82392,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:29.314Z"
+        "createdAt": "2026-10-15T04:26:00.256Z"
       },
       "lastSuccessful": {
-        "checkId": "5286fa93-d7bd-4607-a4c2-e6a6c9461361",
-        "createdAt": "2026-10-14T04:43:29.314Z",
-        "hash": "66bf12f4556cba37a402a2677a375214e0414da0b7238c7c6896f437ffce01fe",
+        "checkId": "0f56f0ef-4ea8-4ed8-badf-69afd85ea0d9",
+        "createdAt": "2026-10-15T04:26:00.256Z",
+        "hash": "753df0f5f3dccb77c1843b12088eb1364262061924ce2ecf59644f4816ccae59",
         "tokens": [
           {
             "kind": "title",
@@ -86212,7 +86212,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -94291,7 +94291,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -96497,8 +96497,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:10.458Z",
       "latest": {
-        "id": "19dba828-5697-468b-a2e7-f38eb8f4ad34",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "1869c985-3628-4cc4-bb40-0614251d3daa",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "8ebd43ae-830a-4ea9-89a8-db087f92b159",
         "targetId": "6bf242ce-9823-4510-bb63-e9bd0c5ee0ba",
         "targetName": "My WE:SH 카드",
@@ -96517,10 +96517,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 968,
+        "responseMs": 829,
         "errorMessage": null,
-        "comparedCheckId": "afc68cfe-6cfd-4cec-81dc-ea85e1469bb0",
-        "comparedAt": "2026-10-13T06:40:42.549Z",
+        "comparedCheckId": "19dba828-5697-468b-a2e7-f38eb8f4ad34",
+        "comparedAt": "2026-10-14T04:43:29.081Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -96536,11 +96536,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:29.081Z"
+        "createdAt": "2026-10-15T04:25:59.859Z"
       },
       "lastSuccessful": {
-        "checkId": "19dba828-5697-468b-a2e7-f38eb8f4ad34",
-        "createdAt": "2026-10-14T04:43:29.081Z",
+        "checkId": "1869c985-3628-4cc4-bb40-0614251d3daa",
+        "createdAt": "2026-10-15T04:25:59.859Z",
         "hash": "c9ea354b02adf03e9386184fb0252afb5c091414b48967ed45d6f1db85d73531",
         "tokens": [
           {
@@ -98419,10 +98419,10 @@
     "64453981-5ab0-4e5f-ad30-9e8f9102413d": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-12T05:46:11.596Z",
+      "lastChangedAt": "2026-10-15T04:25:55.515Z",
       "latest": {
-        "id": "caae96ec-042a-4881-8417-54fe0eca57a1",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "5bf4de34-ec2e-4217-ad24-876661a88f9a",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "64453981-5ab0-4e5f-ad30-9e8f9102413d",
         "targetId": "6c97d1ef-282c-421a-a4e8-2094a212838e",
         "targetName": "ALL point 카드",
@@ -98440,16 +98440,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 1617,
+        "changeStatus": "CHANGED",
+        "responseMs": 1727,
         "errorMessage": null,
-        "comparedCheckId": "4f203bd0-9e00-44ba-9ace-dca0e17a8127",
-        "comparedAt": "2026-10-13T06:40:36.306Z",
+        "comparedCheckId": "caae96ec-042a-4881-8417-54fe0eca57a1",
+        "comparedAt": "2026-10-14T04:43:24.244Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -98460,12 +98460,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:24.244Z"
+        "createdAt": "2026-10-15T04:25:55.515Z"
       },
       "lastSuccessful": {
-        "checkId": "caae96ec-042a-4881-8417-54fe0eca57a1",
-        "createdAt": "2026-10-14T04:43:24.244Z",
-        "hash": "e90ac26c3bc61449dbe01781cb6126ab9f4ddfb534085949e419386b62536039",
+        "checkId": "5bf4de34-ec2e-4217-ad24-876661a88f9a",
+        "createdAt": "2026-10-15T04:25:55.515Z",
+        "hash": "4ca5ae2420f44c539feb35d08f55e49dfc09fa7a4e1dcbcde51a49fdee3c39b0",
         "tokens": [
           {
             "kind": "title",
@@ -102280,7 +102280,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -110199,7 +110199,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -112410,8 +112410,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:05.451Z",
       "latest": {
-        "id": "cf628a6c-ed2f-45ef-a8e5-fe8ef855efd3",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "354790b4-ffb5-4040-9716-c92ee342f669",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "1c5ac6ba-dd55-4713-af80-eda4dac245f7",
         "targetId": "6c97d1ef-282c-421a-a4e8-2094a212838e",
         "targetName": "ALL point 카드",
@@ -112430,10 +112430,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 2103,
+        "responseMs": 1857,
         "errorMessage": null,
-        "comparedCheckId": "a7b9bc4e-7ce9-4a4c-8692-cd31c33b56d2",
-        "comparedAt": "2026-10-13T06:40:36.460Z",
+        "comparedCheckId": "cf628a6c-ed2f-45ef-a8e5-fe8ef855efd3",
+        "comparedAt": "2026-10-14T04:43:24.602Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -112449,11 +112449,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:24.602Z"
+        "createdAt": "2026-10-15T04:25:55.539Z"
       },
       "lastSuccessful": {
-        "checkId": "cf628a6c-ed2f-45ef-a8e5-fe8ef855efd3",
-        "createdAt": "2026-10-14T04:43:24.602Z",
+        "checkId": "354790b4-ffb5-4040-9716-c92ee342f669",
+        "createdAt": "2026-10-15T04:25:55.539Z",
         "hash": "566e5283b39ab37731fdff52d28dc8b9cca65f5c8594dd383c230a7a5709845e",
         "tokens": [
           {
@@ -114354,8 +114354,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "817742f5-3b5e-4df5-b306-f36b0918034f",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "2dc0f0aa-ef85-42e3-ad46-db4a66682770",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "de405dc7-0a5c-4d1e-9d93-1028db2686c8",
         "targetId": "763c388b-d1bd-4949-9a3f-4fbabe4d3c37",
         "targetName": "서비스",
@@ -114374,7 +114374,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 151,
+        "responseMs": 144,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -114393,17 +114393,17 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-14T04:43:33.537Z"
+        "createdAt": "2026-10-15T04:26:04.666Z"
       },
       "lastSuccessful": null
     },
     "ccd04d1d7fbc346be2a4dd4dd93069c1": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-12T05:46:22.421Z",
+      "lastChangedAt": "2026-10-15T04:26:05.700Z",
       "latest": {
-        "id": "1c4b831a-0e5e-4c51-8b97-850d0dc3fa7e",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "15c78fc2-3d4d-408a-9023-e90adb1df796",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "ccd04d1d7fbc346be2a4dd4dd93069c1",
         "targetId": "763c388b-d1bd-4949-9a3f-4fbabe4d3c37",
         "targetName": "서비스",
@@ -114421,16 +114421,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 1215,
+        "changeStatus": "CHANGED",
+        "responseMs": 987,
         "errorMessage": null,
-        "comparedCheckId": "033c6231-67d0-42a9-b5c7-7d3def0a7e04",
-        "comparedAt": "2026-10-13T06:40:47.333Z",
+        "comparedCheckId": "1c4b831a-0e5e-4c51-8b97-850d0dc3fa7e",
+        "comparedAt": "2026-10-14T04:43:34.758Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -114441,12 +114441,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:34.758Z"
+        "createdAt": "2026-10-15T04:26:05.700Z"
       },
       "lastSuccessful": {
-        "checkId": "1c4b831a-0e5e-4c51-8b97-850d0dc3fa7e",
-        "createdAt": "2026-10-14T04:43:34.758Z",
-        "hash": "bf76a6f1be048261fa0e726a298b5a70dee6745986542d8c5356804a74b057a4",
+        "checkId": "15c78fc2-3d4d-408a-9023-e90adb1df796",
+        "createdAt": "2026-10-15T04:26:05.700Z",
+        "hash": "30a76959f9e6a0a62ca9bae2382eef2298cc86255e825165604ab31cb97f7ce5",
         "tokens": [
           {
             "kind": "title",
@@ -118241,7 +118241,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -124845,7 +124845,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -126771,8 +126771,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "47527957-322f-4a00-bf97-a50ec88503a8",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "94b6bb32-87ac-4e57-8ce4-2857a4951c16",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "45b57bad17f4bbfdb5cc5db4399d6aff",
         "targetId": "855f0b69537a077bfaa438388fac9a6e",
         "targetName": "이벤트 10월",
@@ -126791,7 +126791,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 221,
+        "responseMs": 150,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -126810,7 +126810,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-14T04:43:34.219Z"
+        "createdAt": "2026-10-15T04:26:05.073Z"
       },
       "lastSuccessful": null
     },
@@ -126819,8 +126819,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "d3c736f3-89c9-48f1-aa93-6f37eded03dd",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "510521e3-00f5-4e9f-9de1-09e8cfb362b7",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "b7f29a5a39ab16895d268b8da1abe58b",
         "targetId": "855f0b69537a077bfaa438388fac9a6e",
         "targetName": "이벤트 10월",
@@ -126839,7 +126839,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 160,
+        "responseMs": 410,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -126858,17 +126858,17 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-14T04:43:34.334Z"
+        "createdAt": "2026-10-15T04:26:05.372Z"
       },
       "lastSuccessful": null
     },
     "1bdbffb4-b7ee-441d-acbb-c11aa778a231": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-12T05:46:19.293Z",
+      "lastChangedAt": "2026-10-15T04:26:02.525Z",
       "latest": {
-        "id": "3206cbe8-1f6d-44c3-b865-8fe7b5a3340e",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "754b88a9-38a7-4a68-917e-b7740a31384d",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "1bdbffb4-b7ee-441d-acbb-c11aa778a231",
         "targetId": "a21ecf12-1a64-40d4-855d-b6f1b81a8ba8",
         "targetName": "HERITAGE Classic(스카이패스형)",
@@ -126886,16 +126886,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 452,
+        "changeStatus": "CHANGED",
+        "responseMs": 543,
         "errorMessage": null,
-        "comparedCheckId": "1b13e4f1-3323-4f4d-a71a-f50b107dcd4f",
-        "comparedAt": "2026-10-13T06:40:44.834Z",
+        "comparedCheckId": "3206cbe8-1f6d-44c3-b865-8fe7b5a3340e",
+        "comparedAt": "2026-10-14T04:43:31.160Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -126906,12 +126906,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:31.160Z"
+        "createdAt": "2026-10-15T04:26:02.525Z"
       },
       "lastSuccessful": {
-        "checkId": "3206cbe8-1f6d-44c3-b865-8fe7b5a3340e",
-        "createdAt": "2026-10-14T04:43:31.160Z",
-        "hash": "a044baf6b1803983c47eedd9e981506cc1d523614dbe240486b5f72025465067",
+        "checkId": "754b88a9-38a7-4a68-917e-b7740a31384d",
+        "createdAt": "2026-10-15T04:26:02.525Z",
+        "hash": "dd3946d5637a214412bbd2d7742d01f3282a9474c2d292d060b76cd147e22f2d",
         "tokens": [
           {
             "kind": "title",
@@ -130726,7 +130726,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -139580,7 +139580,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -141851,8 +141851,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:13.472Z",
       "latest": {
-        "id": "c81ae949-11e6-450e-87d5-6c8356085bc6",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "a05eff73-5001-48c1-a8d4-d68b09aa9715",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "78383cd1-8504-4fd8-b0b4-4fbc3635b01e",
         "targetId": "a21ecf12-1a64-40d4-855d-b6f1b81a8ba8",
         "targetName": "HERITAGE Classic(스카이패스형)",
@@ -141871,10 +141871,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 360,
+        "responseMs": 1065,
         "errorMessage": null,
-        "comparedCheckId": "fe1ff03a-a4f2-4b0f-9b90-3826f88c6217",
-        "comparedAt": "2026-10-13T06:40:44.509Z",
+        "comparedCheckId": "c81ae949-11e6-450e-87d5-6c8356085bc6",
+        "comparedAt": "2026-10-14T04:43:31.429Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -141890,11 +141890,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:31.429Z"
+        "createdAt": "2026-10-15T04:26:03.112Z"
       },
       "lastSuccessful": {
-        "checkId": "c81ae949-11e6-450e-87d5-6c8356085bc6",
-        "createdAt": "2026-10-14T04:43:31.429Z",
+        "checkId": "a05eff73-5001-48c1-a8d4-d68b09aa9715",
+        "createdAt": "2026-10-15T04:26:03.112Z",
         "hash": "fe2955d774d98a40d74e2e84ce62500d3363304f0986272631b3fef65e4d61d6",
         "tokens": [
           {
@@ -143758,10 +143758,10 @@
     "1a874d68-15d0-4e4c-bd29-6ebecf90e52a": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-12T05:46:12.072Z",
+      "lastChangedAt": "2026-10-15T04:25:55.933Z",
       "latest": {
-        "id": "a01c4d6f-3ad1-4b13-abcd-520f4a32206b",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "b7fbbba8-985d-42b8-8010-e95e159876a9",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "1a874d68-15d0-4e4c-bd29-6ebecf90e52a",
         "targetId": "a710c22f-7ed7-4f06-9334-abdfff7788ee",
         "targetName": "YOU Prime 카드",
@@ -143779,16 +143779,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 1226,
+        "changeStatus": "CHANGED",
+        "responseMs": 703,
         "errorMessage": null,
-        "comparedCheckId": "840adc96-c054-40f0-a7ab-21e8944371bc",
-        "comparedAt": "2026-10-13T06:40:38.045Z",
+        "comparedCheckId": "a01c4d6f-3ad1-4b13-abcd-520f4a32206b",
+        "comparedAt": "2026-10-14T04:43:25.419Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -143799,12 +143799,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:25.419Z"
+        "createdAt": "2026-10-15T04:25:55.933Z"
       },
       "lastSuccessful": {
-        "checkId": "a01c4d6f-3ad1-4b13-abcd-520f4a32206b",
-        "createdAt": "2026-10-14T04:43:25.419Z",
-        "hash": "dd12532f130567eaebd3c9d3d3d8f3d540c06fb115c5dc3c3cd035065c355cae",
+        "checkId": "b7fbbba8-985d-42b8-8010-e95e159876a9",
+        "createdAt": "2026-10-15T04:25:55.933Z",
+        "hash": "bc9a35e39684710ac7d95021f132c4b12cc10c6773a30056f0f0b3fe01b8f2ec",
         "tokens": [
           {
             "kind": "title",
@@ -147619,7 +147619,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -156703,7 +156703,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -158954,8 +158954,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:06.263Z",
       "latest": {
-        "id": "10679359-779f-4e21-a4a9-200b31a58015",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "1059bd8e-b9dc-44db-b518-ad5f5f65ceb5",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "ff46ae32-0a90-4beb-b8e0-4debf4b3b397",
         "targetId": "a710c22f-7ed7-4f06-9334-abdfff7788ee",
         "targetName": "YOU Prime 카드",
@@ -158974,10 +158974,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1566,
+        "responseMs": 1076,
         "errorMessage": null,
-        "comparedCheckId": "467b7f8d-a18a-4d9e-93d6-65ecb805778c",
-        "comparedAt": "2026-10-13T06:40:36.887Z",
+        "comparedCheckId": "10679359-779f-4e21-a4a9-200b31a58015",
+        "comparedAt": "2026-10-14T04:43:25.845Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -158993,11 +158993,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:25.845Z"
+        "createdAt": "2026-10-15T04:25:56.389Z"
       },
       "lastSuccessful": {
-        "checkId": "10679359-779f-4e21-a4a9-200b31a58015",
-        "createdAt": "2026-10-14T04:43:25.845Z",
+        "checkId": "1059bd8e-b9dc-44db-b518-ad5f5f65ceb5",
+        "createdAt": "2026-10-15T04:25:56.389Z",
         "hash": "b06c1647aceb26a5afe6f4ca27f0f015c05f87e083a316b1c2d93f803d1aba33",
         "tokens": [
           {
@@ -160976,10 +160976,10 @@
     "eb730105-e4a1-4995-b8bc-5f685b2ba79b": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-12T05:46:16.209Z",
+      "lastChangedAt": "2026-10-15T04:25:59.005Z",
       "latest": {
-        "id": "85b23236-b0e0-454a-9102-017074fe3b5d",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "f2c94b46-8b0a-4d92-8776-09fd266b0419",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "eb730105-e4a1-4995-b8bc-5f685b2ba79b",
         "targetId": "ab9fa5b9-3ed4-417d-b62a-b5ec7862e32f",
         "targetName": "WE:SH Travel",
@@ -160997,16 +160997,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 769,
+        "changeStatus": "CHANGED",
+        "responseMs": 1048,
         "errorMessage": null,
-        "comparedCheckId": "2e87bdb2-660d-4dd7-89a2-34c8a169c8a0",
-        "comparedAt": "2026-10-13T06:40:41.533Z",
+        "comparedCheckId": "85b23236-b0e0-454a-9102-017074fe3b5d",
+        "comparedAt": "2026-10-14T04:43:28.181Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -161017,12 +161017,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:28.181Z"
+        "createdAt": "2026-10-15T04:25:59.005Z"
       },
       "lastSuccessful": {
-        "checkId": "85b23236-b0e0-454a-9102-017074fe3b5d",
-        "createdAt": "2026-10-14T04:43:28.181Z",
-        "hash": "ffcde17351fdc62f2de5e8a9ae5c249bf710c16bbb3e6a8ecbdd366fc01d8d2e",
+        "checkId": "f2c94b46-8b0a-4d92-8776-09fd266b0419",
+        "createdAt": "2026-10-15T04:25:59.005Z",
+        "hash": "74ef003122d735271e196fb4b48bb5ce9967658145629389f2eea7e73754463d",
         "tokens": [
           {
             "kind": "title",
@@ -164837,7 +164837,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -173306,7 +173306,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -175532,8 +175532,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:09.893Z",
       "latest": {
-        "id": "29a9ce56-a9b7-400f-bad4-f49cfd821e76",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "9711af23-a79e-48c5-8f02-e9e96fcacf69",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "119352b3-dbfe-4676-88a9-0e3e64d39abc",
         "targetId": "ab9fa5b9-3ed4-417d-b62a-b5ec7862e32f",
         "targetName": "WE:SH Travel",
@@ -175552,10 +175552,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1257,
+        "responseMs": 906,
         "errorMessage": null,
-        "comparedCheckId": "50448fa3-abf1-49b7-a328-71a6dcdb7409",
-        "comparedAt": "2026-10-13T06:40:41.626Z",
+        "comparedCheckId": "29a9ce56-a9b7-400f-bad4-f49cfd821e76",
+        "comparedAt": "2026-10-14T04:43:28.831Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -175571,11 +175571,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:28.831Z"
+        "createdAt": "2026-10-15T04:25:59.080Z"
       },
       "lastSuccessful": {
-        "checkId": "29a9ce56-a9b7-400f-bad4-f49cfd821e76",
-        "createdAt": "2026-10-14T04:43:28.831Z",
+        "checkId": "9711af23-a79e-48c5-8f02-e9e96fcacf69",
+        "createdAt": "2026-10-15T04:25:59.080Z",
         "hash": "205fcddcb72f788ba4f37696c829f1507f1f38381ce3a7ebafbf9a8245a68fa7",
         "tokens": [
           {
@@ -177424,10 +177424,10 @@
     "27f46e5f-feab-4c61-9b17-4e82b91c3b1b": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-12T05:46:14.449Z",
+      "lastChangedAt": "2026-10-15T04:25:57.537Z",
       "latest": {
-        "id": "a827b877-7040-4e6d-8a06-1b9c388a84b4",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "7182c71b-e6ca-43a2-9b8e-fe237d41e268",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "27f46e5f-feab-4c61-9b17-4e82b91c3b1b",
         "targetId": "aee77a45-fdde-4c1f-a82f-419336a1ab18",
         "targetName": "YOU Wish up 카드",
@@ -177445,16 +177445,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 487,
+        "changeStatus": "CHANGED",
+        "responseMs": 930,
         "errorMessage": null,
-        "comparedCheckId": "b506e09a-8686-4579-b18c-482c4cd2df47",
-        "comparedAt": "2026-10-13T06:40:38.966Z",
+        "comparedCheckId": "a827b877-7040-4e6d-8a06-1b9c388a84b4",
+        "comparedAt": "2026-10-14T04:43:26.110Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -177465,12 +177465,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:26.110Z"
+        "createdAt": "2026-10-15T04:25:57.537Z"
       },
       "lastSuccessful": {
-        "checkId": "a827b877-7040-4e6d-8a06-1b9c388a84b4",
-        "createdAt": "2026-10-14T04:43:26.110Z",
-        "hash": "35744f47ac850fdbd566f6b211c3c44a1110405f618ee6e8770d5b105e3829a0",
+        "checkId": "7182c71b-e6ca-43a2-9b8e-fe237d41e268",
+        "createdAt": "2026-10-15T04:25:57.537Z",
+        "hash": "99cd2e517570b614856ae69cf0abe705bbc355ec24aaa49ca543ca4ce0f106c3",
         "tokens": [
           {
             "kind": "title",
@@ -181285,7 +181285,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -189789,7 +189789,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -191995,8 +191995,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:08.025Z",
       "latest": {
-        "id": "310c1e25-7b95-4d32-8ab1-0881aca37e7b",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "5e002357-3780-414a-8a65-8a79142aaade",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "65ae2ae0-6609-42a3-aa4a-6a9d9e620da4",
         "targetId": "aee77a45-fdde-4c1f-a82f-419336a1ab18",
         "targetName": "YOU Wish up 카드",
@@ -192015,10 +192015,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 902,
+        "responseMs": 759,
         "errorMessage": null,
-        "comparedCheckId": "d025b68a-15d4-478b-a58f-24bcfdd27980",
-        "comparedAt": "2026-10-13T06:40:39.765Z",
+        "comparedCheckId": "310c1e25-7b95-4d32-8ab1-0881aca37e7b",
+        "comparedAt": "2026-10-14T04:43:26.721Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -192034,11 +192034,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:26.721Z"
+        "createdAt": "2026-10-15T04:25:57.393Z"
       },
       "lastSuccessful": {
-        "checkId": "310c1e25-7b95-4d32-8ab1-0881aca37e7b",
-        "createdAt": "2026-10-14T04:43:26.721Z",
+        "checkId": "5e002357-3780-414a-8a65-8a79142aaade",
+        "createdAt": "2026-10-15T04:25:57.393Z",
         "hash": "04f0976512dd39805dae212b33bfd0bcf6fcf84f789f5b91f0ececb365573408",
         "tokens": [
           {
@@ -193887,10 +193887,10 @@
     "55e07fac-79e6-4ccb-a6c6-38a1519deae8": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-12T05:46:17.849Z",
+      "lastChangedAt": "2026-10-15T04:26:00.706Z",
       "latest": {
-        "id": "c1dfc4e8-2302-4459-a0a3-f272a82362b8",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "039ff6f3-1941-4a29-9871-232c7ba2a700",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "55e07fac-79e6-4ccb-a6c6-38a1519deae8",
         "targetId": "ba3c273b-bf19-44d9-a4ef-c79f1dac16b9",
         "targetName": "굿데이올림카드",
@@ -193908,16 +193908,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 1277,
+        "changeStatus": "CHANGED",
+        "responseMs": 1534,
         "errorMessage": null,
-        "comparedCheckId": "f32c7faa-3afa-4f8c-be76-c40ab77f6aee",
-        "comparedAt": "2026-10-13T06:40:42.470Z",
+        "comparedCheckId": "c1dfc4e8-2302-4459-a0a3-f272a82362b8",
+        "comparedAt": "2026-10-14T04:43:29.544Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -193928,12 +193928,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:29.544Z"
+        "createdAt": "2026-10-15T04:26:00.706Z"
       },
       "lastSuccessful": {
-        "checkId": "c1dfc4e8-2302-4459-a0a3-f272a82362b8",
-        "createdAt": "2026-10-14T04:43:29.544Z",
-        "hash": "26ad8dc3f871e9060038b074d269a4a6761324384b373a96a6fb81987ccd0307",
+        "checkId": "039ff6f3-1941-4a29-9871-232c7ba2a700",
+        "createdAt": "2026-10-15T04:26:00.706Z",
+        "hash": "2cb0b1e965a846ecd4b66e95d5e23b7e0b64e02fcd12c62b92f46686bb20c1b5",
         "tokens": [
           {
             "kind": "title",
@@ -197748,7 +197748,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -206102,7 +206102,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -208353,8 +208353,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:11.481Z",
       "latest": {
-        "id": "e54e0dca-accc-4831-b085-9e13a1de64c8",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "e32ddcb6-361a-4aa9-a053-9011d39b0790",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "99506875-e7b5-49a6-aa7d-d9ed9e4cf5ba",
         "targetId": "ba3c273b-bf19-44d9-a4ef-c79f1dac16b9",
         "targetName": "굿데이올림카드",
@@ -208373,10 +208373,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1523,
+        "responseMs": 1086,
         "errorMessage": null,
-        "comparedCheckId": "9335a168-5df4-490e-a483-617b0e0277e8",
-        "comparedAt": "2026-10-13T06:40:42.505Z",
+        "comparedCheckId": "e54e0dca-accc-4831-b085-9e13a1de64c8",
+        "comparedAt": "2026-10-14T04:43:30.392Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -208392,11 +208392,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:30.392Z"
+        "createdAt": "2026-10-15T04:26:00.292Z"
       },
       "lastSuccessful": {
-        "checkId": "e54e0dca-accc-4831-b085-9e13a1de64c8",
-        "createdAt": "2026-10-14T04:43:30.392Z",
+        "checkId": "e32ddcb6-361a-4aa9-a053-9011d39b0790",
+        "createdAt": "2026-10-15T04:26:00.292Z",
         "hash": "7d204c8f1dfbb48d1582c5a090a48187d5761ac5f7486d14db91bd1413847662",
         "tokens": [
           {
@@ -210665,10 +210665,10 @@
     "a1c82600-76ec-46e4-93ef-f8bc6778b034": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-12T05:46:14.987Z",
+      "lastChangedAt": "2026-10-15T04:25:57.860Z",
       "latest": {
-        "id": "c173add5-c0ed-4fec-ac83-1e932f6dcf9f",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "f9e3c812-757a-4ea0-a84d-d76fc7d8dc19",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "a1c82600-76ec-46e4-93ef-f8bc6778b034",
         "targetId": "bec4c3be-5c44-4585-a6a3-5fc7ffc3a7b0",
         "targetName": "NEED Global 카드",
@@ -210686,16 +210686,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 901,
+        "changeStatus": "CHANGED",
+        "responseMs": 378,
         "errorMessage": null,
-        "comparedCheckId": "83d202dc-80b3-45a2-a111-112093f86238",
-        "comparedAt": "2026-10-13T06:40:39.489Z",
+        "comparedCheckId": "c173add5-c0ed-4fec-ac83-1e932f6dcf9f",
+        "comparedAt": "2026-10-14T04:43:27.314Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -210706,12 +210706,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:27.314Z"
+        "createdAt": "2026-10-15T04:25:57.860Z"
       },
       "lastSuccessful": {
-        "checkId": "c173add5-c0ed-4fec-ac83-1e932f6dcf9f",
-        "createdAt": "2026-10-14T04:43:27.314Z",
-        "hash": "b770dae0c248ff0bc4d2ab2c01cd4a0f37ce86fb9c2885c9b951840dfc8096aa",
+        "checkId": "f9e3c812-757a-4ea0-a84d-d76fc7d8dc19",
+        "createdAt": "2026-10-15T04:25:57.860Z",
+        "hash": "38893763ce7d6e5c6e2653eeae73d4eb64f10b6237751380c2fffca81c820b96",
         "tokens": [
           {
             "kind": "title",
@@ -214526,7 +214526,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -222015,7 +222015,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -224101,8 +224101,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:09.622Z",
       "latest": {
-        "id": "05eff10c-4904-49cc-82ca-cb74b3236c74",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "82dc5ad8-bc9d-489a-922e-99e9c9373b70",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "556d6d77-9c95-4b36-9826-ae45ff7b9f6b",
         "targetId": "bec4c3be-5c44-4585-a6a3-5fc7ffc3a7b0",
         "targetName": "NEED Global 카드",
@@ -224121,10 +224121,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 952,
+        "responseMs": 1601,
         "errorMessage": null,
-        "comparedCheckId": "18267b40-3aba-47df-b0c0-14eef8e7e51a",
-        "comparedAt": "2026-10-13T06:40:39.906Z",
+        "comparedCheckId": "05eff10c-4904-49cc-82ca-cb74b3236c74",
+        "comparedAt": "2026-10-14T04:43:27.553Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -224140,11 +224140,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:27.553Z"
+        "createdAt": "2026-10-15T04:25:59.172Z"
       },
       "lastSuccessful": {
-        "checkId": "05eff10c-4904-49cc-82ca-cb74b3236c74",
-        "createdAt": "2026-10-14T04:43:27.553Z",
+        "checkId": "82dc5ad8-bc9d-489a-922e-99e9c9373b70",
+        "createdAt": "2026-10-15T04:25:59.172Z",
         "hash": "f1463816cf6e70df62ed102c7f137ad0139ab74507463fb6533f0af7bee6732f",
         "tokens": [
           {
@@ -225983,10 +225983,10 @@
     "c79d4215-7632-4f50-b00d-872fc192fe4a": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-12T05:46:21.712Z",
+      "lastChangedAt": "2026-10-15T04:26:04.408Z",
       "latest": {
-        "id": "907f5028-ae17-4b39-848c-7ae821611f6d",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "07e59c3b-1eaf-4616-80e7-8ed5bb58bda5",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "c79d4215-7632-4f50-b00d-872fc192fe4a",
         "targetId": "c4fe7b59-3b68-47f8-bbde-6c8701458fac",
         "targetName": "노리2 체크카드(KB Pay)",
@@ -226004,16 +226004,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 866,
+        "changeStatus": "CHANGED",
+        "responseMs": 944,
         "errorMessage": null,
-        "comparedCheckId": "69cce55d-811b-4dcb-9036-35bdd6a5837b",
-        "comparedAt": "2026-10-13T06:40:46.327Z",
+        "comparedCheckId": "907f5028-ae17-4b39-848c-7ae821611f6d",
+        "comparedAt": "2026-10-14T04:43:32.785Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -226024,12 +226024,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:32.785Z"
+        "createdAt": "2026-10-15T04:26:04.408Z"
       },
       "lastSuccessful": {
-        "checkId": "907f5028-ae17-4b39-848c-7ae821611f6d",
-        "createdAt": "2026-10-14T04:43:32.785Z",
-        "hash": "fa271e694af2c00ebb0fa52eb033c356e522d8e37fa976846cac37d4c11fdf0b",
+        "checkId": "07e59c3b-1eaf-4616-80e7-8ed5bb58bda5",
+        "createdAt": "2026-10-15T04:26:04.408Z",
+        "hash": "99719666d960fdf12389d0793fcc3c3db0e3221533212893d711fe2e5f958c7a",
         "tokens": [
           {
             "kind": "title",
@@ -229844,7 +229844,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -238908,7 +238908,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -241159,8 +241159,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:15.082Z",
       "latest": {
-        "id": "97a98d3b-ec00-4f6b-8340-14940acfb9cd",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "53538719-aad5-4416-abb8-2a1e030383fe",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "3506bde9-c822-4be3-9f30-31809737af94",
         "targetId": "c4fe7b59-3b68-47f8-bbde-6c8701458fac",
         "targetName": "노리2 체크카드(KB Pay)",
@@ -241179,10 +241179,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 450,
+        "responseMs": 983,
         "errorMessage": null,
-        "comparedCheckId": "83c761db-6a2e-4e13-82a1-b238d4fa8706",
-        "comparedAt": "2026-10-13T06:40:47.124Z",
+        "comparedCheckId": "97a98d3b-ec00-4f6b-8340-14940acfb9cd",
+        "comparedAt": "2026-10-14T04:43:32.484Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -241198,11 +241198,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:32.484Z"
+        "createdAt": "2026-10-15T04:26:04.484Z"
       },
       "lastSuccessful": {
-        "checkId": "97a98d3b-ec00-4f6b-8340-14940acfb9cd",
-        "createdAt": "2026-10-14T04:43:32.484Z",
+        "checkId": "53538719-aad5-4416-abb8-2a1e030383fe",
+        "createdAt": "2026-10-15T04:26:04.484Z",
         "hash": "46940c6778576b77a002f78414120e9289d78017e863ac0ab8c2b9eff87092bc",
         "tokens": [
           {
@@ -242903,8 +242903,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "cdbeb6b8-c6aa-4cda-ae32-07231feb3aeb",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "154e6c50-1a26-4396-b613-dda6100fc662",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "d7ed54fd-b471-4d4e-8c66-f9b1778028d7",
         "targetId": "c5d297d9-5523-49eb-9b65-340e00f4c55c",
         "targetName": "이벤트 9월",
@@ -242923,7 +242923,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 432,
+        "responseMs": 150,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -242942,7 +242942,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-14T04:43:33.969Z"
+        "createdAt": "2026-10-15T04:26:04.816Z"
       },
       "lastSuccessful": null
     },
@@ -242951,8 +242951,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "0a408bfe-a2f5-48fb-895a-f5ba1766e133",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "029e50fd-a6d9-4704-9be5-b0b3ccf448ce",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "ae8ab9e4-6784-4ab8-a84e-0fa75525d559",
         "targetId": "c5d297d9-5523-49eb-9b65-340e00f4c55c",
         "targetName": "이벤트 9월",
@@ -242971,7 +242971,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 437,
+        "responseMs": 146,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -242990,17 +242990,17 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-14T04:43:34.407Z"
+        "createdAt": "2026-10-15T04:26:04.962Z"
       },
       "lastSuccessful": null
     },
     "e2bcd9ac-eaa5-4919-abe7-19c890c2d785": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-12T05:46:20.412Z",
+      "lastChangedAt": "2026-10-15T04:26:03.477Z",
       "latest": {
-        "id": "82432a0f-bc8c-4ca3-b865-f79f5dea9fec",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "702db36b-8ea7-483c-aec1-a366b47a4581",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "e2bcd9ac-eaa5-4919-abe7-19c890c2d785",
         "targetId": "c701fd1a-9015-4daf-9039-b987c990c619",
         "targetName": "Youth Club 체크카드",
@@ -243018,16 +243018,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 459,
+        "changeStatus": "CHANGED",
+        "responseMs": 632,
         "errorMessage": null,
-        "comparedCheckId": "14beb50d-8f59-4e3e-9862-68f71c7179e2",
-        "comparedAt": "2026-10-13T06:40:45.347Z",
+        "comparedCheckId": "82432a0f-bc8c-4ca3-b865-f79f5dea9fec",
+        "comparedAt": "2026-10-14T04:43:32.001Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -243038,12 +243038,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:32.001Z"
+        "createdAt": "2026-10-15T04:26:03.477Z"
       },
       "lastSuccessful": {
-        "checkId": "82432a0f-bc8c-4ca3-b865-f79f5dea9fec",
-        "createdAt": "2026-10-14T04:43:32.001Z",
-        "hash": "725887415acc4023a656972354fbefda2eb02eb1b33337f05d1c567b0cae7b4a",
+        "checkId": "702db36b-8ea7-483c-aec1-a366b47a4581",
+        "createdAt": "2026-10-15T04:26:03.477Z",
+        "hash": "cc301456717a17aa42a161e7fadbaa2fa325c04253d3428f99bf1e94a5b534de",
         "tokens": [
           {
             "kind": "title",
@@ -246858,7 +246858,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -255917,7 +255917,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -258093,8 +258093,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:14.845Z",
       "latest": {
-        "id": "09f2e165-247d-45bb-afc7-9d851973fa1f",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "5abb4165-2e2f-4f05-90e9-c3f85b00f9d4",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "20e3a981-c6a0-4673-9a6f-5e0241999772",
         "targetId": "c701fd1a-9015-4daf-9039-b987c990c619",
         "targetName": "Youth Club 체크카드",
@@ -258113,10 +258113,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1273,
+        "responseMs": 958,
         "errorMessage": null,
-        "comparedCheckId": "5bec513f-f208-4b18-b71b-d29023ca9a26",
-        "comparedAt": "2026-10-13T06:40:46.101Z",
+        "comparedCheckId": "09f2e165-247d-45bb-afc7-9d851973fa1f",
+        "comparedAt": "2026-10-14T04:43:32.814Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -258132,11 +258132,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:32.814Z"
+        "createdAt": "2026-10-15T04:26:04.102Z"
       },
       "lastSuccessful": {
-        "checkId": "09f2e165-247d-45bb-afc7-9d851973fa1f",
-        "createdAt": "2026-10-14T04:43:32.814Z",
+        "checkId": "5abb4165-2e2f-4f05-90e9-c3f85b00f9d4",
+        "createdAt": "2026-10-15T04:26:04.102Z",
         "hash": "cda2e12f252ca8fa27223ccf33a3f95d12b0e6111a699883b1235b318e1a2d28",
         "tokens": [
           {
@@ -259830,10 +259830,10 @@
     "533221ef-199b-4710-b94e-bc3aab4a1c02": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-12T05:46:19.524Z",
+      "lastChangedAt": "2026-10-15T04:26:01.884Z",
       "latest": {
-        "id": "71b14ac2-4b0c-46a3-92f7-4c578815a53b",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "eb0b875d-f0de-472b-9cf2-9b984e9ebb1d",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "533221ef-199b-4710-b94e-bc3aab4a1c02",
         "targetId": "ccfd1770-4563-4762-823c-5f6aa40a0d3e",
         "targetName": "American Express Blue Card",
@@ -259851,16 +259851,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 970,
+        "changeStatus": "CHANGED",
+        "responseMs": 1502,
         "errorMessage": null,
-        "comparedCheckId": "55dffda2-a51a-4ae9-af97-415d741e5ba4",
-        "comparedAt": "2026-10-13T06:40:43.915Z",
+        "comparedCheckId": "71b14ac2-4b0c-46a3-92f7-4c578815a53b",
+        "comparedAt": "2026-10-14T04:43:30.611Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -259871,12 +259871,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:30.611Z"
+        "createdAt": "2026-10-15T04:26:01.884Z"
       },
       "lastSuccessful": {
-        "checkId": "71b14ac2-4b0c-46a3-92f7-4c578815a53b",
-        "createdAt": "2026-10-14T04:43:30.611Z",
-        "hash": "373aa86d470a5aa8427265b1c770e5e42d4df76c2bc2aa627fc09b0abc2dd157",
+        "checkId": "eb0b875d-f0de-472b-9cf2-9b984e9ebb1d",
+        "createdAt": "2026-10-15T04:26:01.884Z",
+        "hash": "84c3a85da4e15ffa2e37b0963d44236399a53575ace52aefe97ca03d41420024",
         "tokens": [
           {
             "kind": "title",
@@ -263691,7 +263691,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -271990,7 +271990,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -274161,8 +274161,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:12.462Z",
       "latest": {
-        "id": "8973d4f0-c79b-410c-b137-860319c4f2df",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "0435753b-ec82-43af-a82b-0252b5302eb8",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "8ea95969-0296-474c-b812-028030be9348",
         "targetId": "ccfd1770-4563-4762-823c-5f6aa40a0d3e",
         "targetName": "American Express Blue Card",
@@ -274181,10 +274181,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1184,
+        "responseMs": 1474,
         "errorMessage": null,
-        "comparedCheckId": "eb8b2c6b-5042-4d15-a5b9-496122f36613",
-        "comparedAt": "2026-10-13T06:40:43.094Z",
+        "comparedCheckId": "8973d4f0-c79b-410c-b137-860319c4f2df",
+        "comparedAt": "2026-10-14T04:43:31.183Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -274200,11 +274200,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:31.183Z"
+        "createdAt": "2026-10-15T04:26:02.202Z"
       },
       "lastSuccessful": {
-        "checkId": "8973d4f0-c79b-410c-b137-860319c4f2df",
-        "createdAt": "2026-10-14T04:43:31.183Z",
+        "checkId": "0435753b-ec82-43af-a82b-0252b5302eb8",
+        "createdAt": "2026-10-15T04:26:02.202Z",
         "hash": "d54cb95834326384e494c27c5c4c77049fe8da26738a28f801a0bd6b32d19c98",
         "tokens": [
           {
@@ -276013,10 +276013,10 @@
     "1a97e3c9-610d-4931-b785-e625c6caf524": {
       "launchedAt": null,
       "liveCompletedAt": "2026-09-14T07:48:27.619Z",
-      "lastChangedAt": "2026-10-12T05:46:11.741Z",
+      "lastChangedAt": "2026-10-15T04:25:55.279Z",
       "latest": {
-        "id": "8d6ccf13-6512-48c5-a042-0faf291c284b",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "e60f4449-9c27-4f1a-92af-90063c5d03a7",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "1a97e3c9-610d-4931-b785-e625c6caf524",
         "targetId": "cd5e3359-d077-44de-b423-490719f8a4c1",
         "targetName": "ALL 카드",
@@ -276034,16 +276034,16 @@
         "bodyLiveMarkerFound": true,
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">ALL 카드, 이런 분께 추천드려요</h2>",
-        "changeStatus": "UNCHANGED",
-        "responseMs": 1786,
+        "changeStatus": "CHANGED",
+        "responseMs": 1493,
         "errorMessage": null,
-        "comparedCheckId": "78d2e8c8-28a9-412f-93e9-578750e5f643",
-        "comparedAt": "2026-10-13T06:40:36.424Z",
+        "comparedCheckId": "8d6ccf13-6512-48c5-a042-0faf291c284b",
+        "comparedAt": "2026-10-14T04:43:24.366Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -276054,12 +276054,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:24.366Z"
+        "createdAt": "2026-10-15T04:25:55.279Z"
       },
       "lastSuccessful": {
-        "checkId": "8d6ccf13-6512-48c5-a042-0faf291c284b",
-        "createdAt": "2026-10-14T04:43:24.366Z",
-        "hash": "942977acc0b289935162e632b86b58b8a3d3990fc70657cfa5ae3173db02bea6",
+        "checkId": "e60f4449-9c27-4f1a-92af-90063c5d03a7",
+        "createdAt": "2026-10-15T04:25:55.279Z",
+        "hash": "0d928ad04590a05821cb30eed2ec912617c052f21ed112c3cf451bb8f5dfa21c",
         "tokens": [
           {
             "kind": "title",
@@ -279924,7 +279924,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -287618,7 +287618,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -289684,8 +289684,8 @@
       "liveCompletedAt": "2026-09-14T07:48:27.840Z",
       "lastChangedAt": "2026-10-02T05:25:04.702Z",
       "latest": {
-        "id": "da8e2095-5bc0-4e15-a0ac-d205bddf8961",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "153380a4-9bd1-443a-a8fe-87751fd2e910",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "cf2d0df6-8b68-49e1-8346-7762096c49ee",
         "targetId": "cd5e3359-d077-44de-b423-490719f8a4c1",
         "targetName": "ALL 카드",
@@ -289704,10 +289704,10 @@
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">ALL 카드, <br>이런 분께 추천드려요</h2>",
         "changeStatus": "UNCHANGED",
-        "responseMs": 1463,
+        "responseMs": 1357,
         "errorMessage": null,
-        "comparedCheckId": "85eb6217-10d3-434c-8a8a-082fb334b109",
-        "comparedAt": "2026-10-13T06:40:36.129Z",
+        "comparedCheckId": "da8e2095-5bc0-4e15-a0ac-d205bddf8961",
+        "comparedAt": "2026-10-14T04:43:24.045Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -289723,11 +289723,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:24.045Z"
+        "createdAt": "2026-10-15T04:25:55.125Z"
       },
       "lastSuccessful": {
-        "checkId": "da8e2095-5bc0-4e15-a0ac-d205bddf8961",
-        "createdAt": "2026-10-14T04:43:24.045Z",
+        "checkId": "153380a4-9bd1-443a-a8fe-87751fd2e910",
+        "createdAt": "2026-10-15T04:25:55.125Z",
         "hash": "57eb8d57f0ab221cb282cb7fb105d776f269ebf72e5b58cda36b4a8712209117",
         "tokens": [
           {
@@ -292041,10 +292041,10 @@
     "613d02c9-fc0b-4d8d-9a08-517e588ed948": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-12T05:46:15.705Z",
+      "lastChangedAt": "2026-10-15T04:25:58.561Z",
       "latest": {
-        "id": "40c297c8-33b8-41c4-a182-09b75f63b759",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "310d0fc9-2ea9-4d75-9a11-f4c194e7643a",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "613d02c9-fc0b-4d8d-9a08-517e588ed948",
         "targetId": "d8815c97-3344-4821-8372-32ff769c023b",
         "targetName": "NEED Pay 카드",
@@ -292062,16 +292062,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 1243,
+        "changeStatus": "CHANGED",
+        "responseMs": 829,
         "errorMessage": null,
-        "comparedCheckId": "725db835-20be-4f1c-a858-f7da4d13bbb1",
-        "comparedAt": "2026-10-13T06:40:40.753Z",
+        "comparedCheckId": "40c297c8-33b8-41c4-a182-09b75f63b759",
+        "comparedAt": "2026-10-14T04:43:28.048Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -292082,12 +292082,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:28.048Z"
+        "createdAt": "2026-10-15T04:25:58.561Z"
       },
       "lastSuccessful": {
-        "checkId": "40c297c8-33b8-41c4-a182-09b75f63b759",
-        "createdAt": "2026-10-14T04:43:28.048Z",
-        "hash": "f79ba4d50c91a7516ad189fd344b0e8475a6cf24466e472149b4a9f7e9f0cfbe",
+        "checkId": "310d0fc9-2ea9-4d75-9a11-f4c194e7643a",
+        "createdAt": "2026-10-15T04:25:58.561Z",
+        "hash": "623572da39dad819a92bb670904824a8b12d061dcdb1df53f8c02064b74d6e98",
         "tokens": [
           {
             "kind": "title",
@@ -295902,7 +295902,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -304181,7 +304181,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -306342,8 +306342,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:09.815Z",
       "latest": {
-        "id": "d7620ec9-9a6b-4309-a692-14d16b2033d7",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "e3906874-95a0-4c7d-98c5-c20d8962bec0",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "d137fd1e-c1dd-4841-8f54-32513292cd5a",
         "targetId": "d8815c97-3344-4821-8372-32ff769c023b",
         "targetName": "NEED Pay 카드",
@@ -306362,10 +306362,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1006,
+        "responseMs": 349,
         "errorMessage": null,
-        "comparedCheckId": "6fbf0e72-f466-4be3-8078-11043650e954",
-        "comparedAt": "2026-10-13T06:40:40.421Z",
+        "comparedCheckId": "d7620ec9-9a6b-4309-a692-14d16b2033d7",
+        "comparedAt": "2026-10-14T04:43:28.080Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -306381,11 +306381,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:28.080Z"
+        "createdAt": "2026-10-15T04:25:58.141Z"
       },
       "lastSuccessful": {
-        "checkId": "d7620ec9-9a6b-4309-a692-14d16b2033d7",
-        "createdAt": "2026-10-14T04:43:28.080Z",
+        "checkId": "e3906874-95a0-4c7d-98c5-c20d8962bec0",
+        "createdAt": "2026-10-15T04:25:58.141Z",
         "hash": "773702642f9c6657cde66d5d5ea0b9e66e24c0a08fc36585d4d271dce2781844",
         "tokens": [
           {
@@ -308294,10 +308294,10 @@
     "6a0d6408-1c23-4f3b-9f75-2d84729915fa": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-12T05:46:13.876Z",
+      "lastChangedAt": "2026-10-15T04:25:56.506Z",
       "latest": {
-        "id": "9063458c-b79e-4a9b-b6e0-66bad27ebbd8",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "2c7d9c00-c49b-4a3f-9966-d038bd8cdf0a",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "6a0d6408-1c23-4f3b-9f75-2d84729915fa",
         "targetId": "efb1d0e6-0aeb-4093-84a7-6aed0179f41e",
         "targetName": "YOU Wish 카드",
@@ -308315,16 +308315,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 449,
+        "changeStatus": "CHANGED",
+        "responseMs": 459,
         "errorMessage": null,
-        "comparedCheckId": "6c5ba7e4-f337-4916-9863-c2d76c407b69",
-        "comparedAt": "2026-10-13T06:40:38.337Z",
+        "comparedCheckId": "9063458c-b79e-4a9b-b6e0-66bad27ebbd8",
+        "comparedAt": "2026-10-14T04:43:25.798Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -308335,12 +308335,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:25.798Z"
+        "createdAt": "2026-10-15T04:25:56.506Z"
       },
       "lastSuccessful": {
-        "checkId": "9063458c-b79e-4a9b-b6e0-66bad27ebbd8",
-        "createdAt": "2026-10-14T04:43:25.798Z",
-        "hash": "0179c9215a72a68b2207b9059bb7af8ccf58e90517bdf2ba8a60143477213f87",
+        "checkId": "2c7d9c00-c49b-4a3f-9966-d038bd8cdf0a",
+        "createdAt": "2026-10-15T04:25:56.506Z",
+        "hash": "e54cd2e9f2aaa05b636b0042d6552efc990af32c2fa1f575848b0c887c1a932b",
         "tokens": [
           {
             "kind": "title",
@@ -312155,7 +312155,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -320214,7 +320214,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -322410,8 +322410,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:06.983Z",
       "latest": {
-        "id": "f06652dc-457c-43a9-84d7-83b6455cb706",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "94cdbd5f-3810-41db-a21a-e5e04e6e2362",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "c159409a-cc42-4ae1-b6a3-9a5fc6e4b6c0",
         "targetId": "efb1d0e6-0aeb-4093-84a7-6aed0179f41e",
         "targetName": "YOU Wish 카드",
@@ -322430,10 +322430,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1127,
+        "responseMs": 904,
         "errorMessage": null,
-        "comparedCheckId": "8fd02f08-2e31-48f5-84f8-9e3ba1223ac9",
-        "comparedAt": "2026-10-13T06:40:37.598Z",
+        "comparedCheckId": "f06652dc-457c-43a9-84d7-83b6455cb706",
+        "comparedAt": "2026-10-14T04:43:26.580Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -322449,11 +322449,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:26.580Z"
+        "createdAt": "2026-10-15T04:25:57.328Z"
       },
       "lastSuccessful": {
-        "checkId": "f06652dc-457c-43a9-84d7-83b6455cb706",
-        "createdAt": "2026-10-14T04:43:26.580Z",
+        "checkId": "94cdbd5f-3810-41db-a21a-e5e04e6e2362",
+        "createdAt": "2026-10-15T04:25:57.328Z",
         "hash": "a00709672aabe9a2bee21ab60e9debb2abeac510064e6a86d69f3361990c075c",
         "tokens": [
           {
@@ -324292,10 +324292,10 @@
     "14bafd44-2782-4968-911b-291d2acd502e": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-12T05:46:13.477Z",
+      "lastChangedAt": "2026-10-15T04:25:56.610Z",
       "latest": {
-        "id": "0d278d7d-25d9-40b7-9aed-5c4a0a76a4bb",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "d2f4f522-7016-4ae5-869f-a94f1b87301d",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "14bafd44-2782-4968-911b-291d2acd502e",
         "targetId": "f76ab7ec-2473-4bff-8a31-d6d4e7dbe21d",
         "targetName": "YOU With 카드",
@@ -324313,16 +324313,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 1055,
+        "changeStatus": "CHANGED",
+        "responseMs": 993,
         "errorMessage": null,
-        "comparedCheckId": "384f6a21-4ca0-4fad-ae80-9a7c0b9b9514",
-        "comparedAt": "2026-10-13T06:40:37.133Z",
+        "comparedCheckId": "0d278d7d-25d9-40b7-9aed-5c4a0a76a4bb",
+        "comparedAt": "2026-10-14T04:43:25.524Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -324333,12 +324333,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:25.524Z"
+        "createdAt": "2026-10-15T04:25:56.610Z"
       },
       "lastSuccessful": {
-        "checkId": "0d278d7d-25d9-40b7-9aed-5c4a0a76a4bb",
-        "createdAt": "2026-10-14T04:43:25.524Z",
-        "hash": "9633ac10a3b31c8bd83996f52d930443f884236a08254eb7458ea0cc8be21199",
+        "checkId": "d2f4f522-7016-4ae5-869f-a94f1b87301d",
+        "createdAt": "2026-10-15T04:25:56.610Z",
+        "hash": "e6c57510220f4c29b972cc401e552ad3b107cb81ed83497bc43ca2ef204ac5f7",
         "tokens": [
           {
             "kind": "title",
@@ -328153,7 +328153,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -336377,7 +336377,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -338543,8 +338543,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:06.525Z",
       "latest": {
-        "id": "af87763c-9ca4-4fb1-81d9-25e7b6cb2bf8",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "8a25ed15-a4f0-46ea-89b2-64c88970a6c4",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "446222ae-cda3-454a-9e38-96d18f5cf725",
         "targetId": "f76ab7ec-2473-4bff-8a31-d6d4e7dbe21d",
         "targetName": "YOU With 카드",
@@ -338563,10 +338563,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 630,
+        "responseMs": 1100,
         "errorMessage": null,
-        "comparedCheckId": "b7741e1f-c26b-498a-b761-ebe27052b579",
-        "comparedAt": "2026-10-13T06:40:38.375Z",
+        "comparedCheckId": "af87763c-9ca4-4fb1-81d9-25e7b6cb2bf8",
+        "comparedAt": "2026-10-14T04:43:25.266Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -338582,11 +338582,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:25.266Z"
+        "createdAt": "2026-10-15T04:25:56.661Z"
       },
       "lastSuccessful": {
-        "checkId": "af87763c-9ca4-4fb1-81d9-25e7b6cb2bf8",
-        "createdAt": "2026-10-14T04:43:25.266Z",
+        "checkId": "8a25ed15-a4f0-46ea-89b2-64c88970a6c4",
+        "createdAt": "2026-10-15T04:25:56.661Z",
         "hash": "5150729fcb8ab67d58fb5a17811013c7e515c2a752336efbc7b1292ddbb88512",
         "tokens": [
           {
@@ -340465,10 +340465,10 @@
     "01b3f6d5-d2f3-46f9-b9dd-9fb1e43d30a4": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-12T05:46:18.252Z",
+      "lastChangedAt": "2026-10-15T04:26:00.993Z",
       "latest": {
-        "id": "7ec8b2d6-d604-4e17-a869-5155abad5502",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "25d80cfb-6028-44a7-a82f-fd1c18af7a3f",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "01b3f6d5-d2f3-46f9-b9dd-9fb1e43d30a4",
         "targetId": "ffce3167-72d1-488c-ab2e-f65d740df310",
         "targetName": "스카이패스 티타늄카드",
@@ -340486,16 +340486,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 808,
+        "changeStatus": "CHANGED",
+        "responseMs": 1053,
         "errorMessage": null,
-        "comparedCheckId": "df060033-66a3-47b7-8bd9-9df3560da52e",
-        "comparedAt": "2026-10-13T06:40:43.347Z",
+        "comparedCheckId": "7ec8b2d6-d604-4e17-a869-5155abad5502",
+        "comparedAt": "2026-10-14T04:43:29.978Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차/버스 유류카드 이용내역 조회\"},{\"kind\":\"link\",\"key\":\"화물차/버스 유류카드 이용내역 조회\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"화물차유류카드내역\"},{\"kind\":\"link\",\"key\":\"화물차유류카드내역\",\"value\":\"https://biz.kbcard.com/CXERCMLS0021.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -340506,12 +340506,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:29.978Z"
+        "createdAt": "2026-10-15T04:26:00.993Z"
       },
       "lastSuccessful": {
-        "checkId": "7ec8b2d6-d604-4e17-a869-5155abad5502",
-        "createdAt": "2026-10-14T04:43:29.978Z",
-        "hash": "03fa7f64b4d826fa41c85e103552a6e5c6fdb53e6e7c344f239a6999053e652c",
+        "checkId": "25d80cfb-6028-44a7-a82f-fd1c18af7a3f",
+        "createdAt": "2026-10-15T04:26:00.993Z",
+        "hash": "b212ffe4ca2c2e5d884d9e67ce916934efd92a7b75924c0325ce66f2d8919777",
         "tokens": [
           {
             "kind": "title",
@@ -344326,7 +344326,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "화물차유류카드내역"
+            "value": "화물차/버스 유류카드 이용내역 조회"
           },
           {
             "kind": "text",
@@ -352140,7 +352140,7 @@
           },
           {
             "kind": "link",
-            "key": "화물차유류카드내역",
+            "key": "화물차/버스 유류카드 이용내역 조회",
             "value": "https://biz.kbcard.com/CXERCMLS0021.cms"
           },
           {
@@ -354291,8 +354291,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:12.377Z",
       "latest": {
-        "id": "0bce8fc0-f7bb-43ec-81e0-c4e90d0bc4b9",
-        "runId": "b2199764-172e-49cd-9372-123edbe7792e",
+        "id": "fab57370-16c9-41f2-b037-913edb00d681",
+        "runId": "2a482207-3293-4440-b533-297447f70735",
         "endpointId": "57a99be1-efa7-46ec-85b1-ffa0cbcbfc2a",
         "targetId": "ffce3167-72d1-488c-ab2e-f65d740df310",
         "targetName": "스카이패스 티타늄카드",
@@ -354311,10 +354311,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1180,
+        "responseMs": 907,
         "errorMessage": null,
-        "comparedCheckId": "95dfa030-8f5f-43fa-811b-8e3378b5e34f",
-        "comparedAt": "2026-10-13T06:40:43.820Z",
+        "comparedCheckId": "0bce8fc0-f7bb-43ec-81e0-c4e90d0bc4b9",
+        "comparedAt": "2026-10-14T04:43:30.514Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -354330,11 +354330,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-14T04:43:30.514Z"
+        "createdAt": "2026-10-15T04:26:01.194Z"
       },
       "lastSuccessful": {
-        "checkId": "0bce8fc0-f7bb-43ec-81e0-c4e90d0bc4b9",
-        "createdAt": "2026-10-14T04:43:30.514Z",
+        "checkId": "fab57370-16c9-41f2-b037-913edb00d681",
+        "createdAt": "2026-10-15T04:26:01.194Z",
         "hash": "f5e0b6cfcfa5bdc0dd4bcf5b4692f485a0e44ca380607ea7cb3fe1a878747146",
         "tokens": [
           {
