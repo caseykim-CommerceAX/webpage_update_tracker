@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-20T04:39:01.533Z",
+  "updatedAt": "2026-10-21T04:31:55.580Z",
   "endpoints": {
     "c926ec76-812d-4877-b8cd-10f16272aeba": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-15T04:26:05.346Z",
+      "lastChangedAt": "2026-10-21T04:31:55.332Z",
       "latest": {
-        "id": "92fe236e-6abc-4d3a-9d48-8a9b5cee6613",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "5dd80d2b-e0a8-4f9a-9a81-644f8746dece",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "c926ec76-812d-4877-b8cd-10f16272aeba",
         "targetId": "014f6ae8-f8af-4234-9976-8e1b4ecbb511",
         "targetName": "국민행복카드",
@@ -19,39 +19,39 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-kookmin-haengbok-card",
         "finalUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-kookmin-haengbok-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 20,
+        "changeStatus": "CHANGED",
+        "responseMs": 827,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "81c451d1-b9c1-4ec9-93ae-3bab3f3c6be0",
+        "comparedAt": "2026-10-19T04:28:47.921Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 4,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"(* 온라인 : 국민행복몰, KB Pay > 쇼핑, 여행 > 쇼핑메뉴 > 스페셜스토어 > 국민행복바우처, 쿠팡(국민행복카드), 네이버 플러스 스토어(국민행복카드 바우처 전용관) / 오프라인 : GS25, 세븐일레븐, 이마트, 트레이더스, 노브랜드, 이마트 에브리데이)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"(* 온라인 : 국민행복몰, KB Pay 국민행복바우처 > 쇼핑, 여행 > 쇼핑메뉴 > 스페셜스토어 > 국민행복바우처, 쿠팡(국민행복카드), 네이버 플러스 스토어(국민행복카드 바우처 전용관) / 오프라인 : GS25, CU, 세븐일레븐, 다이소, 이마트, 트레이더스, 노브랜드, 이마트 에브리데이, 하나로마트) - 다이소는 쇼핑몰 내 입점매장 등 일부 매장 제외\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"(* 온라인 : 국민행복몰, KB Pay > 쇼핑, 여행 > 쇼핑메뉴 > 스페셜스토어 > 국민행복바우처, 쿠팡(국민행복카드) / 오프라인 : GS25, 세븐일레븐, 이마트, 트레이더스, 노브랜드, 이마트 에브리데이)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"(* 온라인 : 국민행복몰, KB Pay > 쇼핑, 여행 > 쇼핑메뉴 > 스페셜스토어 > 국민행복바우처, 쿠팡(국민행복카드) / 오프라인 : GS25, CU, 세븐일레븐, 다이소, 이마트, 트레이더스, 노브랜드, 이마트 에브리데이, 하나로마트) - 다이소는 쇼핑몰 내 입점매장 등 일부 매장 제외\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.472Z"
+        "createdAt": "2026-10-21T04:31:55.332Z"
       },
       "lastSuccessful": {
-        "checkId": "81c451d1-b9c1-4ec9-93ae-3bab3f3c6be0",
-        "createdAt": "2026-10-19T04:28:47.921Z",
-        "hash": "84389d16079902dbde29e8963dd05e62c76e0a7594ca0d5aa6e289c11b6eb8c3",
+        "checkId": "5dd80d2b-e0a8-4f9a-9a81-644f8746dece",
+        "createdAt": "2026-10-21T04:31:55.332Z",
+        "hash": "9cf2dca408ca8b70897988be599687591c380123df1a25c75faabd4ba503050f",
         "tokens": [
           {
             "kind": "title",
@@ -4991,11 +4991,6 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "카드발급서식 음성지원"
-          },
-          {
-            "kind": "text",
-            "key": "li",
             "value": "개인신용카드 발급기준 공시"
           },
           {
@@ -5766,7 +5761,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "(* 온라인 : 국민행복몰, KB Pay > 쇼핑, 여행 > 쇼핑메뉴 > 스페셜스토어 > 국민행복바우처, 쿠팡(국민행복카드) / 오프라인 : GS25, 세븐일레븐, 이마트, 트레이더스, 노브랜드, 이마트 에브리데이)"
+            "value": "(* 온라인 : 국민행복몰, KB Pay > 쇼핑, 여행 > 쇼핑메뉴 > 스페셜스토어 > 국민행복바우처, 쿠팡(국민행복카드), 네이버 플러스 스토어(국민행복카드 바우처 전용관) / 오프라인 : GS25, 세븐일레븐, 이마트, 트레이더스, 노브랜드, 이마트 에브리데이)"
           },
           {
             "kind": "heading",
@@ -5801,7 +5796,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "(* 온라인 : 국민행복몰, KB Pay > 쇼핑, 여행 > 쇼핑메뉴 > 스페셜스토어 > 국민행복바우처, 쿠팡(국민행복카드) / 오프라인 : GS25, CU, 세븐일레븐, 다이소, 이마트, 트레이더스, 노브랜드, 이마트 에브리데이, 하나로마트) - 다이소는 쇼핑몰 내 입점매장 등 일부 매장 제외"
+            "value": "(* 온라인 : 국민행복몰, KB Pay 국민행복바우처 > 쇼핑, 여행 > 쇼핑메뉴 > 스페셜스토어 > 국민행복바우처, 쿠팡(국민행복카드), 네이버 플러스 스토어(국민행복카드 바우처 전용관) / 오프라인 : GS25, CU, 세븐일레븐, 다이소, 이마트, 트레이더스, 노브랜드, 이마트 에브리데이, 하나로마트) - 다이소는 쇼핑몰 내 입점매장 등 일부 매장 제외"
           },
           {
             "kind": "heading",
@@ -13545,11 +13540,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -14386,8 +14376,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:16.120Z",
       "latest": {
-        "id": "9663a1f5-f2d9-4e53-817f-a7bf144aa2d9",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "7c5045f4-e6d2-4b92-bb4b-a1a3aef984be",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "7b6cf907-d2fc-4161-a9c1-7327da1b8c12",
         "targetId": "014f6ae8-f8af-4234-9976-8e1b4ecbb511",
         "targetName": "국민행복카드",
@@ -14398,18 +14388,18 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/cards/credit-cards/kb-kookmin-haengbok-card",
         "finalUrl": "https://m.kbcard.com/cards/credit-cards/kb-kookmin-haengbok-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 20,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 399,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "16154f47-cf9e-421e-9b5d-1b916bc1bd1d",
+        "comparedAt": "2026-10-19T04:28:48.622Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -14420,16 +14410,16 @@
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.473Z"
+        "createdAt": "2026-10-21T04:31:54.988Z"
       },
       "lastSuccessful": {
-        "checkId": "16154f47-cf9e-421e-9b5d-1b916bc1bd1d",
-        "createdAt": "2026-10-19T04:28:48.622Z",
+        "checkId": "7c5045f4-e6d2-4b92-bb4b-a1a3aef984be",
+        "createdAt": "2026-10-21T04:31:54.988Z",
         "hash": "e4a05a511ac23184bbdc49d34bd6467f5946d71a55c77f008d78ff291d22f8ee",
         "tokens": [
           {
@@ -16123,10 +16113,10 @@
     "01ed00fd-e36a-480d-ab73-d80aaab6cb65": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-15T04:26:04.647Z",
+      "lastChangedAt": "2026-10-21T04:31:54.567Z",
       "latest": {
-        "id": "a7165224-e7fc-4d72-b2fc-8113f12dbc09",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "0f207d3f-15d4-488e-9736-6dac4d7e24ea",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "01ed00fd-e36a-480d-ab73-d80aaab6cb65",
         "targetId": "03bb23e7-bb86-4574-8e13-1b46baece17c",
         "targetName": "트래블러스 체크카드",
@@ -16137,39 +16127,39 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/cards/products/check-cards/kb-travelers-check-card",
         "finalUrl": "https://card.kbcard.com/cards/products/check-cards/kb-travelers-check-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 19,
+        "changeStatus": "CHANGED",
+        "responseMs": 545,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "26664d17-2bf4-46d2-9ae5-edf5f281e9f9",
+        "comparedAt": "2026-10-19T04:28:46.984Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.453Z"
+        "createdAt": "2026-10-21T04:31:54.567Z"
       },
       "lastSuccessful": {
-        "checkId": "26664d17-2bf4-46d2-9ae5-edf5f281e9f9",
-        "createdAt": "2026-10-19T04:28:46.984Z",
-        "hash": "8d30bf7cff7bf0e5af534eec53bc8a7549c164482417e09ad05e241c926ef017",
+        "checkId": "0f207d3f-15d4-488e-9736-6dac4d7e24ea",
+        "createdAt": "2026-10-21T04:31:54.567Z",
+        "hash": "c7bcf14c70af0e57f925f94c2234f96a33b28a8695b355f18fe2fe6f2b56d806",
         "tokens": [
           {
             "kind": "title",
@@ -21105,11 +21095,6 @@
             "kind": "text",
             "key": "li",
             "value": "카드 불법모집 신고"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "카드발급서식 음성지원"
           },
           {
             "kind": "text",
@@ -30558,11 +30543,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -31524,8 +31504,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:15.268Z",
       "latest": {
-        "id": "b766cad8-5b45-42ad-9839-05a787157ad9",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "177a089d-efb4-4b1d-aa75-cf17ac374f61",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "db9539a0-6221-4363-9eb5-708ca00e4f35",
         "targetId": "03bb23e7-bb86-4574-8e13-1b46baece17c",
         "targetName": "트래블러스 체크카드",
@@ -31536,18 +31516,18 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/cards/check-cards/kb-travelers-check-card",
         "finalUrl": "https://m.kbcard.com/cards/check-cards/kb-travelers-check-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 21,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1113,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "83818ebb-9fe3-42a3-96ac-337a0ec0278a",
+        "comparedAt": "2026-10-19T04:28:47.943Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -31558,16 +31538,16 @@
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.457Z"
+        "createdAt": "2026-10-21T04:31:55.431Z"
       },
       "lastSuccessful": {
-        "checkId": "83818ebb-9fe3-42a3-96ac-337a0ec0278a",
-        "createdAt": "2026-10-19T04:28:47.943Z",
+        "checkId": "177a089d-efb4-4b1d-aa75-cf17ac374f61",
+        "createdAt": "2026-10-21T04:31:55.431Z",
         "hash": "1dadf2277cc9f7ebd38fe8eb54964e221287ace9ee607372aab22bd037b12eee",
         "tokens": [
           {
@@ -33416,10 +33396,10 @@
     "8fbc38b1-9e91-48b5-b48c-6a8b52dea42c": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-16T04:21:06.711Z",
+      "lastChangedAt": "2026-10-21T04:31:52.642Z",
       "latest": {
-        "id": "739fdeaa-945e-4433-b0ef-02f07de4c824",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "f93544bd-d112-46ae-acb6-ff879484fd19",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "8fbc38b1-9e91-48b5-b48c-6a8b52dea42c",
         "targetId": "11160efa-eca7-4b83-a8db-13cea9e8e74e",
         "targetName": "HERITAGE Classic(할인형)",
@@ -33430,39 +33410,39 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/cards/products/premium-cards/kb-heritage-classic-discount-type",
         "finalUrl": "https://card.kbcard.com/cards/products/premium-cards/kb-heritage-classic-discount-type",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 20,
+        "changeStatus": "CHANGED",
+        "responseMs": 960,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "f62bb57b-99a5-4797-95e2-bf86328de87d",
+        "comparedAt": "2026-10-19T04:28:44.714Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.392Z"
+        "createdAt": "2026-10-21T04:31:52.642Z"
       },
       "lastSuccessful": {
-        "checkId": "f62bb57b-99a5-4797-95e2-bf86328de87d",
-        "createdAt": "2026-10-19T04:28:44.714Z",
-        "hash": "05e7fa1a6e9feb41aa97cd4177d67bbc6a21de4a947bf64d1e5d3968670e324e",
+        "checkId": "f93544bd-d112-46ae-acb6-ff879484fd19",
+        "createdAt": "2026-10-21T04:31:52.642Z",
+        "hash": "8cff55f0ea27bcdc6e95a3ccbdcdc90b7d026c8d238cb228d5257b72a83986ed",
         "tokens": [
           {
             "kind": "title",
@@ -38398,11 +38378,6 @@
             "kind": "text",
             "key": "li",
             "value": "카드 불법모집 신고"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "카드발급서식 음성지원"
           },
           {
             "kind": "text",
@@ -47306,11 +47281,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -48257,8 +48227,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:13.438Z",
       "latest": {
-        "id": "a58aa110-3b88-4584-8abf-fa2314552502",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "2eee2e3e-caa2-489f-b972-4930aaac43e1",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "3a605dd0-af28-4d8f-a524-841baf470b44",
         "targetId": "11160efa-eca7-4b83-a8db-13cea9e8e74e",
         "targetName": "HERITAGE Classic(할인형)",
@@ -48269,18 +48239,18 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/cards/premium-cards/kb-heritage-classic-discount-type",
         "finalUrl": "https://m.kbcard.com/cards/premium-cards/kb-heritage-classic-discount-type",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 19,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 507,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "30db6cf2-4822-4af7-a50c-88286f32dae7",
+        "comparedAt": "2026-10-19T04:28:44.071Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -48291,16 +48261,16 @@
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.396Z"
+        "createdAt": "2026-10-21T04:31:52.217Z"
       },
       "lastSuccessful": {
-        "checkId": "30db6cf2-4822-4af7-a50c-88286f32dae7",
-        "createdAt": "2026-10-19T04:28:44.071Z",
+        "checkId": "2eee2e3e-caa2-489f-b972-4930aaac43e1",
+        "createdAt": "2026-10-21T04:31:52.217Z",
         "hash": "67f45631c91131d89017d25e8d72c122e5618c0fb8b26ab46cdb102237d15858",
         "tokens": [
           {
@@ -50146,8 +50116,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "43daff8b-3c08-42cd-91c2-5bde4b7f798b",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "00224c58-da23-46dd-99b1-4b1bcf88c194",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "eb3ccb9d-1f8c-4db8-9ee9-55712c3dc236",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -50158,7 +50128,7 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/cards/products/premium-cards/kb-bev3-card",
         "finalUrl": "https://card.kbcard.com/cards/products/premium-cards/kb-bev3-card",
-        "httpStatus": 403,
+        "httpStatus": 404,
         "availabilityStatus": "PENDING",
         "liveStatus": "BEFORE_LIVE",
         "headLiveMarkerFound": null,
@@ -50166,7 +50136,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 21,
+        "responseMs": 144,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -50185,17 +50155,17 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.413Z"
+        "createdAt": "2026-10-21T04:31:52.786Z"
       },
       "lastSuccessful": null
     },
     "19d614e270d3eff5121073206cce5ab8": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-16T04:21:07.401Z",
+      "lastChangedAt": "2026-10-21T04:31:53.911Z",
       "latest": {
-        "id": "b9b319de-8acd-4049-987d-593e8c1cb069",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "2456f7a7-bfa4-4637-9993-36eda18f7cbc",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "19d614e270d3eff5121073206cce5ab8",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -50206,39 +50176,39 @@
         "retiredAt": "2026-09-17 04:20:40",
         "requestedUrl": "https://card.kbcard.com/cards/products/premium-cards/bev3-card",
         "finalUrl": "https://card.kbcard.com/cards/products/premium-cards/bev3-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 21,
+        "changeStatus": "CHANGED",
+        "responseMs": 1149,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "fb1e7d55-d18a-449b-987c-c10260ce4788",
+        "comparedAt": "2026-10-19T04:28:45.559Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.417Z"
+        "createdAt": "2026-10-21T04:31:53.911Z"
       },
       "lastSuccessful": {
-        "checkId": "fb1e7d55-d18a-449b-987c-c10260ce4788",
-        "createdAt": "2026-10-19T04:28:45.559Z",
-        "hash": "37f885599e7e8d1a82055fce2cede89240e5470eddd6dd5cca814f93e0c0a8d7",
+        "checkId": "2456f7a7-bfa4-4637-9993-36eda18f7cbc",
+        "createdAt": "2026-10-21T04:31:53.911Z",
+        "hash": "a705f85a24bf46f4c73d0fdd0e07445b771fb23db3f3af46bbe5a13fb4f68f26",
         "tokens": [
           {
             "kind": "title",
@@ -55174,11 +55144,6 @@
             "kind": "text",
             "key": "li",
             "value": "카드 불법모집 신고"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "카드발급서식 음성지원"
           },
           {
             "kind": "text",
@@ -64027,11 +63992,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -65008,8 +64968,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "38e719ff-8ce7-4037-ab0d-5c3e1fb68f18",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "0a3772e0-16b1-447c-9d26-895791b8b214",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "52619742-f91b-43b9-8ef3-8cb08631642e",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -65020,7 +64980,7 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/cards/premium-cards/kb-bev3-card",
         "finalUrl": "https://m.kbcard.com/cards/premium-cards/kb-bev3-card",
-        "httpStatus": 403,
+        "httpStatus": 404,
         "availabilityStatus": "PENDING",
         "liveStatus": "BEFORE_LIVE",
         "headLiveMarkerFound": null,
@@ -65028,7 +64988,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 19,
+        "responseMs": 141,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -65047,7 +65007,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.431Z"
+        "createdAt": "2026-10-21T04:31:52.928Z"
       },
       "lastSuccessful": null
     },
@@ -65056,8 +65016,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:14.605Z",
       "latest": {
-        "id": "1c2ce031-6fcd-4e4f-af60-c0d72820e7ee",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "26a83a09-8ee3-418b-9577-14d8bd0e4801",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "374ae896ab07fb4b7c98af6100c41f92",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -65068,18 +65028,18 @@
         "retiredAt": "2026-09-17 04:20:40",
         "requestedUrl": "https://m.kbcard.com/cards/premium-cards/bev3-card",
         "finalUrl": "https://m.kbcard.com/cards/premium-cards/bev3-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 21,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 453,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "76e53696-8c08-4e1f-bc82-17fc9d810941",
+        "comparedAt": "2026-10-19T04:28:45.870Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -65090,16 +65050,16 @@
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.434Z"
+        "createdAt": "2026-10-21T04:31:53.415Z"
       },
       "lastSuccessful": {
-        "checkId": "76e53696-8c08-4e1f-bc82-17fc9d810941",
-        "createdAt": "2026-10-19T04:28:45.870Z",
+        "checkId": "26a83a09-8ee3-418b-9577-14d8bd0e4801",
+        "createdAt": "2026-10-21T04:31:53.415Z",
         "hash": "3e60d52126465f8844ce7bbeafca043d034f8272d8d0b4e6be446c8ed0d5e6c4",
         "tokens": [
           {
@@ -66793,10 +66753,10 @@
     "51572952-d474-4b43-9b5b-4e00ccf2a9ba": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-16T04:21:00.545Z",
+      "lastChangedAt": "2026-10-21T04:31:48.361Z",
       "latest": {
-        "id": "97e626e3-2193-4de9-b0e4-cd5404369ca2",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "7c43c584-23ef-45f4-8e9f-9c06a7882748",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "51572952-d474-4b43-9b5b-4e00ccf2a9ba",
         "targetId": "2fb8b880-93e1-4958-b06b-0e4c1919ec75",
         "targetName": "NEED Edu카드",
@@ -66807,39 +66767,39 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-need-edu-card",
         "finalUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-need-edu-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 20,
+        "changeStatus": "CHANGED",
+        "responseMs": 950,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "4ab1fd1b-603e-4a20-bcde-78205336ce32",
+        "comparedAt": "2026-10-19T04:28:39.874Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.311Z"
+        "createdAt": "2026-10-21T04:31:48.361Z"
       },
       "lastSuccessful": {
-        "checkId": "4ab1fd1b-603e-4a20-bcde-78205336ce32",
-        "createdAt": "2026-10-19T04:28:39.874Z",
-        "hash": "8f0ab5b465dc389586e6104bf0b729aa102641dc8ccbcc8df39576869c46f564",
+        "checkId": "7c43c584-23ef-45f4-8e9f-9c06a7882748",
+        "createdAt": "2026-10-21T04:31:48.361Z",
+        "hash": "8154628d943f683e7e8c97d40ec1c007377ba062f1a102b2c173121a661ad6d7",
         "tokens": [
           {
             "kind": "title",
@@ -71775,11 +71735,6 @@
             "kind": "text",
             "key": "li",
             "value": "카드 불법모집 신고"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "카드발급서식 음성지원"
           },
           {
             "kind": "text",
@@ -79658,11 +79613,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -80449,8 +80399,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:08.896Z",
       "latest": {
-        "id": "9e0e09e3-ed15-485a-be98-8684c3757996",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "d816389d-aaa9-4289-be34-8e14c95f4954",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "83cb96fd-4bfc-4f6a-9dfb-9833b941448e",
         "targetId": "2fb8b880-93e1-4958-b06b-0e4c1919ec75",
         "targetName": "NEED Edu카드",
@@ -80461,18 +80411,18 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/cards/credit-cards/kb-need-edu-card",
         "finalUrl": "https://m.kbcard.com/cards/credit-cards/kb-need-edu-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 21,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 424,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "ad034bd3-bae8-4ec0-afda-64178c7aa48e",
+        "comparedAt": "2026-10-19T04:28:40.385Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -80483,16 +80433,16 @@
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.314Z"
+        "createdAt": "2026-10-21T04:31:47.908Z"
       },
       "lastSuccessful": {
-        "checkId": "ad034bd3-bae8-4ec0-afda-64178c7aa48e",
-        "createdAt": "2026-10-19T04:28:40.385Z",
+        "checkId": "d816389d-aaa9-4289-be34-8e14c95f4954",
+        "createdAt": "2026-10-21T04:31:47.908Z",
         "hash": "a626b3370f6e9ba10cf0296a9fa76fbb7b60726abb5a679b9c05a3fe1b75447e",
         "tokens": [
           {
@@ -82351,10 +82301,10 @@
     "70e8f0ed-244e-480d-b5de-ce9e698c2652": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-15T04:26:00.256Z",
+      "lastChangedAt": "2026-10-21T04:31:50.308Z",
       "latest": {
-        "id": "352865bb-5c08-4c98-9969-85be0a743181",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "36207957-817a-4b5c-95da-3a947b01686e",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "70e8f0ed-244e-480d-b5de-ce9e698c2652",
         "targetId": "6bf242ce-9823-4510-bb63-e9bd0c5ee0ba",
         "targetName": "My WE:SH 카드",
@@ -82365,39 +82315,39 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-my-wesh-card",
         "finalUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-my-wesh-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 20,
+        "changeStatus": "CHANGED",
+        "responseMs": 504,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "5286635c-5e1d-481b-8835-fda396df7d68",
+        "comparedAt": "2026-10-19T04:28:42.718Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.352Z"
+        "createdAt": "2026-10-21T04:31:50.308Z"
       },
       "lastSuccessful": {
-        "checkId": "5286635c-5e1d-481b-8835-fda396df7d68",
-        "createdAt": "2026-10-19T04:28:42.718Z",
-        "hash": "753df0f5f3dccb77c1843b12088eb1364262061924ce2ecf59644f4816ccae59",
+        "checkId": "36207957-817a-4b5c-95da-3a947b01686e",
+        "createdAt": "2026-10-21T04:31:50.308Z",
+        "hash": "13a386a03bded7b51db23e4d1f7e5c06e22ed88302d535015083844a36735a4e",
         "tokens": [
           {
             "kind": "title",
@@ -87333,11 +87283,6 @@
             "kind": "text",
             "key": "li",
             "value": "카드 불법모집 신고"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "카드발급서식 음성지원"
           },
           {
             "kind": "text",
@@ -95596,11 +95541,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -96497,8 +96437,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:10.458Z",
       "latest": {
-        "id": "b0a3dd78-b13a-4f58-9877-88b20eae9ddd",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "9d15285d-b3e1-4490-a2c7-5e4d5ec47316",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "8ebd43ae-830a-4ea9-89a8-db087f92b159",
         "targetId": "6bf242ce-9823-4510-bb63-e9bd0c5ee0ba",
         "targetName": "My WE:SH 카드",
@@ -96509,18 +96449,18 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/cards/credit-cards/kb-my-wesh-card",
         "finalUrl": "https://m.kbcard.com/cards/credit-cards/kb-my-wesh-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 20,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 556,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "13c442d0-771f-40f5-9e06-774c5a47840e",
+        "comparedAt": "2026-10-19T04:28:43.002Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -96531,16 +96471,16 @@
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.356Z"
+        "createdAt": "2026-10-21T04:31:50.431Z"
       },
       "lastSuccessful": {
-        "checkId": "13c442d0-771f-40f5-9e06-774c5a47840e",
-        "createdAt": "2026-10-19T04:28:43.002Z",
+        "checkId": "9d15285d-b3e1-4490-a2c7-5e4d5ec47316",
+        "createdAt": "2026-10-21T04:31:50.431Z",
         "hash": "c9ea354b02adf03e9386184fb0252afb5c091414b48967ed45d6f1db85d73531",
         "tokens": [
           {
@@ -98419,10 +98359,10 @@
     "64453981-5ab0-4e5f-ad30-9e8f9102413d": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-16T04:20:58.682Z",
+      "lastChangedAt": "2026-10-21T04:31:45.700Z",
       "latest": {
-        "id": "fe8854cd-6cbc-4cff-9e35-4a7ba3d2646f",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "2b6b4faa-daa7-41a3-bff9-b659d760185e",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "64453981-5ab0-4e5f-ad30-9e8f9102413d",
         "targetId": "6c97d1ef-282c-421a-a4e8-2094a212838e",
         "targetName": "ALL point 카드",
@@ -98433,39 +98373,39 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-all-point-card",
         "finalUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-all-point-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 335,
+        "changeStatus": "CHANGED",
+        "responseMs": 912,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "b39ae037-4b89-465a-89f8-5d1d7b2f3376",
+        "comparedAt": "2026-10-19T04:28:37.493Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.248Z"
+        "createdAt": "2026-10-21T04:31:45.700Z"
       },
       "lastSuccessful": {
-        "checkId": "b39ae037-4b89-465a-89f8-5d1d7b2f3376",
-        "createdAt": "2026-10-19T04:28:37.493Z",
-        "hash": "70076b7a4b9b958ac926131957273522a1740cac86e995cb2fc02d539138f0ff",
+        "checkId": "2b6b4faa-daa7-41a3-bff9-b659d760185e",
+        "createdAt": "2026-10-21T04:31:45.700Z",
+        "hash": "f1d0ebd91e0f22acd68aa8b0028242c5c8839256d99189666cc141e25081c762",
         "tokens": [
           {
             "kind": "title",
@@ -103401,11 +103341,6 @@
             "kind": "text",
             "key": "li",
             "value": "카드 불법모집 신고"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "카드발급서식 음성지원"
           },
           {
             "kind": "text",
@@ -111504,11 +111439,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -112410,8 +112340,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:05.451Z",
       "latest": {
-        "id": "50e44791-b2f7-4c6c-8b43-ee669de4899e",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "db4e5395-4445-4318-8eaf-295665f93959",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "1c5ac6ba-dd55-4713-af80-eda4dac245f7",
         "targetId": "6c97d1ef-282c-421a-a4e8-2094a212838e",
         "targetName": "ALL point 카드",
@@ -112422,18 +112352,18 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/cards/credit-cards/kb-all-point-card",
         "finalUrl": "https://m.kbcard.com/cards/credit-cards/kb-all-point-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 335,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1541,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "0e09db96-4baf-4937-8716-bce1c7874b8e",
+        "comparedAt": "2026-10-19T04:28:36.959Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -112444,16 +112374,16 @@
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.249Z"
+        "createdAt": "2026-10-21T04:31:46.137Z"
       },
       "lastSuccessful": {
-        "checkId": "0e09db96-4baf-4937-8716-bce1c7874b8e",
-        "createdAt": "2026-10-19T04:28:36.959Z",
+        "checkId": "db4e5395-4445-4318-8eaf-295665f93959",
+        "createdAt": "2026-10-21T04:31:46.137Z",
         "hash": "566e5283b39ab37731fdff52d28dc8b9cca65f5c8594dd383c230a7a5709845e",
         "tokens": [
           {
@@ -114354,8 +114284,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "8adaadbc-81cf-4313-ac3f-e63ec10365a6",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "1f759625-6873-4f88-9953-89f30f7225ad",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "de405dc7-0a5c-4d1e-9d93-1028db2686c8",
         "targetId": "763c388b-d1bd-4949-9a3f-4fbabe4d3c37",
         "targetName": "서비스",
@@ -114366,7 +114296,7 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/benefits/vip-lounge/kb-prime-plus",
         "finalUrl": "https://card.kbcard.com/benefits/vip-lounge/kb-prime-plus",
-        "httpStatus": 403,
+        "httpStatus": 404,
         "availabilityStatus": "PENDING",
         "liveStatus": "BEFORE_LIVE",
         "headLiveMarkerFound": null,
@@ -114374,7 +114304,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 29,
+        "responseMs": 409,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -114393,17 +114323,17 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.482Z"
+        "createdAt": "2026-10-21T04:31:55.149Z"
       },
       "lastSuccessful": null
     },
     "ccd04d1d7fbc346be2a4dd4dd93069c1": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-15T04:26:05.700Z",
+      "lastChangedAt": "2026-10-21T04:31:55.400Z",
       "latest": {
-        "id": "01b4d280-04ce-4691-8a60-2802efa4c132",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "122e6e44-10c3-47d4-809a-dbcb05cd2504",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "ccd04d1d7fbc346be2a4dd4dd93069c1",
         "targetId": "763c388b-d1bd-4949-9a3f-4fbabe4d3c37",
         "targetName": "서비스",
@@ -114414,39 +114344,39 @@
         "retiredAt": "2026-09-17 04:20:40",
         "requestedUrl": "https://card.kbcard.com/benefits/vip-lounge/prime-plus",
         "finalUrl": "https://card.kbcard.com/benefits/vip-lounge/prime-plus",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 20,
+        "changeStatus": "CHANGED",
+        "responseMs": 346,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "0cc334ae-7184-4c26-b94b-cf50c746d873",
+        "comparedAt": "2026-10-19T04:28:48.220Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.477Z"
+        "createdAt": "2026-10-21T04:31:55.400Z"
       },
       "lastSuccessful": {
-        "checkId": "0cc334ae-7184-4c26-b94b-cf50c746d873",
-        "createdAt": "2026-10-19T04:28:48.220Z",
-        "hash": "30a76959f9e6a0a62ca9bae2382eef2298cc86255e825165604ab31cb97f7ce5",
+        "checkId": "122e6e44-10c3-47d4-809a-dbcb05cd2504",
+        "createdAt": "2026-10-21T04:31:55.400Z",
+        "hash": "10ab8a0324e1f45a0ec7cdbad06312fa38e7f9eb20940caf92b33e64e4cc76b9",
         "tokens": [
           {
             "kind": "title",
@@ -119362,11 +119292,6 @@
             "kind": "text",
             "key": "li",
             "value": "카드 불법모집 신고"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "카드발급서식 음성지원"
           },
           {
             "kind": "text",
@@ -126150,11 +126075,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -126771,8 +126691,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "4a9e6c90-7643-456e-8814-2ed9665fd9c5",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "465f3cc5-8ccd-4dc9-9790-ef92a24a0de2",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "45b57bad17f4bbfdb5cc5db4399d6aff",
         "targetId": "855f0b69537a077bfaa438388fac9a6e",
         "targetName": "이벤트 10월",
@@ -126783,7 +126703,7 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/benefits/events/ongoing/kb-new-card-annual-fee-cashback-2026-10",
         "finalUrl": "https://card.kbcard.com/benefits/events/ongoing/kb-new-card-annual-fee-cashback-2026-10",
-        "httpStatus": 403,
+        "httpStatus": 404,
         "availabilityStatus": "PENDING",
         "liveStatus": "BEFORE_LIVE",
         "headLiveMarkerFound": null,
@@ -126791,7 +126711,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 19,
+        "responseMs": 180,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -126810,7 +126730,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.497Z"
+        "createdAt": "2026-10-21T04:31:55.580Z"
       },
       "lastSuccessful": null
     },
@@ -126819,8 +126739,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "53430dd6-b3fb-47dc-92bb-5e3ffada4d5b",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "9d9e6a00-c1ee-4d55-9424-45433a0c83e0",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "b7f29a5a39ab16895d268b8da1abe58b",
         "targetId": "855f0b69537a077bfaa438388fac9a6e",
         "targetName": "이벤트 10월",
@@ -126831,7 +126751,7 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/benefits/events/kb-new-card-annual-fee-cashback-2026-10",
         "finalUrl": "https://m.kbcard.com/benefits/events/kb-new-card-annual-fee-cashback-2026-10",
-        "httpStatus": 403,
+        "httpStatus": 404,
         "availabilityStatus": "PENDING",
         "liveStatus": "BEFORE_LIVE",
         "headLiveMarkerFound": null,
@@ -126839,7 +126759,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 20,
+        "responseMs": 139,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -126858,17 +126778,17 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.502Z"
+        "createdAt": "2026-10-21T04:31:55.570Z"
       },
       "lastSuccessful": null
     },
     "1bdbffb4-b7ee-441d-acbb-c11aa778a231": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-16T04:21:06.823Z",
+      "lastChangedAt": "2026-10-21T04:31:53.531Z",
       "latest": {
-        "id": "66879613-ba61-4d65-a0a1-9465d8b34848",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "0a578e0d-cef6-4d53-a914-bbd798c50c70",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "1bdbffb4-b7ee-441d-acbb-c11aa778a231",
         "targetId": "a21ecf12-1a64-40d4-855d-b6f1b81a8ba8",
         "targetName": "HERITAGE Classic(스카이패스형)",
@@ -126879,39 +126799,39 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/cards/products/premium-cards/kb-heritage-classic-skypass-type",
         "finalUrl": "https://card.kbcard.com/cards/products/premium-cards/kb-heritage-classic-skypass-type",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 20,
+        "changeStatus": "CHANGED",
+        "responseMs": 1556,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "c4da258e-2f82-43e8-8b50-5b1748042be0",
+        "comparedAt": "2026-10-19T04:28:45.171Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.412Z"
+        "createdAt": "2026-10-21T04:31:53.531Z"
       },
       "lastSuccessful": {
-        "checkId": "c4da258e-2f82-43e8-8b50-5b1748042be0",
-        "createdAt": "2026-10-19T04:28:45.171Z",
-        "hash": "6b23e231bf43530709d09e41809ad83d2d00028c05bc1f3a6acc1eb970e0ba81",
+        "checkId": "0a578e0d-cef6-4d53-a914-bbd798c50c70",
+        "createdAt": "2026-10-21T04:31:53.531Z",
+        "hash": "1fbe4153bf212bdfa84b06934d12f953ca8402babbab408a9481dda88b49f371",
         "tokens": [
           {
             "kind": "title",
@@ -131847,11 +131767,6 @@
             "kind": "text",
             "key": "li",
             "value": "카드 불법모집 신고"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "카드발급서식 음성지원"
           },
           {
             "kind": "text",
@@ -140885,11 +140800,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -141851,8 +141761,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:13.472Z",
       "latest": {
-        "id": "7bbd5e80-79d7-4539-a02e-907e5493cd93",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "b274cb18-aa9b-4898-a27d-aba2e58ae2ae",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "78383cd1-8504-4fd8-b0b4-4fbc3635b01e",
         "targetId": "a21ecf12-1a64-40d4-855d-b6f1b81a8ba8",
         "targetName": "HERITAGE Classic(스카이패스형)",
@@ -141863,18 +141773,18 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/cards/premium-cards/kb-heritage-classic-skypass-type",
         "finalUrl": "https://m.kbcard.com/cards/premium-cards/kb-heritage-classic-skypass-type",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 21,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 956,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "94d5a040-3782-43ca-88d8-70b5c0f8c9c1",
+        "comparedAt": "2026-10-19T04:28:45.039Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -141885,16 +141795,16 @@
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.413Z"
+        "createdAt": "2026-10-21T04:31:53.195Z"
       },
       "lastSuccessful": {
-        "checkId": "94d5a040-3782-43ca-88d8-70b5c0f8c9c1",
-        "createdAt": "2026-10-19T04:28:45.039Z",
+        "checkId": "b274cb18-aa9b-4898-a27d-aba2e58ae2ae",
+        "createdAt": "2026-10-21T04:31:53.195Z",
         "hash": "fe2955d774d98a40d74e2e84ce62500d3363304f0986272631b3fef65e4d61d6",
         "tokens": [
           {
@@ -143758,10 +143668,10 @@
     "1a874d68-15d0-4e4c-bd29-6ebecf90e52a": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-16T04:20:59.068Z",
+      "lastChangedAt": "2026-10-21T04:31:46.755Z",
       "latest": {
-        "id": "40f9f97e-d719-4ca5-a67b-74bda73b7c89",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "bdd81b7d-57ee-4b8f-845d-4410a0ea27ba",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "1a874d68-15d0-4e4c-bd29-6ebecf90e52a",
         "targetId": "a710c22f-7ed7-4f06-9334-abdfff7788ee",
         "targetName": "YOU Prime 카드",
@@ -143772,39 +143682,39 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-you-prime-card",
         "finalUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-you-prime-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 68,
+        "changeStatus": "CHANGED",
+        "responseMs": 946,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "77621b07-2962-4f19-b1bb-746940b38345",
+        "comparedAt": "2026-10-19T04:28:38.755Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.290Z"
+        "createdAt": "2026-10-21T04:31:46.755Z"
       },
       "lastSuccessful": {
-        "checkId": "77621b07-2962-4f19-b1bb-746940b38345",
-        "createdAt": "2026-10-19T04:28:38.755Z",
-        "hash": "008194bb55d884103e996d8d47c50c5a11bdb400c564d6ffb2416fa5357d6867",
+        "checkId": "bdd81b7d-57ee-4b8f-845d-4410a0ea27ba",
+        "createdAt": "2026-10-21T04:31:46.755Z",
+        "hash": "5c7771dd4f5b45818ac53e55c0e7e177379c562313cbf18d75c8d719d7d920d0",
         "tokens": [
           {
             "kind": "title",
@@ -148740,11 +148650,6 @@
             "kind": "text",
             "key": "li",
             "value": "카드 불법모집 신고"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "카드발급서식 음성지원"
           },
           {
             "kind": "text",
@@ -158008,11 +157913,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -158954,8 +158854,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:06.263Z",
       "latest": {
-        "id": "ef5e6310-560f-4c7e-9ee4-ad4375c21055",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "dfdb03b8-d898-4536-9b1e-003a685105ab",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "ff46ae32-0a90-4beb-b8e0-4debf4b3b397",
         "targetId": "a710c22f-7ed7-4f06-9334-abdfff7788ee",
         "targetName": "YOU Prime 카드",
@@ -158966,18 +158866,18 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/cards/credit-cards/kb-you-prime-card",
         "finalUrl": "https://m.kbcard.com/cards/credit-cards/kb-you-prime-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 26,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 630,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "7afd5789-bc05-461f-95cc-3f99635909c8",
+        "comparedAt": "2026-10-19T04:28:37.514Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -158988,16 +158888,16 @@
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.251Z"
+        "createdAt": "2026-10-21T04:31:46.793Z"
       },
       "lastSuccessful": {
-        "checkId": "7afd5789-bc05-461f-95cc-3f99635909c8",
-        "createdAt": "2026-10-19T04:28:37.514Z",
+        "checkId": "dfdb03b8-d898-4536-9b1e-003a685105ab",
+        "createdAt": "2026-10-21T04:31:46.793Z",
         "hash": "b06c1647aceb26a5afe6f4ca27f0f015c05f87e083a316b1c2d93f803d1aba33",
         "tokens": [
           {
@@ -160976,10 +160876,10 @@
     "eb730105-e4a1-4995-b8bc-5f685b2ba79b": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-15T04:25:59.005Z",
+      "lastChangedAt": "2026-10-21T04:31:49.702Z",
       "latest": {
-        "id": "24b45f30-b2c3-4393-8f6a-7829f671a9f3",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "f3fff029-3d12-4f7f-b45c-ea23142e85e2",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "eb730105-e4a1-4995-b8bc-5f685b2ba79b",
         "targetId": "ab9fa5b9-3ed4-417d-b62a-b5ec7862e32f",
         "targetName": "WE:SH Travel",
@@ -160990,39 +160890,39 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-wesh-travel-card",
         "finalUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-wesh-travel-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 21,
+        "changeStatus": "CHANGED",
+        "responseMs": 1112,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "ead40d4d-ea90-4345-9a58-4e32daabe192",
+        "comparedAt": "2026-10-19T04:28:41.685Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.351Z"
+        "createdAt": "2026-10-21T04:31:49.702Z"
       },
       "lastSuccessful": {
-        "checkId": "ead40d4d-ea90-4345-9a58-4e32daabe192",
-        "createdAt": "2026-10-19T04:28:41.685Z",
-        "hash": "74ef003122d735271e196fb4b48bb5ce9967658145629389f2eea7e73754463d",
+        "checkId": "f3fff029-3d12-4f7f-b45c-ea23142e85e2",
+        "createdAt": "2026-10-21T04:31:49.702Z",
+        "hash": "eb35d5d4e04c15232195e7d62ac34263f852492f2a08551a2fa46bfc7fd54b35",
         "tokens": [
           {
             "kind": "title",
@@ -165958,11 +165858,6 @@
             "kind": "text",
             "key": "li",
             "value": "카드 불법모집 신고"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "카드발급서식 음성지원"
           },
           {
             "kind": "text",
@@ -174611,11 +174506,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -175532,8 +175422,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:09.893Z",
       "latest": {
-        "id": "4caccff8-08bd-4b95-8d7c-321fe9c794c6",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "d0da4c4b-bbd0-45fc-b9b1-7bcda0b1db44",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "119352b3-dbfe-4676-88a9-0e3e64d39abc",
         "targetId": "ab9fa5b9-3ed4-417d-b62a-b5ec7862e32f",
         "targetName": "WE:SH Travel",
@@ -175544,18 +175434,18 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/cards/credit-cards/kb-wesh-travel-card",
         "finalUrl": "https://m.kbcard.com/cards/credit-cards/kb-wesh-travel-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 20,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1636,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "3fd9a92a-5213-49d9-a8dd-8c2335d83958",
+        "comparedAt": "2026-10-19T04:28:41.266Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -175566,16 +175456,16 @@
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.351Z"
+        "createdAt": "2026-10-21T04:31:50.495Z"
       },
       "lastSuccessful": {
-        "checkId": "3fd9a92a-5213-49d9-a8dd-8c2335d83958",
-        "createdAt": "2026-10-19T04:28:41.266Z",
+        "checkId": "d0da4c4b-bbd0-45fc-b9b1-7bcda0b1db44",
+        "createdAt": "2026-10-21T04:31:50.495Z",
         "hash": "205fcddcb72f788ba4f37696c829f1507f1f38381ce3a7ebafbf9a8245a68fa7",
         "tokens": [
           {
@@ -177424,10 +177314,10 @@
     "27f46e5f-feab-4c61-9b17-4e82b91c3b1b": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-15T04:25:57.537Z",
+      "lastChangedAt": "2026-10-21T04:31:48.490Z",
       "latest": {
-        "id": "c754de41-0392-40d2-a688-4e82c04b0e45",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "bc8c6a69-613c-40e4-93cc-aa30e16cc371",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "27f46e5f-feab-4c61-9b17-4e82b91c3b1b",
         "targetId": "aee77a45-fdde-4c1f-a82f-419336a1ab18",
         "targetName": "YOU Wish up 카드",
@@ -177438,39 +177328,39 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-you-wish-up-card",
         "finalUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-you-wish-up-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 22,
+        "changeStatus": "CHANGED",
+        "responseMs": 1496,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "df0e49a8-fd5e-4558-8f24-9605889077f3",
+        "comparedAt": "2026-10-19T04:28:39.638Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.293Z"
+        "createdAt": "2026-10-21T04:31:48.490Z"
       },
       "lastSuccessful": {
-        "checkId": "df0e49a8-fd5e-4558-8f24-9605889077f3",
-        "createdAt": "2026-10-19T04:28:39.638Z",
-        "hash": "99cd2e517570b614856ae69cf0abe705bbc355ec24aaa49ca543ca4ce0f106c3",
+        "checkId": "bc8c6a69-613c-40e4-93cc-aa30e16cc371",
+        "createdAt": "2026-10-21T04:31:48.490Z",
+        "hash": "3790bdb0b6b3f69f8a4df512ca1e71c75f320b59b59dbf1c06de71edcc39e701",
         "tokens": [
           {
             "kind": "title",
@@ -182406,11 +182296,6 @@
             "kind": "text",
             "key": "li",
             "value": "카드 불법모집 신고"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "카드발급서식 음성지원"
           },
           {
             "kind": "text",
@@ -191094,11 +190979,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -191995,8 +191875,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:08.025Z",
       "latest": {
-        "id": "5e70ca5d-fe65-4f35-875a-4b08d9c4ca49",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "ad8b727a-03f4-49ee-9873-231b7f775216",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "65ae2ae0-6609-42a3-aa4a-6a9d9e620da4",
         "targetId": "aee77a45-fdde-4c1f-a82f-419336a1ab18",
         "targetName": "YOU Wish up 카드",
@@ -192007,18 +191887,18 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/cards/credit-cards/kb-you-wish-up-card",
         "finalUrl": "https://m.kbcard.com/cards/credit-cards/kb-you-wish-up-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 20,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 969,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "9d2433ef-3971-4c48-8b66-bac9cda2c6a5",
+        "comparedAt": "2026-10-19T04:28:39.779Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -192029,16 +191909,16 @@
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.310Z"
+        "createdAt": "2026-10-21T04:31:47.931Z"
       },
       "lastSuccessful": {
-        "checkId": "9d2433ef-3971-4c48-8b66-bac9cda2c6a5",
-        "createdAt": "2026-10-19T04:28:39.779Z",
+        "checkId": "ad8b727a-03f4-49ee-9873-231b7f775216",
+        "createdAt": "2026-10-21T04:31:47.931Z",
         "hash": "04f0976512dd39805dae212b33bfd0bcf6fcf84f789f5b91f0ececb365573408",
         "tokens": [
           {
@@ -193887,10 +193767,10 @@
     "55e07fac-79e6-4ccb-a6c6-38a1519deae8": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-15T04:26:00.706Z",
+      "lastChangedAt": "2026-10-21T04:31:51.403Z",
       "latest": {
-        "id": "50c2f00c-b1f3-4bab-bbf9-6049471b0cfb",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "33a8cbd8-0610-4b47-96ad-2b52e88b8e6b",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "55e07fac-79e6-4ccb-a6c6-38a1519deae8",
         "targetId": "ba3c273b-bf19-44d9-a4ef-c79f1dac16b9",
         "targetName": "굿데이올림카드",
@@ -193901,39 +193781,39 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-good-day-ollim-card",
         "finalUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-good-day-ollim-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 21,
+        "changeStatus": "CHANGED",
+        "responseMs": 1154,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "dbfb6e26-4bee-420e-a83a-3f43af3e63ec",
+        "comparedAt": "2026-10-19T04:28:42.166Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.372Z"
+        "createdAt": "2026-10-21T04:31:51.403Z"
       },
       "lastSuccessful": {
-        "checkId": "dbfb6e26-4bee-420e-a83a-3f43af3e63ec",
-        "createdAt": "2026-10-19T04:28:42.166Z",
-        "hash": "2cb0b1e965a846ecd4b66e95d5e23b7e0b64e02fcd12c62b92f46686bb20c1b5",
+        "checkId": "33a8cbd8-0610-4b47-96ad-2b52e88b8e6b",
+        "createdAt": "2026-10-21T04:31:51.403Z",
+        "hash": "f9ba3757ef0950ef3571d3515e61ebbebd77d203461ce020a20839a75e41d09b",
         "tokens": [
           {
             "kind": "title",
@@ -198869,11 +198749,6 @@
             "kind": "text",
             "key": "li",
             "value": "카드 불법모집 신고"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "카드발급서식 음성지원"
           },
           {
             "kind": "text",
@@ -207407,11 +207282,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -208353,8 +208223,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:11.481Z",
       "latest": {
-        "id": "b2f4ccf4-e1d4-4680-9c8b-b804ce65193d",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "000ea960-fb0a-4bb2-8ae5-23a6222ec73c",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "99506875-e7b5-49a6-aa7d-d9ed9e4cf5ba",
         "targetId": "ba3c273b-bf19-44d9-a4ef-c79f1dac16b9",
         "targetName": "굿데이올림카드",
@@ -208365,18 +208235,18 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/cards/credit-cards/kb-good-day-ollim-card",
         "finalUrl": "https://m.kbcard.com/cards/credit-cards/kb-good-day-ollim-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 20,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1097,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "a6bd9e41-a962-4897-8281-efc8ff2bd22e",
+        "comparedAt": "2026-10-19T04:28:42.469Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -208387,16 +208257,16 @@
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.371Z"
+        "createdAt": "2026-10-21T04:31:51.437Z"
       },
       "lastSuccessful": {
-        "checkId": "a6bd9e41-a962-4897-8281-efc8ff2bd22e",
-        "createdAt": "2026-10-19T04:28:42.469Z",
+        "checkId": "000ea960-fb0a-4bb2-8ae5-23a6222ec73c",
+        "createdAt": "2026-10-21T04:31:51.437Z",
         "hash": "7d204c8f1dfbb48d1582c5a090a48187d5761ac5f7486d14db91bd1413847662",
         "tokens": [
           {
@@ -210665,10 +210535,10 @@
     "a1c82600-76ec-46e4-93ef-f8bc6778b034": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-15T04:25:57.860Z",
+      "lastChangedAt": "2026-10-21T04:31:48.835Z",
       "latest": {
-        "id": "f28d5beb-184e-44ae-a9e9-c5994b9bfa1e",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "b08666e2-24c6-436f-973b-f3935f7a9b7d",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "a1c82600-76ec-46e4-93ef-f8bc6778b034",
         "targetId": "bec4c3be-5c44-4585-a6a3-5fc7ffc3a7b0",
         "targetName": "NEED Global 카드",
@@ -210679,39 +210549,39 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-need-global-card",
         "finalUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-need-global-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 20,
+        "changeStatus": "CHANGED",
+        "responseMs": 845,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "50eebc55-34b7-4ba1-ab8d-be9327724d6e",
+        "comparedAt": "2026-10-19T04:28:40.678Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.330Z"
+        "createdAt": "2026-10-21T04:31:48.835Z"
       },
       "lastSuccessful": {
-        "checkId": "50eebc55-34b7-4ba1-ab8d-be9327724d6e",
-        "createdAt": "2026-10-19T04:28:40.678Z",
-        "hash": "38893763ce7d6e5c6e2653eeae73d4eb64f10b6237751380c2fffca81c820b96",
+        "checkId": "b08666e2-24c6-436f-973b-f3935f7a9b7d",
+        "createdAt": "2026-10-21T04:31:48.835Z",
+        "hash": "8633028d2d858e7d33a771fb3d25aa246268978d24bcf8d4fd9c6b6d88e48656",
         "tokens": [
           {
             "kind": "title",
@@ -215647,11 +215517,6 @@
             "kind": "text",
             "key": "li",
             "value": "카드 불법모집 신고"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "카드발급서식 음성지원"
           },
           {
             "kind": "text",
@@ -223320,11 +223185,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -224101,8 +223961,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:09.622Z",
       "latest": {
-        "id": "d323092a-1740-4f63-9397-99803b2e5e21",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "c8fb234e-9c8b-4dbc-93f5-8283547161ce",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "556d6d77-9c95-4b36-9826-ae45ff7b9f6b",
         "targetId": "bec4c3be-5c44-4585-a6a3-5fc7ffc3a7b0",
         "targetName": "NEED Global 카드",
@@ -224113,18 +223973,18 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/cards/credit-cards/kb-need-global-card",
         "finalUrl": "https://m.kbcard.com/cards/credit-cards/kb-need-global-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 21,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 433,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "6d2a681b-c149-4947-911c-1d461717ad83",
+        "comparedAt": "2026-10-19T04:28:40.973Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -224135,16 +223995,16 @@
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.331Z"
+        "createdAt": "2026-10-21T04:31:48.397Z"
       },
       "lastSuccessful": {
-        "checkId": "6d2a681b-c149-4947-911c-1d461717ad83",
-        "createdAt": "2026-10-19T04:28:40.973Z",
+        "checkId": "c8fb234e-9c8b-4dbc-93f5-8283547161ce",
+        "createdAt": "2026-10-21T04:31:48.397Z",
         "hash": "f1463816cf6e70df62ed102c7f137ad0139ab74507463fb6533f0af7bee6732f",
         "tokens": [
           {
@@ -225983,10 +225843,10 @@
     "c79d4215-7632-4f50-b00d-872fc192fe4a": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-15T04:26:04.408Z",
+      "lastChangedAt": "2026-10-21T04:31:54.740Z",
       "latest": {
-        "id": "5c66512d-bdd8-44e6-8b90-fa96d65af533",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "312a82ae-d070-4cd0-8937-e7e817a38f59",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "c79d4215-7632-4f50-b00d-872fc192fe4a",
         "targetId": "c4fe7b59-3b68-47f8-bbde-6c8701458fac",
         "targetName": "노리2 체크카드(KB Pay)",
@@ -225997,39 +225857,39 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/cards/products/check-cards/kb-nori2-check-card-kbpay-type",
         "finalUrl": "https://card.kbcard.com/cards/products/check-cards/kb-nori2-check-card-kbpay-type",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 21,
+        "changeStatus": "CHANGED",
+        "responseMs": 1100,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "7207e65c-9fc4-4a8d-94f1-0a035d21f573",
+        "comparedAt": "2026-10-19T04:28:46.014Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.452Z"
+        "createdAt": "2026-10-21T04:31:54.740Z"
       },
       "lastSuccessful": {
-        "checkId": "7207e65c-9fc4-4a8d-94f1-0a035d21f573",
-        "createdAt": "2026-10-19T04:28:46.014Z",
-        "hash": "99719666d960fdf12389d0793fcc3c3db0e3221533212893d711fe2e5f958c7a",
+        "checkId": "312a82ae-d070-4cd0-8937-e7e817a38f59",
+        "createdAt": "2026-10-21T04:31:54.740Z",
+        "hash": "200956b7e58af6c3b7e7570a69ed0d33c130aa631a368187e41be1f59f7bf17f",
         "tokens": [
           {
             "kind": "title",
@@ -230965,11 +230825,6 @@
             "kind": "text",
             "key": "li",
             "value": "카드 불법모집 신고"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "카드발급서식 음성지원"
           },
           {
             "kind": "text",
@@ -240213,11 +240068,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -241159,8 +241009,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:15.082Z",
       "latest": {
-        "id": "1628e06a-727e-48ec-8ce8-491d6fc7fbc1",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "14295f3d-486f-4b3b-b23b-815c6c39b7d7",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "3506bde9-c822-4be3-9f30-31809737af94",
         "targetId": "c4fe7b59-3b68-47f8-bbde-6c8701458fac",
         "targetName": "노리2 체크카드(KB Pay)",
@@ -241171,18 +241021,18 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/cards/check-cards/kb-nori2-check-card-kbpay-type",
         "finalUrl": "https://m.kbcard.com/cards/check-cards/kb-nori2-check-card-kbpay-type",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 19,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 468,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "9da8a4f1-76e7-443c-9401-75791e288dab",
+        "comparedAt": "2026-10-19T04:28:47.579Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -241193,16 +241043,16 @@
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.452Z"
+        "createdAt": "2026-10-21T04:31:54.288Z"
       },
       "lastSuccessful": {
-        "checkId": "9da8a4f1-76e7-443c-9401-75791e288dab",
-        "createdAt": "2026-10-19T04:28:47.579Z",
+        "checkId": "14295f3d-486f-4b3b-b23b-815c6c39b7d7",
+        "createdAt": "2026-10-21T04:31:54.288Z",
         "hash": "46940c6778576b77a002f78414120e9289d78017e863ac0ab8c2b9eff87092bc",
         "tokens": [
           {
@@ -242903,8 +242753,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "7ed35d18-ae26-4ee1-a310-a8054aaca99d",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "bb66a204-20ec-407b-9c46-43b3f188e9e5",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "d7ed54fd-b471-4d4e-8c66-f9b1778028d7",
         "targetId": "c5d297d9-5523-49eb-9b65-340e00f4c55c",
         "targetName": "이벤트 9월",
@@ -242915,7 +242765,7 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/benefits/events/ongoing/kb-new-card-annual-fee-cashback-2026-09",
         "finalUrl": "https://card.kbcard.com/benefits/events/ongoing/kb-new-card-annual-fee-cashback-2026-09",
-        "httpStatus": 403,
+        "httpStatus": 404,
         "availabilityStatus": "PENDING",
         "liveStatus": "BEFORE_LIVE",
         "headLiveMarkerFound": null,
@@ -242923,7 +242773,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 61,
+        "responseMs": 283,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -242942,7 +242792,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.533Z"
+        "createdAt": "2026-10-21T04:31:55.432Z"
       },
       "lastSuccessful": null
     },
@@ -242951,8 +242801,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "2f39328b-f627-4610-832c-faf583be102c",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "327edc27-6957-4e8d-a8b0-ff6737050b8b",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "ae8ab9e4-6784-4ab8-a84e-0fa75525d559",
         "targetId": "c5d297d9-5523-49eb-9b65-340e00f4c55c",
         "targetName": "이벤트 9월",
@@ -242963,7 +242813,7 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/benefits/events/kb-new-card-annual-fee-cashback-2026-09",
         "finalUrl": "https://m.kbcard.com/benefits/events/kb-new-card-annual-fee-cashback-2026-09",
-        "httpStatus": 403,
+        "httpStatus": 404,
         "availabilityStatus": "PENDING",
         "liveStatus": "BEFORE_LIVE",
         "headLiveMarkerFound": null,
@@ -242971,7 +242821,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 20,
+        "responseMs": 149,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -242990,17 +242840,17 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.493Z"
+        "createdAt": "2026-10-21T04:31:55.481Z"
       },
       "lastSuccessful": null
     },
     "e2bcd9ac-eaa5-4919-abe7-19c890c2d785": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-15T04:26:03.477Z",
+      "lastChangedAt": "2026-10-21T04:31:53.797Z",
       "latest": {
-        "id": "5dd7bff2-f596-4ea5-b58c-ece2e8c3d9e3",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "e596d7be-d327-45bf-9d60-8ffacd0a9e91",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "e2bcd9ac-eaa5-4919-abe7-19c890c2d785",
         "targetId": "c701fd1a-9015-4daf-9039-b987c990c619",
         "targetName": "Youth Club 체크카드",
@@ -243011,39 +242861,39 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/cards/products/check-cards/kb-youth-club-check-card",
         "finalUrl": "https://card.kbcard.com/cards/products/check-cards/kb-youth-club-check-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 20,
+        "changeStatus": "CHANGED",
+        "responseMs": 499,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "2f180fb4-7be2-4751-9324-31f168507fb2",
+        "comparedAt": "2026-10-19T04:28:46.092Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.433Z"
+        "createdAt": "2026-10-21T04:31:53.797Z"
       },
       "lastSuccessful": {
-        "checkId": "2f180fb4-7be2-4751-9324-31f168507fb2",
-        "createdAt": "2026-10-19T04:28:46.092Z",
-        "hash": "cc301456717a17aa42a161e7fadbaa2fa325c04253d3428f99bf1e94a5b534de",
+        "checkId": "e596d7be-d327-45bf-9d60-8ffacd0a9e91",
+        "createdAt": "2026-10-21T04:31:53.797Z",
+        "hash": "086334c806a1c3a38f138eef41b8e17f91acf8098b3db4c3bb45414410b21e1b",
         "tokens": [
           {
             "kind": "title",
@@ -247979,11 +247829,6 @@
             "kind": "text",
             "key": "li",
             "value": "카드 불법모집 신고"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "카드발급서식 음성지원"
           },
           {
             "kind": "text",
@@ -257222,11 +257067,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -258093,8 +257933,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:14.845Z",
       "latest": {
-        "id": "56671252-0b69-4645-aa71-4b97a4ad79f3",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "dd426384-3032-43f7-8570-00381931532a",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "20e3a981-c6a0-4673-9a6f-5e0241999772",
         "targetId": "c701fd1a-9015-4daf-9039-b987c990c619",
         "targetName": "Youth Club 체크카드",
@@ -258105,18 +257945,18 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/cards/check-cards/kb-youth-club-check-card",
         "finalUrl": "https://m.kbcard.com/cards/check-cards/kb-youth-club-check-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 19,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 970,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "b1d5cd30-2eb6-4796-b573-c67415a31e7f",
+        "comparedAt": "2026-10-19T04:28:47.009Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -258127,16 +257967,16 @@
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.436Z"
+        "createdAt": "2026-10-21T04:31:54.406Z"
       },
       "lastSuccessful": {
-        "checkId": "b1d5cd30-2eb6-4796-b573-c67415a31e7f",
-        "createdAt": "2026-10-19T04:28:47.009Z",
+        "checkId": "dd426384-3032-43f7-8570-00381931532a",
+        "createdAt": "2026-10-21T04:31:54.406Z",
         "hash": "cda2e12f252ca8fa27223ccf33a3f95d12b0e6111a699883b1235b318e1a2d28",
         "tokens": [
           {
@@ -259830,10 +259670,10 @@
     "533221ef-199b-4710-b94e-bc3aab4a1c02": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-15T04:26:01.884Z",
+      "lastChangedAt": "2026-10-21T04:31:51.872Z",
       "latest": {
-        "id": "f4787dec-2f35-4afb-8747-668399c848bb",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "06efcddd-38fe-4a58-98ea-5ae87d9139f4",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "533221ef-199b-4710-b94e-bc3aab4a1c02",
         "targetId": "ccfd1770-4563-4762-823c-5f6aa40a0d3e",
         "targetName": "American Express Blue Card",
@@ -259844,39 +259684,39 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/cards/products/credit-cards/american-express-blue-kb-kookmin-card",
         "finalUrl": "https://card.kbcard.com/cards/products/credit-cards/american-express-blue-kb-kookmin-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 20,
+        "changeStatus": "CHANGED",
+        "responseMs": 381,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "0d5000b5-1395-4510-aab2-45672a7d909f",
+        "comparedAt": "2026-10-19T04:28:44.449Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.392Z"
+        "createdAt": "2026-10-21T04:31:51.872Z"
       },
       "lastSuccessful": {
-        "checkId": "0d5000b5-1395-4510-aab2-45672a7d909f",
-        "createdAt": "2026-10-19T04:28:44.449Z",
-        "hash": "84c3a85da4e15ffa2e37b0963d44236399a53575ace52aefe97ca03d41420024",
+        "checkId": "06efcddd-38fe-4a58-98ea-5ae87d9139f4",
+        "createdAt": "2026-10-21T04:31:51.872Z",
+        "hash": "9aa03d7a3e7cd28dd2fc6038d1297eec62f57adb734ad6a2835a50f80987e14c",
         "tokens": [
           {
             "kind": "title",
@@ -264812,11 +264652,6 @@
             "kind": "text",
             "key": "li",
             "value": "카드 불법모집 신고"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "카드발급서식 음성지원"
           },
           {
             "kind": "text",
@@ -273295,11 +273130,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -274161,8 +273991,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:12.462Z",
       "latest": {
-        "id": "eeef305e-5e37-43d6-8220-cae6094b1961",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "5468bcda-fca2-4fb6-b43b-72c7841cf70d",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "8ea95969-0296-474c-b812-028030be9348",
         "targetId": "ccfd1770-4563-4762-823c-5f6aa40a0d3e",
         "targetName": "American Express Blue Card",
@@ -274173,18 +274003,18 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/cards/credit-cards/american-express-blue-kb-kookmin-card",
         "finalUrl": "https://m.kbcard.com/cards/credit-cards/american-express-blue-kb-kookmin-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 20,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1206,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "73359f2f-907f-4b58-9bd4-7893ebc3c200",
+        "comparedAt": "2026-10-19T04:28:43.400Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -274195,16 +274025,16 @@
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.392Z"
+        "createdAt": "2026-10-21T04:31:52.674Z"
       },
       "lastSuccessful": {
-        "checkId": "73359f2f-907f-4b58-9bd4-7893ebc3c200",
-        "createdAt": "2026-10-19T04:28:43.400Z",
+        "checkId": "5468bcda-fca2-4fb6-b43b-72c7841cf70d",
+        "createdAt": "2026-10-21T04:31:52.674Z",
         "hash": "d54cb95834326384e494c27c5c4c77049fe8da26738a28f801a0bd6b32d19c98",
         "tokens": [
           {
@@ -276013,10 +275843,10 @@
     "1a97e3c9-610d-4931-b785-e625c6caf524": {
       "launchedAt": null,
       "liveCompletedAt": "2026-09-14T07:48:27.619Z",
-      "lastChangedAt": "2026-10-15T04:25:55.279Z",
+      "lastChangedAt": "2026-10-21T04:31:46.274Z",
       "latest": {
-        "id": "7efaae84-4980-411d-867f-1e6559516a7a",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "657a5ede-db59-4f58-b679-3e588f312db6",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "1a97e3c9-610d-4931-b785-e625c6caf524",
         "targetId": "cd5e3359-d077-44de-b423-490719f8a4c1",
         "targetName": "ALL 카드",
@@ -276027,39 +275857,39 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-all-card",
         "finalUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-all-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
-        "headLiveMarkerHtml": null,
-        "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 324,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "LIVE_COMPLETE",
+        "headLiveMarkerFound": true,
+        "bodyLiveMarkerFound": true,
+        "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
+        "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">ALL 카드, 이런 분께 추천드려요</h2>",
+        "changeStatus": "CHANGED",
+        "responseMs": 1600,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "cc24200b-e1d1-448f-a0e4-65d26189b247",
+        "comparedAt": "2026-10-19T04:28:37.396Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.225Z"
+        "createdAt": "2026-10-21T04:31:46.274Z"
       },
       "lastSuccessful": {
-        "checkId": "cc24200b-e1d1-448f-a0e4-65d26189b247",
-        "createdAt": "2026-10-19T04:28:37.396Z",
-        "hash": "0d928ad04590a05821cb30eed2ec912617c052f21ed112c3cf451bb8f5dfa21c",
+        "checkId": "657a5ede-db59-4f58-b679-3e588f312db6",
+        "createdAt": "2026-10-21T04:31:46.274Z",
+        "hash": "aaf0540f9f40a2dbbb31cd254053ff82f7f76ce84c3065c0dd2583881a31941e",
         "tokens": [
           {
             "kind": "title",
@@ -281045,11 +280875,6 @@
             "kind": "text",
             "key": "li",
             "value": "카드 불법모집 신고"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "카드발급서식 음성지원"
           },
           {
             "kind": "text",
@@ -288923,11 +288748,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -289684,8 +289504,8 @@
       "liveCompletedAt": "2026-09-14T07:48:27.840Z",
       "lastChangedAt": "2026-10-02T05:25:04.702Z",
       "latest": {
-        "id": "a0a8e1c3-d018-46c1-afef-c03ef22cf647",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "6a440da7-16ca-4d92-8a04-54e46f38450f",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "cf2d0df6-8b68-49e1-8346-7762096c49ee",
         "targetId": "cd5e3359-d077-44de-b423-490719f8a4c1",
         "targetName": "ALL 카드",
@@ -289696,18 +289516,18 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/cards/credit-cards/kb-all-card",
         "finalUrl": "https://m.kbcard.com/cards/credit-cards/kb-all-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
-        "headLiveMarkerHtml": null,
-        "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 309,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "LIVE_COMPLETE",
+        "headLiveMarkerFound": true,
+        "bodyLiveMarkerFound": true,
+        "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
+        "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">ALL 카드, <br>이런 분께 추천드려요</h2>",
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1809,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "1328a7be-fe3c-46c1-b285-bbcba97989bd",
+        "comparedAt": "2026-10-19T04:28:36.921Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -289718,16 +289538,16 @@
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.222Z"
+        "createdAt": "2026-10-21T04:31:46.394Z"
       },
       "lastSuccessful": {
-        "checkId": "1328a7be-fe3c-46c1-b285-bbcba97989bd",
-        "createdAt": "2026-10-19T04:28:36.921Z",
+        "checkId": "6a440da7-16ca-4d92-8a04-54e46f38450f",
+        "createdAt": "2026-10-21T04:31:46.394Z",
         "hash": "57eb8d57f0ab221cb282cb7fb105d776f269ebf72e5b58cda36b4a8712209117",
         "tokens": [
           {
@@ -292041,10 +291861,10 @@
     "613d02c9-fc0b-4d8d-9a08-517e588ed948": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-15T04:25:58.561Z",
+      "lastChangedAt": "2026-10-21T04:31:49.853Z",
       "latest": {
-        "id": "46460fd7-251e-44a9-a857-b3dcb396b157",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "9037352e-7d9c-4ad8-8be0-2cbf56037b89",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "613d02c9-fc0b-4d8d-9a08-517e588ed948",
         "targetId": "d8815c97-3344-4821-8372-32ff769c023b",
         "targetName": "NEED Pay 카드",
@@ -292055,39 +291875,39 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-need-pay-card",
         "finalUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-need-pay-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 21,
+        "changeStatus": "CHANGED",
+        "responseMs": 1345,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "6b0350d3-f843-4323-898c-d8115e66309f",
+        "comparedAt": "2026-10-19T04:28:40.325Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.332Z"
+        "createdAt": "2026-10-21T04:31:49.853Z"
       },
       "lastSuccessful": {
-        "checkId": "6b0350d3-f843-4323-898c-d8115e66309f",
-        "createdAt": "2026-10-19T04:28:40.325Z",
-        "hash": "623572da39dad819a92bb670904824a8b12d061dcdb1df53f8c02064b74d6e98",
+        "checkId": "9037352e-7d9c-4ad8-8be0-2cbf56037b89",
+        "createdAt": "2026-10-21T04:31:49.853Z",
+        "hash": "a97bd7cdaee4115f5101856bb0457b34b93ac7c9ce475c7cfd2b4fc878f928c6",
         "tokens": [
           {
             "kind": "title",
@@ -297023,11 +296843,6 @@
             "kind": "text",
             "key": "li",
             "value": "카드 불법모집 신고"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "카드발급서식 음성지원"
           },
           {
             "kind": "text",
@@ -305486,11 +305301,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -306342,8 +306152,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:09.815Z",
       "latest": {
-        "id": "3c019801-14d9-417e-bec4-cd343a0a6663",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "c12713eb-7991-42fc-a927-fdd12e7a4829",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "d137fd1e-c1dd-4841-8f54-32513292cd5a",
         "targetId": "d8815c97-3344-4821-8372-32ff769c023b",
         "targetName": "NEED Pay 카드",
@@ -306354,18 +306164,18 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/cards/credit-cards/kb-need-pay-card",
         "finalUrl": "https://m.kbcard.com/cards/credit-cards/kb-need-pay-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 22,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1732,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "da8f4c84-a200-4e30-a95c-f6a7285e39ed",
+        "comparedAt": "2026-10-19T04:28:42.028Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -306376,16 +306186,16 @@
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.336Z"
+        "createdAt": "2026-10-21T04:31:50.154Z"
       },
       "lastSuccessful": {
-        "checkId": "da8f4c84-a200-4e30-a95c-f6a7285e39ed",
-        "createdAt": "2026-10-19T04:28:42.028Z",
+        "checkId": "c12713eb-7991-42fc-a927-fdd12e7a4829",
+        "createdAt": "2026-10-21T04:31:50.154Z",
         "hash": "773702642f9c6657cde66d5d5ea0b9e66e24c0a08fc36585d4d271dce2781844",
         "tokens": [
           {
@@ -308294,10 +308104,10 @@
     "6a0d6408-1c23-4f3b-9f75-2d84729915fa": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-16T04:20:59.754Z",
+      "lastChangedAt": "2026-10-21T04:31:47.303Z",
       "latest": {
-        "id": "00053fa8-1f54-4a67-948b-12243b746e77",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "cd7ca8d8-f039-4cc7-8057-3bbe3431d6fd",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "6a0d6408-1c23-4f3b-9f75-2d84729915fa",
         "targetId": "efb1d0e6-0aeb-4093-84a7-6aed0179f41e",
         "targetName": "YOU Wish 카드",
@@ -308308,39 +308118,39 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-you-wish-card",
         "finalUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-you-wish-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 20,
+        "changeStatus": "CHANGED",
+        "responseMs": 456,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "fcb9fdfb-5b71-43de-9d6f-4b7ef3e785ee",
+        "comparedAt": "2026-10-19T04:28:38.843Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.271Z"
+        "createdAt": "2026-10-21T04:31:47.303Z"
       },
       "lastSuccessful": {
-        "checkId": "fcb9fdfb-5b71-43de-9d6f-4b7ef3e785ee",
-        "createdAt": "2026-10-19T04:28:38.843Z",
-        "hash": "3626a2e628129c6729c3b0dc3827f214478f86598aa1ec871862689b82a9da98",
+        "checkId": "cd7ca8d8-f039-4cc7-8057-3bbe3431d6fd",
+        "createdAt": "2026-10-21T04:31:47.303Z",
+        "hash": "3c2d2e4dd255a9f058baef65f19fe97062eaac14b1eb0a9776902a29dc7985e6",
         "tokens": [
           {
             "kind": "title",
@@ -313276,11 +313086,6 @@
             "kind": "text",
             "key": "li",
             "value": "카드 불법모집 신고"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "카드발급서식 음성지원"
           },
           {
             "kind": "text",
@@ -321519,11 +321324,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -322410,8 +322210,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:06.983Z",
       "latest": {
-        "id": "595f2310-a058-4efa-ada4-bf751ec12c44",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "b7cf57b7-1294-4ff8-8f30-4d503eb28681",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "c159409a-cc42-4ae1-b6a3-9a5fc6e4b6c0",
         "targetId": "efb1d0e6-0aeb-4093-84a7-6aed0179f41e",
         "targetName": "YOU Wish 카드",
@@ -322422,18 +322222,18 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/cards/credit-cards/kb-you-wish-card",
         "finalUrl": "https://m.kbcard.com/cards/credit-cards/kb-you-wish-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 21,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 627,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "258de87e-49f0-4549-9f9b-a31333d13ef8",
+        "comparedAt": "2026-10-19T04:28:38.862Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -322444,16 +322244,16 @@
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.291Z"
+        "createdAt": "2026-10-21T04:31:47.445Z"
       },
       "lastSuccessful": {
-        "checkId": "258de87e-49f0-4549-9f9b-a31333d13ef8",
-        "createdAt": "2026-10-19T04:28:38.862Z",
+        "checkId": "b7cf57b7-1294-4ff8-8f30-4d503eb28681",
+        "createdAt": "2026-10-21T04:31:47.445Z",
         "hash": "a00709672aabe9a2bee21ab60e9debb2abeac510064e6a86d69f3361990c075c",
         "tokens": [
           {
@@ -324292,10 +324092,10 @@
     "14bafd44-2782-4968-911b-291d2acd502e": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-15T04:25:56.610Z",
+      "lastChangedAt": "2026-10-21T04:31:46.903Z",
       "latest": {
-        "id": "d45de5fa-f58c-4b3d-b0ae-49f6a6eb5f71",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "d071730f-b812-4090-913e-14c2c48f416a",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "14bafd44-2782-4968-911b-291d2acd502e",
         "targetId": "f76ab7ec-2473-4bff-8a31-d6d4e7dbe21d",
         "targetName": "YOU With 카드",
@@ -324306,39 +324106,39 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-you-with-card",
         "finalUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-you-with-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 22,
+        "changeStatus": "CHANGED",
+        "responseMs": 523,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "4f6244c4-387d-4ce9-a202-4e180653a59e",
+        "comparedAt": "2026-10-19T04:28:38.606Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.270Z"
+        "createdAt": "2026-10-21T04:31:46.903Z"
       },
       "lastSuccessful": {
-        "checkId": "4f6244c4-387d-4ce9-a202-4e180653a59e",
-        "createdAt": "2026-10-19T04:28:38.606Z",
-        "hash": "e6c57510220f4c29b972cc401e552ad3b107cb81ed83497bc43ca2ef204ac5f7",
+        "checkId": "d071730f-b812-4090-913e-14c2c48f416a",
+        "createdAt": "2026-10-21T04:31:46.903Z",
+        "hash": "b3f79545232a7be79f48f12693f2e5bba2a7308294297d875aa4d77c32d0c328",
         "tokens": [
           {
             "kind": "title",
@@ -329274,11 +329074,6 @@
             "kind": "text",
             "key": "li",
             "value": "카드 불법모집 신고"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "카드발급서식 음성지원"
           },
           {
             "kind": "text",
@@ -337682,11 +337477,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -338543,8 +338333,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:06.525Z",
       "latest": {
-        "id": "7de34549-f590-4870-ac45-a78b968024de",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "8fa696ef-89b4-4934-9831-24d558533a6d",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "446222ae-cda3-454a-9e38-96d18f5cf725",
         "targetId": "f76ab7ec-2473-4bff-8a31-d6d4e7dbe21d",
         "targetName": "YOU With 카드",
@@ -338555,18 +338345,18 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/cards/credit-cards/kb-you-with-card",
         "finalUrl": "https://m.kbcard.com/cards/credit-cards/kb-you-with-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 61,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 523,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "19711961-1609-4eb8-a03e-8b80f7b4d739",
+        "comparedAt": "2026-10-19T04:28:37.983Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -338577,16 +338367,16 @@
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.310Z"
+        "createdAt": "2026-10-21T04:31:46.940Z"
       },
       "lastSuccessful": {
-        "checkId": "19711961-1609-4eb8-a03e-8b80f7b4d739",
-        "createdAt": "2026-10-19T04:28:37.983Z",
+        "checkId": "8fa696ef-89b4-4934-9831-24d558533a6d",
+        "createdAt": "2026-10-21T04:31:46.940Z",
         "hash": "5150729fcb8ab67d58fb5a17811013c7e515c2a752336efbc7b1292ddbb88512",
         "tokens": [
           {
@@ -340465,10 +340255,10 @@
     "01b3f6d5-d2f3-46f9-b9dd-9fb1e43d30a4": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-15T04:26:00.993Z",
+      "lastChangedAt": "2026-10-21T04:31:51.686Z",
       "latest": {
-        "id": "c0ee135e-f9f2-4dee-ba7e-dfb69266971d",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "bf3b43da-bf8a-4be4-b8bc-015ae888ff17",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "01b3f6d5-d2f3-46f9-b9dd-9fb1e43d30a4",
         "targetId": "ffce3167-72d1-488c-ab2e-f65d740df310",
         "targetName": "스카이패스 티타늄카드",
@@ -340479,39 +340269,39 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-skypass-titanium-card",
         "finalUrl": "https://card.kbcard.com/cards/products/credit-cards/kb-skypass-titanium-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 20,
+        "changeStatus": "CHANGED",
+        "responseMs": 1159,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "ab68e0c1-706d-4735-b756-24b9ae3bbd2b",
+        "comparedAt": "2026-10-19T04:28:42.795Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.372Z"
+        "createdAt": "2026-10-21T04:31:51.686Z"
       },
       "lastSuccessful": {
-        "checkId": "ab68e0c1-706d-4735-b756-24b9ae3bbd2b",
-        "createdAt": "2026-10-19T04:28:42.795Z",
-        "hash": "b212ffe4ca2c2e5d884d9e67ce916934efd92a7b75924c0325ce66f2d8919777",
+        "checkId": "bf3b43da-bf8a-4be4-b8bc-015ae888ff17",
+        "createdAt": "2026-10-21T04:31:51.686Z",
+        "hash": "fb5971b3a6617bbf4b381b1edc99eabcddcbf902574dac067eac4e8b46a570f1",
         "tokens": [
           {
             "kind": "title",
@@ -345447,11 +345237,6 @@
             "kind": "text",
             "key": "li",
             "value": "카드 불법모집 신고"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "카드발급서식 음성지원"
           },
           {
             "kind": "text",
@@ -353445,11 +353230,6 @@
           },
           {
             "kind": "link",
-            "key": "카드발급서식 음성지원",
-            "value": "https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007"
-          },
-          {
-            "kind": "link",
             "key": "개인신용카드 발급기준 공시",
             "value": "https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTCD0007"
           },
@@ -354291,8 +354071,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:12.377Z",
       "latest": {
-        "id": "ce438329-c2d9-4744-98eb-635ea61559cc",
-        "runId": "0da8f3a0-4903-4874-bf1e-fbd33f0948e6",
+        "id": "112fc777-414c-4be6-8511-9eacf878024f",
+        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
         "endpointId": "57a99be1-efa7-46ec-85b1-ffa0cbcbfc2a",
         "targetId": "ffce3167-72d1-488c-ab2e-f65d740df310",
         "targetName": "스카이패스 티타늄카드",
@@ -354303,18 +354083,18 @@
         "retiredAt": null,
         "requestedUrl": "https://m.kbcard.com/cards/credit-cards/kb-skypass-titanium-card",
         "finalUrl": "https://m.kbcard.com/cards/credit-cards/kb-skypass-titanium-card",
-        "httpStatus": 403,
-        "availabilityStatus": "UNAVAILABLE",
-        "liveStatus": "UNVERIFIED",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
+        "httpStatus": 200,
+        "availabilityStatus": "LIVE",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": false,
+        "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 21,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1064,
         "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
+        "comparedCheckId": "1bce4cf6-5c8d-4ca3-b52a-2dae509177ee",
+        "comparedAt": "2026-10-19T04:28:42.967Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -354325,16 +354105,16 @@
             "ruleType": "HTTP_STATUS",
             "ruleLabel": "HTTP 200",
             "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "FAIL",
-            "actualValue": "403",
-            "message": "기대 상태: 200"
+            "status": "PASS",
+            "actualValue": "200",
+            "message": null
           }
         ],
-        "createdAt": "2026-10-20T04:39:01.377Z"
+        "createdAt": "2026-10-21T04:31:51.580Z"
       },
       "lastSuccessful": {
-        "checkId": "1bce4cf6-5c8d-4ca3-b52a-2dae509177ee",
-        "createdAt": "2026-10-19T04:28:42.967Z",
+        "checkId": "112fc777-414c-4be6-8511-9eacf878024f",
+        "createdAt": "2026-10-21T04:31:51.580Z",
         "hash": "f5e0b6cfcfa5bdc0dd4bcf5b4692f485a0e44ca380607ea7cb3fe1a878747146",
         "tokens": [
           {
