@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-21T04:31:55.580Z",
+  "updatedAt": "2026-10-22T04:30:40.699Z",
   "endpoints": {
     "c926ec76-812d-4877-b8cd-10f16272aeba": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-21T04:31:55.332Z",
+      "lastChangedAt": "2026-10-22T04:30:40.324Z",
       "latest": {
-        "id": "5dd80d2b-e0a8-4f9a-9a81-644f8746dece",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "da7f92ca-9076-42e4-b89e-aa92ebef7631",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "c926ec76-812d-4877-b8cd-10f16272aeba",
         "targetId": "014f6ae8-f8af-4234-9976-8e1b4ecbb511",
         "targetName": "국민행복카드",
@@ -27,15 +27,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 827,
+        "responseMs": 961,
         "errorMessage": null,
-        "comparedCheckId": "81c451d1-b9c1-4ec9-93ae-3bab3f3c6be0",
-        "comparedAt": "2026-10-19T04:28:47.921Z",
+        "comparedCheckId": "5dd80d2b-e0a8-4f9a-9a81-644f8746dece",
+        "comparedAt": "2026-10-21T04:31:55.332Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 2,
         "bodyRemovedCount": 4,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"(* 온라인 : 국민행복몰, KB Pay > 쇼핑, 여행 > 쇼핑메뉴 > 스페셜스토어 > 국민행복바우처, 쿠팡(국민행복카드), 네이버 플러스 스토어(국민행복카드 바우처 전용관) / 오프라인 : GS25, 세븐일레븐, 이마트, 트레이더스, 노브랜드, 이마트 에브리데이)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"(* 온라인 : 국민행복몰, KB Pay 국민행복바우처 > 쇼핑, 여행 > 쇼핑메뉴 > 스페셜스토어 > 국민행복바우처, 쿠팡(국민행복카드), 네이버 플러스 스토어(국민행복카드 바우처 전용관) / 오프라인 : GS25, CU, 세븐일레븐, 다이소, 이마트, 트레이더스, 노브랜드, 이마트 에브리데이, 하나로마트) - 다이소는 쇼핑몰 내 입점매장 등 일부 매장 제외\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"(* 온라인 : 국민행복몰, KB Pay > 쇼핑, 여행 > 쇼핑메뉴 > 스페셜스토어 > 국민행복바우처, 쿠팡(국민행복카드) / 오프라인 : GS25, 세븐일레븐, 이마트, 트레이더스, 노브랜드, 이마트 에브리데이)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"(* 온라인 : 국민행복몰, KB Pay > 쇼핑, 여행 > 쇼핑메뉴 > 스페셜스토어 > 국민행복바우처, 쿠팡(국민행복카드) / 오프라인 : GS25, CU, 세븐일레븐, 다이소, 이마트, 트레이더스, 노브랜드, 이마트 에브리데이, 하나로마트) - 다이소는 쇼핑몰 내 입점매장 등 일부 매장 제외\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"(* 온라인 : 국민행복몰, KB Pay > 쇼핑, 여행 > 쇼핑메뉴 > 스페셜스토어 > 국민행복바우처, 쿠팡(국민행복카드), 네이버 플러스 스토어(국민행복카드 전용관) / 오프라인 : GS25, 세븐일레븐, 이마트, 트레이더스, 노브랜드, 이마트 에브리데이)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"(* 온라인 : 국민행복몰, KB Pay 국민행복바우처 > 쇼핑, 여행 > 쇼핑메뉴 > 스페셜스토어 > 국민행복바우처, 쿠팡(국민행복카드), 네이버 플러스 스토어(국민행복카드 전용관) / 오프라인 : GS25, CU, 세븐일레븐, 다이소, 이마트, 트레이더스, 노브랜드, 이마트 에브리데이, 하나로마트) - 다이소는 쇼핑몰 내 입점매장 등 일부 매장 제외\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"(* 온라인 : 국민행복몰, KB Pay > 쇼핑, 여행 > 쇼핑메뉴 > 스페셜스토어 > 국민행복바우처, 쿠팡(국민행복카드), 네이버 플러스 스토어(국민행복카드 바우처 전용관) / 오프라인 : GS25, 세븐일레븐, 이마트, 트레이더스, 노브랜드, 이마트 에브리데이)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"(* 온라인 : 국민행복몰, KB Pay 국민행복바우처 > 쇼핑, 여행 > 쇼핑메뉴 > 스페셜스토어 > 국민행복바우처, 쿠팡(국민행복카드), 네이버 플러스 스토어(국민행복카드 바우처 전용관) / 오프라인 : GS25, CU, 세븐일레븐, 다이소, 이마트, 트레이더스, 노브랜드, 이마트 에브리데이, 하나로마트) - 다이소는 쇼핑몰 내 입점매장 등 일부 매장 제외\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -46,12 +46,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:55.332Z"
+        "createdAt": "2026-10-22T04:30:40.324Z"
       },
       "lastSuccessful": {
-        "checkId": "5dd80d2b-e0a8-4f9a-9a81-644f8746dece",
-        "createdAt": "2026-10-21T04:31:55.332Z",
-        "hash": "9cf2dca408ca8b70897988be599687591c380123df1a25c75faabd4ba503050f",
+        "checkId": "da7f92ca-9076-42e4-b89e-aa92ebef7631",
+        "createdAt": "2026-10-22T04:30:40.324Z",
+        "hash": "bf302f16e66e2892dab458d08743cef1e4922b7f6971a4ee99995ba118c71ff4",
         "tokens": [
           {
             "kind": "title",
@@ -3996,11 +3996,6 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "올리스한도조회"
-          },
-          {
-            "kind": "text",
-            "key": "li",
             "value": "금리인하요구권"
           },
           {
@@ -5761,7 +5756,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "(* 온라인 : 국민행복몰, KB Pay > 쇼핑, 여행 > 쇼핑메뉴 > 스페셜스토어 > 국민행복바우처, 쿠팡(국민행복카드), 네이버 플러스 스토어(국민행복카드 바우처 전용관) / 오프라인 : GS25, 세븐일레븐, 이마트, 트레이더스, 노브랜드, 이마트 에브리데이)"
+            "value": "(* 온라인 : 국민행복몰, KB Pay > 쇼핑, 여행 > 쇼핑메뉴 > 스페셜스토어 > 국민행복바우처, 쿠팡(국민행복카드), 네이버 플러스 스토어(국민행복카드 전용관) / 오프라인 : GS25, 세븐일레븐, 이마트, 트레이더스, 노브랜드, 이마트 에브리데이)"
           },
           {
             "kind": "heading",
@@ -5796,7 +5791,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "(* 온라인 : 국민행복몰, KB Pay 국민행복바우처 > 쇼핑, 여행 > 쇼핑메뉴 > 스페셜스토어 > 국민행복바우처, 쿠팡(국민행복카드), 네이버 플러스 스토어(국민행복카드 바우처 전용관) / 오프라인 : GS25, CU, 세븐일레븐, 다이소, 이마트, 트레이더스, 노브랜드, 이마트 에브리데이, 하나로마트) - 다이소는 쇼핑몰 내 입점매장 등 일부 매장 제외"
+            "value": "(* 온라인 : 국민행복몰, KB Pay 국민행복바우처 > 쇼핑, 여행 > 쇼핑메뉴 > 스페셜스토어 > 국민행복바우처, 쿠팡(국민행복카드), 네이버 플러스 스토어(국민행복카드 전용관) / 오프라인 : GS25, CU, 세븐일레븐, 다이소, 이마트, 트레이더스, 노브랜드, 이마트 에브리데이, 하나로마트) - 다이소는 쇼핑몰 내 입점매장 등 일부 매장 제외"
           },
           {
             "kind": "heading",
@@ -12385,11 +12380,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -14376,8 +14366,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:16.120Z",
       "latest": {
-        "id": "7c5045f4-e6d2-4b92-bb4b-a1a3aef984be",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "819550fb-f738-4c31-8e54-5a312d222d39",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "7b6cf907-d2fc-4161-a9c1-7327da1b8c12",
         "targetId": "014f6ae8-f8af-4234-9976-8e1b4ecbb511",
         "targetName": "국민행복카드",
@@ -14396,10 +14386,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 399,
+        "responseMs": 916,
         "errorMessage": null,
-        "comparedCheckId": "16154f47-cf9e-421e-9b5d-1b916bc1bd1d",
-        "comparedAt": "2026-10-19T04:28:48.622Z",
+        "comparedCheckId": "7c5045f4-e6d2-4b92-bb4b-a1a3aef984be",
+        "comparedAt": "2026-10-21T04:31:54.988Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -14415,11 +14405,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:54.988Z"
+        "createdAt": "2026-10-22T04:30:40.437Z"
       },
       "lastSuccessful": {
-        "checkId": "7c5045f4-e6d2-4b92-bb4b-a1a3aef984be",
-        "createdAt": "2026-10-21T04:31:54.988Z",
+        "checkId": "819550fb-f738-4c31-8e54-5a312d222d39",
+        "createdAt": "2026-10-22T04:30:40.437Z",
         "hash": "e4a05a511ac23184bbdc49d34bd6467f5946d71a55c77f008d78ff291d22f8ee",
         "tokens": [
           {
@@ -16113,10 +16103,10 @@
     "01ed00fd-e36a-480d-ab73-d80aaab6cb65": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-21T04:31:54.567Z",
+      "lastChangedAt": "2026-10-22T04:30:39.989Z",
       "latest": {
-        "id": "0f207d3f-15d4-488e-9736-6dac4d7e24ea",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "1257f45d-8088-42e0-9ac5-227510ccf8ce",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "01ed00fd-e36a-480d-ab73-d80aaab6cb65",
         "targetId": "03bb23e7-bb86-4574-8e13-1b46baece17c",
         "targetName": "트래블러스 체크카드",
@@ -16135,15 +16125,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 545,
+        "responseMs": 1070,
         "errorMessage": null,
-        "comparedCheckId": "26664d17-2bf4-46d2-9ae5-edf5f281e9f9",
-        "comparedAt": "2026-10-19T04:28:46.984Z",
+        "comparedCheckId": "0f207d3f-15d4-488e-9736-6dac4d7e24ea",
+        "comparedAt": "2026-10-21T04:31:54.567Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
         "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -16154,12 +16144,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:54.567Z"
+        "createdAt": "2026-10-22T04:30:39.989Z"
       },
       "lastSuccessful": {
-        "checkId": "0f207d3f-15d4-488e-9736-6dac4d7e24ea",
-        "createdAt": "2026-10-21T04:31:54.567Z",
-        "hash": "c7bcf14c70af0e57f925f94c2234f96a33b28a8695b355f18fe2fe6f2b56d806",
+        "checkId": "1257f45d-8088-42e0-9ac5-227510ccf8ce",
+        "createdAt": "2026-10-22T04:30:39.989Z",
+        "hash": "aea1279d5c810d8db26648a9025eae13ad74a79a3829d9e62510aed74714d1e9",
         "tokens": [
           {
             "kind": "title",
@@ -20100,11 +20090,6 @@
             "kind": "text",
             "key": "li",
             "value": "리스금융소개"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "올리스한도조회"
           },
           {
             "kind": "text",
@@ -29388,11 +29373,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -31504,8 +31484,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:15.268Z",
       "latest": {
-        "id": "177a089d-efb4-4b1d-aa75-cf17ac374f61",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "3784b059-a1e9-4269-a558-3fe404c69746",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "db9539a0-6221-4363-9eb5-708ca00e4f35",
         "targetId": "03bb23e7-bb86-4574-8e13-1b46baece17c",
         "targetName": "트래블러스 체크카드",
@@ -31524,10 +31504,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1113,
+        "responseMs": 616,
         "errorMessage": null,
-        "comparedCheckId": "83818ebb-9fe3-42a3-96ac-337a0ec0278a",
-        "comparedAt": "2026-10-19T04:28:47.943Z",
+        "comparedCheckId": "177a089d-efb4-4b1d-aa75-cf17ac374f61",
+        "comparedAt": "2026-10-21T04:31:55.431Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -31543,11 +31523,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:55.431Z"
+        "createdAt": "2026-10-22T04:30:39.678Z"
       },
       "lastSuccessful": {
-        "checkId": "177a089d-efb4-4b1d-aa75-cf17ac374f61",
-        "createdAt": "2026-10-21T04:31:55.431Z",
+        "checkId": "3784b059-a1e9-4269-a558-3fe404c69746",
+        "createdAt": "2026-10-22T04:30:39.678Z",
         "hash": "1dadf2277cc9f7ebd38fe8eb54964e221287ace9ee607372aab22bd037b12eee",
         "tokens": [
           {
@@ -33396,10 +33376,10 @@
     "8fbc38b1-9e91-48b5-b48c-6a8b52dea42c": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-21T04:31:52.642Z",
+      "lastChangedAt": "2026-10-22T04:30:38.094Z",
       "latest": {
-        "id": "f93544bd-d112-46ae-acb6-ff879484fd19",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "d5974978-2a31-446e-bb6c-0b9aa57c8623",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "8fbc38b1-9e91-48b5-b48c-6a8b52dea42c",
         "targetId": "11160efa-eca7-4b83-a8db-13cea9e8e74e",
         "targetName": "HERITAGE Classic(할인형)",
@@ -33418,15 +33398,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 960,
+        "responseMs": 1974,
         "errorMessage": null,
-        "comparedCheckId": "f62bb57b-99a5-4797-95e2-bf86328de87d",
-        "comparedAt": "2026-10-19T04:28:44.714Z",
+        "comparedCheckId": "f93544bd-d112-46ae-acb6-ff879484fd19",
+        "comparedAt": "2026-10-21T04:31:52.642Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
         "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -33437,12 +33417,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:52.642Z"
+        "createdAt": "2026-10-22T04:30:38.094Z"
       },
       "lastSuccessful": {
-        "checkId": "f93544bd-d112-46ae-acb6-ff879484fd19",
-        "createdAt": "2026-10-21T04:31:52.642Z",
-        "hash": "8cff55f0ea27bcdc6e95a3ccbdcdc90b7d026c8d238cb228d5257b72a83986ed",
+        "checkId": "d5974978-2a31-446e-bb6c-0b9aa57c8623",
+        "createdAt": "2026-10-22T04:30:38.094Z",
+        "hash": "7fdde224333d51f471485db0dc3b07994e2ae30705093f64b1ab161f357dac1b",
         "tokens": [
           {
             "kind": "title",
@@ -37383,11 +37363,6 @@
             "kind": "text",
             "key": "li",
             "value": "리스금융소개"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "올리스한도조회"
           },
           {
             "kind": "text",
@@ -46126,11 +46101,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -48227,8 +48197,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:13.438Z",
       "latest": {
-        "id": "2eee2e3e-caa2-489f-b972-4930aaac43e1",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "cdcf3046-d3e0-4e8b-8b2d-510eccf0d94b",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "3a605dd0-af28-4d8f-a524-841baf470b44",
         "targetId": "11160efa-eca7-4b83-a8db-13cea9e8e74e",
         "targetName": "HERITAGE Classic(할인형)",
@@ -48247,10 +48217,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 507,
+        "responseMs": 447,
         "errorMessage": null,
-        "comparedCheckId": "30db6cf2-4822-4af7-a50c-88286f32dae7",
-        "comparedAt": "2026-10-19T04:28:44.071Z",
+        "comparedCheckId": "2eee2e3e-caa2-489f-b972-4930aaac43e1",
+        "comparedAt": "2026-10-21T04:31:52.217Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -48266,11 +48236,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:52.217Z"
+        "createdAt": "2026-10-22T04:30:36.615Z"
       },
       "lastSuccessful": {
-        "checkId": "2eee2e3e-caa2-489f-b972-4930aaac43e1",
-        "createdAt": "2026-10-21T04:31:52.217Z",
+        "checkId": "cdcf3046-d3e0-4e8b-8b2d-510eccf0d94b",
+        "createdAt": "2026-10-22T04:30:36.615Z",
         "hash": "67f45631c91131d89017d25e8d72c122e5618c0fb8b26ab46cdb102237d15858",
         "tokens": [
           {
@@ -50116,8 +50086,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "00224c58-da23-46dd-99b1-4b1bcf88c194",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "8c2d055d-b344-45a3-9a09-365b15c6f451",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "eb3ccb9d-1f8c-4db8-9ee9-55712c3dc236",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -50136,7 +50106,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 144,
+        "responseMs": 192,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -50155,17 +50125,17 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-21T04:31:52.786Z"
+        "createdAt": "2026-10-22T04:30:37.413Z"
       },
       "lastSuccessful": null
     },
     "19d614e270d3eff5121073206cce5ab8": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-21T04:31:53.911Z",
+      "lastChangedAt": "2026-10-22T04:30:37.952Z",
       "latest": {
-        "id": "2456f7a7-bfa4-4637-9993-36eda18f7cbc",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "6f9f3169-8522-45c1-afc4-23cb24f3e3f5",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "19d614e270d3eff5121073206cce5ab8",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -50184,15 +50154,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 1149,
+        "responseMs": 411,
         "errorMessage": null,
-        "comparedCheckId": "fb1e7d55-d18a-449b-987c-c10260ce4788",
-        "comparedAt": "2026-10-19T04:28:45.559Z",
+        "comparedCheckId": "2456f7a7-bfa4-4637-9993-36eda18f7cbc",
+        "comparedAt": "2026-10-21T04:31:53.911Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
         "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -50203,12 +50173,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:53.911Z"
+        "createdAt": "2026-10-22T04:30:37.952Z"
       },
       "lastSuccessful": {
-        "checkId": "2456f7a7-bfa4-4637-9993-36eda18f7cbc",
-        "createdAt": "2026-10-21T04:31:53.911Z",
-        "hash": "a705f85a24bf46f4c73d0fdd0e07445b771fb23db3f3af46bbe5a13fb4f68f26",
+        "checkId": "6f9f3169-8522-45c1-afc4-23cb24f3e3f5",
+        "createdAt": "2026-10-22T04:30:37.952Z",
+        "hash": "bd07c926b0ac57718f5bed0ca9d8aefcdafbd3613af522bbc10ed7390f483614",
         "tokens": [
           {
             "kind": "title",
@@ -54149,11 +54119,6 @@
             "kind": "text",
             "key": "li",
             "value": "리스금융소개"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "올리스한도조회"
           },
           {
             "kind": "text",
@@ -62837,11 +62802,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -64968,8 +64928,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "0a3772e0-16b1-447c-9d26-895791b8b214",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "85e2532d-420d-4fc2-96cf-1b1680d0396d",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "52619742-f91b-43b9-8ef3-8cb08631642e",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -64988,7 +64948,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 141,
+        "responseMs": 189,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -65007,7 +64967,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-21T04:31:52.928Z"
+        "createdAt": "2026-10-22T04:30:37.795Z"
       },
       "lastSuccessful": null
     },
@@ -65016,8 +64976,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:14.605Z",
       "latest": {
-        "id": "26a83a09-8ee3-418b-9577-14d8bd0e4801",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "05f0fda8-b428-4bf5-a476-45817b5da71e",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "374ae896ab07fb4b7c98af6100c41f92",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -65036,10 +64996,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 453,
+        "responseMs": 613,
         "errorMessage": null,
-        "comparedCheckId": "76e53696-8c08-4e1f-bc82-17fc9d810941",
-        "comparedAt": "2026-10-19T04:28:45.870Z",
+        "comparedCheckId": "26a83a09-8ee3-418b-9577-14d8bd0e4801",
+        "comparedAt": "2026-10-21T04:31:53.415Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -65055,11 +65015,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:53.415Z"
+        "createdAt": "2026-10-22T04:30:38.446Z"
       },
       "lastSuccessful": {
-        "checkId": "26a83a09-8ee3-418b-9577-14d8bd0e4801",
-        "createdAt": "2026-10-21T04:31:53.415Z",
+        "checkId": "05f0fda8-b428-4bf5-a476-45817b5da71e",
+        "createdAt": "2026-10-22T04:30:38.446Z",
         "hash": "3e60d52126465f8844ce7bbeafca043d034f8272d8d0b4e6be446c8ed0d5e6c4",
         "tokens": [
           {
@@ -66753,10 +66713,10 @@
     "51572952-d474-4b43-9b5b-4e00ccf2a9ba": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-21T04:31:48.361Z",
+      "lastChangedAt": "2026-10-22T04:30:31.912Z",
       "latest": {
-        "id": "7c43c584-23ef-45f4-8e9f-9c06a7882748",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "25e51c13-4d3c-43d1-969c-1aab07232891",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "51572952-d474-4b43-9b5b-4e00ccf2a9ba",
         "targetId": "2fb8b880-93e1-4958-b06b-0e4c1919ec75",
         "targetName": "NEED Edu카드",
@@ -66775,15 +66735,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 950,
+        "responseMs": 835,
         "errorMessage": null,
-        "comparedCheckId": "4ab1fd1b-603e-4a20-bcde-78205336ce32",
-        "comparedAt": "2026-10-19T04:28:39.874Z",
+        "comparedCheckId": "7c43c584-23ef-45f4-8e9f-9c06a7882748",
+        "comparedAt": "2026-10-21T04:31:48.361Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
         "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -66794,12 +66754,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:48.361Z"
+        "createdAt": "2026-10-22T04:30:31.912Z"
       },
       "lastSuccessful": {
-        "checkId": "7c43c584-23ef-45f4-8e9f-9c06a7882748",
-        "createdAt": "2026-10-21T04:31:48.361Z",
-        "hash": "8154628d943f683e7e8c97d40ec1c007377ba062f1a102b2c173121a661ad6d7",
+        "checkId": "25e51c13-4d3c-43d1-969c-1aab07232891",
+        "createdAt": "2026-10-22T04:30:31.912Z",
+        "hash": "1a99e5fc9d247f8e2f55dee339e8df8fab54db30d5364020d9d62537b61ad485",
         "tokens": [
           {
             "kind": "title",
@@ -70740,11 +70700,6 @@
             "kind": "text",
             "key": "li",
             "value": "리스금융소개"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "올리스한도조회"
           },
           {
             "kind": "text",
@@ -78458,11 +78413,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -80399,8 +80349,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:08.896Z",
       "latest": {
-        "id": "d816389d-aaa9-4289-be34-8e14c95f4954",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "b74f40c0-0fb5-46c0-9653-60a9c316d031",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "83cb96fd-4bfc-4f6a-9dfb-9833b941448e",
         "targetId": "2fb8b880-93e1-4958-b06b-0e4c1919ec75",
         "targetName": "NEED Edu카드",
@@ -80419,10 +80369,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 424,
+        "responseMs": 1007,
         "errorMessage": null,
-        "comparedCheckId": "ad034bd3-bae8-4ec0-afda-64178c7aa48e",
-        "comparedAt": "2026-10-19T04:28:40.385Z",
+        "comparedCheckId": "d816389d-aaa9-4289-be34-8e14c95f4954",
+        "comparedAt": "2026-10-21T04:31:47.908Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -80438,11 +80388,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:47.908Z"
+        "createdAt": "2026-10-22T04:30:32.291Z"
       },
       "lastSuccessful": {
-        "checkId": "d816389d-aaa9-4289-be34-8e14c95f4954",
-        "createdAt": "2026-10-21T04:31:47.908Z",
+        "checkId": "b74f40c0-0fb5-46c0-9653-60a9c316d031",
+        "createdAt": "2026-10-22T04:30:32.291Z",
         "hash": "a626b3370f6e9ba10cf0296a9fa76fbb7b60726abb5a679b9c05a3fe1b75447e",
         "tokens": [
           {
@@ -82301,10 +82251,10 @@
     "70e8f0ed-244e-480d-b5de-ce9e698c2652": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-21T04:31:50.308Z",
+      "lastChangedAt": "2026-10-22T04:30:35.007Z",
       "latest": {
-        "id": "36207957-817a-4b5c-95da-3a947b01686e",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "8c328f10-8b38-4911-aae2-1fb8835f38e0",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "70e8f0ed-244e-480d-b5de-ce9e698c2652",
         "targetId": "6bf242ce-9823-4510-bb63-e9bd0c5ee0ba",
         "targetName": "My WE:SH 카드",
@@ -82323,15 +82273,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 504,
+        "responseMs": 1939,
         "errorMessage": null,
-        "comparedCheckId": "5286635c-5e1d-481b-8835-fda396df7d68",
-        "comparedAt": "2026-10-19T04:28:42.718Z",
+        "comparedCheckId": "36207957-817a-4b5c-95da-3a947b01686e",
+        "comparedAt": "2026-10-21T04:31:50.308Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
         "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -82342,12 +82292,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:50.308Z"
+        "createdAt": "2026-10-22T04:30:35.007Z"
       },
       "lastSuccessful": {
-        "checkId": "36207957-817a-4b5c-95da-3a947b01686e",
-        "createdAt": "2026-10-21T04:31:50.308Z",
-        "hash": "13a386a03bded7b51db23e4d1f7e5c06e22ed88302d535015083844a36735a4e",
+        "checkId": "8c328f10-8b38-4911-aae2-1fb8835f38e0",
+        "createdAt": "2026-10-22T04:30:35.007Z",
+        "hash": "a6fa28af078b7e37fa9178cb34200c58cbdade97b47f6797ff057ef492fdd9ff",
         "tokens": [
           {
             "kind": "title",
@@ -86288,11 +86238,6 @@
             "kind": "text",
             "key": "li",
             "value": "리스금융소개"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "올리스한도조회"
           },
           {
             "kind": "text",
@@ -94386,11 +94331,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -96437,8 +96377,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:10.458Z",
       "latest": {
-        "id": "9d15285d-b3e1-4490-a2c7-5e4d5ec47316",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "7f5c70af-a3a2-482d-a4b1-2c7909e04db9",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "8ebd43ae-830a-4ea9-89a8-db087f92b159",
         "targetId": "6bf242ce-9823-4510-bb63-e9bd0c5ee0ba",
         "targetName": "My WE:SH 카드",
@@ -96457,10 +96397,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 556,
+        "responseMs": 399,
         "errorMessage": null,
-        "comparedCheckId": "13c442d0-771f-40f5-9e06-774c5a47840e",
-        "comparedAt": "2026-10-19T04:28:43.002Z",
+        "comparedCheckId": "9d15285d-b3e1-4490-a2c7-5e4d5ec47316",
+        "comparedAt": "2026-10-21T04:31:50.431Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -96476,11 +96416,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:50.431Z"
+        "createdAt": "2026-10-22T04:30:33.634Z"
       },
       "lastSuccessful": {
-        "checkId": "9d15285d-b3e1-4490-a2c7-5e4d5ec47316",
-        "createdAt": "2026-10-21T04:31:50.431Z",
+        "checkId": "7f5c70af-a3a2-482d-a4b1-2c7909e04db9",
+        "createdAt": "2026-10-22T04:30:33.634Z",
         "hash": "c9ea354b02adf03e9386184fb0252afb5c091414b48967ed45d6f1db85d73531",
         "tokens": [
           {
@@ -98359,10 +98299,10 @@
     "64453981-5ab0-4e5f-ad30-9e8f9102413d": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-21T04:31:45.700Z",
+      "lastChangedAt": "2026-10-22T04:30:28.702Z",
       "latest": {
-        "id": "2b6b4faa-daa7-41a3-bff9-b659d760185e",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "5cc93fa3-088b-44b7-97dc-7e43fd1f71a7",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "64453981-5ab0-4e5f-ad30-9e8f9102413d",
         "targetId": "6c97d1ef-282c-421a-a4e8-2094a212838e",
         "targetName": "ALL point 카드",
@@ -98381,15 +98321,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 912,
+        "responseMs": 2171,
         "errorMessage": null,
-        "comparedCheckId": "b39ae037-4b89-465a-89f8-5d1d7b2f3376",
-        "comparedAt": "2026-10-19T04:28:37.493Z",
+        "comparedCheckId": "2b6b4faa-daa7-41a3-bff9-b659d760185e",
+        "comparedAt": "2026-10-21T04:31:45.700Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
         "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -98400,12 +98340,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:45.700Z"
+        "createdAt": "2026-10-22T04:30:28.702Z"
       },
       "lastSuccessful": {
-        "checkId": "2b6b4faa-daa7-41a3-bff9-b659d760185e",
-        "createdAt": "2026-10-21T04:31:45.700Z",
-        "hash": "f1d0ebd91e0f22acd68aa8b0028242c5c8839256d99189666cc141e25081c762",
+        "checkId": "5cc93fa3-088b-44b7-97dc-7e43fd1f71a7",
+        "createdAt": "2026-10-22T04:30:28.702Z",
+        "hash": "acb702743e5d353a459714d8b759df1e5f7d7e6753b7833a9a494e099dea82f5",
         "tokens": [
           {
             "kind": "title",
@@ -102346,11 +102286,6 @@
             "kind": "text",
             "key": "li",
             "value": "리스금융소개"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "올리스한도조회"
           },
           {
             "kind": "text",
@@ -110284,11 +110219,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -112340,8 +112270,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:05.451Z",
       "latest": {
-        "id": "db4e5395-4445-4318-8eaf-295665f93959",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "d19afa1c-c463-4ca9-a6ba-645acd577600",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "1c5ac6ba-dd55-4713-af80-eda4dac245f7",
         "targetId": "6c97d1ef-282c-421a-a4e8-2094a212838e",
         "targetName": "ALL point 카드",
@@ -112360,10 +112290,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1541,
+        "responseMs": 2113,
         "errorMessage": null,
-        "comparedCheckId": "0e09db96-4baf-4937-8716-bce1c7874b8e",
-        "comparedAt": "2026-10-19T04:28:36.959Z",
+        "comparedCheckId": "db4e5395-4445-4318-8eaf-295665f93959",
+        "comparedAt": "2026-10-21T04:31:46.137Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -112379,11 +112309,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:46.137Z"
+        "createdAt": "2026-10-22T04:30:28.554Z"
       },
       "lastSuccessful": {
-        "checkId": "db4e5395-4445-4318-8eaf-295665f93959",
-        "createdAt": "2026-10-21T04:31:46.137Z",
+        "checkId": "d19afa1c-c463-4ca9-a6ba-645acd577600",
+        "createdAt": "2026-10-22T04:30:28.554Z",
         "hash": "566e5283b39ab37731fdff52d28dc8b9cca65f5c8594dd383c230a7a5709845e",
         "tokens": [
           {
@@ -114284,8 +114214,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "1f759625-6873-4f88-9953-89f30f7225ad",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "429e2c45-b901-4b40-962c-461ac89b1c64",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "de405dc7-0a5c-4d1e-9d93-1028db2686c8",
         "targetId": "763c388b-d1bd-4949-9a3f-4fbabe4d3c37",
         "targetName": "서비스",
@@ -114304,7 +114234,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 409,
+        "responseMs": 360,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -114323,17 +114253,17 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-21T04:31:55.149Z"
+        "createdAt": "2026-10-22T04:30:40.038Z"
       },
       "lastSuccessful": null
     },
     "ccd04d1d7fbc346be2a4dd4dd93069c1": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-21T04:31:55.400Z",
+      "lastChangedAt": "2026-10-22T04:30:40.408Z",
       "latest": {
-        "id": "122e6e44-10c3-47d4-809a-dbcb05cd2504",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "4546d677-00c9-401d-8d27-29e387f9a4ca",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "ccd04d1d7fbc346be2a4dd4dd93069c1",
         "targetId": "763c388b-d1bd-4949-9a3f-4fbabe4d3c37",
         "targetName": "서비스",
@@ -114352,15 +114282,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 346,
+        "responseMs": 338,
         "errorMessage": null,
-        "comparedCheckId": "0cc334ae-7184-4c26-b94b-cf50c746d873",
-        "comparedAt": "2026-10-19T04:28:48.220Z",
+        "comparedCheckId": "122e6e44-10c3-47d4-809a-dbcb05cd2504",
+        "comparedAt": "2026-10-21T04:31:55.400Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
         "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -114371,12 +114301,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:55.400Z"
+        "createdAt": "2026-10-22T04:30:40.408Z"
       },
       "lastSuccessful": {
-        "checkId": "122e6e44-10c3-47d4-809a-dbcb05cd2504",
-        "createdAt": "2026-10-21T04:31:55.400Z",
-        "hash": "10ab8a0324e1f45a0ec7cdbad06312fa38e7f9eb20940caf92b33e64e4cc76b9",
+        "checkId": "4546d677-00c9-401d-8d27-29e387f9a4ca",
+        "createdAt": "2026-10-22T04:30:40.408Z",
+        "hash": "262f857e7382cfefedcb7140bbe02aadf7ad9e444d85a53f5baa275f5854bb93",
         "tokens": [
           {
             "kind": "title",
@@ -118297,11 +118227,6 @@
             "kind": "text",
             "key": "li",
             "value": "리스금융소개"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "올리스한도조회"
           },
           {
             "kind": "text",
@@ -124920,11 +124845,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -126691,8 +126611,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "465f3cc5-8ccd-4dc9-9790-ef92a24a0de2",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "01e67d7a-df21-48d1-aeb2-1e8025aed2f2",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "45b57bad17f4bbfdb5cc5db4399d6aff",
         "targetId": "855f0b69537a077bfaa438388fac9a6e",
         "targetName": "이벤트 10월",
@@ -126711,7 +126631,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 180,
+        "responseMs": 218,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -126730,7 +126650,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-21T04:31:55.580Z"
+        "createdAt": "2026-10-22T04:30:40.626Z"
       },
       "lastSuccessful": null
     },
@@ -126739,8 +126659,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "9d9e6a00-c1ee-4d55-9424-45433a0c83e0",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "7dec2455-b550-4663-af83-354a0faef41c",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "b7f29a5a39ab16895d268b8da1abe58b",
         "targetId": "855f0b69537a077bfaa438388fac9a6e",
         "targetName": "이벤트 10월",
@@ -126759,7 +126679,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 139,
+        "responseMs": 290,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -126778,17 +126698,17 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-21T04:31:55.570Z"
+        "createdAt": "2026-10-22T04:30:40.699Z"
       },
       "lastSuccessful": null
     },
     "1bdbffb4-b7ee-441d-acbb-c11aa778a231": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-21T04:31:53.531Z",
+      "lastChangedAt": "2026-10-22T04:30:37.606Z",
       "latest": {
-        "id": "0a578e0d-cef6-4d53-a914-bbd798c50c70",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "c7594236-3080-42fb-aa4a-5e760d9f0b8e",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "1bdbffb4-b7ee-441d-acbb-c11aa778a231",
         "targetId": "a21ecf12-1a64-40d4-855d-b6f1b81a8ba8",
         "targetName": "HERITAGE Classic(스카이패스형)",
@@ -126807,15 +126727,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 1556,
+        "responseMs": 1032,
         "errorMessage": null,
-        "comparedCheckId": "c4da258e-2f82-43e8-8b50-5b1748042be0",
-        "comparedAt": "2026-10-19T04:28:45.171Z",
+        "comparedCheckId": "0a578e0d-cef6-4d53-a914-bbd798c50c70",
+        "comparedAt": "2026-10-21T04:31:53.531Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
         "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -126826,12 +126746,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:53.531Z"
+        "createdAt": "2026-10-22T04:30:37.606Z"
       },
       "lastSuccessful": {
-        "checkId": "0a578e0d-cef6-4d53-a914-bbd798c50c70",
-        "createdAt": "2026-10-21T04:31:53.531Z",
-        "hash": "1fbe4153bf212bdfa84b06934d12f953ca8402babbab408a9481dda88b49f371",
+        "checkId": "c7594236-3080-42fb-aa4a-5e760d9f0b8e",
+        "createdAt": "2026-10-22T04:30:37.606Z",
+        "hash": "c1334078166f6680406e41ebbc325394056c53420248fe3398d1eca071d5a212",
         "tokens": [
           {
             "kind": "title",
@@ -130772,11 +130692,6 @@
             "kind": "text",
             "key": "li",
             "value": "리스금융소개"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "올리스한도조회"
           },
           {
             "kind": "text",
@@ -139645,11 +139560,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -141761,8 +141671,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:13.472Z",
       "latest": {
-        "id": "b274cb18-aa9b-4898-a27d-aba2e58ae2ae",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "47a652cd-0f77-494d-820c-fcb3e6a6a6ad",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "78383cd1-8504-4fd8-b0b4-4fbc3635b01e",
         "targetId": "a21ecf12-1a64-40d4-855d-b6f1b81a8ba8",
         "targetName": "HERITAGE Classic(스카이패스형)",
@@ -141781,10 +141691,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 956,
+        "responseMs": 2123,
         "errorMessage": null,
-        "comparedCheckId": "94d5a040-3782-43ca-88d8-70b5c0f8c9c1",
-        "comparedAt": "2026-10-19T04:28:45.039Z",
+        "comparedCheckId": "b274cb18-aa9b-4898-a27d-aba2e58ae2ae",
+        "comparedAt": "2026-10-21T04:31:53.195Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -141800,11 +141710,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:53.195Z"
+        "createdAt": "2026-10-22T04:30:38.781Z"
       },
       "lastSuccessful": {
-        "checkId": "b274cb18-aa9b-4898-a27d-aba2e58ae2ae",
-        "createdAt": "2026-10-21T04:31:53.195Z",
+        "checkId": "47a652cd-0f77-494d-820c-fcb3e6a6a6ad",
+        "createdAt": "2026-10-22T04:30:38.781Z",
         "hash": "fe2955d774d98a40d74e2e84ce62500d3363304f0986272631b3fef65e4d61d6",
         "tokens": [
           {
@@ -143668,10 +143578,10 @@
     "1a874d68-15d0-4e4c-bd29-6ebecf90e52a": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-21T04:31:46.755Z",
+      "lastChangedAt": "2026-10-22T04:30:29.429Z",
       "latest": {
-        "id": "bdd81b7d-57ee-4b8f-845d-4410a0ea27ba",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "bdee1eaa-0f88-46aa-9ed6-f21f58fbec01",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "1a874d68-15d0-4e4c-bd29-6ebecf90e52a",
         "targetId": "a710c22f-7ed7-4f06-9334-abdfff7788ee",
         "targetName": "YOU Prime 카드",
@@ -143690,15 +143600,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 946,
+        "responseMs": 873,
         "errorMessage": null,
-        "comparedCheckId": "77621b07-2962-4f19-b1bb-746940b38345",
-        "comparedAt": "2026-10-19T04:28:38.755Z",
+        "comparedCheckId": "bdd81b7d-57ee-4b8f-845d-4410a0ea27ba",
+        "comparedAt": "2026-10-21T04:31:46.755Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
         "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -143709,12 +143619,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:46.755Z"
+        "createdAt": "2026-10-22T04:30:29.429Z"
       },
       "lastSuccessful": {
-        "checkId": "bdd81b7d-57ee-4b8f-845d-4410a0ea27ba",
-        "createdAt": "2026-10-21T04:31:46.755Z",
-        "hash": "5c7771dd4f5b45818ac53e55c0e7e177379c562313cbf18d75c8d719d7d920d0",
+        "checkId": "bdee1eaa-0f88-46aa-9ed6-f21f58fbec01",
+        "createdAt": "2026-10-22T04:30:29.429Z",
+        "hash": "56194fab3f1fd0296c8853932339eba7c20575f3f20ab84879251175709f17ad",
         "tokens": [
           {
             "kind": "title",
@@ -147655,11 +147565,6 @@
             "kind": "text",
             "key": "li",
             "value": "리스금융소개"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "올리스한도조회"
           },
           {
             "kind": "text",
@@ -156758,11 +156663,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -158854,8 +158754,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:06.263Z",
       "latest": {
-        "id": "dfdb03b8-d898-4536-9b1e-003a685105ab",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "af0df2be-06b7-4320-b036-47f554a8e547",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "ff46ae32-0a90-4beb-b8e0-4debf4b3b397",
         "targetId": "a710c22f-7ed7-4f06-9334-abdfff7788ee",
         "targetName": "YOU Prime 카드",
@@ -158874,10 +158774,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 630,
+        "responseMs": 1197,
         "errorMessage": null,
-        "comparedCheckId": "7afd5789-bc05-461f-95cc-3f99635909c8",
-        "comparedAt": "2026-10-19T04:28:37.514Z",
+        "comparedCheckId": "dfdb03b8-d898-4536-9b1e-003a685105ab",
+        "comparedAt": "2026-10-21T04:31:46.793Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -158893,11 +158793,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:46.793Z"
+        "createdAt": "2026-10-22T04:30:29.738Z"
       },
       "lastSuccessful": {
-        "checkId": "dfdb03b8-d898-4536-9b1e-003a685105ab",
-        "createdAt": "2026-10-21T04:31:46.793Z",
+        "checkId": "af0df2be-06b7-4320-b036-47f554a8e547",
+        "createdAt": "2026-10-22T04:30:29.738Z",
         "hash": "b06c1647aceb26a5afe6f4ca27f0f015c05f87e083a316b1c2d93f803d1aba33",
         "tokens": [
           {
@@ -160876,10 +160776,10 @@
     "eb730105-e4a1-4995-b8bc-5f685b2ba79b": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-21T04:31:49.702Z",
+      "lastChangedAt": "2026-10-22T04:30:32.945Z",
       "latest": {
-        "id": "f3fff029-3d12-4f7f-b45c-ea23142e85e2",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "78da5a31-f6c4-4936-891c-0eb07ef52de2",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "eb730105-e4a1-4995-b8bc-5f685b2ba79b",
         "targetId": "ab9fa5b9-3ed4-417d-b62a-b5ec7862e32f",
         "targetName": "WE:SH Travel",
@@ -160898,15 +160798,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 1112,
+        "responseMs": 442,
         "errorMessage": null,
-        "comparedCheckId": "ead40d4d-ea90-4345-9a58-4e32daabe192",
-        "comparedAt": "2026-10-19T04:28:41.685Z",
+        "comparedCheckId": "f3fff029-3d12-4f7f-b45c-ea23142e85e2",
+        "comparedAt": "2026-10-21T04:31:49.702Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
         "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -160917,12 +160817,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:49.702Z"
+        "createdAt": "2026-10-22T04:30:32.945Z"
       },
       "lastSuccessful": {
-        "checkId": "f3fff029-3d12-4f7f-b45c-ea23142e85e2",
-        "createdAt": "2026-10-21T04:31:49.702Z",
-        "hash": "eb35d5d4e04c15232195e7d62ac34263f852492f2a08551a2fa46bfc7fd54b35",
+        "checkId": "78da5a31-f6c4-4936-891c-0eb07ef52de2",
+        "createdAt": "2026-10-22T04:30:32.945Z",
+        "hash": "14a945adab422dba67f9f2945d217f0faefb63d50d94410fa64fd2d4c1ca020d",
         "tokens": [
           {
             "kind": "title",
@@ -164863,11 +164763,6 @@
             "kind": "text",
             "key": "li",
             "value": "리스금융소개"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "올리스한도조회"
           },
           {
             "kind": "text",
@@ -173351,11 +173246,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -175422,8 +175312,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:09.893Z",
       "latest": {
-        "id": "d0da4c4b-bbd0-45fc-b9b1-7bcda0b1db44",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "4d0b1d31-ee25-467f-9110-6ad425ea6940",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "119352b3-dbfe-4676-88a9-0e3e64d39abc",
         "targetId": "ab9fa5b9-3ed4-417d-b62a-b5ec7862e32f",
         "targetName": "WE:SH Travel",
@@ -175442,10 +175332,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1636,
+        "responseMs": 1472,
         "errorMessage": null,
-        "comparedCheckId": "3fd9a92a-5213-49d9-a8dd-8c2335d83958",
-        "comparedAt": "2026-10-19T04:28:41.266Z",
+        "comparedCheckId": "d0da4c4b-bbd0-45fc-b9b1-7bcda0b1db44",
+        "comparedAt": "2026-10-21T04:31:50.495Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -175461,11 +175351,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:50.495Z"
+        "createdAt": "2026-10-22T04:30:34.019Z"
       },
       "lastSuccessful": {
-        "checkId": "d0da4c4b-bbd0-45fc-b9b1-7bcda0b1db44",
-        "createdAt": "2026-10-21T04:31:50.495Z",
+        "checkId": "4d0b1d31-ee25-467f-9110-6ad425ea6940",
+        "createdAt": "2026-10-22T04:30:34.019Z",
         "hash": "205fcddcb72f788ba4f37696c829f1507f1f38381ce3a7ebafbf9a8245a68fa7",
         "tokens": [
           {
@@ -177314,10 +177204,10 @@
     "27f46e5f-feab-4c61-9b17-4e82b91c3b1b": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-21T04:31:48.490Z",
+      "lastChangedAt": "2026-10-22T04:30:31.381Z",
       "latest": {
-        "id": "bc8c6a69-613c-40e4-93cc-aa30e16cc371",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "774a4e0c-cf01-489d-8b6a-be854bb60e35",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "27f46e5f-feab-4c61-9b17-4e82b91c3b1b",
         "targetId": "aee77a45-fdde-4c1f-a82f-419336a1ab18",
         "targetName": "YOU Wish up 카드",
@@ -177336,15 +177226,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 1496,
+        "responseMs": 1519,
         "errorMessage": null,
-        "comparedCheckId": "df0e49a8-fd5e-4558-8f24-9605889077f3",
-        "comparedAt": "2026-10-19T04:28:39.638Z",
+        "comparedCheckId": "bc8c6a69-613c-40e4-93cc-aa30e16cc371",
+        "comparedAt": "2026-10-21T04:31:48.490Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
         "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -177355,12 +177245,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:48.490Z"
+        "createdAt": "2026-10-22T04:30:31.381Z"
       },
       "lastSuccessful": {
-        "checkId": "bc8c6a69-613c-40e4-93cc-aa30e16cc371",
-        "createdAt": "2026-10-21T04:31:48.490Z",
-        "hash": "3790bdb0b6b3f69f8a4df512ca1e71c75f320b59b59dbf1c06de71edcc39e701",
+        "checkId": "774a4e0c-cf01-489d-8b6a-be854bb60e35",
+        "createdAt": "2026-10-22T04:30:31.381Z",
+        "hash": "2afb24f926163573c7121b8cc5c4595c2608ed20a447c7dc1e3873ff991a16e4",
         "tokens": [
           {
             "kind": "title",
@@ -181301,11 +181191,6 @@
             "kind": "text",
             "key": "li",
             "value": "리스금융소개"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "올리스한도조회"
           },
           {
             "kind": "text",
@@ -189824,11 +189709,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -191875,8 +191755,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:08.025Z",
       "latest": {
-        "id": "ad8b727a-03f4-49ee-9873-231b7f775216",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "28a27926-9d27-4645-9763-63b51b5f1e62",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "65ae2ae0-6609-42a3-aa4a-6a9d9e620da4",
         "targetId": "aee77a45-fdde-4c1f-a82f-419336a1ab18",
         "targetName": "YOU Wish up 카드",
@@ -191895,10 +191775,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 969,
+        "responseMs": 694,
         "errorMessage": null,
-        "comparedCheckId": "9d2433ef-3971-4c48-8b66-bac9cda2c6a5",
-        "comparedAt": "2026-10-19T04:28:39.779Z",
+        "comparedCheckId": "ad8b727a-03f4-49ee-9873-231b7f775216",
+        "comparedAt": "2026-10-21T04:31:47.931Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -191914,11 +191794,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:47.931Z"
+        "createdAt": "2026-10-22T04:30:31.425Z"
       },
       "lastSuccessful": {
-        "checkId": "ad8b727a-03f4-49ee-9873-231b7f775216",
-        "createdAt": "2026-10-21T04:31:47.931Z",
+        "checkId": "28a27926-9d27-4645-9763-63b51b5f1e62",
+        "createdAt": "2026-10-22T04:30:31.425Z",
         "hash": "04f0976512dd39805dae212b33bfd0bcf6fcf84f789f5b91f0ececb365573408",
         "tokens": [
           {
@@ -193767,10 +193647,10 @@
     "55e07fac-79e6-4ccb-a6c6-38a1519deae8": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-21T04:31:51.403Z",
+      "lastChangedAt": "2026-10-22T04:30:35.203Z",
       "latest": {
-        "id": "33a8cbd8-0610-4b47-96ad-2b52e88b8e6b",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "cbf504c5-237b-429f-b292-73f23d2a5505",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "55e07fac-79e6-4ccb-a6c6-38a1519deae8",
         "targetId": "ba3c273b-bf19-44d9-a4ef-c79f1dac16b9",
         "targetName": "굿데이올림카드",
@@ -193789,15 +193669,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 1154,
+        "responseMs": 1457,
         "errorMessage": null,
-        "comparedCheckId": "dbfb6e26-4bee-420e-a83a-3f43af3e63ec",
-        "comparedAt": "2026-10-19T04:28:42.166Z",
+        "comparedCheckId": "33a8cbd8-0610-4b47-96ad-2b52e88b8e6b",
+        "comparedAt": "2026-10-21T04:31:51.403Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
         "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -193808,12 +193688,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:51.403Z"
+        "createdAt": "2026-10-22T04:30:35.203Z"
       },
       "lastSuccessful": {
-        "checkId": "33a8cbd8-0610-4b47-96ad-2b52e88b8e6b",
-        "createdAt": "2026-10-21T04:31:51.403Z",
-        "hash": "f9ba3757ef0950ef3571d3515e61ebbebd77d203461ce020a20839a75e41d09b",
+        "checkId": "cbf504c5-237b-429f-b292-73f23d2a5505",
+        "createdAt": "2026-10-22T04:30:35.203Z",
+        "hash": "1a45efb6fd35b5eddf5894b18afad1fa2d9045f0d35c891d09369b095f06985d",
         "tokens": [
           {
             "kind": "title",
@@ -197754,11 +197634,6 @@
             "kind": "text",
             "key": "li",
             "value": "리스금융소개"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "올리스한도조회"
           },
           {
             "kind": "text",
@@ -206127,11 +206002,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -208223,8 +208093,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:11.481Z",
       "latest": {
-        "id": "000ea960-fb0a-4bb2-8ae5-23a6222ec73c",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "0a02774b-39a5-4500-a102-6bcf09040250",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "99506875-e7b5-49a6-aa7d-d9ed9e4cf5ba",
         "targetId": "ba3c273b-bf19-44d9-a4ef-c79f1dac16b9",
         "targetName": "굿데이올림카드",
@@ -208243,10 +208113,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1097,
+        "responseMs": 1082,
         "errorMessage": null,
-        "comparedCheckId": "a6bd9e41-a962-4897-8281-efc8ff2bd22e",
-        "comparedAt": "2026-10-19T04:28:42.469Z",
+        "comparedCheckId": "000ea960-fb0a-4bb2-8ae5-23a6222ec73c",
+        "comparedAt": "2026-10-21T04:31:51.437Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -208262,11 +208132,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:51.437Z"
+        "createdAt": "2026-10-22T04:30:35.041Z"
       },
       "lastSuccessful": {
-        "checkId": "000ea960-fb0a-4bb2-8ae5-23a6222ec73c",
-        "createdAt": "2026-10-21T04:31:51.437Z",
+        "checkId": "0a02774b-39a5-4500-a102-6bcf09040250",
+        "createdAt": "2026-10-22T04:30:35.041Z",
         "hash": "7d204c8f1dfbb48d1582c5a090a48187d5761ac5f7486d14db91bd1413847662",
         "tokens": [
           {
@@ -210535,10 +210405,10 @@
     "a1c82600-76ec-46e4-93ef-f8bc6778b034": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-21T04:31:48.835Z",
+      "lastChangedAt": "2026-10-22T04:30:32.513Z",
       "latest": {
-        "id": "b08666e2-24c6-436f-973b-f3935f7a9b7d",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "1bc666d2-bb38-4196-8ff6-b321a7143441",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "a1c82600-76ec-46e4-93ef-f8bc6778b034",
         "targetId": "bec4c3be-5c44-4585-a6a3-5fc7ffc3a7b0",
         "targetName": "NEED Global 카드",
@@ -210557,15 +210427,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 845,
+        "responseMs": 1012,
         "errorMessage": null,
-        "comparedCheckId": "50eebc55-34b7-4ba1-ab8d-be9327724d6e",
-        "comparedAt": "2026-10-19T04:28:40.678Z",
+        "comparedCheckId": "b08666e2-24c6-436f-973b-f3935f7a9b7d",
+        "comparedAt": "2026-10-21T04:31:48.835Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
         "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -210576,12 +210446,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:48.835Z"
+        "createdAt": "2026-10-22T04:30:32.513Z"
       },
       "lastSuccessful": {
-        "checkId": "b08666e2-24c6-436f-973b-f3935f7a9b7d",
-        "createdAt": "2026-10-21T04:31:48.835Z",
-        "hash": "8633028d2d858e7d33a771fb3d25aa246268978d24bcf8d4fd9c6b6d88e48656",
+        "checkId": "1bc666d2-bb38-4196-8ff6-b321a7143441",
+        "createdAt": "2026-10-22T04:30:32.513Z",
+        "hash": "4ac185e6dbac5ec7f5bce8d7cfc89e2cb646f9f7685f8e022a40f5e87aef4c3f",
         "tokens": [
           {
             "kind": "title",
@@ -214522,11 +214392,6 @@
             "kind": "text",
             "key": "li",
             "value": "리스금융소개"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "올리스한도조회"
           },
           {
             "kind": "text",
@@ -222030,11 +221895,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -223961,8 +223821,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:09.622Z",
       "latest": {
-        "id": "c8fb234e-9c8b-4dbc-93f5-8283547161ce",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "4ccd33e0-bc88-4b9e-a1b5-c901e438e083",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "556d6d77-9c95-4b36-9826-ae45ff7b9f6b",
         "targetId": "bec4c3be-5c44-4585-a6a3-5fc7ffc3a7b0",
         "targetName": "NEED Global 카드",
@@ -223981,10 +223841,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 433,
+        "responseMs": 922,
         "errorMessage": null,
-        "comparedCheckId": "6d2a681b-c149-4947-911c-1d461717ad83",
-        "comparedAt": "2026-10-19T04:28:40.973Z",
+        "comparedCheckId": "c8fb234e-9c8b-4dbc-93f5-8283547161ce",
+        "comparedAt": "2026-10-21T04:31:48.397Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -224000,11 +223860,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:48.397Z"
+        "createdAt": "2026-10-22T04:30:32.390Z"
       },
       "lastSuccessful": {
-        "checkId": "c8fb234e-9c8b-4dbc-93f5-8283547161ce",
-        "createdAt": "2026-10-21T04:31:48.397Z",
+        "checkId": "4ccd33e0-bc88-4b9e-a1b5-c901e438e083",
+        "createdAt": "2026-10-22T04:30:32.390Z",
         "hash": "f1463816cf6e70df62ed102c7f137ad0139ab74507463fb6533f0af7bee6732f",
         "tokens": [
           {
@@ -225843,10 +225703,10 @@
     "c79d4215-7632-4f50-b00d-872fc192fe4a": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-21T04:31:54.740Z",
+      "lastChangedAt": "2026-10-22T04:30:39.495Z",
       "latest": {
-        "id": "312a82ae-d070-4cd0-8937-e7e817a38f59",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "f2e2c338-bfbd-4f5b-853b-8dadb2e861f6",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "c79d4215-7632-4f50-b00d-872fc192fe4a",
         "targetId": "c4fe7b59-3b68-47f8-bbde-6c8701458fac",
         "targetName": "노리2 체크카드(KB Pay)",
@@ -225865,15 +225725,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 1100,
+        "responseMs": 924,
         "errorMessage": null,
-        "comparedCheckId": "7207e65c-9fc4-4a8d-94f1-0a035d21f573",
-        "comparedAt": "2026-10-19T04:28:46.014Z",
+        "comparedCheckId": "312a82ae-d070-4cd0-8937-e7e817a38f59",
+        "comparedAt": "2026-10-21T04:31:54.740Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
         "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -225884,12 +225744,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:54.740Z"
+        "createdAt": "2026-10-22T04:30:39.495Z"
       },
       "lastSuccessful": {
-        "checkId": "312a82ae-d070-4cd0-8937-e7e817a38f59",
-        "createdAt": "2026-10-21T04:31:54.740Z",
-        "hash": "200956b7e58af6c3b7e7570a69ed0d33c130aa631a368187e41be1f59f7bf17f",
+        "checkId": "f2e2c338-bfbd-4f5b-853b-8dadb2e861f6",
+        "createdAt": "2026-10-22T04:30:39.495Z",
+        "hash": "cb6bfe485c7ad9d4b38fdc4a7f5be8d7eae6e7023753e510539e0530081eafdd",
         "tokens": [
           {
             "kind": "title",
@@ -229830,11 +229690,6 @@
             "kind": "text",
             "key": "li",
             "value": "리스금융소개"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "올리스한도조회"
           },
           {
             "kind": "text",
@@ -238913,11 +238768,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -241009,8 +240859,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:15.082Z",
       "latest": {
-        "id": "14295f3d-486f-4b3b-b23b-815c6c39b7d7",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "486e4b3d-35cf-42f1-beec-ee2a9dccdf9d",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "3506bde9-c822-4be3-9f30-31809737af94",
         "targetId": "c4fe7b59-3b68-47f8-bbde-6c8701458fac",
         "targetName": "노리2 체크카드(KB Pay)",
@@ -241029,10 +240879,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 468,
+        "responseMs": 648,
         "errorMessage": null,
-        "comparedCheckId": "9da8a4f1-76e7-443c-9401-75791e288dab",
-        "comparedAt": "2026-10-19T04:28:47.579Z",
+        "comparedCheckId": "14295f3d-486f-4b3b-b23b-815c6c39b7d7",
+        "comparedAt": "2026-10-21T04:31:54.288Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -241048,11 +240898,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:54.288Z"
+        "createdAt": "2026-10-22T04:30:39.244Z"
       },
       "lastSuccessful": {
-        "checkId": "14295f3d-486f-4b3b-b23b-815c6c39b7d7",
-        "createdAt": "2026-10-21T04:31:54.288Z",
+        "checkId": "486e4b3d-35cf-42f1-beec-ee2a9dccdf9d",
+        "createdAt": "2026-10-22T04:30:39.244Z",
         "hash": "46940c6778576b77a002f78414120e9289d78017e863ac0ab8c2b9eff87092bc",
         "tokens": [
           {
@@ -242753,8 +242603,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "bb66a204-20ec-407b-9c46-43b3f188e9e5",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "ae40d89c-8b7a-4b3a-a9e3-3ecc2de5f9de",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "d7ed54fd-b471-4d4e-8c66-f9b1778028d7",
         "targetId": "c5d297d9-5523-49eb-9b65-340e00f4c55c",
         "targetName": "이벤트 9월",
@@ -242773,7 +242623,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 283,
+        "responseMs": 371,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -242792,7 +242642,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-21T04:31:55.432Z"
+        "createdAt": "2026-10-22T04:30:40.409Z"
       },
       "lastSuccessful": null
     },
@@ -242801,8 +242651,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "327edc27-6957-4e8d-a8b0-ff6737050b8b",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "f7e4f8c0-bef3-472f-83f2-f15833bf67cf",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "ae8ab9e4-6784-4ab8-a84e-0fa75525d559",
         "targetId": "c5d297d9-5523-49eb-9b65-340e00f4c55c",
         "targetName": "이벤트 9월",
@@ -242821,7 +242671,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 149,
+        "responseMs": 191,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -242840,17 +242690,17 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-21T04:31:55.481Z"
+        "createdAt": "2026-10-22T04:30:40.515Z"
       },
       "lastSuccessful": null
     },
     "e2bcd9ac-eaa5-4919-abe7-19c890c2d785": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-21T04:31:53.797Z",
+      "lastChangedAt": "2026-10-22T04:30:39.026Z",
       "latest": {
-        "id": "e596d7be-d327-45bf-9d60-8ffacd0a9e91",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "cf84e695-5003-4200-9731-99a966d61fde",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "e2bcd9ac-eaa5-4919-abe7-19c890c2d785",
         "targetId": "c701fd1a-9015-4daf-9039-b987c990c619",
         "targetName": "Youth Club 체크카드",
@@ -242869,15 +242719,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 499,
+        "responseMs": 950,
         "errorMessage": null,
-        "comparedCheckId": "2f180fb4-7be2-4751-9324-31f168507fb2",
-        "comparedAt": "2026-10-19T04:28:46.092Z",
+        "comparedCheckId": "e596d7be-d327-45bf-9d60-8ffacd0a9e91",
+        "comparedAt": "2026-10-21T04:31:53.797Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
         "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -242888,12 +242738,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:53.797Z"
+        "createdAt": "2026-10-22T04:30:39.026Z"
       },
       "lastSuccessful": {
-        "checkId": "e596d7be-d327-45bf-9d60-8ffacd0a9e91",
-        "createdAt": "2026-10-21T04:31:53.797Z",
-        "hash": "086334c806a1c3a38f138eef41b8e17f91acf8098b3db4c3bb45414410b21e1b",
+        "checkId": "cf84e695-5003-4200-9731-99a966d61fde",
+        "createdAt": "2026-10-22T04:30:39.026Z",
+        "hash": "68e9862ea85a3d7e1abee76766fddd329359d51f0ab58a80db6cead5ff011c03",
         "tokens": [
           {
             "kind": "title",
@@ -246834,11 +246684,6 @@
             "kind": "text",
             "key": "li",
             "value": "리스금융소개"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "올리스한도조회"
           },
           {
             "kind": "text",
@@ -255912,11 +255757,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -257933,8 +257773,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:14.845Z",
       "latest": {
-        "id": "dd426384-3032-43f7-8570-00381931532a",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "32ffa8c2-c15a-4148-87ef-96204fef6092",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "20e3a981-c6a0-4673-9a6f-5e0241999772",
         "targetId": "c701fd1a-9015-4daf-9039-b987c990c619",
         "targetName": "Youth Club 체크카드",
@@ -257953,10 +257793,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 970,
+        "responseMs": 442,
         "errorMessage": null,
-        "comparedCheckId": "b1d5cd30-2eb6-4796-b573-c67415a31e7f",
-        "comparedAt": "2026-10-19T04:28:47.009Z",
+        "comparedCheckId": "dd426384-3032-43f7-8570-00381931532a",
+        "comparedAt": "2026-10-21T04:31:54.406Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -257972,11 +257812,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:54.406Z"
+        "createdAt": "2026-10-22T04:30:38.564Z"
       },
       "lastSuccessful": {
-        "checkId": "dd426384-3032-43f7-8570-00381931532a",
-        "createdAt": "2026-10-21T04:31:54.406Z",
+        "checkId": "32ffa8c2-c15a-4148-87ef-96204fef6092",
+        "createdAt": "2026-10-22T04:30:38.564Z",
         "hash": "cda2e12f252ca8fa27223ccf33a3f95d12b0e6111a699883b1235b318e1a2d28",
         "tokens": [
           {
@@ -259670,10 +259510,10 @@
     "533221ef-199b-4710-b94e-bc3aab4a1c02": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-21T04:31:51.872Z",
+      "lastChangedAt": "2026-10-22T04:30:36.140Z",
       "latest": {
-        "id": "06efcddd-38fe-4a58-98ea-5ae87d9139f4",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "bae6537c-2d49-4cb0-92ad-3b2c33a00705",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "533221ef-199b-4710-b94e-bc3aab4a1c02",
         "targetId": "ccfd1770-4563-4762-823c-5f6aa40a0d3e",
         "targetName": "American Express Blue Card",
@@ -259692,15 +259532,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 381,
+        "responseMs": 988,
         "errorMessage": null,
-        "comparedCheckId": "0d5000b5-1395-4510-aab2-45672a7d909f",
-        "comparedAt": "2026-10-19T04:28:44.449Z",
+        "comparedCheckId": "06efcddd-38fe-4a58-98ea-5ae87d9139f4",
+        "comparedAt": "2026-10-21T04:31:51.872Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
         "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -259711,12 +259551,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:51.872Z"
+        "createdAt": "2026-10-22T04:30:36.140Z"
       },
       "lastSuccessful": {
-        "checkId": "06efcddd-38fe-4a58-98ea-5ae87d9139f4",
-        "createdAt": "2026-10-21T04:31:51.872Z",
-        "hash": "9aa03d7a3e7cd28dd2fc6038d1297eec62f57adb734ad6a2835a50f80987e14c",
+        "checkId": "bae6537c-2d49-4cb0-92ad-3b2c33a00705",
+        "createdAt": "2026-10-22T04:30:36.140Z",
+        "hash": "f3d71d34081041d021a8a6ca668cde405df4692493615421d2669144f781c669",
         "tokens": [
           {
             "kind": "title",
@@ -263657,11 +263497,6 @@
             "kind": "text",
             "key": "li",
             "value": "리스금융소개"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "올리스한도조회"
           },
           {
             "kind": "text",
@@ -271975,11 +271810,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -273991,8 +273821,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:12.462Z",
       "latest": {
-        "id": "5468bcda-fca2-4fb6-b43b-72c7841cf70d",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "8c83fa83-2fc0-4fb4-bc93-1b5fe946d7b1",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "8ea95969-0296-474c-b812-028030be9348",
         "targetId": "ccfd1770-4563-4762-823c-5f6aa40a0d3e",
         "targetName": "American Express Blue Card",
@@ -274011,10 +273841,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1206,
+        "responseMs": 1975,
         "errorMessage": null,
-        "comparedCheckId": "73359f2f-907f-4b58-9bd4-7893ebc3c200",
-        "comparedAt": "2026-10-19T04:28:43.400Z",
+        "comparedCheckId": "5468bcda-fca2-4fb6-b43b-72c7841cf70d",
+        "comparedAt": "2026-10-21T04:31:52.674Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -274030,11 +273860,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:52.674Z"
+        "createdAt": "2026-10-22T04:30:37.221Z"
       },
       "lastSuccessful": {
-        "checkId": "5468bcda-fca2-4fb6-b43b-72c7841cf70d",
-        "createdAt": "2026-10-21T04:31:52.674Z",
+        "checkId": "8c83fa83-2fc0-4fb4-bc93-1b5fe946d7b1",
+        "createdAt": "2026-10-22T04:30:37.221Z",
         "hash": "d54cb95834326384e494c27c5c4c77049fe8da26738a28f801a0bd6b32d19c98",
         "tokens": [
           {
@@ -275843,10 +275673,10 @@
     "1a97e3c9-610d-4931-b785-e625c6caf524": {
       "launchedAt": null,
       "liveCompletedAt": "2026-09-14T07:48:27.619Z",
-      "lastChangedAt": "2026-10-21T04:31:46.274Z",
+      "lastChangedAt": "2026-10-22T04:30:28.421Z",
       "latest": {
-        "id": "657a5ede-db59-4f58-b679-3e588f312db6",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "5765abbe-82d1-47b2-9b05-604d67b5f35b",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "1a97e3c9-610d-4931-b785-e625c6caf524",
         "targetId": "cd5e3359-d077-44de-b423-490719f8a4c1",
         "targetName": "ALL 카드",
@@ -275865,15 +275695,15 @@
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">ALL 카드, 이런 분께 추천드려요</h2>",
         "changeStatus": "CHANGED",
-        "responseMs": 1600,
+        "responseMs": 1772,
         "errorMessage": null,
-        "comparedCheckId": "cc24200b-e1d1-448f-a0e4-65d26189b247",
-        "comparedAt": "2026-10-19T04:28:37.396Z",
+        "comparedCheckId": "657a5ede-db59-4f58-b679-3e588f312db6",
+        "comparedAt": "2026-10-21T04:31:46.274Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
         "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -275884,12 +275714,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:46.274Z"
+        "createdAt": "2026-10-22T04:30:28.421Z"
       },
       "lastSuccessful": {
-        "checkId": "657a5ede-db59-4f58-b679-3e588f312db6",
-        "createdAt": "2026-10-21T04:31:46.274Z",
-        "hash": "aaf0540f9f40a2dbbb31cd254053ff82f7f76ce84c3065c0dd2583881a31941e",
+        "checkId": "5765abbe-82d1-47b2-9b05-604d67b5f35b",
+        "createdAt": "2026-10-22T04:30:28.421Z",
+        "hash": "ed6b9f21c9cde73def683fb4d0e3cd77dff729c2083c4e1260a3386f54d7f146",
         "tokens": [
           {
             "kind": "title",
@@ -279880,11 +279710,6 @@
             "kind": "text",
             "key": "li",
             "value": "리스금융소개"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "올리스한도조회"
           },
           {
             "kind": "text",
@@ -287593,11 +287418,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -289504,8 +289324,8 @@
       "liveCompletedAt": "2026-09-14T07:48:27.840Z",
       "lastChangedAt": "2026-10-02T05:25:04.702Z",
       "latest": {
-        "id": "6a440da7-16ca-4d92-8a04-54e46f38450f",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "c2f2580c-cac9-4f96-a558-3ff1a037f0ed",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "cf2d0df6-8b68-49e1-8346-7762096c49ee",
         "targetId": "cd5e3359-d077-44de-b423-490719f8a4c1",
         "targetName": "ALL 카드",
@@ -289524,10 +289344,10 @@
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">ALL 카드, <br>이런 분께 추천드려요</h2>",
         "changeStatus": "UNCHANGED",
-        "responseMs": 1809,
+        "responseMs": 2041,
         "errorMessage": null,
-        "comparedCheckId": "1328a7be-fe3c-46c1-b285-bbcba97989bd",
-        "comparedAt": "2026-10-19T04:28:36.921Z",
+        "comparedCheckId": "6a440da7-16ca-4d92-8a04-54e46f38450f",
+        "comparedAt": "2026-10-21T04:31:46.394Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -289543,11 +289363,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:46.394Z"
+        "createdAt": "2026-10-22T04:30:28.497Z"
       },
       "lastSuccessful": {
-        "checkId": "6a440da7-16ca-4d92-8a04-54e46f38450f",
-        "createdAt": "2026-10-21T04:31:46.394Z",
+        "checkId": "c2f2580c-cac9-4f96-a558-3ff1a037f0ed",
+        "createdAt": "2026-10-22T04:30:28.497Z",
         "hash": "57eb8d57f0ab221cb282cb7fb105d776f269ebf72e5b58cda36b4a8712209117",
         "tokens": [
           {
@@ -291861,10 +291681,10 @@
     "613d02c9-fc0b-4d8d-9a08-517e588ed948": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-21T04:31:49.853Z",
+      "lastChangedAt": "2026-10-22T04:30:33.926Z",
       "latest": {
-        "id": "9037352e-7d9c-4ad8-8be0-2cbf56037b89",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "05d38e6e-4051-4807-9851-eae45b633687",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "613d02c9-fc0b-4d8d-9a08-517e588ed948",
         "targetId": "d8815c97-3344-4821-8372-32ff769c023b",
         "targetName": "NEED Pay 카드",
@@ -291883,15 +291703,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 1345,
+        "responseMs": 1882,
         "errorMessage": null,
-        "comparedCheckId": "6b0350d3-f843-4323-898c-d8115e66309f",
-        "comparedAt": "2026-10-19T04:28:40.325Z",
+        "comparedCheckId": "9037352e-7d9c-4ad8-8be0-2cbf56037b89",
+        "comparedAt": "2026-10-21T04:31:49.853Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
         "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -291902,12 +291722,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:49.853Z"
+        "createdAt": "2026-10-22T04:30:33.926Z"
       },
       "lastSuccessful": {
-        "checkId": "9037352e-7d9c-4ad8-8be0-2cbf56037b89",
-        "createdAt": "2026-10-21T04:31:49.853Z",
-        "hash": "a97bd7cdaee4115f5101856bb0457b34b93ac7c9ce475c7cfd2b4fc878f928c6",
+        "checkId": "05d38e6e-4051-4807-9851-eae45b633687",
+        "createdAt": "2026-10-22T04:30:33.926Z",
+        "hash": "46193ea00501fce1e1434f0668b6c6a2099e4321712c226dcd9df94a7de55fc1",
         "tokens": [
           {
             "kind": "title",
@@ -295848,11 +295668,6 @@
             "kind": "text",
             "key": "li",
             "value": "리스금융소개"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "올리스한도조회"
           },
           {
             "kind": "text",
@@ -304146,11 +303961,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -306152,8 +305962,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:09.815Z",
       "latest": {
-        "id": "c12713eb-7991-42fc-a927-fdd12e7a4829",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "e1614f9d-163d-4e1e-9231-7cc31dc4d514",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "d137fd1e-c1dd-4841-8f54-32513292cd5a",
         "targetId": "d8815c97-3344-4821-8372-32ff769c023b",
         "targetName": "NEED Pay 카드",
@@ -306172,10 +305982,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1732,
+        "responseMs": 860,
         "errorMessage": null,
-        "comparedCheckId": "da8f4c84-a200-4e30-a95c-f6a7285e39ed",
-        "comparedAt": "2026-10-19T04:28:42.028Z",
+        "comparedCheckId": "c12713eb-7991-42fc-a927-fdd12e7a4829",
+        "comparedAt": "2026-10-21T04:31:50.154Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -306191,11 +306001,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:50.154Z"
+        "createdAt": "2026-10-22T04:30:33.191Z"
       },
       "lastSuccessful": {
-        "checkId": "c12713eb-7991-42fc-a927-fdd12e7a4829",
-        "createdAt": "2026-10-21T04:31:50.154Z",
+        "checkId": "e1614f9d-163d-4e1e-9231-7cc31dc4d514",
+        "createdAt": "2026-10-22T04:30:33.191Z",
         "hash": "773702642f9c6657cde66d5d5ea0b9e66e24c0a08fc36585d4d271dce2781844",
         "tokens": [
           {
@@ -308104,10 +307914,10 @@
     "6a0d6408-1c23-4f3b-9f75-2d84729915fa": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-21T04:31:47.303Z",
+      "lastChangedAt": "2026-10-22T04:30:31.254Z",
       "latest": {
-        "id": "cd7ca8d8-f039-4cc7-8057-3bbe3431d6fd",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "4896fd11-2877-41fc-82ee-2d2fa0cf6a2e",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "6a0d6408-1c23-4f3b-9f75-2d84729915fa",
         "targetId": "efb1d0e6-0aeb-4093-84a7-6aed0179f41e",
         "targetName": "YOU Wish 카드",
@@ -308126,15 +307936,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 456,
+        "responseMs": 1897,
         "errorMessage": null,
-        "comparedCheckId": "fcb9fdfb-5b71-43de-9d6f-4b7ef3e785ee",
-        "comparedAt": "2026-10-19T04:28:38.843Z",
+        "comparedCheckId": "cd7ca8d8-f039-4cc7-8057-3bbe3431d6fd",
+        "comparedAt": "2026-10-21T04:31:47.303Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
         "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -308145,12 +307955,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:47.303Z"
+        "createdAt": "2026-10-22T04:30:31.254Z"
       },
       "lastSuccessful": {
-        "checkId": "cd7ca8d8-f039-4cc7-8057-3bbe3431d6fd",
-        "createdAt": "2026-10-21T04:31:47.303Z",
-        "hash": "3c2d2e4dd255a9f058baef65f19fe97062eaac14b1eb0a9776902a29dc7985e6",
+        "checkId": "4896fd11-2877-41fc-82ee-2d2fa0cf6a2e",
+        "createdAt": "2026-10-22T04:30:31.254Z",
+        "hash": "7f26487878517a89262479b7ab14a97b3cf5d02ec57252429a41e614f286ade9",
         "tokens": [
           {
             "kind": "title",
@@ -312091,11 +311901,6 @@
             "kind": "text",
             "key": "li",
             "value": "리스금융소개"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "올리스한도조회"
           },
           {
             "kind": "text",
@@ -320169,11 +319974,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -322210,8 +322010,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:06.983Z",
       "latest": {
-        "id": "b7cf57b7-1294-4ff8-8f30-4d503eb28681",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "11f52e50-cc7f-4978-8931-bd3156c1ef7d",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "c159409a-cc42-4ae1-b6a3-9a5fc6e4b6c0",
         "targetId": "efb1d0e6-0aeb-4093-84a7-6aed0179f41e",
         "targetName": "YOU Wish 카드",
@@ -322230,10 +322030,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 627,
+        "responseMs": 1481,
         "errorMessage": null,
-        "comparedCheckId": "258de87e-49f0-4549-9f9b-a31333d13ef8",
-        "comparedAt": "2026-10-19T04:28:38.862Z",
+        "comparedCheckId": "b7cf57b7-1294-4ff8-8f30-4d503eb28681",
+        "comparedAt": "2026-10-21T04:31:47.445Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -322249,11 +322049,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:47.445Z"
+        "createdAt": "2026-10-22T04:30:30.954Z"
       },
       "lastSuccessful": {
-        "checkId": "b7cf57b7-1294-4ff8-8f30-4d503eb28681",
-        "createdAt": "2026-10-21T04:31:47.445Z",
+        "checkId": "11f52e50-cc7f-4978-8931-bd3156c1ef7d",
+        "createdAt": "2026-10-22T04:30:30.954Z",
         "hash": "a00709672aabe9a2bee21ab60e9debb2abeac510064e6a86d69f3361990c075c",
         "tokens": [
           {
@@ -324092,10 +323892,10 @@
     "14bafd44-2782-4968-911b-291d2acd502e": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-21T04:31:46.903Z",
+      "lastChangedAt": "2026-10-22T04:30:29.225Z",
       "latest": {
-        "id": "d071730f-b812-4090-913e-14c2c48f416a",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "06237aca-6650-4ba6-b753-b7217949b83c",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "14bafd44-2782-4968-911b-291d2acd502e",
         "targetId": "f76ab7ec-2473-4bff-8a31-d6d4e7dbe21d",
         "targetName": "YOU With 카드",
@@ -324114,15 +323914,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 523,
+        "responseMs": 538,
         "errorMessage": null,
-        "comparedCheckId": "4f6244c4-387d-4ce9-a202-4e180653a59e",
-        "comparedAt": "2026-10-19T04:28:38.606Z",
+        "comparedCheckId": "d071730f-b812-4090-913e-14c2c48f416a",
+        "comparedAt": "2026-10-21T04:31:46.903Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
         "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -324133,12 +323933,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:46.903Z"
+        "createdAt": "2026-10-22T04:30:29.225Z"
       },
       "lastSuccessful": {
-        "checkId": "d071730f-b812-4090-913e-14c2c48f416a",
-        "createdAt": "2026-10-21T04:31:46.903Z",
-        "hash": "b3f79545232a7be79f48f12693f2e5bba2a7308294297d875aa4d77c32d0c328",
+        "checkId": "06237aca-6650-4ba6-b753-b7217949b83c",
+        "createdAt": "2026-10-22T04:30:29.225Z",
+        "hash": "5cdb6af97e2ac0aafa79716e7677c7430d021bd71b49cbbcadaa270c321a281c",
         "tokens": [
           {
             "kind": "title",
@@ -328079,11 +327879,6 @@
             "kind": "text",
             "key": "li",
             "value": "리스금융소개"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "올리스한도조회"
           },
           {
             "kind": "text",
@@ -336322,11 +336117,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -338333,8 +338123,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:06.525Z",
       "latest": {
-        "id": "8fa696ef-89b4-4934-9831-24d558533a6d",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "7cb8086d-7f39-4dbf-98f5-57603bff9cff",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "446222ae-cda3-454a-9e38-96d18f5cf725",
         "targetId": "f76ab7ec-2473-4bff-8a31-d6d4e7dbe21d",
         "targetName": "YOU With 카드",
@@ -338353,10 +338143,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 523,
+        "responseMs": 1957,
         "errorMessage": null,
-        "comparedCheckId": "19711961-1609-4eb8-a03e-8b80f7b4d739",
-        "comparedAt": "2026-10-19T04:28:37.983Z",
+        "comparedCheckId": "8fa696ef-89b4-4934-9831-24d558533a6d",
+        "comparedAt": "2026-10-21T04:31:46.940Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -338372,11 +338162,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:46.940Z"
+        "createdAt": "2026-10-22T04:30:30.689Z"
       },
       "lastSuccessful": {
-        "checkId": "8fa696ef-89b4-4934-9831-24d558533a6d",
-        "createdAt": "2026-10-21T04:31:46.940Z",
+        "checkId": "7cb8086d-7f39-4dbf-98f5-57603bff9cff",
+        "createdAt": "2026-10-22T04:30:30.689Z",
         "hash": "5150729fcb8ab67d58fb5a17811013c7e515c2a752336efbc7b1292ddbb88512",
         "tokens": [
           {
@@ -340255,10 +340045,10 @@
     "01b3f6d5-d2f3-46f9-b9dd-9fb1e43d30a4": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-21T04:31:51.686Z",
+      "lastChangedAt": "2026-10-22T04:30:35.985Z",
       "latest": {
-        "id": "bf3b43da-bf8a-4be4-b8bc-015ae888ff17",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "0cd08332-4fed-4b76-8908-2057ebef2fe6",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "01b3f6d5-d2f3-46f9-b9dd-9fb1e43d30a4",
         "targetId": "ffce3167-72d1-488c-ab2e-f65d740df310",
         "targetName": "스카이패스 티타늄카드",
@@ -340277,15 +340067,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 1159,
+        "responseMs": 1861,
         "errorMessage": null,
-        "comparedCheckId": "ab68e0c1-706d-4735-b756-24b9ae3bbd2b",
-        "comparedAt": "2026-10-19T04:28:42.795Z",
+        "comparedCheckId": "bf3b43da-bf8a-4be4-b8bc-015ae888ff17",
+        "comparedAt": "2026-10-21T04:31:51.686Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
         "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드발급서식 음성지원\"},{\"kind\":\"link\",\"key\":\"카드발급서식 음성지원\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSGMCXCRSCSC0007\"}]}",
+        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"올리스한도조회\"},{\"kind\":\"link\",\"key\":\"올리스한도조회\",\"value\":\"https://biz.kbcard.com/CXERCCACD0002.cms\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -340296,12 +340086,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:51.686Z"
+        "createdAt": "2026-10-22T04:30:35.985Z"
       },
       "lastSuccessful": {
-        "checkId": "bf3b43da-bf8a-4be4-b8bc-015ae888ff17",
-        "createdAt": "2026-10-21T04:31:51.686Z",
-        "hash": "fb5971b3a6617bbf4b381b1edc99eabcddcbf902574dac067eac4e8b46a570f1",
+        "checkId": "0cd08332-4fed-4b76-8908-2057ebef2fe6",
+        "createdAt": "2026-10-22T04:30:35.985Z",
+        "hash": "7055de1d60da35cd959786afdda7f7f4e392fb190bfc67d300d023f4f733a1be",
         "tokens": [
           {
             "kind": "title",
@@ -344242,11 +344032,6 @@
             "kind": "text",
             "key": "li",
             "value": "리스금융소개"
-          },
-          {
-            "kind": "text",
-            "key": "li",
-            "value": "올리스한도조회"
           },
           {
             "kind": "text",
@@ -352075,11 +351860,6 @@
           },
           {
             "kind": "link",
-            "key": "올리스한도조회",
-            "value": "https://biz.kbcard.com/CXERCCACD0002.cms"
-          },
-          {
-            "kind": "link",
             "key": "금리인하요구권",
             "value": "https://biz.kbcard.com/CXERCCACD0005.cms"
           },
@@ -354071,8 +353851,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:12.377Z",
       "latest": {
-        "id": "112fc777-414c-4be6-8511-9eacf878024f",
-        "runId": "0864c99d-c15c-4e0e-a5a6-5069f770247d",
+        "id": "da15398f-e98a-4f8f-b775-b3a6aee53ce6",
+        "runId": "69899e33-bf5d-4c0a-894b-98c90f3c47f6",
         "endpointId": "57a99be1-efa7-46ec-85b1-ffa0cbcbfc2a",
         "targetId": "ffce3167-72d1-488c-ab2e-f65d740df310",
         "targetName": "스카이패스 티타늄카드",
@@ -354091,10 +353871,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1064,
+        "responseMs": 1419,
         "errorMessage": null,
-        "comparedCheckId": "1bce4cf6-5c8d-4ca3-b52a-2dae509177ee",
-        "comparedAt": "2026-10-19T04:28:42.967Z",
+        "comparedCheckId": "112fc777-414c-4be6-8511-9eacf878024f",
+        "comparedAt": "2026-10-21T04:31:51.580Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -354110,11 +353890,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-21T04:31:51.580Z"
+        "createdAt": "2026-10-22T04:30:36.453Z"
       },
       "lastSuccessful": {
-        "checkId": "112fc777-414c-4be6-8511-9eacf878024f",
-        "createdAt": "2026-10-21T04:31:51.580Z",
+        "checkId": "da15398f-e98a-4f8f-b775-b3a6aee53ce6",
+        "createdAt": "2026-10-22T04:30:36.453Z",
         "hash": "f5e0b6cfcfa5bdc0dd4bcf5b4692f485a0e44ca380607ea7cb3fe1a878747146",
         "tokens": [
           {
