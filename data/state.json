@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-30T05:35:03.472Z",
+  "updatedAt": "2026-10-31T05:24:22.311Z",
   "endpoints": {
     "c926ec76-812d-4877-b8cd-10f16272aeba": {
       "launchedAt": null,
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:35:02.349Z",
       "latest": {
-        "id": "4fc11f33-c3e3-4a8b-bfe9-12232eb74730",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "b38622d9-d2df-4421-a2fa-77dfcc635b8b",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "c926ec76-812d-4877-b8cd-10f16272aeba",
         "targetId": "014f6ae8-f8af-4234-9976-8e1b4ecbb511",
         "targetName": "국민행복카드",
@@ -26,16 +26,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 912,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 475,
         "errorMessage": null,
-        "comparedCheckId": "d2cc903f-d78d-472a-b3ba-c63919f92170",
-        "comparedAt": "2026-10-29T05:36:02.272Z",
+        "comparedCheckId": "4fc11f33-c3e3-4a8b-bfe9-12232eb74730",
+        "comparedAt": "2026-10-30T05:35:02.349Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 21,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -46,11 +46,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:35:02.349Z"
+        "createdAt": "2026-10-31T05:24:21.759Z"
       },
       "lastSuccessful": {
-        "checkId": "4fc11f33-c3e3-4a8b-bfe9-12232eb74730",
-        "createdAt": "2026-10-30T05:35:02.349Z",
+        "checkId": "b38622d9-d2df-4421-a2fa-77dfcc635b8b",
+        "createdAt": "2026-10-31T05:24:21.759Z",
         "hash": "f48b88dcb0a20133f73440e60e947c3f3dd9f7289b130f3d114d6c6cc43274d9",
         "tokens": [
           {
@@ -14271,8 +14271,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:16.120Z",
       "latest": {
-        "id": "6f70b07b-d342-42e8-8c2e-93269551a615",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "9057a92a-51ae-4e44-b38f-d898e8f4d5cb",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "7b6cf907-d2fc-4161-a9c1-7327da1b8c12",
         "targetId": "014f6ae8-f8af-4234-9976-8e1b4ecbb511",
         "targetName": "국민행복카드",
@@ -14291,10 +14291,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1894,
+        "responseMs": 508,
         "errorMessage": null,
-        "comparedCheckId": "61bb69ed-8956-40b4-9fa5-8b0134004c76",
-        "comparedAt": "2026-10-29T05:36:02.491Z",
+        "comparedCheckId": "6f70b07b-d342-42e8-8c2e-93269551a615",
+        "comparedAt": "2026-10-30T05:35:03.472Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -14310,11 +14310,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:35:03.472Z"
+        "createdAt": "2026-10-31T05:24:22.009Z"
       },
       "lastSuccessful": {
-        "checkId": "6f70b07b-d342-42e8-8c2e-93269551a615",
-        "createdAt": "2026-10-30T05:35:03.472Z",
+        "checkId": "9057a92a-51ae-4e44-b38f-d898e8f4d5cb",
+        "createdAt": "2026-10-31T05:24:22.009Z",
         "hash": "e4a05a511ac23184bbdc49d34bd6467f5946d71a55c77f008d78ff291d22f8ee",
         "tokens": [
           {
@@ -16010,8 +16010,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:35:01.300Z",
       "latest": {
-        "id": "6777af3c-9f27-4c22-ae49-08a4c6558fb8",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "46e36432-1e68-4f03-85fc-24cba022d7e8",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "01ed00fd-e36a-480d-ab73-d80aaab6cb65",
         "targetId": "03bb23e7-bb86-4574-8e13-1b46baece17c",
         "targetName": "트래블러스 체크카드",
@@ -16029,16 +16029,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 472,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 961,
         "errorMessage": null,
-        "comparedCheckId": "6e7e274b-1495-4a5f-83a9-3e4437912648",
-        "comparedAt": "2026-10-29T05:36:02.463Z",
+        "comparedCheckId": "6777af3c-9f27-4c22-ae49-08a4c6558fb8",
+        "comparedAt": "2026-10-30T05:35:01.300Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 9,
-        "bodyRemovedCount": 26,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"제휴혜택\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"국제학생증\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"ISIC국제학생증 제휴 서비스\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"ISIC 국제학생증 홈페이지 참고\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"},{\"kind\":\"link\",\"key\":\"링크\",\"value\":\"https://youtu.be/l5fqwrBfJlE\"},{\"kind\":\"link\",\"key\":\"ISIC 국제학생증 홈페이지 참고\",\"value\":\"http://www.isic.co.kr/\"},{\"kind\":\"image\",\"key\":\"환전한 외화 그대로, 수수료 면제까지! 트래블러스 혜택 확인하기\",\"value\":\"https://img1.kbcard.com/LT/cxm/admin/260731_PC_exchange.png\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"라쿠텐 트래블에서 일본 전 지역 숙소 결제 시 30% 즉시할인 쿠폰 제공 (최대 100달러)\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"2026.10.31 까지\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"ID당 1회\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"바로가기\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"바로가기\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBBMCXCRVNEC0001?eventNum=1001534&mainCC=a\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -16049,11 +16049,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:35:01.300Z"
+        "createdAt": "2026-10-31T05:24:21.987Z"
       },
       "lastSuccessful": {
-        "checkId": "6777af3c-9f27-4c22-ae49-08a4c6558fb8",
-        "createdAt": "2026-10-30T05:35:01.300Z",
+        "checkId": "46e36432-1e68-4f03-85fc-24cba022d7e8",
+        "createdAt": "2026-10-31T05:24:21.987Z",
         "hash": "dff290f096854ff7d57d5a06d7d3cff48d13d29834362a80ca14aceedf305ff7",
         "tokens": [
           {
@@ -31329,8 +31329,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:35:02.119Z",
       "latest": {
-        "id": "84bb8f5f-cc5a-449c-9099-0f7ba6ddd48d",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "dda86de9-a8cd-4703-82fa-b2ef698fdc4f",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "db9539a0-6221-4363-9eb5-708ca00e4f35",
         "targetId": "03bb23e7-bb86-4574-8e13-1b46baece17c",
         "targetName": "트래블러스 체크카드",
@@ -31348,16 +31348,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 977,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 576,
         "errorMessage": null,
-        "comparedCheckId": "6c26008e-d7d1-44f9-a91f-1481194ea425",
-        "comparedAt": "2026-10-29T05:36:02.319Z",
+        "comparedCheckId": "84bb8f5f-cc5a-449c-9099-0f7ba6ddd48d",
+        "comparedAt": "2026-10-30T05:35:02.119Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
+        "bodyAddedCount": 0,
         "bodyRemovedCount": 0,
-        "diffJson": "{\"added\":[{\"kind\":\"link\",\"key\":\"링크\",\"value\":\"https://youtu.be/l5fqwrBfJlE\"},{\"kind\":\"image\",\"key\":\"환전한 외화 그대로, 수수료 면제까지! 트래블러스 혜택 확인하기\",\"value\":\"https://img1.kbcard.com/LT/cxm/admin/260731_MO_exchange.png\"}],\"removed\":[]}",
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -31368,11 +31368,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:35:02.119Z"
+        "createdAt": "2026-10-31T05:24:21.622Z"
       },
       "lastSuccessful": {
-        "checkId": "84bb8f5f-cc5a-449c-9099-0f7ba6ddd48d",
-        "createdAt": "2026-10-30T05:35:02.119Z",
+        "checkId": "dda86de9-a8cd-4703-82fa-b2ef698fdc4f",
+        "createdAt": "2026-10-31T05:24:21.622Z",
         "hash": "ebc51c294db1fdc0b78b93bc51972f75b8736b94f336e326739a812d27ccec88",
         "tokens": [
           {
@@ -33248,8 +33248,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:58.851Z",
       "latest": {
-        "id": "b6359ada-0584-4e79-bd13-0b8e9a7433d3",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "10cef94d-5c3b-4a11-b4e4-39694e95d320",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "8fbc38b1-9e91-48b5-b48c-6a8b52dea42c",
         "targetId": "11160efa-eca7-4b83-a8db-13cea9e8e74e",
         "targetName": "HERITAGE Classic(할인형)",
@@ -33267,16 +33267,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 528,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 396,
         "errorMessage": null,
-        "comparedCheckId": "1a719957-a4f5-4a6c-a301-b5ffd1f3df05",
-        "comparedAt": "2026-10-29T05:35:58.321Z",
+        "comparedCheckId": "b6359ada-0584-4e79-bd13-0b8e9a7433d3",
+        "comparedAt": "2026-10-30T05:34:58.851Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 21,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -33287,11 +33287,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:58.851Z"
+        "createdAt": "2026-10-31T05:24:19.093Z"
       },
       "lastSuccessful": {
-        "checkId": "b6359ada-0584-4e79-bd13-0b8e9a7433d3",
-        "createdAt": "2026-10-30T05:34:58.851Z",
+        "checkId": "10cef94d-5c3b-4a11-b4e4-39694e95d320",
+        "createdAt": "2026-10-31T05:24:19.093Z",
         "hash": "9983739180dc51efc2a177186a51902fe148937f58bb7e1c7d80860ef0f20077",
         "tokens": [
           {
@@ -47972,8 +47972,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:13.438Z",
       "latest": {
-        "id": "fb246f34-c808-4b30-9469-44dccb9bc3db",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "89fff65a-9dd6-40ac-ae38-c592485ed03d",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "3a605dd0-af28-4d8f-a524-841baf470b44",
         "targetId": "11160efa-eca7-4b83-a8db-13cea9e8e74e",
         "targetName": "HERITAGE Classic(할인형)",
@@ -47992,10 +47992,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 971,
+        "responseMs": 544,
         "errorMessage": null,
-        "comparedCheckId": "a445b6dd-0170-4922-8658-df15ff60612b",
-        "comparedAt": "2026-10-29T05:35:58.964Z",
+        "comparedCheckId": "fb246f34-c808-4b30-9469-44dccb9bc3db",
+        "comparedAt": "2026-10-30T05:34:59.375Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -48011,11 +48011,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:59.375Z"
+        "createdAt": "2026-10-31T05:24:19.264Z"
       },
       "lastSuccessful": {
-        "checkId": "fb246f34-c808-4b30-9469-44dccb9bc3db",
-        "createdAt": "2026-10-30T05:34:59.375Z",
+        "checkId": "89fff65a-9dd6-40ac-ae38-c592485ed03d",
+        "createdAt": "2026-10-31T05:24:19.264Z",
         "hash": "67f45631c91131d89017d25e8d72c122e5618c0fb8b26ab46cdb102237d15858",
         "tokens": [
           {
@@ -49861,8 +49861,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "da9049f9-1e98-465b-9f20-3bab38cb4934",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "fd79c1b3-e2ed-4643-aebc-4a57d8d81435",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "eb3ccb9d-1f8c-4db8-9ee9-55712c3dc236",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -49881,7 +49881,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 187,
+        "responseMs": 184,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -49900,7 +49900,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-30T05:34:59.120Z"
+        "createdAt": "2026-10-31T05:24:19.277Z"
       },
       "lastSuccessful": null
     },
@@ -49909,8 +49909,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:35:00.091Z",
       "latest": {
-        "id": "47551ad2-c87e-482e-9292-a5acc02f4ae2",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "731dcd65-3b4f-42cb-9473-8bef46380cf0",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "19d614e270d3eff5121073206cce5ab8",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -49928,16 +49928,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 823,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 970,
         "errorMessage": null,
-        "comparedCheckId": "3c3b5a39-f110-4991-9225-ebee5f05fcad",
-        "comparedAt": "2026-10-29T05:35:59.487Z",
+        "comparedCheckId": "47551ad2-c87e-482e-9292-a5acc02f4ae2",
+        "comparedAt": "2026-10-30T05:35:00.091Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 21,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -49948,11 +49948,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:35:00.091Z"
+        "createdAt": "2026-10-31T05:24:20.326Z"
       },
       "lastSuccessful": {
-        "checkId": "47551ad2-c87e-482e-9292-a5acc02f4ae2",
-        "createdAt": "2026-10-30T05:35:00.091Z",
+        "checkId": "731dcd65-3b4f-42cb-9473-8bef46380cf0",
+        "createdAt": "2026-10-31T05:24:20.326Z",
         "hash": "c3704f51fdd0f8a65f19f08ed953421c937bafb0540a664c5764b0f9fe35080c",
         "tokens": [
           {
@@ -64608,8 +64608,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "7d811bfd-3290-4830-9b9e-084282c42a95",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "0c5bb225-cf20-45f0-8a80-87fdda84d31b",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "52619742-f91b-43b9-8ef3-8cb08631642e",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -64628,7 +64628,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 209,
+        "responseMs": 182,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -64647,7 +64647,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-30T05:34:59.584Z"
+        "createdAt": "2026-10-31T05:24:19.459Z"
       },
       "lastSuccessful": null
     },
@@ -64656,8 +64656,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:14.605Z",
       "latest": {
-        "id": "e8aced71-b4ec-4b6b-8fed-df3fa5b8cca1",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "11df2436-6ba7-4817-b050-a890aac1c0a8",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "374ae896ab07fb4b7c98af6100c41f92",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -64676,10 +64676,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 557,
+        "responseMs": 913,
         "errorMessage": null,
-        "comparedCheckId": "6c00228a-ec10-43f3-b010-2596d7ed3a9a",
-        "comparedAt": "2026-10-29T05:36:00.572Z",
+        "comparedCheckId": "e8aced71-b4ec-4b6b-8fed-df3fa5b8cca1",
+        "comparedAt": "2026-10-30T05:35:00.170Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -64695,11 +64695,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:35:00.170Z"
+        "createdAt": "2026-10-31T05:24:20.392Z"
       },
       "lastSuccessful": {
-        "checkId": "e8aced71-b4ec-4b6b-8fed-df3fa5b8cca1",
-        "createdAt": "2026-10-30T05:35:00.170Z",
+        "checkId": "11df2436-6ba7-4817-b050-a890aac1c0a8",
+        "createdAt": "2026-10-31T05:24:20.392Z",
         "hash": "3e60d52126465f8844ce7bbeafca043d034f8272d8d0b4e6be446c8ed0d5e6c4",
         "tokens": [
           {
@@ -66395,8 +66395,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:53.613Z",
       "latest": {
-        "id": "da0e99b6-d4a6-4a89-a9ef-67fe82530db0",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "445ea799-99ae-4bda-a1a0-78d18a32ebe5",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "51572952-d474-4b43-9b5b-4e00ccf2a9ba",
         "targetId": "2fb8b880-93e1-4958-b06b-0e4c1919ec75",
         "targetName": "NEED Edu카드",
@@ -66414,16 +66414,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 689,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 632,
         "errorMessage": null,
-        "comparedCheckId": "e8c9e6f4-1168-4e04-b588-9723305bb62a",
-        "comparedAt": "2026-10-29T05:35:54.063Z",
+        "comparedCheckId": "da0e99b6-d4a6-4a89-a9ef-67fe82530db0",
+        "comparedAt": "2026-10-30T05:34:53.613Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 21,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -66434,11 +66434,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:53.613Z"
+        "createdAt": "2026-10-31T05:24:14.493Z"
       },
       "lastSuccessful": {
-        "checkId": "da0e99b6-d4a6-4a89-a9ef-67fe82530db0",
-        "createdAt": "2026-10-30T05:34:53.613Z",
+        "checkId": "445ea799-99ae-4bda-a1a0-78d18a32ebe5",
+        "createdAt": "2026-10-31T05:24:14.493Z",
         "hash": "30a0057f5000c2f690fa6837321b19d7efb5d4279e62dd045e5b64818dd1477c",
         "tokens": [
           {
@@ -79934,8 +79934,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:08.896Z",
       "latest": {
-        "id": "cdbce375-84d4-4dcc-a48c-7e8f328ee5c9",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "5c9eced0-f9aa-4930-bd92-90f14de31a25",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "83cb96fd-4bfc-4f6a-9dfb-9833b941448e",
         "targetId": "2fb8b880-93e1-4958-b06b-0e4c1919ec75",
         "targetName": "NEED Edu카드",
@@ -79954,10 +79954,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 641,
+        "responseMs": 998,
         "errorMessage": null,
-        "comparedCheckId": "e3b5cf51-d09b-4c55-9441-03c8d0c045fe",
-        "comparedAt": "2026-10-29T05:35:54.486Z",
+        "comparedCheckId": "cdbce375-84d4-4dcc-a48c-7e8f328ee5c9",
+        "comparedAt": "2026-10-30T05:34:53.662Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -79973,11 +79973,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:53.662Z"
+        "createdAt": "2026-10-31T05:24:14.887Z"
       },
       "lastSuccessful": {
-        "checkId": "cdbce375-84d4-4dcc-a48c-7e8f328ee5c9",
-        "createdAt": "2026-10-30T05:34:53.662Z",
+        "checkId": "5c9eced0-f9aa-4930-bd92-90f14de31a25",
+        "createdAt": "2026-10-31T05:24:14.887Z",
         "hash": "a626b3370f6e9ba10cf0296a9fa76fbb7b60726abb5a679b9c05a3fe1b75447e",
         "tokens": [
           {
@@ -81838,8 +81838,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:55.263Z",
       "latest": {
-        "id": "993201fc-0126-433c-addf-7a43c5dac197",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "424f8102-7599-47d9-87e1-128923c260ff",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "70e8f0ed-244e-480d-b5de-ce9e698c2652",
         "targetId": "6bf242ce-9823-4510-bb63-e9bd0c5ee0ba",
         "targetName": "My WE:SH 카드",
@@ -81857,16 +81857,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 416,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 869,
         "errorMessage": null,
-        "comparedCheckId": "7359851c-6ba5-4b99-9a11-0d41d8f835ae",
-        "comparedAt": "2026-10-29T05:35:57.074Z",
+        "comparedCheckId": "993201fc-0126-433c-addf-7a43c5dac197",
+        "comparedAt": "2026-10-30T05:34:55.263Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 21,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -81877,11 +81877,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:55.263Z"
+        "createdAt": "2026-10-31T05:24:17.049Z"
       },
       "lastSuccessful": {
-        "checkId": "993201fc-0126-433c-addf-7a43c5dac197",
-        "createdAt": "2026-10-30T05:34:55.263Z",
+        "checkId": "424f8102-7599-47d9-87e1-128923c260ff",
+        "createdAt": "2026-10-31T05:24:17.049Z",
         "hash": "7672aef281ee2d93a8aacc37ebc8a75aae93719697f6be3f37b16b0fcaf27098",
         "tokens": [
           {
@@ -95867,8 +95867,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:10.458Z",
       "latest": {
-        "id": "82595bbf-ee64-47ff-8bff-e07bcb5417af",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "3f8de1df-9fa6-4089-b1dc-022d973b72fb",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "8ebd43ae-830a-4ea9-89a8-db087f92b159",
         "targetId": "6bf242ce-9823-4510-bb63-e9bd0c5ee0ba",
         "targetName": "My WE:SH 카드",
@@ -95887,10 +95887,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 2066,
+        "responseMs": 473,
         "errorMessage": null,
-        "comparedCheckId": "2887c2d1-4769-4e98-96ff-960e9ccd20f3",
-        "comparedAt": "2026-10-29T05:35:55.962Z",
+        "comparedCheckId": "82595bbf-ee64-47ff-8bff-e07bcb5417af",
+        "comparedAt": "2026-10-30T05:34:57.381Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -95906,11 +95906,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:57.381Z"
+        "createdAt": "2026-10-31T05:24:16.733Z"
       },
       "lastSuccessful": {
-        "checkId": "82595bbf-ee64-47ff-8bff-e07bcb5417af",
-        "createdAt": "2026-10-30T05:34:57.381Z",
+        "checkId": "3f8de1df-9fa6-4089-b1dc-022d973b72fb",
+        "createdAt": "2026-10-31T05:24:16.733Z",
         "hash": "c9ea354b02adf03e9386184fb0252afb5c091414b48967ed45d6f1db85d73531",
         "tokens": [
           {
@@ -97791,8 +97791,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:50.445Z",
       "latest": {
-        "id": "81939990-ff3b-4561-a085-1039f58cb377",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "b62a74ee-6476-42d9-89c1-cae7cd30e231",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "64453981-5ab0-4e5f-ad30-9e8f9102413d",
         "targetId": "6c97d1ef-282c-421a-a4e8-2094a212838e",
         "targetName": "ALL point 카드",
@@ -97810,16 +97810,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 2135,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1863,
         "errorMessage": null,
-        "comparedCheckId": "00b03c8c-979d-4068-b333-e9ed61766791",
-        "comparedAt": "2026-10-29T05:35:51.421Z",
+        "comparedCheckId": "81939990-ff3b-4561-a085-1039f58cb377",
+        "comparedAt": "2026-10-30T05:34:50.445Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 21,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -97830,11 +97830,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:50.445Z"
+        "createdAt": "2026-10-31T05:24:11.800Z"
       },
       "lastSuccessful": {
-        "checkId": "81939990-ff3b-4561-a085-1039f58cb377",
-        "createdAt": "2026-10-30T05:34:50.445Z",
+        "checkId": "b62a74ee-6476-42d9-89c1-cae7cd30e231",
+        "createdAt": "2026-10-31T05:24:11.800Z",
         "hash": "2a275399d8ffb16014730b9f6d432b6ab7edbbbf8abd95c95a6583cebebedf99",
         "tokens": [
           {
@@ -111665,8 +111665,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:05.451Z",
       "latest": {
-        "id": "7de9f81d-de2f-4b0b-a756-9e1122e2842e",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "cd3ee8bb-dc7c-4e6d-aaca-129d9924dde9",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "1c5ac6ba-dd55-4713-af80-eda4dac245f7",
         "targetId": "6c97d1ef-282c-421a-a4e8-2094a212838e",
         "targetName": "ALL point 카드",
@@ -111685,10 +111685,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 2759,
+        "responseMs": 2041,
         "errorMessage": null,
-        "comparedCheckId": "94789acf-0643-4200-bc1f-f0a743be11d8",
-        "comparedAt": "2026-10-29T05:35:51.279Z",
+        "comparedCheckId": "7de9f81d-de2f-4b0b-a756-9e1122e2842e",
+        "comparedAt": "2026-10-30T05:34:50.993Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -111704,11 +111704,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:50.993Z"
+        "createdAt": "2026-10-31T05:24:11.877Z"
       },
       "lastSuccessful": {
-        "checkId": "7de9f81d-de2f-4b0b-a756-9e1122e2842e",
-        "createdAt": "2026-10-30T05:34:50.993Z",
+        "checkId": "cd3ee8bb-dc7c-4e6d-aaca-129d9924dde9",
+        "createdAt": "2026-10-31T05:24:11.877Z",
         "hash": "566e5283b39ab37731fdff52d28dc8b9cca65f5c8594dd383c230a7a5709845e",
         "tokens": [
           {
@@ -113609,8 +113609,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "194a3448-a079-43dd-9f2f-927a18257fee",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "825812af-ed9d-40cf-a7b4-84706468ebf7",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "de405dc7-0a5c-4d1e-9d93-1028db2686c8",
         "targetId": "763c388b-d1bd-4949-9a3f-4fbabe4d3c37",
         "targetName": "서비스",
@@ -113629,7 +113629,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 200,
+        "responseMs": 176,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -113648,7 +113648,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-30T05:35:02.040Z"
+        "createdAt": "2026-10-31T05:24:21.799Z"
       },
       "lastSuccessful": null
     },
@@ -113657,8 +113657,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:35:02.449Z",
       "latest": {
-        "id": "952e1bec-ee80-451f-804d-309bc53395f4",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "1b97f85c-7b2e-4c29-9924-62959a3a7ce2",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "ccd04d1d7fbc346be2a4dd4dd93069c1",
         "targetId": "763c388b-d1bd-4949-9a3f-4fbabe4d3c37",
         "targetName": "서비스",
@@ -113676,16 +113676,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 312,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 484,
         "errorMessage": null,
-        "comparedCheckId": "737a929e-107a-46f8-804d-a1a7d1e4e5b1",
-        "comparedAt": "2026-10-29T05:36:02.664Z",
+        "comparedCheckId": "952e1bec-ee80-451f-804d-309bc53395f4",
+        "comparedAt": "2026-10-30T05:35:02.449Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 21,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -113696,11 +113696,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:35:02.449Z"
+        "createdAt": "2026-10-31T05:24:22.311Z"
       },
       "lastSuccessful": {
-        "checkId": "952e1bec-ee80-451f-804d-309bc53395f4",
-        "createdAt": "2026-10-30T05:35:02.449Z",
+        "checkId": "1b97f85c-7b2e-4c29-9924-62959a3a7ce2",
+        "createdAt": "2026-10-31T05:24:22.311Z",
         "hash": "081408e0f03a903a95f616d94760c9824bfb695d31e96f1efdf1605dad999a70",
         "tokens": [
           {
@@ -125911,8 +125911,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "0f404b67-7d73-437a-a09e-8aa748443974",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "750008cf-527f-4f57-89ae-eef64156a28c",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "45b57bad17f4bbfdb5cc5db4399d6aff",
         "targetId": "855f0b69537a077bfaa438388fac9a6e",
         "targetName": "이벤트 10월",
@@ -125931,7 +125931,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 187,
+        "responseMs": 182,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -125950,7 +125950,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-30T05:35:02.636Z"
+        "createdAt": "2026-10-31T05:24:22.192Z"
       },
       "lastSuccessful": null
     },
@@ -125959,8 +125959,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "c3780689-6440-4fc9-a773-6d98f1c47bdb",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "34172314-f2b5-4e61-a4fe-72f888f8ae35",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "b7f29a5a39ab16895d268b8da1abe58b",
         "targetId": "855f0b69537a077bfaa438388fac9a6e",
         "targetName": "이벤트 10월",
@@ -125979,7 +125979,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 196,
+        "responseMs": 183,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -125998,7 +125998,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-30T05:35:02.646Z"
+        "createdAt": "2026-10-31T05:24:22.193Z"
       },
       "lastSuccessful": null
     },
@@ -126007,8 +126007,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:59.582Z",
       "latest": {
-        "id": "478a31c7-12a8-4c68-bf9f-31cd726074bc",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "3fe0663b-b5af-4a2a-ad37-7cc153035496",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "1bdbffb4-b7ee-441d-acbb-c11aa778a231",
         "targetId": "a21ecf12-1a64-40d4-855d-b6f1b81a8ba8",
         "targetName": "HERITAGE Classic(스카이패스형)",
@@ -126026,16 +126026,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 590,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 970,
         "errorMessage": null,
-        "comparedCheckId": "54397d14-7b0b-4bc3-9e75-5537c827048c",
-        "comparedAt": "2026-10-29T05:35:58.845Z",
+        "comparedCheckId": "478a31c7-12a8-4c68-bf9f-31cd726074bc",
+        "comparedAt": "2026-10-30T05:34:59.582Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 21,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -126046,11 +126046,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:59.582Z"
+        "createdAt": "2026-10-31T05:24:19.796Z"
       },
       "lastSuccessful": {
-        "checkId": "478a31c7-12a8-4c68-bf9f-31cd726074bc",
-        "createdAt": "2026-10-30T05:34:59.582Z",
+        "checkId": "3fe0663b-b5af-4a2a-ad37-7cc153035496",
+        "createdAt": "2026-10-31T05:24:19.796Z",
         "hash": "0d7d2bbada1232045ccb01772651bcb91a14587607202c1f84b5b45cee40a980",
         "tokens": [
           {
@@ -140876,8 +140876,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:13.472Z",
       "latest": {
-        "id": "538ced94-92fa-43cb-ad63-0bce85b4f10e",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "87cc3bcb-5d31-4723-b896-ca8dfe34f1f6",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "78383cd1-8504-4fd8-b0b4-4fbc3635b01e",
         "targetId": "a21ecf12-1a64-40d4-855d-b6f1b81a8ba8",
         "targetName": "HERITAGE Classic(스카이패스형)",
@@ -140896,10 +140896,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1216,
+        "responseMs": 520,
         "errorMessage": null,
-        "comparedCheckId": "03639bb3-3e44-406e-aac4-3829a7b2edbc",
-        "comparedAt": "2026-10-29T05:35:59.337Z",
+        "comparedCheckId": "538ced94-92fa-43cb-ad63-0bce85b4f10e",
+        "comparedAt": "2026-10-30T05:35:00.136Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -140915,11 +140915,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:35:00.136Z"
+        "createdAt": "2026-10-31T05:24:19.533Z"
       },
       "lastSuccessful": {
-        "checkId": "538ced94-92fa-43cb-ad63-0bce85b4f10e",
-        "createdAt": "2026-10-30T05:35:00.136Z",
+        "checkId": "87cc3bcb-5d31-4723-b896-ca8dfe34f1f6",
+        "createdAt": "2026-10-31T05:24:19.533Z",
         "hash": "fe2955d774d98a40d74e2e84ce62500d3363304f0986272631b3fef65e4d61d6",
         "tokens": [
           {
@@ -142785,8 +142785,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:50.895Z",
       "latest": {
-        "id": "1761408c-6590-4d3b-9306-30d3b923671a",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "75462919-d3e5-4dfb-8594-118fa688a672",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "1a874d68-15d0-4e4c-bd29-6ebecf90e52a",
         "targetId": "a710c22f-7ed7-4f06-9334-abdfff7788ee",
         "targetName": "YOU Prime 카드",
@@ -142804,16 +142804,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 948,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 2063,
         "errorMessage": null,
-        "comparedCheckId": "0b7749d1-fdbc-48d7-8d94-bca5c3985573",
-        "comparedAt": "2026-10-29T05:35:51.794Z",
+        "comparedCheckId": "1761408c-6590-4d3b-9306-30d3b923671a",
+        "comparedAt": "2026-10-30T05:34:50.895Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 21,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -142824,11 +142824,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:50.895Z"
+        "createdAt": "2026-10-31T05:24:13.762Z"
       },
       "lastSuccessful": {
-        "checkId": "1761408c-6590-4d3b-9306-30d3b923671a",
-        "createdAt": "2026-10-30T05:34:50.895Z",
+        "checkId": "75462919-d3e5-4dfb-8594-118fa688a672",
+        "createdAt": "2026-10-31T05:24:13.762Z",
         "hash": "92793c6bbb4186ae3ba5eae641d7f125a8fa52798a2ea9fb8a54711fdc0a27e3",
         "tokens": [
           {
@@ -157864,8 +157864,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:06.263Z",
       "latest": {
-        "id": "328624c1-1a60-4600-b4dd-ef122b7f9d1f",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "d97fc75a-446c-4196-b732-cbbadaad1b76",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "ff46ae32-0a90-4beb-b8e0-4debf4b3b397",
         "targetId": "a710c22f-7ed7-4f06-9334-abdfff7788ee",
         "targetName": "YOU Prime 카드",
@@ -157884,10 +157884,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1946,
+        "responseMs": 671,
         "errorMessage": null,
-        "comparedCheckId": "51b26216-b178-4d2f-aee1-e44c6712c446",
-        "comparedAt": "2026-10-29T05:35:52.358Z",
+        "comparedCheckId": "328624c1-1a60-4600-b4dd-ef122b7f9d1f",
+        "comparedAt": "2026-10-30T05:34:52.426Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -157903,11 +157903,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:52.426Z"
+        "createdAt": "2026-10-31T05:24:12.371Z"
       },
       "lastSuccessful": {
-        "checkId": "328624c1-1a60-4600-b4dd-ef122b7f9d1f",
-        "createdAt": "2026-10-30T05:34:52.426Z",
+        "checkId": "d97fc75a-446c-4196-b732-cbbadaad1b76",
+        "createdAt": "2026-10-31T05:24:12.371Z",
         "hash": "b06c1647aceb26a5afe6f4ca27f0f015c05f87e083a316b1c2d93f803d1aba33",
         "tokens": [
           {
@@ -159888,8 +159888,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:55.456Z",
       "latest": {
-        "id": "186f4ed5-1bc4-4e36-8022-f996e85b7736",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "4d745eaa-f47d-4485-9892-0493c411e1cd",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "eb730105-e4a1-4995-b8bc-5f685b2ba79b",
         "targetId": "ab9fa5b9-3ed4-417d-b62a-b5ec7862e32f",
         "targetName": "WE:SH Travel",
@@ -159907,16 +159907,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 1459,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1198,
         "errorMessage": null,
-        "comparedCheckId": "1800c730-42b6-4de3-be77-50a26c37a72e",
-        "comparedAt": "2026-10-29T05:35:55.797Z",
+        "comparedCheckId": "186f4ed5-1bc4-4e36-8022-f996e85b7736",
+        "comparedAt": "2026-10-30T05:34:55.456Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 21,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -159927,11 +159927,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:55.456Z"
+        "createdAt": "2026-10-31T05:24:16.225Z"
       },
       "lastSuccessful": {
-        "checkId": "186f4ed5-1bc4-4e36-8022-f996e85b7736",
-        "createdAt": "2026-10-30T05:34:55.456Z",
+        "checkId": "4d745eaa-f47d-4485-9892-0493c411e1cd",
+        "createdAt": "2026-10-31T05:24:16.225Z",
         "hash": "7707d8fdf6fba87e1d52922695ceefa78a6d4cf0debe9e72c382ada89dea1b14",
         "tokens": [
           {
@@ -174327,8 +174327,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:09.893Z",
       "latest": {
-        "id": "b15fa93b-a074-4fbe-bd14-f9db455b70da",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "b404d57c-659a-48f2-ac18-6db2c379565c",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "119352b3-dbfe-4676-88a9-0e3e64d39abc",
         "targetId": "ab9fa5b9-3ed4-417d-b62a-b5ec7862e32f",
         "targetName": "WE:SH Travel",
@@ -174347,10 +174347,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1856,
+        "responseMs": 1806,
         "errorMessage": null,
-        "comparedCheckId": "877cd166-e98a-40a4-bfbd-c863ae76917c",
-        "comparedAt": "2026-10-29T05:35:56.440Z",
+        "comparedCheckId": "b15fa93b-a074-4fbe-bd14-f9db455b70da",
+        "comparedAt": "2026-10-30T05:34:56.313Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -174366,11 +174366,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:56.313Z"
+        "createdAt": "2026-10-31T05:24:17.665Z"
       },
       "lastSuccessful": {
-        "checkId": "b15fa93b-a074-4fbe-bd14-f9db455b70da",
-        "createdAt": "2026-10-30T05:34:56.313Z",
+        "checkId": "b404d57c-659a-48f2-ac18-6db2c379565c",
+        "createdAt": "2026-10-31T05:24:17.665Z",
         "hash": "205fcddcb72f788ba4f37696c829f1507f1f38381ce3a7ebafbf9a8245a68fa7",
         "tokens": [
           {
@@ -176221,8 +176221,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:53.475Z",
       "latest": {
-        "id": "9bd3caa3-828c-4807-b8cf-db538a05f3dd",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "fa0c94cb-fefb-476c-9e39-6a96929a139a",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "27f46e5f-feab-4c61-9b17-4e82b91c3b1b",
         "targetId": "aee77a45-fdde-4c1f-a82f-419336a1ab18",
         "targetName": "YOU Wish up 카드",
@@ -176240,16 +176240,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 902,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 876,
         "errorMessage": null,
-        "comparedCheckId": "ba42326c-a81a-4264-9034-964b419353f7",
-        "comparedAt": "2026-10-29T05:35:53.011Z",
+        "comparedCheckId": "9bd3caa3-828c-4807-b8cf-db538a05f3dd",
+        "comparedAt": "2026-10-30T05:34:53.475Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 21,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -176260,11 +176260,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:53.475Z"
+        "createdAt": "2026-10-31T05:24:14.158Z"
       },
       "lastSuccessful": {
-        "checkId": "9bd3caa3-828c-4807-b8cf-db538a05f3dd",
-        "createdAt": "2026-10-30T05:34:53.475Z",
+        "checkId": "fa0c94cb-fefb-476c-9e39-6a96929a139a",
+        "createdAt": "2026-10-31T05:24:14.158Z",
         "hash": "9607227557461c1efc0684409fb3912cb67d03379de28782b008e4328d954623",
         "tokens": [
           {
@@ -190675,8 +190675,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:08.025Z",
       "latest": {
-        "id": "33a80bfe-11f1-42d1-bb4e-23a339ebd072",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "3d4c93ce-1346-49ac-b41c-ca22681c27fc",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "65ae2ae0-6609-42a3-aa4a-6a9d9e620da4",
         "targetId": "aee77a45-fdde-4c1f-a82f-419336a1ab18",
         "targetName": "YOU Wish up 카드",
@@ -190695,10 +190695,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 586,
+        "responseMs": 939,
         "errorMessage": null,
-        "comparedCheckId": "15d87687-ccf7-4b04-ae42-ed4dde4ea364",
-        "comparedAt": "2026-10-29T05:35:54.688Z",
+        "comparedCheckId": "33a80bfe-11f1-42d1-bb4e-23a339ebd072",
+        "comparedAt": "2026-10-30T05:34:53.204Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -190714,11 +190714,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:53.204Z"
+        "createdAt": "2026-10-31T05:24:14.628Z"
       },
       "lastSuccessful": {
-        "checkId": "33a80bfe-11f1-42d1-bb4e-23a339ebd072",
-        "createdAt": "2026-10-30T05:34:53.204Z",
+        "checkId": "3d4c93ce-1346-49ac-b41c-ca22681c27fc",
+        "createdAt": "2026-10-31T05:24:14.628Z",
         "hash": "04f0976512dd39805dae212b33bfd0bcf6fcf84f789f5b91f0ececb365573408",
         "tokens": [
           {
@@ -192569,8 +192569,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:56.640Z",
       "latest": {
-        "id": "1e53b0a2-ac6e-466a-b1b0-90375e290e95",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "6c833b10-3b5e-4b6a-a834-ac471a0452b3",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "55e07fac-79e6-4ccb-a6c6-38a1519deae8",
         "targetId": "ba3c273b-bf19-44d9-a4ef-c79f1dac16b9",
         "targetName": "굿데이올림카드",
@@ -192588,16 +192588,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 1039,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 516,
         "errorMessage": null,
-        "comparedCheckId": "f20503c4-e961-4208-9ad3-2454fcd76eb5",
-        "comparedAt": "2026-10-29T05:35:56.802Z",
+        "comparedCheckId": "1e53b0a2-ac6e-466a-b1b0-90375e290e95",
+        "comparedAt": "2026-10-30T05:34:56.640Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 21,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -192608,11 +192608,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:56.640Z"
+        "createdAt": "2026-10-31T05:24:17.224Z"
       },
       "lastSuccessful": {
-        "checkId": "1e53b0a2-ac6e-466a-b1b0-90375e290e95",
-        "createdAt": "2026-10-30T05:34:56.640Z",
+        "checkId": "6c833b10-3b5e-4b6a-a834-ac471a0452b3",
+        "createdAt": "2026-10-31T05:24:17.224Z",
         "hash": "253ee9eb88b89a24bb620ef8945447dd767766eb58be4e2ad42415d58d7203d1",
         "tokens": [
           {
@@ -206918,8 +206918,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:11.481Z",
       "latest": {
-        "id": "a1c89c91-4992-4a2f-9245-3ce6ba1fafeb",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "28aeace7-ef33-40e7-a796-5af05abdd691",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "99506875-e7b5-49a6-aa7d-d9ed9e4cf5ba",
         "targetId": "ba3c273b-bf19-44d9-a4ef-c79f1dac16b9",
         "targetName": "굿데이올림카드",
@@ -206938,10 +206938,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 2045,
+        "responseMs": 1316,
         "errorMessage": null,
-        "comparedCheckId": "68f6e48f-f4e8-48b7-99db-17a1f52250a5",
-        "comparedAt": "2026-10-29T05:35:56.869Z",
+        "comparedCheckId": "a1c89c91-4992-4a2f-9245-3ce6ba1fafeb",
+        "comparedAt": "2026-10-30T05:34:57.744Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -206957,11 +206957,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:57.744Z"
+        "createdAt": "2026-10-31T05:24:18.073Z"
       },
       "lastSuccessful": {
-        "checkId": "a1c89c91-4992-4a2f-9245-3ce6ba1fafeb",
-        "createdAt": "2026-10-30T05:34:57.744Z",
+        "checkId": "28aeace7-ef33-40e7-a796-5af05abdd691",
+        "createdAt": "2026-10-31T05:24:18.073Z",
         "hash": "7d204c8f1dfbb48d1582c5a090a48187d5761ac5f7486d14db91bd1413847662",
         "tokens": [
           {
@@ -209232,8 +209232,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:53.866Z",
       "latest": {
-        "id": "10235d08-ff36-43cc-8e93-f268892f2bae",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "da0e30f5-17f2-46b7-aa2c-8f6cb74ebabe",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "a1c82600-76ec-46e4-93ef-f8bc6778b034",
         "targetId": "bec4c3be-5c44-4585-a6a3-5fc7ffc3a7b0",
         "targetName": "NEED Global 카드",
@@ -209251,16 +209251,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 528,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 523,
         "errorMessage": null,
-        "comparedCheckId": "ead7bf7d-2685-41d4-acf7-cbbbdcb47584",
-        "comparedAt": "2026-10-29T05:35:54.998Z",
+        "comparedCheckId": "10235d08-ff36-43cc-8e93-f268892f2bae",
+        "comparedAt": "2026-10-30T05:34:53.866Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 21,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -209271,11 +209271,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:53.866Z"
+        "createdAt": "2026-10-31T05:24:14.780Z"
       },
       "lastSuccessful": {
-        "checkId": "10235d08-ff36-43cc-8e93-f268892f2bae",
-        "createdAt": "2026-10-30T05:34:53.866Z",
+        "checkId": "da0e30f5-17f2-46b7-aa2c-8f6cb74ebabe",
+        "createdAt": "2026-10-31T05:24:14.780Z",
         "hash": "0c65b16c7c654e9f5c93285df1e40a36cba69d7b936a83c213eb96013cb7d572",
         "tokens": [
           {
@@ -222551,8 +222551,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:09.622Z",
       "latest": {
-        "id": "7a8d59a0-8eb8-438d-a815-f0ee17e20899",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "7e64882a-4e6a-44e7-8ff8-669bfa3f0057",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "556d6d77-9c95-4b36-9826-ae45ff7b9f6b",
         "targetId": "bec4c3be-5c44-4585-a6a3-5fc7ffc3a7b0",
         "targetName": "NEED Global 카드",
@@ -222571,10 +222571,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 903,
+        "responseMs": 1303,
         "errorMessage": null,
-        "comparedCheckId": "b6f05f7b-fe21-416f-8a28-9074cd34f353",
-        "comparedAt": "2026-10-29T05:35:55.052Z",
+        "comparedCheckId": "7a8d59a0-8eb8-438d-a815-f0ee17e20899",
+        "comparedAt": "2026-10-30T05:34:54.410Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -222590,11 +222590,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:54.410Z"
+        "createdAt": "2026-10-31T05:24:15.830Z"
       },
       "lastSuccessful": {
-        "checkId": "7a8d59a0-8eb8-438d-a815-f0ee17e20899",
-        "createdAt": "2026-10-30T05:34:54.410Z",
+        "checkId": "7e64882a-4e6a-44e7-8ff8-669bfa3f0057",
+        "createdAt": "2026-10-31T05:24:15.830Z",
         "hash": "f1463816cf6e70df62ed102c7f137ad0139ab74507463fb6533f0af7bee6732f",
         "tokens": [
           {
@@ -224435,8 +224435,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:35:01.840Z",
       "latest": {
-        "id": "05c3fa01-bd75-43f3-8e20-1468b3654f14",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "a60985e6-2de6-4c10-ab0a-c7a30971524c",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "c79d4215-7632-4f50-b00d-872fc192fe4a",
         "targetId": "c4fe7b59-3b68-47f8-bbde-6c8701458fac",
         "targetName": "노리2 체크카드(KB Pay)",
@@ -224454,16 +224454,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 1546,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 508,
         "errorMessage": null,
-        "comparedCheckId": "aef07480-2c61-4708-9185-7e216a89b62d",
-        "comparedAt": "2026-10-29T05:36:00.545Z",
+        "comparedCheckId": "05c3fa01-bd75-43f3-8e20-1468b3654f14",
+        "comparedAt": "2026-10-30T05:35:01.840Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 21,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -224474,11 +224474,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:35:01.840Z"
+        "createdAt": "2026-10-31T05:24:20.930Z"
       },
       "lastSuccessful": {
-        "checkId": "05c3fa01-bd75-43f3-8e20-1468b3654f14",
-        "createdAt": "2026-10-30T05:35:01.840Z",
+        "checkId": "a60985e6-2de6-4c10-ab0a-c7a30971524c",
+        "createdAt": "2026-10-31T05:24:20.930Z",
         "hash": "c9db9598e3b715bc0226778ffde383084467d37c899004640dd1febfb9f6ad5c",
         "tokens": [
           {
@@ -239494,8 +239494,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:15.082Z",
       "latest": {
-        "id": "214f52f8-8612-469f-9ad0-6c2f0b903a9c",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "2b75d687-8e7d-4ad5-9ee5-3520df0ddd32",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "3506bde9-c822-4be3-9f30-31809737af94",
         "targetId": "c4fe7b59-3b68-47f8-bbde-6c8701458fac",
         "targetName": "노리2 체크카드(KB Pay)",
@@ -239514,10 +239514,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 872,
+        "responseMs": 1066,
         "errorMessage": null,
-        "comparedCheckId": "d7c91c54-c1b3-44d9-b004-db946b31903b",
-        "comparedAt": "2026-10-29T05:36:00.739Z",
+        "comparedCheckId": "214f52f8-8612-469f-9ad0-6c2f0b903a9c",
+        "comparedAt": "2026-10-30T05:35:01.106Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -239533,11 +239533,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:35:01.106Z"
+        "createdAt": "2026-10-31T05:24:21.481Z"
       },
       "lastSuccessful": {
-        "checkId": "214f52f8-8612-469f-9ad0-6c2f0b903a9c",
-        "createdAt": "2026-10-30T05:35:01.106Z",
+        "checkId": "2b75d687-8e7d-4ad5-9ee5-3520df0ddd32",
+        "createdAt": "2026-10-31T05:24:21.481Z",
         "hash": "46940c6778576b77a002f78414120e9289d78017e863ac0ab8c2b9eff87092bc",
         "tokens": [
           {
@@ -241238,8 +241238,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "da4e07f3-8a03-4736-8bd8-08f89c86912d",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "2e939a26-99eb-4a3e-9fce-0fc516818153",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "d7ed54fd-b471-4d4e-8c66-f9b1778028d7",
         "targetId": "c5d297d9-5523-49eb-9b65-340e00f4c55c",
         "targetName": "이벤트 9월",
@@ -241258,7 +241258,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 331,
+        "responseMs": 211,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -241277,7 +241277,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-30T05:35:02.450Z"
+        "createdAt": "2026-10-31T05:24:22.010Z"
       },
       "lastSuccessful": null
     },
@@ -241286,8 +241286,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "7480c13b-9cea-4970-98e3-1e84ecd27a88",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "dcb11824-1677-4551-8d7c-c62b971f13d8",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "ae8ab9e4-6784-4ab8-a84e-0fa75525d559",
         "targetId": "c5d297d9-5523-49eb-9b65-340e00f4c55c",
         "targetName": "이벤트 9월",
@@ -241306,7 +241306,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 734,
+        "responseMs": 176,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -241325,7 +241325,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-10-30T05:35:03.083Z"
+        "createdAt": "2026-10-31T05:24:22.163Z"
       },
       "lastSuccessful": null
     },
@@ -241334,8 +241334,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:35:01.540Z",
       "latest": {
-        "id": "3da969ae-4c8c-4b7f-8958-4e656e9643cc",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "3964ea02-6577-42fd-9fee-30291c7b1030",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "e2bcd9ac-eaa5-4919-abe7-19c890c2d785",
         "targetId": "c701fd1a-9015-4daf-9039-b987c990c619",
         "targetName": "Youth Club 체크카드",
@@ -241353,16 +241353,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 1822,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1408,
         "errorMessage": null,
-        "comparedCheckId": "10703c42-f837-477e-996c-3abbf109ed75",
-        "comparedAt": "2026-10-29T05:36:00.905Z",
+        "comparedCheckId": "3da969ae-4c8c-4b7f-8958-4e656e9643cc",
+        "comparedAt": "2026-10-30T05:35:01.540Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 21,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -241373,11 +241373,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:35:01.540Z"
+        "createdAt": "2026-10-31T05:24:21.025Z"
       },
       "lastSuccessful": {
-        "checkId": "3da969ae-4c8c-4b7f-8958-4e656e9643cc",
-        "createdAt": "2026-10-30T05:35:01.540Z",
+        "checkId": "3964ea02-6577-42fd-9fee-30291c7b1030",
+        "createdAt": "2026-10-31T05:24:21.025Z",
         "hash": "ccb606201540fbef64515bbd7202d2a5b52333cf95aa725059e85090a530358b",
         "tokens": [
           {
@@ -256313,8 +256313,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:14.845Z",
       "latest": {
-        "id": "9437efea-0969-4b89-b340-55064760ebf6",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "05b6813e-79c1-434d-a9aa-03b1b76895c6",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "20e3a981-c6a0-4673-9a6f-5e0241999772",
         "targetId": "c701fd1a-9015-4daf-9039-b987c990c619",
         "targetName": "Youth Club 체크카드",
@@ -256333,10 +256333,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 552,
+        "responseMs": 1361,
         "errorMessage": null,
-        "comparedCheckId": "4a28e372-30ce-4e37-9114-97f0f572f02e",
-        "comparedAt": "2026-10-29T05:36:00.091Z",
+        "comparedCheckId": "9437efea-0969-4b89-b340-55064760ebf6",
+        "comparedAt": "2026-10-30T05:35:00.678Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -256352,11 +256352,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:35:00.678Z"
+        "createdAt": "2026-10-31T05:24:21.184Z"
       },
       "lastSuccessful": {
-        "checkId": "9437efea-0969-4b89-b340-55064760ebf6",
-        "createdAt": "2026-10-30T05:35:00.678Z",
+        "checkId": "05b6813e-79c1-434d-a9aa-03b1b76895c6",
+        "createdAt": "2026-10-31T05:24:21.184Z",
         "hash": "cda2e12f252ca8fa27223ccf33a3f95d12b0e6111a699883b1235b318e1a2d28",
         "tokens": [
           {
@@ -258052,8 +258052,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:58.357Z",
       "latest": {
-        "id": "e24cab5b-92dd-4b5b-9eda-54829026e0d0",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "b603b4d0-4e83-46f8-844b-d2c95ace5329",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "533221ef-199b-4710-b94e-bc3aab4a1c02",
         "targetId": "ccfd1770-4563-4762-823c-5f6aa40a0d3e",
         "targetName": "American Express Blue Card",
@@ -258071,16 +258071,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 846,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 850,
         "errorMessage": null,
-        "comparedCheckId": "959cf845-0bc2-4eb2-87a2-bd6133e753f9",
-        "comparedAt": "2026-10-29T05:35:58.646Z",
+        "comparedCheckId": "e24cab5b-92dd-4b5b-9eda-54829026e0d0",
+        "comparedAt": "2026-10-30T05:34:58.357Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 21,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -258091,11 +258091,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:58.357Z"
+        "createdAt": "2026-10-31T05:24:18.601Z"
       },
       "lastSuccessful": {
-        "checkId": "e24cab5b-92dd-4b5b-9eda-54829026e0d0",
-        "createdAt": "2026-10-30T05:34:58.357Z",
+        "checkId": "b603b4d0-4e83-46f8-844b-d2c95ace5329",
+        "createdAt": "2026-10-31T05:24:18.601Z",
         "hash": "3dfc64f4797ae3e28c9dff2e878527b73221663b4f8c450543c5ce245523f6e5",
         "tokens": [
           {
@@ -272266,8 +272266,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:12.462Z",
       "latest": {
-        "id": "e2dad094-0edc-4e6f-a677-ca78bd784ec5",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "60578b63-6801-4b65-b1dc-74f1b9e11968",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "8ea95969-0296-474c-b812-028030be9348",
         "targetId": "ccfd1770-4563-4762-823c-5f6aa40a0d3e",
         "targetName": "American Express Blue Card",
@@ -272286,10 +272286,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1108,
+        "responseMs": 617,
         "errorMessage": null,
-        "comparedCheckId": "44148f5c-9210-485a-91cd-e2ea7f9fca00",
-        "comparedAt": "2026-10-29T05:35:57.538Z",
+        "comparedCheckId": "e2dad094-0edc-4e6f-a677-ca78bd784ec5",
+        "comparedAt": "2026-10-30T05:34:58.886Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -272305,11 +272305,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:58.886Z"
+        "createdAt": "2026-10-31T05:24:18.723Z"
       },
       "lastSuccessful": {
-        "checkId": "e2dad094-0edc-4e6f-a677-ca78bd784ec5",
-        "createdAt": "2026-10-30T05:34:58.886Z",
+        "checkId": "60578b63-6801-4b65-b1dc-74f1b9e11968",
+        "createdAt": "2026-10-31T05:24:18.723Z",
         "hash": "d54cb95834326384e494c27c5c4c77049fe8da26738a28f801a0bd6b32d19c98",
         "tokens": [
           {
@@ -274120,8 +274120,8 @@
       "liveCompletedAt": "2026-09-14T07:48:27.619Z",
       "lastChangedAt": "2026-10-30T05:34:49.789Z",
       "latest": {
-        "id": "43ed43ac-08b6-4c9c-ad2d-f156224d89bb",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "8208a04c-4d06-41e4-b5ce-63859e28d262",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "1a97e3c9-610d-4931-b785-e625c6caf524",
         "targetId": "cd5e3359-d077-44de-b423-490719f8a4c1",
         "targetName": "ALL 카드",
@@ -274139,16 +274139,16 @@
         "bodyLiveMarkerFound": true,
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">ALL 카드, 이런 분께 추천드려요</h2>",
-        "changeStatus": "CHANGED",
-        "responseMs": 1353,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1584,
         "errorMessage": null,
-        "comparedCheckId": "ebc1d332-48cd-4c90-bcf7-055e3577ba9c",
-        "comparedAt": "2026-10-29T05:35:51.077Z",
+        "comparedCheckId": "43ed43ac-08b6-4c9c-ad2d-f156224d89bb",
+        "comparedAt": "2026-10-30T05:34:49.789Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 21,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -274159,11 +274159,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:49.789Z"
+        "createdAt": "2026-10-31T05:24:11.602Z"
       },
       "lastSuccessful": {
-        "checkId": "43ed43ac-08b6-4c9c-ad2d-f156224d89bb",
-        "createdAt": "2026-10-30T05:34:49.789Z",
+        "checkId": "8208a04c-4d06-41e4-b5ce-63859e28d262",
+        "createdAt": "2026-10-31T05:24:11.602Z",
         "hash": "2f20d77a0d96ce52147c061fb765c24cb74379595a43104d30daac8b7e4a6e72",
         "tokens": [
           {
@@ -287674,8 +287674,8 @@
       "liveCompletedAt": "2026-09-14T07:48:27.840Z",
       "lastChangedAt": "2026-10-02T05:25:04.702Z",
       "latest": {
-        "id": "6310abcf-b8d8-470b-a6a1-1d1a22b89dd0",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "0fd2d13b-95d1-4400-8b80-140059466e60",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "cf2d0df6-8b68-49e1-8346-7762096c49ee",
         "targetId": "cd5e3359-d077-44de-b423-490719f8a4c1",
         "targetName": "ALL 카드",
@@ -287694,10 +287694,10 @@
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">ALL 카드, <br>이런 분께 추천드려요</h2>",
         "changeStatus": "UNCHANGED",
-        "responseMs": 2312,
+        "responseMs": 1805,
         "errorMessage": null,
-        "comparedCheckId": "6a99721b-214c-4e12-b299-2527d3b2ef5d",
-        "comparedAt": "2026-10-29T05:35:51.149Z",
+        "comparedCheckId": "6310abcf-b8d8-470b-a6a1-1d1a22b89dd0",
+        "comparedAt": "2026-10-30T05:34:50.516Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -287713,11 +287713,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:50.516Z"
+        "createdAt": "2026-10-31T05:24:11.662Z"
       },
       "lastSuccessful": {
-        "checkId": "6310abcf-b8d8-470b-a6a1-1d1a22b89dd0",
-        "createdAt": "2026-10-30T05:34:50.516Z",
+        "checkId": "0fd2d13b-95d1-4400-8b80-140059466e60",
+        "createdAt": "2026-10-31T05:24:11.662Z",
         "hash": "57eb8d57f0ab221cb282cb7fb105d776f269ebf72e5b58cda36b4a8712209117",
         "tokens": [
           {
@@ -290033,8 +290033,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:55.649Z",
       "latest": {
-        "id": "a6dfe7ec-b47b-487c-96e7-99d4ce850532",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "37c340fc-3fd9-4561-97c7-18b9439ee553",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "613d02c9-fc0b-4d8d-9a08-517e588ed948",
         "targetId": "d8815c97-3344-4821-8372-32ff769c023b",
         "targetName": "NEED Pay 카드",
@@ -290052,16 +290052,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 1910,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1355,
         "errorMessage": null,
-        "comparedCheckId": "16ee6730-bdc6-473c-95e9-07d38c1e6efe",
-        "comparedAt": "2026-10-29T05:35:55.372Z",
+        "comparedCheckId": "a6dfe7ec-b47b-487c-96e7-99d4ce850532",
+        "comparedAt": "2026-10-30T05:34:55.649Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 21,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -290072,11 +290072,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:55.649Z"
+        "createdAt": "2026-10-31T05:24:16.082Z"
       },
       "lastSuccessful": {
-        "checkId": "a6dfe7ec-b47b-487c-96e7-99d4ce850532",
-        "createdAt": "2026-10-30T05:34:55.649Z",
+        "checkId": "37c340fc-3fd9-4561-97c7-18b9439ee553",
+        "createdAt": "2026-10-31T05:24:16.082Z",
         "hash": "d7bc557b3107f02b1b3a5e9455094a432d327e8416d3fd3e037b548708e7d944",
         "tokens": [
           {
@@ -304217,8 +304217,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:09.815Z",
       "latest": {
-        "id": "f50f46d6-d29d-4aa1-8368-eb310a54e13e",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "6811581f-7532-4507-835c-da66f8cad767",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "d137fd1e-c1dd-4841-8f54-32513292cd5a",
         "targetId": "d8815c97-3344-4821-8372-32ff769c023b",
         "targetName": "NEED Pay 카드",
@@ -304237,10 +304237,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 997,
+        "responseMs": 1824,
         "errorMessage": null,
-        "comparedCheckId": "e43670db-b941-4110-afb2-0d7beaf6e194",
-        "comparedAt": "2026-10-29T05:35:55.252Z",
+        "comparedCheckId": "f50f46d6-d29d-4aa1-8368-eb310a54e13e",
+        "comparedAt": "2026-10-30T05:34:54.708Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -304256,11 +304256,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:54.708Z"
+        "createdAt": "2026-10-31T05:24:16.626Z"
       },
       "lastSuccessful": {
-        "checkId": "f50f46d6-d29d-4aa1-8368-eb310a54e13e",
-        "createdAt": "2026-10-30T05:34:54.708Z",
+        "checkId": "6811581f-7532-4507-835c-da66f8cad767",
+        "createdAt": "2026-10-31T05:24:16.626Z",
         "hash": "773702642f9c6657cde66d5d5ea0b9e66e24c0a08fc36585d4d271dce2781844",
         "tokens": [
           {
@@ -306171,8 +306171,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:52.123Z",
       "latest": {
-        "id": "50d12b5b-cba9-4a26-bb82-fe2a619a053b",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "0f9c69e8-0044-4624-b076-43e3dd2e8e23",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "6a0d6408-1c23-4f3b-9f75-2d84729915fa",
         "targetId": "efb1d0e6-0aeb-4093-84a7-6aed0179f41e",
         "targetName": "YOU Wish 카드",
@@ -306190,16 +306190,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 999,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1402,
         "errorMessage": null,
-        "comparedCheckId": "3112a301-1876-48a5-a15d-6a2e0fd0e688",
-        "comparedAt": "2026-10-29T05:35:52.311Z",
+        "comparedCheckId": "50d12b5b-cba9-4a26-bb82-fe2a619a053b",
+        "comparedAt": "2026-10-30T05:34:52.123Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 21,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -306210,11 +306210,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:52.123Z"
+        "createdAt": "2026-10-31T05:24:13.867Z"
       },
       "lastSuccessful": {
-        "checkId": "50d12b5b-cba9-4a26-bb82-fe2a619a053b",
-        "createdAt": "2026-10-30T05:34:52.123Z",
+        "checkId": "0f9c69e8-0044-4624-b076-43e3dd2e8e23",
+        "createdAt": "2026-10-31T05:24:13.867Z",
         "hash": "b9fd9b9b3d004e1e32a43b37019d1f011ab89939cabacd8d8f377329bff742e6",
         "tokens": [
           {
@@ -320170,8 +320170,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:06.983Z",
       "latest": {
-        "id": "377ff1d5-e304-49dc-ad7f-c1910043a1d5",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "5209992e-f6e6-48e6-bc98-e6ba1b201cd3",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "c159409a-cc42-4ae1-b6a3-9a5fc6e4b6c0",
         "targetId": "efb1d0e6-0aeb-4093-84a7-6aed0179f41e",
         "targetName": "YOU Wish 카드",
@@ -320190,10 +320190,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 826,
+        "responseMs": 447,
         "errorMessage": null,
-        "comparedCheckId": "ccb33f25-e8ba-4fdf-a26e-2e20ff4872a9",
-        "comparedAt": "2026-10-29T05:35:53.056Z",
+        "comparedCheckId": "377ff1d5-e304-49dc-ad7f-c1910043a1d5",
+        "comparedAt": "2026-10-30T05:34:52.987Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -320209,11 +320209,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:52.987Z"
+        "createdAt": "2026-10-31T05:24:13.175Z"
       },
       "lastSuccessful": {
-        "checkId": "377ff1d5-e304-49dc-ad7f-c1910043a1d5",
-        "createdAt": "2026-10-30T05:34:52.987Z",
+        "checkId": "5209992e-f6e6-48e6-bc98-e6ba1b201cd3",
+        "createdAt": "2026-10-31T05:24:13.175Z",
         "hash": "a00709672aabe9a2bee21ab60e9debb2abeac510064e6a86d69f3361990c075c",
         "tokens": [
           {
@@ -322054,8 +322054,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:52.570Z",
       "latest": {
-        "id": "d990cfaa-e92e-4db9-b4f0-8adc33eefafa",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "ced2757f-318e-445a-a633-437a224bc1e4",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "14bafd44-2782-4968-911b-291d2acd502e",
         "targetId": "f76ab7ec-2473-4bff-8a31-d6d4e7dbe21d",
         "targetName": "YOU With 카드",
@@ -322073,16 +322073,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 1913,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1756,
         "errorMessage": null,
-        "comparedCheckId": "9c2db67a-28a7-4567-b396-2b54d8ce80b5",
-        "comparedAt": "2026-10-29T05:35:53.190Z",
+        "comparedCheckId": "d990cfaa-e92e-4db9-b4f0-8adc33eefafa",
+        "comparedAt": "2026-10-30T05:34:52.570Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 21,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -322093,11 +322093,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:52.570Z"
+        "createdAt": "2026-10-31T05:24:13.663Z"
       },
       "lastSuccessful": {
-        "checkId": "d990cfaa-e92e-4db9-b4f0-8adc33eefafa",
-        "createdAt": "2026-10-30T05:34:52.570Z",
+        "checkId": "ced2757f-318e-445a-a633-437a224bc1e4",
+        "createdAt": "2026-10-31T05:24:13.663Z",
         "hash": "a176c094f550ec714bb1904e235950c4eaba1d5ae2d4cf102d7348159c78d57f",
         "tokens": [
           {
@@ -336188,8 +336188,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:06.525Z",
       "latest": {
-        "id": "3dc35c37-b244-4b67-bfa4-cac10949dca0",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "9fa16bc1-be34-4a36-83a3-3a5e093de6e5",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "446222ae-cda3-454a-9e38-96d18f5cf725",
         "targetId": "f76ab7ec-2473-4bff-8a31-d6d4e7dbe21d",
         "targetName": "YOU With 카드",
@@ -336208,10 +336208,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1843,
+        "responseMs": 790,
         "errorMessage": null,
-        "comparedCheckId": "781adde2-c44b-4020-985a-3d3e10abf1de",
-        "comparedAt": "2026-10-29T05:35:52.881Z",
+        "comparedCheckId": "3dc35c37-b244-4b67-bfa4-cac10949dca0",
+        "comparedAt": "2026-10-30T05:34:52.788Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -336227,11 +336227,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:52.788Z"
+        "createdAt": "2026-10-31T05:24:12.692Z"
       },
       "lastSuccessful": {
-        "checkId": "3dc35c37-b244-4b67-bfa4-cac10949dca0",
-        "createdAt": "2026-10-30T05:34:52.788Z",
+        "checkId": "9fa16bc1-be34-4a36-83a3-3a5e093de6e5",
+        "createdAt": "2026-10-31T05:24:12.692Z",
         "hash": "5150729fcb8ab67d58fb5a17811013c7e515c2a752336efbc7b1292ddbb88512",
         "tokens": [
           {
@@ -338112,8 +338112,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:58.189Z",
       "latest": {
-        "id": "87147a8c-1931-4f3a-ae91-31c4cd9cd9a7",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "85bf44ff-2233-447f-a8ef-25ce1b0e3ffb",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "01b3f6d5-d2f3-46f9-b9dd-9fb1e43d30a4",
         "targetId": "ffce3167-72d1-488c-ab2e-f65d740df310",
         "targetName": "스카이패스 티타늄카드",
@@ -338131,16 +338131,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 1727,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1561,
         "errorMessage": null,
-        "comparedCheckId": "d1c9025a-f7e8-4163-a1c4-2ba8f3af3cf4",
-        "comparedAt": "2026-10-29T05:35:57.829Z",
+        "comparedCheckId": "87147a8c-1931-4f3a-ae91-31c4cd9cd9a7",
+        "comparedAt": "2026-10-30T05:34:58.189Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 21,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기업카드 신청안내\"},{\"kind\":\"link\",\"key\":\"기업카드 신청안내\",\"value\":\"https://biz.kbcard.com/CXERCCAC0008.cms\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주유할인권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"홈플러스 상품권 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신세계 상품권 모바일 교환권 8만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"롯데시네마 영화관람권 11매\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"워터파크 입장권 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일 외식통합이용권 10만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해피콘 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"요기요 모바일 쿠폰 신청/조회\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"VIP카드 혜택 조회\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"},{\"kind\":\"link\",\"key\":\"주유할인권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0042\"},{\"kind\":\"link\",\"key\":\"홈플러스 상품권 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0044\"},{\"kind\":\"link\",\"key\":\"신세계 상품권 모바일 교환권 8만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0045\"},{\"kind\":\"link\",\"key\":\"롯데시네마 영화관람권 11매\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0046\"},{\"kind\":\"link\",\"key\":\"워터파크 입장권 제공\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0047\"},{\"kind\":\"link\",\"key\":\"모바일 외식통합이용권 10만원\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVS0048\"},{\"kind\":\"link\",\"key\":\"해피콘 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0004\"},{\"kind\":\"link\",\"key\":\"요기요 모바일 쿠폰 신청/조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0005\"},{\"kind\":\"link\",\"key\":\"VIP카드 혜택 조회\",\"value\":\"https://card.kbcard.com/BON/DVIEW/HBCMCXPRISVSD0001\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -338151,11 +338151,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:58.189Z"
+        "createdAt": "2026-10-31T05:24:18.689Z"
       },
       "lastSuccessful": {
-        "checkId": "87147a8c-1931-4f3a-ae91-31c4cd9cd9a7",
-        "createdAt": "2026-10-30T05:34:58.189Z",
+        "checkId": "85bf44ff-2233-447f-a8ef-25ce1b0e3ffb",
+        "createdAt": "2026-10-31T05:24:18.689Z",
         "hash": "053dd16dfe4b7ceda40256419956e05cfc383966ceba063fd5433493bff8c46f",
         "tokens": [
           {
@@ -351821,8 +351821,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:12.377Z",
       "latest": {
-        "id": "d04dd2da-eeed-4770-b8a3-abcc0fe85515",
-        "runId": "7458ee76-31bc-47a2-81dd-94d9d7e816bb",
+        "id": "997cf60f-874b-4cea-8100-d0a68e5bf431",
+        "runId": "3e535d6d-27fd-4a1a-aaab-7ba2f1e5d9e1",
         "endpointId": "57a99be1-efa7-46ec-85b1-ffa0cbcbfc2a",
         "targetId": "ffce3167-72d1-488c-ab2e-f65d740df310",
         "targetName": "스카이패스 티타늄카드",
@@ -351841,10 +351841,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 2249,
+        "responseMs": 1747,
         "errorMessage": null,
-        "comparedCheckId": "e6c4ec60-fe78-4fb7-91a9-6febd943b8b5",
-        "comparedAt": "2026-10-29T05:35:57.252Z",
+        "comparedCheckId": "d04dd2da-eeed-4770-b8a3-abcc0fe85515",
+        "comparedAt": "2026-10-30T05:34:58.933Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -351860,11 +351860,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-10-30T05:34:58.933Z"
+        "createdAt": "2026-10-31T05:24:18.992Z"
       },
       "lastSuccessful": {
-        "checkId": "d04dd2da-eeed-4770-b8a3-abcc0fe85515",
-        "createdAt": "2026-10-30T05:34:58.933Z",
+        "checkId": "997cf60f-874b-4cea-8100-d0a68e5bf431",
+        "createdAt": "2026-10-31T05:24:18.992Z",
         "hash": "f5e0b6cfcfa5bdc0dd4bcf5b4692f485a0e44ca380607ea7cb3fe1a878747146",
         "tokens": [
           {
