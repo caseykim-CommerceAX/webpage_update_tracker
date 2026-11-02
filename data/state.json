@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-01T05:50:58.717Z",
+  "updatedAt": "2026-11-02T05:51:18.595Z",
   "endpoints": {
     "c926ec76-812d-4877-b8cd-10f16272aeba": {
       "launchedAt": null,
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:35:02.349Z",
       "latest": {
-        "id": "41bdf3aa-3912-4f2f-adac-116e2778f98e",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "eaa81e48-f322-418b-b562-05f2186acebe",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "c926ec76-812d-4877-b8cd-10f16272aeba",
         "targetId": "014f6ae8-f8af-4234-9976-8e1b4ecbb511",
         "targetName": "국민행복카드",
@@ -27,10 +27,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1463,
+        "responseMs": 963,
         "errorMessage": null,
-        "comparedCheckId": "b38622d9-d2df-4421-a2fa-77dfcc635b8b",
-        "comparedAt": "2026-10-31T05:24:21.759Z",
+        "comparedCheckId": "41bdf3aa-3912-4f2f-adac-116e2778f98e",
+        "comparedAt": "2026-11-01T05:50:57.985Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -46,11 +46,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:57.985Z"
+        "createdAt": "2026-11-02T05:51:17.692Z"
       },
       "lastSuccessful": {
-        "checkId": "41bdf3aa-3912-4f2f-adac-116e2778f98e",
-        "createdAt": "2026-11-01T05:50:57.985Z",
+        "checkId": "eaa81e48-f322-418b-b562-05f2186acebe",
+        "createdAt": "2026-11-02T05:51:17.692Z",
         "hash": "f48b88dcb0a20133f73440e60e947c3f3dd9f7289b130f3d114d6c6cc43274d9",
         "tokens": [
           {
@@ -14271,8 +14271,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:16.120Z",
       "latest": {
-        "id": "834daa28-50c4-4687-8d45-38e0cc6a88f2",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "c043c6db-56d6-433a-a28d-76e47599a6a1",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "7b6cf907-d2fc-4161-a9c1-7327da1b8c12",
         "targetId": "014f6ae8-f8af-4234-9976-8e1b4ecbb511",
         "targetName": "국민행복카드",
@@ -14291,10 +14291,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 563,
+        "responseMs": 668,
         "errorMessage": null,
-        "comparedCheckId": "9057a92a-51ae-4e44-b38f-d898e8f4d5cb",
-        "comparedAt": "2026-10-31T05:24:22.009Z",
+        "comparedCheckId": "834daa28-50c4-4687-8d45-38e0cc6a88f2",
+        "comparedAt": "2026-11-01T05:50:57.567Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -14310,11 +14310,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:57.567Z"
+        "createdAt": "2026-11-02T05:51:17.729Z"
       },
       "lastSuccessful": {
-        "checkId": "834daa28-50c4-4687-8d45-38e0cc6a88f2",
-        "createdAt": "2026-11-01T05:50:57.567Z",
+        "checkId": "c043c6db-56d6-433a-a28d-76e47599a6a1",
+        "createdAt": "2026-11-02T05:51:17.729Z",
         "hash": "e4a05a511ac23184bbdc49d34bd6467f5946d71a55c77f008d78ff291d22f8ee",
         "tokens": [
           {
@@ -16010,8 +16010,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:35:01.300Z",
       "latest": {
-        "id": "e2f17feb-0883-4c8d-af3d-950df9a3e7ba",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "67aa8dbc-24e0-4799-b1fa-f35584435f45",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "01ed00fd-e36a-480d-ab73-d80aaab6cb65",
         "targetId": "03bb23e7-bb86-4574-8e13-1b46baece17c",
         "targetName": "트래블러스 체크카드",
@@ -16030,10 +16030,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1998,
+        "responseMs": 1926,
         "errorMessage": null,
-        "comparedCheckId": "46e36432-1e68-4f03-85fc-24cba022d7e8",
-        "comparedAt": "2026-10-31T05:24:21.987Z",
+        "comparedCheckId": "e2f17feb-0883-4c8d-af3d-950df9a3e7ba",
+        "comparedAt": "2026-11-01T05:50:58.137Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -16049,11 +16049,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:58.137Z"
+        "createdAt": "2026-11-02T05:51:18.402Z"
       },
       "lastSuccessful": {
-        "checkId": "e2f17feb-0883-4c8d-af3d-950df9a3e7ba",
-        "createdAt": "2026-11-01T05:50:58.137Z",
+        "checkId": "67aa8dbc-24e0-4799-b1fa-f35584435f45",
+        "createdAt": "2026-11-02T05:51:18.402Z",
         "hash": "dff290f096854ff7d57d5a06d7d3cff48d13d29834362a80ca14aceedf305ff7",
         "tokens": [
           {
@@ -31329,8 +31329,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:35:02.119Z",
       "latest": {
-        "id": "affd2fd5-bf9d-4a99-988b-793166770e2c",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "22083256-6759-43d4-8316-7ce5c04cf847",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "db9539a0-6221-4363-9eb5-708ca00e4f35",
         "targetId": "03bb23e7-bb86-4574-8e13-1b46baece17c",
         "targetName": "트래블러스 체크카드",
@@ -31349,10 +31349,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 592,
+        "responseMs": 614,
         "errorMessage": null,
-        "comparedCheckId": "dda86de9-a8cd-4703-82fa-b2ef698fdc4f",
-        "comparedAt": "2026-10-31T05:24:21.622Z",
+        "comparedCheckId": "affd2fd5-bf9d-4a99-988b-793166770e2c",
+        "comparedAt": "2026-11-01T05:50:56.974Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -31368,11 +31368,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:56.974Z"
+        "createdAt": "2026-11-02T05:51:17.026Z"
       },
       "lastSuccessful": {
-        "checkId": "affd2fd5-bf9d-4a99-988b-793166770e2c",
-        "createdAt": "2026-11-01T05:50:56.974Z",
+        "checkId": "22083256-6759-43d4-8316-7ce5c04cf847",
+        "createdAt": "2026-11-02T05:51:17.026Z",
         "hash": "ebc51c294db1fdc0b78b93bc51972f75b8736b94f336e326739a812d27ccec88",
         "tokens": [
           {
@@ -33248,8 +33248,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:58.851Z",
       "latest": {
-        "id": "5a3a7750-4974-44ca-add7-b68e7937ddf8",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "beb707fb-bc40-4c1a-b674-54736f080873",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "8fbc38b1-9e91-48b5-b48c-6a8b52dea42c",
         "targetId": "11160efa-eca7-4b83-a8db-13cea9e8e74e",
         "targetName": "HERITAGE Classic(할인형)",
@@ -33268,10 +33268,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1563,
+        "responseMs": 541,
         "errorMessage": null,
-        "comparedCheckId": "10cef94d-5c3b-4a11-b4e4-39694e95d320",
-        "comparedAt": "2026-10-31T05:24:19.093Z",
+        "comparedCheckId": "5a3a7750-4974-44ca-add7-b68e7937ddf8",
+        "comparedAt": "2026-11-01T05:50:55.185Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -33287,11 +33287,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:55.185Z"
+        "createdAt": "2026-11-02T05:51:13.947Z"
       },
       "lastSuccessful": {
-        "checkId": "5a3a7750-4974-44ca-add7-b68e7937ddf8",
-        "createdAt": "2026-11-01T05:50:55.185Z",
+        "checkId": "beb707fb-bc40-4c1a-b674-54736f080873",
+        "createdAt": "2026-11-02T05:51:13.947Z",
         "hash": "9983739180dc51efc2a177186a51902fe148937f58bb7e1c7d80860ef0f20077",
         "tokens": [
           {
@@ -47972,8 +47972,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:13.438Z",
       "latest": {
-        "id": "a370cd06-51b4-4d36-b7bf-b80d92b0e8a4",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "852a3e14-4e1b-4652-9fb7-ab8bd76d0f05",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "3a605dd0-af28-4d8f-a524-841baf470b44",
         "targetId": "11160efa-eca7-4b83-a8db-13cea9e8e74e",
         "targetName": "HERITAGE Classic(할인형)",
@@ -47992,10 +47992,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1656,
+        "responseMs": 905,
         "errorMessage": null,
-        "comparedCheckId": "89fff65a-9dd6-40ac-ae38-c592485ed03d",
-        "comparedAt": "2026-10-31T05:24:19.264Z",
+        "comparedCheckId": "a370cd06-51b4-4d36-b7bf-b80d92b0e8a4",
+        "comparedAt": "2026-11-01T05:50:55.426Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -48011,11 +48011,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:55.426Z"
+        "createdAt": "2026-11-02T05:51:14.326Z"
       },
       "lastSuccessful": {
-        "checkId": "a370cd06-51b4-4d36-b7bf-b80d92b0e8a4",
-        "createdAt": "2026-11-01T05:50:55.426Z",
+        "checkId": "852a3e14-4e1b-4652-9fb7-ab8bd76d0f05",
+        "createdAt": "2026-11-02T05:51:14.326Z",
         "hash": "67f45631c91131d89017d25e8d72c122e5618c0fb8b26ab46cdb102237d15858",
         "tokens": [
           {
@@ -49861,8 +49861,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "4c4ed96f-9079-4e4c-b7fd-2e0b319d1a7b",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "c4dfa4b7-93d7-40f9-94ab-679deb8d67f8",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "eb3ccb9d-1f8c-4db8-9ee9-55712c3dc236",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -49881,7 +49881,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 505,
+        "responseMs": 331,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -49900,7 +49900,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-01T05:50:55.187Z"
+        "createdAt": "2026-11-02T05:51:14.657Z"
       },
       "lastSuccessful": null
     },
@@ -49909,8 +49909,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:35:00.091Z",
       "latest": {
-        "id": "beb505ee-5762-483b-acb2-2eda7a7114dd",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "6992d90d-95fb-4e41-8bbc-3822d1c50987",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "19d614e270d3eff5121073206cce5ab8",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -49929,10 +49929,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 507,
+        "responseMs": 609,
         "errorMessage": null,
-        "comparedCheckId": "731dcd65-3b4f-42cb-9473-8bef46380cf0",
-        "comparedAt": "2026-10-31T05:24:20.326Z",
+        "comparedCheckId": "beb505ee-5762-483b-acb2-2eda7a7114dd",
+        "comparedAt": "2026-11-01T05:50:55.699Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -49948,11 +49948,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:55.699Z"
+        "createdAt": "2026-11-02T05:51:15.180Z"
       },
       "lastSuccessful": {
-        "checkId": "beb505ee-5762-483b-acb2-2eda7a7114dd",
-        "createdAt": "2026-11-01T05:50:55.699Z",
+        "checkId": "6992d90d-95fb-4e41-8bbc-3822d1c50987",
+        "createdAt": "2026-11-02T05:51:15.180Z",
         "hash": "c3704f51fdd0f8a65f19f08ed953421c937bafb0540a664c5764b0f9fe35080c",
         "tokens": [
           {
@@ -64608,8 +64608,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "bfaccb41-4162-4347-aeb3-a4e0de4d5afe",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "491bb3da-b91b-4b00-840d-0e26855da8f9",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "52619742-f91b-43b9-8ef3-8cb08631642e",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -64628,7 +64628,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 190,
+        "responseMs": 540,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -64647,7 +64647,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-01T05:50:55.375Z"
+        "createdAt": "2026-11-02T05:51:15.198Z"
       },
       "lastSuccessful": null
     },
@@ -64656,8 +64656,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:14.605Z",
       "latest": {
-        "id": "a3143850-f404-4609-a6cf-dab1a89e3f98",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "77762486-b3a3-4027-9e11-8ece4dfa4f6c",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "374ae896ab07fb4b7c98af6100c41f92",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -64676,10 +64676,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 764,
+        "responseMs": 541,
         "errorMessage": null,
-        "comparedCheckId": "11df2436-6ba7-4817-b050-a890aac1c0a8",
-        "comparedAt": "2026-10-31T05:24:20.392Z",
+        "comparedCheckId": "a3143850-f404-4609-a6cf-dab1a89e3f98",
+        "comparedAt": "2026-11-01T05:50:55.981Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -64695,11 +64695,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:55.981Z"
+        "createdAt": "2026-11-02T05:51:15.474Z"
       },
       "lastSuccessful": {
-        "checkId": "a3143850-f404-4609-a6cf-dab1a89e3f98",
-        "createdAt": "2026-11-01T05:50:55.981Z",
+        "checkId": "77762486-b3a3-4027-9e11-8ece4dfa4f6c",
+        "createdAt": "2026-11-02T05:51:15.474Z",
         "hash": "3e60d52126465f8844ce7bbeafca043d034f8272d8d0b4e6be446c8ed0d5e6c4",
         "tokens": [
           {
@@ -66395,8 +66395,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:53.613Z",
       "latest": {
-        "id": "2ce3e454-0d20-4e33-9b57-007686acc345",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "0e4c7718-b22b-4df8-b948-5fc48f6a526d",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "51572952-d474-4b43-9b5b-4e00ccf2a9ba",
         "targetId": "2fb8b880-93e1-4958-b06b-0e4c1919ec75",
         "targetName": "NEED Edu카드",
@@ -66415,10 +66415,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1901,
+        "responseMs": 603,
         "errorMessage": null,
-        "comparedCheckId": "445ea799-99ae-4bda-a1a0-78d18a32ebe5",
-        "comparedAt": "2026-10-31T05:24:14.493Z",
+        "comparedCheckId": "2ce3e454-0d20-4e33-9b57-007686acc345",
+        "comparedAt": "2026-11-01T05:50:50.261Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -66434,11 +66434,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:50.261Z"
+        "createdAt": "2026-11-02T05:51:08.845Z"
       },
       "lastSuccessful": {
-        "checkId": "2ce3e454-0d20-4e33-9b57-007686acc345",
-        "createdAt": "2026-11-01T05:50:50.261Z",
+        "checkId": "0e4c7718-b22b-4df8-b948-5fc48f6a526d",
+        "createdAt": "2026-11-02T05:51:08.845Z",
         "hash": "30a0057f5000c2f690fa6837321b19d7efb5d4279e62dd045e5b64818dd1477c",
         "tokens": [
           {
@@ -79934,8 +79934,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:08.896Z",
       "latest": {
-        "id": "eed3df25-07d7-4840-94f9-0decc41a3622",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "127ce439-142d-42b9-bd8e-6cf773d6c010",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "83cb96fd-4bfc-4f6a-9dfb-9833b941448e",
         "targetId": "2fb8b880-93e1-4958-b06b-0e4c1919ec75",
         "targetName": "NEED Edu카드",
@@ -79954,10 +79954,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 609,
+        "responseMs": 1006,
         "errorMessage": null,
-        "comparedCheckId": "5c9eced0-f9aa-4930-bd92-90f14de31a25",
-        "comparedAt": "2026-10-31T05:24:14.887Z",
+        "comparedCheckId": "eed3df25-07d7-4840-94f9-0decc41a3622",
+        "comparedAt": "2026-11-01T05:50:49.507Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -79973,11 +79973,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:49.507Z"
+        "createdAt": "2026-11-02T05:51:09.300Z"
       },
       "lastSuccessful": {
-        "checkId": "eed3df25-07d7-4840-94f9-0decc41a3622",
-        "createdAt": "2026-11-01T05:50:49.507Z",
+        "checkId": "127ce439-142d-42b9-bd8e-6cf773d6c010",
+        "createdAt": "2026-11-02T05:51:09.300Z",
         "hash": "a626b3370f6e9ba10cf0296a9fa76fbb7b60726abb5a679b9c05a3fe1b75447e",
         "tokens": [
           {
@@ -81838,8 +81838,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:55.263Z",
       "latest": {
-        "id": "cbb4f25c-cc87-4e89-ac44-05e9cb8da2c3",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "55f29b32-7d71-45ef-8860-9fbac06d8cdc",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "70e8f0ed-244e-480d-b5de-ce9e698c2652",
         "targetId": "6bf242ce-9823-4510-bb63-e9bd0c5ee0ba",
         "targetName": "My WE:SH 카드",
@@ -81858,10 +81858,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1506,
+        "responseMs": 916,
         "errorMessage": null,
-        "comparedCheckId": "424f8102-7599-47d9-87e1-128923c260ff",
-        "comparedAt": "2026-10-31T05:24:17.049Z",
+        "comparedCheckId": "cbb4f25c-cc87-4e89-ac44-05e9cb8da2c3",
+        "comparedAt": "2026-11-01T05:50:52.526Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -81877,11 +81877,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:52.526Z"
+        "createdAt": "2026-11-02T05:51:11.175Z"
       },
       "lastSuccessful": {
-        "checkId": "cbb4f25c-cc87-4e89-ac44-05e9cb8da2c3",
-        "createdAt": "2026-11-01T05:50:52.526Z",
+        "checkId": "55f29b32-7d71-45ef-8860-9fbac06d8cdc",
+        "createdAt": "2026-11-02T05:51:11.175Z",
         "hash": "7672aef281ee2d93a8aacc37ebc8a75aae93719697f6be3f37b16b0fcaf27098",
         "tokens": [
           {
@@ -95867,8 +95867,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:10.458Z",
       "latest": {
-        "id": "f9b6f744-b415-418c-a2b8-0933488960ad",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "b91650f2-a88a-47f4-b310-0672c7e7d937",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "8ebd43ae-830a-4ea9-89a8-db087f92b159",
         "targetId": "6bf242ce-9823-4510-bb63-e9bd0c5ee0ba",
         "targetName": "My WE:SH 카드",
@@ -95887,10 +95887,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 413,
+        "responseMs": 426,
         "errorMessage": null,
-        "comparedCheckId": "3f8de1df-9fa6-4089-b1dc-022d973b72fb",
-        "comparedAt": "2026-10-31T05:24:16.733Z",
+        "comparedCheckId": "f9b6f744-b415-418c-a2b8-0933488960ad",
+        "comparedAt": "2026-11-01T05:50:51.576Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -95906,11 +95906,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:51.576Z"
+        "createdAt": "2026-11-02T05:51:11.516Z"
       },
       "lastSuccessful": {
-        "checkId": "f9b6f744-b415-418c-a2b8-0933488960ad",
-        "createdAt": "2026-11-01T05:50:51.576Z",
+        "checkId": "b91650f2-a88a-47f4-b310-0672c7e7d937",
+        "createdAt": "2026-11-02T05:51:11.516Z",
         "hash": "c9ea354b02adf03e9386184fb0252afb5c091414b48967ed45d6f1db85d73531",
         "tokens": [
           {
@@ -97791,8 +97791,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:50.445Z",
       "latest": {
-        "id": "039cd206-8a08-4769-9983-4581046f5db6",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "de930d7e-3bef-4071-b3f1-5914345f03ae",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "64453981-5ab0-4e5f-ad30-9e8f9102413d",
         "targetId": "6c97d1ef-282c-421a-a4e8-2094a212838e",
         "targetName": "ALL point 카드",
@@ -97811,10 +97811,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 2473,
+        "responseMs": 2306,
         "errorMessage": null,
-        "comparedCheckId": "b62a74ee-6476-42d9-89c1-cae7cd30e231",
-        "comparedAt": "2026-10-31T05:24:11.800Z",
+        "comparedCheckId": "039cd206-8a08-4769-9983-4581046f5db6",
+        "comparedAt": "2026-11-01T05:50:46.510Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -97830,11 +97830,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:46.510Z"
+        "createdAt": "2026-11-02T05:51:06.268Z"
       },
       "lastSuccessful": {
-        "checkId": "039cd206-8a08-4769-9983-4581046f5db6",
-        "createdAt": "2026-11-01T05:50:46.510Z",
+        "checkId": "de930d7e-3bef-4071-b3f1-5914345f03ae",
+        "createdAt": "2026-11-02T05:51:06.268Z",
         "hash": "2a275399d8ffb16014730b9f6d432b6ab7edbbbf8abd95c95a6583cebebedf99",
         "tokens": [
           {
@@ -111665,8 +111665,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:05.451Z",
       "latest": {
-        "id": "962b8195-ba7e-4a10-8a41-e74d3047d8e2",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "0773ac82-0f56-44ce-94c7-074e63d5a3fd",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "1c5ac6ba-dd55-4713-af80-eda4dac245f7",
         "targetId": "6c97d1ef-282c-421a-a4e8-2094a212838e",
         "targetName": "ALL point 카드",
@@ -111685,10 +111685,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 2607,
+        "responseMs": 2481,
         "errorMessage": null,
-        "comparedCheckId": "cd3ee8bb-dc7c-4e6d-aaca-129d9924dde9",
-        "comparedAt": "2026-10-31T05:24:11.877Z",
+        "comparedCheckId": "962b8195-ba7e-4a10-8a41-e74d3047d8e2",
+        "comparedAt": "2026-11-01T05:50:46.555Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -111704,11 +111704,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:46.555Z"
+        "createdAt": "2026-11-02T05:51:06.306Z"
       },
       "lastSuccessful": {
-        "checkId": "962b8195-ba7e-4a10-8a41-e74d3047d8e2",
-        "createdAt": "2026-11-01T05:50:46.555Z",
+        "checkId": "0773ac82-0f56-44ce-94c7-074e63d5a3fd",
+        "createdAt": "2026-11-02T05:51:06.306Z",
         "hash": "566e5283b39ab37731fdff52d28dc8b9cca65f5c8594dd383c230a7a5709845e",
         "tokens": [
           {
@@ -113609,8 +113609,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "7a783d0d-167d-4db5-9911-b74fb7f16b40",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "48d95ad7-e10b-4666-b718-edc231469200",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "de405dc7-0a5c-4d1e-9d93-1028db2686c8",
         "targetId": "763c388b-d1bd-4949-9a3f-4fbabe4d3c37",
         "targetName": "서비스",
@@ -113629,7 +113629,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 191,
+        "responseMs": 280,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -113648,7 +113648,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-01T05:50:57.530Z"
+        "createdAt": "2026-11-02T05:51:17.444Z"
       },
       "lastSuccessful": null
     },
@@ -113657,8 +113657,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:35:02.449Z",
       "latest": {
-        "id": "1737037a-25f4-4c56-93e9-d07fb6f0cb6e",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "c40c31fa-d875-473d-bfc5-7ba1ac868f69",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "ccd04d1d7fbc346be2a4dd4dd93069c1",
         "targetId": "763c388b-d1bd-4949-9a3f-4fbabe4d3c37",
         "targetName": "서비스",
@@ -113677,10 +113677,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 300,
+        "responseMs": 970,
         "errorMessage": null,
-        "comparedCheckId": "1b97f85c-7b2e-4c29-9924-62959a3a7ce2",
-        "comparedAt": "2026-10-31T05:24:22.311Z",
+        "comparedCheckId": "1737037a-25f4-4c56-93e9-d07fb6f0cb6e",
+        "comparedAt": "2026-11-01T05:50:57.893Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -113696,11 +113696,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:57.893Z"
+        "createdAt": "2026-11-02T05:51:18.504Z"
       },
       "lastSuccessful": {
-        "checkId": "1737037a-25f4-4c56-93e9-d07fb6f0cb6e",
-        "createdAt": "2026-11-01T05:50:57.893Z",
+        "checkId": "c40c31fa-d875-473d-bfc5-7ba1ac868f69",
+        "createdAt": "2026-11-02T05:51:18.504Z",
         "hash": "081408e0f03a903a95f616d94760c9824bfb695d31e96f1efdf1605dad999a70",
         "tokens": [
           {
@@ -125911,8 +125911,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "8faead1c-2271-4860-b628-0fa7b2016f32",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "f0e58634-947a-476e-a9f4-c78000bf5b16",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "45b57bad17f4bbfdb5cc5db4399d6aff",
         "targetId": "855f0b69537a077bfaa438388fac9a6e",
         "targetName": "이벤트 10월",
@@ -125931,7 +125931,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 547,
+        "responseMs": 274,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -125950,7 +125950,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-01T05:50:58.441Z"
+        "createdAt": "2026-11-02T05:51:18.505Z"
       },
       "lastSuccessful": null
     },
@@ -125959,8 +125959,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "5fa0079d-4b14-43b8-9d82-ce4bccfc1c99",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "ee17c2b0-6c23-4454-8ac0-9102785f8ec9",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "b7f29a5a39ab16895d268b8da1abe58b",
         "targetId": "855f0b69537a077bfaa438388fac9a6e",
         "targetName": "이벤트 10월",
@@ -125979,7 +125979,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 731,
+        "responseMs": 193,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -125998,7 +125998,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-01T05:50:58.717Z"
+        "createdAt": "2026-11-02T05:51:18.595Z"
       },
       "lastSuccessful": null
     },
@@ -126007,8 +126007,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:59.582Z",
       "latest": {
-        "id": "730056c3-60e9-4227-b7db-00471d6d0618",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "a27e31e6-e230-4c75-aeaf-d7ee94d7f5f2",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "1bdbffb4-b7ee-441d-acbb-c11aa778a231",
         "targetId": "a21ecf12-1a64-40d4-855d-b6f1b81a8ba8",
         "targetName": "HERITAGE Classic(스카이패스형)",
@@ -126027,10 +126027,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 970,
+        "responseMs": 577,
         "errorMessage": null,
-        "comparedCheckId": "3fe0663b-b5af-4a2a-ad37-7cc153035496",
-        "comparedAt": "2026-10-31T05:24:19.796Z",
+        "comparedCheckId": "730056c3-60e9-4227-b7db-00471d6d0618",
+        "comparedAt": "2026-11-01T05:50:55.093Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -126046,11 +126046,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:55.093Z"
+        "createdAt": "2026-11-02T05:51:14.458Z"
       },
       "lastSuccessful": {
-        "checkId": "730056c3-60e9-4227-b7db-00471d6d0618",
-        "createdAt": "2026-11-01T05:50:55.093Z",
+        "checkId": "a27e31e6-e230-4c75-aeaf-d7ee94d7f5f2",
+        "createdAt": "2026-11-02T05:51:14.458Z",
         "hash": "0d7d2bbada1232045ccb01772651bcb91a14587607202c1f84b5b45cee40a980",
         "tokens": [
           {
@@ -140876,8 +140876,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:13.472Z",
       "latest": {
-        "id": "3e33866a-6e22-4f0d-8cc6-5b01651559ce",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "2b0be725-06a4-4f5b-ad3d-bf8d44728e11",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "78383cd1-8504-4fd8-b0b4-4fbc3635b01e",
         "targetId": "a21ecf12-1a64-40d4-855d-b6f1b81a8ba8",
         "targetName": "HERITAGE Classic(스카이패스형)",
@@ -140896,10 +140896,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 540,
+        "responseMs": 2042,
         "errorMessage": null,
-        "comparedCheckId": "87cc3bcb-5d31-4723-b896-ca8dfe34f1f6",
-        "comparedAt": "2026-10-31T05:24:19.533Z",
+        "comparedCheckId": "3e33866a-6e22-4f0d-8cc6-5b01651559ce",
+        "comparedAt": "2026-11-01T05:50:54.682Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -140915,11 +140915,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:54.682Z"
+        "createdAt": "2026-11-02T05:51:16.031Z"
       },
       "lastSuccessful": {
-        "checkId": "3e33866a-6e22-4f0d-8cc6-5b01651559ce",
-        "createdAt": "2026-11-01T05:50:54.682Z",
+        "checkId": "2b0be725-06a4-4f5b-ad3d-bf8d44728e11",
+        "createdAt": "2026-11-02T05:51:16.031Z",
         "hash": "fe2955d774d98a40d74e2e84ce62500d3363304f0986272631b3fef65e4d61d6",
         "tokens": [
           {
@@ -142785,8 +142785,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:50.895Z",
       "latest": {
-        "id": "f2d36f6a-e814-4af3-96e7-fd94bb4048b4",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "e686c816-b941-4826-a085-662fb9f5ee62",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "1a874d68-15d0-4e4c-bd29-6ebecf90e52a",
         "targetId": "a710c22f-7ed7-4f06-9334-abdfff7788ee",
         "targetName": "YOU Prime 카드",
@@ -142805,10 +142805,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1240,
+        "responseMs": 1989,
         "errorMessage": null,
-        "comparedCheckId": "75462919-d3e5-4dfb-8594-118fa688a672",
-        "comparedAt": "2026-10-31T05:24:13.762Z",
+        "comparedCheckId": "f2d36f6a-e814-4af3-96e7-fd94bb4048b4",
+        "comparedAt": "2026-11-01T05:50:47.716Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -142824,11 +142824,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:47.716Z"
+        "createdAt": "2026-11-02T05:51:07.007Z"
       },
       "lastSuccessful": {
-        "checkId": "f2d36f6a-e814-4af3-96e7-fd94bb4048b4",
-        "createdAt": "2026-11-01T05:50:47.716Z",
+        "checkId": "e686c816-b941-4826-a085-662fb9f5ee62",
+        "createdAt": "2026-11-02T05:51:07.007Z",
         "hash": "92793c6bbb4186ae3ba5eae641d7f125a8fa52798a2ea9fb8a54711fdc0a27e3",
         "tokens": [
           {
@@ -157864,8 +157864,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:06.263Z",
       "latest": {
-        "id": "195a9b18-882f-4f89-ae2a-d2be7c454255",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "b1e08868-65b2-4b4d-aee0-57db3f1a4a6b",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "ff46ae32-0a90-4beb-b8e0-4debf4b3b397",
         "targetId": "a710c22f-7ed7-4f06-9334-abdfff7788ee",
         "targetName": "YOU Prime 카드",
@@ -157884,10 +157884,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1208,
+        "responseMs": 724,
         "errorMessage": null,
-        "comparedCheckId": "d97fc75a-446c-4196-b732-cbbadaad1b76",
-        "comparedAt": "2026-10-31T05:24:12.371Z",
+        "comparedCheckId": "195a9b18-882f-4f89-ae2a-d2be7c454255",
+        "comparedAt": "2026-11-01T05:50:47.740Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -157903,11 +157903,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:47.740Z"
+        "createdAt": "2026-11-02T05:51:06.814Z"
       },
       "lastSuccessful": {
-        "checkId": "195a9b18-882f-4f89-ae2a-d2be7c454255",
-        "createdAt": "2026-11-01T05:50:47.740Z",
+        "checkId": "b1e08868-65b2-4b4d-aee0-57db3f1a4a6b",
+        "createdAt": "2026-11-02T05:51:06.814Z",
         "hash": "b06c1647aceb26a5afe6f4ca27f0f015c05f87e083a316b1c2d93f803d1aba33",
         "tokens": [
           {
@@ -159888,8 +159888,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:55.456Z",
       "latest": {
-        "id": "c7d3f189-7bbb-4a52-a403-d3c776b24d5d",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "e5210717-10fb-4ba2-81f9-efb8b71b6643",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "eb730105-e4a1-4995-b8bc-5f685b2ba79b",
         "targetId": "ab9fa5b9-3ed4-417d-b62a-b5ec7862e32f",
         "targetName": "WE:SH Travel",
@@ -159908,10 +159908,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 949,
+        "responseMs": 1942,
         "errorMessage": null,
-        "comparedCheckId": "4d745eaa-f47d-4485-9892-0493c411e1cd",
-        "comparedAt": "2026-10-31T05:24:16.225Z",
+        "comparedCheckId": "c7d3f189-7bbb-4a52-a403-d3c776b24d5d",
+        "comparedAt": "2026-11-01T05:50:50.932Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -159927,11 +159927,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:50.932Z"
+        "createdAt": "2026-11-02T05:51:11.660Z"
       },
       "lastSuccessful": {
-        "checkId": "c7d3f189-7bbb-4a52-a403-d3c776b24d5d",
-        "createdAt": "2026-11-01T05:50:50.932Z",
+        "checkId": "e5210717-10fb-4ba2-81f9-efb8b71b6643",
+        "createdAt": "2026-11-02T05:51:11.660Z",
         "hash": "7707d8fdf6fba87e1d52922695ceefa78a6d4cf0debe9e72c382ada89dea1b14",
         "tokens": [
           {
@@ -174327,8 +174327,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:09.893Z",
       "latest": {
-        "id": "03158018-f7aa-449e-a69e-9bd0d2d81694",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "d7419676-29bc-416a-8ccf-a532800fa407",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "119352b3-dbfe-4676-88a9-0e3e64d39abc",
         "targetId": "ab9fa5b9-3ed4-417d-b62a-b5ec7862e32f",
         "targetName": "WE:SH Travel",
@@ -174347,10 +174347,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 2046,
+        "responseMs": 1137,
         "errorMessage": null,
-        "comparedCheckId": "b404d57c-659a-48f2-ac18-6db2c379565c",
-        "comparedAt": "2026-10-31T05:24:17.665Z",
+        "comparedCheckId": "03158018-f7aa-449e-a69e-9bd0d2d81694",
+        "comparedAt": "2026-11-01T05:50:52.333Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -174366,11 +174366,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:52.333Z"
+        "createdAt": "2026-11-02T05:51:11.264Z"
       },
       "lastSuccessful": {
-        "checkId": "03158018-f7aa-449e-a69e-9bd0d2d81694",
-        "createdAt": "2026-11-01T05:50:52.333Z",
+        "checkId": "d7419676-29bc-416a-8ccf-a532800fa407",
+        "createdAt": "2026-11-02T05:51:11.264Z",
         "hash": "205fcddcb72f788ba4f37696c829f1507f1f38381ce3a7ebafbf9a8245a68fa7",
         "tokens": [
           {
@@ -176221,8 +176221,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:53.475Z",
       "latest": {
-        "id": "da8097a4-51bd-4cd2-a892-e3fe39e4596f",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "b823942c-cf51-4c79-bcd5-7611b4ac5927",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "27f46e5f-feab-4c61-9b17-4e82b91c3b1b",
         "targetId": "aee77a45-fdde-4c1f-a82f-419336a1ab18",
         "targetName": "YOU Wish up 카드",
@@ -176241,10 +176241,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 381,
+        "responseMs": 772,
         "errorMessage": null,
-        "comparedCheckId": "fa0c94cb-fefb-476c-9e39-6a96929a139a",
-        "comparedAt": "2026-10-31T05:24:14.158Z",
+        "comparedCheckId": "da8097a4-51bd-4cd2-a892-e3fe39e4596f",
+        "comparedAt": "2026-11-01T05:50:48.219Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -176260,11 +176260,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:48.219Z"
+        "createdAt": "2026-11-02T05:51:08.247Z"
       },
       "lastSuccessful": {
-        "checkId": "da8097a4-51bd-4cd2-a892-e3fe39e4596f",
-        "createdAt": "2026-11-01T05:50:48.219Z",
+        "checkId": "b823942c-cf51-4c79-bcd5-7611b4ac5927",
+        "createdAt": "2026-11-02T05:51:08.247Z",
         "hash": "9607227557461c1efc0684409fb3912cb67d03379de28782b008e4328d954623",
         "tokens": [
           {
@@ -190675,8 +190675,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:08.025Z",
       "latest": {
-        "id": "36b12f28-3ec4-45ec-9284-a907262830c3",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "1f6467d2-bc7a-499f-b45e-cd0c37e7a6b1",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "65ae2ae0-6609-42a3-aa4a-6a9d9e620da4",
         "targetId": "aee77a45-fdde-4c1f-a82f-419336a1ab18",
         "targetName": "YOU Wish up 카드",
@@ -190695,10 +190695,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 622,
+        "responseMs": 1562,
         "errorMessage": null,
-        "comparedCheckId": "3d4c93ce-1346-49ac-b41c-ca22681c27fc",
-        "comparedAt": "2026-10-31T05:24:14.628Z",
+        "comparedCheckId": "36b12f28-3ec4-45ec-9284-a907262830c3",
+        "comparedAt": "2026-11-01T05:50:48.863Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -190714,11 +190714,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:48.863Z"
+        "createdAt": "2026-11-02T05:51:09.577Z"
       },
       "lastSuccessful": {
-        "checkId": "36b12f28-3ec4-45ec-9284-a907262830c3",
-        "createdAt": "2026-11-01T05:50:48.863Z",
+        "checkId": "1f6467d2-bc7a-499f-b45e-cd0c37e7a6b1",
+        "createdAt": "2026-11-02T05:51:09.577Z",
         "hash": "04f0976512dd39805dae212b33bfd0bcf6fcf84f789f5b91f0ececb365573408",
         "tokens": [
           {
@@ -192569,8 +192569,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:56.640Z",
       "latest": {
-        "id": "02fe3e27-aef4-45b6-833d-0f7f375ce482",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "579bbfe9-38aa-478b-9cf6-4485cfd93c6b",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "55e07fac-79e6-4ccb-a6c6-38a1519deae8",
         "targetId": "ba3c273b-bf19-44d9-a4ef-c79f1dac16b9",
         "targetName": "굿데이올림카드",
@@ -192589,10 +192589,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 874,
+        "responseMs": 1985,
         "errorMessage": null,
-        "comparedCheckId": "6c833b10-3b5e-4b6a-a834-ac471a0452b3",
-        "comparedAt": "2026-10-31T05:24:17.224Z",
+        "comparedCheckId": "02fe3e27-aef4-45b6-833d-0f7f375ce482",
+        "comparedAt": "2026-11-01T05:50:52.436Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -192608,11 +192608,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:52.436Z"
+        "createdAt": "2026-11-02T05:51:13.281Z"
       },
       "lastSuccessful": {
-        "checkId": "02fe3e27-aef4-45b6-833d-0f7f375ce482",
-        "createdAt": "2026-11-01T05:50:52.436Z",
+        "checkId": "579bbfe9-38aa-478b-9cf6-4485cfd93c6b",
+        "createdAt": "2026-11-02T05:51:13.281Z",
         "hash": "253ee9eb88b89a24bb620ef8945447dd767766eb58be4e2ad42415d58d7203d1",
         "tokens": [
           {
@@ -206918,8 +206918,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:11.481Z",
       "latest": {
-        "id": "d47438a3-4717-4bc5-8fba-e6839a1b2909",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "68ccec49-4209-42f0-9c1a-4bfb7c9913d3",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "99506875-e7b5-49a6-aa7d-d9ed9e4cf5ba",
         "targetId": "ba3c273b-bf19-44d9-a4ef-c79f1dac16b9",
         "targetName": "굿데이올림카드",
@@ -206938,10 +206938,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 2135,
+        "responseMs": 1472,
         "errorMessage": null,
-        "comparedCheckId": "28aeace7-ef33-40e7-a796-5af05abdd691",
-        "comparedAt": "2026-10-31T05:24:18.073Z",
+        "comparedCheckId": "d47438a3-4717-4bc5-8fba-e6839a1b2909",
+        "comparedAt": "2026-11-01T05:50:53.749Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -206957,11 +206957,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:53.749Z"
+        "createdAt": "2026-11-02T05:51:12.781Z"
       },
       "lastSuccessful": {
-        "checkId": "d47438a3-4717-4bc5-8fba-e6839a1b2909",
-        "createdAt": "2026-11-01T05:50:53.749Z",
+        "checkId": "68ccec49-4209-42f0-9c1a-4bfb7c9913d3",
+        "createdAt": "2026-11-02T05:51:12.781Z",
         "hash": "7d204c8f1dfbb48d1582c5a090a48187d5761ac5f7486d14db91bd1413847662",
         "tokens": [
           {
@@ -209232,8 +209232,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:53.866Z",
       "latest": {
-        "id": "ded2b1a4-558c-4e52-b6b4-e8fc3519375c",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "3af571a8-b5b1-48c6-8165-d6dcd9a56441",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "a1c82600-76ec-46e4-93ef-f8bc6778b034",
         "targetId": "bec4c3be-5c44-4585-a6a3-5fc7ffc3a7b0",
         "targetName": "NEED Global 카드",
@@ -209252,10 +209252,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 784,
+        "responseMs": 1019,
         "errorMessage": null,
-        "comparedCheckId": "da0e30f5-17f2-46b7-aa2c-8f6cb74ebabe",
-        "comparedAt": "2026-10-31T05:24:14.780Z",
+        "comparedCheckId": "ded2b1a4-558c-4e52-b6b4-e8fc3519375c",
+        "comparedAt": "2026-11-01T05:50:49.770Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -209271,11 +209271,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:49.770Z"
+        "createdAt": "2026-11-02T05:51:09.419Z"
       },
       "lastSuccessful": {
-        "checkId": "ded2b1a4-558c-4e52-b6b4-e8fc3519375c",
-        "createdAt": "2026-11-01T05:50:49.770Z",
+        "checkId": "3af571a8-b5b1-48c6-8165-d6dcd9a56441",
+        "createdAt": "2026-11-02T05:51:09.419Z",
         "hash": "0c65b16c7c654e9f5c93285df1e40a36cba69d7b936a83c213eb96013cb7d572",
         "tokens": [
           {
@@ -222551,8 +222551,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:09.622Z",
       "latest": {
-        "id": "eaf40ff2-5104-4ffe-8926-a40df11a5e79",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "a537bab1-70ce-48d7-82f8-47b1883922fc",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "556d6d77-9c95-4b36-9826-ae45ff7b9f6b",
         "targetId": "bec4c3be-5c44-4585-a6a3-5fc7ffc3a7b0",
         "targetName": "NEED Global 카드",
@@ -222571,10 +222571,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 597,
+        "responseMs": 1166,
         "errorMessage": null,
-        "comparedCheckId": "7e64882a-4e6a-44e7-8ff8-669bfa3f0057",
-        "comparedAt": "2026-10-31T05:24:15.830Z",
+        "comparedCheckId": "eaf40ff2-5104-4ffe-8926-a40df11a5e79",
+        "comparedAt": "2026-11-01T05:50:49.894Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -222590,11 +222590,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:49.894Z"
+        "createdAt": "2026-11-02T05:51:10.041Z"
       },
       "lastSuccessful": {
-        "checkId": "eaf40ff2-5104-4ffe-8926-a40df11a5e79",
-        "createdAt": "2026-11-01T05:50:49.894Z",
+        "checkId": "a537bab1-70ce-48d7-82f8-47b1883922fc",
+        "createdAt": "2026-11-02T05:51:10.041Z",
         "hash": "f1463816cf6e70df62ed102c7f137ad0139ab74507463fb6533f0af7bee6732f",
         "tokens": [
           {
@@ -224435,8 +224435,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:35:01.840Z",
       "latest": {
-        "id": "ca85e718-c4b0-4e96-870c-02b120e5a59e",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "2371cabb-3891-49a2-8eb7-c9d29d050ab3",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "c79d4215-7632-4f50-b00d-872fc192fe4a",
         "targetId": "c4fe7b59-3b68-47f8-bbde-6c8701458fac",
         "targetName": "노리2 체크카드(KB Pay)",
@@ -224455,10 +224455,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1538,
+        "responseMs": 1554,
         "errorMessage": null,
-        "comparedCheckId": "a60985e6-2de6-4c10-ab0a-c7a30971524c",
-        "comparedAt": "2026-10-31T05:24:20.930Z",
+        "comparedCheckId": "ca85e718-c4b0-4e96-870c-02b120e5a59e",
+        "comparedAt": "2026-11-01T05:50:57.339Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -224474,11 +224474,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:57.339Z"
+        "createdAt": "2026-11-02T05:51:17.164Z"
       },
       "lastSuccessful": {
-        "checkId": "ca85e718-c4b0-4e96-870c-02b120e5a59e",
-        "createdAt": "2026-11-01T05:50:57.339Z",
+        "checkId": "2371cabb-3891-49a2-8eb7-c9d29d050ab3",
+        "createdAt": "2026-11-02T05:51:17.164Z",
         "hash": "c9db9598e3b715bc0226778ffde383084467d37c899004640dd1febfb9f6ad5c",
         "tokens": [
           {
@@ -239494,8 +239494,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:15.082Z",
       "latest": {
-        "id": "88c9fab2-df8e-4bbe-91d7-b6ecb92111ff",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "bf824e8e-2538-4ded-90f8-a463d8e6a79b",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "3506bde9-c822-4be3-9f30-31809737af94",
         "targetId": "c4fe7b59-3b68-47f8-bbde-6c8701458fac",
         "targetName": "노리2 체크카드(KB Pay)",
@@ -239514,10 +239514,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 427,
+        "responseMs": 552,
         "errorMessage": null,
-        "comparedCheckId": "2b75d687-8e7d-4ad5-9ee5-3520df0ddd32",
-        "comparedAt": "2026-10-31T05:24:21.481Z",
+        "comparedCheckId": "88c9fab2-df8e-4bbe-91d7-b6ecb92111ff",
+        "comparedAt": "2026-11-01T05:50:56.432Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -239533,11 +239533,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:56.432Z"
+        "createdAt": "2026-11-02T05:51:16.618Z"
       },
       "lastSuccessful": {
-        "checkId": "88c9fab2-df8e-4bbe-91d7-b6ecb92111ff",
-        "createdAt": "2026-11-01T05:50:56.432Z",
+        "checkId": "bf824e8e-2538-4ded-90f8-a463d8e6a79b",
+        "createdAt": "2026-11-02T05:51:16.618Z",
         "hash": "46940c6778576b77a002f78414120e9289d78017e863ac0ab8c2b9eff87092bc",
         "tokens": [
           {
@@ -241238,8 +241238,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "7a24c24e-e65f-438c-bf44-29cef7a67e51",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "47dd2545-569e-4fca-b2fc-7eb5a4ad86ff",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "d7ed54fd-b471-4d4e-8c66-f9b1778028d7",
         "targetId": "c5d297d9-5523-49eb-9b65-340e00f4c55c",
         "targetName": "이벤트 9월",
@@ -241258,7 +241258,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 194,
+        "responseMs": 538,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -241277,7 +241277,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-01T05:50:57.761Z"
+        "createdAt": "2026-11-02T05:51:18.230Z"
       },
       "lastSuccessful": null
     },
@@ -241286,8 +241286,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "609341e6-146b-444d-9ab8-f1f68bdc49f0",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "8a9eba78-354b-4d60-a076-cc5e27439f51",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "ae8ab9e4-6784-4ab8-a84e-0fa75525d559",
         "targetId": "c5d297d9-5523-49eb-9b65-340e00f4c55c",
         "targetName": "이벤트 9월",
@@ -241306,7 +241306,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 225,
+        "responseMs": 674,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -241325,7 +241325,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-01T05:50:57.986Z"
+        "createdAt": "2026-11-02T05:51:18.403Z"
       },
       "lastSuccessful": null
     },
@@ -241334,8 +241334,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:35:01.540Z",
       "latest": {
-        "id": "fef7bbdd-d7b7-4c13-b69b-b50f18099dae",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "f25862c4-c039-4f83-85aa-a2e738896699",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "e2bcd9ac-eaa5-4919-abe7-19c890c2d785",
         "targetId": "c701fd1a-9015-4daf-9039-b987c990c619",
         "targetName": "Youth Club 체크카드",
@@ -241354,10 +241354,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 875,
+        "responseMs": 1008,
         "errorMessage": null,
-        "comparedCheckId": "3964ea02-6577-42fd-9fee-30291c7b1030",
-        "comparedAt": "2026-10-31T05:24:21.025Z",
+        "comparedCheckId": "fef7bbdd-d7b7-4c13-b69b-b50f18099dae",
+        "comparedAt": "2026-11-01T05:50:56.361Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -241373,11 +241373,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:56.361Z"
+        "createdAt": "2026-11-02T05:51:16.334Z"
       },
       "lastSuccessful": {
-        "checkId": "fef7bbdd-d7b7-4c13-b69b-b50f18099dae",
-        "createdAt": "2026-11-01T05:50:56.361Z",
+        "checkId": "f25862c4-c039-4f83-85aa-a2e738896699",
+        "createdAt": "2026-11-02T05:51:16.334Z",
         "hash": "ccb606201540fbef64515bbd7202d2a5b52333cf95aa725059e85090a530358b",
         "tokens": [
           {
@@ -256313,8 +256313,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:14.845Z",
       "latest": {
-        "id": "65e700d3-b853-4ed0-aa2d-5d3e96f63d96",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "15a09e64-25d3-4e2c-9005-4d8ea59aa2be",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "20e3a981-c6a0-4673-9a6f-5e0241999772",
         "targetId": "c701fd1a-9015-4daf-9039-b987c990c619",
         "targetName": "Youth Club 체크카드",
@@ -256333,10 +256333,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 596,
+        "responseMs": 1138,
         "errorMessage": null,
-        "comparedCheckId": "05b6813e-79c1-434d-a9aa-03b1b76895c6",
-        "comparedAt": "2026-10-31T05:24:21.184Z",
+        "comparedCheckId": "65e700d3-b853-4ed0-aa2d-5d3e96f63d96",
+        "comparedAt": "2026-11-01T05:50:56.048Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -256352,11 +256352,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:56.048Z"
+        "createdAt": "2026-11-02T05:51:16.365Z"
       },
       "lastSuccessful": {
-        "checkId": "65e700d3-b853-4ed0-aa2d-5d3e96f63d96",
-        "createdAt": "2026-11-01T05:50:56.048Z",
+        "checkId": "15a09e64-25d3-4e2c-9005-4d8ea59aa2be",
+        "createdAt": "2026-11-02T05:51:16.365Z",
         "hash": "cda2e12f252ca8fa27223ccf33a3f95d12b0e6111a699883b1235b318e1a2d28",
         "tokens": [
           {
@@ -258052,8 +258052,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:58.357Z",
       "latest": {
-        "id": "e74626b4-7782-49e1-bafb-697b961db428",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "0b7e239a-c881-4f92-a8f6-3e6067951d36",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "533221ef-199b-4710-b94e-bc3aab4a1c02",
         "targetId": "ccfd1770-4563-4762-823c-5f6aa40a0d3e",
         "targetName": "American Express Blue Card",
@@ -258072,10 +258072,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1512,
+        "responseMs": 1134,
         "errorMessage": null,
-        "comparedCheckId": "b603b4d0-4e83-46f8-844b-d2c95ace5329",
-        "comparedAt": "2026-10-31T05:24:18.601Z",
+        "comparedCheckId": "e74626b4-7782-49e1-bafb-697b961db428",
+        "comparedAt": "2026-11-01T05:50:54.121Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -258091,11 +258091,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:54.121Z"
+        "createdAt": "2026-11-02T05:51:13.391Z"
       },
       "lastSuccessful": {
-        "checkId": "e74626b4-7782-49e1-bafb-697b961db428",
-        "createdAt": "2026-11-01T05:50:54.121Z",
+        "checkId": "0b7e239a-c881-4f92-a8f6-3e6067951d36",
+        "createdAt": "2026-11-02T05:51:13.391Z",
         "hash": "3dfc64f4797ae3e28c9dff2e878527b73221663b4f8c450543c5ce245523f6e5",
         "tokens": [
           {
@@ -272266,8 +272266,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:12.462Z",
       "latest": {
-        "id": "6fc4fca1-47dd-4973-a066-250f837476d3",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "068ffc7a-b335-43fa-a29f-f02d41521b6d",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "8ea95969-0296-474c-b812-028030be9348",
         "targetId": "ccfd1770-4563-4762-823c-5f6aa40a0d3e",
         "targetName": "American Express Blue Card",
@@ -272286,10 +272286,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1044,
+        "responseMs": 2083,
         "errorMessage": null,
-        "comparedCheckId": "60578b63-6801-4b65-b1dc-74f1b9e11968",
-        "comparedAt": "2026-10-31T05:24:18.723Z",
+        "comparedCheckId": "6fc4fca1-47dd-4973-a066-250f837476d3",
+        "comparedAt": "2026-11-01T05:50:54.025Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -272305,11 +272305,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:54.025Z"
+        "createdAt": "2026-11-02T05:51:14.904Z"
       },
       "lastSuccessful": {
-        "checkId": "6fc4fca1-47dd-4973-a066-250f837476d3",
-        "createdAt": "2026-11-01T05:50:54.025Z",
+        "checkId": "068ffc7a-b335-43fa-a29f-f02d41521b6d",
+        "createdAt": "2026-11-02T05:51:14.904Z",
         "hash": "d54cb95834326384e494c27c5c4c77049fe8da26738a28f801a0bd6b32d19c98",
         "tokens": [
           {
@@ -274120,8 +274120,8 @@
       "liveCompletedAt": "2026-09-14T07:48:27.619Z",
       "lastChangedAt": "2026-10-30T05:34:49.789Z",
       "latest": {
-        "id": "6082f2a0-eced-4920-b354-8744922c8c46",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "31c7d874-4f2d-4900-8500-ff529451f579",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "1a97e3c9-610d-4931-b785-e625c6caf524",
         "targetId": "cd5e3359-d077-44de-b423-490719f8a4c1",
         "targetName": "ALL 카드",
@@ -274140,10 +274140,10 @@
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">ALL 카드, 이런 분께 추천드려요</h2>",
         "changeStatus": "UNCHANGED",
-        "responseMs": 2283,
+        "responseMs": 799,
         "errorMessage": null,
-        "comparedCheckId": "8208a04c-4d06-41e4-b5ce-63859e28d262",
-        "comparedAt": "2026-10-31T05:24:11.602Z",
+        "comparedCheckId": "6082f2a0-eced-4920-b354-8744922c8c46",
+        "comparedAt": "2026-11-01T05:50:46.372Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -274159,11 +274159,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:46.372Z"
+        "createdAt": "2026-11-02T05:51:04.863Z"
       },
       "lastSuccessful": {
-        "checkId": "6082f2a0-eced-4920-b354-8744922c8c46",
-        "createdAt": "2026-11-01T05:50:46.372Z",
+        "checkId": "31c7d874-4f2d-4900-8500-ff529451f579",
+        "createdAt": "2026-11-02T05:51:04.863Z",
         "hash": "2f20d77a0d96ce52147c061fb765c24cb74379595a43104d30daac8b7e4a6e72",
         "tokens": [
           {
@@ -287674,8 +287674,8 @@
       "liveCompletedAt": "2026-09-14T07:48:27.840Z",
       "lastChangedAt": "2026-10-02T05:25:04.702Z",
       "latest": {
-        "id": "b89e9041-699e-48c5-b35a-32149437d014",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "a7f6eb54-565e-4857-b8b0-63896dbf635c",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "cf2d0df6-8b68-49e1-8346-7762096c49ee",
         "targetId": "cd5e3359-d077-44de-b423-490719f8a4c1",
         "targetName": "ALL 카드",
@@ -287694,10 +287694,10 @@
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">ALL 카드, <br>이런 분께 추천드려요</h2>",
         "changeStatus": "UNCHANGED",
-        "responseMs": 2745,
+        "responseMs": 2194,
         "errorMessage": null,
-        "comparedCheckId": "0fd2d13b-95d1-4400-8b80-140059466e60",
-        "comparedAt": "2026-10-31T05:24:11.662Z",
+        "comparedCheckId": "b89e9041-699e-48c5-b35a-32149437d014",
+        "comparedAt": "2026-11-01T05:50:46.689Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -287713,11 +287713,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:46.689Z"
+        "createdAt": "2026-11-02T05:51:06.043Z"
       },
       "lastSuccessful": {
-        "checkId": "b89e9041-699e-48c5-b35a-32149437d014",
-        "createdAt": "2026-11-01T05:50:46.689Z",
+        "checkId": "a7f6eb54-565e-4857-b8b0-63896dbf635c",
+        "createdAt": "2026-11-02T05:51:06.043Z",
         "hash": "57eb8d57f0ab221cb282cb7fb105d776f269ebf72e5b58cda36b4a8712209117",
         "tokens": [
           {
@@ -290033,8 +290033,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:55.649Z",
       "latest": {
-        "id": "63cc5fe2-f58e-4fc5-ba70-4635cd4b7f84",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "f32ce547-d89c-43e2-9b9e-ddf5e007817b",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "613d02c9-fc0b-4d8d-9a08-517e588ed948",
         "targetId": "d8815c97-3344-4821-8372-32ff769c023b",
         "targetName": "NEED Pay 카드",
@@ -290053,10 +290053,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1523,
+        "responseMs": 1615,
         "errorMessage": null,
-        "comparedCheckId": "37c340fc-3fd9-4561-97c7-18b9439ee553",
-        "comparedAt": "2026-10-31T05:24:16.082Z",
+        "comparedCheckId": "63cc5fe2-f58e-4fc5-ba70-4635cd4b7f84",
+        "comparedAt": "2026-11-01T05:50:51.127Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -290072,11 +290072,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:51.127Z"
+        "createdAt": "2026-11-02T05:51:11.051Z"
       },
       "lastSuccessful": {
-        "checkId": "63cc5fe2-f58e-4fc5-ba70-4635cd4b7f84",
-        "createdAt": "2026-11-01T05:50:51.127Z",
+        "checkId": "f32ce547-d89c-43e2-9b9e-ddf5e007817b",
+        "createdAt": "2026-11-02T05:51:11.051Z",
         "hash": "d7bc557b3107f02b1b3a5e9455094a432d327e8416d3fd3e037b548708e7d944",
         "tokens": [
           {
@@ -304217,8 +304217,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:09.815Z",
       "latest": {
-        "id": "8f5545cd-e8de-49b8-ad26-a1b1de1c5bbe",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "d4b50b12-e66a-4011-bafc-43e849fcc11c",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "d137fd1e-c1dd-4841-8f54-32513292cd5a",
         "targetId": "d8815c97-3344-4821-8372-32ff769c023b",
         "targetName": "NEED Pay 카드",
@@ -304237,10 +304237,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1676,
+        "responseMs": 689,
         "errorMessage": null,
-        "comparedCheckId": "6811581f-7532-4507-835c-da66f8cad767",
-        "comparedAt": "2026-10-31T05:24:16.626Z",
+        "comparedCheckId": "8f5545cd-e8de-49b8-ad26-a1b1de1c5bbe",
+        "comparedAt": "2026-11-01T05:50:51.474Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -304256,11 +304256,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:51.474Z"
+        "createdAt": "2026-11-02T05:51:10.139Z"
       },
       "lastSuccessful": {
-        "checkId": "8f5545cd-e8de-49b8-ad26-a1b1de1c5bbe",
-        "createdAt": "2026-11-01T05:50:51.474Z",
+        "checkId": "d4b50b12-e66a-4011-bafc-43e849fcc11c",
+        "createdAt": "2026-11-02T05:51:10.139Z",
         "hash": "773702642f9c6657cde66d5d5ea0b9e66e24c0a08fc36585d4d271dce2781844",
         "tokens": [
           {
@@ -306171,8 +306171,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:52.123Z",
       "latest": {
-        "id": "17d7eb04-adac-43cc-a599-3abceec56faa",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "71dc7e3a-2f39-4698-bf0f-5a150e5cf103",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "6a0d6408-1c23-4f3b-9f75-2d84729915fa",
         "targetId": "efb1d0e6-0aeb-4093-84a7-6aed0179f41e",
         "targetName": "YOU Wish 카드",
@@ -306191,10 +306191,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1912,
+        "responseMs": 1156,
         "errorMessage": null,
-        "comparedCheckId": "0f9c69e8-0044-4624-b076-43e3dd2e8e23",
-        "comparedAt": "2026-10-31T05:24:13.867Z",
+        "comparedCheckId": "17d7eb04-adac-43cc-a599-3abceec56faa",
+        "comparedAt": "2026-11-01T05:50:49.263Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -306210,11 +306210,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:49.263Z"
+        "createdAt": "2026-11-02T05:51:08.105Z"
       },
       "lastSuccessful": {
-        "checkId": "17d7eb04-adac-43cc-a599-3abceec56faa",
-        "createdAt": "2026-11-01T05:50:49.263Z",
+        "checkId": "71dc7e3a-2f39-4698-bf0f-5a150e5cf103",
+        "createdAt": "2026-11-02T05:51:08.105Z",
         "hash": "b9fd9b9b3d004e1e32a43b37019d1f011ab89939cabacd8d8f377329bff742e6",
         "tokens": [
           {
@@ -320170,8 +320170,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:06.983Z",
       "latest": {
-        "id": "6d02ab10-470c-4b35-ae5a-242cb8eaed06",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "b2f2d303-50b2-4c80-a80c-e6a537bc1162",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "c159409a-cc42-4ae1-b6a3-9a5fc6e4b6c0",
         "targetId": "efb1d0e6-0aeb-4093-84a7-6aed0179f41e",
         "targetName": "YOU Wish 카드",
@@ -320190,10 +320190,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1165,
+        "responseMs": 1242,
         "errorMessage": null,
-        "comparedCheckId": "5209992e-f6e6-48e6-bc98-e6ba1b201cd3",
-        "comparedAt": "2026-10-31T05:24:13.175Z",
+        "comparedCheckId": "6d02ab10-470c-4b35-ae5a-242cb8eaed06",
+        "comparedAt": "2026-11-01T05:50:48.904Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -320209,11 +320209,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:48.904Z"
+        "createdAt": "2026-11-02T05:51:08.283Z"
       },
       "lastSuccessful": {
-        "checkId": "6d02ab10-470c-4b35-ae5a-242cb8eaed06",
-        "createdAt": "2026-11-01T05:50:48.904Z",
+        "checkId": "b2f2d303-50b2-4c80-a80c-e6a537bc1162",
+        "createdAt": "2026-11-02T05:51:08.283Z",
         "hash": "a00709672aabe9a2bee21ab60e9debb2abeac510064e6a86d69f3361990c075c",
         "tokens": [
           {
@@ -322054,8 +322054,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:52.570Z",
       "latest": {
-        "id": "0d98e428-3a06-4e38-92eb-f4ed0d2aaae9",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "f7e768e6-ffc1-4bfc-bfc7-ef4a08b32832",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "14bafd44-2782-4968-911b-291d2acd502e",
         "targetId": "f76ab7ec-2473-4bff-8a31-d6d4e7dbe21d",
         "targetName": "YOU With 카드",
@@ -322074,10 +322074,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 578,
+        "responseMs": 1572,
         "errorMessage": null,
-        "comparedCheckId": "ced2757f-318e-445a-a633-437a224bc1e4",
-        "comparedAt": "2026-10-31T05:24:13.663Z",
+        "comparedCheckId": "0d98e428-3a06-4e38-92eb-f4ed0d2aaae9",
+        "comparedAt": "2026-11-01T05:50:47.248Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -322093,11 +322093,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:47.248Z"
+        "createdAt": "2026-11-02T05:51:07.967Z"
       },
       "lastSuccessful": {
-        "checkId": "0d98e428-3a06-4e38-92eb-f4ed0d2aaae9",
-        "createdAt": "2026-11-01T05:50:47.248Z",
+        "checkId": "f7e768e6-ffc1-4bfc-bfc7-ef4a08b32832",
+        "createdAt": "2026-11-02T05:51:07.967Z",
         "hash": "a176c094f550ec714bb1904e235950c4eaba1d5ae2d4cf102d7348159c78d57f",
         "tokens": [
           {
@@ -336188,8 +336188,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:06.525Z",
       "latest": {
-        "id": "075684b6-5e30-477c-92bd-e95ac49a18bc",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "500df734-e9f2-4394-9aa3-9c74051f9e9f",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "446222ae-cda3-454a-9e38-96d18f5cf725",
         "targetId": "f76ab7ec-2473-4bff-8a31-d6d4e7dbe21d",
         "targetName": "YOU With 카드",
@@ -336208,10 +336208,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1532,
+        "responseMs": 993,
         "errorMessage": null,
-        "comparedCheckId": "9fa16bc1-be34-4a36-83a3-3a5e093de6e5",
-        "comparedAt": "2026-10-31T05:24:12.692Z",
+        "comparedCheckId": "075684b6-5e30-477c-92bd-e95ac49a18bc",
+        "comparedAt": "2026-11-01T05:50:48.271Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -336227,11 +336227,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:48.271Z"
+        "createdAt": "2026-11-02T05:51:07.336Z"
       },
       "lastSuccessful": {
-        "checkId": "075684b6-5e30-477c-92bd-e95ac49a18bc",
-        "createdAt": "2026-11-01T05:50:48.271Z",
+        "checkId": "500df734-e9f2-4394-9aa3-9c74051f9e9f",
+        "createdAt": "2026-11-02T05:51:07.336Z",
         "hash": "5150729fcb8ab67d58fb5a17811013c7e515c2a752336efbc7b1292ddbb88512",
         "tokens": [
           {
@@ -338110,10 +338110,10 @@
     "01b3f6d5-d2f3-46f9-b9dd-9fb1e43d30a4": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-30T05:34:58.189Z",
+      "lastChangedAt": "2026-11-02T05:51:12.149Z",
       "latest": {
-        "id": "17836619-98f2-4445-8343-e38a31a5067f",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "04fe602c-fc4e-44b9-b537-a7d9a9d7a67d",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "01b3f6d5-d2f3-46f9-b9dd-9fb1e43d30a4",
         "targetId": "ffce3167-72d1-488c-ab2e-f65d740df310",
         "targetName": "스카이패스 티타늄카드",
@@ -338131,16 +338131,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 538,
+        "changeStatus": "CHANGED",
+        "responseMs": 522,
         "errorMessage": null,
-        "comparedCheckId": "85bf44ff-2233-447f-a8ef-25ce1b0e3ffb",
-        "comparedAt": "2026-10-31T05:24:18.689Z",
+        "comparedCheckId": "17836619-98f2-4445-8343-e38a31a5067f",
+        "comparedAt": "2026-11-01T05:50:52.958Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 2,
+        "bodyRemovedCount": 2,
+        "diffJson": "{\"added\":[{\"kind\":\"link\",\"key\":\"Mastercard 티타늄 01 선택서비스 상품설명서 보기\",\"value\":\"https://img2.kbcard.com/obj/card/download/70524_stpul_20260511.pdf\"},{\"kind\":\"link\",\"key\":\"Mastercard 티타늄 기본서비스 상품설명서 보기\",\"value\":\"https://img2.kbcard.com/obj/card/download/A0027_stpul_20260511.pdf\"}],\"removed\":[{\"kind\":\"link\",\"key\":\"Mastercard 티타늄 01 선택서비스 상품설명서 보기\",\"value\":\"https://img2.kbcard.com/obj/card/download/70524_stpul_20250410.pdf\"},{\"kind\":\"link\",\"key\":\"Mastercard 티타늄 기본서비스 상품설명서 보기\",\"value\":\"https://img2.kbcard.com/obj/card/download/A0027_stpul_20250328.pdf\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -338151,12 +338151,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:52.958Z"
+        "createdAt": "2026-11-02T05:51:12.149Z"
       },
       "lastSuccessful": {
-        "checkId": "17836619-98f2-4445-8343-e38a31a5067f",
-        "createdAt": "2026-11-01T05:50:52.958Z",
-        "hash": "053dd16dfe4b7ceda40256419956e05cfc383966ceba063fd5433493bff8c46f",
+        "checkId": "04fe602c-fc4e-44b9-b537-a7d9a9d7a67d",
+        "createdAt": "2026-11-02T05:51:12.149Z",
+        "hash": "91777c95e86175fbe96b95a832eab8b102e8f72e405bcf203c8c47e39076615c",
         "tokens": [
           {
             "kind": "title",
@@ -351481,12 +351481,12 @@
           {
             "kind": "link",
             "key": "Mastercard 티타늄 01 선택서비스 상품설명서 보기",
-            "value": "https://img2.kbcard.com/obj/card/download/70524_stpul_20250410.pdf"
+            "value": "https://img2.kbcard.com/obj/card/download/70524_stpul_20260511.pdf"
           },
           {
             "kind": "link",
             "key": "Mastercard 티타늄 기본서비스 상품설명서 보기",
-            "value": "https://img2.kbcard.com/obj/card/download/A0027_stpul_20250328.pdf"
+            "value": "https://img2.kbcard.com/obj/card/download/A0027_stpul_20260511.pdf"
           },
           {
             "kind": "link",
@@ -351821,8 +351821,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-02T05:25:12.377Z",
       "latest": {
-        "id": "75e2b7dc-3407-4d7a-985f-7bd3c8198795",
-        "runId": "279f3748-dda6-4a96-ad55-9dbd2fbebea1",
+        "id": "7abb0c80-2391-48b7-91ca-bb58869b38c5",
+        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
         "endpointId": "57a99be1-efa7-46ec-85b1-ffa0cbcbfc2a",
         "targetId": "ffce3167-72d1-488c-ab2e-f65d740df310",
         "targetName": "스카이패스 티타늄카드",
@@ -351841,10 +351841,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1075,
+        "responseMs": 2051,
         "errorMessage": null,
-        "comparedCheckId": "997cf60f-874b-4cea-8100-d0a68e5bf431",
-        "comparedAt": "2026-10-31T05:24:18.992Z",
+        "comparedCheckId": "75e2b7dc-3407-4d7a-985f-7bd3c8198795",
+        "comparedAt": "2026-11-01T05:50:53.533Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -351860,11 +351860,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-01T05:50:53.533Z"
+        "createdAt": "2026-11-02T05:51:13.751Z"
       },
       "lastSuccessful": {
-        "checkId": "75e2b7dc-3407-4d7a-985f-7bd3c8198795",
-        "createdAt": "2026-11-01T05:50:53.533Z",
+        "checkId": "7abb0c80-2391-48b7-91ca-bb58869b38c5",
+        "createdAt": "2026-11-02T05:51:13.751Z",
         "hash": "f5e0b6cfcfa5bdc0dd4bcf5b4692f485a0e44ca380607ea7cb3fe1a878747146",
         "tokens": [
           {
