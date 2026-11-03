@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-02T05:51:18.595Z",
+  "updatedAt": "2026-11-03T06:34:32.584Z",
   "endpoints": {
     "c926ec76-812d-4877-b8cd-10f16272aeba": {
       "launchedAt": null,
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:35:02.349Z",
       "latest": {
-        "id": "eaa81e48-f322-418b-b562-05f2186acebe",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "4e39d5d3-819f-44cd-a8a7-92646fdfe5e3",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "c926ec76-812d-4877-b8cd-10f16272aeba",
         "targetId": "014f6ae8-f8af-4234-9976-8e1b4ecbb511",
         "targetName": "국민행복카드",
@@ -27,10 +27,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 963,
+        "responseMs": 2040,
         "errorMessage": null,
-        "comparedCheckId": "41bdf3aa-3912-4f2f-adac-116e2778f98e",
-        "comparedAt": "2026-11-01T05:50:57.985Z",
+        "comparedCheckId": "eaa81e48-f322-418b-b562-05f2186acebe",
+        "comparedAt": "2026-11-02T05:51:17.692Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -46,11 +46,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:17.692Z"
+        "createdAt": "2026-11-03T06:34:32.584Z"
       },
       "lastSuccessful": {
-        "checkId": "eaa81e48-f322-418b-b562-05f2186acebe",
-        "createdAt": "2026-11-02T05:51:17.692Z",
+        "checkId": "4e39d5d3-819f-44cd-a8a7-92646fdfe5e3",
+        "createdAt": "2026-11-03T06:34:32.584Z",
         "hash": "f48b88dcb0a20133f73440e60e947c3f3dd9f7289b130f3d114d6c6cc43274d9",
         "tokens": [
           {
@@ -14269,10 +14269,10 @@
     "7b6cf907-d2fc-4161-a9c1-7327da1b8c12": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-02T05:25:16.120Z",
+      "lastChangedAt": "2026-11-03T06:34:31.587Z",
       "latest": {
-        "id": "c043c6db-56d6-433a-a28d-76e47599a6a1",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "d6e740fb-3e0f-4bf3-9c1b-94558f1bcdab",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "7b6cf907-d2fc-4161-a9c1-7327da1b8c12",
         "targetId": "014f6ae8-f8af-4234-9976-8e1b4ecbb511",
         "targetName": "국민행복카드",
@@ -14290,16 +14290,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 668,
+        "changeStatus": "CHANGED",
+        "responseMs": 1017,
         "errorMessage": null,
-        "comparedCheckId": "834daa28-50c4-4687-8d45-38e0cc6a88f2",
-        "comparedAt": "2026-11-01T05:50:57.567Z",
+        "comparedCheckId": "c043c6db-56d6-433a-a28d-76e47599a6a1",
+        "comparedAt": "2026-11-02T05:51:17.729Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 9,
+        "bodyRemovedCount": 9,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.11.1(일) ~ 11.30(월)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.11.1 (일) ~ 11.30 (월)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.11.1 (일) ~ 12.10 (목)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.10.1(목) ~ 10.31(토)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.10.1 (목) ~ 10.31 (토)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.10.1 (목) ~ 11.10 (화)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -14310,12 +14310,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:17.729Z"
+        "createdAt": "2026-11-03T06:34:31.587Z"
       },
       "lastSuccessful": {
-        "checkId": "c043c6db-56d6-433a-a28d-76e47599a6a1",
-        "createdAt": "2026-11-02T05:51:17.729Z",
-        "hash": "e4a05a511ac23184bbdc49d34bd6467f5946d71a55c77f008d78ff291d22f8ee",
+        "checkId": "d6e740fb-3e0f-4bf3-9c1b-94558f1bcdab",
+        "createdAt": "2026-11-03T06:34:31.587Z",
+        "hash": "82983b0cdc8a4ed3488665537f49cabb24f98a4c0574f47842a7e2646579a5a5",
         "tokens": [
           {
             "kind": "title",
@@ -14880,7 +14880,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.10.1(목) ~ 10.31(토)"
+            "value": "2026.11.1(일) ~ 11.30(월)"
           },
           {
             "kind": "heading",
@@ -14970,12 +14970,12 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준"
+            "value": "2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준"
           },
           {
             "kind": "text",
             "key": "li",
-            "value": "발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영"
+            "value": "발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영"
           },
           {
             "kind": "text",
@@ -15005,7 +15005,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정"
+            "value": "2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정"
           },
           {
             "kind": "heading",
@@ -15045,7 +15045,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
+            "value": "2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
           },
           {
             "kind": "text",
@@ -15215,12 +15215,12 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "발급: 2026.10.1 (목) ~ 10.31 (토)"
+            "value": "발급: 2026.11.1 (일) ~ 11.30 (월)"
           },
           {
             "kind": "text",
             "key": "p",
-            "value": "이용: 2026.10.1 (목) ~ 11.10 (화)"
+            "value": "이용: 2026.11.1 (일) ~ 12.10 (목)"
           },
           {
             "kind": "heading",
@@ -15250,7 +15250,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
+            "value": "③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
           },
           {
             "kind": "heading",
@@ -15855,7 +15855,7 @@
           {
             "kind": "link",
             "key": "행사 바로가기",
-            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053"
+            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327"
           },
           {
             "kind": "link",
@@ -16010,8 +16010,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:35:01.300Z",
       "latest": {
-        "id": "67aa8dbc-24e0-4799-b1fa-f35584435f45",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "e8ce1e3f-a2b8-44db-8168-951250622bb8",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "01ed00fd-e36a-480d-ab73-d80aaab6cb65",
         "targetId": "03bb23e7-bb86-4574-8e13-1b46baece17c",
         "targetName": "트래블러스 체크카드",
@@ -16030,10 +16030,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1926,
+        "responseMs": 451,
         "errorMessage": null,
-        "comparedCheckId": "e2f17feb-0883-4c8d-af3d-950df9a3e7ba",
-        "comparedAt": "2026-11-01T05:50:58.137Z",
+        "comparedCheckId": "67aa8dbc-24e0-4799-b1fa-f35584435f45",
+        "comparedAt": "2026-11-02T05:51:18.402Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -16049,11 +16049,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:18.402Z"
+        "createdAt": "2026-11-03T06:34:30.296Z"
       },
       "lastSuccessful": {
-        "checkId": "67aa8dbc-24e0-4799-b1fa-f35584435f45",
-        "createdAt": "2026-11-02T05:51:18.402Z",
+        "checkId": "e8ce1e3f-a2b8-44db-8168-951250622bb8",
+        "createdAt": "2026-11-03T06:34:30.296Z",
         "hash": "dff290f096854ff7d57d5a06d7d3cff48d13d29834362a80ca14aceedf305ff7",
         "tokens": [
           {
@@ -31327,10 +31327,10 @@
     "db9539a0-6221-4363-9eb5-708ca00e4f35": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-30T05:35:02.119Z",
+      "lastChangedAt": "2026-11-03T06:34:31.169Z",
       "latest": {
-        "id": "22083256-6759-43d4-8316-7ce5c04cf847",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "b9cf159e-b8a1-4039-980f-57a5f7c8d18c",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "db9539a0-6221-4363-9eb5-708ca00e4f35",
         "targetId": "03bb23e7-bb86-4574-8e13-1b46baece17c",
         "targetName": "트래블러스 체크카드",
@@ -31348,16 +31348,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 614,
+        "changeStatus": "CHANGED",
+        "responseMs": 846,
         "errorMessage": null,
-        "comparedCheckId": "affd2fd5-bf9d-4a99-988b-793166770e2c",
-        "comparedAt": "2026-11-01T05:50:56.974Z",
+        "comparedCheckId": "22083256-6759-43d4-8316-7ce5c04cf847",
+        "comparedAt": "2026-11-02T05:51:17.026Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 9,
+        "bodyRemovedCount": 9,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.11.1(일) ~ 11.30(월)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.11.1 (일) ~ 11.30 (월)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.11.1 (일) ~ 12.10 (목)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.10.1(목) ~ 10.31(토)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.10.1 (목) ~ 10.31 (토)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.10.1 (목) ~ 11.10 (화)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -31368,12 +31368,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:17.026Z"
+        "createdAt": "2026-11-03T06:34:31.169Z"
       },
       "lastSuccessful": {
-        "checkId": "22083256-6759-43d4-8316-7ce5c04cf847",
-        "createdAt": "2026-11-02T05:51:17.026Z",
-        "hash": "ebc51c294db1fdc0b78b93bc51972f75b8736b94f336e326739a812d27ccec88",
+        "checkId": "b9cf159e-b8a1-4039-980f-57a5f7c8d18c",
+        "createdAt": "2026-11-03T06:34:31.169Z",
+        "hash": "fedcb08daae20cfdd8b61404b4c422bd9e80d9b2c70bb3d0e161fdbae7904471",
         "tokens": [
           {
             "kind": "title",
@@ -32123,7 +32123,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.10.1(목) ~ 10.31(토)"
+            "value": "2026.11.1(일) ~ 11.30(월)"
           },
           {
             "kind": "heading",
@@ -32213,12 +32213,12 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준"
+            "value": "2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준"
           },
           {
             "kind": "text",
             "key": "li",
-            "value": "발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영"
+            "value": "발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영"
           },
           {
             "kind": "text",
@@ -32248,7 +32248,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정"
+            "value": "2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정"
           },
           {
             "kind": "heading",
@@ -32288,7 +32288,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
+            "value": "2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
           },
           {
             "kind": "text",
@@ -32458,12 +32458,12 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "발급: 2026.10.1 (목) ~ 10.31 (토)"
+            "value": "발급: 2026.11.1 (일) ~ 11.30 (월)"
           },
           {
             "kind": "text",
             "key": "p",
-            "value": "이용: 2026.10.1 (목) ~ 11.10 (화)"
+            "value": "이용: 2026.11.1 (일) ~ 12.10 (목)"
           },
           {
             "kind": "heading",
@@ -32493,7 +32493,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
+            "value": "③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
           },
           {
             "kind": "heading",
@@ -33083,7 +33083,7 @@
           {
             "kind": "link",
             "key": "행사 바로가기",
-            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053"
+            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327"
           },
           {
             "kind": "link",
@@ -33248,8 +33248,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:58.851Z",
       "latest": {
-        "id": "beb707fb-bc40-4c1a-b674-54736f080873",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "dad1d017-0df4-4f69-a107-f46bb38f052e",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "8fbc38b1-9e91-48b5-b48c-6a8b52dea42c",
         "targetId": "11160efa-eca7-4b83-a8db-13cea9e8e74e",
         "targetName": "HERITAGE Classic(할인형)",
@@ -33268,10 +33268,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 541,
+        "responseMs": 1094,
         "errorMessage": null,
-        "comparedCheckId": "5a3a7750-4974-44ca-add7-b68e7937ddf8",
-        "comparedAt": "2026-11-01T05:50:55.185Z",
+        "comparedCheckId": "beb707fb-bc40-4c1a-b674-54736f080873",
+        "comparedAt": "2026-11-02T05:51:13.947Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -33287,11 +33287,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:13.947Z"
+        "createdAt": "2026-11-03T06:34:27.773Z"
       },
       "lastSuccessful": {
-        "checkId": "beb707fb-bc40-4c1a-b674-54736f080873",
-        "createdAt": "2026-11-02T05:51:13.947Z",
+        "checkId": "dad1d017-0df4-4f69-a107-f46bb38f052e",
+        "createdAt": "2026-11-03T06:34:27.773Z",
         "hash": "9983739180dc51efc2a177186a51902fe148937f58bb7e1c7d80860ef0f20077",
         "tokens": [
           {
@@ -47970,10 +47970,10 @@
     "3a605dd0-af28-4d8f-a524-841baf470b44": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-02T05:25:13.438Z",
+      "lastChangedAt": "2026-11-03T06:34:28.447Z",
       "latest": {
-        "id": "852a3e14-4e1b-4652-9fb7-ab8bd76d0f05",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "0cb3b404-1f79-4db6-95b3-3b0dd59e67d7",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "3a605dd0-af28-4d8f-a524-841baf470b44",
         "targetId": "11160efa-eca7-4b83-a8db-13cea9e8e74e",
         "targetName": "HERITAGE Classic(할인형)",
@@ -47991,16 +47991,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 905,
+        "changeStatus": "CHANGED",
+        "responseMs": 1168,
         "errorMessage": null,
-        "comparedCheckId": "a370cd06-51b4-4d36-b7bf-b80d92b0e8a4",
-        "comparedAt": "2026-11-01T05:50:55.426Z",
+        "comparedCheckId": "852a3e14-4e1b-4652-9fb7-ab8bd76d0f05",
+        "comparedAt": "2026-11-02T05:51:14.326Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 9,
+        "bodyRemovedCount": 9,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.11.1(일) ~ 11.30(월)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.11.1 (일) ~ 11.30 (월)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.11.1 (일) ~ 12.10 (목)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.10.1(목) ~ 10.31(토)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.10.1 (목) ~ 10.31 (토)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.10.1 (목) ~ 11.10 (화)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -48011,12 +48011,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:14.326Z"
+        "createdAt": "2026-11-03T06:34:28.447Z"
       },
       "lastSuccessful": {
-        "checkId": "852a3e14-4e1b-4652-9fb7-ab8bd76d0f05",
-        "createdAt": "2026-11-02T05:51:14.326Z",
-        "hash": "67f45631c91131d89017d25e8d72c122e5618c0fb8b26ab46cdb102237d15858",
+        "checkId": "0cb3b404-1f79-4db6-95b3-3b0dd59e67d7",
+        "createdAt": "2026-11-03T06:34:28.447Z",
+        "hash": "880b550dedfb62ffadd75d114400715bb922531ad99f0f357b8ed143f401ee7f",
         "tokens": [
           {
             "kind": "title",
@@ -48736,7 +48736,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.10.1(목) ~ 10.31(토)"
+            "value": "2026.11.1(일) ~ 11.30(월)"
           },
           {
             "kind": "heading",
@@ -48826,12 +48826,12 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준"
+            "value": "2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준"
           },
           {
             "kind": "text",
             "key": "li",
-            "value": "발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영"
+            "value": "발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영"
           },
           {
             "kind": "text",
@@ -48861,7 +48861,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정"
+            "value": "2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정"
           },
           {
             "kind": "heading",
@@ -48901,7 +48901,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
+            "value": "2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
           },
           {
             "kind": "text",
@@ -49071,12 +49071,12 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "발급: 2026.10.1 (목) ~ 10.31 (토)"
+            "value": "발급: 2026.11.1 (일) ~ 11.30 (월)"
           },
           {
             "kind": "text",
             "key": "p",
-            "value": "이용: 2026.10.1 (목) ~ 11.10 (화)"
+            "value": "이용: 2026.11.1 (일) ~ 12.10 (목)"
           },
           {
             "kind": "heading",
@@ -49106,7 +49106,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
+            "value": "③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
           },
           {
             "kind": "heading",
@@ -49706,7 +49706,7 @@
           {
             "kind": "link",
             "key": "행사 바로가기",
-            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053"
+            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327"
           },
           {
             "kind": "link",
@@ -49861,8 +49861,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "c4dfa4b7-93d7-40f9-94ab-679deb8d67f8",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "fc6389d9-30fc-4af8-b4c1-22e65dca0844",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "eb3ccb9d-1f8c-4db8-9ee9-55712c3dc236",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -49881,7 +49881,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 331,
+        "responseMs": 190,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -49900,7 +49900,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-02T05:51:14.657Z"
+        "createdAt": "2026-11-03T06:34:27.963Z"
       },
       "lastSuccessful": null
     },
@@ -49909,8 +49909,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:35:00.091Z",
       "latest": {
-        "id": "6992d90d-95fb-4e41-8bbc-3822d1c50987",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "e043de6e-e125-4c0b-84d9-04b8b62d30d8",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "19d614e270d3eff5121073206cce5ab8",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -49931,8 +49931,8 @@
         "changeStatus": "UNCHANGED",
         "responseMs": 609,
         "errorMessage": null,
-        "comparedCheckId": "beb505ee-5762-483b-acb2-2eda7a7114dd",
-        "comparedAt": "2026-11-01T05:50:55.699Z",
+        "comparedCheckId": "6992d90d-95fb-4e41-8bbc-3822d1c50987",
+        "comparedAt": "2026-11-02T05:51:15.180Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -49948,11 +49948,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:15.180Z"
+        "createdAt": "2026-11-03T06:34:28.682Z"
       },
       "lastSuccessful": {
-        "checkId": "6992d90d-95fb-4e41-8bbc-3822d1c50987",
-        "createdAt": "2026-11-02T05:51:15.180Z",
+        "checkId": "e043de6e-e125-4c0b-84d9-04b8b62d30d8",
+        "createdAt": "2026-11-03T06:34:28.682Z",
         "hash": "c3704f51fdd0f8a65f19f08ed953421c937bafb0540a664c5764b0f9fe35080c",
         "tokens": [
           {
@@ -64608,8 +64608,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "491bb3da-b91b-4b00-840d-0e26855da8f9",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "6e0a67be-6371-4cef-a257-311c6412aa3e",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "52619742-f91b-43b9-8ef3-8cb08631642e",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -64628,7 +64628,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 540,
+        "responseMs": 277,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -64647,17 +64647,17 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-02T05:51:15.198Z"
+        "createdAt": "2026-11-03T06:34:28.724Z"
       },
       "lastSuccessful": null
     },
     "374ae896ab07fb4b7c98af6100c41f92": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-02T05:25:14.605Z",
+      "lastChangedAt": "2026-11-03T06:34:30.542Z",
       "latest": {
-        "id": "77762486-b3a3-4027-9e11-8ece4dfa4f6c",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "f29f0548-19f1-4f9a-94f1-487f863ffa26",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "374ae896ab07fb4b7c98af6100c41f92",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -64675,16 +64675,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 541,
+        "changeStatus": "CHANGED",
+        "responseMs": 1947,
         "errorMessage": null,
-        "comparedCheckId": "a3143850-f404-4609-a6cf-dab1a89e3f98",
-        "comparedAt": "2026-11-01T05:50:55.981Z",
+        "comparedCheckId": "77762486-b3a3-4027-9e11-8ece4dfa4f6c",
+        "comparedAt": "2026-11-02T05:51:15.474Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 9,
+        "bodyRemovedCount": 9,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.11.1(일) ~ 11.30(월)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.11.1 (일) ~ 11.30 (월)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.11.1 (일) ~ 12.10 (목)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.10.1(목) ~ 10.31(토)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.10.1 (목) ~ 10.31 (토)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.10.1 (목) ~ 11.10 (화)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -64695,12 +64695,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:15.474Z"
+        "createdAt": "2026-11-03T06:34:30.542Z"
       },
       "lastSuccessful": {
-        "checkId": "77762486-b3a3-4027-9e11-8ece4dfa4f6c",
-        "createdAt": "2026-11-02T05:51:15.474Z",
-        "hash": "3e60d52126465f8844ce7bbeafca043d034f8272d8d0b4e6be446c8ed0d5e6c4",
+        "checkId": "f29f0548-19f1-4f9a-94f1-487f863ffa26",
+        "createdAt": "2026-11-03T06:34:30.542Z",
+        "hash": "b9028d9e71b0a3703faa4f484e9cdffbfb0f210508dc25823135d166bb08af03",
         "tokens": [
           {
             "kind": "title",
@@ -65270,7 +65270,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.10.1(목) ~ 10.31(토)"
+            "value": "2026.11.1(일) ~ 11.30(월)"
           },
           {
             "kind": "heading",
@@ -65360,12 +65360,12 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준"
+            "value": "2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준"
           },
           {
             "kind": "text",
             "key": "li",
-            "value": "발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영"
+            "value": "발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영"
           },
           {
             "kind": "text",
@@ -65395,7 +65395,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정"
+            "value": "2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정"
           },
           {
             "kind": "heading",
@@ -65435,7 +65435,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
+            "value": "2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
           },
           {
             "kind": "text",
@@ -65605,12 +65605,12 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "발급: 2026.10.1 (목) ~ 10.31 (토)"
+            "value": "발급: 2026.11.1 (일) ~ 11.30 (월)"
           },
           {
             "kind": "text",
             "key": "p",
-            "value": "이용: 2026.10.1 (목) ~ 11.10 (화)"
+            "value": "이용: 2026.11.1 (일) ~ 12.10 (목)"
           },
           {
             "kind": "heading",
@@ -65640,7 +65640,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
+            "value": "③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
           },
           {
             "kind": "heading",
@@ -66240,7 +66240,7 @@
           {
             "kind": "link",
             "key": "행사 바로가기",
-            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053"
+            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327"
           },
           {
             "kind": "link",
@@ -66395,8 +66395,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:53.613Z",
       "latest": {
-        "id": "0e4c7718-b22b-4df8-b948-5fc48f6a526d",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "1aca29ce-4a27-4618-bea2-cb47f7c46c52",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "51572952-d474-4b43-9b5b-4e00ccf2a9ba",
         "targetId": "2fb8b880-93e1-4958-b06b-0e4c1919ec75",
         "targetName": "NEED Edu카드",
@@ -66415,10 +66415,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 603,
+        "responseMs": 1463,
         "errorMessage": null,
-        "comparedCheckId": "2ce3e454-0d20-4e33-9b57-007686acc345",
-        "comparedAt": "2026-11-01T05:50:50.261Z",
+        "comparedCheckId": "0e4c7718-b22b-4df8-b948-5fc48f6a526d",
+        "comparedAt": "2026-11-02T05:51:08.845Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -66434,11 +66434,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:08.845Z"
+        "createdAt": "2026-11-03T06:34:23.486Z"
       },
       "lastSuccessful": {
-        "checkId": "0e4c7718-b22b-4df8-b948-5fc48f6a526d",
-        "createdAt": "2026-11-02T05:51:08.845Z",
+        "checkId": "1aca29ce-4a27-4618-bea2-cb47f7c46c52",
+        "createdAt": "2026-11-03T06:34:23.486Z",
         "hash": "30a0057f5000c2f690fa6837321b19d7efb5d4279e62dd045e5b64818dd1477c",
         "tokens": [
           {
@@ -79932,10 +79932,10 @@
     "83cb96fd-4bfc-4f6a-9dfb-9833b941448e": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-02T05:25:08.896Z",
+      "lastChangedAt": "2026-11-03T06:34:22.699Z",
       "latest": {
-        "id": "127ce439-142d-42b9-bd8e-6cf773d6c010",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "2ba0f061-e996-4a32-a890-9418f1fa0c8c",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "83cb96fd-4bfc-4f6a-9dfb-9833b941448e",
         "targetId": "2fb8b880-93e1-4958-b06b-0e4c1919ec75",
         "targetName": "NEED Edu카드",
@@ -79953,16 +79953,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 1006,
+        "changeStatus": "CHANGED",
+        "responseMs": 639,
         "errorMessage": null,
-        "comparedCheckId": "eed3df25-07d7-4840-94f9-0decc41a3622",
-        "comparedAt": "2026-11-01T05:50:49.507Z",
+        "comparedCheckId": "127ce439-142d-42b9-bd8e-6cf773d6c010",
+        "comparedAt": "2026-11-02T05:51:09.300Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 9,
+        "bodyRemovedCount": 9,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.11.1(일) ~ 11.30(월)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.11.1 (일) ~ 11.30 (월)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.11.1 (일) ~ 12.10 (목)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.10.1(목) ~ 10.31(토)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.10.1 (목) ~ 10.31 (토)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.10.1 (목) ~ 11.10 (화)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -79973,12 +79973,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:09.300Z"
+        "createdAt": "2026-11-03T06:34:22.699Z"
       },
       "lastSuccessful": {
-        "checkId": "127ce439-142d-42b9-bd8e-6cf773d6c010",
-        "createdAt": "2026-11-02T05:51:09.300Z",
-        "hash": "a626b3370f6e9ba10cf0296a9fa76fbb7b60726abb5a679b9c05a3fe1b75447e",
+        "checkId": "2ba0f061-e996-4a32-a890-9418f1fa0c8c",
+        "createdAt": "2026-11-03T06:34:22.699Z",
+        "hash": "0166d00e487bd5a9b47ad1bc664b445352f317fea52f3103797db030c07bc8dd",
         "tokens": [
           {
             "kind": "title",
@@ -80708,7 +80708,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.10.1(목) ~ 10.31(토)"
+            "value": "2026.11.1(일) ~ 11.30(월)"
           },
           {
             "kind": "heading",
@@ -80798,12 +80798,12 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준"
+            "value": "2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준"
           },
           {
             "kind": "text",
             "key": "li",
-            "value": "발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영"
+            "value": "발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영"
           },
           {
             "kind": "text",
@@ -80833,7 +80833,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정"
+            "value": "2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정"
           },
           {
             "kind": "heading",
@@ -80873,7 +80873,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
+            "value": "2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
           },
           {
             "kind": "text",
@@ -81043,12 +81043,12 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "발급: 2026.10.1 (목) ~ 10.31 (토)"
+            "value": "발급: 2026.11.1 (일) ~ 11.30 (월)"
           },
           {
             "kind": "text",
             "key": "p",
-            "value": "이용: 2026.10.1 (목) ~ 11.10 (화)"
+            "value": "이용: 2026.11.1 (일) ~ 12.10 (목)"
           },
           {
             "kind": "heading",
@@ -81078,7 +81078,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
+            "value": "③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
           },
           {
             "kind": "heading",
@@ -81688,7 +81688,7 @@
           {
             "kind": "link",
             "key": "행사 바로가기",
-            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053"
+            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327"
           },
           {
             "kind": "link",
@@ -81838,8 +81838,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:55.263Z",
       "latest": {
-        "id": "55f29b32-7d71-45ef-8860-9fbac06d8cdc",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "a25cf44f-078c-4c01-a61c-b3a4224a7045",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "70e8f0ed-244e-480d-b5de-ce9e698c2652",
         "targetId": "6bf242ce-9823-4510-bb63-e9bd0c5ee0ba",
         "targetName": "My WE:SH 카드",
@@ -81858,10 +81858,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 916,
+        "responseMs": 2150,
         "errorMessage": null,
-        "comparedCheckId": "cbb4f25c-cc87-4e89-ac44-05e9cb8da2c3",
-        "comparedAt": "2026-11-01T05:50:52.526Z",
+        "comparedCheckId": "55f29b32-7d71-45ef-8860-9fbac06d8cdc",
+        "comparedAt": "2026-11-02T05:51:11.175Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -81877,11 +81877,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:11.175Z"
+        "createdAt": "2026-11-03T06:34:26.435Z"
       },
       "lastSuccessful": {
-        "checkId": "55f29b32-7d71-45ef-8860-9fbac06d8cdc",
-        "createdAt": "2026-11-02T05:51:11.175Z",
+        "checkId": "a25cf44f-078c-4c01-a61c-b3a4224a7045",
+        "createdAt": "2026-11-03T06:34:26.435Z",
         "hash": "7672aef281ee2d93a8aacc37ebc8a75aae93719697f6be3f37b16b0fcaf27098",
         "tokens": [
           {
@@ -95865,10 +95865,10 @@
     "8ebd43ae-830a-4ea9-89a8-db087f92b159": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-02T05:25:10.458Z",
+      "lastChangedAt": "2026-11-03T06:34:25.783Z",
       "latest": {
-        "id": "b91650f2-a88a-47f4-b310-0672c7e7d937",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "e1ab7025-a803-4151-993a-8d4d129abb5e",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "8ebd43ae-830a-4ea9-89a8-db087f92b159",
         "targetId": "6bf242ce-9823-4510-bb63-e9bd0c5ee0ba",
         "targetName": "My WE:SH 카드",
@@ -95886,16 +95886,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 426,
+        "changeStatus": "CHANGED",
+        "responseMs": 1397,
         "errorMessage": null,
-        "comparedCheckId": "f9b6f744-b415-418c-a2b8-0933488960ad",
-        "comparedAt": "2026-11-01T05:50:51.576Z",
+        "comparedCheckId": "b91650f2-a88a-47f4-b310-0672c7e7d937",
+        "comparedAt": "2026-11-02T05:51:11.516Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 9,
+        "bodyRemovedCount": 9,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.11.1(일) ~ 11.30(월)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.11.1 (일) ~ 11.30 (월)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.11.1 (일) ~ 12.10 (목)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.10.1(목) ~ 10.31(토)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.10.1 (목) ~ 10.31 (토)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.10.1 (목) ~ 11.10 (화)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -95906,12 +95906,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:11.516Z"
+        "createdAt": "2026-11-03T06:34:25.783Z"
       },
       "lastSuccessful": {
-        "checkId": "b91650f2-a88a-47f4-b310-0672c7e7d937",
-        "createdAt": "2026-11-02T05:51:11.516Z",
-        "hash": "c9ea354b02adf03e9386184fb0252afb5c091414b48967ed45d6f1db85d73531",
+        "checkId": "e1ab7025-a803-4151-993a-8d4d129abb5e",
+        "createdAt": "2026-11-03T06:34:25.783Z",
+        "hash": "e61aa63adbc60ed66ec0242302776783debbfda39cee48f83176e7294192969f",
         "tokens": [
           {
             "kind": "title",
@@ -96631,7 +96631,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.10.1(목) ~ 10.31(토)"
+            "value": "2026.11.1(일) ~ 11.30(월)"
           },
           {
             "kind": "heading",
@@ -96721,12 +96721,12 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준"
+            "value": "2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준"
           },
           {
             "kind": "text",
             "key": "li",
-            "value": "발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영"
+            "value": "발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영"
           },
           {
             "kind": "text",
@@ -96756,7 +96756,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정"
+            "value": "2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정"
           },
           {
             "kind": "heading",
@@ -96796,7 +96796,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
+            "value": "2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
           },
           {
             "kind": "text",
@@ -96966,12 +96966,12 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "발급: 2026.10.1 (목) ~ 10.31 (토)"
+            "value": "발급: 2026.11.1 (일) ~ 11.30 (월)"
           },
           {
             "kind": "text",
             "key": "p",
-            "value": "이용: 2026.10.1 (목) ~ 11.10 (화)"
+            "value": "이용: 2026.11.1 (일) ~ 12.10 (목)"
           },
           {
             "kind": "heading",
@@ -97001,7 +97001,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
+            "value": "③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
           },
           {
             "kind": "heading",
@@ -97601,7 +97601,7 @@
           {
             "kind": "link",
             "key": "행사 바로가기",
-            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053"
+            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327"
           },
           {
             "kind": "link",
@@ -97791,8 +97791,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:50.445Z",
       "latest": {
-        "id": "de930d7e-3bef-4071-b3f1-5914345f03ae",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "5fb86e6c-fddb-4f29-bc65-7d6d0f0dc7c7",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "64453981-5ab0-4e5f-ad30-9e8f9102413d",
         "targetId": "6c97d1ef-282c-421a-a4e8-2094a212838e",
         "targetName": "ALL point 카드",
@@ -97811,10 +97811,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 2306,
+        "responseMs": 2041,
         "errorMessage": null,
-        "comparedCheckId": "039cd206-8a08-4769-9983-4581046f5db6",
-        "comparedAt": "2026-11-01T05:50:46.510Z",
+        "comparedCheckId": "de930d7e-3bef-4071-b3f1-5914345f03ae",
+        "comparedAt": "2026-11-02T05:51:06.268Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -97830,11 +97830,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:06.268Z"
+        "createdAt": "2026-11-03T06:34:19.618Z"
       },
       "lastSuccessful": {
-        "checkId": "de930d7e-3bef-4071-b3f1-5914345f03ae",
-        "createdAt": "2026-11-02T05:51:06.268Z",
+        "checkId": "5fb86e6c-fddb-4f29-bc65-7d6d0f0dc7c7",
+        "createdAt": "2026-11-03T06:34:19.618Z",
         "hash": "2a275399d8ffb16014730b9f6d432b6ab7edbbbf8abd95c95a6583cebebedf99",
         "tokens": [
           {
@@ -111663,10 +111663,10 @@
     "1c5ac6ba-dd55-4713-af80-eda4dac245f7": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-02T05:25:05.451Z",
+      "lastChangedAt": "2026-11-03T06:34:19.797Z",
       "latest": {
-        "id": "0773ac82-0f56-44ce-94c7-074e63d5a3fd",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "21fae18b-176d-44d4-b6e9-d8583db4bc47",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "1c5ac6ba-dd55-4713-af80-eda4dac245f7",
         "targetId": "6c97d1ef-282c-421a-a4e8-2094a212838e",
         "targetName": "ALL point 카드",
@@ -111684,16 +111684,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 2481,
+        "changeStatus": "CHANGED",
+        "responseMs": 2351,
         "errorMessage": null,
-        "comparedCheckId": "962b8195-ba7e-4a10-8a41-e74d3047d8e2",
-        "comparedAt": "2026-11-01T05:50:46.555Z",
+        "comparedCheckId": "0773ac82-0f56-44ce-94c7-074e63d5a3fd",
+        "comparedAt": "2026-11-02T05:51:06.306Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 9,
+        "bodyRemovedCount": 9,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.11.1(일) ~ 11.30(월)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.11.1 (일) ~ 11.30 (월)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.11.1 (일) ~ 12.10 (목)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.10.1(목) ~ 10.31(토)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.10.1 (목) ~ 10.31 (토)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.10.1 (목) ~ 11.10 (화)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -111704,12 +111704,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:06.306Z"
+        "createdAt": "2026-11-03T06:34:19.797Z"
       },
       "lastSuccessful": {
-        "checkId": "0773ac82-0f56-44ce-94c7-074e63d5a3fd",
-        "createdAt": "2026-11-02T05:51:06.306Z",
-        "hash": "566e5283b39ab37731fdff52d28dc8b9cca65f5c8594dd383c230a7a5709845e",
+        "checkId": "21fae18b-176d-44d4-b6e9-d8583db4bc47",
+        "createdAt": "2026-11-03T06:34:19.797Z",
+        "hash": "937cef3c44131ea303c18a1b5115f206f1a5ff7b84d67f754038043ad8fe1d21",
         "tokens": [
           {
             "kind": "title",
@@ -112459,7 +112459,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.10.1(목) ~ 10.31(토)"
+            "value": "2026.11.1(일) ~ 11.30(월)"
           },
           {
             "kind": "heading",
@@ -112549,12 +112549,12 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준"
+            "value": "2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준"
           },
           {
             "kind": "text",
             "key": "li",
-            "value": "발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영"
+            "value": "발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영"
           },
           {
             "kind": "text",
@@ -112584,7 +112584,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정"
+            "value": "2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정"
           },
           {
             "kind": "heading",
@@ -112624,7 +112624,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
+            "value": "2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
           },
           {
             "kind": "text",
@@ -112794,12 +112794,12 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "발급: 2026.10.1 (목) ~ 10.31 (토)"
+            "value": "발급: 2026.11.1 (일) ~ 11.30 (월)"
           },
           {
             "kind": "text",
             "key": "p",
-            "value": "이용: 2026.10.1 (목) ~ 11.10 (화)"
+            "value": "이용: 2026.11.1 (일) ~ 12.10 (목)"
           },
           {
             "kind": "heading",
@@ -112829,7 +112829,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
+            "value": "③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
           },
           {
             "kind": "heading",
@@ -113444,7 +113444,7 @@
           {
             "kind": "link",
             "key": "행사 바로가기",
-            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053"
+            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327"
           },
           {
             "kind": "link",
@@ -113609,8 +113609,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "48d95ad7-e10b-4666-b718-edc231469200",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "766e7eb4-075e-4e8d-8608-bb5ccca6826b",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "de405dc7-0a5c-4d1e-9d93-1028db2686c8",
         "targetId": "763c388b-d1bd-4949-9a3f-4fbabe4d3c37",
         "targetName": "서비스",
@@ -113629,7 +113629,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 280,
+        "responseMs": 195,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -113648,7 +113648,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-02T05:51:17.444Z"
+        "createdAt": "2026-11-03T06:34:30.966Z"
       },
       "lastSuccessful": null
     },
@@ -113657,8 +113657,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:35:02.449Z",
       "latest": {
-        "id": "c40c31fa-d875-473d-bfc5-7ba1ac868f69",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "635dbad6-48d4-4c0d-b04b-ab44b0074721",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "ccd04d1d7fbc346be2a4dd4dd93069c1",
         "targetId": "763c388b-d1bd-4949-9a3f-4fbabe4d3c37",
         "targetName": "서비스",
@@ -113677,10 +113677,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 970,
+        "responseMs": 348,
         "errorMessage": null,
-        "comparedCheckId": "1737037a-25f4-4c56-93e9-d07fb6f0cb6e",
-        "comparedAt": "2026-11-01T05:50:57.893Z",
+        "comparedCheckId": "c40c31fa-d875-473d-bfc5-7ba1ac868f69",
+        "comparedAt": "2026-11-02T05:51:18.504Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -113696,11 +113696,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:18.504Z"
+        "createdAt": "2026-11-03T06:34:31.395Z"
       },
       "lastSuccessful": {
-        "checkId": "c40c31fa-d875-473d-bfc5-7ba1ac868f69",
-        "createdAt": "2026-11-02T05:51:18.504Z",
+        "checkId": "635dbad6-48d4-4c0d-b04b-ab44b0074721",
+        "createdAt": "2026-11-03T06:34:31.395Z",
         "hash": "081408e0f03a903a95f616d94760c9824bfb695d31e96f1efdf1605dad999a70",
         "tokens": [
           {
@@ -125911,8 +125911,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "f0e58634-947a-476e-a9f4-c78000bf5b16",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "a64d24db-4611-4968-8bf3-24eae7b3d442",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "45b57bad17f4bbfdb5cc5db4399d6aff",
         "targetId": "855f0b69537a077bfaa438388fac9a6e",
         "targetName": "이벤트 10월",
@@ -125931,7 +125931,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 274,
+        "responseMs": 204,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -125950,7 +125950,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-02T05:51:18.505Z"
+        "createdAt": "2026-11-03T06:34:31.600Z"
       },
       "lastSuccessful": null
     },
@@ -125959,8 +125959,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "ee17c2b0-6c23-4454-8ac0-9102785f8ec9",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "baea2be0-72cd-4f6f-8f9b-017c2454fca9",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "b7f29a5a39ab16895d268b8da1abe58b",
         "targetId": "855f0b69537a077bfaa438388fac9a6e",
         "targetName": "이벤트 10월",
@@ -125979,7 +125979,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 193,
+        "responseMs": 190,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -125998,7 +125998,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-02T05:51:18.595Z"
+        "createdAt": "2026-11-03T06:34:31.777Z"
       },
       "lastSuccessful": null
     },
@@ -126007,8 +126007,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:59.582Z",
       "latest": {
-        "id": "a27e31e6-e230-4c75-aeaf-d7ee94d7f5f2",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "66321686-e3d8-453a-a830-6f5d20b1fbe9",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "1bdbffb4-b7ee-441d-acbb-c11aa778a231",
         "targetId": "a21ecf12-1a64-40d4-855d-b6f1b81a8ba8",
         "targetName": "HERITAGE Classic(스카이패스형)",
@@ -126027,10 +126027,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 577,
+        "responseMs": 1082,
         "errorMessage": null,
-        "comparedCheckId": "730056c3-60e9-4227-b7db-00471d6d0618",
-        "comparedAt": "2026-11-01T05:50:55.093Z",
+        "comparedCheckId": "a27e31e6-e230-4c75-aeaf-d7ee94d7f5f2",
+        "comparedAt": "2026-11-02T05:51:14.458Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -126046,11 +126046,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:14.458Z"
+        "createdAt": "2026-11-03T06:34:28.569Z"
       },
       "lastSuccessful": {
-        "checkId": "a27e31e6-e230-4c75-aeaf-d7ee94d7f5f2",
-        "createdAt": "2026-11-02T05:51:14.458Z",
+        "checkId": "66321686-e3d8-453a-a830-6f5d20b1fbe9",
+        "createdAt": "2026-11-03T06:34:28.569Z",
         "hash": "0d7d2bbada1232045ccb01772651bcb91a14587607202c1f84b5b45cee40a980",
         "tokens": [
           {
@@ -140874,10 +140874,10 @@
     "78383cd1-8504-4fd8-b0b4-4fbc3635b01e": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-02T05:25:13.472Z",
+      "lastChangedAt": "2026-11-03T06:34:28.722Z",
       "latest": {
-        "id": "2b0be725-06a4-4f5b-ad3d-bf8d44728e11",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "0e9c8777-da5d-405a-add8-7d415a009648",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "78383cd1-8504-4fd8-b0b4-4fbc3635b01e",
         "targetId": "a21ecf12-1a64-40d4-855d-b6f1b81a8ba8",
         "targetName": "HERITAGE Classic(스카이패스형)",
@@ -140895,16 +140895,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 2042,
+        "changeStatus": "CHANGED",
+        "responseMs": 1073,
         "errorMessage": null,
-        "comparedCheckId": "3e33866a-6e22-4f0d-8cc6-5b01651559ce",
-        "comparedAt": "2026-11-01T05:50:54.682Z",
+        "comparedCheckId": "2b0be725-06a4-4f5b-ad3d-bf8d44728e11",
+        "comparedAt": "2026-11-02T05:51:16.031Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 9,
+        "bodyRemovedCount": 9,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.11.1(일) ~ 11.30(월)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.11.1 (일) ~ 11.30 (월)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.11.1 (일) ~ 12.10 (목)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.10.1(목) ~ 10.31(토)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.10.1 (목) ~ 10.31 (토)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.10.1 (목) ~ 11.10 (화)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -140915,12 +140915,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:16.031Z"
+        "createdAt": "2026-11-03T06:34:28.722Z"
       },
       "lastSuccessful": {
-        "checkId": "2b0be725-06a4-4f5b-ad3d-bf8d44728e11",
-        "createdAt": "2026-11-02T05:51:16.031Z",
-        "hash": "fe2955d774d98a40d74e2e84ce62500d3363304f0986272631b3fef65e4d61d6",
+        "checkId": "0e9c8777-da5d-405a-add8-7d415a009648",
+        "createdAt": "2026-11-03T06:34:28.722Z",
+        "hash": "7761b72146dab4f17818f3f781aece929cf17fa8d2b43ff937720894c8cd554f",
         "tokens": [
           {
             "kind": "title",
@@ -141660,7 +141660,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.10.1(목) ~ 10.31(토)"
+            "value": "2026.11.1(일) ~ 11.30(월)"
           },
           {
             "kind": "heading",
@@ -141750,12 +141750,12 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준"
+            "value": "2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준"
           },
           {
             "kind": "text",
             "key": "li",
-            "value": "발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영"
+            "value": "발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영"
           },
           {
             "kind": "text",
@@ -141785,7 +141785,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정"
+            "value": "2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정"
           },
           {
             "kind": "heading",
@@ -141825,7 +141825,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
+            "value": "2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
           },
           {
             "kind": "text",
@@ -141995,12 +141995,12 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "발급: 2026.10.1 (목) ~ 10.31 (토)"
+            "value": "발급: 2026.11.1 (일) ~ 11.30 (월)"
           },
           {
             "kind": "text",
             "key": "p",
-            "value": "이용: 2026.10.1 (목) ~ 11.10 (화)"
+            "value": "이용: 2026.11.1 (일) ~ 12.10 (목)"
           },
           {
             "kind": "heading",
@@ -142030,7 +142030,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
+            "value": "③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
           },
           {
             "kind": "heading",
@@ -142630,7 +142630,7 @@
           {
             "kind": "link",
             "key": "행사 바로가기",
-            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053"
+            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327"
           },
           {
             "kind": "link",
@@ -142785,8 +142785,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:50.895Z",
       "latest": {
-        "id": "e686c816-b941-4826-a085-662fb9f5ee62",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "c89856f2-fe1c-4163-a3f1-99035839071f",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "1a874d68-15d0-4e4c-bd29-6ebecf90e52a",
         "targetId": "a710c22f-7ed7-4f06-9334-abdfff7788ee",
         "targetName": "YOU Prime 카드",
@@ -142805,10 +142805,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1989,
+        "responseMs": 1191,
         "errorMessage": null,
-        "comparedCheckId": "f2d36f6a-e814-4af3-96e7-fd94bb4048b4",
-        "comparedAt": "2026-11-01T05:50:47.716Z",
+        "comparedCheckId": "e686c816-b941-4826-a085-662fb9f5ee62",
+        "comparedAt": "2026-11-02T05:51:07.007Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -142824,11 +142824,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:07.007Z"
+        "createdAt": "2026-11-03T06:34:20.780Z"
       },
       "lastSuccessful": {
-        "checkId": "e686c816-b941-4826-a085-662fb9f5ee62",
-        "createdAt": "2026-11-02T05:51:07.007Z",
+        "checkId": "c89856f2-fe1c-4163-a3f1-99035839071f",
+        "createdAt": "2026-11-03T06:34:20.780Z",
         "hash": "92793c6bbb4186ae3ba5eae641d7f125a8fa52798a2ea9fb8a54711fdc0a27e3",
         "tokens": [
           {
@@ -157862,10 +157862,10 @@
     "ff46ae32-0a90-4beb-b8e0-4debf4b3b397": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-02T05:25:06.263Z",
+      "lastChangedAt": "2026-11-03T06:34:21.507Z",
       "latest": {
-        "id": "b1e08868-65b2-4b4d-aee0-57db3f1a4a6b",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "e61af9ba-da51-48fb-8a3c-d07145c0b3a2",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "ff46ae32-0a90-4beb-b8e0-4debf4b3b397",
         "targetId": "a710c22f-7ed7-4f06-9334-abdfff7788ee",
         "targetName": "YOU Prime 카드",
@@ -157883,16 +157883,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 724,
+        "changeStatus": "CHANGED",
+        "responseMs": 1844,
         "errorMessage": null,
-        "comparedCheckId": "195a9b18-882f-4f89-ae2a-d2be7c454255",
-        "comparedAt": "2026-11-01T05:50:47.740Z",
+        "comparedCheckId": "b1e08868-65b2-4b4d-aee0-57db3f1a4a6b",
+        "comparedAt": "2026-11-02T05:51:06.814Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 9,
+        "bodyRemovedCount": 9,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.11.1(일) ~ 11.30(월)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.11.1 (일) ~ 11.30 (월)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.11.1 (일) ~ 12.10 (목)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.10.1(목) ~ 10.31(토)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.10.1 (목) ~ 10.31 (토)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.10.1 (목) ~ 11.10 (화)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -157903,12 +157903,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:06.814Z"
+        "createdAt": "2026-11-03T06:34:21.507Z"
       },
       "lastSuccessful": {
-        "checkId": "b1e08868-65b2-4b4d-aee0-57db3f1a4a6b",
-        "createdAt": "2026-11-02T05:51:06.814Z",
-        "hash": "b06c1647aceb26a5afe6f4ca27f0f015c05f87e083a316b1c2d93f803d1aba33",
+        "checkId": "e61af9ba-da51-48fb-8a3c-d07145c0b3a2",
+        "createdAt": "2026-11-03T06:34:21.507Z",
+        "hash": "721a5dc5f15c9de4e6792535987d76db50eb3b7fe1aefb71edf1802065200c84",
         "tokens": [
           {
             "kind": "title",
@@ -158723,7 +158723,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.10.1(목) ~ 10.31(토)"
+            "value": "2026.11.1(일) ~ 11.30(월)"
           },
           {
             "kind": "heading",
@@ -158813,12 +158813,12 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준"
+            "value": "2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준"
           },
           {
             "kind": "text",
             "key": "li",
-            "value": "발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영"
+            "value": "발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영"
           },
           {
             "kind": "text",
@@ -158848,7 +158848,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정"
+            "value": "2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정"
           },
           {
             "kind": "heading",
@@ -158888,7 +158888,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
+            "value": "2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
           },
           {
             "kind": "text",
@@ -159058,12 +159058,12 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "발급: 2026.10.1 (목) ~ 10.31 (토)"
+            "value": "발급: 2026.11.1 (일) ~ 11.30 (월)"
           },
           {
             "kind": "text",
             "key": "p",
-            "value": "이용: 2026.10.1 (목) ~ 11.10 (화)"
+            "value": "이용: 2026.11.1 (일) ~ 12.10 (목)"
           },
           {
             "kind": "heading",
@@ -159093,7 +159093,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
+            "value": "③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
           },
           {
             "kind": "heading",
@@ -159703,7 +159703,7 @@
           {
             "kind": "link",
             "key": "행사 바로가기",
-            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053"
+            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327"
           },
           {
             "kind": "link",
@@ -159888,8 +159888,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:55.456Z",
       "latest": {
-        "id": "e5210717-10fb-4ba2-81f9-efb8b71b6643",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "25251c38-a4f6-4df8-82cc-84261c0e1afb",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "eb730105-e4a1-4995-b8bc-5f685b2ba79b",
         "targetId": "ab9fa5b9-3ed4-417d-b62a-b5ec7862e32f",
         "targetName": "WE:SH Travel",
@@ -159908,10 +159908,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1942,
+        "responseMs": 1480,
         "errorMessage": null,
-        "comparedCheckId": "c7d3f189-7bbb-4a52-a403-d3c776b24d5d",
-        "comparedAt": "2026-11-01T05:50:50.932Z",
+        "comparedCheckId": "e5210717-10fb-4ba2-81f9-efb8b71b6643",
+        "comparedAt": "2026-11-02T05:51:11.660Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -159927,11 +159927,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:11.660Z"
+        "createdAt": "2026-11-03T06:34:25.089Z"
       },
       "lastSuccessful": {
-        "checkId": "e5210717-10fb-4ba2-81f9-efb8b71b6643",
-        "createdAt": "2026-11-02T05:51:11.660Z",
+        "checkId": "25251c38-a4f6-4df8-82cc-84261c0e1afb",
+        "createdAt": "2026-11-03T06:34:25.089Z",
         "hash": "7707d8fdf6fba87e1d52922695ceefa78a6d4cf0debe9e72c382ada89dea1b14",
         "tokens": [
           {
@@ -174325,10 +174325,10 @@
     "119352b3-dbfe-4676-88a9-0e3e64d39abc": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-02T05:25:09.893Z",
+      "lastChangedAt": "2026-11-03T06:34:24.563Z",
       "latest": {
-        "id": "d7419676-29bc-416a-8ccf-a532800fa407",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "17b8d789-6cda-46c3-837a-b9ecccc1685f",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "119352b3-dbfe-4676-88a9-0e3e64d39abc",
         "targetId": "ab9fa5b9-3ed4-417d-b62a-b5ec7862e32f",
         "targetName": "WE:SH Travel",
@@ -174346,16 +174346,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 1137,
+        "changeStatus": "CHANGED",
+        "responseMs": 933,
         "errorMessage": null,
-        "comparedCheckId": "03158018-f7aa-449e-a69e-9bd0d2d81694",
-        "comparedAt": "2026-11-01T05:50:52.333Z",
+        "comparedCheckId": "d7419676-29bc-416a-8ccf-a532800fa407",
+        "comparedAt": "2026-11-02T05:51:11.264Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 9,
+        "bodyRemovedCount": 9,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.11.1(일) ~ 11.30(월)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.11.1 (일) ~ 11.30 (월)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.11.1 (일) ~ 12.10 (목)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.10.1(목) ~ 10.31(토)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.10.1 (목) ~ 10.31 (토)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.10.1 (목) ~ 11.10 (화)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -174366,12 +174366,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:11.264Z"
+        "createdAt": "2026-11-03T06:34:24.563Z"
       },
       "lastSuccessful": {
-        "checkId": "d7419676-29bc-416a-8ccf-a532800fa407",
-        "createdAt": "2026-11-02T05:51:11.264Z",
-        "hash": "205fcddcb72f788ba4f37696c829f1507f1f38381ce3a7ebafbf9a8245a68fa7",
+        "checkId": "17b8d789-6cda-46c3-837a-b9ecccc1685f",
+        "createdAt": "2026-11-03T06:34:24.563Z",
+        "hash": "854199c37446ff631a5da59df03ead9b8998ffd9f69726a0bc814d8b79bc3ade",
         "tokens": [
           {
             "kind": "title",
@@ -175071,7 +175071,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.10.1(목) ~ 10.31(토)"
+            "value": "2026.11.1(일) ~ 11.30(월)"
           },
           {
             "kind": "heading",
@@ -175161,12 +175161,12 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준"
+            "value": "2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준"
           },
           {
             "kind": "text",
             "key": "li",
-            "value": "발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영"
+            "value": "발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영"
           },
           {
             "kind": "text",
@@ -175196,7 +175196,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정"
+            "value": "2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정"
           },
           {
             "kind": "heading",
@@ -175236,7 +175236,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
+            "value": "2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
           },
           {
             "kind": "text",
@@ -175406,12 +175406,12 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "발급: 2026.10.1 (목) ~ 10.31 (토)"
+            "value": "발급: 2026.11.1 (일) ~ 11.30 (월)"
           },
           {
             "kind": "text",
             "key": "p",
-            "value": "이용: 2026.10.1 (목) ~ 11.10 (화)"
+            "value": "이용: 2026.11.1 (일) ~ 12.10 (목)"
           },
           {
             "kind": "heading",
@@ -175441,7 +175441,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
+            "value": "③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
           },
           {
             "kind": "heading",
@@ -176051,7 +176051,7 @@
           {
             "kind": "link",
             "key": "행사 바로가기",
-            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053"
+            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327"
           },
           {
             "kind": "link",
@@ -176221,8 +176221,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:53.475Z",
       "latest": {
-        "id": "b823942c-cf51-4c79-bcd5-7611b4ac5927",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "4c5b0073-3b59-4a2e-85d4-e1eed0c6b0f7",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "27f46e5f-feab-4c61-9b17-4e82b91c3b1b",
         "targetId": "aee77a45-fdde-4c1f-a82f-419336a1ab18",
         "targetName": "YOU Wish up 카드",
@@ -176241,10 +176241,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 772,
+        "responseMs": 1197,
         "errorMessage": null,
-        "comparedCheckId": "da8097a4-51bd-4cd2-a892-e3fe39e4596f",
-        "comparedAt": "2026-11-01T05:50:48.219Z",
+        "comparedCheckId": "b823942c-cf51-4c79-bcd5-7611b4ac5927",
+        "comparedAt": "2026-11-02T05:51:08.247Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -176260,11 +176260,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:08.247Z"
+        "createdAt": "2026-11-03T06:34:22.835Z"
       },
       "lastSuccessful": {
-        "checkId": "b823942c-cf51-4c79-bcd5-7611b4ac5927",
-        "createdAt": "2026-11-02T05:51:08.247Z",
+        "checkId": "4c5b0073-3b59-4a2e-85d4-e1eed0c6b0f7",
+        "createdAt": "2026-11-03T06:34:22.835Z",
         "hash": "9607227557461c1efc0684409fb3912cb67d03379de28782b008e4328d954623",
         "tokens": [
           {
@@ -190673,10 +190673,10 @@
     "65ae2ae0-6609-42a3-aa4a-6a9d9e620da4": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-02T05:25:08.025Z",
+      "lastChangedAt": "2026-11-03T06:34:22.866Z",
       "latest": {
-        "id": "1f6467d2-bc7a-499f-b45e-cd0c37e7a6b1",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "35dbbb3d-ad03-4749-8ed7-21e7f891dfdc",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "65ae2ae0-6609-42a3-aa4a-6a9d9e620da4",
         "targetId": "aee77a45-fdde-4c1f-a82f-419336a1ab18",
         "targetName": "YOU Wish up 카드",
@@ -190694,16 +190694,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 1562,
+        "changeStatus": "CHANGED",
+        "responseMs": 1096,
         "errorMessage": null,
-        "comparedCheckId": "36b12f28-3ec4-45ec-9284-a907262830c3",
-        "comparedAt": "2026-11-01T05:50:48.863Z",
+        "comparedCheckId": "1f6467d2-bc7a-499f-b45e-cd0c37e7a6b1",
+        "comparedAt": "2026-11-02T05:51:09.577Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 9,
+        "bodyRemovedCount": 9,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.11.1(일) ~ 11.30(월)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.11.1 (일) ~ 11.30 (월)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.11.1 (일) ~ 12.10 (목)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.10.1(목) ~ 10.31(토)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.10.1 (목) ~ 10.31 (토)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.10.1 (목) ~ 11.10 (화)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -190714,12 +190714,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:09.577Z"
+        "createdAt": "2026-11-03T06:34:22.866Z"
       },
       "lastSuccessful": {
-        "checkId": "1f6467d2-bc7a-499f-b45e-cd0c37e7a6b1",
-        "createdAt": "2026-11-02T05:51:09.577Z",
-        "hash": "04f0976512dd39805dae212b33bfd0bcf6fcf84f789f5b91f0ececb365573408",
+        "checkId": "35dbbb3d-ad03-4749-8ed7-21e7f891dfdc",
+        "createdAt": "2026-11-03T06:34:22.866Z",
+        "hash": "4dfabe3a67e1b91395dbb0a919637547518b72789d58b41bbbf0896f371c9a93",
         "tokens": [
           {
             "kind": "title",
@@ -191449,7 +191449,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.10.1(목) ~ 10.31(토)"
+            "value": "2026.11.1(일) ~ 11.30(월)"
           },
           {
             "kind": "heading",
@@ -191539,12 +191539,12 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준"
+            "value": "2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준"
           },
           {
             "kind": "text",
             "key": "li",
-            "value": "발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영"
+            "value": "발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영"
           },
           {
             "kind": "text",
@@ -191574,7 +191574,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정"
+            "value": "2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정"
           },
           {
             "kind": "heading",
@@ -191614,7 +191614,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
+            "value": "2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
           },
           {
             "kind": "text",
@@ -191784,12 +191784,12 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "발급: 2026.10.1 (목) ~ 10.31 (토)"
+            "value": "발급: 2026.11.1 (일) ~ 11.30 (월)"
           },
           {
             "kind": "text",
             "key": "p",
-            "value": "이용: 2026.10.1 (목) ~ 11.10 (화)"
+            "value": "이용: 2026.11.1 (일) ~ 12.10 (목)"
           },
           {
             "kind": "heading",
@@ -191819,7 +191819,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
+            "value": "③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
           },
           {
             "kind": "heading",
@@ -192419,7 +192419,7 @@
           {
             "kind": "link",
             "key": "행사 바로가기",
-            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053"
+            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327"
           },
           {
             "kind": "link",
@@ -192569,8 +192569,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:56.640Z",
       "latest": {
-        "id": "579bbfe9-38aa-478b-9cf6-4485cfd93c6b",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "e185876f-8bbc-4098-9fef-1709048740fd",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "55e07fac-79e6-4ccb-a6c6-38a1519deae8",
         "targetId": "ba3c273b-bf19-44d9-a4ef-c79f1dac16b9",
         "targetName": "굿데이올림카드",
@@ -192589,10 +192589,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1985,
+        "responseMs": 994,
         "errorMessage": null,
-        "comparedCheckId": "02fe3e27-aef4-45b6-833d-0f7f375ce482",
-        "comparedAt": "2026-11-01T05:50:52.436Z",
+        "comparedCheckId": "579bbfe9-38aa-478b-9cf6-4485cfd93c6b",
+        "comparedAt": "2026-11-02T05:51:13.281Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -192608,11 +192608,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:13.281Z"
+        "createdAt": "2026-11-03T06:34:25.681Z"
       },
       "lastSuccessful": {
-        "checkId": "579bbfe9-38aa-478b-9cf6-4485cfd93c6b",
-        "createdAt": "2026-11-02T05:51:13.281Z",
+        "checkId": "e185876f-8bbc-4098-9fef-1709048740fd",
+        "createdAt": "2026-11-03T06:34:25.681Z",
         "hash": "253ee9eb88b89a24bb620ef8945447dd767766eb58be4e2ad42415d58d7203d1",
         "tokens": [
           {
@@ -206916,10 +206916,10 @@
     "99506875-e7b5-49a6-aa7d-d9ed9e4cf5ba": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-02T05:25:11.481Z",
+      "lastChangedAt": "2026-11-03T06:34:26.558Z",
       "latest": {
-        "id": "68ccec49-4209-42f0-9c1a-4bfb7c9913d3",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "dec10304-5acc-4c70-8e32-5707a330444c",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "99506875-e7b5-49a6-aa7d-d9ed9e4cf5ba",
         "targetId": "ba3c273b-bf19-44d9-a4ef-c79f1dac16b9",
         "targetName": "굿데이올림카드",
@@ -206937,16 +206937,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 1472,
+        "changeStatus": "CHANGED",
+        "responseMs": 1439,
         "errorMessage": null,
-        "comparedCheckId": "d47438a3-4717-4bc5-8fba-e6839a1b2909",
-        "comparedAt": "2026-11-01T05:50:53.749Z",
+        "comparedCheckId": "68ccec49-4209-42f0-9c1a-4bfb7c9913d3",
+        "comparedAt": "2026-11-02T05:51:12.781Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 9,
+        "bodyRemovedCount": 9,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.11.1(일) ~ 11.30(월)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.11.1 (일) ~ 11.30 (월)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.11.1 (일) ~ 12.10 (목)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.10.1(목) ~ 10.31(토)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.10.1 (목) ~ 10.31 (토)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.10.1 (목) ~ 11.10 (화)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -206957,12 +206957,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:12.781Z"
+        "createdAt": "2026-11-03T06:34:26.558Z"
       },
       "lastSuccessful": {
-        "checkId": "68ccec49-4209-42f0-9c1a-4bfb7c9913d3",
-        "createdAt": "2026-11-02T05:51:12.781Z",
-        "hash": "7d204c8f1dfbb48d1582c5a090a48187d5761ac5f7486d14db91bd1413847662",
+        "checkId": "dec10304-5acc-4c70-8e32-5707a330444c",
+        "createdAt": "2026-11-03T06:34:26.558Z",
+        "hash": "f29db5359c62d53a2f4039751873ad087be19bef7331fd847c06d4b9556cd8ff",
         "tokens": [
           {
             "kind": "title",
@@ -208077,7 +208077,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.10.1(목) ~ 10.31(토)"
+            "value": "2026.11.1(일) ~ 11.30(월)"
           },
           {
             "kind": "heading",
@@ -208167,12 +208167,12 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준"
+            "value": "2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준"
           },
           {
             "kind": "text",
             "key": "li",
-            "value": "발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영"
+            "value": "발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영"
           },
           {
             "kind": "text",
@@ -208202,7 +208202,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정"
+            "value": "2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정"
           },
           {
             "kind": "heading",
@@ -208242,7 +208242,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
+            "value": "2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
           },
           {
             "kind": "text",
@@ -208412,12 +208412,12 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "발급: 2026.10.1 (목) ~ 10.31 (토)"
+            "value": "발급: 2026.11.1 (일) ~ 11.30 (월)"
           },
           {
             "kind": "text",
             "key": "p",
-            "value": "이용: 2026.10.1 (목) ~ 11.10 (화)"
+            "value": "이용: 2026.11.1 (일) ~ 12.10 (목)"
           },
           {
             "kind": "heading",
@@ -208447,7 +208447,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
+            "value": "③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
           },
           {
             "kind": "heading",
@@ -209062,7 +209062,7 @@
           {
             "kind": "link",
             "key": "행사 바로가기",
-            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053"
+            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327"
           },
           {
             "kind": "link",
@@ -209232,8 +209232,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:53.866Z",
       "latest": {
-        "id": "3af571a8-b5b1-48c6-8165-d6dcd9a56441",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "9c3dcc68-be8c-42d8-ba5a-d62c984c81a1",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "a1c82600-76ec-46e4-93ef-f8bc6778b034",
         "targetId": "bec4c3be-5c44-4585-a6a3-5fc7ffc3a7b0",
         "targetName": "NEED Global 카드",
@@ -209252,10 +209252,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1019,
+        "responseMs": 403,
         "errorMessage": null,
-        "comparedCheckId": "ded2b1a4-558c-4e52-b6b4-e8fc3519375c",
-        "comparedAt": "2026-11-01T05:50:49.770Z",
+        "comparedCheckId": "3af571a8-b5b1-48c6-8165-d6dcd9a56441",
+        "comparedAt": "2026-11-02T05:51:09.419Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -209271,11 +209271,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:09.419Z"
+        "createdAt": "2026-11-03T06:34:23.216Z"
       },
       "lastSuccessful": {
-        "checkId": "3af571a8-b5b1-48c6-8165-d6dcd9a56441",
-        "createdAt": "2026-11-02T05:51:09.419Z",
+        "checkId": "9c3dcc68-be8c-42d8-ba5a-d62c984c81a1",
+        "createdAt": "2026-11-03T06:34:23.216Z",
         "hash": "0c65b16c7c654e9f5c93285df1e40a36cba69d7b936a83c213eb96013cb7d572",
         "tokens": [
           {
@@ -222549,10 +222549,10 @@
     "556d6d77-9c95-4b36-9826-ae45ff7b9f6b": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-02T05:25:09.622Z",
+      "lastChangedAt": "2026-11-03T06:34:24.342Z",
       "latest": {
-        "id": "a537bab1-70ce-48d7-82f8-47b1883922fc",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "fd823c56-9ae6-4872-8006-c96edf2c8a20",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "556d6d77-9c95-4b36-9826-ae45ff7b9f6b",
         "targetId": "bec4c3be-5c44-4585-a6a3-5fc7ffc3a7b0",
         "targetName": "NEED Global 카드",
@@ -222570,16 +222570,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 1166,
+        "changeStatus": "CHANGED",
+        "responseMs": 1480,
         "errorMessage": null,
-        "comparedCheckId": "eaf40ff2-5104-4ffe-8926-a40df11a5e79",
-        "comparedAt": "2026-11-01T05:50:49.894Z",
+        "comparedCheckId": "a537bab1-70ce-48d7-82f8-47b1883922fc",
+        "comparedAt": "2026-11-02T05:51:10.041Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 9,
+        "bodyRemovedCount": 9,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.11.1(일) ~ 11.30(월)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.11.1 (일) ~ 11.30 (월)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.11.1 (일) ~ 12.10 (목)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.10.1(목) ~ 10.31(토)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.10.1 (목) ~ 10.31 (토)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.10.1 (목) ~ 11.10 (화)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -222590,12 +222590,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:10.041Z"
+        "createdAt": "2026-11-03T06:34:24.342Z"
       },
       "lastSuccessful": {
-        "checkId": "a537bab1-70ce-48d7-82f8-47b1883922fc",
-        "createdAt": "2026-11-02T05:51:10.041Z",
-        "hash": "f1463816cf6e70df62ed102c7f137ad0139ab74507463fb6533f0af7bee6732f",
+        "checkId": "fd823c56-9ae6-4872-8006-c96edf2c8a20",
+        "createdAt": "2026-11-03T06:34:24.342Z",
+        "hash": "d47f0af9a1013eb4a0c2d7c42999911ef6924348f50d72b0843df9ce13f997a1",
         "tokens": [
           {
             "kind": "title",
@@ -223315,7 +223315,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.10.1(목) ~ 10.31(토)"
+            "value": "2026.11.1(일) ~ 11.30(월)"
           },
           {
             "kind": "heading",
@@ -223405,12 +223405,12 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준"
+            "value": "2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준"
           },
           {
             "kind": "text",
             "key": "li",
-            "value": "발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영"
+            "value": "발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영"
           },
           {
             "kind": "text",
@@ -223440,7 +223440,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정"
+            "value": "2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정"
           },
           {
             "kind": "heading",
@@ -223480,7 +223480,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
+            "value": "2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
           },
           {
             "kind": "text",
@@ -223650,12 +223650,12 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "발급: 2026.10.1 (목) ~ 10.31 (토)"
+            "value": "발급: 2026.11.1 (일) ~ 11.30 (월)"
           },
           {
             "kind": "text",
             "key": "p",
-            "value": "이용: 2026.10.1 (목) ~ 11.10 (화)"
+            "value": "이용: 2026.11.1 (일) ~ 12.10 (목)"
           },
           {
             "kind": "heading",
@@ -223685,7 +223685,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
+            "value": "③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
           },
           {
             "kind": "heading",
@@ -224285,7 +224285,7 @@
           {
             "kind": "link",
             "key": "행사 바로가기",
-            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053"
+            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327"
           },
           {
             "kind": "link",
@@ -224435,8 +224435,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:35:01.840Z",
       "latest": {
-        "id": "2371cabb-3891-49a2-8eb7-c9d29d050ab3",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "b2689faf-2d8e-4162-8e4f-7c0309e20f1d",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "c79d4215-7632-4f50-b00d-872fc192fe4a",
         "targetId": "c4fe7b59-3b68-47f8-bbde-6c8701458fac",
         "targetName": "노리2 체크카드(KB Pay)",
@@ -224455,10 +224455,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1554,
+        "responseMs": 1574,
         "errorMessage": null,
-        "comparedCheckId": "ca85e718-c4b0-4e96-870c-02b120e5a59e",
-        "comparedAt": "2026-11-01T05:50:57.339Z",
+        "comparedCheckId": "2371cabb-3891-49a2-8eb7-c9d29d050ab3",
+        "comparedAt": "2026-11-02T05:51:17.164Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -224474,11 +224474,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:17.164Z"
+        "createdAt": "2026-11-03T06:34:30.420Z"
       },
       "lastSuccessful": {
-        "checkId": "2371cabb-3891-49a2-8eb7-c9d29d050ab3",
-        "createdAt": "2026-11-02T05:51:17.164Z",
+        "checkId": "b2689faf-2d8e-4162-8e4f-7c0309e20f1d",
+        "createdAt": "2026-11-03T06:34:30.420Z",
         "hash": "c9db9598e3b715bc0226778ffde383084467d37c899004640dd1febfb9f6ad5c",
         "tokens": [
           {
@@ -239492,10 +239492,10 @@
     "3506bde9-c822-4be3-9f30-31809737af94": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-02T05:25:15.082Z",
+      "lastChangedAt": "2026-11-03T06:34:30.770Z",
       "latest": {
-        "id": "bf824e8e-2538-4ded-90f8-a463d8e6a79b",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "5f0d3cce-32c6-4c4d-aae9-b8502a2b975c",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "3506bde9-c822-4be3-9f30-31809737af94",
         "targetId": "c4fe7b59-3b68-47f8-bbde-6c8701458fac",
         "targetName": "노리2 체크카드(KB Pay)",
@@ -239513,16 +239513,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 552,
+        "changeStatus": "CHANGED",
+        "responseMs": 1482,
         "errorMessage": null,
-        "comparedCheckId": "88c9fab2-df8e-4bbe-91d7-b6ecb92111ff",
-        "comparedAt": "2026-11-01T05:50:56.432Z",
+        "comparedCheckId": "bf824e8e-2538-4ded-90f8-a463d8e6a79b",
+        "comparedAt": "2026-11-02T05:51:16.618Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 9,
+        "bodyRemovedCount": 9,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.11.1(일) ~ 11.30(월)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.11.1 (일) ~ 11.30 (월)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.11.1 (일) ~ 12.10 (목)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.10.1(목) ~ 10.31(토)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.10.1 (목) ~ 10.31 (토)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.10.1 (목) ~ 11.10 (화)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -239533,12 +239533,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:16.618Z"
+        "createdAt": "2026-11-03T06:34:30.770Z"
       },
       "lastSuccessful": {
-        "checkId": "bf824e8e-2538-4ded-90f8-a463d8e6a79b",
-        "createdAt": "2026-11-02T05:51:16.618Z",
-        "hash": "46940c6778576b77a002f78414120e9289d78017e863ac0ab8c2b9eff87092bc",
+        "checkId": "5f0d3cce-32c6-4c4d-aae9-b8502a2b975c",
+        "createdAt": "2026-11-03T06:34:30.770Z",
+        "hash": "1b3df9bf3a860ed1882ff906ab3f8378736b925ee22b36cbae9b717c1c88f188",
         "tokens": [
           {
             "kind": "title",
@@ -240128,7 +240128,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.10.1(목) ~ 10.31(토)"
+            "value": "2026.11.1(일) ~ 11.30(월)"
           },
           {
             "kind": "heading",
@@ -240218,12 +240218,12 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준"
+            "value": "2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준"
           },
           {
             "kind": "text",
             "key": "li",
-            "value": "발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영"
+            "value": "발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영"
           },
           {
             "kind": "text",
@@ -240253,7 +240253,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정"
+            "value": "2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정"
           },
           {
             "kind": "heading",
@@ -240293,7 +240293,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
+            "value": "2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
           },
           {
             "kind": "text",
@@ -240463,12 +240463,12 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "발급: 2026.10.1 (목) ~ 10.31 (토)"
+            "value": "발급: 2026.11.1 (일) ~ 11.30 (월)"
           },
           {
             "kind": "text",
             "key": "p",
-            "value": "이용: 2026.10.1 (목) ~ 11.10 (화)"
+            "value": "이용: 2026.11.1 (일) ~ 12.10 (목)"
           },
           {
             "kind": "heading",
@@ -240498,7 +240498,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
+            "value": "③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
           },
           {
             "kind": "heading",
@@ -241093,7 +241093,7 @@
           {
             "kind": "link",
             "key": "행사 바로가기",
-            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053"
+            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327"
           },
           {
             "kind": "link",
@@ -241238,8 +241238,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "47dd2545-569e-4fca-b2fc-7eb5a4ad86ff",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "d4145e15-a661-4625-9cd8-32253341df0b",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "d7ed54fd-b471-4d4e-8c66-f9b1778028d7",
         "targetId": "c5d297d9-5523-49eb-9b65-340e00f4c55c",
         "targetName": "이벤트 9월",
@@ -241258,7 +241258,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 538,
+        "responseMs": 227,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -241277,7 +241277,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-02T05:51:18.230Z"
+        "createdAt": "2026-11-03T06:34:31.396Z"
       },
       "lastSuccessful": null
     },
@@ -241286,8 +241286,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "8a9eba78-354b-4d60-a076-cc5e27439f51",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "afbae0e0-1ccf-4b40-8022-e4bf88cdd22f",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "ae8ab9e4-6784-4ab8-a84e-0fa75525d559",
         "targetId": "c5d297d9-5523-49eb-9b65-340e00f4c55c",
         "targetName": "이벤트 9월",
@@ -241306,7 +241306,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 674,
+        "responseMs": 193,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -241325,7 +241325,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-02T05:51:18.403Z"
+        "createdAt": "2026-11-03T06:34:31.588Z"
       },
       "lastSuccessful": null
     },
@@ -241334,8 +241334,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:35:01.540Z",
       "latest": {
-        "id": "f25862c4-c039-4f83-85aa-a2e738896699",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "92166939-3b97-435a-95b8-47faebb60d59",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "e2bcd9ac-eaa5-4919-abe7-19c890c2d785",
         "targetId": "c701fd1a-9015-4daf-9039-b987c990c619",
         "targetName": "Youth Club 체크카드",
@@ -241354,10 +241354,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1008,
+        "responseMs": 434,
         "errorMessage": null,
-        "comparedCheckId": "fef7bbdd-d7b7-4c13-b69b-b50f18099dae",
-        "comparedAt": "2026-11-01T05:50:56.361Z",
+        "comparedCheckId": "f25862c4-c039-4f83-85aa-a2e738896699",
+        "comparedAt": "2026-11-02T05:51:16.334Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -241373,11 +241373,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:16.334Z"
+        "createdAt": "2026-11-03T06:34:29.241Z"
       },
       "lastSuccessful": {
-        "checkId": "f25862c4-c039-4f83-85aa-a2e738896699",
-        "createdAt": "2026-11-02T05:51:16.334Z",
+        "checkId": "92166939-3b97-435a-95b8-47faebb60d59",
+        "createdAt": "2026-11-03T06:34:29.241Z",
         "hash": "ccb606201540fbef64515bbd7202d2a5b52333cf95aa725059e85090a530358b",
         "tokens": [
           {
@@ -256311,10 +256311,10 @@
     "20e3a981-c6a0-4673-9a6f-5e0241999772": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-02T05:25:14.845Z",
+      "lastChangedAt": "2026-11-03T06:34:29.709Z",
       "latest": {
-        "id": "15a09e64-25d3-4e2c-9005-4d8ea59aa2be",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "c15acccd-e029-48a3-9c99-6e035706c591",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "20e3a981-c6a0-4673-9a6f-5e0241999772",
         "targetId": "c701fd1a-9015-4daf-9039-b987c990c619",
         "targetName": "Youth Club 체크카드",
@@ -256332,16 +256332,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 1138,
+        "changeStatus": "CHANGED",
+        "responseMs": 952,
         "errorMessage": null,
-        "comparedCheckId": "65e700d3-b853-4ed0-aa2d-5d3e96f63d96",
-        "comparedAt": "2026-11-01T05:50:56.048Z",
+        "comparedCheckId": "15a09e64-25d3-4e2c-9005-4d8ea59aa2be",
+        "comparedAt": "2026-11-02T05:51:16.365Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 9,
+        "bodyRemovedCount": 9,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.11.1(일) ~ 11.30(월)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.11.1 (일) ~ 11.30 (월)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.11.1 (일) ~ 12.10 (목)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.10.1(목) ~ 10.31(토)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.10.1 (목) ~ 10.31 (토)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.10.1 (목) ~ 11.10 (화)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -256352,12 +256352,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:16.365Z"
+        "createdAt": "2026-11-03T06:34:29.709Z"
       },
       "lastSuccessful": {
-        "checkId": "15a09e64-25d3-4e2c-9005-4d8ea59aa2be",
-        "createdAt": "2026-11-02T05:51:16.365Z",
-        "hash": "cda2e12f252ca8fa27223ccf33a3f95d12b0e6111a699883b1235b318e1a2d28",
+        "checkId": "c15acccd-e029-48a3-9c99-6e035706c591",
+        "createdAt": "2026-11-03T06:34:29.709Z",
+        "hash": "decc154bf569519c00652cf1a740952363fb95ab9b5ca86a5184c8c31420def7",
         "tokens": [
           {
             "kind": "title",
@@ -256957,7 +256957,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.10.1(목) ~ 10.31(토)"
+            "value": "2026.11.1(일) ~ 11.30(월)"
           },
           {
             "kind": "heading",
@@ -257047,12 +257047,12 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준"
+            "value": "2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준"
           },
           {
             "kind": "text",
             "key": "li",
-            "value": "발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영"
+            "value": "발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영"
           },
           {
             "kind": "text",
@@ -257082,7 +257082,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정"
+            "value": "2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정"
           },
           {
             "kind": "heading",
@@ -257122,7 +257122,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
+            "value": "2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
           },
           {
             "kind": "text",
@@ -257292,12 +257292,12 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "발급: 2026.10.1 (목) ~ 10.31 (토)"
+            "value": "발급: 2026.11.1 (일) ~ 11.30 (월)"
           },
           {
             "kind": "text",
             "key": "p",
-            "value": "이용: 2026.10.1 (목) ~ 11.10 (화)"
+            "value": "이용: 2026.11.1 (일) ~ 12.10 (목)"
           },
           {
             "kind": "heading",
@@ -257327,7 +257327,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
+            "value": "③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
           },
           {
             "kind": "heading",
@@ -257902,7 +257902,7 @@
           {
             "kind": "link",
             "key": "행사 바로가기",
-            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053"
+            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327"
           },
           {
             "kind": "link",
@@ -258052,8 +258052,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:58.357Z",
       "latest": {
-        "id": "0b7e239a-c881-4f92-a8f6-3e6067951d36",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "fcb77f3f-8917-4b6c-a716-51649bd71f5b",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "533221ef-199b-4710-b94e-bc3aab4a1c02",
         "targetId": "ccfd1770-4563-4762-823c-5f6aa40a0d3e",
         "targetName": "American Express Blue Card",
@@ -258072,10 +258072,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1134,
+        "responseMs": 976,
         "errorMessage": null,
-        "comparedCheckId": "e74626b4-7782-49e1-bafb-697b961db428",
-        "comparedAt": "2026-11-01T05:50:54.121Z",
+        "comparedCheckId": "0b7e239a-c881-4f92-a8f6-3e6067951d36",
+        "comparedAt": "2026-11-02T05:51:13.391Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -258091,11 +258091,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:13.391Z"
+        "createdAt": "2026-11-03T06:34:27.377Z"
       },
       "lastSuccessful": {
-        "checkId": "0b7e239a-c881-4f92-a8f6-3e6067951d36",
-        "createdAt": "2026-11-02T05:51:13.391Z",
+        "checkId": "fcb77f3f-8917-4b6c-a716-51649bd71f5b",
+        "createdAt": "2026-11-03T06:34:27.377Z",
         "hash": "3dfc64f4797ae3e28c9dff2e878527b73221663b4f8c450543c5ce245523f6e5",
         "tokens": [
           {
@@ -272264,10 +272264,10 @@
     "8ea95969-0296-474c-b812-028030be9348": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-02T05:25:12.462Z",
+      "lastChangedAt": "2026-11-03T06:34:27.611Z",
       "latest": {
-        "id": "068ffc7a-b335-43fa-a29f-f02d41521b6d",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "546e4638-4444-4206-bd0f-30ceec1ee976",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "8ea95969-0296-474c-b812-028030be9348",
         "targetId": "ccfd1770-4563-4762-823c-5f6aa40a0d3e",
         "targetName": "American Express Blue Card",
@@ -272285,16 +272285,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 2083,
+        "changeStatus": "CHANGED",
+        "responseMs": 1147,
         "errorMessage": null,
-        "comparedCheckId": "6fc4fca1-47dd-4973-a066-250f837476d3",
-        "comparedAt": "2026-11-01T05:50:54.025Z",
+        "comparedCheckId": "068ffc7a-b335-43fa-a29f-f02d41521b6d",
+        "comparedAt": "2026-11-02T05:51:14.904Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 9,
+        "bodyRemovedCount": 9,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.11.1(일) ~ 11.30(월)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.11.1 (일) ~ 11.30 (월)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.11.1 (일) ~ 12.10 (목)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.10.1(목) ~ 10.31(토)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.10.1 (목) ~ 10.31 (토)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.10.1 (목) ~ 11.10 (화)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -272305,12 +272305,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:14.904Z"
+        "createdAt": "2026-11-03T06:34:27.611Z"
       },
       "lastSuccessful": {
-        "checkId": "068ffc7a-b335-43fa-a29f-f02d41521b6d",
-        "createdAt": "2026-11-02T05:51:14.904Z",
-        "hash": "d54cb95834326384e494c27c5c4c77049fe8da26738a28f801a0bd6b32d19c98",
+        "checkId": "546e4638-4444-4206-bd0f-30ceec1ee976",
+        "createdAt": "2026-11-03T06:34:27.611Z",
+        "hash": "6082ac2c6dd662ad22f79fe9d3a7b21c36d44775db63057a2b4f0ac6e4c2c401",
         "tokens": [
           {
             "kind": "title",
@@ -273000,7 +273000,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.10.1(목) ~ 10.31(토)"
+            "value": "2026.11.1(일) ~ 11.30(월)"
           },
           {
             "kind": "heading",
@@ -273090,12 +273090,12 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준"
+            "value": "2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준"
           },
           {
             "kind": "text",
             "key": "li",
-            "value": "발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영"
+            "value": "발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영"
           },
           {
             "kind": "text",
@@ -273125,7 +273125,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정"
+            "value": "2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정"
           },
           {
             "kind": "heading",
@@ -273165,7 +273165,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
+            "value": "2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
           },
           {
             "kind": "text",
@@ -273335,12 +273335,12 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "발급: 2026.10.1 (목) ~ 10.31 (토)"
+            "value": "발급: 2026.11.1 (일) ~ 11.30 (월)"
           },
           {
             "kind": "text",
             "key": "p",
-            "value": "이용: 2026.10.1 (목) ~ 11.10 (화)"
+            "value": "이용: 2026.11.1 (일) ~ 12.10 (목)"
           },
           {
             "kind": "heading",
@@ -273370,7 +273370,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
+            "value": "③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
           },
           {
             "kind": "heading",
@@ -273970,7 +273970,7 @@
           {
             "kind": "link",
             "key": "행사 바로가기",
-            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053"
+            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327"
           },
           {
             "kind": "link",
@@ -274120,8 +274120,8 @@
       "liveCompletedAt": "2026-09-14T07:48:27.619Z",
       "lastChangedAt": "2026-10-30T05:34:49.789Z",
       "latest": {
-        "id": "31c7d874-4f2d-4900-8500-ff529451f579",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "ad6ff4af-5658-49df-a803-b11883f0cb6f",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "1a97e3c9-610d-4931-b785-e625c6caf524",
         "targetId": "cd5e3359-d077-44de-b423-490719f8a4c1",
         "targetName": "ALL 카드",
@@ -274140,10 +274140,10 @@
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">ALL 카드, 이런 분께 추천드려요</h2>",
         "changeStatus": "UNCHANGED",
-        "responseMs": 799,
+        "responseMs": 1789,
         "errorMessage": null,
-        "comparedCheckId": "6082f2a0-eced-4920-b354-8744922c8c46",
-        "comparedAt": "2026-11-01T05:50:46.372Z",
+        "comparedCheckId": "31c7d874-4f2d-4900-8500-ff529451f579",
+        "comparedAt": "2026-11-02T05:51:04.863Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -274159,11 +274159,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:04.863Z"
+        "createdAt": "2026-11-03T06:34:19.447Z"
       },
       "lastSuccessful": {
-        "checkId": "31c7d874-4f2d-4900-8500-ff529451f579",
-        "createdAt": "2026-11-02T05:51:04.863Z",
+        "checkId": "ad6ff4af-5658-49df-a803-b11883f0cb6f",
+        "createdAt": "2026-11-03T06:34:19.447Z",
         "hash": "2f20d77a0d96ce52147c061fb765c24cb74379595a43104d30daac8b7e4a6e72",
         "tokens": [
           {
@@ -287672,10 +287672,10 @@
     "cf2d0df6-8b68-49e1-8346-7762096c49ee": {
       "launchedAt": null,
       "liveCompletedAt": "2026-09-14T07:48:27.840Z",
-      "lastChangedAt": "2026-10-02T05:25:04.702Z",
+      "lastChangedAt": "2026-11-03T06:34:19.763Z",
       "latest": {
-        "id": "a7f6eb54-565e-4857-b8b0-63896dbf635c",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "19d053bf-9645-47f0-bcdf-8a00a3c4eed3",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "cf2d0df6-8b68-49e1-8346-7762096c49ee",
         "targetId": "cd5e3359-d077-44de-b423-490719f8a4c1",
         "targetName": "ALL 카드",
@@ -287693,16 +287693,16 @@
         "bodyLiveMarkerFound": true,
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">ALL 카드, <br>이런 분께 추천드려요</h2>",
-        "changeStatus": "UNCHANGED",
-        "responseMs": 2194,
+        "changeStatus": "CHANGED",
+        "responseMs": 2294,
         "errorMessage": null,
-        "comparedCheckId": "b89e9041-699e-48c5-b35a-32149437d014",
-        "comparedAt": "2026-11-01T05:50:46.689Z",
+        "comparedCheckId": "a7f6eb54-565e-4857-b8b0-63896dbf635c",
+        "comparedAt": "2026-11-02T05:51:06.043Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 9,
+        "bodyRemovedCount": 9,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.11.1(일) ~ 11.30(월)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.11.1 (일) ~ 11.30 (월)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.11.1 (일) ~ 12.10 (목)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.10.1(목) ~ 10.31(토)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.10.1 (목) ~ 10.31 (토)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.10.1 (목) ~ 11.10 (화)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -287713,12 +287713,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:06.043Z"
+        "createdAt": "2026-11-03T06:34:19.763Z"
       },
       "lastSuccessful": {
-        "checkId": "a7f6eb54-565e-4857-b8b0-63896dbf635c",
-        "createdAt": "2026-11-02T05:51:06.043Z",
-        "hash": "57eb8d57f0ab221cb282cb7fb105d776f269ebf72e5b58cda36b4a8712209117",
+        "checkId": "19d053bf-9645-47f0-bcdf-8a00a3c4eed3",
+        "createdAt": "2026-11-03T06:34:19.763Z",
+        "hash": "ebc70d25cf2ecc8f4f0c5956703c2995b2e18addf517ed98f8b593cee5e28935",
         "tokens": [
           {
             "kind": "title",
@@ -288903,7 +288903,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.10.1(목) ~ 10.31(토)"
+            "value": "2026.11.1(일) ~ 11.30(월)"
           },
           {
             "kind": "heading",
@@ -288993,12 +288993,12 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준"
+            "value": "2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준"
           },
           {
             "kind": "text",
             "key": "li",
-            "value": "발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영"
+            "value": "발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영"
           },
           {
             "kind": "text",
@@ -289028,7 +289028,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정"
+            "value": "2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정"
           },
           {
             "kind": "heading",
@@ -289068,7 +289068,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
+            "value": "2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
           },
           {
             "kind": "text",
@@ -289238,12 +289238,12 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "발급: 2026.10.1 (목) ~ 10.31 (토)"
+            "value": "발급: 2026.11.1 (일) ~ 11.30 (월)"
           },
           {
             "kind": "text",
             "key": "p",
-            "value": "이용: 2026.10.1 (목) ~ 11.10 (화)"
+            "value": "이용: 2026.11.1 (일) ~ 12.10 (목)"
           },
           {
             "kind": "heading",
@@ -289273,7 +289273,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
+            "value": "③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
           },
           {
             "kind": "heading",
@@ -289848,7 +289848,7 @@
           {
             "kind": "link",
             "key": "행사 바로가기",
-            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053"
+            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327"
           },
           {
             "kind": "link",
@@ -290033,8 +290033,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:55.649Z",
       "latest": {
-        "id": "f32ce547-d89c-43e2-9b9e-ddf5e007817b",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "037509e0-2cc4-43ab-8e63-82e4567b543b",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "613d02c9-fc0b-4d8d-9a08-517e588ed948",
         "targetId": "d8815c97-3344-4821-8372-32ff769c023b",
         "targetName": "NEED Pay 카드",
@@ -290053,10 +290053,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1615,
+        "responseMs": 634,
         "errorMessage": null,
-        "comparedCheckId": "63cc5fe2-f58e-4fc5-ba70-4635cd4b7f84",
-        "comparedAt": "2026-11-01T05:50:51.127Z",
+        "comparedCheckId": "f32ce547-d89c-43e2-9b9e-ddf5e007817b",
+        "comparedAt": "2026-11-02T05:51:11.051Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -290072,11 +290072,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:11.051Z"
+        "createdAt": "2026-11-03T06:34:23.601Z"
       },
       "lastSuccessful": {
-        "checkId": "f32ce547-d89c-43e2-9b9e-ddf5e007817b",
-        "createdAt": "2026-11-02T05:51:11.051Z",
+        "checkId": "037509e0-2cc4-43ab-8e63-82e4567b543b",
+        "createdAt": "2026-11-03T06:34:23.601Z",
         "hash": "d7bc557b3107f02b1b3a5e9455094a432d327e8416d3fd3e037b548708e7d944",
         "tokens": [
           {
@@ -304215,10 +304215,10 @@
     "d137fd1e-c1dd-4841-8f54-32513292cd5a": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-02T05:25:09.815Z",
+      "lastChangedAt": "2026-11-03T06:34:24.177Z",
       "latest": {
-        "id": "d4b50b12-e66a-4011-bafc-43e849fcc11c",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "0c875e3c-a35b-4689-9984-bf355441e2c4",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "d137fd1e-c1dd-4841-8f54-32513292cd5a",
         "targetId": "d8815c97-3344-4821-8372-32ff769c023b",
         "targetName": "NEED Pay 카드",
@@ -304236,16 +304236,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 689,
+        "changeStatus": "CHANGED",
+        "responseMs": 917,
         "errorMessage": null,
-        "comparedCheckId": "8f5545cd-e8de-49b8-ad26-a1b1de1c5bbe",
-        "comparedAt": "2026-11-01T05:50:51.474Z",
+        "comparedCheckId": "d4b50b12-e66a-4011-bafc-43e849fcc11c",
+        "comparedAt": "2026-11-02T05:51:10.139Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 9,
+        "bodyRemovedCount": 9,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.11.1(일) ~ 11.30(월)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.11.1 (일) ~ 11.30 (월)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.11.1 (일) ~ 12.10 (목)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.10.1(목) ~ 10.31(토)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.10.1 (목) ~ 10.31 (토)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.10.1 (목) ~ 11.10 (화)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -304256,12 +304256,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:10.139Z"
+        "createdAt": "2026-11-03T06:34:24.177Z"
       },
       "lastSuccessful": {
-        "checkId": "d4b50b12-e66a-4011-bafc-43e849fcc11c",
-        "createdAt": "2026-11-02T05:51:10.139Z",
-        "hash": "773702642f9c6657cde66d5d5ea0b9e66e24c0a08fc36585d4d271dce2781844",
+        "checkId": "0c875e3c-a35b-4689-9984-bf355441e2c4",
+        "createdAt": "2026-11-03T06:34:24.177Z",
+        "hash": "12a98140b66a2d3d1c7a6c100412e92215f915b7d029aaeca36d87a7df7ccfb5",
         "tokens": [
           {
             "kind": "title",
@@ -305036,7 +305036,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.10.1(목) ~ 10.31(토)"
+            "value": "2026.11.1(일) ~ 11.30(월)"
           },
           {
             "kind": "heading",
@@ -305126,12 +305126,12 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준"
+            "value": "2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준"
           },
           {
             "kind": "text",
             "key": "li",
-            "value": "발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영"
+            "value": "발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영"
           },
           {
             "kind": "text",
@@ -305161,7 +305161,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정"
+            "value": "2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정"
           },
           {
             "kind": "heading",
@@ -305201,7 +305201,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
+            "value": "2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
           },
           {
             "kind": "text",
@@ -305371,12 +305371,12 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "발급: 2026.10.1 (목) ~ 10.31 (토)"
+            "value": "발급: 2026.11.1 (일) ~ 11.30 (월)"
           },
           {
             "kind": "text",
             "key": "p",
-            "value": "이용: 2026.10.1 (목) ~ 11.10 (화)"
+            "value": "이용: 2026.11.1 (일) ~ 12.10 (목)"
           },
           {
             "kind": "heading",
@@ -305406,7 +305406,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
+            "value": "③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
           },
           {
             "kind": "heading",
@@ -306006,7 +306006,7 @@
           {
             "kind": "link",
             "key": "행사 바로가기",
-            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053"
+            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327"
           },
           {
             "kind": "link",
@@ -306171,8 +306171,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:52.123Z",
       "latest": {
-        "id": "71dc7e3a-2f39-4698-bf0f-5a150e5cf103",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "78d46596-2b4b-43e8-bbac-4c7db60e6959",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "6a0d6408-1c23-4f3b-9f75-2d84729915fa",
         "targetId": "efb1d0e6-0aeb-4093-84a7-6aed0179f41e",
         "targetName": "YOU Wish 카드",
@@ -306191,10 +306191,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1156,
+        "responseMs": 1015,
         "errorMessage": null,
-        "comparedCheckId": "17d7eb04-adac-43cc-a599-3abceec56faa",
-        "comparedAt": "2026-11-01T05:50:49.263Z",
+        "comparedCheckId": "71dc7e3a-2f39-4698-bf0f-5a150e5cf103",
+        "comparedAt": "2026-11-02T05:51:08.105Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -306210,11 +306210,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:08.105Z"
+        "createdAt": "2026-11-03T06:34:21.917Z"
       },
       "lastSuccessful": {
-        "checkId": "71dc7e3a-2f39-4698-bf0f-5a150e5cf103",
-        "createdAt": "2026-11-02T05:51:08.105Z",
+        "checkId": "78d46596-2b4b-43e8-bbac-4c7db60e6959",
+        "createdAt": "2026-11-03T06:34:21.917Z",
         "hash": "b9fd9b9b3d004e1e32a43b37019d1f011ab89939cabacd8d8f377329bff742e6",
         "tokens": [
           {
@@ -320168,10 +320168,10 @@
     "c159409a-cc42-4ae1-b6a3-9a5fc6e4b6c0": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-02T05:25:06.983Z",
+      "lastChangedAt": "2026-11-03T06:34:22.012Z",
       "latest": {
-        "id": "b2f2d303-50b2-4c80-a80c-e6a537bc1162",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "f276998a-6ad4-4161-ace8-a0aab6b43c65",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "c159409a-cc42-4ae1-b6a3-9a5fc6e4b6c0",
         "targetId": "efb1d0e6-0aeb-4093-84a7-6aed0179f41e",
         "targetName": "YOU Wish 카드",
@@ -320189,16 +320189,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 1242,
+        "changeStatus": "CHANGED",
+        "responseMs": 675,
         "errorMessage": null,
-        "comparedCheckId": "6d02ab10-470c-4b35-ae5a-242cb8eaed06",
-        "comparedAt": "2026-11-01T05:50:48.904Z",
+        "comparedCheckId": "b2f2d303-50b2-4c80-a80c-e6a537bc1162",
+        "comparedAt": "2026-11-02T05:51:08.283Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 9,
+        "bodyRemovedCount": 9,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.11.1(일) ~ 11.30(월)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.11.1 (일) ~ 11.30 (월)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.11.1 (일) ~ 12.10 (목)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.10.1(목) ~ 10.31(토)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.10.1 (목) ~ 10.31 (토)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.10.1 (목) ~ 11.10 (화)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -320209,12 +320209,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:08.283Z"
+        "createdAt": "2026-11-03T06:34:22.012Z"
       },
       "lastSuccessful": {
-        "checkId": "b2f2d303-50b2-4c80-a80c-e6a537bc1162",
-        "createdAt": "2026-11-02T05:51:08.283Z",
-        "hash": "a00709672aabe9a2bee21ab60e9debb2abeac510064e6a86d69f3361990c075c",
+        "checkId": "f276998a-6ad4-4161-ace8-a0aab6b43c65",
+        "createdAt": "2026-11-03T06:34:22.012Z",
+        "hash": "d567e6220355a69bda79e10fbc7088e32eefba231b210b0e8c6cfbddf21a2218",
         "tokens": [
           {
             "kind": "title",
@@ -320914,7 +320914,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.10.1(목) ~ 10.31(토)"
+            "value": "2026.11.1(일) ~ 11.30(월)"
           },
           {
             "kind": "heading",
@@ -321004,12 +321004,12 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준"
+            "value": "2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준"
           },
           {
             "kind": "text",
             "key": "li",
-            "value": "발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영"
+            "value": "발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영"
           },
           {
             "kind": "text",
@@ -321039,7 +321039,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정"
+            "value": "2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정"
           },
           {
             "kind": "heading",
@@ -321079,7 +321079,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
+            "value": "2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
           },
           {
             "kind": "text",
@@ -321249,12 +321249,12 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "발급: 2026.10.1 (목) ~ 10.31 (토)"
+            "value": "발급: 2026.11.1 (일) ~ 11.30 (월)"
           },
           {
             "kind": "text",
             "key": "p",
-            "value": "이용: 2026.10.1 (목) ~ 11.10 (화)"
+            "value": "이용: 2026.11.1 (일) ~ 12.10 (목)"
           },
           {
             "kind": "heading",
@@ -321284,7 +321284,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
+            "value": "③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
           },
           {
             "kind": "heading",
@@ -321884,7 +321884,7 @@
           {
             "kind": "link",
             "key": "행사 바로가기",
-            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053"
+            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327"
           },
           {
             "kind": "link",
@@ -322054,8 +322054,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:52.570Z",
       "latest": {
-        "id": "f7e768e6-ffc1-4bfc-bfc7-ef4a08b32832",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "d2e9e3c0-7245-4e07-8930-44ec17f66c5c",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "14bafd44-2782-4968-911b-291d2acd502e",
         "targetId": "f76ab7ec-2473-4bff-8a31-d6d4e7dbe21d",
         "targetName": "YOU With 카드",
@@ -322074,10 +322074,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1572,
+        "responseMs": 1420,
         "errorMessage": null,
-        "comparedCheckId": "0d98e428-3a06-4e38-92eb-f4ed0d2aaae9",
-        "comparedAt": "2026-11-01T05:50:47.248Z",
+        "comparedCheckId": "f7e768e6-ffc1-4bfc-bfc7-ef4a08b32832",
+        "comparedAt": "2026-11-02T05:51:07.967Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -322093,11 +322093,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:07.967Z"
+        "createdAt": "2026-11-03T06:34:21.308Z"
       },
       "lastSuccessful": {
-        "checkId": "f7e768e6-ffc1-4bfc-bfc7-ef4a08b32832",
-        "createdAt": "2026-11-02T05:51:07.967Z",
+        "checkId": "d2e9e3c0-7245-4e07-8930-44ec17f66c5c",
+        "createdAt": "2026-11-03T06:34:21.308Z",
         "hash": "a176c094f550ec714bb1904e235950c4eaba1d5ae2d4cf102d7348159c78d57f",
         "tokens": [
           {
@@ -336186,10 +336186,10 @@
     "446222ae-cda3-454a-9e38-96d18f5cf725": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-02T05:25:06.525Z",
+      "lastChangedAt": "2026-11-03T06:34:21.741Z",
       "latest": {
-        "id": "500df734-e9f2-4394-9aa3-9c74051f9e9f",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "1bb0be05-2279-4958-9721-f355cf76c775",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "446222ae-cda3-454a-9e38-96d18f5cf725",
         "targetId": "f76ab7ec-2473-4bff-8a31-d6d4e7dbe21d",
         "targetName": "YOU With 카드",
@@ -336207,16 +336207,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 993,
+        "changeStatus": "CHANGED",
+        "responseMs": 1912,
         "errorMessage": null,
-        "comparedCheckId": "075684b6-5e30-477c-92bd-e95ac49a18bc",
-        "comparedAt": "2026-11-01T05:50:48.271Z",
+        "comparedCheckId": "500df734-e9f2-4394-9aa3-9c74051f9e9f",
+        "comparedAt": "2026-11-02T05:51:07.336Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 9,
+        "bodyRemovedCount": 9,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.11.1(일) ~ 11.30(월)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.11.1 (일) ~ 11.30 (월)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.11.1 (일) ~ 12.10 (목)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.10.1(목) ~ 10.31(토)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.10.1 (목) ~ 10.31 (토)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.10.1 (목) ~ 11.10 (화)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -336227,12 +336227,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:07.336Z"
+        "createdAt": "2026-11-03T06:34:21.741Z"
       },
       "lastSuccessful": {
-        "checkId": "500df734-e9f2-4394-9aa3-9c74051f9e9f",
-        "createdAt": "2026-11-02T05:51:07.336Z",
-        "hash": "5150729fcb8ab67d58fb5a17811013c7e515c2a752336efbc7b1292ddbb88512",
+        "checkId": "1bb0be05-2279-4958-9721-f355cf76c775",
+        "createdAt": "2026-11-03T06:34:21.741Z",
+        "hash": "e289cf72b61da874afef93cf9da45e9729daf3f9ab4513784ced40cf4c43b55e",
         "tokens": [
           {
             "kind": "title",
@@ -336962,7 +336962,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.10.1(목) ~ 10.31(토)"
+            "value": "2026.11.1(일) ~ 11.30(월)"
           },
           {
             "kind": "heading",
@@ -337052,12 +337052,12 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준"
+            "value": "2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준"
           },
           {
             "kind": "text",
             "key": "li",
-            "value": "발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영"
+            "value": "발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영"
           },
           {
             "kind": "text",
@@ -337087,7 +337087,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정"
+            "value": "2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정"
           },
           {
             "kind": "heading",
@@ -337127,7 +337127,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
+            "value": "2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
           },
           {
             "kind": "text",
@@ -337297,12 +337297,12 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "발급: 2026.10.1 (목) ~ 10.31 (토)"
+            "value": "발급: 2026.11.1 (일) ~ 11.30 (월)"
           },
           {
             "kind": "text",
             "key": "p",
-            "value": "이용: 2026.10.1 (목) ~ 11.10 (화)"
+            "value": "이용: 2026.11.1 (일) ~ 12.10 (목)"
           },
           {
             "kind": "heading",
@@ -337332,7 +337332,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
+            "value": "③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
           },
           {
             "kind": "heading",
@@ -337942,7 +337942,7 @@
           {
             "kind": "link",
             "key": "행사 바로가기",
-            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053"
+            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327"
           },
           {
             "kind": "link",
@@ -338112,8 +338112,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-02T05:51:12.149Z",
       "latest": {
-        "id": "04fe602c-fc4e-44b9-b537-a7d9a9d7a67d",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "e70adb19-0121-40f9-85c5-65cb46e5620e",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "01b3f6d5-d2f3-46f9-b9dd-9fb1e43d30a4",
         "targetId": "ffce3167-72d1-488c-ab2e-f65d740df310",
         "targetName": "스카이패스 티타늄카드",
@@ -338131,16 +338131,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 522,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1431,
         "errorMessage": null,
-        "comparedCheckId": "17836619-98f2-4445-8343-e38a31a5067f",
-        "comparedAt": "2026-11-01T05:50:52.958Z",
+        "comparedCheckId": "04fe602c-fc4e-44b9-b537-a7d9a9d7a67d",
+        "comparedAt": "2026-11-02T05:51:12.149Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 2,
-        "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[{\"kind\":\"link\",\"key\":\"Mastercard 티타늄 01 선택서비스 상품설명서 보기\",\"value\":\"https://img2.kbcard.com/obj/card/download/70524_stpul_20260511.pdf\"},{\"kind\":\"link\",\"key\":\"Mastercard 티타늄 기본서비스 상품설명서 보기\",\"value\":\"https://img2.kbcard.com/obj/card/download/A0027_stpul_20260511.pdf\"}],\"removed\":[{\"kind\":\"link\",\"key\":\"Mastercard 티타늄 01 선택서비스 상품설명서 보기\",\"value\":\"https://img2.kbcard.com/obj/card/download/70524_stpul_20250410.pdf\"},{\"kind\":\"link\",\"key\":\"Mastercard 티타늄 기본서비스 상품설명서 보기\",\"value\":\"https://img2.kbcard.com/obj/card/download/A0027_stpul_20250328.pdf\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -338151,11 +338151,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:12.149Z"
+        "createdAt": "2026-11-03T06:34:27.251Z"
       },
       "lastSuccessful": {
-        "checkId": "04fe602c-fc4e-44b9-b537-a7d9a9d7a67d",
-        "createdAt": "2026-11-02T05:51:12.149Z",
+        "checkId": "e70adb19-0121-40f9-85c5-65cb46e5620e",
+        "createdAt": "2026-11-03T06:34:27.251Z",
         "hash": "91777c95e86175fbe96b95a832eab8b102e8f72e405bcf203c8c47e39076615c",
         "tokens": [
           {
@@ -351819,10 +351819,10 @@
     "57a99be1-efa7-46ec-85b1-ffa0cbcbfc2a": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-02T05:25:12.377Z",
+      "lastChangedAt": "2026-11-03T06:34:26.279Z",
       "latest": {
-        "id": "7abb0c80-2391-48b7-91ca-bb58869b38c5",
-        "runId": "5fc9d361-df4a-470a-bb23-bf42983f6df8",
+        "id": "dd91ad92-e64c-4ce1-a371-5c531a856d09",
+        "runId": "f3283bac-5c7d-4977-a2e6-32a821858099",
         "endpointId": "57a99be1-efa7-46ec-85b1-ffa0cbcbfc2a",
         "targetId": "ffce3167-72d1-488c-ab2e-f65d740df310",
         "targetName": "스카이패스 티타늄카드",
@@ -351840,16 +351840,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 2051,
+        "changeStatus": "CHANGED",
+        "responseMs": 469,
         "errorMessage": null,
-        "comparedCheckId": "75e2b7dc-3407-4d7a-985f-7bd3c8198795",
-        "comparedAt": "2026-11-01T05:50:53.533Z",
+        "comparedCheckId": "7abb0c80-2391-48b7-91ca-bb58869b38c5",
+        "comparedAt": "2026-11-02T05:51:13.751Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 9,
+        "bodyRemovedCount": 9,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.11.1(일) ~ 11.30(월)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.11.1 (일) ~ 11.30 (월)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.11.1 (일) ~ 12.10 (목)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.10.1(목) ~ 10.31(토)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"발급: 2026.10.1 (목) ~ 10.31 (토)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이용: 2026.10.1 (목) ~ 11.10 (화)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원\"},{\"kind\":\"link\",\"key\":\"행사 바로가기\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -351860,12 +351860,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-02T05:51:13.751Z"
+        "createdAt": "2026-11-03T06:34:26.279Z"
       },
       "lastSuccessful": {
-        "checkId": "7abb0c80-2391-48b7-91ca-bb58869b38c5",
-        "createdAt": "2026-11-02T05:51:13.751Z",
-        "hash": "f5e0b6cfcfa5bdc0dd4bcf5b4692f485a0e44ca380607ea7cb3fe1a878747146",
+        "checkId": "dd91ad92-e64c-4ce1-a371-5c531a856d09",
+        "createdAt": "2026-11-03T06:34:26.279Z",
+        "hash": "254eacd8fc2b4caccb50a5597a1ec1f113ae186cce8f77200417e2dc577c042c",
         "tokens": [
           {
             "kind": "title",
@@ -352465,7 +352465,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.10.1(목) ~ 10.31(토)"
+            "value": "2026.11.1(일) ~ 11.30(월)"
           },
           {
             "kind": "heading",
@@ -352555,12 +352555,12 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.11.30(월)까지 일시불, 할부 합산 이용금액 기준"
+            "value": "2026.12.31(목)까지 일시불, 할부 합산 이용금액 기준"
           },
           {
             "kind": "text",
             "key": "li",
-            "value": "발급일 ~ 2026.11.30(월) 기간 안의 이용금액 중 2026.12.4(금) 매입분까지 반영"
+            "value": "발급일 ~ 2026.12.31(목) 기간 안의 이용금액 중 2027.1.8(금) 매입분까지 반영"
           },
           {
             "kind": "text",
@@ -352590,7 +352590,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "2026.12.31(목) 이내 본인카드 결제계좌로 입금 예정"
+            "value": "2027.1.29(금) 이내 본인카드 결제계좌로 입금 예정"
           },
           {
             "kind": "heading",
@@ -352630,7 +352630,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "2026.12.4(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
+            "value": "2027.1.8(금)까지 매입되지 않은 금액, 취소금액, 단기카드대출(현금서비스) 금액은 이용금액 산정에서 제외됩니다."
           },
           {
             "kind": "text",
@@ -352800,12 +352800,12 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "발급: 2026.10.1 (목) ~ 10.31 (토)"
+            "value": "발급: 2026.11.1 (일) ~ 11.30 (월)"
           },
           {
             "kind": "text",
             "key": "p",
-            "value": "이용: 2026.10.1 (목) ~ 11.10 (화)"
+            "value": "이용: 2026.11.1 (일) ~ 12.10 (목)"
           },
           {
             "kind": "heading",
@@ -352835,7 +352835,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "③ 2026.8.31(월) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
+            "value": "③ 2026.9.30(수) 이전 체크카드 탈회 후 행사 기간 중 신규 발급 회원"
           },
           {
             "kind": "heading",
@@ -353435,7 +353435,7 @@
           {
             "kind": "link",
             "key": "행사 바로가기",
-            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002053"
+            "value": "https://m.kbcard.com/BON/DVIEW/MBBV0004?evntId=1002327"
           },
           {
             "kind": "link",
