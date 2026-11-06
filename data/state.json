@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-05T06:30:36.117Z",
+  "updatedAt": "2026-11-06T06:25:38.373Z",
   "endpoints": {
     "c926ec76-812d-4877-b8cd-10f16272aeba": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-30T05:35:02.349Z",
+      "lastChangedAt": "2026-11-06T06:25:36.944Z",
       "latest": {
-        "id": "a18bfdb7-7be0-4a05-90f3-c2cc33d74770",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "b181e127-8949-4200-b7d5-b88fbcab0d32",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "c926ec76-812d-4877-b8cd-10f16272aeba",
         "targetId": "014f6ae8-f8af-4234-9976-8e1b4ecbb511",
         "targetName": "국민행복카드",
@@ -26,16 +26,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 478,
+        "changeStatus": "CHANGED",
+        "responseMs": 559,
         "errorMessage": null,
-        "comparedCheckId": "d4bc62b4-b5b8-4e2f-94f0-691cc079ff8f",
-        "comparedAt": "2026-11-04T06:03:25.801Z",
+        "comparedCheckId": "a18bfdb7-7be0-4a05-90f3-c2cc33d74770",
+        "comparedAt": "2026-11-05T06:30:35.407Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 5,
+        "bodyRemovedCount": 5,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"내게 맞는 카드 찾기\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"내게 맞는 카드 찾기\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"맞춤카드\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"맞춤카드\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -46,12 +46,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:35.407Z"
+        "createdAt": "2026-11-06T06:25:36.944Z"
       },
       "lastSuccessful": {
-        "checkId": "a18bfdb7-7be0-4a05-90f3-c2cc33d74770",
-        "createdAt": "2026-11-05T06:30:35.407Z",
-        "hash": "f48b88dcb0a20133f73440e60e947c3f3dd9f7289b130f3d114d6c6cc43274d9",
+        "checkId": "b181e127-8949-4200-b7d5-b88fbcab0d32",
+        "createdAt": "2026-11-06T06:25:36.944Z",
+        "hash": "7c6624cd8f9c1032c18738613258509082d1da67e70145ef6b6918dd029502b3",
         "tokens": [
           {
             "kind": "title",
@@ -2071,7 +2071,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "맞춤카드"
+            "value": "내게 맞는 카드 찾기"
           },
           {
             "kind": "text",
@@ -3571,7 +3571,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "맞춤카드"
+            "value": "내게 맞는 카드 찾기"
           },
           {
             "kind": "text",
@@ -10080,12 +10080,12 @@
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
@@ -11855,7 +11855,7 @@
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
@@ -14271,8 +14271,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-03T06:34:31.587Z",
       "latest": {
-        "id": "0887caf0-9662-47b6-8d83-6210251f5168",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "71c7962a-d498-4bb7-be16-5b4a70e3d7a9",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "7b6cf907-d2fc-4161-a9c1-7327da1b8c12",
         "targetId": "014f6ae8-f8af-4234-9976-8e1b4ecbb511",
         "targetName": "국민행복카드",
@@ -14291,10 +14291,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 579,
+        "responseMs": 1598,
         "errorMessage": null,
-        "comparedCheckId": "31062165-d1b8-47da-b1bf-e61a18bbe4e1",
-        "comparedAt": "2026-11-04T06:03:27.379Z",
+        "comparedCheckId": "0887caf0-9662-47b6-8d83-6210251f5168",
+        "comparedAt": "2026-11-05T06:30:35.462Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -14310,11 +14310,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:35.462Z"
+        "createdAt": "2026-11-06T06:25:38.257Z"
       },
       "lastSuccessful": {
-        "checkId": "0887caf0-9662-47b6-8d83-6210251f5168",
-        "createdAt": "2026-11-05T06:30:35.462Z",
+        "checkId": "71c7962a-d498-4bb7-be16-5b4a70e3d7a9",
+        "createdAt": "2026-11-06T06:25:38.257Z",
         "hash": "82983b0cdc8a4ed3488665537f49cabb24f98a4c0574f47842a7e2646579a5a5",
         "tokens": [
           {
@@ -16010,8 +16010,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:35.101Z",
       "latest": {
-        "id": "1061504f-ffd0-4b1e-866a-3f7b47c2c7bb",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "ab38753f-2fb2-4cc2-b009-585d08ee6566",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "01ed00fd-e36a-480d-ab73-d80aaab6cb65",
         "targetId": "03bb23e7-bb86-4574-8e13-1b46baece17c",
         "targetName": "트래블러스 체크카드",
@@ -16029,16 +16029,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 944,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1509,
         "errorMessage": null,
-        "comparedCheckId": "8f0d806c-2c01-42e4-a636-a741648e5fae",
-        "comparedAt": "2026-11-04T06:03:25.655Z",
+        "comparedCheckId": "1061504f-ffd0-4b1e-866a-3f7b47c2c7bb",
+        "comparedAt": "2026-11-05T06:30:35.101Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -16049,11 +16049,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:35.101Z"
+        "createdAt": "2026-11-06T06:25:36.822Z"
       },
       "lastSuccessful": {
-        "checkId": "1061504f-ffd0-4b1e-866a-3f7b47c2c7bb",
-        "createdAt": "2026-11-05T06:30:35.101Z",
+        "checkId": "ab38753f-2fb2-4cc2-b009-585d08ee6566",
+        "createdAt": "2026-11-06T06:25:36.822Z",
         "hash": "28fef17a7a7c910a6531352f9ae4a2704ff528ef9fdac4d71e00efdcb5e231d5",
         "tokens": [
           {
@@ -31319,8 +31319,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:34.923Z",
       "latest": {
-        "id": "93bf449e-1b3f-44c7-b37a-081bef2a00db",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "637cd8a0-6b61-4b68-8ab7-a3ecf376febb",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "db9539a0-6221-4363-9eb5-708ca00e4f35",
         "targetId": "03bb23e7-bb86-4574-8e13-1b46baece17c",
         "targetName": "트래블러스 체크카드",
@@ -31338,16 +31338,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 424,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1394,
         "errorMessage": null,
-        "comparedCheckId": "d9180b35-0c5a-4d12-ab46-8be6b0727845",
-        "comparedAt": "2026-11-04T06:03:25.252Z",
+        "comparedCheckId": "93bf449e-1b3f-44c7-b37a-081bef2a00db",
+        "comparedAt": "2026-11-05T06:30:34.923Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 3,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"카드유형 선택\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"일반 카드\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -31358,11 +31358,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:34.923Z"
+        "createdAt": "2026-11-06T06:25:37.065Z"
       },
       "lastSuccessful": {
-        "checkId": "93bf449e-1b3f-44c7-b37a-081bef2a00db",
-        "createdAt": "2026-11-05T06:30:34.923Z",
+        "checkId": "637cd8a0-6b61-4b68-8ab7-a3ecf376febb",
+        "createdAt": "2026-11-06T06:25:37.065Z",
         "hash": "df52e5cf564ec77024d813daa9bff5c16e7b8d2b9165f6a17b937d0bc994eceb",
         "tokens": [
           {
@@ -33221,10 +33221,10 @@
     "8fbc38b1-9e91-48b5-b48c-6a8b52dea42c": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-11-05T06:30:32.702Z",
+      "lastChangedAt": "2026-11-06T06:25:34.039Z",
       "latest": {
-        "id": "d3ab8a56-b2b3-4a95-b169-86d43cd7420d",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "e5b09837-a9cb-46e6-a34b-18ea0f0a4ef9",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "8fbc38b1-9e91-48b5-b48c-6a8b52dea42c",
         "targetId": "11160efa-eca7-4b83-a8db-13cea9e8e74e",
         "targetName": "HERITAGE Classic(할인형)",
@@ -33243,15 +33243,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 1480,
+        "responseMs": 2167,
         "errorMessage": null,
-        "comparedCheckId": "4cb6e0f6-5261-4d9f-ab0c-9d10f41b2de6",
-        "comparedAt": "2026-11-04T06:03:23.195Z",
+        "comparedCheckId": "d3ab8a56-b2b3-4a95-b169-86d43cd7420d",
+        "comparedAt": "2026-11-05T06:30:32.702Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyAddedCount": 5,
+        "bodyRemovedCount": 5,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"내게 맞는 카드 찾기\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"내게 맞는 카드 찾기\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"맞춤카드\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"맞춤카드\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -33262,12 +33262,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:32.702Z"
+        "createdAt": "2026-11-06T06:25:34.039Z"
       },
       "lastSuccessful": {
-        "checkId": "d3ab8a56-b2b3-4a95-b169-86d43cd7420d",
-        "createdAt": "2026-11-05T06:30:32.702Z",
-        "hash": "78544e5943ea34de0c81ffb9ec6c382dccc136e8985f5ea8b31574a55313fee4",
+        "checkId": "e5b09837-a9cb-46e6-a34b-18ea0f0a4ef9",
+        "createdAt": "2026-11-06T06:25:34.039Z",
+        "hash": "d3315064b1eac52e699901ff1251531ca6643399d0fa4b2533da69e910b1a801",
         "tokens": [
           {
             "kind": "title",
@@ -35287,7 +35287,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "맞춤카드"
+            "value": "내게 맞는 카드 찾기"
           },
           {
             "kind": "text",
@@ -36787,7 +36787,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "맞춤카드"
+            "value": "내게 맞는 카드 찾기"
           },
           {
             "kind": "text",
@@ -43636,12 +43636,12 @@
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
@@ -45411,7 +45411,7 @@
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
@@ -47937,8 +47937,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:32.199Z",
       "latest": {
-        "id": "3259b8d9-4baf-4c9e-9cf1-aa018a118cdc",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "048b41e2-51fb-460e-9722-f4c34ad37f1b",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "3a605dd0-af28-4d8f-a524-841baf470b44",
         "targetId": "11160efa-eca7-4b83-a8db-13cea9e8e74e",
         "targetName": "HERITAGE Classic(할인형)",
@@ -47956,16 +47956,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 661,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 555,
         "errorMessage": null,
-        "comparedCheckId": "735200db-e37d-44ec-b9a6-1d9c0b360044",
-        "comparedAt": "2026-11-04T06:03:23.559Z",
+        "comparedCheckId": "3259b8d9-4baf-4c9e-9cf1-aa018a118cdc",
+        "comparedAt": "2026-11-05T06:30:32.199Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 3,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"카드유형 선택\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"일반 카드\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -47976,11 +47976,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:32.199Z"
+        "createdAt": "2026-11-06T06:25:33.622Z"
       },
       "lastSuccessful": {
-        "checkId": "3259b8d9-4baf-4c9e-9cf1-aa018a118cdc",
-        "createdAt": "2026-11-05T06:30:32.199Z",
+        "checkId": "048b41e2-51fb-460e-9722-f4c34ad37f1b",
+        "createdAt": "2026-11-06T06:25:33.622Z",
         "hash": "b62ec815451a2cce1ba33da88e54c789f5b01a073098f25268c13fd8d756176b",
         "tokens": [
           {
@@ -49811,8 +49811,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "a658c887-1e2f-4628-a2c5-9ac4a117b72e",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "22182f71-1b03-420a-a729-42c2799b3d9a",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "eb3ccb9d-1f8c-4db8-9ee9-55712c3dc236",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -49831,7 +49831,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 292,
+        "responseMs": 274,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -49850,7 +49850,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-05T06:30:32.858Z"
+        "createdAt": "2026-11-06T06:25:34.041Z"
       },
       "lastSuccessful": null
     },
@@ -49859,8 +49859,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:33.378Z",
       "latest": {
-        "id": "62ee4fe6-5faa-4b4f-90f3-6c703c3bd535",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "e5ffdcbe-1a27-4396-b973-7378669627be",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "19d614e270d3eff5121073206cce5ab8",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -49878,16 +49878,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 560,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 953,
         "errorMessage": null,
-        "comparedCheckId": "9a0dba76-343f-4074-a919-ef9d9912705b",
-        "comparedAt": "2026-11-04T06:03:23.926Z",
+        "comparedCheckId": "62ee4fe6-5faa-4b4f-90f3-6c703c3bd535",
+        "comparedAt": "2026-11-05T06:30:33.378Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -49898,11 +49898,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:33.378Z"
+        "createdAt": "2026-11-06T06:25:35.146Z"
       },
       "lastSuccessful": {
-        "checkId": "62ee4fe6-5faa-4b4f-90f3-6c703c3bd535",
-        "createdAt": "2026-11-05T06:30:33.378Z",
+        "checkId": "e5ffdcbe-1a27-4396-b973-7378669627be",
+        "createdAt": "2026-11-06T06:25:35.146Z",
         "hash": "b3c7141c3ceb1e003e6150ba14e38bfb2427708ee2297854f5441fe03996eb08",
         "tokens": [
           {
@@ -64548,8 +64548,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "c419807e-60dd-4d8a-9c02-c1d7c05c73f6",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "fb33320c-205b-451e-baa9-f29fc6a79ddf",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "52619742-f91b-43b9-8ef3-8cb08631642e",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -64568,7 +64568,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 568,
+        "responseMs": 190,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -64587,7 +64587,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-05T06:30:33.425Z"
+        "createdAt": "2026-11-06T06:25:34.232Z"
       },
       "lastSuccessful": null
     },
@@ -64596,8 +64596,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:33.865Z",
       "latest": {
-        "id": "ecb82c27-7d79-46d4-ba6c-a41af7e9e2e0",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "0cef4fc8-d7f7-4007-a615-b690f3779d8a",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "374ae896ab07fb4b7c98af6100c41f92",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -64615,16 +64615,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 981,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 508,
         "errorMessage": null,
-        "comparedCheckId": "b6594c44-e8aa-4baa-9e63-c97a11ae8eb8",
-        "comparedAt": "2026-11-04T06:03:24.663Z",
+        "comparedCheckId": "ecb82c27-7d79-46d4-ba6c-a41af7e9e2e0",
+        "comparedAt": "2026-11-05T06:30:33.865Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 3,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"카드유형 선택\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"일반 카드\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -64635,11 +64635,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:33.865Z"
+        "createdAt": "2026-11-06T06:25:34.707Z"
       },
       "lastSuccessful": {
-        "checkId": "ecb82c27-7d79-46d4-ba6c-a41af7e9e2e0",
-        "createdAt": "2026-11-05T06:30:33.865Z",
+        "checkId": "0cef4fc8-d7f7-4007-a615-b690f3779d8a",
+        "createdAt": "2026-11-06T06:25:34.707Z",
         "hash": "18d132da3b6504144fbf2b0be1e5e2da3c8db739b90b32db2c96c8a44f5ae1b6",
         "tokens": [
           {
@@ -66318,10 +66318,10 @@
     "51572952-d474-4b43-9b5b-4e00ccf2a9ba": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-30T05:34:53.613Z",
+      "lastChangedAt": "2026-11-06T06:25:28.876Z",
       "latest": {
-        "id": "61f2c19d-95ad-4d51-b6dc-709b89041e03",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "7e820d7c-d3ee-45dd-8bcc-e0222e93f3e6",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "51572952-d474-4b43-9b5b-4e00ccf2a9ba",
         "targetId": "2fb8b880-93e1-4958-b06b-0e4c1919ec75",
         "targetName": "NEED Edu카드",
@@ -66339,16 +66339,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 683,
+        "changeStatus": "CHANGED",
+        "responseMs": 1146,
         "errorMessage": null,
-        "comparedCheckId": "3cce3b0d-8b57-4b66-9015-e17788d6ab00",
-        "comparedAt": "2026-11-04T06:03:18.854Z",
+        "comparedCheckId": "61f2c19d-95ad-4d51-b6dc-709b89041e03",
+        "comparedAt": "2026-11-05T06:30:27.421Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 1,
+        "bodyRemovedCount": 1,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"학원업종 할인 특화 혜택\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"학원업종 최대 3만원 할인\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -66359,12 +66359,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:27.421Z"
+        "createdAt": "2026-11-06T06:25:28.876Z"
       },
       "lastSuccessful": {
-        "checkId": "61f2c19d-95ad-4d51-b6dc-709b89041e03",
-        "createdAt": "2026-11-05T06:30:27.421Z",
-        "hash": "30a0057f5000c2f690fa6837321b19d7efb5d4279e62dd045e5b64818dd1477c",
+        "checkId": "7e820d7c-d3ee-45dd-8bcc-e0222e93f3e6",
+        "createdAt": "2026-11-06T06:25:28.876Z",
+        "hash": "8c9c0af9941e8e8462b88eddba7b718eeff89fff61956e0f7b3d5d278349cd92",
         "tokens": [
           {
             "kind": "title",
@@ -71714,7 +71714,7 @@
           {
             "kind": "text",
             "key": "p",
-            "value": "학원업종 최대 3만원 할인"
+            "value": "학원업종 할인 특화 혜택"
           },
           {
             "kind": "text",
@@ -79859,8 +79859,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-03T06:34:22.699Z",
       "latest": {
-        "id": "7b967781-a8a3-4feb-a2a3-d4449e37a1fb",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "ba7a60a9-4779-41fe-bc50-f5aa3dfea2d5",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "83cb96fd-4bfc-4f6a-9dfb-9833b941448e",
         "targetId": "2fb8b880-93e1-4958-b06b-0e4c1919ec75",
         "targetName": "NEED Edu카드",
@@ -79879,10 +79879,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1008,
+        "responseMs": 600,
         "errorMessage": null,
-        "comparedCheckId": "67759b7a-b6f8-49fa-8a33-9fadda6dd847",
-        "comparedAt": "2026-11-04T06:03:18.370Z",
+        "comparedCheckId": "7b967781-a8a3-4feb-a2a3-d4449e37a1fb",
+        "comparedAt": "2026-11-05T06:30:28.205Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -79898,11 +79898,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:28.205Z"
+        "createdAt": "2026-11-06T06:25:28.380Z"
       },
       "lastSuccessful": {
-        "checkId": "7b967781-a8a3-4feb-a2a3-d4449e37a1fb",
-        "createdAt": "2026-11-05T06:30:28.205Z",
+        "checkId": "ba7a60a9-4779-41fe-bc50-f5aa3dfea2d5",
+        "createdAt": "2026-11-06T06:25:28.380Z",
         "hash": "0166d00e487bd5a9b47ad1bc664b445352f317fea52f3103797db030c07bc8dd",
         "tokens": [
           {
@@ -81761,10 +81761,10 @@
     "70e8f0ed-244e-480d-b5de-ce9e698c2652": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-11-05T06:30:29.884Z",
+      "lastChangedAt": "2026-11-06T06:25:31.497Z",
       "latest": {
-        "id": "ce9265af-1cdb-482c-90e5-46bd36e6d28b",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "8ecdf52c-655a-4511-8e5b-ffed6e4e1336",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "70e8f0ed-244e-480d-b5de-ce9e698c2652",
         "targetId": "6bf242ce-9823-4510-bb63-e9bd0c5ee0ba",
         "targetName": "My WE:SH 카드",
@@ -81783,15 +81783,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 813,
+        "responseMs": 1652,
         "errorMessage": null,
-        "comparedCheckId": "4bf8920d-d879-4017-ac44-5d25e0470cb3",
-        "comparedAt": "2026-11-04T06:03:20.649Z",
+        "comparedCheckId": "ce9265af-1cdb-482c-90e5-46bd36e6d28b",
+        "comparedAt": "2026-11-05T06:30:29.884Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyAddedCount": 5,
+        "bodyRemovedCount": 5,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"내게 맞는 카드 찾기\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"내게 맞는 카드 찾기\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"맞춤카드\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"맞춤카드\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -81802,12 +81802,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:29.884Z"
+        "createdAt": "2026-11-06T06:25:31.497Z"
       },
       "lastSuccessful": {
-        "checkId": "ce9265af-1cdb-482c-90e5-46bd36e6d28b",
-        "createdAt": "2026-11-05T06:30:29.884Z",
-        "hash": "3f3dae615069848d4b147856753c46a2f6368cf0a94321a8748f4d86a90d8344",
+        "checkId": "8ecdf52c-655a-4511-8e5b-ffed6e4e1336",
+        "createdAt": "2026-11-06T06:25:31.497Z",
+        "hash": "db1356ec758fef185dbe9e5c590b32ccca87281e6ef4cf896abd52a413feff41",
         "tokens": [
           {
             "kind": "title",
@@ -83827,7 +83827,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "맞춤카드"
+            "value": "내게 맞는 카드 찾기"
           },
           {
             "kind": "text",
@@ -85327,7 +85327,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "맞춤카드"
+            "value": "내게 맞는 카드 찾기"
           },
           {
             "kind": "text",
@@ -91531,12 +91531,12 @@
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
@@ -93306,7 +93306,7 @@
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
@@ -95782,8 +95782,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:30.434Z",
       "latest": {
-        "id": "4a83efce-a4af-4b3f-a0fd-02363c7ce158",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "536e960b-5a13-4ec7-ab2d-5d766ddfd3bc",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "8ebd43ae-830a-4ea9-89a8-db087f92b159",
         "targetId": "6bf242ce-9823-4510-bb63-e9bd0c5ee0ba",
         "targetName": "My WE:SH 카드",
@@ -95801,16 +95801,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 1005,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 565,
         "errorMessage": null,
-        "comparedCheckId": "eee66bb6-59bd-466c-8182-11640c97693f",
-        "comparedAt": "2026-11-04T06:03:20.423Z",
+        "comparedCheckId": "4a83efce-a4af-4b3f-a0fd-02363c7ce158",
+        "comparedAt": "2026-11-05T06:30:30.434Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 1,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -95821,11 +95821,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:30.434Z"
+        "createdAt": "2026-11-06T06:25:30.702Z"
       },
       "lastSuccessful": {
-        "checkId": "4a83efce-a4af-4b3f-a0fd-02363c7ce158",
-        "createdAt": "2026-11-05T06:30:30.434Z",
+        "checkId": "536e960b-5a13-4ec7-ab2d-5d766ddfd3bc",
+        "createdAt": "2026-11-06T06:25:30.702Z",
         "hash": "5016e8d78009af288c8a9867979af44b6fe87a766307ac3cda921aaf4a2cd117",
         "tokens": [
           {
@@ -97701,8 +97701,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:24.473Z",
       "latest": {
-        "id": "9dd3566b-a5c0-4aee-8495-3131e91b7351",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "ca8d520a-a40d-45a9-b756-e247454538d1",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "64453981-5ab0-4e5f-ad30-9e8f9102413d",
         "targetId": "6c97d1ef-282c-421a-a4e8-2094a212838e",
         "targetName": "ALL point 카드",
@@ -97720,16 +97720,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 1751,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1230,
         "errorMessage": null,
-        "comparedCheckId": "fa3c8013-c7a2-4d11-a07a-e774381be02b",
-        "comparedAt": "2026-11-04T06:03:15.551Z",
+        "comparedCheckId": "9dd3566b-a5c0-4aee-8495-3131e91b7351",
+        "comparedAt": "2026-11-05T06:30:24.473Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -97740,11 +97740,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:24.473Z"
+        "createdAt": "2026-11-06T06:25:25.994Z"
       },
       "lastSuccessful": {
-        "checkId": "9dd3566b-a5c0-4aee-8495-3131e91b7351",
-        "createdAt": "2026-11-05T06:30:24.473Z",
+        "checkId": "ca8d520a-a40d-45a9-b756-e247454538d1",
+        "createdAt": "2026-11-06T06:25:25.994Z",
         "hash": "7c982fdb6fee35a93ad38814c96bd4982de139fa4d75efd609bd766da0e19dc6",
         "tokens": [
           {
@@ -111565,8 +111565,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:24.669Z",
       "latest": {
-        "id": "c96ced47-60cf-4abe-b683-8668c6534e3a",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "103681ed-d7af-4e80-ad75-14b92655a67c",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "1c5ac6ba-dd55-4713-af80-eda4dac245f7",
         "targetId": "6c97d1ef-282c-421a-a4e8-2094a212838e",
         "targetName": "ALL point 카드",
@@ -111584,16 +111584,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 2152,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1415,
         "errorMessage": null,
-        "comparedCheckId": "6fa47a74-724d-486c-aad7-029d45250dde",
-        "comparedAt": "2026-11-04T06:03:15.920Z",
+        "comparedCheckId": "c96ced47-60cf-4abe-b683-8668c6534e3a",
+        "comparedAt": "2026-11-05T06:30:24.669Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 1,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -111604,11 +111604,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:24.669Z"
+        "createdAt": "2026-11-06T06:25:26.062Z"
       },
       "lastSuccessful": {
-        "checkId": "c96ced47-60cf-4abe-b683-8668c6534e3a",
-        "createdAt": "2026-11-05T06:30:24.669Z",
+        "checkId": "103681ed-d7af-4e80-ad75-14b92655a67c",
+        "createdAt": "2026-11-06T06:25:26.062Z",
         "hash": "3ced59bbd8e8cae9bd1ee633b3bdcb1d96c50134adf45562ada4386302933854",
         "tokens": [
           {
@@ -113504,8 +113504,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "e27db80c-16b7-48e0-a9e5-07cf4d1015df",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "2ff8aca1-5dc3-4a4e-8df4-82d73149a29d",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "de405dc7-0a5c-4d1e-9d93-1028db2686c8",
         "targetId": "763c388b-d1bd-4949-9a3f-4fbabe4d3c37",
         "targetName": "서비스",
@@ -113524,7 +113524,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 631,
+        "responseMs": 188,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -113543,17 +113543,17 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-05T06:30:35.554Z"
+        "createdAt": "2026-11-06T06:25:37.010Z"
       },
       "lastSuccessful": null
     },
     "ccd04d1d7fbc346be2a4dd4dd93069c1": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-10-30T05:35:02.449Z",
+      "lastChangedAt": "2026-11-06T06:25:38.373Z",
       "latest": {
-        "id": "264fd527-2f23-42e6-bacd-dcf1e43075ee",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "5b8828b6-3cfb-4731-ad44-58ce1bbe5f4a",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "ccd04d1d7fbc346be2a4dd4dd93069c1",
         "targetId": "763c388b-d1bd-4949-9a3f-4fbabe4d3c37",
         "targetName": "서비스",
@@ -113571,16 +113571,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 363,
+        "changeStatus": "CHANGED",
+        "responseMs": 1334,
         "errorMessage": null,
-        "comparedCheckId": "e88af69b-9df9-4607-9576-b821c051dd3a",
-        "comparedAt": "2026-11-04T06:03:27.016Z",
+        "comparedCheckId": "264fd527-2f23-42e6-bacd-dcf1e43075ee",
+        "comparedAt": "2026-11-05T06:30:35.552Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 5,
+        "bodyRemovedCount": 5,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"내게 맞는 카드 찾기\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"내게 맞는 카드 찾기\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"맞춤카드\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"맞춤카드\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -113591,12 +113591,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:35.552Z"
+        "createdAt": "2026-11-06T06:25:38.373Z"
       },
       "lastSuccessful": {
-        "checkId": "264fd527-2f23-42e6-bacd-dcf1e43075ee",
-        "createdAt": "2026-11-05T06:30:35.552Z",
-        "hash": "081408e0f03a903a95f616d94760c9824bfb695d31e96f1efdf1605dad999a70",
+        "checkId": "5b8828b6-3cfb-4731-ad44-58ce1bbe5f4a",
+        "createdAt": "2026-11-06T06:25:38.373Z",
+        "hash": "0762141d9025161029e9b7a43ecaf652815b12ee7182c00c9dd38ac82cc5ee3e",
         "tokens": [
           {
             "kind": "title",
@@ -115596,7 +115596,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "맞춤카드"
+            "value": "내게 맞는 카드 찾기"
           },
           {
             "kind": "text",
@@ -117096,7 +117096,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "맞춤카드"
+            "value": "내게 맞는 카드 찾기"
           },
           {
             "kind": "text",
@@ -121835,12 +121835,12 @@
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
@@ -123610,7 +123610,7 @@
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
@@ -125806,8 +125806,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "d9918e5d-158d-432a-970e-3bebea3cde1c",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "a2e2baad-94a9-4de5-a82e-25be0b9f7aa7",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "45b57bad17f4bbfdb5cc5db4399d6aff",
         "targetId": "855f0b69537a077bfaa438388fac9a6e",
         "targetName": "이벤트 10월",
@@ -125818,54 +125818,6 @@
         "retiredAt": null,
         "requestedUrl": "https://card.kbcard.com/benefits/events/ongoing/kb-new-card-annual-fee-cashback-2026-10",
         "finalUrl": "https://card.kbcard.com/benefits/events/ongoing/kb-new-card-annual-fee-cashback-2026-10",
-        "httpStatus": 404,
-        "availabilityStatus": "PENDING",
-        "liveStatus": "BEFORE_LIVE",
-        "headLiveMarkerFound": null,
-        "bodyLiveMarkerFound": null,
-        "headLiveMarkerHtml": null,
-        "bodyLiveMarkerHtml": null,
-        "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 565,
-        "errorMessage": null,
-        "comparedCheckId": null,
-        "comparedAt": null,
-        "headAddedCount": 0,
-        "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
-        "ruleResults": [
-          {
-            "ruleType": "HTTP_STATUS",
-            "ruleLabel": "HTTP 200",
-            "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
-            "status": "SKIPPED",
-            "actualValue": null,
-            "message": "페이지 오픈 대기 중입니다."
-          }
-        ],
-        "createdAt": "2026-11-05T06:30:36.117Z"
-      },
-      "lastSuccessful": null
-    },
-    "b7f29a5a39ab16895d268b8da1abe58b": {
-      "launchedAt": null,
-      "liveCompletedAt": null,
-      "lastChangedAt": null,
-      "latest": {
-        "id": "eae142a8-2eaa-4d64-a479-3061c85d408a",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
-        "endpointId": "b7f29a5a39ab16895d268b8da1abe58b",
-        "targetId": "855f0b69537a077bfaa438388fac9a6e",
-        "targetName": "이벤트 10월",
-        "category": "이벤트",
-        "displayOrder": 24,
-        "platform": "MOBILE",
-        "url": "https://m.kbcard.com/benefits/events/kb-new-card-annual-fee-cashback-2026-10",
-        "retiredAt": null,
-        "requestedUrl": "https://m.kbcard.com/benefits/events/kb-new-card-annual-fee-cashback-2026-10",
-        "finalUrl": "https://m.kbcard.com/benefits/events/kb-new-card-annual-fee-cashback-2026-10",
         "httpStatus": 404,
         "availabilityStatus": "PENDING",
         "liveStatus": "BEFORE_LIVE",
@@ -125893,7 +125845,55 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-05T06:30:35.753Z"
+        "createdAt": "2026-11-06T06:25:37.408Z"
+      },
+      "lastSuccessful": null
+    },
+    "b7f29a5a39ab16895d268b8da1abe58b": {
+      "launchedAt": null,
+      "liveCompletedAt": null,
+      "lastChangedAt": null,
+      "latest": {
+        "id": "efb61382-0c1f-41bf-b5ed-b81cafd9a5f1",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
+        "endpointId": "b7f29a5a39ab16895d268b8da1abe58b",
+        "targetId": "855f0b69537a077bfaa438388fac9a6e",
+        "targetName": "이벤트 10월",
+        "category": "이벤트",
+        "displayOrder": 24,
+        "platform": "MOBILE",
+        "url": "https://m.kbcard.com/benefits/events/kb-new-card-annual-fee-cashback-2026-10",
+        "retiredAt": null,
+        "requestedUrl": "https://m.kbcard.com/benefits/events/kb-new-card-annual-fee-cashback-2026-10",
+        "finalUrl": "https://m.kbcard.com/benefits/events/kb-new-card-annual-fee-cashback-2026-10",
+        "httpStatus": 404,
+        "availabilityStatus": "PENDING",
+        "liveStatus": "BEFORE_LIVE",
+        "headLiveMarkerFound": null,
+        "bodyLiveMarkerFound": null,
+        "headLiveMarkerHtml": null,
+        "bodyLiveMarkerHtml": null,
+        "changeStatus": "NOT_APPLICABLE",
+        "responseMs": 187,
+        "errorMessage": null,
+        "comparedCheckId": null,
+        "comparedAt": null,
+        "headAddedCount": 0,
+        "headRemovedCount": 0,
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
+        "ruleResults": [
+          {
+            "ruleType": "HTTP_STATUS",
+            "ruleLabel": "HTTP 200",
+            "configJson": "{\"type\":\"HTTP_STATUS\",\"selector\":null,\"attribute\":null,\"expectedValue\":null,\"expectedStatuses\":\"[200]\"}",
+            "status": "SKIPPED",
+            "actualValue": null,
+            "message": "페이지 오픈 대기 중입니다."
+          }
+        ],
+        "createdAt": "2026-11-06T06:25:37.443Z"
       },
       "lastSuccessful": null
     },
@@ -125902,8 +125902,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:32.857Z",
       "latest": {
-        "id": "48f43a87-8c09-4b26-9277-cc5156e94935",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "33e1f555-d401-4275-8c58-3cc2ad968440",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "1bdbffb4-b7ee-441d-acbb-c11aa778a231",
         "targetId": "a21ecf12-1a64-40d4-855d-b6f1b81a8ba8",
         "targetName": "HERITAGE Classic(스카이패스형)",
@@ -125921,16 +125921,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 829,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 834,
         "errorMessage": null,
-        "comparedCheckId": "bfac3a12-414b-4260-b37b-1e19fa83a980",
-        "comparedAt": "2026-11-04T06:03:23.489Z",
+        "comparedCheckId": "48f43a87-8c09-4b26-9277-cc5156e94935",
+        "comparedAt": "2026-11-05T06:30:32.857Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -125941,11 +125941,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:32.857Z"
+        "createdAt": "2026-11-06T06:25:34.171Z"
       },
       "lastSuccessful": {
-        "checkId": "48f43a87-8c09-4b26-9277-cc5156e94935",
-        "createdAt": "2026-11-05T06:30:32.857Z",
+        "checkId": "33e1f555-d401-4275-8c58-3cc2ad968440",
+        "createdAt": "2026-11-06T06:25:34.171Z",
         "hash": "67519ce8d8c161764b9ce85249d8c847ee4cef077319333b83f7cc163f2d4986",
         "tokens": [
           {
@@ -140761,8 +140761,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:33.708Z",
       "latest": {
-        "id": "1e1ce9b5-b7fa-4ca1-9543-d57ab2ca09b3",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "805455ed-862c-45fb-8fdb-871b854422a3",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "78383cd1-8504-4fd8-b0b4-4fbc3635b01e",
         "targetId": "a21ecf12-1a64-40d4-855d-b6f1b81a8ba8",
         "targetName": "HERITAGE Classic(스카이패스형)",
@@ -140780,16 +140780,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 1478,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 552,
         "errorMessage": null,
-        "comparedCheckId": "9b5192d6-7d1b-4345-abfb-8a96c6043b47",
-        "comparedAt": "2026-11-04T06:03:23.529Z",
+        "comparedCheckId": "1e1ce9b5-b7fa-4ca1-9543-d57ab2ca09b3",
+        "comparedAt": "2026-11-05T06:30:33.708Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 3,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"카드유형 선택\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"일반 카드\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -140800,11 +140800,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:33.708Z"
+        "createdAt": "2026-11-06T06:25:34.216Z"
       },
       "lastSuccessful": {
-        "checkId": "1e1ce9b5-b7fa-4ca1-9543-d57ab2ca09b3",
-        "createdAt": "2026-11-05T06:30:33.708Z",
+        "checkId": "805455ed-862c-45fb-8fdb-871b854422a3",
+        "createdAt": "2026-11-06T06:25:34.216Z",
         "hash": "57f2e321f12e19fcf94ed2bfa30f5e0ea5d49d25d8d527d3bb040eb579c1569d",
         "tokens": [
           {
@@ -142655,8 +142655,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:26.131Z",
       "latest": {
-        "id": "20d0405e-20a2-4576-b1e4-7467733bb536",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "100e2eca-3d34-4a50-8f27-c3c4c60a22c3",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "1a874d68-15d0-4e4c-bd29-6ebecf90e52a",
         "targetId": "a710c22f-7ed7-4f06-9334-abdfff7788ee",
         "targetName": "YOU Prime 카드",
@@ -142674,16 +142674,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 1544,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1808,
         "errorMessage": null,
-        "comparedCheckId": "986bb355-4b55-4c9e-9a93-47ad113a2f30",
-        "comparedAt": "2026-11-04T06:03:16.675Z",
+        "comparedCheckId": "20d0405e-20a2-4576-b1e4-7467733bb536",
+        "comparedAt": "2026-11-05T06:30:26.131Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -142694,11 +142694,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:26.131Z"
+        "createdAt": "2026-11-06T06:25:27.746Z"
       },
       "lastSuccessful": {
-        "checkId": "20d0405e-20a2-4576-b1e4-7467733bb536",
-        "createdAt": "2026-11-05T06:30:26.131Z",
+        "checkId": "100e2eca-3d34-4a50-8f27-c3c4c60a22c3",
+        "createdAt": "2026-11-06T06:25:27.746Z",
         "hash": "c5ed2758ec81cf314e2167d00c46a44a5602dc3ce2f5c5db943a4a1b5d106718",
         "tokens": [
           {
@@ -157724,8 +157724,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:25.268Z",
       "latest": {
-        "id": "acc49aab-9839-4a75-8b2d-68f9d78280f1",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "ffc31e11-e0ee-4ac9-b670-b91707969832",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "ff46ae32-0a90-4beb-b8e0-4debf4b3b397",
         "targetId": "a710c22f-7ed7-4f06-9334-abdfff7788ee",
         "targetName": "YOU Prime 카드",
@@ -157743,16 +157743,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 678,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1564,
         "errorMessage": null,
-        "comparedCheckId": "7116086b-4755-4e98-a486-8fb01e9946c7",
-        "comparedAt": "2026-11-04T06:03:17.003Z",
+        "comparedCheckId": "acc49aab-9839-4a75-8b2d-68f9d78280f1",
+        "comparedAt": "2026-11-05T06:30:25.268Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 1,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -157763,11 +157763,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:25.268Z"
+        "createdAt": "2026-11-06T06:25:27.606Z"
       },
       "lastSuccessful": {
-        "checkId": "acc49aab-9839-4a75-8b2d-68f9d78280f1",
-        "createdAt": "2026-11-05T06:30:25.268Z",
+        "checkId": "ffc31e11-e0ee-4ac9-b670-b91707969832",
+        "createdAt": "2026-11-06T06:25:27.606Z",
         "hash": "80ebb1f21e3c002f480831f67ed1d2b888efdc0d6571a2c4486382c617e3c00a",
         "tokens": [
           {
@@ -159741,10 +159741,10 @@
     "eb730105-e4a1-4995-b8bc-5f685b2ba79b": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-11-05T06:30:28.954Z",
+      "lastChangedAt": "2026-11-06T06:25:30.670Z",
       "latest": {
-        "id": "61bc66b6-9994-4122-9d46-390d858170de",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "fac11add-c757-474c-9e74-a043d5b25e72",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "eb730105-e4a1-4995-b8bc-5f685b2ba79b",
         "targetId": "ab9fa5b9-3ed4-417d-b62a-b5ec7862e32f",
         "targetName": "WE:SH Travel",
@@ -159763,15 +159763,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 504,
+        "responseMs": 968,
         "errorMessage": null,
-        "comparedCheckId": "cae6b73c-b638-4dd5-b98d-322a63dfa4f9",
-        "comparedAt": "2026-11-04T06:03:20.765Z",
+        "comparedCheckId": "61bc66b6-9994-4122-9d46-390d858170de",
+        "comparedAt": "2026-11-05T06:30:28.954Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyAddedCount": 5,
+        "bodyRemovedCount": 5,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"내게 맞는 카드 찾기\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"내게 맞는 카드 찾기\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"맞춤카드\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"맞춤카드\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -159782,12 +159782,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:28.954Z"
+        "createdAt": "2026-11-06T06:25:30.670Z"
       },
       "lastSuccessful": {
-        "checkId": "61bc66b6-9994-4122-9d46-390d858170de",
-        "createdAt": "2026-11-05T06:30:28.954Z",
-        "hash": "6e28f454419bbb67998b837e4d5094aa8656ca2d8b6bb648ab9a24f7eac9498c",
+        "checkId": "fac11add-c757-474c-9e74-a043d5b25e72",
+        "createdAt": "2026-11-06T06:25:30.670Z",
+        "hash": "fdd176b37cb6bf2e290abd8d086471b083a920ce4ac305f077dc99ee687d5d41",
         "tokens": [
           {
             "kind": "title",
@@ -161807,7 +161807,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "맞춤카드"
+            "value": "내게 맞는 카드 찾기"
           },
           {
             "kind": "text",
@@ -163307,7 +163307,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "맞춤카드"
+            "value": "내게 맞는 카드 찾기"
           },
           {
             "kind": "text",
@@ -169901,12 +169901,12 @@
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
@@ -171676,7 +171676,7 @@
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
@@ -174172,8 +174172,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:29.915Z",
       "latest": {
-        "id": "69ca11dd-8654-4bb7-9cff-97d044769ca7",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "80d81243-fa14-4eb1-86f4-19bdcb47b4c7",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "119352b3-dbfe-4676-88a9-0e3e64d39abc",
         "targetId": "ab9fa5b9-3ed4-417d-b62a-b5ec7862e32f",
         "targetName": "WE:SH Travel",
@@ -174191,16 +174191,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 1056,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 451,
         "errorMessage": null,
-        "comparedCheckId": "cf644640-7a3b-412d-8b19-5caa059c341f",
-        "comparedAt": "2026-11-04T06:03:19.845Z",
+        "comparedCheckId": "69ca11dd-8654-4bb7-9cff-97d044769ca7",
+        "comparedAt": "2026-11-05T06:30:29.915Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 1,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -174211,11 +174211,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:29.915Z"
+        "createdAt": "2026-11-06T06:25:30.108Z"
       },
       "lastSuccessful": {
-        "checkId": "69ca11dd-8654-4bb7-9cff-97d044769ca7",
-        "createdAt": "2026-11-05T06:30:29.915Z",
+        "checkId": "80d81243-fa14-4eb1-86f4-19bdcb47b4c7",
+        "createdAt": "2026-11-06T06:25:30.108Z",
         "hash": "ccb7990d98b026901a877d93967807ee746a30e5bfdfe1ed09e4f10c928eefd8",
         "tokens": [
           {
@@ -176061,8 +176061,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:27.313Z",
       "latest": {
-        "id": "5b07bb35-abcd-4b09-b316-6788bee91132",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "1b6fac2b-6d6d-46ae-bd4d-0d41ff01f031",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "27f46e5f-feab-4c61-9b17-4e82b91c3b1b",
         "targetId": "aee77a45-fdde-4c1f-a82f-419336a1ab18",
         "targetName": "YOU Wish up 카드",
@@ -176080,16 +176080,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 1176,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 408,
         "errorMessage": null,
-        "comparedCheckId": "33858322-7fb6-4eb3-8a00-72c290de292e",
-        "comparedAt": "2026-11-04T06:03:18.083Z",
+        "comparedCheckId": "5b07bb35-abcd-4b09-b316-6788bee91132",
+        "comparedAt": "2026-11-05T06:30:27.313Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -176100,11 +176100,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:27.313Z"
+        "createdAt": "2026-11-06T06:25:28.051Z"
       },
       "lastSuccessful": {
-        "checkId": "5b07bb35-abcd-4b09-b316-6788bee91132",
-        "createdAt": "2026-11-05T06:30:27.313Z",
+        "checkId": "1b6fac2b-6d6d-46ae-bd4d-0d41ff01f031",
+        "createdAt": "2026-11-06T06:25:28.051Z",
         "hash": "17db22ff970e554c156a843c41ba449ca3ddca169129ae8ae9629b21c381b223",
         "tokens": [
           {
@@ -190505,8 +190505,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:27.168Z",
       "latest": {
-        "id": "5a3cb01a-49f6-4056-910d-d98a681e678a",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "c02b74f3-249c-4d8e-b497-e485070072a1",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "65ae2ae0-6609-42a3-aa4a-6a9d9e620da4",
         "targetId": "aee77a45-fdde-4c1f-a82f-419336a1ab18",
         "targetName": "YOU Wish up 카드",
@@ -190524,16 +190524,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 993,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1020,
         "errorMessage": null,
-        "comparedCheckId": "64a193e2-ed44-4985-b484-bde5a73859d8",
-        "comparedAt": "2026-11-04T06:03:18.177Z",
+        "comparedCheckId": "5a3cb01a-49f6-4056-910d-d98a681e678a",
+        "comparedAt": "2026-11-05T06:30:27.168Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 1,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -190544,11 +190544,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:27.168Z"
+        "createdAt": "2026-11-06T06:25:28.621Z"
       },
       "lastSuccessful": {
-        "checkId": "5a3cb01a-49f6-4056-910d-d98a681e678a",
-        "createdAt": "2026-11-05T06:30:27.168Z",
+        "checkId": "c02b74f3-249c-4d8e-b497-e485070072a1",
+        "createdAt": "2026-11-06T06:25:28.621Z",
         "hash": "23bf057805a684d080bd7b3247a23516d2c702c7371028b046a78c69b335d2b1",
         "tokens": [
           {
@@ -192394,8 +192394,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:30.585Z",
       "latest": {
-        "id": "ab702234-2c23-4fb1-9d6b-21a1a828c732",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "de6c3765-ce15-413c-a062-7f97de73c9eb",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "55e07fac-79e6-4ccb-a6c6-38a1519deae8",
         "targetId": "ba3c273b-bf19-44d9-a4ef-c79f1dac16b9",
         "targetName": "굿데이올림카드",
@@ -192413,16 +192413,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 951,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 981,
         "errorMessage": null,
-        "comparedCheckId": "45b6c7f0-1c8a-4775-aa5f-80995a3a61b3",
-        "comparedAt": "2026-11-04T06:03:21.435Z",
+        "comparedCheckId": "ab702234-2c23-4fb1-9d6b-21a1a828c732",
+        "comparedAt": "2026-11-05T06:30:30.585Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -192433,11 +192433,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:30.585Z"
+        "createdAt": "2026-11-06T06:25:31.643Z"
       },
       "lastSuccessful": {
-        "checkId": "ab702234-2c23-4fb1-9d6b-21a1a828c732",
-        "createdAt": "2026-11-05T06:30:30.585Z",
+        "checkId": "de6c3765-ce15-413c-a062-7f97de73c9eb",
+        "createdAt": "2026-11-06T06:25:31.643Z",
         "hash": "0a479ab9a627118cb340a9225d4ba399d70ddc89b00aa9b635c2482dd9611b40",
         "tokens": [
           {
@@ -206733,8 +206733,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:31.118Z",
       "latest": {
-        "id": "54760c13-7f1f-4f15-bf46-a989df7c6ff4",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "9cdfce10-a765-49b5-9067-365abc284751",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "99506875-e7b5-49a6-aa7d-d9ed9e4cf5ba",
         "targetId": "ba3c273b-bf19-44d9-a4ef-c79f1dac16b9",
         "targetName": "굿데이올림카드",
@@ -206752,16 +206752,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 1190,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1025,
         "errorMessage": null,
-        "comparedCheckId": "28dc17b0-7f58-40f2-9a19-528e6c7131f2",
-        "comparedAt": "2026-11-04T06:03:20.970Z",
+        "comparedCheckId": "54760c13-7f1f-4f15-bf46-a989df7c6ff4",
+        "comparedAt": "2026-11-05T06:30:31.118Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 1,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -206772,11 +206772,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:31.118Z"
+        "createdAt": "2026-11-06T06:25:31.742Z"
       },
       "lastSuccessful": {
-        "checkId": "54760c13-7f1f-4f15-bf46-a989df7c6ff4",
-        "createdAt": "2026-11-05T06:30:31.118Z",
+        "checkId": "9cdfce10-a765-49b5-9067-365abc284751",
+        "createdAt": "2026-11-06T06:25:31.742Z",
         "hash": "e7668c31e0cfe2f27bc1a788aa32e35e5c1de45000f4ba9d10e83eb22f2dd228",
         "tokens": [
           {
@@ -209040,10 +209040,10 @@
     "a1c82600-76ec-46e4-93ef-f8bc6778b034": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-11-05T06:30:28.329Z",
+      "lastChangedAt": "2026-11-06T06:25:29.724Z",
       "latest": {
-        "id": "4fd4940f-4843-4446-a76f-f3290de703ac",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "d66b573d-1c2f-4477-b1de-23eb70faa1fd",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "a1c82600-76ec-46e4-93ef-f8bc6778b034",
         "targetId": "bec4c3be-5c44-4585-a6a3-5fc7ffc3a7b0",
         "targetName": "NEED Global 카드",
@@ -209062,15 +209062,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 913,
+        "responseMs": 1562,
         "errorMessage": null,
-        "comparedCheckId": "a32615f5-b38d-4d75-833b-2208c38796e0",
-        "comparedAt": "2026-11-04T06:03:18.649Z",
+        "comparedCheckId": "4fd4940f-4843-4446-a76f-f3290de703ac",
+        "comparedAt": "2026-11-05T06:30:28.329Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyAddedCount": 5,
+        "bodyRemovedCount": 5,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"내게 맞는 카드 찾기\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"내게 맞는 카드 찾기\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"맞춤카드\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"맞춤카드\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -209081,12 +209081,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:28.329Z"
+        "createdAt": "2026-11-06T06:25:29.724Z"
       },
       "lastSuccessful": {
-        "checkId": "4fd4940f-4843-4446-a76f-f3290de703ac",
-        "createdAt": "2026-11-05T06:30:28.329Z",
-        "hash": "931460c0acfe7be30fac24fce4854cfb86641e1b77930f8b0eea8c53e06be2a5",
+        "checkId": "d66b573d-1c2f-4477-b1de-23eb70faa1fd",
+        "createdAt": "2026-11-06T06:25:29.724Z",
+        "hash": "a7519c8b6dfd37975b9482b0d317511f8afa01e770b5fd9d7815ff8fb0d9dfff",
         "tokens": [
           {
             "kind": "title",
@@ -211106,7 +211106,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "맞춤카드"
+            "value": "내게 맞는 카드 찾기"
           },
           {
             "kind": "text",
@@ -212606,7 +212606,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "맞춤카드"
+            "value": "내게 맞는 카드 찾기"
           },
           {
             "kind": "text",
@@ -218220,12 +218220,12 @@
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
@@ -219995,7 +219995,7 @@
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
@@ -222351,8 +222351,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:29.386Z",
       "latest": {
-        "id": "476bef7f-f245-4f09-90c9-22ae1699fb5f",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "b418af58-80c0-4a11-8677-d90f12c693ed",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "556d6d77-9c95-4b36-9826-ae45ff7b9f6b",
         "targetId": "bec4c3be-5c44-4585-a6a3-5fc7ffc3a7b0",
         "targetName": "NEED Global 카드",
@@ -222370,16 +222370,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 1925,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1185,
         "errorMessage": null,
-        "comparedCheckId": "c8fb0384-b4b7-4551-8024-1e0c73c2b32e",
-        "comparedAt": "2026-11-04T06:03:19.174Z",
+        "comparedCheckId": "476bef7f-f245-4f09-90c9-22ae1699fb5f",
+        "comparedAt": "2026-11-05T06:30:29.386Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 1,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -222390,11 +222390,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:29.386Z"
+        "createdAt": "2026-11-06T06:25:29.610Z"
       },
       "lastSuccessful": {
-        "checkId": "476bef7f-f245-4f09-90c9-22ae1699fb5f",
-        "createdAt": "2026-11-05T06:30:29.386Z",
+        "checkId": "b418af58-80c0-4a11-8677-d90f12c693ed",
+        "createdAt": "2026-11-06T06:25:29.610Z",
         "hash": "7f96f2e5e9b39a67859d0c9b2b75ca873dae61806ec904fb73f6aa10f1e6105e",
         "tokens": [
           {
@@ -224230,8 +224230,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:35:01.840Z",
       "latest": {
-        "id": "191a1c0c-2fd1-4e0b-a2b5-4d5c7984d400",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "b17dad6d-6454-4090-8b1e-dfefa7250b94",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "c79d4215-7632-4f50-b00d-872fc192fe4a",
         "targetId": "c4fe7b59-3b68-47f8-bbde-6c8701458fac",
         "targetName": "노리2 체크카드(KB Pay)",
@@ -224250,10 +224250,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 999,
+        "responseMs": 1811,
         "errorMessage": null,
-        "comparedCheckId": "40b34770-efae-4ce2-abd7-7125d0d99d41",
-        "comparedAt": "2026-11-04T06:03:25.918Z",
+        "comparedCheckId": "191a1c0c-2fd1-4e0b-a2b5-4d5c7984d400",
+        "comparedAt": "2026-11-05T06:30:34.822Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -224269,11 +224269,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:34.822Z"
+        "createdAt": "2026-11-06T06:25:36.632Z"
       },
       "lastSuccessful": {
-        "checkId": "191a1c0c-2fd1-4e0b-a2b5-4d5c7984d400",
-        "createdAt": "2026-11-05T06:30:34.822Z",
+        "checkId": "b17dad6d-6454-4090-8b1e-dfefa7250b94",
+        "createdAt": "2026-11-06T06:25:36.632Z",
         "hash": "c9db9598e3b715bc0226778ffde383084467d37c899004640dd1febfb9f6ad5c",
         "tokens": [
           {
@@ -239289,8 +239289,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-03T06:34:30.770Z",
       "latest": {
-        "id": "3ef1d57b-34ed-45ec-a082-baace69e084b",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "9340e841-373c-4405-bb76-6407602d5ed7",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "3506bde9-c822-4be3-9f30-31809737af94",
         "targetId": "c4fe7b59-3b68-47f8-bbde-6c8701458fac",
         "targetName": "노리2 체크카드(KB Pay)",
@@ -239309,10 +239309,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 959,
+        "responseMs": 453,
         "errorMessage": null,
-        "comparedCheckId": "ea44046b-4d5d-4b55-8f7e-57bb51e7379e",
-        "comparedAt": "2026-11-04T06:03:25.695Z",
+        "comparedCheckId": "3ef1d57b-34ed-45ec-a082-baace69e084b",
+        "comparedAt": "2026-11-05T06:30:34.856Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -239328,11 +239328,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:34.856Z"
+        "createdAt": "2026-11-06T06:25:35.629Z"
       },
       "lastSuccessful": {
-        "checkId": "3ef1d57b-34ed-45ec-a082-baace69e084b",
-        "createdAt": "2026-11-05T06:30:34.856Z",
+        "checkId": "9340e841-373c-4405-bb76-6407602d5ed7",
+        "createdAt": "2026-11-06T06:25:35.629Z",
         "hash": "1b3df9bf3a860ed1882ff906ab3f8378736b925ee22b36cbae9b717c1c88f188",
         "tokens": [
           {
@@ -241033,8 +241033,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "abcec114-d1d3-409a-b2b9-21f65e6bbec7",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "a73facab-519f-411e-b965-4de92d1b32ea",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "d7ed54fd-b471-4d4e-8c66-f9b1778028d7",
         "targetId": "c5d297d9-5523-49eb-9b65-340e00f4c55c",
         "targetName": "이벤트 9월",
@@ -241053,7 +241053,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 199,
+        "responseMs": 198,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -241072,7 +241072,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-05T06:30:35.606Z"
+        "createdAt": "2026-11-06T06:25:37.208Z"
       },
       "lastSuccessful": null
     },
@@ -241081,8 +241081,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "31469243-6855-4a7f-8fc7-2c1dcb732314",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "72b5b510-b40c-4d7c-8cfb-15c08021b91a",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "ae8ab9e4-6784-4ab8-a84e-0fa75525d559",
         "targetId": "c5d297d9-5523-49eb-9b65-340e00f4c55c",
         "targetName": "이벤트 9월",
@@ -241101,7 +241101,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 200,
+        "responseMs": 191,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -241120,17 +241120,17 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-05T06:30:35.662Z"
+        "createdAt": "2026-11-06T06:25:37.256Z"
       },
       "lastSuccessful": null
     },
     "e2bcd9ac-eaa5-4919-abe7-19c890c2d785": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-11-05T06:30:34.466Z",
+      "lastChangedAt": "2026-11-06T06:25:36.266Z",
       "latest": {
-        "id": "b1254bd6-e963-4022-848e-93ee854f35b7",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "9920a85c-1357-4d8d-9f70-07e3c9d177bf",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "e2bcd9ac-eaa5-4919-abe7-19c890c2d785",
         "targetId": "c701fd1a-9015-4daf-9039-b987c990c619",
         "targetName": "Youth Club 체크카드",
@@ -241149,15 +241149,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 956,
+        "responseMs": 1919,
         "errorMessage": null,
-        "comparedCheckId": "0e6e9ed7-021a-4f78-9d3e-884006ccf49c",
-        "comparedAt": "2026-11-04T06:03:24.630Z",
+        "comparedCheckId": "b1254bd6-e963-4022-848e-93ee854f35b7",
+        "comparedAt": "2026-11-05T06:30:34.466Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyAddedCount": 5,
+        "bodyRemovedCount": 5,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"내게 맞는 카드 찾기\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"내게 맞는 카드 찾기\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"맞춤카드\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"맞춤카드\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -241168,12 +241168,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:34.466Z"
+        "createdAt": "2026-11-06T06:25:36.266Z"
       },
       "lastSuccessful": {
-        "checkId": "b1254bd6-e963-4022-848e-93ee854f35b7",
-        "createdAt": "2026-11-05T06:30:34.466Z",
-        "hash": "93e3c71f2509deab48228b3c50dcc4b78920ef2f4517230fc3f307d6cf840690",
+        "checkId": "9920a85c-1357-4d8d-9f70-07e3c9d177bf",
+        "createdAt": "2026-11-06T06:25:36.266Z",
+        "hash": "ca5b83877b0997853055053ff9e5d334dafc253bba1dea47c431a8a28d2b016a",
         "tokens": [
           {
             "kind": "title",
@@ -243193,7 +243193,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "맞춤카드"
+            "value": "내게 맞는 카드 찾기"
           },
           {
             "kind": "text",
@@ -244693,7 +244693,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "맞춤카드"
+            "value": "내게 맞는 카드 찾기"
           },
           {
             "kind": "text",
@@ -251877,12 +251877,12 @@
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
@@ -253652,7 +253652,7 @@
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
@@ -256098,8 +256098,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:34.029Z",
       "latest": {
-        "id": "5965b246-87e5-4ea8-a671-0dab8cdb0863",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "fa3f643d-d8a6-47aa-9aae-d914eb383b96",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "20e3a981-c6a0-4673-9a6f-5e0241999772",
         "targetId": "c701fd1a-9015-4daf-9039-b987c990c619",
         "targetName": "Youth Club 체크카드",
@@ -256117,16 +256117,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 576,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 917,
         "errorMessage": null,
-        "comparedCheckId": "1e1bd219-1c18-4fb7-9c55-b12d9b635b92",
-        "comparedAt": "2026-11-04T06:03:24.165Z",
+        "comparedCheckId": "5965b246-87e5-4ea8-a671-0dab8cdb0863",
+        "comparedAt": "2026-11-05T06:30:34.029Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 1,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -256137,11 +256137,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:34.029Z"
+        "createdAt": "2026-11-06T06:25:35.194Z"
       },
       "lastSuccessful": {
-        "checkId": "5965b246-87e5-4ea8-a671-0dab8cdb0863",
-        "createdAt": "2026-11-05T06:30:34.029Z",
+        "checkId": "fa3f643d-d8a6-47aa-9aae-d914eb383b96",
+        "createdAt": "2026-11-06T06:25:35.194Z",
         "hash": "f086af165a2a213d02aba25733d9749c2fbb9e957cf2327e57605071d7c5b16a",
         "tokens": [
           {
@@ -257830,10 +257830,10 @@
     "533221ef-199b-4710-b94e-bc3aab4a1c02": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-11-05T06:30:32.566Z",
+      "lastChangedAt": "2026-11-06T06:25:33.220Z",
       "latest": {
-        "id": "247b5c51-e88b-40e6-be52-4975de83104c",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "663df638-03fa-4a52-8beb-6d674137cf23",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "533221ef-199b-4710-b94e-bc3aab4a1c02",
         "targetId": "ccfd1770-4563-4762-823c-5f6aa40a0d3e",
         "targetName": "American Express Blue Card",
@@ -257852,15 +257852,15 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "CHANGED",
-        "responseMs": 1865,
+        "responseMs": 1614,
         "errorMessage": null,
-        "comparedCheckId": "7f9dd29e-946b-4789-805f-4129f7ed466c",
-        "comparedAt": "2026-11-04T06:03:22.007Z",
+        "comparedCheckId": "247b5c51-e88b-40e6-be52-4975de83104c",
+        "comparedAt": "2026-11-05T06:30:32.566Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyAddedCount": 5,
+        "bodyRemovedCount": 5,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"내게 맞는 카드 찾기\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"내게 맞는 카드 찾기\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"맞춤카드\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"맞춤카드\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -257871,12 +257871,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:32.566Z"
+        "createdAt": "2026-11-06T06:25:33.220Z"
       },
       "lastSuccessful": {
-        "checkId": "247b5c51-e88b-40e6-be52-4975de83104c",
-        "createdAt": "2026-11-05T06:30:32.566Z",
-        "hash": "1dcd0709d64cc7910c2cd940de2b793dc8a48b9f72380fc91ea7346a27b08e31",
+        "checkId": "663df638-03fa-4a52-8beb-6d674137cf23",
+        "createdAt": "2026-11-06T06:25:33.220Z",
+        "hash": "fd3e906a1e748ef6005530cbf49faa1eba66314f9e90693a6ac65ecbc4a270f3",
         "tokens": [
           {
             "kind": "title",
@@ -259896,7 +259896,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "맞춤카드"
+            "value": "내게 맞는 카드 찾기"
           },
           {
             "kind": "text",
@@ -261396,7 +261396,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "맞춤카드"
+            "value": "내게 맞는 카드 찾기"
           },
           {
             "kind": "text",
@@ -267820,12 +267820,12 @@
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
@@ -269595,7 +269595,7 @@
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
@@ -272036,8 +272036,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:31.496Z",
       "latest": {
-        "id": "5a4f3999-9d77-40ad-b4a8-bad701b0b3dd",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "74215439-48f2-4967-8c37-a5c0a3185444",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "8ea95969-0296-474c-b812-028030be9348",
         "targetId": "ccfd1770-4563-4762-823c-5f6aa40a0d3e",
         "targetName": "American Express Blue Card",
@@ -272055,16 +272055,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 576,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 2095,
         "errorMessage": null,
-        "comparedCheckId": "7de291d0-6c65-4690-9136-b7cefb74115d",
-        "comparedAt": "2026-11-04T06:03:22.836Z",
+        "comparedCheckId": "5a4f3999-9d77-40ad-b4a8-bad701b0b3dd",
+        "comparedAt": "2026-11-05T06:30:31.496Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 1,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -272075,11 +272075,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:31.496Z"
+        "createdAt": "2026-11-06T06:25:33.767Z"
       },
       "lastSuccessful": {
-        "checkId": "5a4f3999-9d77-40ad-b4a8-bad701b0b3dd",
-        "createdAt": "2026-11-05T06:30:31.496Z",
+        "checkId": "74215439-48f2-4967-8c37-a5c0a3185444",
+        "createdAt": "2026-11-06T06:25:33.767Z",
         "hash": "b62f0bf894c070077055bac1b10a3b3c09eb37b6f9b328158e9c528ff634125f",
         "tokens": [
           {
@@ -273883,10 +273883,10 @@
     "1a97e3c9-610d-4931-b785-e625c6caf524": {
       "launchedAt": null,
       "liveCompletedAt": "2026-09-14T07:48:27.619Z",
-      "lastChangedAt": "2026-11-05T06:30:24.793Z",
+      "lastChangedAt": "2026-11-06T06:25:25.801Z",
       "latest": {
-        "id": "257c3e9e-447f-4509-aa11-0fa3f5d6e4e9",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "68661d49-7a8e-41c7-9a4c-9685232803f0",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "1a97e3c9-610d-4931-b785-e625c6caf524",
         "targetId": "cd5e3359-d077-44de-b423-490719f8a4c1",
         "targetName": "ALL 카드",
@@ -273905,15 +273905,15 @@
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">ALL 카드, 이런 분께 추천드려요</h2>",
         "changeStatus": "CHANGED",
-        "responseMs": 2226,
+        "responseMs": 946,
         "errorMessage": null,
-        "comparedCheckId": "47341ef8-3cbb-44ec-ad15-2ff326b74eda",
-        "comparedAt": "2026-11-04T06:03:15.858Z",
+        "comparedCheckId": "257c3e9e-447f-4509-aa11-0fa3f5d6e4e9",
+        "comparedAt": "2026-11-05T06:30:24.793Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyAddedCount": 5,
+        "bodyRemovedCount": 5,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"내게 맞는 카드 찾기\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"내게 맞는 카드 찾기\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"맞춤카드\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"맞춤카드\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -273924,12 +273924,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:24.793Z"
+        "createdAt": "2026-11-06T06:25:25.801Z"
       },
       "lastSuccessful": {
-        "checkId": "257c3e9e-447f-4509-aa11-0fa3f5d6e4e9",
-        "createdAt": "2026-11-05T06:30:24.793Z",
-        "hash": "98176c95fa8e3ec085a8312fb4385c9d42f24a78c955b3c919cc24b255790b13",
+        "checkId": "68661d49-7a8e-41c7-9a4c-9685232803f0",
+        "createdAt": "2026-11-06T06:25:25.801Z",
+        "hash": "9756084f28c43ea2d72aeaa58154842f4d3262a73c9d7fccb7ce9feb2ba92446",
         "tokens": [
           {
             "kind": "title",
@@ -275999,7 +275999,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "맞춤카드"
+            "value": "내게 맞는 카드 찾기"
           },
           {
             "kind": "text",
@@ -277499,7 +277499,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "맞춤카드"
+            "value": "내게 맞는 카드 찾기"
           },
           {
             "kind": "text",
@@ -283318,12 +283318,12 @@
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
@@ -285093,7 +285093,7 @@
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
@@ -287429,8 +287429,8 @@
       "liveCompletedAt": "2026-09-14T07:48:27.840Z",
       "lastChangedAt": "2026-11-05T06:30:24.543Z",
       "latest": {
-        "id": "0c138120-a7e9-4bb5-b59c-f7b8c524c95f",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "f83efb58-90d4-4715-a741-67129195c4a8",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "cf2d0df6-8b68-49e1-8346-7762096c49ee",
         "targetId": "cd5e3359-d077-44de-b423-490719f8a4c1",
         "targetName": "ALL 카드",
@@ -287448,16 +287448,16 @@
         "bodyLiveMarkerFound": true,
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">ALL 카드, <br>이런 분께 추천드려요</h2>",
-        "changeStatus": "CHANGED",
-        "responseMs": 2019,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1491,
         "errorMessage": null,
-        "comparedCheckId": "4e1778cc-aadd-4a87-a92e-30232510ac34",
-        "comparedAt": "2026-11-04T06:03:15.962Z",
+        "comparedCheckId": "0c138120-a7e9-4bb5-b59c-f7b8c524c95f",
+        "comparedAt": "2026-11-05T06:30:24.543Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 1,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -287468,11 +287468,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:24.543Z"
+        "createdAt": "2026-11-06T06:25:26.113Z"
       },
       "lastSuccessful": {
-        "checkId": "0c138120-a7e9-4bb5-b59c-f7b8c524c95f",
-        "createdAt": "2026-11-05T06:30:24.543Z",
+        "checkId": "f83efb58-90d4-4715-a741-67129195c4a8",
+        "createdAt": "2026-11-06T06:25:26.113Z",
         "hash": "569299964fbb9cb59efac24661136fbe0ae8ed9e10c836c511b6897ba5278864",
         "tokens": [
           {
@@ -289783,8 +289783,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:29.520Z",
       "latest": {
-        "id": "f1192c32-4701-4eef-a0d0-11fd9c494cd8",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "5c3cc3ac-0b29-4f70-aed0-e470d055f272",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "613d02c9-fc0b-4d8d-9a08-517e588ed948",
         "targetId": "d8815c97-3344-4821-8372-32ff769c023b",
         "targetName": "NEED Pay 카드",
@@ -289802,16 +289802,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 1882,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 828,
         "errorMessage": null,
-        "comparedCheckId": "fef5240c-c1d4-45e5-b057-62f0446cafb5",
-        "comparedAt": "2026-11-04T06:03:18.971Z",
+        "comparedCheckId": "f1192c32-4701-4eef-a0d0-11fd9c494cd8",
+        "comparedAt": "2026-11-05T06:30:29.520Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 51,
-        "bodyRemovedCount": 12,
-        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"AI구독/인앱결제/해외\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"AI구독/인앱결제/해외\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"AI구독/인앱결제/해외 ChatGPT/Claude 등 10% 할인\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"AI구독/인앱결제/해외\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"10%\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"-\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"3천원\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"온라인 패션몰(KB Pay 결제)\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5%\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"-\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5천원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"전월 이용실적 기준 및 전월 이용실적 제외 대상에 대한 자세한 내용은 '이용 전 확인사항'을 참고하시기 바랍니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"전월 이용실적 기준 및 전월 이용실적 제외 대상에 대한 자세한 내용은 '이용 전 확인사항'을 참고하시기 바랍니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"전월 이용실적 기준 및 전월 이용실적 제외 대상에 대한 자세한 내용은 '이용 전 확인사항'을 참고하시기 바랍니다.\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"상세혜택 > AI구독/인앱결제/해외\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"AI구독/인앱결제/해외 10% 할인\"},{\"kind\":\"text\",\"key\":\"caption\",\"value\":\"AI구독/인앱결제/해외\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"구분\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"할인 대상\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"유의사항\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"AI구독\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"ChatGPT, Claude\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"건당 2만원 이상 결제 시 제공\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"인앱결제\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"구글 플레이어스토어, 애플 앱스토어\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"해외\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"해외 온·오프라인 가맹점\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"AI구독 할인은 서비스별 공식 홈페이지를 통한 정기구독 결제 건 중 KB국민카드에 접수된 결제정보의 영문 가맹점명 및 가맹점번호가 할인 대상에 해당하는 경우에 한하여 적용\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"AI구독/인앱결제/해외 10% 할인은 동일 이용 건에 중복 적용 불가 -예: ChatGPT 이용금액이 AI구독 및 해외 10% 할인 대상에 모두 해당하는 경우, 10% 할인만 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해외10% 할인은 특별 서비스의 해외 가맹점 2% 할인과 중복 적용 가능 -예: ChatGPT 해외 가맹점 결제 시 해외 10% 할인과 해외 가맹점 2% 할인 모두 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해외 이용시 해외 이용수수료가 부과되며, 자세한 내용은 '이용 전 확인사항'을 참고하시기 바랍니다.\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"월 할인한도 안내\"},{\"kind\":\"text\",\"key\":\"caption\",\"value\":\"월 할인한도 안내\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"영역\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"전월 이용실적에 따른 월 할인한도\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"40만원 이상80만원 미만\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"80만원 이상\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"AI구독/인앱결제/해외\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"3천원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"최초 발급받은 KB NEED Pay 카드 사용등록일(KB Pay 등 간편결제 등록 포함)로부터 다음달 말일(실적유예기간)까지는 전월 이용실적 40만원 미만 시에도 ‘40만원 이상 80만원 미만’ 구간 월 할인한도의 50%까지 할인 제공됩니다. (단, 최초사용등록월의 실적이 40만원 이상일 경우, 다음달에 해당 실적구간의 할인한도 적용)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"건당 할인한도는 실적유예기간동안 100% 적용\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"전월 이용실적 기준 및 전월 이용실적 제외 대상에 대한 자세한 내용은 '이용 전 확인사항'을 참고하시기 바랍니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"전월 이용실적 기준 및 전월 이용실적 제외 대상에 대한 자세한 내용은 '이용 전 확인사항'을 참고하시기 바랍니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"취소금액은 취소전표가 당사에 접수된 월의 이용실적에서 차감 *예) 4월 이용금액 5만원 취소 시, 취소 전표가 5월에 KB국민카드에 접수된 경우 5월 이용실적에서 5만원 차감\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드사의 휴업·파산·경영상의 위기 등에 따른 불가피한 경우 1의2. 제휴업체의 휴업·파산·경영상의 위기로 불가피하게 부가서비스를 축소·변경하는 경우로서 다른 제휴업체를 통해 같은 종류의 유사한 부가서비스 제공이 불가한 경우\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신용카드 발급이 부적정한 경우(신용평점 낮음, 연체금 보유 등) 카드발급이 제한 될 수 있습니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"준법감시인 심의필 261026-03525-HPP(2026.10.26)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"AI구독/인앱결제/해외 10% 할인\"},{\"kind\":\"link\",\"key\":\"AI구독/인앱결제/해외\",\"value\":\"https://card.kbcard.com/cards/products/credit-cards/kb-need-pay-card\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/event/mgr/thumb/2015/08/24/b_edu.gif\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/event/mgr/thumb/2015/08/24/s_onShop.gif\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"p\",\"value\":\"온라인패션몰\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"온라인 패션몰(KB Pay 결제)\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5%\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"-\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5천원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"취소금액은 취소전표가 당사에 접수된 월의 실적에서 차감\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드사의 휴업·파산·경영상의 위기 등에 따른 불가피한 경우 1의2. 제휴업체의 휴업·파산·경영상의 위기로 불가피하게 부가서비스를 축소·변경하는 경우로서 다른 제휴업체를 통해 동종의 유사한 부가서비스 제공이 불가한 경우\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신용카드 발급이 부적격한 경우(신용평점 낮음, 연체금 보유 등) 카드발급이 제한 될 수 있습니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"여신금융협회 심의필 제2026-C1a-02460호(2026.02.25)\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"온라인패션몰 5% 할인(KB Pay 결제 시)\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -289822,11 +289822,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:29.520Z"
+        "createdAt": "2026-11-06T06:25:29.563Z"
       },
       "lastSuccessful": {
-        "checkId": "f1192c32-4701-4eef-a0d0-11fd9c494cd8",
-        "createdAt": "2026-11-05T06:30:29.520Z",
+        "checkId": "5c3cc3ac-0b29-4f70-aed0-e470d055f272",
+        "createdAt": "2026-11-06T06:25:29.563Z",
         "hash": "32bae03a87cc0886635154a69a62dd3319b715239eccd258949787380e482277",
         "tokens": [
           {
@@ -304162,8 +304162,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:28.830Z",
       "latest": {
-        "id": "24f5e510-5740-4eb3-b8bb-2e9d8551b884",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "9bdac8f3-8efa-468a-909f-6a5993f44025",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "d137fd1e-c1dd-4841-8f54-32513292cd5a",
         "targetId": "d8815c97-3344-4821-8372-32ff769c023b",
         "targetName": "NEED Pay 카드",
@@ -304181,16 +304181,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 581,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1603,
         "errorMessage": null,
-        "comparedCheckId": "1f3df270-281a-406e-9ae4-fd74566a4d2c",
-        "comparedAt": "2026-11-04T06:03:19.980Z",
-        "headAddedCount": 2,
-        "headRemovedCount": 2,
-        "bodyAddedCount": 4,
-        "bodyRemovedCount": 5,
-        "diffJson": "{\"added\":[{\"kind\":\"title\",\"key\":\"title\",\"value\":\"[NEED Pay 카드] 자주 쓰는 간편결제 15%/10%, 디지털 콘텐츠/멤버십 30%, AI구독/인앱결제/해외 10% - KB 국민카드\"},{\"kind\":\"meta\",\"key\":\"og:title\",\"value\":\"[NEED Pay 카드] 자주 쓰는 간편결제 15%/10%, 디지털 콘텐츠/멤버십 30%, AI구독/인앱결제/해외 10% - KB 국민카드\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"취소금액은 취소 전표가 당사에 접수된 월의 이용실적에서 차감 *예) 4월 이용금액 5만원 취소 시, 취소 전표가 5월에 KB국민카드에 접수된 경우 5월 이용실적에서 5만원 차감\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"① 카드사의 휴업·파산·경영상의 위기로 인해 불가피한 경우 1의2. 제휴업체의 휴업·파산·경영상의 위기로 인해 불가피하게 부가서비스를 축소·변경하는 경우로서 다른 제휴 업체를 통해 같은 종류의 유사한 부가서비스 제공이 불가한 경우\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"준법감시인 심의필 261026-03525-HPP(2026.10.26)\"},{\"kind\":\"link\",\"key\":\"다운로드\",\"value\":\"https://img2.kbcard.com/obj/card/download/09800__prdctOpmn_20261105.pdf\"}],\"removed\":[{\"kind\":\"title\",\"key\":\"title\",\"value\":\"[NEED Pay 카드] 자주 쓰는 간편결제 15%/10%, 디지털 콘텐츠/멤버십 30%, 온라인패션몰 5% - KB 국민카드\"},{\"kind\":\"meta\",\"key\":\"og:title\",\"value\":\"[NEED Pay 카드] 자주 쓰는 간편결제 15%/10%, 디지털 콘텐츠/멤버십 30%, 온라인패션몰 5% - KB 국민카드\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"취소금액은 취소 전표가 당사에 접수된 월의 실적에서 차감\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"① 카드사의 휴업·파산·경영상의 위기로 인해 불가피한 경우 1의2. 제휴업체의 휴업·파산·경영상의 위기로 인해 불가피하게 부가서비스를 축소·변경하는 경우로서 다른 제휴 업체를 통해 동종의 유사한 부가서비스 제공이 불가한 경우\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"여신금융협회 심의필 제2026-C1a-02460호(2026.02.25)\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"},{\"kind\":\"link\",\"key\":\"다운로드\",\"value\":\"https://img2.kbcard.com/obj/card/download/09800__prdctOpmn_20260330.pdf\"}]}",
+        "comparedCheckId": "24f5e510-5740-4eb3-b8bb-2e9d8551b884",
+        "comparedAt": "2026-11-05T06:30:28.830Z",
+        "headAddedCount": 0,
+        "headRemovedCount": 0,
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -304201,11 +304201,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:28.830Z"
+        "createdAt": "2026-11-06T06:25:30.529Z"
       },
       "lastSuccessful": {
-        "checkId": "24f5e510-5740-4eb3-b8bb-2e9d8551b884",
-        "createdAt": "2026-11-05T06:30:28.830Z",
+        "checkId": "9bdac8f3-8efa-468a-909f-6a5993f44025",
+        "createdAt": "2026-11-06T06:25:30.529Z",
         "hash": "c3dd0d4ca3d4ddec56eefdd8a8a42b3e517e00cb41a58540115a4fa9dbd04642",
         "tokens": [
           {
@@ -306111,8 +306111,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-10-30T05:34:52.123Z",
       "latest": {
-        "id": "027fe81e-c275-4353-9ff5-b5570d551559",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "35734c72-748f-40b3-b711-6296a420d5ad",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "6a0d6408-1c23-4f3b-9f75-2d84729915fa",
         "targetId": "efb1d0e6-0aeb-4093-84a7-6aed0179f41e",
         "targetName": "YOU Wish 카드",
@@ -306131,10 +306131,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 618,
+        "responseMs": 729,
         "errorMessage": null,
-        "comparedCheckId": "651d7fc8-462b-450a-84d8-86b2a0268741",
-        "comparedAt": "2026-11-04T06:03:17.691Z",
+        "comparedCheckId": "027fe81e-c275-4353-9ff5-b5570d551559",
+        "comparedAt": "2026-11-05T06:30:26.005Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -306150,11 +306150,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:26.005Z"
+        "createdAt": "2026-11-06T06:25:27.521Z"
       },
       "lastSuccessful": {
-        "checkId": "027fe81e-c275-4353-9ff5-b5570d551559",
-        "createdAt": "2026-11-05T06:30:26.005Z",
+        "checkId": "35734c72-748f-40b3-b711-6296a420d5ad",
+        "createdAt": "2026-11-06T06:25:27.521Z",
         "hash": "b9fd9b9b3d004e1e32a43b37019d1f011ab89939cabacd8d8f377329bff742e6",
         "tokens": [
           {
@@ -320110,8 +320110,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-03T06:34:22.012Z",
       "latest": {
-        "id": "277747ef-418a-4487-90ed-509c613073d0",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "16369b62-4e04-4edd-b76a-8252f63c607c",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "c159409a-cc42-4ae1-b6a3-9a5fc6e4b6c0",
         "targetId": "efb1d0e6-0aeb-4093-84a7-6aed0179f41e",
         "targetName": "YOU Wish 카드",
@@ -320130,10 +320130,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1592,
+        "responseMs": 444,
         "errorMessage": null,
-        "comparedCheckId": "113d9f94-3ca6-49f9-9ea4-fb6167799617",
-        "comparedAt": "2026-11-04T06:03:17.548Z",
+        "comparedCheckId": "277747ef-418a-4487-90ed-509c613073d0",
+        "comparedAt": "2026-11-05T06:30:27.507Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -320149,11 +320149,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:27.507Z"
+        "createdAt": "2026-11-06T06:25:27.556Z"
       },
       "lastSuccessful": {
-        "checkId": "277747ef-418a-4487-90ed-509c613073d0",
-        "createdAt": "2026-11-05T06:30:27.507Z",
+        "checkId": "16369b62-4e04-4edd-b76a-8252f63c607c",
+        "createdAt": "2026-11-06T06:25:27.556Z",
         "hash": "d567e6220355a69bda79e10fbc7088e32eefba231b210b0e8c6cfbddf21a2218",
         "tokens": [
           {
@@ -321994,8 +321994,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:26.633Z",
       "latest": {
-        "id": "9b2d7961-d723-44c2-8e47-2fa9d8b9d143",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "9dc1def4-b53c-4469-894e-66ce128b4749",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "14bafd44-2782-4968-911b-291d2acd502e",
         "targetId": "f76ab7ec-2473-4bff-8a31-d6d4e7dbe21d",
         "targetName": "YOU With 카드",
@@ -322013,16 +322013,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 1857,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 881,
         "errorMessage": null,
-        "comparedCheckId": "133cbe83-48da-40ab-810f-d99559ac6131",
-        "comparedAt": "2026-11-04T06:03:17.807Z",
+        "comparedCheckId": "9b2d7961-d723-44c2-8e47-2fa9d8b9d143",
+        "comparedAt": "2026-11-05T06:30:26.633Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 2,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"},{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -322033,11 +322033,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:26.633Z"
+        "createdAt": "2026-11-06T06:25:27.083Z"
       },
       "lastSuccessful": {
-        "checkId": "9b2d7961-d723-44c2-8e47-2fa9d8b9d143",
-        "createdAt": "2026-11-05T06:30:26.633Z",
+        "checkId": "9dc1def4-b53c-4469-894e-66ce128b4749",
+        "createdAt": "2026-11-06T06:25:27.083Z",
         "hash": "10a6aaf8156c05a324155e80831de98c4060d9b36e9af9e3c0b3aad24f4b0e50",
         "tokens": [
           {
@@ -336118,8 +336118,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:25.872Z",
       "latest": {
-        "id": "15a3bd81-2f0c-4ddc-b611-73b39f53573f",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "ec8f781a-67a2-45ec-bb2a-6f9bb3d2f1e1",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "446222ae-cda3-454a-9e38-96d18f5cf725",
         "targetId": "f76ab7ec-2473-4bff-8a31-d6d4e7dbe21d",
         "targetName": "YOU With 카드",
@@ -336137,16 +336137,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "CHANGED",
-        "responseMs": 1037,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 494,
         "errorMessage": null,
-        "comparedCheckId": "f3abf03a-1421-43b2-8589-76f37402c078",
-        "comparedAt": "2026-11-04T06:03:17.855Z",
+        "comparedCheckId": "15a3bd81-2f0c-4ddc-b611-73b39f53573f",
+        "comparedAt": "2026-11-05T06:30:25.872Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
-        "bodyRemovedCount": 1,
-        "diffJson": "{\"added\":[],\"removed\":[{\"kind\":\"text\",\"key\":\"label\",\"value\":\"시각장애인용 점자카드\"}]}",
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -336157,11 +336157,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:25.872Z"
+        "createdAt": "2026-11-06T06:25:26.663Z"
       },
       "lastSuccessful": {
-        "checkId": "15a3bd81-2f0c-4ddc-b611-73b39f53573f",
-        "createdAt": "2026-11-05T06:30:25.872Z",
+        "checkId": "ec8f781a-67a2-45ec-bb2a-6f9bb3d2f1e1",
+        "createdAt": "2026-11-06T06:25:26.663Z",
         "hash": "537052516937e987260e001107ec14bb87112f8bbbe0fd6cdef93065fd27387b",
         "tokens": [
           {
@@ -338035,10 +338035,10 @@
     "01b3f6d5-d2f3-46f9-b9dd-9fb1e43d30a4": {
       "launchedAt": null,
       "liveCompletedAt": null,
-      "lastChangedAt": "2026-11-02T05:51:12.149Z",
+      "lastChangedAt": "2026-11-06T06:25:31.372Z",
       "latest": {
-        "id": "a24056ad-33c1-40a8-a46d-b43dc68b7ce9",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "ec117cc5-ca1a-413e-ae0c-0126c5d365ae",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "01b3f6d5-d2f3-46f9-b9dd-9fb1e43d30a4",
         "targetId": "ffce3167-72d1-488c-ab2e-f65d740df310",
         "targetName": "스카이패스 티타늄카드",
@@ -338056,16 +338056,16 @@
         "bodyLiveMarkerFound": false,
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
-        "changeStatus": "UNCHANGED",
-        "responseMs": 1877,
+        "changeStatus": "CHANGED",
+        "responseMs": 529,
         "errorMessage": null,
-        "comparedCheckId": "df146dab-877b-48a4-9d84-3bd059a98d74",
-        "comparedAt": "2026-11-04T06:03:21.698Z",
+        "comparedCheckId": "a24056ad-33c1-40a8-a46d-b43dc68b7ce9",
+        "comparedAt": "2026-11-05T06:30:31.890Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
-        "bodyAddedCount": 0,
-        "bodyRemovedCount": 0,
-        "diffJson": null,
+        "bodyAddedCount": 5,
+        "bodyRemovedCount": 5,
+        "diffJson": "{\"added\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"내게 맞는 카드 찾기\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"내게 맞는 카드 찾기\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"내게 맞는 카드 찾기\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"}],\"removed\":[{\"kind\":\"text\",\"key\":\"li\",\"value\":\"맞춤카드\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"맞춤카드\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001\"}]}",
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -338076,12 +338076,12 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:31.890Z"
+        "createdAt": "2026-11-06T06:25:31.372Z"
       },
       "lastSuccessful": {
-        "checkId": "a24056ad-33c1-40a8-a46d-b43dc68b7ce9",
-        "createdAt": "2026-11-05T06:30:31.890Z",
-        "hash": "91777c95e86175fbe96b95a832eab8b102e8f72e405bcf203c8c47e39076615c",
+        "checkId": "ec117cc5-ca1a-413e-ae0c-0126c5d365ae",
+        "createdAt": "2026-11-06T06:25:31.372Z",
+        "hash": "b2c51b2cd5b14fa6df3b9b76e9a80f5ac1dde1ac6d05d0c1a075cc91d23a0d6e",
         "tokens": [
           {
             "kind": "title",
@@ -340101,7 +340101,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "맞춤카드"
+            "value": "내게 맞는 카드 찾기"
           },
           {
             "kind": "text",
@@ -341601,7 +341601,7 @@
           {
             "kind": "text",
             "key": "li",
-            "value": "맞춤카드"
+            "value": "내게 맞는 카드 찾기"
           },
           {
             "kind": "text",
@@ -347550,12 +347550,12 @@
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
@@ -349325,7 +349325,7 @@
           },
           {
             "kind": "link",
-            "key": "맞춤카드",
+            "key": "내게 맞는 카드 찾기",
             "value": "https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICACR0001"
           },
           {
@@ -351746,8 +351746,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-03T06:34:26.279Z",
       "latest": {
-        "id": "a410642b-6447-45c0-8935-0761cc6a0567",
-        "runId": "defddfec-8513-48ac-ac8d-ac2917fc0f74",
+        "id": "663b9d57-e09f-439e-9477-362cc23c3fb3",
+        "runId": "b49b23f2-4342-45c4-afc3-5c7d0d8dd91f",
         "endpointId": "57a99be1-efa7-46ec-85b1-ffa0cbcbfc2a",
         "targetId": "ffce3167-72d1-488c-ab2e-f65d740df310",
         "targetName": "스카이패스 티타늄카드",
@@ -351766,10 +351766,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 425,
+        "responseMs": 1636,
         "errorMessage": null,
-        "comparedCheckId": "5e17f6ad-ebb6-4742-a8c5-f966237770aa",
-        "comparedAt": "2026-11-04T06:03:21.805Z",
+        "comparedCheckId": "a410642b-6447-45c0-8935-0761cc6a0567",
+        "comparedAt": "2026-11-05T06:30:30.887Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -351785,11 +351785,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-05T06:30:30.887Z"
+        "createdAt": "2026-11-06T06:25:33.035Z"
       },
       "lastSuccessful": {
-        "checkId": "a410642b-6447-45c0-8935-0761cc6a0567",
-        "createdAt": "2026-11-05T06:30:30.887Z",
+        "checkId": "663b9d57-e09f-439e-9477-362cc23c3fb3",
+        "createdAt": "2026-11-06T06:25:33.035Z",
         "hash": "254eacd8fc2b4caccb50a5597a1ec1f113ae186cce8f77200417e2dc577c042c",
         "tokens": [
           {
