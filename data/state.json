@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-16T06:11:50.671Z",
+  "updatedAt": "2026-11-17T07:46:21.522Z",
   "endpoints": {
     "c926ec76-812d-4877-b8cd-10f16272aeba": {
       "launchedAt": null,
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-10T07:06:40.948Z",
       "latest": {
-        "id": "e0c577e3-b3d1-4ab0-8f6d-2787cb1a74ed",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "31406eec-5996-4681-8014-911a1061d0d3",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "c926ec76-812d-4877-b8cd-10f16272aeba",
         "targetId": "014f6ae8-f8af-4234-9976-8e1b4ecbb511",
         "targetName": "국민행복카드",
@@ -27,10 +27,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1992,
+        "responseMs": 1441,
         "errorMessage": null,
-        "comparedCheckId": "4d936218-2ac1-4c32-9e77-94c4757df100",
-        "comparedAt": "2026-11-15T06:13:57.726Z",
+        "comparedCheckId": "e0c577e3-b3d1-4ab0-8f6d-2787cb1a74ed",
+        "comparedAt": "2026-11-16T06:11:50.556Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -46,11 +46,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:50.556Z"
+        "createdAt": "2026-11-17T07:46:21.522Z"
       },
       "lastSuccessful": {
-        "checkId": "e0c577e3-b3d1-4ab0-8f6d-2787cb1a74ed",
-        "createdAt": "2026-11-16T06:11:50.556Z",
+        "checkId": "31406eec-5996-4681-8014-911a1061d0d3",
+        "createdAt": "2026-11-17T07:46:21.522Z",
         "hash": "0b16fcaa6161d5fff36df862aa008b36f9a72d68d50ce211c5546ccfca5b11f4",
         "tokens": [
           {
@@ -14321,8 +14321,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-03T06:34:31.587Z",
       "latest": {
-        "id": "506b61cb-19c6-4bf0-8399-884d1e37a443",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "02a5f0a8-23da-4ed9-bd31-74bb8fe32fe6",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "7b6cf907-d2fc-4161-a9c1-7327da1b8c12",
         "targetId": "014f6ae8-f8af-4234-9976-8e1b4ecbb511",
         "targetName": "국민행복카드",
@@ -14341,10 +14341,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 2048,
+        "responseMs": 563,
         "errorMessage": null,
-        "comparedCheckId": "bcbc01ef-fa16-49ef-a93f-20644ed776c2",
-        "comparedAt": "2026-11-15T06:13:59.124Z",
+        "comparedCheckId": "506b61cb-19c6-4bf0-8399-884d1e37a443",
+        "comparedAt": "2026-11-16T06:11:50.671Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -14360,11 +14360,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:50.671Z"
+        "createdAt": "2026-11-17T07:46:20.857Z"
       },
       "lastSuccessful": {
-        "checkId": "506b61cb-19c6-4bf0-8399-884d1e37a443",
-        "createdAt": "2026-11-16T06:11:50.671Z",
+        "checkId": "02a5f0a8-23da-4ed9-bd31-74bb8fe32fe6",
+        "createdAt": "2026-11-17T07:46:20.857Z",
         "hash": "82983b0cdc8a4ed3488665537f49cabb24f98a4c0574f47842a7e2646579a5a5",
         "tokens": [
           {
@@ -16060,8 +16060,8 @@
       "liveCompletedAt": "2026-11-12T07:00:46.077Z",
       "lastChangedAt": "2026-11-12T07:00:46.077Z",
       "latest": {
-        "id": "1ef41c0a-f502-4f0b-ab1f-2f02ad8d4f89",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "6f3431ae-b30d-4379-af54-be6151ab1758",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "01ed00fd-e36a-480d-ab73-d80aaab6cb65",
         "targetId": "03bb23e7-bb86-4574-8e13-1b46baece17c",
         "targetName": "트래블러스 체크카드",
@@ -16080,10 +16080,10 @@
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">트래블러스 체크카드, 이런 분께 추천드려요</h2>",
         "changeStatus": "UNCHANGED",
-        "responseMs": 570,
+        "responseMs": 1051,
         "errorMessage": null,
-        "comparedCheckId": "0fc17d32-bf41-4817-a49c-550a80e9d35a",
-        "comparedAt": "2026-11-15T06:13:57.368Z",
+        "comparedCheckId": "1ef41c0a-f502-4f0b-ab1f-2f02ad8d4f89",
+        "comparedAt": "2026-11-16T06:11:48.588Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -16099,11 +16099,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:48.588Z"
+        "createdAt": "2026-11-17T07:46:20.528Z"
       },
       "lastSuccessful": {
-        "checkId": "1ef41c0a-f502-4f0b-ab1f-2f02ad8d4f89",
-        "createdAt": "2026-11-16T06:11:48.588Z",
+        "checkId": "6f3431ae-b30d-4379-af54-be6151ab1758",
+        "createdAt": "2026-11-17T07:46:20.528Z",
         "hash": "00af828119798ec779ac275318e8d391823969af77062e46ad5fce72462d7259",
         "tokens": [
           {
@@ -30914,8 +30914,8 @@
       "liveCompletedAt": "2026-11-12T07:00:46.777Z",
       "lastChangedAt": "2026-11-12T07:00:46.777Z",
       "latest": {
-        "id": "e132dd22-a1a5-4603-9c59-56751af55809",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "e45c85dc-5615-4e70-9c08-b623b2732ee9",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "db9539a0-6221-4363-9eb5-708ca00e4f35",
         "targetId": "03bb23e7-bb86-4574-8e13-1b46baece17c",
         "targetName": "트래블러스 체크카드",
@@ -30934,10 +30934,10 @@
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">트래블러스 체크카드, 이런 분께 추천드려요</h2>",
         "changeStatus": "UNCHANGED",
-        "responseMs": 414,
+        "responseMs": 1525,
         "errorMessage": null,
-        "comparedCheckId": "32771ec6-d4d6-49a4-abbc-9fd7517b4295",
-        "comparedAt": "2026-11-15T06:13:57.471Z",
+        "comparedCheckId": "e132dd22-a1a5-4603-9c59-56751af55809",
+        "comparedAt": "2026-11-16T06:11:48.749Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -30953,11 +30953,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:48.749Z"
+        "createdAt": "2026-11-17T07:46:21.106Z"
       },
       "lastSuccessful": {
-        "checkId": "e132dd22-a1a5-4603-9c59-56751af55809",
-        "createdAt": "2026-11-16T06:11:48.749Z",
+        "checkId": "e45c85dc-5615-4e70-9c08-b623b2732ee9",
+        "createdAt": "2026-11-17T07:46:21.106Z",
         "hash": "35c9eb399f06fdfd903383b58509151b5a4bd1d0d5e80a0e5a9afc2030ba9aca",
         "tokens": [
           {
@@ -34473,8 +34473,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-10T07:06:38.135Z",
       "latest": {
-        "id": "e21a97e2-4c86-4730-9082-c90805dd933d",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "b247c085-b4ba-4686-90e3-9f5a3041df6a",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "8fbc38b1-9e91-48b5-b48c-6a8b52dea42c",
         "targetId": "11160efa-eca7-4b83-a8db-13cea9e8e74e",
         "targetName": "HERITAGE Classic(할인형)",
@@ -34493,10 +34493,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1945,
+        "responseMs": 1524,
         "errorMessage": null,
-        "comparedCheckId": "e17f5a59-90a0-420b-90f8-6b2c30d3fc5e",
-        "comparedAt": "2026-11-15T06:13:55.887Z",
+        "comparedCheckId": "e21a97e2-4c86-4730-9082-c90805dd933d",
+        "comparedAt": "2026-11-16T06:11:46.649Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -34512,11 +34512,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:46.649Z"
+        "createdAt": "2026-11-17T07:46:17.430Z"
       },
       "lastSuccessful": {
-        "checkId": "e21a97e2-4c86-4730-9082-c90805dd933d",
-        "createdAt": "2026-11-16T06:11:46.649Z",
+        "checkId": "b247c085-b4ba-4686-90e3-9f5a3041df6a",
+        "createdAt": "2026-11-17T07:46:17.430Z",
         "hash": "70f2e25b4c0ba2a778468b11937941e3b6c3bd557c31b1a80064d7bde0fee5e5",
         "tokens": [
           {
@@ -49237,8 +49237,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:32.199Z",
       "latest": {
-        "id": "22a086b5-3e6e-4bb0-b705-96192b385189",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "4380fc95-9a4d-4097-9b2f-8539a234bb9a",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "3a605dd0-af28-4d8f-a524-841baf470b44",
         "targetId": "11160efa-eca7-4b83-a8db-13cea9e8e74e",
         "targetName": "HERITAGE Classic(할인형)",
@@ -49257,10 +49257,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1450,
+        "responseMs": 464,
         "errorMessage": null,
-        "comparedCheckId": "07c7d4bd-58e5-48e1-9e61-6654d295a3db",
-        "comparedAt": "2026-11-15T06:13:54.854Z",
+        "comparedCheckId": "22a086b5-3e6e-4bb0-b705-96192b385189",
+        "comparedAt": "2026-11-16T06:11:46.994Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -49276,11 +49276,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:46.994Z"
+        "createdAt": "2026-11-17T07:46:16.589Z"
       },
       "lastSuccessful": {
-        "checkId": "22a086b5-3e6e-4bb0-b705-96192b385189",
-        "createdAt": "2026-11-16T06:11:46.994Z",
+        "checkId": "4380fc95-9a4d-4097-9b2f-8539a234bb9a",
+        "createdAt": "2026-11-17T07:46:16.589Z",
         "hash": "b62ec815451a2cce1ba33da88e54c789f5b01a073098f25268c13fd8d756176b",
         "tokens": [
           {
@@ -51111,8 +51111,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "882657dd-3c01-41be-932b-63af5803e05f",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "a58fe8de-0c70-411b-b6e2-d050cd8dcd61",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "eb3ccb9d-1f8c-4db8-9ee9-55712c3dc236",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -51131,7 +51131,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 740,
+        "responseMs": 193,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -51150,7 +51150,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-16T06:11:47.284Z"
+        "createdAt": "2026-11-17T07:46:17.431Z"
       },
       "lastSuccessful": null
     },
@@ -51159,8 +51159,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-10T07:06:40.023Z",
       "latest": {
-        "id": "5b148681-c350-4b84-84ce-b4e7876ecdbd",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "5116a5e6-e514-4826-956a-cacd3e16ed7d",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "19d614e270d3eff5121073206cce5ab8",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -51179,10 +51179,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 972,
+        "responseMs": 884,
         "errorMessage": null,
-        "comparedCheckId": "756fa63a-d7a4-48f7-a7d4-14e53b172745",
-        "comparedAt": "2026-11-15T06:13:55.556Z",
+        "comparedCheckId": "5b148681-c350-4b84-84ce-b4e7876ecdbd",
+        "comparedAt": "2026-11-16T06:11:47.741Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -51198,11 +51198,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:47.741Z"
+        "createdAt": "2026-11-17T07:46:18.322Z"
       },
       "lastSuccessful": {
-        "checkId": "5b148681-c350-4b84-84ce-b4e7876ecdbd",
-        "createdAt": "2026-11-16T06:11:47.741Z",
+        "checkId": "5116a5e6-e514-4826-956a-cacd3e16ed7d",
+        "createdAt": "2026-11-17T07:46:18.322Z",
         "hash": "7c17f46364145bcf37aad1b754e1d2bcc79143fd5589f893f806084877f885b6",
         "tokens": [
           {
@@ -65898,8 +65898,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "a1023c77-0079-453f-aa7b-ff43be7f1ea8",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "6d07a54c-9ed5-40c0-b73a-b86e52e372e5",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "52619742-f91b-43b9-8ef3-8cb08631642e",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -65918,7 +65918,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 189,
+        "responseMs": 553,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -65937,7 +65937,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-16T06:11:46.913Z"
+        "createdAt": "2026-11-17T07:46:17.983Z"
       },
       "lastSuccessful": null
     },
@@ -65946,8 +65946,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:33.865Z",
       "latest": {
-        "id": "1b6efe50-e53f-43d0-a8dd-5153666e7c96",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "a801893c-d2ae-40ca-9a56-8a0a0be8390f",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "374ae896ab07fb4b7c98af6100c41f92",
         "targetId": "1a7f1c8f-4886-4d1c-9138-187a927b5984",
         "targetName": "BeV Ⅲ 카드",
@@ -65966,10 +65966,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 586,
+        "responseMs": 1024,
         "errorMessage": null,
-        "comparedCheckId": "1674c5af-cd3e-48ab-80ab-10dc726ddf43",
-        "comparedAt": "2026-11-15T06:13:56.180Z",
+        "comparedCheckId": "1b6efe50-e53f-43d0-a8dd-5153666e7c96",
+        "comparedAt": "2026-11-16T06:11:47.526Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -65985,11 +65985,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:47.526Z"
+        "createdAt": "2026-11-17T07:46:18.485Z"
       },
       "lastSuccessful": {
-        "checkId": "1b6efe50-e53f-43d0-a8dd-5153666e7c96",
-        "createdAt": "2026-11-16T06:11:47.526Z",
+        "checkId": "a801893c-d2ae-40ca-9a56-8a0a0be8390f",
+        "createdAt": "2026-11-17T07:46:18.485Z",
         "hash": "18d132da3b6504144fbf2b0be1e5e2da3c8db739b90b32db2c96c8a44f5ae1b6",
         "tokens": [
           {
@@ -67670,8 +67670,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-10T07:06:34.069Z",
       "latest": {
-        "id": "eb2bb80d-b915-4053-94bc-88da00174fe3",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "7bb8ec1c-5f70-440d-adf0-6b8aa17ec237",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "51572952-d474-4b43-9b5b-4e00ccf2a9ba",
         "targetId": "2fb8b880-93e1-4958-b06b-0e4c1919ec75",
         "targetName": "NEED Edu카드",
@@ -67690,10 +67690,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 465,
+        "responseMs": 1625,
         "errorMessage": null,
-        "comparedCheckId": "456b6081-3c25-45ed-8bde-e4f99e29b8a8",
-        "comparedAt": "2026-11-15T06:13:50.727Z",
+        "comparedCheckId": "eb2bb80d-b915-4053-94bc-88da00174fe3",
+        "comparedAt": "2026-11-16T06:11:40.655Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -67709,11 +67709,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:40.655Z"
+        "createdAt": "2026-11-17T07:46:13.085Z"
       },
       "lastSuccessful": {
-        "checkId": "eb2bb80d-b915-4053-94bc-88da00174fe3",
-        "createdAt": "2026-11-16T06:11:40.655Z",
+        "checkId": "7bb8ec1c-5f70-440d-adf0-6b8aa17ec237",
+        "createdAt": "2026-11-17T07:46:13.085Z",
         "hash": "7b55cd4d3fbfe8507858dc15dd14478c33acf66fd1a2d80ef8151ce8ebb650f2",
         "tokens": [
           {
@@ -81259,8 +81259,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-03T06:34:22.699Z",
       "latest": {
-        "id": "7e021a9b-c9fc-412a-8d8e-540716ca7ca3",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "458312ed-dad0-4a11-8869-7d97f5292f6e",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "83cb96fd-4bfc-4f6a-9dfb-9833b941448e",
         "targetId": "2fb8b880-93e1-4958-b06b-0e4c1919ec75",
         "targetName": "NEED Edu카드",
@@ -81279,10 +81279,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1110,
+        "responseMs": 587,
         "errorMessage": null,
-        "comparedCheckId": "c664d0ef-110a-49e1-800d-4f7dc43587ac",
-        "comparedAt": "2026-11-15T06:13:50.754Z",
+        "comparedCheckId": "7e021a9b-c9fc-412a-8d8e-540716ca7ca3",
+        "comparedAt": "2026-11-16T06:11:41.418Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -81298,11 +81298,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:41.418Z"
+        "createdAt": "2026-11-17T07:46:12.043Z"
       },
       "lastSuccessful": {
-        "checkId": "7e021a9b-c9fc-412a-8d8e-540716ca7ca3",
-        "createdAt": "2026-11-16T06:11:41.418Z",
+        "checkId": "458312ed-dad0-4a11-8869-7d97f5292f6e",
+        "createdAt": "2026-11-17T07:46:12.043Z",
         "hash": "0166d00e487bd5a9b47ad1bc664b445352f317fea52f3103797db030c07bc8dd",
         "tokens": [
           {
@@ -83163,8 +83163,8 @@
       "liveCompletedAt": "2026-11-16T06:11:43.539Z",
       "lastChangedAt": "2026-11-16T06:11:43.539Z",
       "latest": {
-        "id": "a9b760c6-90d2-46d9-afdf-e7128c760a86",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "39812e52-58cf-4f1b-8229-3ec02c66ed64",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "70e8f0ed-244e-480d-b5de-ce9e698c2652",
         "targetId": "6bf242ce-9823-4510-bb63-e9bd0c5ee0ba",
         "targetName": "My WE:SH 카드",
@@ -83182,16 +83182,16 @@
         "bodyLiveMarkerFound": true,
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">My WE:SH 카드, 이런 분께 추천드려요</h2>",
-        "changeStatus": "CHANGED",
-        "responseMs": 1898,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1580,
         "errorMessage": null,
-        "comparedCheckId": "deae87af-c331-492c-afe5-268174b3d7fb",
-        "comparedAt": "2026-11-15T06:13:53.490Z",
-        "headAddedCount": 11,
-        "headRemovedCount": 4,
-        "bodyAddedCount": 236,
-        "bodyRemovedCount": 257,
-        "diffJson": "{\"added\":[{\"kind\":\"title\",\"key\":\"title\",\"value\":\"My WE:SH 카드 | 신용카드 | KB국민카드\"},{\"kind\":\"meta\",\"key\":\"description\",\"value\":\"My WE:SH 카드는 KB Pay·음식·OTT 10~30% 기본 할인과 배달·커피·영화·미용실 등 5~30% 선택 할인, Happy Birth Month·전월실적 채워드림 혜택을 제공하는 신용카드입니다. 다양한 혜택을 한눈에 확인해보세요.\"},{\"kind\":\"meta\",\"key\":\"keywords\",\"value\":\"kb국민카드, kb card, 케이비 카드, my we:sh 카드, 신용카드, 음식점, ott, 배달, 커피, 영화\"},{\"kind\":\"meta\",\"key\":\"og:description\",\"value\":\"My WE:SH 카드는 KB Pay·음식·OTT 10~30% 기본 할인과 배달·커피·영화·미용실 등 5~30% 선택 할인, Happy Birth Month·전월실적 채워드림 혜택을 제공하는 신용카드입니다. 다양한 혜택을 한눈에 확인해보세요.\"},{\"kind\":\"meta\",\"key\":\"og:image\",\"value\":\"https://timg1.kbcard.com/home_re/product/og/kb-kookmin-card-credit-my-wesh-og.jpg\"},{\"kind\":\"meta\",\"key\":\"og:site_name\",\"value\":\"KB국민카드\"},{\"kind\":\"meta\",\"key\":\"og:title\",\"value\":\"My WE:SH 카드 | 신용카드 | KB국민카드\"},{\"kind\":\"meta\",\"key\":\"og:type\",\"value\":\"website\"},{\"kind\":\"meta\",\"key\":\"og:url\",\"value\":\"https://card.kbcard.com/cards/products/credit-cards/kb-my-wesh-card\"},{\"kind\":\"meta\",\"key\":\"robots\",\"value\":\"index, follow, max-image-preview:large\"},{\"kind\":\"meta\",\"key\":\"title\",\"value\":\"My WE:SH 카드 | 신용카드 | KB국민카드\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"ECO(친환경)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"레터링\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"토심이와 토뭉이\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"즐거운 토심이\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"내 일상에 진심인 혜택, 골라 담는 맞춤형 할인\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"KB Pay·음식·OTT 10~30% 할인\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"배달·커피·영화·미용실 5~30% 선택 할인\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"Happy Birth Month·전월실적 채워드림\"},{\"kind\":\"text\",\"key\":\"dt\",\"value\":\"연회비\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"국내전용 15,000원 (모바일단독: 9,000원)\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"국내외겸용|MASTER, AMEX 15,000원 (모바일단독: 9,000원)\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"주요 혜택\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"나한테 진심 서비스(기본 할인)\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"국내 가맹점 KB Pay 10% 청구할인\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"KB Pay로 결제하면 국내 가맹점 이용금액의 10%를 할인받을 수 있습니다.(건당 할인한도 2,500원, 월 할인한도 5,000원)\"},{\"kind\":\"text\",\"key\":\"dt\",\"value\":\"할인 대상\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"KB Pay: 국내 가맹점\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"전월 이용실적 40만원 이상 시 제공\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"월 할인한도 5,000원(건당 2,500원)\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"해외 가맹점 이용금액 제외\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"음식점·편의점 10% 청구할인\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"음식점, GS25·CU 편의점 이용금액의 10%를 할인받을 수 있습니다.(건당 할인한도 2,500원, 월 할인한도 5,000원)\"},{\"kind\":\"text\",\"key\":\"dt\",\"value\":\"할인 대상\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"음식점: 한식, 일식, 중식, 양식, 뷔페, 패밀리레스토랑, 일반음식점 업종\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"편의점: GS25, CU\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"전월 이용실적 40만원 이상 시 제공\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"월 할인한도 5,000원(건당 2,500원)\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"편의점은 오프라인 매장 이용금액에 한해 적용\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"백화점, 대형마트 등에 입점한 일부 매장 제외\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"이동통신요금 10%, OTT 30% 청구할인\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이동통신요금은 자동납부 시 10%, OTT 구독료는 각 서비스의 공식 홈페이지에서 정기결제 시 30% 할인받을 수 있습니다.(건당 할인한도 2,500원, 월 할인한도 5,000원)\"},{\"kind\":\"text\",\"key\":\"dt\",\"value\":\"할인 대상\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"이동통신요금: SKT, KT, LG U+, Liiv M\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"OTT: 넷플릭스, 유튜브 프리미엄, 웨이브, 티빙, 디즈니플러스\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"전월 이용실적 40만원 이상 시 제공\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"월 할인한도 5,000원(건당 2,500원)\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"이동통신요금은 인터넷, IPTV 등이 결합된 상품 제외\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"OTT는 인앱 결제, 단건 결제, 간편결제, 포인트 및 캐시 충전 등 제외\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"유튜브는 유튜브 프리미엄 멤버십 결제 건에 한함(채널 구독 등 제외)\"},{\"kind\":\"text\",\"key\":\"caption\",\"value\":\"나한테 진심 서비스 전월 이용실적 조건 및 월 통합 할인한도\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"월 통합 할인한도\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"전월 이용실적 조건\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5,000원건당 2,500원 한도\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"¹\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"음식점·편의점\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5,000원건당 2,500원 한도\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"²\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"4개 할인서비스 모두 전월 이용실적 40만원 이상 시 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"이동통신요금과 OTT 구독료 할인은 월 통합 할인한도 5,000원 내에서 적용\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드를 처음 발급한 경우, 사용등록일부터 다음 달 말일까지는 전월 이용실적 조건 없이 할인 혜택 적용\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"할인 제외 대상상세보기\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"무이자할부 이용금액, 단기카드대출(현금서비스), 장기카드대출(카드론), 상품권 및 선불카드(선불전자지급수단 포함) 구입·충전금액, 아파트관리비, 초·중·고등학교 납입금 전체, 정부지원금(보육료/유치원 보조비/바우처 이용금액 등), 대학(대학원)등록금, 국세, 지방세, 공과금(전기/수도 등), 4대 사회보험료(건강/연금/고용/산재), 각종 수수료 및 이자, 연체료, 연회비, 신차구매청구(환급) 할인 전표 전체, 취소금액\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"전월 이용실적 제외 대상상세보기\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"My WE:SH 카드로 ‘나한테 진심, 더욱 진심 서비스’ 할인받은 이용건(해당 이용금액 전체), 단기카드대출(현금서비스), 장기카드대출(카드론), 상품권 및 선불카드(선불전자지급수단 포함) 구입·충전금액, 아파트관리비, 초·중·고등학교 납입금 전체, 정부지원금(보육료/유치원보조비/바우처 이용금액 등), 대학(대학원)등록금, 국세, 지방세, 공과금(전기/수도 등), 4대 사회보험료(건강/연금/고용/산재), 각종 수수료 및 이자, 연체료, 연회비, 무승인전표(교통요금/자판기/터널통행료/항공기내 이용 등), 취소금액\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"더욱 진심 서비스(선택 할인)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"먹는데·노는데·관리에 진심인 3가지 서비스팩 중 1개를 선택해 자주 쓰는 영역의 혜택을 더할 수 있습니다.\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"배달앱·커피 5% 청구할인\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"배달앱, 커피·음료 전문점 이용금액의 5%를 할인받을 수 있습니다.(월 할인한도 5,000원)\"},{\"kind\":\"text\",\"key\":\"dt\",\"value\":\"할인 대상\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"배달앱: 배달의민족, 요기요, 마켓컬리\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"커피: 커피·음료 전문점 업종\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"전월 이용실적 40만원 이상 시 제공\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"월 할인한도 5,000원\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"상품권(선물하기 등), 선불카드(선불전자지급수단 포함) 구매/충전 제외\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"배달앱 주문 후 현장 결제 건 제외\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"백화점, 대형마트 등에 입점한 일부 커피 매장 제외\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"택시·커피 5%, 영화관 30% 청구할인\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"택시, 커피·음료 전문점 이용금액의 5%, 영화관 이용금액의 30%를 할인받을 수 있습니다.(월 할인한도 5,000원)\"},{\"kind\":\"text\",\"key\":\"dt\",\"value\":\"할인 대상\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"택시: 택시 업종\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"커피: 커피·음료 전문점 업종\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"영화관: CGV, 롯데시네마, 메가박스\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"전월 이용실적 40만원 이상 시 제공\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"월 할인한도 5,000원(영화관의 경우 연 4회, 최대 2만원 한도)\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"백화점, 대형마트 등에 입점한 일부 커피 매장 제외\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"영화관은 매점 이용, 관람권(상품권) 구매, 예매대행 사이트 결제 제외\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"미용실·스포츠·온라인 서점·올리브영 5% 청구할인\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"미용실, 스포츠, 온라인 서점, 올리브영 이용금액의 5%를 할인받을 수 있습니다.(월 할인한도 1만원)\"},{\"kind\":\"text\",\"key\":\"dt\",\"value\":\"할인 대상\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"미용실 업종\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"스포츠: 종합스포츠센터, 골프장, 골프연습장, 테니스장, 수영장, 요가, 볼링장, 스포츠용품점, 레저용품점 업종\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"온라인 서점: 교보문고, YES24 공식 홈페이지·앱\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"올리브영: 오프라인 매장, 공식 온라인 쇼핑몰·앱\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"전월 이용실적 40만원 이상 시 제공\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"월 할인한도 1만원\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"온라인 서점의 오프라인 매장 결제 건 제외\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"백화점, 대형마트 등에 입점한 일부 올리브영 매장 제외\"},{\"kind\":\"text\",\"key\":\"caption\",\"value\":\"더욱 진심 서비스 전월 이용실적 조건 및 월 통합 할인한도\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"월 통합할인한도\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"전월이용실적 조건\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"먹는데 진심 서비스팩\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"배달·커피\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"¹\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"노는데 진심 서비스팩\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"택시·커피\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"²\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"¹\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"³\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"관리에 진심 서비스팩\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"미용실\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"²\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"¹\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"스포츠\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"온라인 서점\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"올리브영\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"선택한 1개 서비스 혜택은 전월 이용실적 40만원 이상 시 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"서비스팩 내 세부 카테고리는 월 통합 할인한도 내에서 적용\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"영화관 할인은 연 4회, 최대 2만원까지 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드를 처음 발급한 경우, 사용등록일부터 다음 달 말일까지는 전월 이용실적 조건 없이 할인 혜택 적용\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"할인 제외 대상상세보기\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"무이자할부 이용금액, 단기카드대출(현금서비스), 장기카드대출(카드론), 상품권 및 선불카드(선불전자지급수단 포함) 구입·충전금액, 아파트관리비, 초·중·고등학교 납입금 전체, 정부지원금(보육료/유치원 보조비/바우처 이용금액 등), 대학(대학원)등록금, 국세, 지방세, 공과금(전기/수도 등), 4대 사회보험료(건강/연금/고용/산재), 각종 수수료 및 이자, 연체료, 연회비, 신차구매청구(환급) 할인 전표 전체, 취소금액\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"전월 이용실적 제외 대상상세보기\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"My WE:SH 카드로 ‘나한테 진심, 더욱 진심 서비스’ 할인받은 이용건(해당 이용금액 전체), 단기카드대출(현금서비스), 장기카드대출(카드론), 상품권 및 선불카드(선불전자지급수단 포함) 구입·충전금액, 아파트관리비, 초·중·고등학교 납입금 전체, 정부지원금(보육료/유치원보조비/바우처 이용금액 등), 대학(대학원)등록금, 국세, 지방세, 공과금(전기/수도 등), 4대 사회보험료(건강/연금/고용/산재), 각종 수수료 및 이자, 연체료, 연회비, 무승인전표(교통요금/자판기/터널통행료/항공기내 이용 등), 취소금액\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"WE:SH 서비스\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"생일이 있는 달엔 더욱 진심 서비스 할인한도 2배\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"생일이 있는 달에는 더욱 진심 서비스의 월 할인한도가 2배로 늘어납니다. 먹는데·노는데 진심 서비스팩은 5,000원에서 1만원으로, 관리에 진심 서비스팩은 1만원에서 2만원으로 혜택이 커집니다.\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"Happy Birth Month는 실적유예기간 없이 전월 이용실적 40만원 이상 시 제공\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"생일이 있는 달은 KB국민카드에 등록된 회원정보 기준\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"부족한 전월 실적 연 2회, 최대 5만원까지 채워드림\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"전월 이용실적이 35만원 이상 40만원 미만이면 부족한 실적을 최대 5만원까지 채워 이번 달 할인 혜택을 이용할 수 있습니다. [전월실적 채워드림 조회/신청하기]를 눌러 신청할 수 있으며, 신청 다음 날부터 그달 말일까지 서비스가 적용됩니다.\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"본인회원에 한해 월 1회, 연 2회 신청 가능\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"매달 1~25일에 신청 가능\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"Happy Birth Month가 제공되는 생일이 있는 달에는 신청할 수 없음\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"서비스 신청 당일은 할인 혜택이 적용되지 않음\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"서비스 신청 후에는 취소할 수 없음\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"My WE:SH 카드, 이런 분께 추천드려요\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"외식, 배달앱, 카페를 일상처럼 자주 이용하시는 분\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"헤어, 뷰티, 운동, 도서 등 자기관리에 꾸준히 투자하시는 분\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주말엔 영화 관람이나 맛집 투어로 나만의 휴식을 즐기시는 분\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"변화하는 소비 패턴에 맞춰 나만의 혜택을 직접 선택하고 싶으신 분\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"전월 이용실적이 살짝 부족한 달에도 할인 혜택을 놓치고 싶지 않으신 분\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"My WE:SH 카드 혜택 Q&A\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"My WE:SH 카드는 어떤 혜택이 있나요?\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"KB Pay 할인과 다른 서비스 할인을 함께 받을 수 있나요?\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"더욱 진심 서비스팩은 어떻게 선택하면 좋나요?\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"카드 발급 후에도 더욱 진심 서비스팩을 변경할 수 있나요?\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"이용 전 확인해 주세요\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"할인서비스 제외 대상\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"무이자할부 이용금액, 단기카드대출(현금서비스), 장기카드대출(카드론), 상품권 및 선불카드(선불전자지급수단 포함) 구입·충전금액, 아파트관리비, 초·중·고등학교 납입금 전체, 정부지원금(보육료/유치원 보조비/바우처 이용금액 등), 대학(대학원)등록금, 국세, 지방세, 공과금(전기/수도 등), 4대 사회보험료(건강/연금/고용/산재), 각종 수수료 및 이자, 연체료, 연회비, 신차구매청구(환급) 할인 전표 전체, 취소금액\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"전월 이용실적 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"전월 1일~말일(승인시점 기준) ‘KB국민 My WE:SH 카드’ 일시불 및 할부 승인금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해외 이용금액은 전월 1일~말일까지 일시불 매입완료 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"취소금액은 취소전표가 KB국민카드에 접수된 월의 실적에서 차감\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"전월 이용실적 제외 대상\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"KB국민 My WE:SH 카드로 할인받은 이용건(해당 이용금액 전체), 단기카드대출(현금서비스), 장기카드대출(카드론), 상품권 및 선불카드(선불전자지급수단 포함) 구입·충전금액, 아파트관리비, 초·중·고등학교 납입금 전체, 정부지원금(보육료/유치원보조비/바우처 이용금액 등), 대학(대학원)등록금, 각종 세금, 공과금(전기/수도 등), 4대 사회보험료(건강/연금/고용/산재), 각종 수수료 및 이자, 연체료, 연회비, 교통요금, 무승인전표(자판기, 터널통행료, 항공기내 이용 등), 취소금액\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"선택서비스 안내사항\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"선택서비스 변경 시 신청일 기준 다음달 1일부터 적용(월 단위 제공)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"변경 방법 : KB국민카드 홈페이지·KB Pay 앱·고객센터(1588-1688)\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"연회비\"},{\"kind\":\"text\",\"key\":\"caption\",\"value\":\"연회비 정보\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"국내전용(Local), 국내외겸용(Mastercard, AMEX)\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"일반카드\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"15,000원 (기본연회비 7,000원 + 제휴연회비 8,000원)\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"모바일 단독카드\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"9,000원 (기본연회비 1,000원 + 제휴연회비 8,000원)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2025년 1월 1일까지 카드를 발급한 고객은 기존(아래)과 동일하게 적용\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기본연회비 회원별 청구(모바일단독카드와 기타 일반 KB국민카드 동시 보유 시 해당 일반카드 기준으로 청구)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"제휴연회비 카드별 청구\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"연회비는 카드발급 시점을 기준으로 1년 단위로 청구되며, 초회·차기년도 연회비 면제조건은 없습니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"모바일 단독카드로 이용 가능한 국내 오프라인 가맹점 세부 안내는 ‘KB국민카드 홈페이지 > 서비스 > 결제서비스 > KB Pay > KB Pay 가맹점’ 참조\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"연회비 반환기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드의 발행·배송 등 카드발급(신규발급)에 소요된 비용\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드 이용 시 제공되는 추가적인 혜택(기프트 제공 비용) 등 부가서비스 제공에 소요된 비용\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"해외 이용 확인사항\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해외 이용 시(해외사이트 거래 포함) 미화(USD)기준 거래미화금액에 접수일의(KB국민은행) 최초고시 전신환매도율을 적용한 후, 국제브랜드사가 부과하는 국제브랜드 수수료(Mastercard 1.0%, AMEX 1.4%)와 KB국민카드가 부과하는 해외서비스 수수료 (0.25%)를 포함하여 원화로 청구됩니다. 이 경우 KB국민카드의 해외서비스 수수료는 국제브랜드 수수료를 제외하고 산정됩니다.\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"¹\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"²\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"³\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"전신환매도율 : 접수일의 KB국민은행 최초고시 전신환매도율\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해외원화결제(DCC) 차단 서비스 이용방법 : KB국민카드 홈페이지 및 KB Pay 앱 > 서비스 > 해외이용서비스 > 해외원화결제차단서비스\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"부가서비스 변경 안내\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드사의 휴업·파산·경영상의 위기 등에 따른 불가피한 경우\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"제휴업체의 휴업·파산·경영상의 위기로 인해 불가피하게 부가서비스를 축소·변경하는 경우로서 다른 제휴업체를 통해 동종의 유사한 부가서비스 제공이 불가한 경우\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"제휴업체가 카드사의 의사에 반하여 해당 부가서비스를 축소하거나 변경 시, 당초 부가서비스에 상응하는 다른 부가서비스를 제공하는 경우\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"부가서비스를 3년 이상 제공한 상태에서 해당 부가서비스로 인해 상품의 수익성이 현저히 낮아진 경우\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드사가 부가서비스를 변경하는 경우 변경 사유, 변경 내용 등을 사유 발생 즉시 서면교부, 우편 또는 전자우편, 전화 또는 팩스, 휴대폰 메시지 또는 이에 준하는 전자적 의사 표시 중 서로 다른 2가지 이상의 방법으로 고지하여 드립니다. 다만, 상기 3호의 경우 부가서비스 변경일 6개월 이전부터 서면교부, 우편 또는 전자우편, 전화 또는 팩스, 휴대폰 메시지 또는 이에 준하는 전자적 의사표시 중 서로 다른 2가지 이상의 방법으로 매월 고지하여 드립니다.\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"가족카드 발급 관련 안내\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"본인 카드만 발급 가능\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"기타\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"예시: 음식점에서 네이버페이로 결제 시 가맹점명이 ‘네이버페이’인 경우 음식점 가맹점이 아닌 ‘간편결제’ 가맹점으로 분류됩니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"이용 순서대로 월간 한도 내 할인이 적용되며, 잔여 할인한도는 이월되지 않습니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"할인받은 이용 건을 취소할 경우 취소전표가 실시간으로 접수되지 않아 할인한도가 즉시 복원되지 않을 수 있습니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"상품 관련 세부 문의: 홈페이지(www.kbcard.com) 참조 또는 고객센터(1588-1688)\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"상품설명서 PDF 다운로드\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"상품설명서\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"주요거래조건\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"카드 공통 안내사항\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"금융소비자는 금소법 제19조 제1항에 따라 해당상품 또는 서비스에 대하여 설명을 받을 권리가 있으며, 그 설명을 듣고 내용을 충분히 이해한 후 거래하시기 바랍니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신용카드 발급이 부적정한 경우(개인신용평점 낮음, 연체금 보유 등) 카드발급이 제한될 수 있습니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드이용대금과 이에 수반되는 모든 수수료를 지정된 대금 결제일에 상환합니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"단, 연체발생시점에 정상이자율이 없는 경우 아래와 같이 적용함\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"일시불 거래 연체시 : 거래발생시점의 최소기간(2개월) 유이자 할부수수료율 적용\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"무이자할부 거래 연체시 : 거래발생시점의 동일한 할부계약기간의 유이자할부수수료율 적용\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"한국은행에서 매월 발표하는 가장 최근의 비은행 금융기관 가중평균대출금리(신규대출 기준)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"상환능력에 비해 신용카드 사용액이 과도할 경우 귀하의 개인신용평점이 하락할 수 있습니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"개인신용평점 하락 시 금융거래 관련된 불이익이 발생할 수 있습니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"일정기간 원리금을 연체할 경우, 모든 원리금을 변제할 의무가 발생할 수 있습니다.\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"금융소비자권리\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"금리인하요구권 관련 안내\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"할부거래의 소비자 권리\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"위법계약해지권\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"FAQ\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"KB Pay·음식·OTT 10~30% 할인\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"배달·커피·영화·미용실 5~30% 선택 할인\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"Happy Birth Month·전월실적 채워드림\"},{\"kind\":\"link\",\"key\":\"다운로드\",\"value\":\"https://img2.kbcard.com/obj/card/download/09923__prdctOpmn_20241230.pdf\"},{\"kind\":\"link\",\"key\":\"다운로드\",\"value\":\"https://img2.kbcard.com/obj/contents/download/Terms_sheet_persnal_MERGE_09923.pdf\"},{\"kind\":\"link\",\"key\":\"자세히 보기금리인하요구권 관련 안내 상세 페이지로 이동\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTC0001?ARTICLE_SERIAL=10115&ROUTE_TYPE=VIEW\"},{\"kind\":\"link\",\"key\":\"자세히 보기할부거래의 소비자 권리 상세 페이지로 이동\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTC0020\"},{\"kind\":\"link\",\"key\":\"자세히 보기위법계약해지권 상세 페이지로 이동\",\"value\":\"https://card.kbcard.com/FNC/DVIEW/HFDMCXPRIFICD0062\"},{\"kind\":\"link\",\"key\":\"자세히 보기FAQ 상세 페이지로 이동\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTC0015\"},{\"kind\":\"image\",\"key\":\"ECO(친환경)\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/kbcard/upload/img/product/09123_img.png\"},{\"kind\":\"image\",\"key\":\"레터링\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/kbcard/upload/img/product/19123_img.png\"},{\"kind\":\"image\",\"key\":\"토심이와 토뭉이\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/kbcard/upload/img/product/29123_img.png\"},{\"kind\":\"image\",\"key\":\"즐거운 토심이\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/kbcard/upload/img/product/39123_img.png\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/home_re/common/icons/kb-kookmin-card-kb-pay-icon.png\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/home_re/common/icons/kb-kookmin-card-food-icon.png\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/home_re/common/icons/kb-kookmin-card-ott-icon.png\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/home_re/common/icons/kb-kookmin-card-delivery-icon.png\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/home_re/common/icons/kb-kookmin-card-movie-icon.png\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/home_re/common/icons/kb-kookmin-card-beauty-icon.png\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/home_re/common/icons/kb-kookmin-card-birthday-cake-icon.png\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/home_re/common/icons/kb-kookmin-card-gift-box-icon.png\"}],\"removed\":[{\"kind\":\"title\",\"key\":\"title\",\"value\":\"카드상품/안내>카드 | 국민의 행복생활 파트너 KB국민카드\"},{\"kind\":\"meta\",\"key\":\"description\",\"value\":\"KB국민카드의 혜택을 한눈에 확인하세요\"},{\"kind\":\"meta\",\"key\":\"keyword\",\"value\":\"KB국민카드, 국민카드, KB카드, 국카, 국민카드 한눈에보기, 국민카드 전체, 국민카드 혜택, 국민카드 발급, 카드소개, 한글카드, 다담카드, 국민카드 할인, 국민카드 교육, 국민카드 마트, 국민카드 통신, 국민카드 포인트, 국민카드 쇼핑, KB국민 체크카드, 카드신청, 발급조회, 국민카드 등록, 맞춤카드 찾기\"},{\"kind\":\"meta\",\"key\":\"title\",\"value\":\"카드안내/신청 - KB국민카드\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"'나'의 행복을 위한 필수 혜택 카드\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신용\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"KB Pay/음식/OTT\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"배달/커피/영화/미용실 등\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"Happy Birth Month / 전월실적 채워드림\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"연회비 안내\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"15,000원(모바일단독: 9,000원)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"15,000원(모바일단독: 9,000원)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"15,000원(모바일단독: 9,000원)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주요혜택\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"상세혜택\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"연회비\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"확인사항\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"서비스 요약\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"나한테 진심 서비스\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"더욱 진심 서비스 (택1)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"WE:SH 서비스(Happy Birth Month)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"WE:SH 서비스(전월실적 채워드림)\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"주요혜택\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"나한테 진심 KB Pay 10% 할인\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"나한테 진심 음식점/편의점 10% 할인\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"나한테 진심 이동통신 10% 할인OTT 30% 할인\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"먹는데 진심 (선택) 배달/커피 5% 할인\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"노는데 진심(선택) 택시/커피/영화 5~30% 할인\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"관리에 진심(선택) 미용실/스포츠/올리브영/온라인서점 5% 할인\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"WE:SH 서비스 Happy Birth Month\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"WE:SH 서비스 전월실적 채워드림\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"상세혜택 > 서비스 요약\"},{\"kind\":\"text\",\"key\":\"caption\",\"value\":\"our WE:SH카드 서비스 한눈에 보기\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"상품 서비스\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"월 할인한도(전월 실적 40만원 이상)\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"비고\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"나한테 진심서비스\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5,000원\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"건당할인한도2,500원\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"음식점, 편의점(GS25, CU)\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5,000원\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5,000원\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"더욱 진심서비스(3개 중 택1)\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"먹는데 진심\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"배달/커피\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5%\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5,000원\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"노는데 진심\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"택시, 커피\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5%\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5,000원\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"영화관\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"30%\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"연 4회(연 2만원)이내\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"관리에 진심\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"미용실, 스포츠,올리브영, 온라인서점\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5%\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"10,000원\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"WE:SH서비스\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"Happy BirthMonth\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"생일 월에「더욱 진심 서비스(택1)」월 할인한도 2배 제공(먹는데 진심/노는데 진심 5천원 -> 1만원, 관리에 진심 1만원 -> 2만원)\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"전월실적채워드림\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"전월 이용실적이 조금 부족해서 이번 달의 혜택을 못 받을 때,5만원 한도 내로 연 2회 무료로 전월 실적을 채워드리는 서비스\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"상세혜택 > 나한테 진심 서비스\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"KB Pay 10% 할인\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"※ 해외 가맹점 결제건 제외\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"음식점, 편의점 10% 할인\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"※ 백화점/대형마트 등 일부 입점 매장 제외\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이동통신요금 10% 할인\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"※ 인터넷, IPTV 등 결합상품 제외\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"OTT 30% 할인\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"※ 간편결제 또는 인앱 결제건 등은 제외\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"[나한테 진심 서비스 월 할인한도]\"},{\"kind\":\"text\",\"key\":\"caption\",\"value\":\"나한테 진심 서비스\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"월 할인한도\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"KB Pay\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"10%\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5,000원(건당 2,500원 한도)\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"음식점, 편의점\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"10%\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5,000원(건당 2,500원 한도)\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"이동통신요금\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"10%\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5,000원(건당 2,500원 한도)\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"OTT\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"30%\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"전월 이용실적 40만원 이상 시 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"최초 발급받은 My WE:SH 카드 사용등록일(KB Pay 등 간편결제 등록 포함)로 부터 다음달 말일(실적유예기간)까지는 전월 이용실적 40만원 미만 시에도 할인서비스 제공\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"상세혜택 > 더욱 진심 서비스 (택1)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"서비스팩(먹는데 진심/노는데 진심/관리에 진심) 중 1개 선택\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"배달/커피 5% 할인\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"※ 상품권(선물하기 등), 선불카드(선불전자지급수단 포함) 제외\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"※ 배달 현장 결제건은 제외\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"※ 백화점/대형마트 등 일부 입점 매장 제외\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"택시/커피 5%, 영화관 30% 할인\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"※ 백화점/대형마트 등 일부 입점 매장 제외\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"※ 매점, 관람권(상품권) 구입, 예매대행사이트는 제외\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"미용실, 스포츠, 온라인서점, 올리브영 5% 할인\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"미용실, 스포츠 : 미용실, 종합스포츠센터, 골프(연습)장, 테니스장, 수영장, 요가, 볼링장, 스포츠용품점, 레저용품점 업종\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"※ 오프라인 매장 결제건은 제외\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"※ 백화점/대형마트 등 일부 입점 매장 제외\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"[더욱 진심 서비스 월 할인한도]\"},{\"kind\":\"text\",\"key\":\"caption\",\"value\":\"더욱 진심 서비스\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"구분\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"할인율\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"월 할인한도\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"먹는데 진심\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"배달, 커피\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"노는데 진심\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"택시, 커피\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5,000원\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"영화관\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"관리에 진심\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"미용실, 스포츠, 온라인서점, 올리브영\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"10,000원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"전월 이용실적 40만원 이상 시 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"영화 할인은 연 4회(연 2만원) 이내 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"최초 발급받은 My WE:SH 카드 사용등록일(KB Pay 등 간편결제 등록 포함)로 부터 다음달 말일(실적유예기간)까지는 전월 이용실적 40만원 미만 시에도 할인서비스 제공\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"상세혜택 > WE:SH 서비스(Happy Birth Month)\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"Happy Birth Month\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"먹는데 진심/노는데 진심 : 월 5천원 -> 월 1만원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"관리에 진심 : 월 1만원 -> 월 2만원\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"유의사항\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"Happy Birth Month는 전월 이용실적 40만원 이상 시 제공되며, 실적유예기간 제공 없음(카드발급 후 전월 이용실적 조건 충족 시 서비스 제공)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"생일 월은 KB국민카드에 등록된 회원정보 기준으로 제공\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"상세혜택 > WE:SH 서비스(전월실적 채워드림)\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"전월실적 채워드림\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"서비스 소개\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"전월 이용실적이 부족하여 이번 달 할인혜택을 못 받을 때 할인 혜택이 제공될 수 있도록 My WE:SH 카드의 전월실적을 채워드리는 서비스\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"서비스 대상\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"전월 이용실적 35만원 이상 40만원 미만인 고객\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"서비스 이용방법\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"※ 본인 회원만 신청가능, 매월 1일 ~ 25일 이내신청\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"※ 서비스 신청 당일은 할인서비스 미적용\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"유의사항\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"본인 회원 기준 월 1회, 연 2회 신청가능\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"서비스 신청 후 취소 불가\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"Happy Birth Month가 제공되는 생일 월에는 신청 불가\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"연회비\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"연회비\"},{\"kind\":\"text\",\"key\":\"caption\",\"value\":\"연회비\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"발급유형\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"기본연회비\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"제휴연회비\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"합계\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"국내전용/국내외겸용(Mastercard, AMEX)\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"일반\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"7천원\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"8천원\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"1만5천원\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"모바일 단독\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"1천원\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"8천원\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"9천원\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"기본연회비 회원별 청구 (모바일단독카드와 기타 일반 KB국민카드 동시 보유 시 해당 일반카드 기준으로 청구)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"제휴연회비 카드별 청구\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"연회비는 카드발급 시점을 기준으로 1년 단위로 청구되며, 초회/차기년도 연회비 면제조건은 없습니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"모바일 단독카드로 이용 가능한 국내 오프라인 가맹점 세부 안내는 [KB국민카드 홈페이지 > 서비스 > 결제서비스 > KB Pay > KB Pay 가맹점] 참조\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"연회비 반환 기준\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"① 카드의 발행·배송 등 카드발급(신규발급)에 소요된 비용\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"② 카드 이용 시 제공되는 추가적인 혜택(기프트 제공 비용) 등 부가서비스 제공에 소요된 비용\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"확인사항\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"연체이자율\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"연체이자율 : 회원별/이용상품별 정상이자율 +3%p, 최고 연 20% 이내\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"단, 연체발생시점에 정상이자율이 없는 경우 아래와 같이 적용함\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"일시불 거래 연체시 : 거래발생시점의 최소기간(2개월) 유이자 할부 수수료율 적용\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"무이자할부 거래 연체시 : 거래발생시점의 동일한 할부계약기간의 유이자할부수수료율 적용\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"그 외의 경우: 정상이자율은 상법상 상사법정이율과 상호금융가계자금대출금리* 중 높은 금리 적용 * 한국은행에서 매월 발표하는 가장 최근의 비은행 금융기관 가중평균대출금리(신규대출 기준)\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"상품설명서\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"PDF로 파일저장\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"PDF로 파일저장\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"PDF파일을 보시려면 PC에 Adobe Reader를 설치하셔야 합니다. Adobe Reader\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"상품관련 서비스\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"이용 전 확인사항\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"할인서비스 제외 대상\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"무이자할부 이용금액, 단기카드대출(현금서비스), 장기카드대출(카드론), 상품권 및 선불카드(선불전자지급수단 포함) 구입·충전금액, 아파트관리비, 초·중·고등학교 납입금 전체, 정부지원금(보육료/유치원보조비/바우처 이용금액 등), 대학(대학원)등록금, 각종 세금, 공과금(전기/수도 등), 4대 사회보험료(건강/연금/고용/산재), 각종 수수료 및 이자, 연체료, 연회비, 교통요금, 무승인전표(자판기, 터널통행료, 항공기내 이용 등), 취소금액\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"전월 이용실적 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"전월 1일 ~ 말일(승인시점 기준) 'KB국민 My WE:SH 카드' 일시불 및 할부 승인금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해외 이용금액은 전월 1일 ~ 말일까지 일시불 매입완료 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"취소금액은 취소전표가 KB국민카드에 접수된 월의 실적에서 차감\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"전월 이용실적 제외 대상\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"KB국민 My WE:SH 카드로 할인 받은 이용건(해당 이용금액 전체), 단기카드대출(현금서비스), 장기카드대출(카드론), 상품권 및 선불카드(선불전자지급수단 포함) 구입·충전금액, 아파트관리비, 초·중·고등학교 납입금 전체, 정부지원금(보육료/유치원보조비/바우처 이용금액 등), 대학(대학원)등록금, 각종 세금, 공과금(전기/수도 등), 4대 사회보험료(건강/연금/고용/산재), 각종 수수료 및 이자, 연체료, 연회비, 교통요금, 무승인전표(자판기, 터널통행료, 항공기내 이용 등), 취소금액\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"선택서비스 안내사항\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"선택서비스 변경 시 신청일 기준 다음달 1일부터 적용(월 단위 제공)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"변경 방법 : 모바일앱/홈페이지/고객센터(☎1588-1688)\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"가족카드 발급 관련 안내\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"본인 카드만 발급 가능\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"부가서비스 변경 안내\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"1-2. 제휴업체의 휴업·파산·경영상의 위기로 인해 불가피 하게 부가서비스를 축소·변경하는 경우로서 다른 제휴업체를 통해 동종의 유사한 부가서비스 제공이 불가한 경우\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"제휴업체가 카드사의 의사에 반하여 해당 부가서비스를 축소하거나 변경 시, 당초 부가서비스에 상응하는 다른 부가서비스를 제공하는 경우\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"부가서비스를 3년 이상 제공한 상태에서 해당 부가 서비스로 인해 상품의 수익성이 현저히 낮아진 경우\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드사가 부가서비스를 변경하는 경우 변경 사유, 변경 내용 등을 사유 발생 즉시 서면교부, 우편 또는 전자우편, 전화 또는 팩스, 휴대폰 메시지 또는 이에 준하는 전자적 의사 표시 중 2가지 이상의 방법으로 고지하여 드립니다. 다만, 상기 3호의 경우 부가서비스 변경일 6개월 이전부터 서면교부, 우편 또는 전자우편, 전화 또는 팩스, 휴대폰 메시지 또는 이에 준하는 전자적 의사표시 중 2가지 이상의 방법으로 매월 고지하여 드립니다.\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"해외 이용 확인사항\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해외 이용시(해외사이트 거래 포함) 미화(USD)기준 거래미화금액에 접수일의(KB국민은행) 최초고시 전신환 매도율을 적용한 후, 국제브랜드사가 부과하는 국제브랜드 수수료(Master 1.0%, AMEX 1.4%)와 KB국민카드가 부과하는 해외서비스 수수료 (0.25%)를 포함하여 원화로 청구됩니다. 이 경우 KB국민카드의 해외서비스 수수료는 국제브랜드 수수료를 제외하고 산정됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"해외 이용시 청구금액 = (거래미화금액 X 전신환매도율¹) + 국제브랜드 수수료² + 해외서비스 수수료³\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"전신환 매도율 : 접수일의 KB국민은행 최초고시 전신환매도율\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해외원화결제(DCC) 차단 서비스 이용방법 : KB국민카드 홈페이지/모바일앱 > 서비스 > 해외이용서비스 > 해외원화결제차단서비스\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"기타\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"별도 전용 가맹점번호로 승인처리되는 PG(결제대행)업체 또는 일부 간편결제(Pay)이용 시 할인대상에서 제외될 수 있습니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"이용 순서대로 월간 한도 내 할인이 적용되며 잔여 할인한도는 이월되지 않습니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"할인 받은 이용 건을 취소할 경우 취소전표가 실시간으로 접수되지 않아 할인한도가 즉시 복원되지 않을 수 있습니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"금융소비자는 금소법 제19조 제 1항에 따라 해당상품 또는 서비스에 대하여 설명을 받을 권리가 있으며, 그 설명을 듣고 내용을 충분히 이해한 후 거래하시기 바랍니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신용카드 발급이 부적정한 경우(신용평점 낮음, 연체금 보유 등) 카드발급이 제한 될 수 있습니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드 이용대금과 이에 수반되는 모든 수수료를 지정된 대금 결제일에 상환합니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"상품 관련 세부 문의: 홈페이지(www.kbcard.com) 참조 또는 고객센터(1588-1688)\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"금융소비자권리\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"금리인하요구권 관련 안내\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"할부거래의 소비자 권리\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"위법계약해지권\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"FAQ\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"\\\"상환능력에 비해 신용카드 사용액이 과도할 경우 귀하의 개인신용평점이 하락할 수 있습니다.\\\"\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"\\\"개인신용평점 하락 시 금융거래 관련된 불이익이 발생할 수 있습니다.\\\"\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"\\\"일정기간 원리금을 연체할 경우, 모든 원리금을 변제할 의무가 발생할 수 있습니다.\\\"\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"여신금융협회심의필 제2024-C1a-15690호(2024.12.16)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"KB Pay/음식/OTT 10~30% 할인\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"배달/커피/영화/미용실 등 5~30% 선택 할인\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"Happy Birth Month / 전월실적 채워드림\"},{\"kind\":\"link\",\"key\":\"신용\",\"value\":\"https://card.kbcard.com/cards/products/credit-cards/kb-my-wesh-card\"},{\"kind\":\"link\",\"key\":\"주요혜택\",\"value\":\"https://card.kbcard.com/cards/products/credit-cards/kb-my-wesh-card\"},{\"kind\":\"link\",\"key\":\"상세혜택\",\"value\":\"https://card.kbcard.com/cards/products/credit-cards/kb-my-wesh-card\"},{\"kind\":\"link\",\"key\":\"연회비\",\"value\":\"https://card.kbcard.com/cards/products/credit-cards/kb-my-wesh-card\"},{\"kind\":\"link\",\"key\":\"확인사항\",\"value\":\"https://card.kbcard.com/cards/products/credit-cards/kb-my-wesh-card\"},{\"kind\":\"link\",\"key\":\"서비스 요약\",\"value\":\"https://card.kbcard.com/cards/products/credit-cards/kb-my-wesh-card\"},{\"kind\":\"link\",\"key\":\"나한테 진심 서비스\",\"value\":\"https://card.kbcard.com/cards/products/credit-cards/kb-my-wesh-card\"},{\"kind\":\"link\",\"key\":\"더욱 진심 서비스 (택1)\",\"value\":\"https://card.kbcard.com/cards/products/credit-cards/kb-my-wesh-card\"},{\"kind\":\"link\",\"key\":\"WE:SH 서비스(Happy Birth Month)\",\"value\":\"https://card.kbcard.com/cards/products/credit-cards/kb-my-wesh-card\"},{\"kind\":\"link\",\"key\":\"WE:SH 서비스(전월실적 채워드림)\",\"value\":\"https://card.kbcard.com/cards/products/credit-cards/kb-my-wesh-card\"},{\"kind\":\"link\",\"key\":\"My WE:SH 선택서비스 조회 및 변경\",\"value\":\"https://card.kbcard.com/CRD/DVIEW/HCAMCXPRICASD0006?cooperationcode=09123\"},{\"kind\":\"link\",\"key\":\"PDF로 파일저장\",\"value\":\"https://card.kbcard.com/cards/products/credit-cards/kb-my-wesh-card\"},{\"kind\":\"link\",\"key\":\"PDF로 파일저장\",\"value\":\"https://card.kbcard.com/cards/products/credit-cards/kb-my-wesh-card\"},{\"kind\":\"link\",\"key\":\"Adobe Reader\",\"value\":\"https://get.adobe.com/kr/reader/\"},{\"kind\":\"link\",\"key\":\"서비스대상 가맹점 조회\",\"value\":\"https://card.kbcard.com/cards/products/credit-cards/kb-my-wesh-card\"},{\"kind\":\"link\",\"key\":\"카드한도 조회\",\"value\":\"https://card.kbcard.com/cards/products/credit-cards/kb-my-wesh-card\"},{\"kind\":\"link\",\"key\":\"자세히보기\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTC0001?ARTICLE_SERIAL=10115&ROUTE_TYPE=VIEW\"},{\"kind\":\"link\",\"key\":\"자세히보기\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTC0020\"},{\"kind\":\"link\",\"key\":\"자세히보기\",\"value\":\"https://card.kbcard.com/FNC/DVIEW/HFDMCXPRIFICD0062\"},{\"kind\":\"link\",\"key\":\"자세히보기\",\"value\":\"https://card.kbcard.com/SVC/DVIEW/HSEMCXCRSCTC0015\"},{\"kind\":\"image\",\"key\":\"My WE:SH 카드ECO(친환경)\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/kbcard/upload/img/product/09123_img.png\"},{\"kind\":\"image\",\"key\":\"My WE:SH 카드레터링\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/kbcard/upload/img/product/19123_img.png\"},{\"kind\":\"image\",\"key\":\"My WE:SH 카드토심이와 토뭉이\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/kbcard/upload/img/product/29123_img.png\"},{\"kind\":\"image\",\"key\":\"My WE:SH 카드즐거운 토심이\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/kbcard/upload/img/product/39123_img.png\"},{\"kind\":\"image\",\"key\":\"국내전용\",\"value\":\"https://img1.kbcard.com/LT/images_r/personal/product/brand_local.png\"},{\"kind\":\"image\",\"key\":\"MASTER카드\",\"value\":\"https://img1.kbcard.com/LT/images_r/personal/product/brand_master.png\"},{\"kind\":\"image\",\"key\":\"AMERICAN EXPRESS\",\"value\":\"https://img1.kbcard.com/LT/images_r/personal/product/brand_amex.png\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/event/mgr/thumb/2015/08/24/b_premium.gif\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/event/mgr/thumb/2015/08/24/b_cStore.gif\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/event/mgr/thumb/2015/08/24/b_telecom.gif\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/event/mgr/thumb/2015/08/24/b_coffee.gif\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/event/mgr/thumb/2015/08/24/b_motor.gif\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/event/mgr/thumb/2015/08/24/b_bMart.gif\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/event/mgr/thumb/2015/08/24/b_bSave.gif\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/event/mgr/thumb/2015/08/24/b_specialSave.gif\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/event/mgr/thumb/2015/08/24/s_common.gif\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/event/mgr/thumb/2015/08/24/s_cService.gif\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/event/mgr/thumb/2015/08/24/s_telecom.gif\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/event/mgr/thumb/2015/08/24/s_entertain.gif\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/event/mgr/thumb/2015/08/24/s_cHolic.gif\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/event/mgr/thumb/2015/08/24/s_motorS.gif\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/event/mgr/thumb/2015/08/24/s_trendShop.gif\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/LT/images_r/personal/product/img_card_detail14.gif\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/LT/images_r/personal/product/img_card_detail09.gif\"}]}",
+        "comparedCheckId": "a9b760c6-90d2-46d9-afdf-e7128c760a86",
+        "comparedAt": "2026-11-16T06:11:43.539Z",
+        "headAddedCount": 0,
+        "headRemovedCount": 0,
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -83202,11 +83202,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:43.539Z"
+        "createdAt": "2026-11-17T07:46:15.352Z"
       },
       "lastSuccessful": {
-        "checkId": "a9b760c6-90d2-46d9-afdf-e7128c760a86",
-        "createdAt": "2026-11-16T06:11:43.539Z",
+        "checkId": "39812e52-58cf-4f1b-8229-3ec02c66ed64",
+        "createdAt": "2026-11-17T07:46:15.352Z",
         "hash": "175969a83a3ed9d533380ee1258159340a75094528af15f0c4b53894edf9ec0b",
         "tokens": [
           {
@@ -97162,8 +97162,8 @@
       "liveCompletedAt": "2026-11-16T06:11:44.396Z",
       "lastChangedAt": "2026-11-16T06:11:44.396Z",
       "latest": {
-        "id": "a5add8f0-6b75-4250-a9b8-bf0902300068",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "e158215a-f471-4885-9c1c-e6692c0cdfb5",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "8ebd43ae-830a-4ea9-89a8-db087f92b159",
         "targetId": "6bf242ce-9823-4510-bb63-e9bd0c5ee0ba",
         "targetName": "My WE:SH 카드",
@@ -97181,16 +97181,16 @@
         "bodyLiveMarkerFound": true,
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">My WE:SH 카드, 이런 분께 추천드려요</h2>",
-        "changeStatus": "CHANGED",
-        "responseMs": 1913,
+        "changeStatus": "UNCHANGED",
+        "responseMs": 1021,
         "errorMessage": null,
-        "comparedCheckId": "382809d5-4f15-4406-b4c5-ae4a5af73050",
-        "comparedAt": "2026-11-15T06:13:53.332Z",
-        "headAddedCount": 10,
-        "headRemovedCount": 8,
-        "bodyAddedCount": 241,
-        "bodyRemovedCount": 69,
-        "diffJson": "{\"added\":[{\"kind\":\"title\",\"key\":\"title\",\"value\":\"My WE:SH 카드 | 신용카드 | KB국민카드\"},{\"kind\":\"meta\",\"key\":\"description\",\"value\":\"My WE:SH 카드는 KB Pay·음식·OTT 10~30% 기본 할인과 배달·커피·영화·미용실 등 5~30% 선택 할인, Happy Birth Month·전월실적 채워드림 혜택을 제공하는 신용카드입니다. 다양한 혜택을 한눈에 확인해보세요.\"},{\"kind\":\"meta\",\"key\":\"keywords\",\"value\":\"kb국민카드, kb card, 케이비 카드, my we:sh 카드, 신용카드, 음식점, ott, 배달, 커피, 영화\"},{\"kind\":\"meta\",\"key\":\"og:description\",\"value\":\"My WE:SH 카드는 KB Pay·음식·OTT 10~30% 기본 할인과 배달·커피·영화·미용실 등 5~30% 선택 할인, Happy Birth Month·전월실적 채워드림 혜택을 제공하는 신용카드입니다. 다양한 혜택을 한눈에 확인해보세요.\"},{\"kind\":\"meta\",\"key\":\"og:image\",\"value\":\"https://timg1.kbcard.com/home_re/product/og/kb-kookmin-card-credit-my-wesh-og.jpg\"},{\"kind\":\"meta\",\"key\":\"og:site_name\",\"value\":\"KB국민카드\"},{\"kind\":\"meta\",\"key\":\"og:title\",\"value\":\"My WE:SH 카드 | 신용카드 | KB국민카드\"},{\"kind\":\"meta\",\"key\":\"og:url\",\"value\":\"https://card.kbcard.com/cards/products/credit-cards/kb-my-wesh-card\"},{\"kind\":\"meta\",\"key\":\"robots\",\"value\":\"index, follow, max-image-preview:large\"},{\"kind\":\"meta\",\"key\":\"title\",\"value\":\"My WE:SH 카드 | 신용카드 | KB국민카드\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"ECO(친환경)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"레터링\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"토심이와 토뭉이\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"즐거운 토심이\"},{\"kind\":\"heading\",\"key\":\"h1\",\"value\":\"My WE:SH 카드\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"내 일상에 진심인 혜택, 골라 담는 맞춤형 할인\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"KB Pay·음식·OTT 10~30% 할인\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"배달·커피·영화·미용실 5~30% 선택 할인\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"Happy Birth Month·전월실적 채워드림\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"연회비 (안내 팝업 열림)\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"국내전용 15,000원\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"국내외겸용|MASTER, AMEX 15,000원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"국내 국내 15,000원 모바일단독(국내) 9,000원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"MASTER 15,000원 모바일단독(MASTER) 9,000원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"AMEX 15,000원 모바일단독(AMEX) 9,000원\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"닫기\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"주요 혜택\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"나한테 진심 서비스(기본 할인)\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"국내 가맹점 KB Pay 10% 청구할인\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"KB Pay로 결제하면 국내 가맹점 이용금액의 10%를 할인받을 수 있습니다.(건당 할인한도 2,500원, 월 할인한도 5,000원)\"},{\"kind\":\"text\",\"key\":\"dt\",\"value\":\"할인 대상\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"KB Pay: 국내 가맹점\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"전월 이용실적 40만원 이상 시 제공\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"월 할인한도 5,000원(건당 2,500원)\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"해외 가맹점 이용금액 제외\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"음식점·편의점 10% 청구할인\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"음식점, GS25·CU 편의점 이용금액의 10%를 할인받을 수 있습니다.(건당 할인한도 2,500원, 월 할인한도 5,000원)\"},{\"kind\":\"text\",\"key\":\"dt\",\"value\":\"할인 대상\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"음식점: 한식, 일식, 중식, 양식, 뷔페, 패밀리레스토랑, 일반음식점 업종\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"편의점: GS25, CU\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"전월 이용실적 40만원 이상 시 제공\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"월 할인한도 5,000원(건당 2,500원)\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"편의점은 오프라인 매장 이용금액에 한해 적용\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"백화점, 대형마트 등에 입점한 일부 매장 제외\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"이동통신요금 10%, OTT 30% 청구할인\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"이동통신요금은 자동납부 시 10%, OTT 구독료는 각 서비스의 공식 홈페이지에서 정기결제 시 30% 할인받을 수 있습니다.(건당 할인한도 2,500원, 월 할인한도 5,000원)\"},{\"kind\":\"text\",\"key\":\"dt\",\"value\":\"할인 대상\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"이동통신요금: SKT, KT, LG U+, Liiv M\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"OTT: 넷플릭스, 유튜브 프리미엄, 웨이브, 티빙, 디즈니플러스\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"전월 이용실적 40만원 이상 시 제공\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"월 할인한도 5,000원(건당 2,500원)\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"이동통신요금은 인터넷, IPTV 등이 결합된 상품 제외\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"OTT는 인앱 결제, 단건 결제, 간편결제, 포인트 및 캐시 충전 등 제외\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"유튜브는 유튜브 프리미엄 멤버십 결제 건에 한함(채널 구독 등 제외)\"},{\"kind\":\"text\",\"key\":\"caption\",\"value\":\"나한테 진심 서비스 전월 이용실적 조건 및 월 통합 할인한도\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"할인율\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"월 통합 할인한도\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"전월 이용실적 조건\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"KB Pay\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"10%\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5,000원건당 2,500원 한도\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"¹\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"음식점·편의점\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"10%\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5,000원건당 2,500원 한도\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"이동통신요금\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"10%\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"²\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"OTT\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"30%\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"4개 할인서비스 모두 전월 이용실적 40만원 이상 시 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"이동통신요금과 OTT 구독료 할인은 월 통합 할인한도 5,000원 내에서 적용\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드를 처음 발급한 경우, 사용등록일부터 다음 달 말일까지는 전월 이용실적 조건 없이 할인 혜택 적용\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"할인 제외 대상상세보기\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"무이자할부 이용금액, 단기카드대출(현금서비스), 장기카드대출(카드론), 상품권 및 선불카드(선불전자지급수단 포함) 구입·충전금액, 아파트관리비, 초·중·고등학교 납입금 전체, 정부지원금(보육료/유치원 보조비/바우처 이용금액 등), 대학(대학원)등록금, 국세, 지방세, 공과금(전기/수도 등), 4대 사회보험료(건강/연금/고용/산재), 각종 수수료 및 이자, 연체료, 연회비, 신차구매청구(환급) 할인 전표 전체, 취소금액\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"전월 이용실적 제외 대상상세보기\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"My WE:SH 카드로 ‘나한테 진심, 더욱 진심 서비스’ 할인받은 이용건(해당 이용금액 전체), 단기카드대출(현금서비스), 장기카드대출(카드론), 상품권 및 선불카드(선불전자지급수단 포함) 구입·충전금액, 아파트관리비, 초·중·고등학교 납입금 전체, 정부지원금(보육료/유치원보조비/바우처 이용금액 등), 대학(대학원)등록금, 국세, 지방세, 공과금(전기/수도 등), 4대 사회보험료(건강/연금/고용/산재), 각종 수수료 및 이자, 연체료, 연회비, 무승인전표(교통요금/자판기/터널통행료/항공기내 이용 등), 취소금액\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"더욱 진심 서비스(선택 할인)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"먹는데·노는데·관리에 진심인 3가지 서비스팩 중 1개를 선택해 자주 쓰는 영역의 혜택을 더할 수 있습니다.\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"배달앱·커피 5% 청구할인\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"배달앱, 커피·음료 전문점 이용금액의 5%를 할인받을 수 있습니다.(월 할인한도 5,000원)\"},{\"kind\":\"text\",\"key\":\"dt\",\"value\":\"할인 대상\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"배달앱: 배달의민족, 요기요, 마켓컬리\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"커피: 커피·음료 전문점 업종\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"전월 이용실적 40만원 이상 시 제공\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"월 할인한도 5,000원\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"상품권(선물하기 등), 선불카드(선불전자지급수단 포함) 구매/충전 제외\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"배달앱 주문 후 현장 결제 건 제외\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"백화점, 대형마트 등에 입점한 일부 커피 매장 제외\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"택시·커피 5%, 영화관 30% 청구할인\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"택시, 커피·음료 전문점 이용금액의 5%, 영화관 이용금액의 30%를 할인받을 수 있습니다.(월 할인한도 5,000원)\"},{\"kind\":\"text\",\"key\":\"dt\",\"value\":\"할인 대상\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"택시: 택시 업종\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"커피: 커피·음료 전문점 업종\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"영화관: CGV, 롯데시네마, 메가박스\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"전월 이용실적 40만원 이상 시 제공\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"월 할인한도 5,000원(영화관의 경우 연 4회, 최대 2만원 한도)\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"백화점, 대형마트 등에 입점한 일부 커피 매장 제외\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"영화관은 매점 이용, 관람권(상품권) 구매, 예매대행 사이트 결제 제외\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"미용실·스포츠·온라인 서점·올리브영 5% 청구할인\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"미용실, 스포츠, 온라인 서점, 올리브영 이용금액의 5%를 할인받을 수 있습니다.(월 할인한도 1만원)\"},{\"kind\":\"text\",\"key\":\"dt\",\"value\":\"할인 대상\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"미용실 업종\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"스포츠: 종합스포츠센터, 골프장, 골프연습장, 테니스장, 수영장, 요가, 볼링장, 스포츠용품점, 레저용품점 업종\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"온라인 서점: 교보문고, YES24 공식 홈페이지·앱\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"올리브영: 오프라인 매장, 공식 온라인 쇼핑몰·앱\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"전월 이용실적 40만원 이상 시 제공\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"월 할인한도 1만원\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"온라인 서점의 오프라인 매장 결제 건 제외\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"백화점, 대형마트 등에 입점한 일부 올리브영 매장 제외\"},{\"kind\":\"text\",\"key\":\"caption\",\"value\":\"더욱 진심 서비스 전월 이용실적 조건 및 월 통합 할인한도\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"구분\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"할인율\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"월 통합할인한도\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"전월이용실적 조건\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"먹는데 진심 서비스팩\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"배달·커피\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5%\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5,000원\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"¹\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"노는데 진심 서비스팩\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"택시·커피\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5%\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"²\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"¹\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"³\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"30%\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"관리에 진심 서비스팩\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"미용실\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"5%\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"²\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"¹\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"스포츠\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"온라인 서점\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"올리브영\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"선택한 1개 서비스 혜택은 전월 이용실적 40만원 이상 시 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"서비스팩 내 세부 카테고리는 월 통합 할인한도 내에서 적용\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"영화관 할인은 연 4회, 최대 2만원까지 제공\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드를 처음 발급한 경우, 사용등록일부터 다음 달 말일까지는 전월 이용실적 조건 없이 할인 혜택 적용\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"할인 제외 대상상세보기\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"무이자할부 이용금액, 단기카드대출(현금서비스), 장기카드대출(카드론), 상품권 및 선불카드(선불전자지급수단 포함) 구입·충전금액, 아파트관리비, 초·중·고등학교 납입금 전체, 정부지원금(보육료/유치원 보조비/바우처 이용금액 등), 대학(대학원)등록금, 국세, 지방세, 공과금(전기/수도 등), 4대 사회보험료(건강/연금/고용/산재), 각종 수수료 및 이자, 연체료, 연회비, 신차구매청구(환급) 할인 전표 전체, 취소금액\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"전월 이용실적 제외 대상상세보기\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"My WE:SH 카드로 ‘나한테 진심, 더욱 진심 서비스’ 할인받은 이용건(해당 이용금액 전체), 단기카드대출(현금서비스), 장기카드대출(카드론), 상품권 및 선불카드(선불전자지급수단 포함) 구입·충전금액, 아파트관리비, 초·중·고등학교 납입금 전체, 정부지원금(보육료/유치원보조비/바우처 이용금액 등), 대학(대학원)등록금, 국세, 지방세, 공과금(전기/수도 등), 4대 사회보험료(건강/연금/고용/산재), 각종 수수료 및 이자, 연체료, 연회비, 무승인전표(교통요금/자판기/터널통행료/항공기내 이용 등), 취소금액\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"WE:SH 서비스\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"생일이 있는 달엔 더욱 진심 서비스 할인한도 2배\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"생일이 있는 달에는 더욱 진심 서비스의 월 할인한도가 2배로 늘어납니다. 먹는데·노는데 진심 서비스팩은 5,000원에서 1만원으로, 관리에 진심 서비스팩은 1만원에서 2만원으로 혜택이 커집니다.\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"Happy Birth Month는 실적유예기간 없이 전월 이용실적 40만원 이상 시 제공\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"생일이 있는 달은 KB국민카드에 등록된 회원정보 기준\"},{\"kind\":\"heading\",\"key\":\"h4\",\"value\":\"부족한 전월 실적 연 2회, 최대 5만원까지 채워드림\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"전월 이용실적이 35만원 이상 40만원 미만이면 부족한 실적을 최대 5만원까지 채워 이번 달 할인 혜택을 이용할 수 있습니다. [전월실적 채워드림 조회/신청하기]를 눌러 신청할 수 있으며, 신청 다음 날부터 그달 말일까지 서비스가 적용됩니다.\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"본인회원에 한해 월 1회, 연 2회 신청 가능\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"매달 1~25일에 신청 가능\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"Happy Birth Month가 제공되는 생일이 있는 달에는 신청할 수 없음\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"서비스 신청 당일은 할인 혜택이 적용되지 않음\"},{\"kind\":\"text\",\"key\":\"dd\",\"value\":\"서비스 신청 후에는 취소할 수 없음\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"My WE:SH 카드, 이런 분께 추천드려요\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"외식, 배달앱, 카페를 일상처럼 자주 이용하시는 분\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"헤어, 뷰티, 운동, 도서 등 자기관리에 꾸준히 투자하시는 분\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주말엔 영화 관람이나 맛집 투어로 나만의 휴식을 즐기시는 분\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"변화하는 소비 패턴에 맞춰 나만의 혜택을 직접 선택하고 싶으신 분\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"전월 이용실적이 살짝 부족한 달에도 할인 혜택을 놓치고 싶지 않으신 분\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"My WE:SH 카드 혜택 Q&A\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"My WE:SH 카드는 어떤 혜택이 있나요?\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"KB Pay 할인과 다른 서비스 할인을 함께 받을 수 있나요?\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"더욱 진심 서비스팩은 어떻게 선택하면 좋나요?\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"카드 발급 후에도 더욱 진심 서비스팩을 변경할 수 있나요?\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"이용 전 확인해 주세요\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"상세보기\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"할인서비스 제외 대상\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"무이자할부 이용금액, 단기카드대출(현금서비스), 장기카드대출(카드론), 상품권 및 선불카드(선불전자지급수단 포함) 구입·충전금액, 아파트관리비, 초·중·고등학교 납입금 전체, 정부지원금(보육료/유치원 보조비/바우처 이용금액 등), 대학(대학원)등록금, 국세, 지방세, 공과금(전기/수도 등), 4대 사회보험료(건강/연금/고용/산재), 각종 수수료 및 이자, 연체료, 연회비, 신차구매청구(환급) 할인 전표 전체, 취소금액\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"전월 이용실적 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"전월 1일~말일(승인시점 기준) ‘KB국민 My WE:SH 카드’ 일시불 및 할부 승인금액 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해외 이용금액은 전월 1일~말일까지 일시불 매입완료 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"취소금액은 취소전표가 KB국민카드에 접수된 월의 실적에서 차감\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"전월 이용실적 제외 대상\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"KB국민 My WE:SH 카드로 할인받은 이용건(해당 이용금액 전체), 단기카드대출(현금서비스), 장기카드대출(카드론), 상품권 및 선불카드(선불전자지급수단 포함) 구입·충전금액, 아파트관리비, 초·중·고등학교 납입금 전체, 정부지원금(보육료/유치원보조비/바우처 이용금액 등), 대학(대학원)등록금, 각종 세금, 공과금(전기/수도 등), 4대 사회보험료(건강/연금/고용/산재), 각종 수수료 및 이자, 연체료, 연회비, 교통요금, 무승인전표(자판기, 터널통행료, 항공기내 이용 등), 취소금액\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"선택서비스 안내사항\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"선택서비스 변경 시 신청일 기준 다음달 1일부터 적용(월 단위 제공)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"변경 방법 : KB국민카드 홈페이지·KB Pay 앱·고객센터(1588-1688)\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"연회비\"},{\"kind\":\"text\",\"key\":\"caption\",\"value\":\"연회비 정보\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"구분\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"국내전용(Local), 국내외겸용(Mastercard, AMEX)\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"일반카드\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"15,000원 (기본연회비 7,000원 + 제휴연회비 8,000원)\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"모바일 단독카드\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"9,000원 (기본연회비 1,000원 + 제휴연회비 8,000원)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"기본연회비 회원별 청구(모바일단독카드와 기타 일반 KB국민카드 동시 보유 시 해당 일반카드 기준으로 청구)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"제휴연회비 카드별 청구\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"연회비는 카드발급 시점을 기준으로 1년 단위로 청구되며, 초회·차기년도 연회비 면제조건은 없습니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"모바일 단독카드로 이용 가능한 국내 오프라인 가맹점 세부 안내는 ‘KB국민카드 홈페이지 > 서비스 > 결제서비스 > KB Pay > KB Pay 가맹점’ 참조\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"연회비 반환기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드의 발행·배송 등 카드발급(신규발급)에 소요된 비용\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드 이용 시 제공되는 추가적인 혜택(기프트 제공 비용) 등 부가서비스 제공에 소요된 비용\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"해외 이용 확인사항\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해외 이용 시(해외사이트 거래 포함) 미화(USD)기준 거래미화금액에 접수일의(KB국민은행) 최초고시 전신환매도율을 적용한 후, 국제브랜드사가 부과하는 국제브랜드 수수료(Mastercard 1.0%, AMEX 1.4%)와 KB국민카드가 부과하는 해외서비스 수수료 (0.25%)를 포함하여 원화로 청구됩니다. 이 경우 KB국민카드의 해외서비스 수수료는 국제브랜드 수수료를 제외하고 산정됩니다.\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"¹\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"²\"},{\"kind\":\"text\",\"key\":\"button\",\"value\":\"³\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"전신환매도율 : 접수일의 KB국민은행 최초고시 전신환매도율\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해외원화결제(DCC) 차단 서비스 이용방법 : KB국민카드 홈페이지 및 KB Pay 앱 > 서비스 > 해외이용서비스 > 해외원화결제차단서비스\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"부가서비스 변경 안내\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드사의 휴업·파산·경영상의 위기 등에 따른 불가피한 경우\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"제휴업체의 휴업·파산·경영상의 위기로 인해 불가피하게 부가서비스를 축소·변경하는 경우로서 다른 제휴업체를 통해 동종의 유사한 부가서비스 제공이 불가한 경우\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"제휴업체가 카드사의 의사에 반하여 해당 부가서비스를 축소하거나 변경 시, 당초 부가서비스에 상응하는 다른 부가서비스를 제공하는 경우\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"부가서비스를 3년 이상 제공한 상태에서 해당 부가서비스로 인해 상품의 수익성이 현저히 낮아진 경우\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드사가 부가서비스를 변경하는 경우 변경 사유, 변경 내용 등을 사유 발생 즉시 서면교부, 우편 또는 전자우편, 전화 또는 팩스, 휴대폰 메시지 또는 이에 준하는 전자적 의사 표시 중 서로 다른 2가지 이상의 방법으로 고지하여 드립니다. 다만, 상기 3호의 경우 부가서비스 변경일 6개월 이전부터 서면교부, 우편 또는 전자우편, 전화 또는 팩스, 휴대폰 메시지 또는 이에 준하는 전자적 의사표시 중 서로 다른 2가지 이상의 방법으로 매월 고지하여 드립니다.\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"가족카드 발급 관련 안내\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"기타\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"KB국민 My WE:SH 카드 서비스는 대상 가맹점이 KB국민카드의 업종분류 기준, 지정 업종에 한하여 제공됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"예시: 음식점에서 네이버페이로 결제 시 가맹점명이 ‘네이버페이’인 경우 음식점 가맹점이 아닌 ‘간편결제’ 가맹점으로 분류됩니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"KB국민 My WE:SH 카드는 본인회원 기준으로 월간 할인한도가 제공되며, 적용 기간은 매월 1일~말일까지(승인시점 기준)입니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"이용 순서대로 월간 한도 내 할인이 적용되며, 잔여 할인한도는 이월되지 않습니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"할인받은 이용 건을 취소할 경우 취소전표가 실시간으로 접수되지 않아 할인한도가 즉시 복원되지 않을 수 있습니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"상품 관련 세부 문의: 홈페이지(www.kbcard.com) 참조 또는 고객센터(1588-1688)\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"상품설명서 PDF 다운로드\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"상품설명서\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"주요거래조건\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"카드 공통 안내사항\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신용카드 발급이 부적정한 경우(개인신용평점 낮음, 연체금 보유 등) 카드발급이 제한될 수 있습니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"일시불 거래 연체시 : 거래발생시점의 최소기간(2개월) 유이자 할부수수료율 적용\"},{\"kind\":\"heading\",\"key\":\"h2\",\"value\":\"금융소비자권리\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"금리인하요구권 관련 안내\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"할부거래의 소비자 권리\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"위법계약해지권\"},{\"kind\":\"heading\",\"key\":\"h3\",\"value\":\"FAQ\"},{\"kind\":\"link\",\"key\":\"전월실적 채워드림 조회/신청하기\",\"value\":\"https://tm.kbcard.com/CRD/DVIEW/MCAM0005?cooperationcode=09123\"},{\"kind\":\"link\",\"key\":\"자세히 보기금리인하요구권 관련 안내 상세 페이지로 이동\",\"value\":\"https://m.kbcard.com/SVC/DVIEW/MSGMCXHIACSC0010?articleid=10115&boardId=188\"},{\"kind\":\"link\",\"key\":\"자세히 보기할부거래의 소비자 권리 상세 페이지로 이동\",\"value\":\"https://m.kbcard.com/SVC/DVIEW/MSGMCXHIACSC0009\"},{\"kind\":\"link\",\"key\":\"자세히 보기위법계약해지권 상세 페이지로 이동\",\"value\":\"https://m.kbcard.com/FNC/DVIEW/MFDMCXHIAFLCD0071\"},{\"kind\":\"link\",\"key\":\"자세히 보기FAQ 상세 페이지로 이동\",\"value\":\"https://m.kbcard.com/SVC/DVIEW/MSGMCXHIACSC0009\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/home_re/common/icons/kb-kookmin-card-kb-pay-icon.png\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/home_re/common/icons/kb-kookmin-card-food-icon.png\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/home_re/common/icons/kb-kookmin-card-ott-icon.png\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/home_re/common/icons/kb-kookmin-card-delivery-icon.png\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/home_re/common/icons/kb-kookmin-card-movie-icon.png\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/home_re/common/icons/kb-kookmin-card-beauty-icon.png\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/home_re/common/icons/kb-kookmin-card-birthday-cake-icon.png\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/home_re/common/icons/kb-kookmin-card-gift-box-icon.png\"}],\"removed\":[{\"kind\":\"title\",\"key\":\"title\",\"value\":\"[My WE:SH 카드] KB Pay/음식/OTT 10~30%, 배달/커피/영화/미용실 등 5~30%, Happy Birth Month / 전월실적 채워드림 - KB 국민카드\"},{\"kind\":\"meta\",\"key\":\"description\",\"value\":\"KB국민카드의 혜택을 한눈에 확인하세요.\"},{\"kind\":\"meta\",\"key\":\"fb:app_id\",\"value\":\"475041922695547\"},{\"kind\":\"meta\",\"key\":\"keywords\",\"value\":\"KB국민카드, 국민카드, KB카드, 국카, 국민카드 한눈에보기, 국민카드 전체, 국민카드 혜택, 국민카드 발급, 카드소개, 한글카드, 다담카드, 국민카드 할인, 국민카드 교육, 국민카드 마트, 국민카드 통신, 국민카드 포인트, 국민카드 쇼핑, KB국민 체크카드, 카드신청, 발급조회, 국민카드 등록, 맞춤카드 찾기\"},{\"kind\":\"meta\",\"key\":\"og:image\",\"value\":\"https://img1.kbcard.com/ST/img/cxc/kbcard/upload/img/product/09123_img.png\"},{\"kind\":\"meta\",\"key\":\"og:title\",\"value\":\"[My WE:SH 카드] KB Pay/음식/OTT 10~30%, 배달/커피/영화/미용실 등 5~30%, Happy Birth Month / 전월실적 채워드림 - KB 국민카드\"},{\"kind\":\"meta\",\"key\":\"og:url\",\"value\":\"https://m.kbcard.com/CRD/DVIEW/MCAMCXHIACRC0002?mainCC=b&allianceCode=09923\"},{\"kind\":\"meta\",\"key\":\"title\",\"value\":\"카드안내/신청 - KB국민카드\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"국내 15,000원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일단독 9,000원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"MASTER 15,000원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일단독 9,000원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"아멕스 15,000원\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"모바일단독 9,000원\"},{\"kind\":\"text\",\"key\":\"caption\",\"value\":\"일반카드 / 모바일 단독카드\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"일반카드\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"모바일 단독카드\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"기본연회비\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"7천원\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"1천원\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"제휴연회비\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"8천원\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"8천원\"},{\"kind\":\"text\",\"key\":\"th\",\"value\":\"합계\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"1만5천원\"},{\"kind\":\"text\",\"key\":\"td\",\"value\":\"9천원\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"기본연회비 회원별 청구 (모바일단독카드와 기타 일반 KB국민카드 동시 보유 시 해당 일반카드 기준으로 청구)\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"제휴연회비 카드별 청구\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"연회비는 카드발급 시점을 기준으로 1년 단위로 청구되며, 초회/차기년도 연회비 면제조건은 없습니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"모바일 단독카드로 이용 가능한 국내 오프라인 가맹점 세부 안내는 [KB국민카드 홈페이지 > 서비스 > 결제서비스 > KB Pay > KB Pay 가맹점] 참조\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"①카드의 발행·배송 등 카드발급(신규발급)에 소요된 비용\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"②카드 이용 시 제공되는 추가적인 혜택 (기프트 제공 비용) 등 부가서비스 제공에 소요된 비용\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"상품설명서 다운로드\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"주요거래조건 다운로드\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"무이자할부 이용금액, 단기카드대출(현금서비스), 장기카드대출(카드론), 상품권 및 선불카드(선불전자지급수단 포함) 구입·충전금액, 아파트관리비, 초·중·고등학교 납입금 전체, 정부지원금(보육료/유치원보조비/바우처 이용금액 등), 대학(대학원)등록금, 각종 세금, 공과금(전기/수도 등), 4대 사회보험료(건강/연금/고용/산재), 각종 수수료 및 이자, 연체료, 연회비, 교통요금, 무승인전표(자판기, 터널통행료, 항공기내 이용 등), 취소금액\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"전월 1일 ~ 말일(승인시점 기준) 'KB국민 My WE:SH 카드' 일시불 및 할부 승인금액 기준(가족카드 포함)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해외 이용금액은 전월 1일 ~ 말일까지 일시불 매입완료 기준\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"취소금액은 취소전표가 KB국민카드에 접수된 월의 실적에서 차감\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"KB국민 My WE:SH 카드로 할인 받은 이용건(해당 이용금액 전체), 단기카드대출(현금서비스), 장기카드대출(카드론), 상품권 및 선불카드(선불전자지급수단 포함) 구입·충전금액, 아파트관리비, 초·중·고등학교 납입금 전체, 정부지원금(보육료/유치원보조비/바우처 이용금액 등), 대학(대학원)등록금, 각종 세금, 공과금(전기/수도 등), 4대 사회보험료(건강/연금/고용/산재), 각종 수수료 및 이자, 연체료, 연회비, 교통요금, 무승인전표(자판기, 터널통행료, 항공기내 이용 등), 취소금액\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"선택서비스 변경 시 신청일 기준 다음달 1일부터 적용(월 단위 제공)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"변경 방법 : 모바일앱/홈페이지/고객센터(☎1588-1688)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해외 이용시(해외사이트 거래 포함) 미화(USD)기준 거래미화금액에 접수일의(KB국민은행) 최초고시 전신환 매도율을 적용한 후, 국제브랜드사가 부과하는 국제브랜드 수수료(MASTER 1.0%, AMEX 1.4%)와 KB국민카드가 부과하는 해외서비스 수수료 (0.25%)를 포함하여 원화로 청구됩니다. 이 경우 KB국민카드의 해외서비스 수수료는 국제브랜드 수수료를 제외하고 산정됩니다.\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"해외 이용시 청구금액 = (거래미화금액 X 전신환매도율¹) + 국제브랜드 수수료² + 해외서비스 수수료³\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"전신환 매도율 : 접수일의 KB국민은행 최초고시 전신환매도율\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"해외원화결제(DCC) 차단 서비스 이용방법 : KB국민카드 홈페이지/모바일앱 > 서비스 > 해외이용서비스 > 해외원화결제차단서비스\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"1.카드사의 휴업·파산·경영상의 위기로 인해 불가피한 경우\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"1의2.제휴업체의 휴업·파산·경영상의 위기로 인해 불가피하게 부가서비스를 축소·변경하는 경우로서 다른 제휴업체를 통해 동종의 유사한 부가서비스 제공이 불가한 경우\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"2.제휴업체가 카드사의 의사에 반하여 해당 부가서비스를 축소하거나 변경 시, 당초 부가서비스에 상응하는 다른 부가서비스를 제공하는 경우\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"3.부가서비스를 3년 이상 제공한 상태에서 해당 부가서비스로 인해 상품의 수익성이 현저히 낮아진 경우\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"카드사가 부가서비스를 변경하는 경우 변경 사유, 변경 내용 등을 사유 발생 즉시 서면교부, 우편 또는 전자우편, 전화 또는 팩스, 휴대폰 메시지 또는 이에 준하는 전자적 의사 표시 중 2가지 이상의 방법으로 고지하여 드립니다. 다만, 상기 3호의 경우 부가서비스 변경일 6개월 이전부터 서면교부, 우편 또는 전자우편, 전화 또는 팩스, 휴대폰 메시지 또는 이에 준하는 전자적 의사표시 중 2가지 이상의 방법 으로 매월 고지하여 드립니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"KB국민 My WE:SH 카드 서비스는 대상 가맹점이 KB국민카드 업종분류 기준, 지정 업종으로 등록된 경우에 한하여 제공됩니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"별도 전용 가맹점번호로 승인처리 되는 PG(결제대행)업체 또는 할인서비스가 제공되지 않는 일부 간편결제(Pay)이용 시 할인대상에서 제외될 수 있습니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"KB국민 My WE:SH 카드는 본인회원 기준으로 월간 적립한도가 제공되며, 적용 기간은 매월 1일~말일까지(승인시점 기준)입니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"이용 순서대로 월간 한도 내 할인이 적용되며 잔여 할인한도는 이월되지 않습니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"할인 받은 이용 건을 취소할 경우 취소전표가 실시간으로 접수되지 않아 할인한도가 즉시 복원되지 않을 수 있습니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"신용카드 발급이 부적정한 경우(개인신용평점 낮음, 연체금 보유 등) 카드발급이 제한 될 수 있습니다.\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"일시불 거래 연체시 : 거래발생시점의 최소기간(2개월)유이자 할부수수료율 적용\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"금리인하요구권\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"할부거래의 소비자 권리\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"위법계약해지권\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"FAQ\"},{\"kind\":\"text\",\"key\":\"p\",\"value\":\"여신금융협회심의필 제2024-C1a-15690호(2024.12.16)\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"맞춤카드\"},{\"kind\":\"text\",\"key\":\"li\",\"value\":\"무이자할부 가맹점\"},{\"kind\":\"link\",\"key\":\"연회비\",\"value\":\"https://m.kbcard.com/cards/credit-cards/kb-my-wesh-card\"},{\"kind\":\"link\",\"key\":\"닫기\",\"value\":\"https://m.kbcard.com/cards/credit-cards/kb-my-wesh-card\"},{\"kind\":\"link\",\"key\":\"연회비 안내\",\"value\":\"https://m.kbcard.com/cards/credit-cards/kb-my-wesh-card\"},{\"kind\":\"link\",\"key\":\"상품설명서 안내\",\"value\":\"https://m.kbcard.com/cards/credit-cards/kb-my-wesh-card\"},{\"kind\":\"link\",\"key\":\"이용 전 확인해주세요\",\"value\":\"https://m.kbcard.com/cards/credit-cards/kb-my-wesh-card\"},{\"kind\":\"link\",\"key\":\"금리인하요구권\",\"value\":\"https://m.kbcard.com/SVC/DVIEW/MSGMCXHIACSC0010?articleid=10115&boardId=188\"},{\"kind\":\"link\",\"key\":\"할부거래의 소비자 권리\",\"value\":\"https://m.kbcard.com/SVC/DVIEW/MSGMCXHIACSC0009\"},{\"kind\":\"link\",\"key\":\"위법계약해지권\",\"value\":\"https://m.kbcard.com/FNC/DVIEW/MFDMCXHIAFLCD0071\"},{\"kind\":\"link\",\"key\":\"FAQ\",\"value\":\"https://m.kbcard.com/SVC/DVIEW/MSGMCXHIACSC0009\"},{\"kind\":\"link\",\"key\":\"맞춤카드\",\"value\":\"https://m.kbcard.com/CRD/DVIEW/MCAM0105?mainCC=c\"},{\"kind\":\"link\",\"key\":\"무이자할부 가맹점\",\"value\":\"https://m.kbcard.com/BON/DVIEW/MBEMCXHIABNC0005\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/home_re/mo/ico/visual/ico-visual-card-search.svg\"},{\"kind\":\"image\",\"key\":\"이미지\",\"value\":\"https://img1.kbcard.com/home_re/mo/ico/visual/ico-visual-calculator.svg\"}]}",
+        "comparedCheckId": "a5add8f0-6b75-4250-a9b8-bf0902300068",
+        "comparedAt": "2026-11-16T06:11:44.396Z",
+        "headAddedCount": 0,
+        "headRemovedCount": 0,
+        "bodyAddedCount": 0,
+        "bodyRemovedCount": 0,
+        "diffJson": null,
         "ruleResults": [
           {
             "ruleType": "HTTP_STATUS",
@@ -97201,11 +97201,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:44.396Z"
+        "createdAt": "2026-11-17T07:46:14.985Z"
       },
       "lastSuccessful": {
-        "checkId": "a5add8f0-6b75-4250-a9b8-bf0902300068",
-        "createdAt": "2026-11-16T06:11:44.396Z",
+        "checkId": "e158215a-f471-4885-9c1c-e6692c0cdfb5",
+        "createdAt": "2026-11-17T07:46:14.985Z",
         "hash": "59e694602872ffafd002a7a3779f5cf4a4fcec9c00d713e5982431b2eb97d93d",
         "tokens": [
           {
@@ -99951,8 +99951,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-10T07:06:31.387Z",
       "latest": {
-        "id": "f95574f0-45ee-4c5a-b6ef-145b6d76ae77",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "e5c8a353-8d56-484b-b3c0-bfad108ac897",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "64453981-5ab0-4e5f-ad30-9e8f9102413d",
         "targetId": "6c97d1ef-282c-421a-a4e8-2094a212838e",
         "targetName": "ALL point 카드",
@@ -99971,10 +99971,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 2641,
+        "responseMs": 1731,
         "errorMessage": null,
-        "comparedCheckId": "95074904-d146-4389-8676-0d5da2b5c9a5",
-        "comparedAt": "2026-11-15T06:13:48.138Z",
+        "comparedCheckId": "f95574f0-45ee-4c5a-b6ef-145b6d76ae77",
+        "comparedAt": "2026-11-16T06:11:38.778Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -99990,11 +99990,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:38.778Z"
+        "createdAt": "2026-11-17T07:46:09.927Z"
       },
       "lastSuccessful": {
-        "checkId": "f95574f0-45ee-4c5a-b6ef-145b6d76ae77",
-        "createdAt": "2026-11-16T06:11:38.778Z",
+        "checkId": "e5c8a353-8d56-484b-b3c0-bfad108ac897",
+        "createdAt": "2026-11-17T07:46:09.927Z",
         "hash": "83cc5fcec7ec7320b849d97bdc0d288bd27181edab1ee1c297a0de06d1987fc3",
         "tokens": [
           {
@@ -113865,8 +113865,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:24.669Z",
       "latest": {
-        "id": "2a142e23-07c0-49ff-9630-3448353d4af9",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "6e3da93c-19d0-465f-9035-1f5e24a611d3",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "1c5ac6ba-dd55-4713-af80-eda4dac245f7",
         "targetId": "6c97d1ef-282c-421a-a4e8-2094a212838e",
         "targetName": "ALL point 카드",
@@ -113885,10 +113885,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 2265,
+        "responseMs": 1689,
         "errorMessage": null,
-        "comparedCheckId": "49453147-b531-43cf-ba67-f43c5089a517",
-        "comparedAt": "2026-11-15T06:13:48.227Z",
+        "comparedCheckId": "2a142e23-07c0-49ff-9630-3448353d4af9",
+        "comparedAt": "2026-11-16T06:11:38.375Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -113904,11 +113904,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:38.375Z"
+        "createdAt": "2026-11-17T07:46:09.795Z"
       },
       "lastSuccessful": {
-        "checkId": "2a142e23-07c0-49ff-9630-3448353d4af9",
-        "createdAt": "2026-11-16T06:11:38.375Z",
+        "checkId": "6e3da93c-19d0-465f-9035-1f5e24a611d3",
+        "createdAt": "2026-11-17T07:46:09.795Z",
         "hash": "3ced59bbd8e8cae9bd1ee633b3bdcb1d96c50134adf45562ada4386302933854",
         "tokens": [
           {
@@ -115804,8 +115804,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "c0de2400-2056-45d9-9c01-5a2f6088d9b2",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "0a5d508a-4f41-4a2e-8763-c2026b912952",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "de405dc7-0a5c-4d1e-9d93-1028db2686c8",
         "targetId": "763c388b-d1bd-4949-9a3f-4fbabe4d3c37",
         "targetName": "서비스",
@@ -115824,7 +115824,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 190,
+        "responseMs": 188,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -115843,7 +115843,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-16T06:11:48.939Z"
+        "createdAt": "2026-11-17T07:46:20.716Z"
       },
       "lastSuccessful": null
     },
@@ -115852,8 +115852,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-10T07:06:42.132Z",
       "latest": {
-        "id": "54862018-2277-4f79-b100-3284e5626467",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "5339fa3c-8d7f-438c-8b41-31d9c7d933af",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "ccd04d1d7fbc346be2a4dd4dd93069c1",
         "targetId": "763c388b-d1bd-4949-9a3f-4fbabe4d3c37",
         "targetName": "서비스",
@@ -115872,10 +115872,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1010,
+        "responseMs": 284,
         "errorMessage": null,
-        "comparedCheckId": "45e200d8-8aed-4ec2-b0fd-a62f6c08b046",
-        "comparedAt": "2026-11-15T06:13:58.456Z",
+        "comparedCheckId": "54862018-2277-4f79-b100-3284e5626467",
+        "comparedAt": "2026-11-16T06:11:50.016Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -115891,11 +115891,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:50.016Z"
+        "createdAt": "2026-11-17T07:46:21.064Z"
       },
       "lastSuccessful": {
-        "checkId": "54862018-2277-4f79-b100-3284e5626467",
-        "createdAt": "2026-11-16T06:11:50.016Z",
+        "checkId": "5339fa3c-8d7f-438c-8b41-31d9c7d933af",
+        "createdAt": "2026-11-17T07:46:21.064Z",
         "hash": "517d3f7cf3ab4e6d1183dde91ab42e678372b01d4f0b339e6db9045b104e6888",
         "tokens": [
           {
@@ -128131,8 +128131,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "deeceaf1-164c-4f49-a42f-d0d908c59bad",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "d4571b16-cbdc-4c87-b017-8d42ab55a70f",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "45b57bad17f4bbfdb5cc5db4399d6aff",
         "targetId": "855f0b69537a077bfaa438388fac9a6e",
         "targetName": "이벤트 10월",
@@ -128151,7 +128151,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 192,
+        "responseMs": 187,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -128170,7 +128170,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-16T06:11:49.513Z"
+        "createdAt": "2026-11-17T07:46:21.293Z"
       },
       "lastSuccessful": null
     },
@@ -128179,8 +128179,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "4df7823d-d37c-49e7-83b7-d07f0374465d",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "c61b6101-4996-4bb6-9368-924ab9ce2196",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "b7f29a5a39ab16895d268b8da1abe58b",
         "targetId": "855f0b69537a077bfaa438388fac9a6e",
         "targetName": "이벤트 10월",
@@ -128199,7 +128199,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 193,
+        "responseMs": 195,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -128218,7 +128218,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-16T06:11:49.706Z"
+        "createdAt": "2026-11-17T07:46:21.302Z"
       },
       "lastSuccessful": null
     },
@@ -128227,8 +128227,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-10T07:06:39.037Z",
       "latest": {
-        "id": "09151915-9646-4bc7-8ec3-a6503f0d85cf",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "6b27894d-cfaa-4d92-b018-46c82930edc5",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "1bdbffb4-b7ee-441d-acbb-c11aa778a231",
         "targetId": "a21ecf12-1a64-40d4-855d-b6f1b81a8ba8",
         "targetName": "HERITAGE Classic(스카이패스형)",
@@ -128247,10 +128247,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 459,
+        "responseMs": 568,
         "errorMessage": null,
-        "comparedCheckId": "a8f55d13-eb2f-470a-b8aa-241625805f0f",
-        "comparedAt": "2026-11-15T06:13:55.983Z",
+        "comparedCheckId": "09151915-9646-4bc7-8ec3-a6503f0d85cf",
+        "comparedAt": "2026-11-16T06:11:46.544Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -128266,11 +128266,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:46.544Z"
+        "createdAt": "2026-11-17T07:46:17.238Z"
       },
       "lastSuccessful": {
-        "checkId": "09151915-9646-4bc7-8ec3-a6503f0d85cf",
-        "createdAt": "2026-11-16T06:11:46.544Z",
+        "checkId": "6b27894d-cfaa-4d92-b018-46c82930edc5",
+        "createdAt": "2026-11-17T07:46:17.238Z",
         "hash": "81936ca30f0847f34e3a856bb0b9c07e7e6b77b11236eb51782d0ad5a47d1723",
         "tokens": [
           {
@@ -143136,8 +143136,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:33.708Z",
       "latest": {
-        "id": "165eba58-9cde-4c17-b723-1f08e68f36c3",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "9c20ef82-9965-4e89-bb25-6544751ae245",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "78383cd1-8504-4fd8-b0b4-4fbc3635b01e",
         "targetId": "a21ecf12-1a64-40d4-855d-b6f1b81a8ba8",
         "targetName": "HERITAGE Classic(스카이패스형)",
@@ -143156,10 +143156,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 552,
+        "responseMs": 1422,
         "errorMessage": null,
-        "comparedCheckId": "d5df80d0-6ff8-44ba-ab50-f4a3c924199c",
-        "comparedAt": "2026-11-15T06:13:56.395Z",
+        "comparedCheckId": "165eba58-9cde-4c17-b723-1f08e68f36c3",
+        "comparedAt": "2026-11-16T06:11:46.724Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -143175,11 +143175,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:46.724Z"
+        "createdAt": "2026-11-17T07:46:18.122Z"
       },
       "lastSuccessful": {
-        "checkId": "165eba58-9cde-4c17-b723-1f08e68f36c3",
-        "createdAt": "2026-11-16T06:11:46.724Z",
+        "checkId": "9c20ef82-9965-4e89-bb25-6544751ae245",
+        "createdAt": "2026-11-17T07:46:18.122Z",
         "hash": "57f2e321f12e19fcf94ed2bfa30f5e0ea5d49d25d8d527d3bb040eb579c1569d",
         "tokens": [
           {
@@ -145030,8 +145030,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-10T07:06:31.619Z",
       "latest": {
-        "id": "2aaf0117-c60a-4010-b31c-7c2137632e29",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "e2247333-40f7-4a1c-af73-0480d45bd8e5",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "1a874d68-15d0-4e4c-bd29-6ebecf90e52a",
         "targetId": "a710c22f-7ed7-4f06-9334-abdfff7788ee",
         "targetName": "YOU Prime 카드",
@@ -145050,10 +145050,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 784,
+        "responseMs": 546,
         "errorMessage": null,
-        "comparedCheckId": "0a320368-8322-4d96-ae0a-5263fcf09402",
-        "comparedAt": "2026-11-15T06:13:49.449Z",
+        "comparedCheckId": "2aaf0117-c60a-4010-b31c-7c2137632e29",
+        "comparedAt": "2026-11-16T06:11:39.295Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -145069,11 +145069,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:39.295Z"
+        "createdAt": "2026-11-17T07:46:10.194Z"
       },
       "lastSuccessful": {
-        "checkId": "2aaf0117-c60a-4010-b31c-7c2137632e29",
-        "createdAt": "2026-11-16T06:11:39.295Z",
+        "checkId": "e2247333-40f7-4a1c-af73-0480d45bd8e5",
+        "createdAt": "2026-11-17T07:46:10.194Z",
         "hash": "a16f4542de52fc00230ba714e374ca78cef19edfa34b41074e11ef9973924e41",
         "tokens": [
           {
@@ -160149,8 +160149,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:25.268Z",
       "latest": {
-        "id": "5c0d9feb-4fed-4c96-9f09-7d3173f0177b",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "8df5bd01-3b26-4dc1-93e9-7119e20633d4",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "ff46ae32-0a90-4beb-b8e0-4debf4b3b397",
         "targetId": "a710c22f-7ed7-4f06-9334-abdfff7788ee",
         "targetName": "YOU Prime 카드",
@@ -160169,10 +160169,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 744,
+        "responseMs": 1596,
         "errorMessage": null,
-        "comparedCheckId": "9282bad0-3b6a-4d20-bf7d-7ab922e8be41",
-        "comparedAt": "2026-11-15T06:13:48.868Z",
+        "comparedCheckId": "5c0d9feb-4fed-4c96-9f09-7d3173f0177b",
+        "comparedAt": "2026-11-16T06:11:39.341Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -160188,11 +160188,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:39.341Z"
+        "createdAt": "2026-11-17T07:46:11.422Z"
       },
       "lastSuccessful": {
-        "checkId": "5c0d9feb-4fed-4c96-9f09-7d3173f0177b",
-        "createdAt": "2026-11-16T06:11:39.341Z",
+        "checkId": "8df5bd01-3b26-4dc1-93e9-7119e20633d4",
+        "createdAt": "2026-11-17T07:46:11.422Z",
         "hash": "80ebb1f21e3c002f480831f67ed1d2b888efdc0d6571a2c4486382c617e3c00a",
         "tokens": [
           {
@@ -162168,8 +162168,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-10T07:06:35.720Z",
       "latest": {
-        "id": "edcfc177-c1d7-4040-8b54-b0d2101da3bf",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "3675a14a-308e-45e4-a138-48b366971fd8",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "eb730105-e4a1-4995-b8bc-5f685b2ba79b",
         "targetId": "ab9fa5b9-3ed4-417d-b62a-b5ec7862e32f",
         "targetName": "WE:SH Travel",
@@ -162188,10 +162188,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1489,
+        "responseMs": 526,
         "errorMessage": null,
-        "comparedCheckId": "0680e4a7-4408-4352-bc86-f25d8b7f8ab1",
-        "comparedAt": "2026-11-15T06:13:51.996Z",
+        "comparedCheckId": "edcfc177-c1d7-4040-8b54-b0d2101da3bf",
+        "comparedAt": "2026-11-16T06:11:42.988Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -162207,11 +162207,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:42.988Z"
+        "createdAt": "2026-11-17T07:46:13.688Z"
       },
       "lastSuccessful": {
-        "checkId": "edcfc177-c1d7-4040-8b54-b0d2101da3bf",
-        "createdAt": "2026-11-16T06:11:42.988Z",
+        "checkId": "3675a14a-308e-45e4-a138-48b366971fd8",
+        "createdAt": "2026-11-17T07:46:13.688Z",
         "hash": "fe31eea502a33eb613c2627925e1fea4afb007c974a90d1d133abb4af3ee8c97",
         "tokens": [
           {
@@ -176647,8 +176647,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:29.915Z",
       "latest": {
-        "id": "2155dff3-b928-4dc9-be4b-d870752c160c",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "21e8283c-cc65-44ec-8f40-b173500a3321",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "119352b3-dbfe-4676-88a9-0e3e64d39abc",
         "targetId": "ab9fa5b9-3ed4-417d-b62a-b5ec7862e32f",
         "targetName": "WE:SH Travel",
@@ -176667,10 +176667,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 976,
+        "responseMs": 506,
         "errorMessage": null,
-        "comparedCheckId": "1a7067fe-32c2-4852-ad50-ad6a336684b7",
-        "comparedAt": "2026-11-15T06:13:52.020Z",
+        "comparedCheckId": "2155dff3-b928-4dc9-be4b-d870752c160c",
+        "comparedAt": "2026-11-16T06:11:42.436Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -176686,11 +176686,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:42.436Z"
+        "createdAt": "2026-11-17T07:46:14.058Z"
       },
       "lastSuccessful": {
-        "checkId": "2155dff3-b928-4dc9-be4b-d870752c160c",
-        "createdAt": "2026-11-16T06:11:42.436Z",
+        "checkId": "21e8283c-cc65-44ec-8f40-b173500a3321",
+        "createdAt": "2026-11-17T07:46:14.058Z",
         "hash": "ccb7990d98b026901a877d93967807ee746a30e5bfdfe1ed09e4f10c928eefd8",
         "tokens": [
           {
@@ -178536,8 +178536,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-10T07:06:33.536Z",
       "latest": {
-        "id": "00cac380-2097-468c-bce0-828e8d2be6a9",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "691e3585-38b8-4e63-8b08-202b2c8879c3",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "27f46e5f-feab-4c61-9b17-4e82b91c3b1b",
         "targetId": "aee77a45-fdde-4c1f-a82f-419336a1ab18",
         "targetName": "YOU Wish up 카드",
@@ -178556,10 +178556,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 906,
+        "responseMs": 1182,
         "errorMessage": null,
-        "comparedCheckId": "05336dd3-6a99-4265-97c8-749ce604fd1f",
-        "comparedAt": "2026-11-15T06:13:50.199Z",
+        "comparedCheckId": "00cac380-2097-468c-bce0-828e8d2be6a9",
+        "comparedAt": "2026-11-16T06:11:40.483Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -178575,11 +178575,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:40.483Z"
+        "createdAt": "2026-11-17T07:46:12.370Z"
       },
       "lastSuccessful": {
-        "checkId": "00cac380-2097-468c-bce0-828e8d2be6a9",
-        "createdAt": "2026-11-16T06:11:40.483Z",
+        "checkId": "691e3585-38b8-4e63-8b08-202b2c8879c3",
+        "createdAt": "2026-11-17T07:46:12.370Z",
         "hash": "bad3f7ac7ca5735df87471283c834a5201f22f0da98218bb4687b07b5a4bce0c",
         "tokens": [
           {
@@ -193030,8 +193030,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:27.168Z",
       "latest": {
-        "id": "a070ac2d-e0c1-470e-b1ed-3267f9a6d653",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "075272d0-e02d-46e2-8e04-58f2617dee7c",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "65ae2ae0-6609-42a3-aa4a-6a9d9e620da4",
         "targetId": "aee77a45-fdde-4c1f-a82f-419336a1ab18",
         "targetName": "YOU Wish up 카드",
@@ -193050,10 +193050,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 444,
+        "responseMs": 560,
         "errorMessage": null,
-        "comparedCheckId": "75a2604f-b745-44a6-8bb8-e7c737ba96cb",
-        "comparedAt": "2026-11-15T06:13:50.886Z",
+        "comparedCheckId": "a070ac2d-e0c1-470e-b1ed-3267f9a6d653",
+        "comparedAt": "2026-11-16T06:11:40.527Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -193069,11 +193069,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:40.527Z"
+        "createdAt": "2026-11-17T07:46:11.880Z"
       },
       "lastSuccessful": {
-        "checkId": "a070ac2d-e0c1-470e-b1ed-3267f9a6d653",
-        "createdAt": "2026-11-16T06:11:40.527Z",
+        "checkId": "075272d0-e02d-46e2-8e04-58f2617dee7c",
+        "createdAt": "2026-11-17T07:46:11.880Z",
         "hash": "23bf057805a684d080bd7b3247a23516d2c702c7371028b046a78c69b335d2b1",
         "tokens": [
           {
@@ -194919,8 +194919,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-10T07:06:36.343Z",
       "latest": {
-        "id": "3e7b781a-d2f1-4ddb-806c-f6a8574755bd",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "ae63d1ef-b8b2-4f69-80ec-244ffb65b517",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "55e07fac-79e6-4ccb-a6c6-38a1519deae8",
         "targetId": "ba3c273b-bf19-44d9-a4ef-c79f1dac16b9",
         "targetName": "굿데이올림카드",
@@ -194939,10 +194939,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 979,
+        "responseMs": 501,
         "errorMessage": null,
-        "comparedCheckId": "ecbca93c-7030-4c18-9bd9-09682c772e4f",
-        "comparedAt": "2026-11-15T06:13:53.716Z",
+        "comparedCheckId": "3e7b781a-d2f1-4ddb-806c-f6a8574755bd",
+        "comparedAt": "2026-11-16T06:11:44.073Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -194958,11 +194958,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:44.073Z"
+        "createdAt": "2026-11-17T07:46:14.651Z"
       },
       "lastSuccessful": {
-        "checkId": "3e7b781a-d2f1-4ddb-806c-f6a8574755bd",
-        "createdAt": "2026-11-16T06:11:44.073Z",
+        "checkId": "ae63d1ef-b8b2-4f69-80ec-244ffb65b517",
+        "createdAt": "2026-11-17T07:46:14.651Z",
         "hash": "62b74a8e5c721c35bc2b6ca3078d238a6ff5f451c3313ff2d6c3a400ae01051e",
         "tokens": [
           {
@@ -209308,8 +209308,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:31.118Z",
       "latest": {
-        "id": "5a072f96-68d1-45ed-b4a6-886c92b50454",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "ec46c328-519f-4922-bce8-71e1b8d1d362",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "99506875-e7b5-49a6-aa7d-d9ed9e4cf5ba",
         "targetId": "ba3c273b-bf19-44d9-a4ef-c79f1dac16b9",
         "targetName": "굿데이올림카드",
@@ -209328,10 +209328,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 524,
+        "responseMs": 938,
         "errorMessage": null,
-        "comparedCheckId": "5b830db8-05c1-4eb2-b1c4-cbb162638c55",
-        "comparedAt": "2026-11-15T06:13:53.583Z",
+        "comparedCheckId": "5a072f96-68d1-45ed-b4a6-886c92b50454",
+        "comparedAt": "2026-11-16T06:11:43.581Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -209347,11 +209347,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:43.581Z"
+        "createdAt": "2026-11-17T07:46:15.379Z"
       },
       "lastSuccessful": {
-        "checkId": "5a072f96-68d1-45ed-b4a6-886c92b50454",
-        "createdAt": "2026-11-16T06:11:43.581Z",
+        "checkId": "ec46c328-519f-4922-bce8-71e1b8d1d362",
+        "createdAt": "2026-11-17T07:46:15.379Z",
         "hash": "e7668c31e0cfe2f27bc1a788aa32e35e5c1de45000f4ba9d10e83eb22f2dd228",
         "tokens": [
           {
@@ -211617,8 +211617,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-10T07:06:34.153Z",
       "latest": {
-        "id": "99b7e082-1aad-423a-ab02-cbf576793d8b",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "b37f44f9-25cc-4239-88d1-54d39498ab1e",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "a1c82600-76ec-46e4-93ef-f8bc6778b034",
         "targetId": "bec4c3be-5c44-4585-a6a3-5fc7ffc3a7b0",
         "targetName": "NEED Global 카드",
@@ -211637,10 +211637,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 791,
+        "responseMs": 1558,
         "errorMessage": null,
-        "comparedCheckId": "b5c29745-06c5-40f6-a8c4-1280f3c97a3d",
-        "comparedAt": "2026-11-15T06:13:51.519Z",
+        "comparedCheckId": "99b7e082-1aad-423a-ab02-cbf576793d8b",
+        "comparedAt": "2026-11-16T06:11:41.387Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -211656,11 +211656,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:41.387Z"
+        "createdAt": "2026-11-17T07:46:13.521Z"
       },
       "lastSuccessful": {
-        "checkId": "99b7e082-1aad-423a-ab02-cbf576793d8b",
-        "createdAt": "2026-11-16T06:11:41.387Z",
+        "checkId": "b37f44f9-25cc-4239-88d1-54d39498ab1e",
+        "createdAt": "2026-11-17T07:46:13.521Z",
         "hash": "e209dcf0dbc3d80b62d614bdd35a1da665a172ee4933babbc644ce4c164db945",
         "tokens": [
           {
@@ -224976,8 +224976,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:29.386Z",
       "latest": {
-        "id": "b46f66e1-54de-4939-9129-65c3ccef37d0",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "e73c197d-5810-417a-93e3-c3f55051bd15",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "556d6d77-9c95-4b36-9826-ae45ff7b9f6b",
         "targetId": "bec4c3be-5c44-4585-a6a3-5fc7ffc3a7b0",
         "targetName": "NEED Global 카드",
@@ -224996,10 +224996,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 944,
+        "responseMs": 1860,
         "errorMessage": null,
-        "comparedCheckId": "e4f6a902-4731-471a-983a-b31c229e2b66",
-        "comparedAt": "2026-11-15T06:13:51.398Z",
+        "comparedCheckId": "b46f66e1-54de-4939-9129-65c3ccef37d0",
+        "comparedAt": "2026-11-16T06:11:41.499Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -225015,11 +225015,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:41.499Z"
+        "createdAt": "2026-11-17T07:46:13.929Z"
       },
       "lastSuccessful": {
-        "checkId": "b46f66e1-54de-4939-9129-65c3ccef37d0",
-        "createdAt": "2026-11-16T06:11:41.499Z",
+        "checkId": "e73c197d-5810-417a-93e3-c3f55051bd15",
+        "createdAt": "2026-11-17T07:46:13.929Z",
         "hash": "7f96f2e5e9b39a67859d0c9b2b75ca873dae61806ec904fb73f6aa10f1e6105e",
         "tokens": [
           {
@@ -226855,8 +226855,8 @@
       "liveCompletedAt": "2026-11-12T07:00:45.434Z",
       "lastChangedAt": "2026-11-12T07:00:45.434Z",
       "latest": {
-        "id": "8f099e1b-ce4f-440b-9b0d-ffadaa7e8f12",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "f1bc58c8-fdf5-4afe-b57f-f09879ae10e3",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "c79d4215-7632-4f50-b00d-872fc192fe4a",
         "targetId": "c4fe7b59-3b68-47f8-bbde-6c8701458fac",
         "targetName": "노리2 체크카드(KB Pay)",
@@ -226875,10 +226875,10 @@
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">노리2 체크카드(KB Pay), 이런 분께 추천드려요</h2>",
         "changeStatus": "UNCHANGED",
-        "responseMs": 821,
+        "responseMs": 980,
         "errorMessage": null,
-        "comparedCheckId": "4a07eca9-4849-499b-8f9c-e6a8d846d3c7",
-        "comparedAt": "2026-11-15T06:13:56.801Z",
+        "comparedCheckId": "8f099e1b-ce4f-440b-9b0d-ffadaa7e8f12",
+        "comparedAt": "2026-11-16T06:11:48.465Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -226894,11 +226894,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:48.465Z"
+        "createdAt": "2026-11-17T07:46:19.391Z"
       },
       "lastSuccessful": {
-        "checkId": "8f099e1b-ce4f-440b-9b0d-ffadaa7e8f12",
-        "createdAt": "2026-11-16T06:11:48.465Z",
+        "checkId": "f1bc58c8-fdf5-4afe-b57f-f09879ae10e3",
+        "createdAt": "2026-11-17T07:46:19.391Z",
         "hash": "99955db97a7b2e66a840120bf1a01f937d83d6319a930002b0b7e1f88b88badb",
         "tokens": [
           {
@@ -241119,8 +241119,8 @@
       "liveCompletedAt": "2026-11-12T07:00:46.915Z",
       "lastChangedAt": "2026-11-12T07:00:46.915Z",
       "latest": {
-        "id": "9854eb6f-8463-43cb-957c-d6be7333edb2",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "106a9e0d-9a12-4285-88c0-b179bdee73f3",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "3506bde9-c822-4be3-9f30-31809737af94",
         "targetId": "c4fe7b59-3b68-47f8-bbde-6c8701458fac",
         "targetName": "노리2 체크카드(KB Pay)",
@@ -241139,10 +241139,10 @@
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">노리2 체크카드(KB Pay), 이런 분께 추천드려요</h2>",
         "changeStatus": "UNCHANGED",
-        "responseMs": 493,
+        "responseMs": 1484,
         "errorMessage": null,
-        "comparedCheckId": "1481e4db-9319-4a59-bf93-c69ee067017a",
-        "comparedAt": "2026-11-15T06:13:57.399Z",
+        "comparedCheckId": "9854eb6f-8463-43cb-957c-d6be7333edb2",
+        "comparedAt": "2026-11-16T06:11:48.286Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -241158,11 +241158,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:48.286Z"
+        "createdAt": "2026-11-17T07:46:19.999Z"
       },
       "lastSuccessful": {
-        "checkId": "9854eb6f-8463-43cb-957c-d6be7333edb2",
-        "createdAt": "2026-11-16T06:11:48.286Z",
+        "checkId": "106a9e0d-9a12-4285-88c0-b179bdee73f3",
+        "createdAt": "2026-11-17T07:46:19.999Z",
         "hash": "507d9ca0ebd5c263dbd9d92518a64721cbcd0b2e17578780db470a48e4010bd6",
         "tokens": [
           {
@@ -244123,8 +244123,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "f1fd88cd-9875-4b37-8807-6ec4883319be",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "e149a10a-051f-42d6-b770-35c6a2677154",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "d7ed54fd-b471-4d4e-8c66-f9b1778028d7",
         "targetId": "c5d297d9-5523-49eb-9b65-340e00f4c55c",
         "targetName": "이벤트 9월",
@@ -244143,7 +244143,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 189,
+        "responseMs": 249,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -244162,7 +244162,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-16T06:11:49.128Z"
+        "createdAt": "2026-11-17T07:46:21.106Z"
       },
       "lastSuccessful": null
     },
@@ -244171,8 +244171,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": null,
       "latest": {
-        "id": "57dae20a-9fd8-4f3e-84f5-ed36b2ce3abe",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "42e089b8-64e9-418c-a2f5-9c0667ce2215",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "ae8ab9e4-6784-4ab8-a84e-0fa75525d559",
         "targetId": "c5d297d9-5523-49eb-9b65-340e00f4c55c",
         "targetName": "이벤트 9월",
@@ -244191,7 +244191,7 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "NOT_APPLICABLE",
-        "responseMs": 193,
+        "responseMs": 187,
         "errorMessage": null,
         "comparedCheckId": null,
         "comparedAt": null,
@@ -244210,7 +244210,7 @@
             "message": "페이지 오픈 대기 중입니다."
           }
         ],
-        "createdAt": "2026-11-16T06:11:49.321Z"
+        "createdAt": "2026-11-17T07:46:21.251Z"
       },
       "lastSuccessful": null
     },
@@ -244219,8 +244219,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-10T07:06:39.587Z",
       "latest": {
-        "id": "40646850-14fb-495c-8412-95b23d9cc9fa",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "15b3a953-3d85-4c67-9ee9-67ffbaeed6c7",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "e2bcd9ac-eaa5-4919-abe7-19c890c2d785",
         "targetId": "c701fd1a-9015-4daf-9039-b987c990c619",
         "targetName": "Youth Club 체크카드",
@@ -244239,10 +244239,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1829,
+        "responseMs": 1480,
         "errorMessage": null,
-        "comparedCheckId": "8af2294e-8746-4f89-9c12-30a206010bb0",
-        "comparedAt": "2026-11-15T06:13:56.682Z",
+        "comparedCheckId": "40646850-14fb-495c-8412-95b23d9cc9fa",
+        "comparedAt": "2026-11-16T06:11:48.931Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -244258,11 +244258,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:48.931Z"
+        "createdAt": "2026-11-17T07:46:19.541Z"
       },
       "lastSuccessful": {
-        "checkId": "40646850-14fb-495c-8412-95b23d9cc9fa",
-        "createdAt": "2026-11-16T06:11:48.931Z",
+        "checkId": "15b3a953-3d85-4c67-9ee9-67ffbaeed6c7",
+        "createdAt": "2026-11-17T07:46:19.541Z",
         "hash": "54b70a939f223cafad5b2bfe146eea2120463e4ad92e648350131228959b9e64",
         "tokens": [
           {
@@ -259238,8 +259238,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:34.029Z",
       "latest": {
-        "id": "57feb1d6-5eb5-4c87-8531-6155e3151195",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "90b1399c-1994-4645-ae35-c1022c967f7b",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "20e3a981-c6a0-4673-9a6f-5e0241999772",
         "targetId": "c701fd1a-9015-4daf-9039-b987c990c619",
         "targetName": "Youth Club 체크카드",
@@ -259258,10 +259258,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 579,
+        "responseMs": 2117,
         "errorMessage": null,
-        "comparedCheckId": "31e294d5-95ec-40cd-8563-cdff00e041f0",
-        "comparedAt": "2026-11-15T06:13:57.055Z",
+        "comparedCheckId": "57feb1d6-5eb5-4c87-8531-6155e3151195",
+        "comparedAt": "2026-11-16T06:11:47.899Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -259277,11 +259277,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:47.899Z"
+        "createdAt": "2026-11-17T07:46:20.268Z"
       },
       "lastSuccessful": {
-        "checkId": "57feb1d6-5eb5-4c87-8531-6155e3151195",
-        "createdAt": "2026-11-16T06:11:47.899Z",
+        "checkId": "90b1399c-1994-4645-ae35-c1022c967f7b",
+        "createdAt": "2026-11-17T07:46:20.268Z",
         "hash": "f086af165a2a213d02aba25733d9749c2fbb9e957cf2327e57605071d7c5b16a",
         "tokens": [
           {
@@ -260972,8 +260972,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-10T07:06:37.202Z",
       "latest": {
-        "id": "f9fbd3e8-5077-4f6f-a4fa-a98f60b5daf5",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "a5873e3c-4329-46c7-ab73-e3e870524c3d",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "533221ef-199b-4710-b94e-bc3aab4a1c02",
         "targetId": "ccfd1770-4563-4762-823c-5f6aa40a0d3e",
         "targetName": "American Express Blue Card",
@@ -260992,10 +260992,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1951,
+        "responseMs": 1920,
         "errorMessage": null,
-        "comparedCheckId": "14d19904-78d5-4441-a989-f87961e1d71c",
-        "comparedAt": "2026-11-15T06:13:54.650Z",
+        "comparedCheckId": "f9fbd3e8-5077-4f6f-a4fa-a98f60b5daf5",
+        "comparedAt": "2026-11-16T06:11:46.145Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -261011,11 +261011,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:46.145Z"
+        "createdAt": "2026-11-17T07:46:17.348Z"
       },
       "lastSuccessful": {
-        "checkId": "f9fbd3e8-5077-4f6f-a4fa-a98f60b5daf5",
-        "createdAt": "2026-11-16T06:11:46.145Z",
+        "checkId": "a5873e3c-4329-46c7-ab73-e3e870524c3d",
+        "createdAt": "2026-11-17T07:46:17.348Z",
         "hash": "a1621d1f109dc5be6fca1536181a68f69ed8f2f03fd9f5c9c8f800ae36dd898d",
         "tokens": [
           {
@@ -275226,8 +275226,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:31.496Z",
       "latest": {
-        "id": "1502247e-2dbb-444f-9efa-315b40955edf",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "d33fbdeb-1b47-4218-b42d-0a1e44b939a1",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "8ea95969-0296-474c-b812-028030be9348",
         "targetId": "ccfd1770-4563-4762-823c-5f6aa40a0d3e",
         "targetName": "American Express Blue Card",
@@ -275246,10 +275246,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1536,
+        "responseMs": 422,
         "errorMessage": null,
-        "comparedCheckId": "8852d6b8-ebfa-452f-a14c-81b59bc33e6b",
-        "comparedAt": "2026-11-15T06:13:54.429Z",
+        "comparedCheckId": "1502247e-2dbb-444f-9efa-315b40955edf",
+        "comparedAt": "2026-11-16T06:11:45.971Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -275265,11 +275265,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:45.971Z"
+        "createdAt": "2026-11-17T07:46:15.831Z"
       },
       "lastSuccessful": {
-        "checkId": "1502247e-2dbb-444f-9efa-315b40955edf",
-        "createdAt": "2026-11-16T06:11:45.971Z",
+        "checkId": "d33fbdeb-1b47-4218-b42d-0a1e44b939a1",
+        "createdAt": "2026-11-17T07:46:15.831Z",
         "hash": "b62f0bf894c070077055bac1b10a3b3c09eb37b6f9b328158e9c528ff634125f",
         "tokens": [
           {
@@ -277075,8 +277075,8 @@
       "liveCompletedAt": "2026-09-14T07:48:27.619Z",
       "lastChangedAt": "2026-11-12T07:00:35.661Z",
       "latest": {
-        "id": "f0b6a49a-823e-4ff7-ae98-c41b8e07ebd8",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "827c7102-347c-4f8f-839d-f72197c25094",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "1a97e3c9-610d-4931-b785-e625c6caf524",
         "targetId": "cd5e3359-d077-44de-b423-490719f8a4c1",
         "targetName": "ALL 카드",
@@ -277095,10 +277095,10 @@
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">ALL 카드, 이런 분께 추천드려요</h2>",
         "changeStatus": "UNCHANGED",
-        "responseMs": 2415,
+        "responseMs": 1308,
         "errorMessage": null,
-        "comparedCheckId": "bd43c43d-5230-4f59-a469-e417e2ec4c01",
-        "comparedAt": "2026-11-15T06:13:47.881Z",
+        "comparedCheckId": "f0b6a49a-823e-4ff7-ae98-c41b8e07ebd8",
+        "comparedAt": "2026-11-16T06:11:38.566Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -277114,11 +277114,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:38.566Z"
+        "createdAt": "2026-11-17T07:46:09.555Z"
       },
       "lastSuccessful": {
-        "checkId": "f0b6a49a-823e-4ff7-ae98-c41b8e07ebd8",
-        "createdAt": "2026-11-16T06:11:38.566Z",
+        "checkId": "827c7102-347c-4f8f-839d-f72197c25094",
+        "createdAt": "2026-11-17T07:46:09.555Z",
         "hash": "8ba810bebadb6c181ddf7824f6db011b82814a35cd0139e74617a6ac81acd9f6",
         "tokens": [
           {
@@ -290654,8 +290654,8 @@
       "liveCompletedAt": "2026-09-14T07:48:27.840Z",
       "lastChangedAt": "2026-11-12T07:00:36.014Z",
       "latest": {
-        "id": "e91115f4-01bf-4151-802c-b820694f9c93",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "13ebc7b4-e24c-420b-adfc-3da0e6c5556f",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "cf2d0df6-8b68-49e1-8346-7762096c49ee",
         "targetId": "cd5e3359-d077-44de-b423-490719f8a4c1",
         "targetName": "ALL 카드",
@@ -290674,10 +290674,10 @@
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">ALL 카드, <br>이런 분께 추천드려요</h2>",
         "changeStatus": "UNCHANGED",
-        "responseMs": 2800,
+        "responseMs": 2331,
         "errorMessage": null,
-        "comparedCheckId": "21c770ba-93a5-4b42-9477-75a628f03c55",
-        "comparedAt": "2026-11-15T06:13:48.200Z",
+        "comparedCheckId": "e91115f4-01bf-4151-802c-b820694f9c93",
+        "comparedAt": "2026-11-16T06:11:38.846Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -290693,11 +290693,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:38.846Z"
+        "createdAt": "2026-11-17T07:46:10.438Z"
       },
       "lastSuccessful": {
-        "checkId": "e91115f4-01bf-4151-802c-b820694f9c93",
-        "createdAt": "2026-11-16T06:11:38.846Z",
+        "checkId": "13ebc7b4-e24c-420b-adfc-3da0e6c5556f",
+        "createdAt": "2026-11-17T07:46:10.438Z",
         "hash": "6603816c3bc9ac4ea188bc69ebbe7aff8d8ad76511407e7f5cdd57c5600767b2",
         "tokens": [
           {
@@ -292988,8 +292988,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-10T07:06:34.895Z",
       "latest": {
-        "id": "b434602a-7401-4789-b671-0b10d6d476dc",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "ca204fb6-397d-45a3-982a-07d40354e020",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "613d02c9-fc0b-4d8d-9a08-517e588ed948",
         "targetId": "d8815c97-3344-4821-8372-32ff769c023b",
         "targetName": "NEED Pay 카드",
@@ -293008,10 +293008,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 421,
+        "responseMs": 553,
         "errorMessage": null,
-        "comparedCheckId": "1cb3d9f1-49db-44ba-89f6-b1483962c4b3",
-        "comparedAt": "2026-11-15T06:13:51.803Z",
+        "comparedCheckId": "b434602a-7401-4789-b671-0b10d6d476dc",
+        "comparedAt": "2026-11-16T06:11:41.197Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -293027,11 +293027,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:41.197Z"
+        "createdAt": "2026-11-17T07:46:13.003Z"
       },
       "lastSuccessful": {
-        "checkId": "b434602a-7401-4789-b671-0b10d6d476dc",
-        "createdAt": "2026-11-16T06:11:41.197Z",
+        "checkId": "ca204fb6-397d-45a3-982a-07d40354e020",
+        "createdAt": "2026-11-17T07:46:13.003Z",
         "hash": "f3bbe0eea22fbb270b3f65ffbd2ba765b8fbc332468982bc747af99a05886a3a",
         "tokens": [
           {
@@ -307417,8 +307417,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:28.830Z",
       "latest": {
-        "id": "5caa0968-14c6-4a8c-8426-67868ea31661",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "e40fd009-0c72-4b45-9744-caf437c46c0f",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "d137fd1e-c1dd-4841-8f54-32513292cd5a",
         "targetId": "d8815c97-3344-4821-8372-32ff769c023b",
         "targetName": "NEED Pay 카드",
@@ -307437,10 +307437,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1792,
+        "responseMs": 1390,
         "errorMessage": null,
-        "comparedCheckId": "372da6aa-2781-483c-97d0-e4633828dd74",
-        "comparedAt": "2026-11-15T06:13:52.220Z",
+        "comparedCheckId": "5caa0968-14c6-4a8c-8426-67868ea31661",
+        "comparedAt": "2026-11-16T06:11:43.017Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -307456,11 +307456,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:43.017Z"
+        "createdAt": "2026-11-17T07:46:14.416Z"
       },
       "lastSuccessful": {
-        "checkId": "5caa0968-14c6-4a8c-8426-67868ea31661",
-        "createdAt": "2026-11-16T06:11:43.017Z",
+        "checkId": "e40fd009-0c72-4b45-9744-caf437c46c0f",
+        "createdAt": "2026-11-17T07:46:14.416Z",
         "hash": "c3dd0d4ca3d4ddec56eefdd8a8a42b3e517e00cb41a58540115a4fa9dbd04642",
         "tokens": [
           {
@@ -309366,8 +309366,8 @@
       "liveCompletedAt": "2026-11-12T07:00:37.742Z",
       "lastChangedAt": "2026-11-12T07:00:37.742Z",
       "latest": {
-        "id": "e6793c11-63f1-4590-9f86-776b22608dc3",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "6a8d4717-1e02-4a1c-bd48-6d7e8a2ad0eb",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "6a0d6408-1c23-4f3b-9f75-2d84729915fa",
         "targetId": "efb1d0e6-0aeb-4093-84a7-6aed0179f41e",
         "targetName": "YOU Wish 카드",
@@ -309386,10 +309386,10 @@
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\">",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">YOU Wish 카드, 이런 분께 추천드려요</h2>",
         "changeStatus": "UNCHANGED",
-        "responseMs": 877,
+        "responseMs": 865,
         "errorMessage": null,
-        "comparedCheckId": "b5b719b6-0396-4ac7-a3ca-fd053dbf58a5",
-        "comparedAt": "2026-11-15T06:13:50.628Z",
+        "comparedCheckId": "e6793c11-63f1-4590-9f86-776b22608dc3",
+        "comparedAt": "2026-11-16T06:11:40.280Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -309405,11 +309405,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:40.280Z"
+        "createdAt": "2026-11-17T07:46:11.388Z"
       },
       "lastSuccessful": {
-        "checkId": "e6793c11-63f1-4590-9f86-776b22608dc3",
-        "createdAt": "2026-11-16T06:11:40.280Z",
+        "checkId": "6a8d4717-1e02-4a1c-bd48-6d7e8a2ad0eb",
+        "createdAt": "2026-11-17T07:46:11.388Z",
         "hash": "9138efa5ca28c27367184efc23c8baa06f4dfa69e562a7a5fae776290958ebac",
         "tokens": [
           {
@@ -323335,8 +323335,8 @@
       "liveCompletedAt": "2026-11-12T07:00:38.629Z",
       "lastChangedAt": "2026-11-12T07:00:38.629Z",
       "latest": {
-        "id": "e44f73d5-7374-4751-a6dd-949a02bdac69",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "85984fc5-35f4-4391-b8e7-80bf444caaad",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "c159409a-cc42-4ae1-b6a3-9a5fc6e4b6c0",
         "targetId": "efb1d0e6-0aeb-4093-84a7-6aed0179f41e",
         "targetName": "YOU Wish 카드",
@@ -323355,10 +323355,10 @@
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\">",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">YOU Wish 카드, 이런 분께 추천드려요</h2>",
         "changeStatus": "UNCHANGED",
-        "responseMs": 652,
+        "responseMs": 459,
         "errorMessage": null,
-        "comparedCheckId": "de5d3e03-59ac-4489-89bf-331299a06bc5",
-        "comparedAt": "2026-11-15T06:13:49.504Z",
+        "comparedCheckId": "e44f73d5-7374-4751-a6dd-949a02bdac69",
+        "comparedAt": "2026-11-16T06:11:40.042Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -323374,11 +323374,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:40.042Z"
+        "createdAt": "2026-11-17T07:46:11.300Z"
       },
       "lastSuccessful": {
-        "checkId": "e44f73d5-7374-4751-a6dd-949a02bdac69",
-        "createdAt": "2026-11-16T06:11:40.042Z",
+        "checkId": "85984fc5-35f4-4391-b8e7-80bf444caaad",
+        "createdAt": "2026-11-17T07:46:11.300Z",
         "hash": "36d413a087f5d7744bfb7d8b0ac37657cdaf17b2c57e061eaf1470245af9c58c",
         "tokens": [
           {
@@ -326074,8 +326074,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-10T07:06:32.713Z",
       "latest": {
-        "id": "9df81a39-f8a3-436f-bf99-b7f912325a0e",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "da9863a5-beb4-45a1-bf3d-ae8869d8284c",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "14bafd44-2782-4968-911b-291d2acd502e",
         "targetId": "f76ab7ec-2473-4bff-8a31-d6d4e7dbe21d",
         "targetName": "YOU With 카드",
@@ -326094,10 +326094,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 566,
+        "responseMs": 1072,
         "errorMessage": null,
-        "comparedCheckId": "bb23cdbf-ca46-4943-8874-1f9e6891207e",
-        "comparedAt": "2026-11-15T06:13:50.043Z",
+        "comparedCheckId": "9df81a39-f8a3-436f-bf99-b7f912325a0e",
+        "comparedAt": "2026-11-16T06:11:39.470Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -326113,11 +326113,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:39.470Z"
+        "createdAt": "2026-11-17T07:46:11.091Z"
       },
       "lastSuccessful": {
-        "checkId": "9df81a39-f8a3-436f-bf99-b7f912325a0e",
-        "createdAt": "2026-11-16T06:11:39.470Z",
+        "checkId": "da9863a5-beb4-45a1-bf3d-ae8869d8284c",
+        "createdAt": "2026-11-17T07:46:11.091Z",
         "hash": "ff077325788d1c9be08e338ca0a1c02089a768923acb3cad5fe423c3ed31f2a9",
         "tokens": [
           {
@@ -340248,8 +340248,8 @@
       "liveCompletedAt": null,
       "lastChangedAt": "2026-11-05T06:30:25.872Z",
       "latest": {
-        "id": "2dab802c-5b27-4d89-bfc1-05d24bc9ee08",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "76a568b6-bdc6-49c4-90be-d5ed6282d3e1",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "446222ae-cda3-454a-9e38-96d18f5cf725",
         "targetId": "f76ab7ec-2473-4bff-8a31-d6d4e7dbe21d",
         "targetName": "YOU With 카드",
@@ -340268,10 +340268,10 @@
         "headLiveMarkerHtml": null,
         "bodyLiveMarkerHtml": null,
         "changeStatus": "UNCHANGED",
-        "responseMs": 1210,
+        "responseMs": 587,
         "errorMessage": null,
-        "comparedCheckId": "4f722281-48ff-488d-a184-6add26e75335",
-        "comparedAt": "2026-11-15T06:13:48.910Z",
+        "comparedCheckId": "2dab802c-5b27-4d89-bfc1-05d24bc9ee08",
+        "comparedAt": "2026-11-16T06:11:40.085Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -340287,11 +340287,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:40.085Z"
+        "createdAt": "2026-11-17T07:46:10.814Z"
       },
       "lastSuccessful": {
-        "checkId": "2dab802c-5b27-4d89-bfc1-05d24bc9ee08",
-        "createdAt": "2026-11-16T06:11:40.085Z",
+        "checkId": "76a568b6-bdc6-49c4-90be-d5ed6282d3e1",
+        "createdAt": "2026-11-17T07:46:10.814Z",
         "hash": "537052516937e987260e001107ec14bb87112f8bbbe0fd6cdef93065fd27387b",
         "tokens": [
           {
@@ -342167,8 +342167,8 @@
       "liveCompletedAt": "2026-11-12T07:00:42.260Z",
       "lastChangedAt": "2026-11-12T07:00:42.260Z",
       "latest": {
-        "id": "20ec7e22-f810-485c-b3c2-8ae71059669e",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "347d910c-2232-4e5c-85fa-5317985282e3",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "01b3f6d5-d2f3-46f9-b9dd-9fb1e43d30a4",
         "targetId": "ffce3167-72d1-488c-ab2e-f65d740df310",
         "targetName": "스카이패스 티타늄카드",
@@ -342187,10 +342187,10 @@
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">스카이패스 티타늄카드, 이런 분께 추천드려요</h2>",
         "changeStatus": "UNCHANGED",
-        "responseMs": 967,
+        "responseMs": 1940,
         "errorMessage": null,
-        "comparedCheckId": "80479408-4797-40b6-9657-ff49902101cb",
-        "comparedAt": "2026-11-15T06:13:54.406Z",
+        "comparedCheckId": "20ec7e22-f810-485c-b3c2-8ae71059669e",
+        "comparedAt": "2026-11-16T06:11:44.603Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -342206,11 +342206,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:44.603Z"
+        "createdAt": "2026-11-17T07:46:16.672Z"
       },
       "lastSuccessful": {
-        "checkId": "20ec7e22-f810-485c-b3c2-8ae71059669e",
-        "createdAt": "2026-11-16T06:11:44.603Z",
+        "checkId": "347d910c-2232-4e5c-85fa-5317985282e3",
+        "createdAt": "2026-11-17T07:46:16.672Z",
         "hash": "ad3ab8a5302cc9a36203a37941fd6a304ccbac1d3a66c2065c71dc138ac71536",
         "tokens": [
           {
@@ -355826,8 +355826,8 @@
       "liveCompletedAt": "2026-11-12T07:00:43.229Z",
       "lastChangedAt": "2026-11-12T07:00:43.229Z",
       "latest": {
-        "id": "916c831c-0153-431c-abc2-cb4fc30852ea",
-        "runId": "68e6cbda-4e5b-4c21-ab2c-55b9eb24a289",
+        "id": "70f40b4a-ff05-4024-b2ab-50eb1269a035",
+        "runId": "8911fe28-38d1-48dd-a656-42387157804d",
         "endpointId": "57a99be1-efa7-46ec-85b1-ffa0cbcbfc2a",
         "targetId": "ffce3167-72d1-488c-ab2e-f65d740df310",
         "targetName": "스카이패스 티타늄카드",
@@ -355846,10 +355846,10 @@
         "headLiveMarkerHtml": "<meta property=\"og:site_name\" content=\"KB국민카드\" />",
         "bodyLiveMarkerHtml": "<h2 class=\"tit tit--h2\">스카이패스 티타늄카드, 이런 분께 추천드려요</h2>",
         "changeStatus": "UNCHANGED",
-        "responseMs": 1892,
+        "responseMs": 1097,
         "errorMessage": null,
-        "comparedCheckId": "acf447ab-8f7a-4c34-9126-44a5ca15da92",
-        "comparedAt": "2026-11-15T06:13:54.508Z",
+        "comparedCheckId": "916c831c-0153-431c-abc2-cb4fc30852ea",
+        "comparedAt": "2026-11-16T06:11:45.517Z",
         "headAddedCount": 0,
         "headRemovedCount": 0,
         "bodyAddedCount": 0,
@@ -355865,11 +355865,11 @@
             "message": null
           }
         ],
-        "createdAt": "2026-11-16T06:11:45.517Z"
+        "createdAt": "2026-11-17T07:46:16.105Z"
       },
       "lastSuccessful": {
-        "checkId": "916c831c-0153-431c-abc2-cb4fc30852ea",
-        "createdAt": "2026-11-16T06:11:45.517Z",
+        "checkId": "70f40b4a-ff05-4024-b2ab-50eb1269a035",
+        "createdAt": "2026-11-17T07:46:16.105Z",
         "hash": "79a98a8c1cdfa30cb59aa0a1b18e995fb5015d9f59807994702abafdd3cd1cde",
         "tokens": [
           {
